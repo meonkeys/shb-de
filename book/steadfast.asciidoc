@@ -1,6 +1,6 @@
 = Steadfast Self-Hosting: Rapid-Rise Personal Cloud
 :author: Adam Monsen
-:copyright: (C)2024 {author}
+:copyright: (C)2025 {author}
 :doctype: book
 :docinfo:
 :toc: macro
