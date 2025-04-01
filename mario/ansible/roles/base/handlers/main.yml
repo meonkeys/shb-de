@@ -1,3 +1,0 @@
----
-- name: timedatectl set-timezone
-  command: "timedatectl set-timezone {{ lookup('env', 'TZ') }}"

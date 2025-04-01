@@ -1,4 +1,0 @@
-html5validator
-markdown
-pelican
-typogrify
