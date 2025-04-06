@@ -1,32 +1,7 @@
-= 📖 Steadfast Self-Hosting
+= 📖 Steadfast Self-Hosting, auf Deutsch
 :hide-uri-scheme:
 
-Source code for a most excellent book about self-hosting.
-
-image::book/img/cover.png[align="center",alt="Book cover art with title text, author name, and featuring our Steadfast hero in a cartoon fantasy rolling-hills landscape on a partly cloudy day, holding up their hand in triumph with the apps they successfully self-host magically extending into the air. Our hero has brown-skin, a half-shaved head of dark hair, purple cape, teal shoulder puffs, white sleeves, blue gloves, brown shirt, tan equipment strap and belt, red upper leggings, teal lower leggings, and light brown boots."]
-
-_Steadfast_ primarily targets aspiring self-hosters looking for a quick and reliable method to get started.
-
-Please https://selfhostbook.com/buy/[buy] or <<how_to_build,build>> a <<book_formats,nicely-formatted copy>> of the book for your reading pleasure.
-You may also https://selfhostbook.com/buy/#donations[donate] to support my efforts.
-
-Commits here serve as errata corrected since the date and version mentioned in the "`Book version`" section of the "`Introduction`" chapter of the copy you own.
-
-[#how_to_build]
-== 🏗️ How to build the book
-
-Run `./book/build.sh` to generate your own typeset outputs.
-See `book/Readme.md` for details.
-
-== 🪡 Patches welcome
-
-Your contributions are most welcome!
-When submitting a patch, please:
-
-. Heed the link:style-guide.adoc[style guide].
-. Sign off every commit (`git commit --signoff`).
-Sorry, I know this is annoying, but it is important.
-It certifies you wrote or otherwise have the right to submit the patch, following https://developercertificate.org[Developer Certificate of Origin, version 1.1].
+German translation of https://github.com/meonkeys/shb[Steadfast Self-Hosting].
 
 == 📜 Warranty
 
