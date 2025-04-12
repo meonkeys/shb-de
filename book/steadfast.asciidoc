@@ -24,6 +24,11 @@ ifdef::shb-printPDF[]
 :pdf-theme: print.yml
 :media: prepress
 endif::[]
+ifdef::backend-epub3[]
+// https://github.com/asciidoctor/asciidoctor-epub3/issues/492
+:toclevels: 1
+:outlinelevels: 2
+endif::[]
 // necessary for keyboard macro (kbd)
 :experimental:
 :keywords: linux, web, servers, sysadmin, computers, tech, self-hosting, FOSS
@@ -33,6 +38,17 @@ endif::[]
 :revremark: {build_locale_lang}
 // see https://docs.asciidoctor.org/asciidoc/latest/blocks/add-title/#captioned-titles
 :listing-caption: Listing
+
+ifdef::backend-html5[]
+// https://github.com/asciidoctor/asciidoctor/issues/857
+++++
+<style>
+  .imageblock > .title {
+    text-align: inherit;
+  }
+</style>
+++++
+endif::backend-html5[]
 
 [colophon%notitle%nonfacing]
 == Colophon
@@ -582,7 +598,7 @@ I wrote the book originally in Markdown plain text in my steadfast text editor, 
 I applied generous amounts of https://pandoc.org[Pandoc], time, and love.
 Pandoc is a fantastic FOSS tool which allowed me to use that single plain text file with fairly human-readable Markdown syntax to generate several different decent outputs.
 While revising, I came across the build system for https://github.com/progit/progit2[Pro Git 2] (thank you Scott and Ben!).
-In short order I converted the book to https://asciidoc.org[AsciiDoc] and ported my typsetting code to https://asciidoctor.org[Asciidoctor].
+In short order I converted the book to https://asciidoc.org[AsciiDoc] and ported my typesetting code to https://asciidoctor.org[Asciidoctor].
 This simplified the book build and gave me more and better output formats.
 
 TIP: Check out the source code--you're welcome to hack away at it.
@@ -1567,7 +1583,7 @@ Mine has two 24-core CPUs and 128 GB RAM.
 
 [#image-racked-server]
 .DIY rackmount server attached to garage ceiling. It's fun to look at and is out of the way, but I need a ladder for maintenance and it weighs about 50lbs.
-image::racked-server.jpg[]
+image::racked-server.jpg[align="center"]
 
 The fans are _way_ louder than a desktop, especially when it is under load.
 It is supposed to have decent ventilation, temperature and humidity regulation yet has so far been extremely hardy even below freezing and above 100°F for extended periods of time.
@@ -1676,9 +1692,16 @@ Read <<Digital security>> before forwarding any ports.
 Make a sketch to better understand your network.
 Here's a simple diagram I created using https://asciiflow.com to plan cabling and visualize the flow of traffic through my network devices:
 
+ifdef::backend-html5,backend-pdf[]
 [#image-WAN-to-LAN-traffic]
 .WAN into LAN traffic flow diagram.
 image::WAN-to-LAN-traffic.svg[align="center",scaledwidth=80%]
+endif::[]
+ifdef::backend-epub3[]
+[#image-WAN-to-LAN-traffic]
+.WAN into LAN traffic flow diagram.
+image::WAN-to-LAN-traffic.png[,472,320,align="center"]
+endif::[]
 
 (((IPMI)))
 Arrows represent ethernet cable.
@@ -2854,9 +2877,16 @@ The technique is imperfect, yet simple and effective.
 
 My Pi-hole server sits between my router's DNS server and all clients.
 
+ifdef::backend-html5,backend-pdf[]
 [#image-DNS-traffic-diagram]
 .Pi-hole DNS traffic flow diagram.
 image::DNS-traffic-diagram.svg[align="center",scaledwidth=80%]
+endif::[]
+ifdef::backend-epub3[]
+[#image-DNS-traffic-diagram]
+.Pi-hole DNS traffic flow diagram.
+image::DNS-traffic-diagram.png[,571,651,align="center"]
+endif::[]
 
 Queries for domain names not on any block list will be answered directly or sent upstream.
 I set up my Pi-hole to pass queries on to my home router, which will then query a DNS server outside my LAN as necessary.
