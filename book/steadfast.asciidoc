@@ -116,66 +116,128 @@ image:sunrisedata-logo.svg[alt=Sunrise Data logo,width=49,height=97,fit=line] [.
 
 toc::[]
 
-== Foreword
+== Vorwort
 
-Before I started working in open source in 2006, I was working as a community organizer in Massachusetts. I was very well acquainted with how a lack of access to information or not having the "`real`" instruction manual keeps people from having a say in how they live their lives. As a community organizer, I taught people to lobby.
-Our organization invited people to work with legislators to draft laws that would address their needs and make their lives better.
-We taught people to fundraise and we taught them how to organize themselves and their neighbors.
-And then everything started to move online and important conversations about how we should protect the vulnerable and empower the next generation started happening through our computers.
+// FIXME (for Adam) fix double quotes (use asciidoctor syntax and check German output)
+// FIXME (for Adam) fix em dashes (use asciidoctor syntax and check German output)
 
-You can either lament progress or embrace it.
-I chose to embrace it and decided that I wanted to empower people and help them feel a sense of control over the way they use computers and technology.
-I started meeting all kinds of people from the free software movement, some were really interested in the way the code worked and others, like Adam, were the most interested in how freely available code could help people.
+// TODO (for Fiona, later) remove commented English paragraphs
 
-We met in 2009 at ((LFNW)) (LinuxFest Northwest), a free community conference in Bellingham, Washington.
-A mutual friend had suggested that I should check out Seattle sometime when visiting Washington state for LFNW, which meant carpooling from Seattle to Bellingham.
-We'd all meet for lunch in Seattle and then do the two hour car ride up to Bellingham together.
-Those car rides are when we all really started talking about the lack of a free software event in Seattle.
-We realized we needed some folks in Seattle who could get their companies to sponsor (like Adam and Rob Smith) and someone who could help get some speakers and promote the event to the free software community, which is how I (as a Massachusetts resident) ended up co-founding an annual Seattle event.
+Bevor ich 2006 anfing, im Open-Source-Bereich zu arbeiten, war ich als Community-Organisator in Massachusetts tätig. Ich kannte die Auswirkungen eines Mangels an Informationszugang oder das Fehlen des „richtigen“ Handbuchs sehr gut – beides hindert Menschen daran, mitzubestimmen, wie sie ihr Leben gestalten.
+Als Community-Organisatorin brachte ich den Menschen bei, wie man Lobbyarbeit betreibt.
+Unsere Organisation lud Menschen ein, gemeinsam mit Abgeordneten Gesetze zu entwerfen, die ihren Bedürfnissen gerecht werden und ihr Leben verbessern sollten.
+Wir zeigten ihnen, wie man Spenden sammelt, und wie sie sich selbst und ihre Nachbarschaft organisieren können.
+Und dann verlagerte sich alles zunehmend ins Internet – und wichtige Diskussionen darüber, wie wir die Schwächsten schützen und die nächste Generation stärken können, begannen, über unsere Computer stattzufinden.
+
+//Before I started working in open source in 2006, I was working as a community organizer in Massachusetts. I was very well acquainted with how a lack of access to information or not having the "`real`" instruction manual keeps people from having a say in how they live their lives. As a community organizer, I taught people to lobby.
+//Our organization invited people to work with legislators to draft laws that would address their needs and make their lives better.
+//We taught people to fundraise and we taught them how to organize themselves and their neighbors.
+//And then everything started to move online and important conversations about how we should protect the vulnerable and empower the next generation started happening through our computers.
+
+Man kann den Fortschritt entweder beklagen oder ihn annehmen.
+Ich entschied mich dafür, ihn anzunehmen, und beschloss, Menschen zu stärken und ihnen das Gefühl zu geben, Kontrolle darüber zu haben, wie sie Computer und Technologie nutzen.
+Ich begann, ganz unterschiedliche Menschen aus der Freie-Software-Bewegung kennenzulernen – einige interessierten sich sehr dafür, wie der Code funktioniert, und andere, wie Adam, waren vor allem daran interessiert, wie frei zugänglicher Code Menschen helfen kann.
+
+//You can either lament progress or embrace it.
+//I chose to embrace it and decided that I wanted to empower people and help them feel a sense of control over the way they use computers and technology.
+//I started meeting all kinds of people from the free software movement, some were really interested in the way the code worked and others, like Adam, were the most interested in how freely available code could help people.
+
+Wir lernten uns 2009 bei ((LFNW)) (LinuxFest Northwest) kennen, einer kostenlosen Community-Konferenz in Bellingham, Washington.
+Ein gemeinsamer Freund hatte mir empfohlen, mir bei einem Besuch in Washington anlässlich des LFNW auch einmal Seattle anzusehen – was bedeutete, von Seattle nach Bellingham gemeinsam zu fahren.
+Wir trafen uns alle in Seattle zum Mittagessen und machten uns dann gemeinsam auf die zweistündige Autofahrt nach Bellingham.
+Auf diesen Fahrten begannen wir wirklich, über das Fehlen einer Freie-Software-Veranstaltung in Seattle zu sprechen.
+Uns wurde klar, dass es in Seattle Leute brauchte, die ihre Unternehmen zur Sponsorenrolle bewegen konnten (wie Adam und Rob Smith), und jemanden, der sich um Referenten kümmern und die Veranstaltung in der Freie-Software-Community bekannt machen konnte – und so kam es, dass ich (als Bewohnerin von Massachusetts) Mitbegründerin einer jährlichen Veranstaltung in Seattle wurde.
+
+//We met in 2009 at ((LFNW)) (LinuxFest Northwest), a free community conference in Bellingham, Washington.
+//A mutual friend had suggested that I should check out Seattle sometime when visiting Washington state for LFNW, which meant carpooling from Seattle to Bellingham.
+//We'd all meet for lunch in Seattle and then do the two hour car ride up to Bellingham together.
+//Those car rides are when we all really started talking about the lack of a free software event in Seattle.
+//We realized we needed some folks in Seattle who could get their companies to sponsor (like Adam and Rob Smith) and someone who could help get some speakers and promote the event to the free software community, which is how I (as a Massachusetts resident) ended up co-founding an annual Seattle event.
+
+// FIXME (for Fiona) partially translated image caption
 
 [#image-seagl-crew]
-.Early SeaGL crew. From left to right: Salt, Deb, Patch (with french fry), Adam, Rob. Not pictured: Chris, Jesse, Bri, Lisa, and many more.
+.Die SeaGL crew. Von links nach rechts: Salt, Deb, Patch, (mit french fry), Adam, Rob. Nicht im Bild: Chris, Jesse, Bri, Lisa, and many more.
 image::seagl-crew.jpg[align="center",scaledwidth=80%]
 
-((SeaGL)) kicked off in 2013 at Seattle Central College and it was pretty scrappy.
-No keynotes, lots of shared power strips and a few friends that had gotten roped in to help without a lot of idea of what they'd signed up for.
-We had chosen a Friday to possibly attract students while the campus was open and a Saturday to make the second day easy for people whose jobs wouldn't support their attendance during the work week.
-The event was and remains both free to attend and open to everyone.
+Die erste ((SeaGL)) startete 2013 am Seattle Central College und war ziemlich improvisiert.
+Keine Keynotes, viele gemeinsam genutzte Mehrfachsteckdosen und ein paar Freund*innen, die hineingezogen worden waren, ohne genau zu wissen, worauf sie sich da eingelassen hatten.
+Wir hatten bewusst einen Freitag gewählt, um eventuell Studierende anzusprechen, solange der Campus geöffnet war, und einen Samstag, um den zweiten Tag für diejenigen zugänglich zu machen, deren Arbeitsstellen eine Teilnahme unter der Woche nicht unterstützten.
+Die Veranstaltung war – und ist bis heute – kostenlos und offen für alle.
 
-Adam showed up to our first event with a small pile of "`print on demand`" hats and shirts with our brand new logo (a seagull of course.)
-Talk selection was, "`if you want to do a talk, do a talk.`" Adam gave some great intro talks on Git and Hadoop and I gave a policy talk and community organizing talk.
-We hadn't written it down yet, but SeaGL was destined to become a conference for beginners and experts, for coders and policy nerds and for talks about the ecosystem; the flaws, the potential and the opportunities for partnership with other efforts to empower people.
+//((SeaGL)) kicked off in 2013 at Seattle Central College and it was pretty scrappy.
+//No keynotes, lots of shared power strips and a few friends that had gotten roped in to help without a lot of idea of what they'd signed up for.
+//We had chosen a Friday to possibly attract students while the campus was open and a Saturday to make the second day easy for people whose jobs wouldn't support their attendance during the work week.
+//The event was and remains both free to attend and open to everyone.
 
-After that chaotic first edition, we solidified that we wanted SeaGL to be for everyone, but especially for people who were looking for a way into open source in the diverse, expensive, and tech-heavy Seattle area.
-We wanted SeaGL to be a great first tech conference for attendees and a welcoming platform for aspiring speakers.
-We later extended this to working towards finding lesser known speakers and offering them their first keynote opportunity.
-The whole SeaGL crew (including Adam of course!) have always been passionate about welcoming in newcomers and fastidious about hosting a friendly, safe and curiosity positive environment.
+Adam tauchte bei unserer ersten Veranstaltung mit einem kleinen Stapel „Print-on-Demand“-Hüten und -T-Shirts auf, versehen mit unserem brandneuen Logo (natürlich eine seagull (eng. Möwe).
+Die Auswahl der Vorträge lief nach dem Motto: „Wenn du einen Vortrag halten willst, dann halt einen.“
+Adam hielt großartige Einführungsvorträge zu Git und Hadoop, und ich sprach über politische Rahmenbedingungen und Community-Organizing.
+Wir hatten es noch nicht schriftlich festgehalten, aber SeaGL war von Anfang an dazu bestimmt, eine Konferenz für Anfängerinnen und Expertinnen zu sein, für Programmierer*innen und Politikbegeisterte, und für Vorträge über das gesamte Ökosystem – seine Schwächen, sein Potenzial und die Chancen zur Zusammenarbeit mit anderen Initiativen, die Menschen stärken wollen.
 
-Adam and I have known each other for a long time.
-I've met his daughter, who is the talented illustrator for this book, and his wife who is also smart and relentlessly curious about how technology affects our lives.
-I've even met some of the chickens, who are indeed squeaky clean, although sadly not all that smart.
-Luckily, they are extremely well cared for so they don't need to be too bright.
+//Adam showed up to our first event with a small pile of "`print on demand`" hats and shirts with our brand new logo (a seagull of course.)
+//Talk selection was, "`if you want to do a talk, do a talk.`" Adam gave some great intro talks on Git and Hadoop and I gave a policy talk and community organizing talk.
+//We hadn't written it down yet, but SeaGL was destined to become a conference for beginners and experts, for coders and policy nerds and for talks about the ecosystem; the flaws, the potential and the opportunities for partnership with other efforts to empower people.
 
-In brief, Adam is very dedicated to both free software and empowering people.
-He is also very, very nice!
-Like truly one of the nicest people I have ever met.
-If the idea of doing something hard with a patient and gentle mentor is appealing to you and you are curious about self-hosting, then this is the book for you.
+Nach dieser chaotischen ersten Ausgabe wurde uns klar: SeaGL sollte für alle sein – aber ganz besonders für Menschen, die einen Einstieg in Open Source suchten, in einer vielfältigen, teuren und technologiegetriebenen Region wie Seattle.
+Wir wollten, dass SeaGL eine großartige erste Tech-Konferenz für Teilnehmende wird und eine einladende Plattform für angehende Vortragende bietet.
+Später weiteten wir dieses Ziel aus und bemühten uns gezielt darum, weniger bekannte Sprecher*innen zu finden und ihnen ihre erste Keynote-Möglichkeit zu bieten.
+Das gesamte SeaGL-Team (einschließlich Adam, natürlich!) war und ist mit voller Leidenschaft dabei, Neulinge willkommen zu heißen und eine freundliche, sichere und neugierige Atmosphäre zu schaffen.
 
-Self-hosting is hard.
-I've personally lurked on mailing lists that were going to make this easy, gone to talks, watched videos and read articles, but they've never quite managed to make it easy.
-Some of those resources were starting at chapter 2, others were full of comments that made me feel like any random person of reasonable intelligence should be able to find the information that wasn't included.
-Fortunately, Adam has included everything that a true beginner needs to get started while giving the reader plenty of options.
+//After that chaotic first edition, we solidified that we wanted SeaGL to be for everyone, but especially for people who were looking for a way into open source in the diverse, expensive, and tech-heavy Seattle area.
+//We wanted SeaGL to be a great first tech conference for attendees and a welcoming platform for aspiring speakers.
+//We later extended this to working towards finding lesser known speakers and offering them their first keynote opportunity.
+//The whole SeaGL crew (including Adam of course!) have always been passionate about welcoming in newcomers and fastidious about hosting a friendly, safe and curiosity positive environment.
 
-Self-hosting is also important.
-Things change quickly in tech and in the wider world.
-What you control and what you don't is constantly shifting.
-Self-hosting gives you a chance to keep a few things to yourself and be in charge of your personal data, your media and the way you interact with your computing environment.
-Self-hosting lets you decide what your needs are and choose how to address them, without asking for permission or getting locked into a contractual relationship with a company that doesn't care about you as an individual.
+Adam und ich kennen uns schon seit vielen Jahren.
+Ich habe seine Tochter kennengelernt, die die talentierte Illustratorin dieses Buches ist, und auch seine Frau, die klug ist und unermüdlich neugierig darauf, wie Technologie unser Leben beeinflusst.
+Sogar einige der Hühner habe ich getroffen – sie sind tatsächlich blitzsauber, wenn auch leider nicht besonders schlau.
+Zum Glück werden sie äußerst gut versorgt, sodass sie nicht allzu viel Grips brauchen.
 
-You should read this book, share it with other people, and maybe, once you're ready, contribute back to the self-hosting community.
+//Adam and I have known each other for a long time.
+//I've met his daughter, who is the talented illustrator for this book, and his wife who is also smart and relentlessly curious about how technology affects our lives.
+//I've even met some of the chickens, who are indeed squeaky clean, although sadly not all that smart.
+//Luckily, they are extremely well cared for so they don't need to be too bright.
+
+Kurz gesagt: Adam ist sehr engagiert – sowohl für Freie Software als auch dafür, Menschen zu stärken.
+Außerdem ist er unglaublich nett!
+Wirklich einer der nettesten Menschen, die ich je getroffen habe.
+Wenn dich die Vorstellung anspricht, etwas Herausforderndes mit einem geduldigen und einfühlsamen Mentor anzugehen, und du neugierig auf das Thema Self-Hosting bist, dann ist dieses Buch genau das Richtige für dich.
+
+//In brief, Adam is very dedicated to both free software and empowering people.
+//He is also very, very nice!
+//Like truly one of the nicest people I have ever met.
+//If the idea of doing something hard with a patient and gentle mentor is appealing to you and you are curious about self-hosting, then this is the book for you.
+
+Self-Hosting ist schwierig.
+Ich selbst habe still Mailinglisten verfolgt, die versprachen, es einfach zu machen, habe Vorträge besucht, Videos geschaut und Artikel gelesen – aber wirklich einfach wurde es dadurch nie.
+Manche dieser Ressourcen fingen gefühlt erst bei Kapitel 2 an, andere waren voller Kommentare, die einem das Gefühl gaben, dass jede einigermaßen intelligente Person die fehlenden Informationen schon irgendwie selbst finden müsste.
+Zum Glück hat Adam alles aufgenommen, was echte Anfänger*innen brauchen, um loszulegen – und dabei trotzdem viele Wahlmöglichkeiten offengelassen.
+
+//Self-hosting is hard.
+//I've personally lurked on mailing lists that were going to make this easy, gone to talks, watched videos and read articles, but they've never quite managed to make it easy.
+//Some of those resources were starting at chapter 2, others were full of comments that made me feel like any random person of reasonable intelligence should be able to find the information that wasn't included.
+//Fortunately, Adam has included everything that a true beginner needs to get started while giving the reader plenty of options.
+
+Self-Hosting ist aber auch wichtig.
+In der Technik – und in der Welt insgesamt – verändert sich vieles sehr schnell.
+Was man kontrolliert und was nicht, ist ständig im Wandel.
+Self-Hosting gibt dir die Möglichkeit, ein paar Dinge in deiner eigenen Hand zu behalten – deine persönlichen Daten, deine Medien und die Art, wie du mit deiner digitalen Umgebung interagierst.
+Es ermöglicht dir, selbst zu entscheiden, was du brauchst, und selbst zu wählen, wie du diesen Bedarf decken willst – ohne um Erlaubnis zu fragen oder dich an ein Unternehmen zu binden, dem du als Individuum egal bist.
+
+//Self-hosting is also important.
+//Things change quickly in tech and in the wider world.
+//What you control and what you don't is constantly shifting.
+//Self-hosting gives you a chance to keep a few things to yourself and be in charge of your personal data, your media and the way you interact with your computing environment.
+//Self-hosting lets you decide what your needs are and choose how to address them, without asking for permission or getting locked into a contractual relationship with a company that doesn't care about you as an individual.
+
+Du solltest dieses Buch lesen, es mit anderen teilen und vielleicht – wenn du soweit bist – etwas an die Self-Hosting-Community zurückgeben.
+
+//You should read this book, share it with other people, and maybe, once you're ready, contribute back to the self-hosting community.
 
 --
-Welcome to the world of hosting,
+Willkommen in der Welt des Self-Hosting,
+//Welcome to the world of hosting,
 --
 
 [.big]#Deb Nicholson#
@@ -187,31 +249,52 @@ Executive Director, Python Software Foundation
 
 :sectnums:
 
-== Introduction
+== Einführung
 
-(((data sovereignty)))
-Data sovereignty means having full control of your data.
-It brings the promise of privacy, liberty, and longevity.
-Realizing data sovereignty is both fun and practical, and supports ((prosocial behavior)).
-Self-hosting (running your own server) is an excellent path to data sovereignty.
+(((Datensouveränität)))
+Datensouveränität bedeutet, die volle Kontrolle über die eigenen Daten zu haben.
+Sie verspricht Privatsphäre, Freiheit und Nachhaltigkeit.
+Datensouveränität zu verwirklichen ist sowohl spannend als auch praktisch – und sie fördert ((prosoziales Verhalten)).
+Self-Hosting (also das Betreiben eines eigenen Servers) ist ein hervorragender Weg zur Datensouveränität.
 
-This book will help you efficiently learn and practice self-hosting.
-You'll gain confidence facing its challenges while enjoying its benefits first-hand.
-The skills you will build are applicable at home, at work, and in your community.
+//(((data sovereignty)))
+//Data sovereignty means having full control of your data.
+//It brings the promise of privacy, liberty, and longevity.
+//Realizing data sovereignty is both fun and practical, and supports ((prosocial behavior)).
+//Self-hosting (running your own server) is an excellent path to data sovereignty.
 
-=== Welcome
+Dieses Buch wird dir helfen, Self-Hosting effizient zu erlernen und in der Praxis anzuwenden.
+Du wirst Selbstvertrauen im Umgang mit den damit verbundenen Herausforderungen gewinnen und die Vorteile aus erster Hand erleben.
+Die Fähigkeiten, die du dir aneignest, sind sowohl zu Hause, am Arbeitsplatz als auch in deiner Gemeinschaft anwendbar.
 
-I am so glad you're here!
+//This book will help you efficiently learn and practice self-hosting.
+//You'll gain confidence facing its challenges while enjoying its benefits first-hand.
+//The skills you will build are applicable at home, at work, and in your community.
 
-I'd like to help you get a server up and running.
-The self-hosting ecosystem is crowded and confusing, so I've taken care of a number of difficult choices with sensible, tested defaults.
-I'll help you provision (set up) your own server and a few useful web services.
-Bring along whatever sysadmin experience you've got, some willing users, and a desire to gain self-hosting competency.
 
-The Internet is often a relentless cash-grab and attention vampire.
-Our actions are infinitely measured; _we_ are the product.
-The smog of surveillance stifles our freedom and erodes trust.
-We will:
+=== Willkommen
+
+Ich freue mich sehr dass du hier bist!
+
+Ich möchte dir dabei helfen, einen Server zum Laufen zu bringen.
+Das Self-Hosting-Ökosystem ist überfüllt und oft verwirrend – deshalb habe ich eine Reihe schwieriger Entscheidungen bereits für dich getroffen, basierend auf sinnvollen und erprobten Voreinstellungen.
+Ich werde dir dabei helfen, deinen eigenen Server bereitzustellen (einzurichten) und einige nützliche Webdienste darauf zu installieren.
+Bring mit, was auch immer du an Sysadmin-Erfahrung hast, ein paar motivierte Nutzer*innen – und den Wunsch, dir echte Self-Hosting-Kompetenz anzueignen.
+
+//I'd like to help you get a server up and running.
+//The self-hosting ecosystem is crowded and confusing, so I've taken care of a number of difficult choices with sensible, tested defaults.
+//I'll help you provision (set up) your own server and a few useful web services.
+//Bring along whatever sysadmin experience you've got, some willing users, and a desire to gain self-hosting competency.
+
+Das Internet ist oft ein unerbittlicher Kampf um Geld und Aufmerksamkeit.
+Unser Verhalten wird endlos getrackt – wir sind das Produkt.
+Der Smog der Überwachung erstickt unsere Freiheit und untergräbt das Vertrauen.
+Wir werden:
+
+//The Internet is often a relentless cash-grab and attention vampire.
+//Our actions are infinitely measured; _we_ are the product.
+//The smog of surveillance stifles our freedom and erodes trust.
+//We will:
 
 * Not settle for cheap ((cloud)) services.
 * Reduce distractions.
