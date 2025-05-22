@@ -70,6 +70,10 @@ Technical editing by https://www.wondra.codes[Lenny Wondra].
 --
 
 --
+German translation by Fiona Burkart.
+--
+
+--
 First published in 2024 by https://sunrisedata.io[Sunrise Data Press].
 --
 
