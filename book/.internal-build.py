@@ -33,6 +33,7 @@ commonArgs = [
     '--attribute', 'build_git_branch=' + os.environ['BUILD_GIT_BRANCH'],
     '--attribute', 'build_git_tag=' + os.environ['BUILD_GIT_TAG'],
     '--attribute', 'build_os_release=' + os.environ['BUILD_OS_RELEASE'],
+    '--attribute', 'lang=' + os.environ['TWO_LETTER_LANG'],
     '--warnings',
     '--trace',
     '--require', '/usr/local/bundle/gems/asciidoctor-lists-1.1.2/lib/asciidoctor-lists.rb'

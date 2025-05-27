@@ -45,6 +45,8 @@ ifdef::backend-html5[]
 ++++
 endif::backend-html5[]
 
+include::locale/attributes-de.adoc[]
+
 [colophon%notitle%nonfacing]
 == Colophon
 
