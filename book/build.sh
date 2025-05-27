@@ -33,6 +33,7 @@ WORK_DIR=/usr/src/app/book
 GID="$(id -g)"
 BUILD_DATE_TIME="$(date)"
 BUILD_LOCALE_LANG="de_DE.UTF-8"
+TWO_LETTER_LANG="de"
 BUILD_GIT_COMMIT="$(git rev-parse --short HEAD || echo FIXME)"
 BUILD_GIT_BRANCH="$(git branch --show-current || echo FIXME)"
 # Seems to pull the most recent tag if the current commit has more than one.
@@ -75,6 +76,7 @@ docker run \
     --env BUILD_PRINT_QUALITY="$BUILD_PRINT_QUALITY" \
     --env BUILD_OUTPUT_UID="$UID" \
     --env BUILD_OUTPUT_GID="$GID" \
+    --env TWO_LETTER_LANG="$TWO_LETTER_LANG" \
     shb-asciidoctor \
     "$@"
 
