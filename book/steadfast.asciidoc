@@ -63,8 +63,8 @@ image::cc-by-sa.svg[align="center"]
 --
 
 --
-The beautiful cover art was created by my daughter using https://krita.org[Krita].
-You'll find more of her excellent work throughout the book.
+Das wunderschöne Titelbild wurde von meiner Tochter mit Krita gestaltet.
+Mehr von ihrer großartigen Kunst findest du im Laufe des Buches.
 --
 
 --
@@ -163,10 +163,10 @@ Uns wurde klar, dass es in Seattle Leute brauchte, die ihre Unternehmen zur Spon
 // FIXME (for Fiona) partially translated image caption
 
 [#image-seagl-crew]
-.Die SeaGL crew. Von links nach rechts: Salt, Deb, Patch, (mit french fry), Adam, Rob. Nicht im Bild: Chris, Jesse, Bri, Lisa, and many more.
+.Die SeaGL crew. Von links nach rechts: Salt, Deb, Patch, (mit french fry), Adam, Rob. Nicht im Bild: Chris, Jesse, Bri, Lisa, and viele andere.
 image::seagl-crew.jpg[align="center",scaledwidth=80%]
 
-Die erste ((SeaGL)) startete 2013 am Seattle Central College und war ziemlich improvisiert.
+Die erste ((SeaGL)) fand 2013 am Seattle Central College statt und war ziemlich improvisiert.
 Keine Keynotes, viele gemeinsam genutzte Mehrfachsteckdosen und ein paar Freund*innen, die hineingezogen worden waren, ohne genau zu wissen, worauf sie sich da eingelassen hatten.
 Wir hatten bewusst einen Freitag gewählt, um eventuell Studierende anzusprechen, solange der Campus geöffnet war, und einen Samstag, um den zweiten Tag für diejenigen zugänglich zu machen, deren Arbeitsstellen eine Teilnahme unter der Woche nicht unterstützten.
 Die Veranstaltung war – und ist bis heute – kostenlos und offen für alle.
@@ -302,86 +302,148 @@ Wir werden:
 //The smog of surveillance stifles our freedom and erodes trust.
 //We will:
 
-* Not settle for cheap ((cloud)) services.
-* Reduce distractions.
-* Cherish our attention, time, and freedom.
-* Breathe the crisp, clear air of reduced surveillance by providing our own alternative to the chilling popular default of trading privacy for convenience.
-* Save money by efficiently running lots of services on our own hardware with negligible incremental cost.
-* Do well by our friends, families, and social groups.
-* Do things we can't do with public services because we have full access to all our own raw data.
-* Adapt and grow as software evolves, taking our data and metadata along with us.
-* Share what and when it makes sense to share with whom we trust.
+* Uns nicht mit billigen ((Cloud))-Diensten zufriedengeben.
+* Ablenkungen reduzieren.
+* Unsere Aufmerksamkeit, Zeit und Freiheit wertschätzen.
+* Die klare, frische Luft geringerer Überwachung atmen, indem wir selbst eine Alternative zum erschreckenden gesellschaftlichen Standard schaffen, Privatsphäre gegen Bequemlichkeit zu tauschen.
+* Geld sparen, indem wir viele Dienste effizient auf eigener Hardware betreiben – mit kaum zusätzlichen Kosten.
+* Gutes tun für unsere Freund*innen, Familien und sozialen Gruppen.
+* Dinge tun, die mit öffentlichen Diensten nicht möglich sind, weil wir vollständigen Zugriff auf unsere Rohdaten haben.
+* Uns anpassen und wachsen, wenn sich Software weiterentwickelt – und dabei unsere Daten und Metadaten mitnehmen.
+* Teilen, was und wann es sinnvoll ist – mit den Menschen, denen wir vertrauen.
 
-This is the book I wish I'd had when I was struggling to provide a safe online experience for my kids.
+//* Not settle for cheap ((cloud)) services.
+//* Reduce distractions.
+//* Cherish our attention, time, and freedom.
+//* Breathe the crisp, clear air of reduced surveillance by providing our own alternative to the chilling popular default of trading privacy for convenience.
+//* Save money by efficiently running lots of services on our own hardware with negligible incremental cost.
+//* Do well by our friends, families, and social groups.
+//* Do things we can't do with public services because we have full access to all our own raw data.
+//* Adapt and grow as software evolves, taking our data and metadata along with us.
+//* Share what and when it makes sense to share with whom we trust.
 
-New self-hosters can use this book to get started.
-Experienced self-hosters can compare my choices to theirs.
+Dies ist das Buch, das ich mir gewünscht hätte, als ich versucht habe, meinen Kindern ein sicheres Online-Erlebnis zu ermöglichen.
 
-==== Prerequisites
+Neue Self-Hosterinnen können dieses Buch als Einstieg nutzen.
+Erfahrene Self-Hosterinnen können meine Entscheidungen mit ihren eigenen vergleichen.
 
-To get the most out of this book, the sysadmin experience you bring along should include the ability to configure your ((router)) and ((LAN)) (local area network), install Linux on a computer (hereafter referred to as your _server_), connect to your server with ((SSH)) (secure shell), edit text files and run commands on your server, and transfer files to and from your server.
+//This is the book I wish I'd had when I was struggling to provide a safe online experience for my kids.
 
-If you're unfamiliar with any of these concepts, a quick trip to your favorite search engine or local user group should yield enough pointers to get started.
+//New self-hosters can use this book to get started.
+//Experienced self-hosters can compare my choices to theirs.
 
-I recommend hosting on ((bare metal)) (tangible nearby computer hardware), and this comes with some prerequisites for the physical space where your server resides.
-Read more about the ins and outs of bare metal in <<Prepare hardware>>.
+==== Voraussetzungen
 
-Finally, some best practices to keep in mind as you read along:
+Um das Beste aus diesem Buch herauszuholen, solltest du über grundlegende Sysadmin-Erfahrung verfügen. Dazu gehört die Fähigkeit, deinen Router und dein LAN (lokales Netzwerk) zu konfigurieren, Linux auf einem Computer zu installieren (im Folgenden als dein Server bezeichnet), dich per SSH (Secure Shell) mit deinem Server zu verbinden, Textdateien zu bearbeiten und Befehle auf dem Server auszuführen sowie Dateien zwischen deinem Server und anderen Geräten zu übertragen.
 
-Document everything you do, if only for your future self.
-Recruit and train help, leveraging said documentation to share knowledge.
-Focus, take breaks, be patient, and take care of your body.
-Ask for help and ask for feedback.
-Listen to users, gather data, and adapt accordingly.
+Falls dir eines dieser Konzepte nicht vertraut ist, hilft dir ein kurzer Abstecher zu deiner bevorzugten Suchmaschine oder ein Besuch bei einer lokalen Nutzergruppe sicher weiter.
 
-=== Supporting the author
+Ich empfehle das Hosting auf Bare Metal (greifbarer, lokal betriebener Computer-Hardware), was einige Anforderungen an den physischen Standort deines Servers mit sich bringt.
+Mehr zu den Details und Anforderungen von Bare-Metal-Hosting findest du im Abschnitt <<Hardware vorbereiten>>.
 
-I wrote this book with my own resources after years of research with lots of help from awesome people.
-See <<Acknowledgments>> (near the end of the book).
+//To get the most out of this book, the sysadmin experience you bring along should include the ability to configure your ((router)) and ((LAN)) (local area network), install Linux on a computer (hereafter referred to as your _server_), connect to your server with ((SSH)) (secure shell), edit text files and run commands on your server, and transfer files to and from your server.
 
-Please https://selfhostbook.com/buy/[buy a copy] for yourself or someone else, especially if you'd like me to write more books in the future.
+//If you're unfamiliar with any of these concepts, a quick trip to your favorite search engine or local user group should yield enough pointers to get started.
 
-=== Book version
+//I recommend hosting on ((bare metal)) (tangible nearby computer hardware), and this comes with some prerequisites for the physical space where your server resides.
+//Read more about the ins and outs of bare metal in <<Prepare hardware>>.
 
-This book was generated on *{build_date_time}* with `LANG` set to `*{build_locale_lang}*` from source `{docname}{docfilesuffix}` at commit `{build_git_commit}`, branch `{build_git_branch}`, tag `{build_git_tag}`, on *{build_os_release}*.
+Zum Schluss noch einige bewährte Vorgehensweisen, die du beim Lesen im Hinterkopf behalten solltest:
 
-=== Copyright and license
+Dokumentiere alles, was du tust – selbst wenn es nur für dein zukünftiges Ich ist.
+Hole dir Unterstützung und bilde andere aus, indem du deine Dokumentation nutzt, um Wissen weiterzugeben.
+Bleib fokussiert, mach Pausen, sei geduldig und achte auf deinen Körper.
+Bitte um Hilfe und fordere aktiv Rückmeldungen ein.
+Höre auf deine Nutzer*innen, sammle Daten und passe dich entsprechend an.
 
-_{doctitle}_ is {copyright}.
-Some rights reserved.
+//Finally, some best practices to keep in mind as you read along:
 
-==== Copy this book
+//Document everything you do, if only for your future self.
+//Recruit and train help, leveraging said documentation to share knowledge.
+//Focus, take breaks, be patient, and take care of your body.
+//Ask for help and ask for feedback.
+//Listen to users, gather data, and adapt accordingly.
 
-This book is licensed under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License.
+=== Unterstütze den Author
+
+Ich habe dieses Buch aus nach jahrelanger Recherche mit eigenen Reseourcen  viel Unterstützung großartiger Menschen geschrieben.
+Siehe <<Danksagungen>> (gegen Ende des Buches).
+
+Bitte https://selfhostbook.com/buy/[kaufe ein Exemplar] für dich selbst oder für jemand anderen – besonders, wenn du möchtest, dass ich in Zukunft weitere Bücher schreibe.
+
+//I wrote this book with my own resources after years of research with lots of help from awesome people.
+//See <<Acknowledgments>> (near the end of the book).
+
+//Please https://selfhostbook.com/buy/[buy a copy] for yourself or someone else, especially if you'd like me to write more books in the future.
+
+=== Version
+
+Dieses Buch wurde am *{build_date_time}* mit `LANG` auf Einstellung `*{build_locale_lang}*` von der Quelle `{docname}{docfilesuffix}` mit Stand `{build_git_commit}`, Zweig `{build_git_branch}`, Makierung `{build_git_tag}`, mit *{build_os_release}* generiert.
+
+//This book was generated on *{build_date_time}* with `LANG` set to `*{build_locale_lang}*` from source `{docname}{docfilesuffix}` at commit `{build_git_commit}`, branch `{build_git_branch}`, tag `{build_git_tag}`, on *{build_os_release}*.
+
+=== Urheberrecht und Lizenz
+
+_{doctitle}_ ist {copyright} geschuetzt.
+Manche Rechte vorbehalten.
+
+//_{doctitle}_ is {copyright}.
+//Some rights reserved.
+
+==== Vervielfältigung dieses Buches
+
+Dieses Buch steht unter der Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) Lizenz.
+
+//This book is licensed under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License.
 
 image::cc-by-sa.svg[align="center"]
 
-===== You are free to...
+===== Sie dürfen
 
-Share::
-  copy and redistribute the material in any medium or format
-Adapt::
-  remix, transform, and build upon the material
+Teilen::
+  das Material in jede Format oder Medium vervielfältigen und weiterverbreiten und zwar für beliebige Zwecke, sogar kommerziell.
+Bearbeiten::
+  das Material remixen, verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar kommerziell.
+  
+_Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange Sie sich an die Lizenzbedingungen halten._
 
-_The licensor cannot revoke these freedoms as long as you follow the license terms._
+//Share::
+//  copy and redistribute the material in any medium or format
+//Adapt::
+//  remix, transform, and build upon the material
 
-===== Under the following terms...
+//_The licensor cannot revoke these freedoms as long as you follow the license terms._
 
-Attribution::
-  You must give appropriate credit, provide a link to the license, and indicate if changes were made.
-You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-ShareAlike::
-  If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
-No additional restrictions::
-  You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+===== Unter folgenden Bedingungen...
 
-===== Notices
+Namensnennung::
+  Sie müssen angemessene Urheber- und Rechteangaben machen , einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden. 
+  Diese Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade Sie oder Ihre Nutzung besonders.
+Weitergabe unter gleichen Bedingungen::
+  Wenn Sie das Material remixen, verändern oder anderweitig direkt darauf aufbauen, dürfen Sie Ihre Beiträge nur unter derselben Lizenz wie das Original verbreiten.
+Keine weiteren Einschränkungen::
+  Sie dürfen keine zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen rechtlich irgendetwas untersagen, was die Lizenz erlaubt.
 
-You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
+//Attribution::
+//  You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+//You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+//ShareAlike::
+//  If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+//No additional restrictions::
+//  You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
-No warranties are given.
-The license may not give you all of the permissions necessary for your intended use.
-For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
+===== Hinweise
+
+Sie müssen sich nicht an diese Lizenz halten hinsichtlich solcher Teile des Materials, die gemeinfrei sind, oder soweit Ihre Nutzungshandlungen durch Ausnahmen und Schranken des Urheberrechts gedeckt sind.
+
+Es werden keine Garantien gegeben und auch keine Gewähr geleistet. 
+Die Lizenz verschafft Ihnen möglicherweise nicht alle Erlaubnisse, die Sie für die jeweilige Nutzung brauchen. Es können beispielsweise andere Rechte wie Persönlichkeits- und Datenschutzrechte zu beachten sein, die Ihre Nutzung des Materials entsprechend beschränken.
+
+//You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
+
+//No warranties are given.
+//The license may not give you all of the permissions necessary for your intended use.
+//For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
 
 ==== Copy this book's code, too
 
@@ -1529,7 +1591,7 @@ Some have an interface, some run in the background on a schedule.
 ==== Choose services
 
 Start by reviewing your earlier needs and plans and use the material below to guide your decisions on which services you'll run.
-You may also skip ahead to <<Prepare hardware>> to continue on the path of using the services mario installs by default, then return to this section when you're considering other services to add.
+You may also skip ahead to <<Hardware vorbereiten>> to continue on the path of using the services mario installs by default, then return to this section when you're considering other services to add.
 
 ===== Good for self-hosting
 
@@ -1630,7 +1692,7 @@ The estimates turned out to be accurate enough.
 I could see right quick I'd need something more powerful than the latest available Raspberry Pi.
 See <<Server>> for more lessons learned about resource requirements.
 
-=== Prepare hardware
+=== Hardware vorbereiten
 
 It's called __hard__ware because these problems are _hard_.
 That's fun to say and, in my experience, false.
@@ -3734,7 +3796,7 @@ I hope it serves you well.
 I am humbled and grateful for your support.
 Thank you, thank you, thank you.
 
-== Acknowledgments
+== Danksagungen
 
 Sometimes I feel more like a birthday boy than an author, accepting gifts from so many generous people.
 I truly couldn't have done this alone and I am so, so grateful for you.
