@@ -13,7 +13,7 @@ For quoting, use literal UTF-8 characters for typographic/curved double-quotes, 
 For pauses, use literal UTF-8 en dash (U+2013) surrounded by spaces, e.g. `ins Internet – und wichtige`.
 
 Date/time values are not localized.
-Example: `This book was generated on Tue May 27 11:39:42 AM PDT 2025 with LANG set to de_DE.UTF-8...`.
+Example: `Dieses Buch wurde am Tue May 27 11:39:42 AM PDT 2025 mit LANG auf Einstellung de_DE.UTF-8...`.
 
 IMPORTANT: FIXME - translate the word "Colophon"
 
