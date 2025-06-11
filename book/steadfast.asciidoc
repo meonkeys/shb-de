@@ -124,12 +124,8 @@ toc::[]
 
 == Vorwort
 
-// FIXME (for Adam) fix double quotes (use asciidoctor syntax and check German output)
-// FIXME (for Adam) fix em dashes (use asciidoctor syntax and check German output)
-
-// TODO (for Fiona, later) remove commented English paragraphs
-
-Bevor ich 2006 anfing, im Open-Source-Bereich zu arbeiten, war ich als Community-Organisator in Massachusetts tätig. Ich kannte die Auswirkungen eines Mangels an Informationszugang oder das Fehlen des „richtigen“ Handbuchs sehr gut – beides hindert Menschen daran, mitzubestimmen, wie sie ihr Leben gestalten.
+Bevor ich 2006 anfing, im Open-Source-Bereich zu arbeiten, war ich als Community-Organisator in Massachusetts tätig.
+Ich kannte die Auswirkungen eines Mangels an Informationszugang oder das Fehlen des „richtigen“ Handbuchs sehr gut – beides hindert Menschen daran, mitzubestimmen, wie sie ihr Leben gestalten.
 Als Community-Organisatorin brachte ich den Menschen bei, wie man Lobbyarbeit betreibt.
 Unsere Organisation lud Menschen ein, gemeinsam mit Abgeordneten Gesetze zu entwerfen, die ihren Bedürfnissen gerecht wurden und ihr Leben verbesserten.
 Wir zeigten ihnen, wie man Spenden sammelt, und wie sie sich selbst und ihre Nachbarschaft organisieren können.
@@ -274,7 +270,6 @@ Dieses Buch wurde am *{build_date_time}* mit `LANG` auf Einstellung `*{build_loc
 _{doctitle}_ ist {copyright}.
 Manche Rechte vorbehalten.
 
-
 ==== Vervielfältigung dieses Buches
 
 Dieses Buch steht unter der Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) Lizenz.
@@ -295,19 +290,18 @@ _Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange Sie sich an die 
 ===== Unter folgenden Bedingungen...
 
 Namensnennung::
-  Sie müssen angemessene Urheber- und Rechteangaben machen , einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden. 
+  Sie müssen angemessene Urheber- und Rechteangaben machen, einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden.
   Diese Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade Sie oder Ihre Nutzung besonders.
 Weitergabe unter gleichen Bedingungen::
   Wenn Sie das Material remixen, verändern oder anderweitig direkt darauf aufbauen, dürfen Sie Ihre Beiträge nur unter derselben Lizenz wie das Original verbreiten.
 Keine weiteren Einschränkungen::
   Sie dürfen keine zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen rechtlich irgendetwas untersagen, was die Lizenz erlaubt.
 
-
 ===== Hinweise
 
 Sie müssen sich nicht an diese Lizenz halten hinsichtlich solcher Teile des Materials, die gemeinfrei sind, oder soweit Ihre Nutzungshandlungen durch Ausnahmen und Schranken des Urheberrechts gedeckt sind.
 
-Es werden keine Garantien gegeben und auch keine Gewähr geleistet. 
+Es werden keine Garantien gegeben und auch keine Gewähr geleistet.
 Die Lizenz verschafft Ihnen möglicherweise nicht alle Erlaubnisse, die Sie für die jeweilige Nutzung brauchen. Es können beispielsweise andere Rechte wie Persönlichkeits- und Datenschutzrechte zu beachten sein, die Ihre Nutzung des Materials entsprechend beschränken.
 
 
@@ -398,9 +392,7 @@ echo foo | sed s/foo/bar/
 
 Titel von Codeausschnitten können angeben, wo der Code ausgeführt werden soll.
 Wird kein Ort genannt, wird der oder die beabsichtigten Ausführungsumgebungen im Text erklärt.
-
 In diesem Fall weist "`🚀 server`" darauf hin, dass dieser Bash-Skript-Ausschnitt auf deinem Server ausgeführt werden soll.
-
 
 == Background
 
@@ -421,8 +413,7 @@ I'm most proud of my family, growing https://mifos.org[Mifos], founding https://
 
 I've been running my own services for decades.
 I started with a blog and photo album running on a buddy's machine.
-The feeling of freedom and control was exciting and it complemented my effec­tiveness at work, so I kept on, running 
-many of my own services, although rarely on my own hardware.
+The feeling of freedom and control was exciting and it complemented my effectiveness at work, so I kept on, running many of my own services, although rarely on my own hardware.
 
 Once I had a family, our data storage and capability needs increased.
 A simple network drive and file sync were no longer enough.
