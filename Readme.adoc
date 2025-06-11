@@ -3,7 +3,7 @@
 
 German translation of https://github.com/meonkeys/shb[Steadfast Self-Hosting].
 
-== Translator notes
+== 🗒️ Translator notes
 
 When it comes to L10n and i18n, we get whatever Asciidoctor provides.
 Here are some conventions and caveats for future translators.
@@ -15,14 +15,16 @@ For pauses, use literal UTF-8 en dash (U+2013) surrounded by spaces, e.g. `ins I
 Date/time values are not localized.
 Example: `Dieses Buch wurde am Tue May 27 11:39:42 AM PDT 2025 mit LANG auf Einstellung de_DE.UTF-8...`.
 
-IMPORTANT: FIXME - translate the word "Colophon"
-
 See also:
 
 * https://docs.asciidoctor.org/asciidoctor/latest/localization-support/[localization in Asciidoctor manual]
 * https://github.com/asciidoctor/asciidoctor/issues/1658[asciidoctor/asciidoctor issue #1658: Support internationalization and localisation]
 * https://github.com/asciidoctor/asciidoctor/issues/1670[asciidoctor/asciidoctor issue #1670: Localization for curved quotes]
 * https://github.com/meonkeys/shb/blob/main/issues.adoc[issues in English version], since those apply to translated versions as well
+
+== 📑 to do
+
+* [ ] translate the word "Colophon"
 
 == 📜 Warranty
 
