@@ -617,7 +617,7 @@ In short order I converted the book to https://asciidoc.org[AsciiDoc] and ported
 This simplified the book build and gave me more and better output formats.
 
 TIP: Check out the source code--you're welcome to hack away at it.
-See <<More resources>>.
+See <<Weitere Ressourcen>>.
 
 I tried to stick with off-the-shelf FOSS software as much as possible, with minimal customization.
 This helped me focus on the content while keeping the book simple enough to self-publish.
@@ -1759,7 +1759,7 @@ Next steps:
 
 . Optional: after installing Ubuntu, add two HDDs and format them with ZFS.
 See <<ZFS setup>>.
-. Download mario onto your admin computer (a separate computer from your server). See <<More resources>>.
+. Download mario onto your admin computer (a separate computer from your server). See <<Weitere Ressourcen>>.
 . Run mario on your admin computer to provision your server. See <<_mario>>.
 
 ==== ZFS setup
@@ -1992,7 +1992,7 @@ It's not often easy to remember what you did a year ago and why.
 
 Once your server is online following <<OS install>>, use mario to configure and start services.
 
-Please download the source code (see <<More resources>>).
+Please download the source code (see <<Weitere Ressourcen>>).
 It'll be helpful to have this handy so you can follow along as you read.
 
 mario can be found alongside this book, in the `mario/` folder.
@@ -3404,7 +3404,7 @@ I recommend the mario method instead for its flexible and empowering experience 
 
 See the https://github.com/nextcloud/all-in-one[AIO readme] for more information.
 
-== More resources
+== Weitere Ressourcen
 
 Visit https://selfhostbook.com for all supporting material including source code for this book and mario.
 
