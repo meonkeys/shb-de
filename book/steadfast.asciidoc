@@ -131,36 +131,19 @@ toc::[]
 
 Bevor ich 2006 anfing, im Open-Source-Bereich zu arbeiten, war ich als Community-Organisator in Massachusetts tätig. Ich kannte die Auswirkungen eines Mangels an Informationszugang oder das Fehlen des „richtigen“ Handbuchs sehr gut – beides hindert Menschen daran, mitzubestimmen, wie sie ihr Leben gestalten.
 Als Community-Organisatorin brachte ich den Menschen bei, wie man Lobbyarbeit betreibt.
-Unsere Organisation lud Menschen ein, gemeinsam mit Abgeordneten Gesetze zu entwerfen, die ihren Bedürfnissen gerecht werden und ihr Leben verbessern sollten.
+Unsere Organisation lud Menschen ein, gemeinsam mit Abgeordneten Gesetze zu entwerfen, die ihren Bedürfnissen gerecht wurden und ihr Leben verbesserten.
 Wir zeigten ihnen, wie man Spenden sammelt, und wie sie sich selbst und ihre Nachbarschaft organisieren können.
 Und dann verlagerte sich alles zunehmend ins Internet – und wichtige Diskussionen darüber, wie wir die Schwächsten schützen und die nächste Generation stärken können, begannen, über unsere Computer stattzufinden.
 
-//Before I started working in open source in 2006, I was working as a community organizer in Massachusetts. I was very well acquainted with how a lack of access to information or not having the "`real`" instruction manual keeps people from having a say in how they live their lives. As a community organizer, I taught people to lobby.
-//Our organization invited people to work with legislators to draft laws that would address their needs and make their lives better.
-//We taught people to fundraise and we taught them how to organize themselves and their neighbors.
-//And then everything started to move online and important conversations about how we should protect the vulnerable and empower the next generation started happening through our computers.
+Man kann Fortschritt entweder beklagen oder ihn annehmen.
+Ich entschied mich dafür, ihn anzunehmen. Ich wollte Menschen stärken und ihnen helfen, ein Gefühl von Kontrolle über ihre Computer- und Technologienutzung zu erlangen.
+Ich begann, ganz unterschiedliche Menschen aus der Freie-Software-Bewegung kennenzulernen. Einige von ihnen interessierten sich sehr dafür, wie der Code funktioniert, und andere - wie Adam - waren vor allem daran interessiert, auf welche Weise frei zugänglicher Code Menschen helfen kann.
 
-Man kann den Fortschritt entweder beklagen oder ihn annehmen.
-Ich entschied mich dafür, ihn anzunehmen, und beschloss, Menschen zu stärken und ihnen das Gefühl zu geben, Kontrolle darüber zu haben, wie sie Computer und Technologie nutzen.
-Ich begann, ganz unterschiedliche Menschen aus der Freie-Software-Bewegung kennenzulernen – einige interessierten sich sehr dafür, wie der Code funktioniert, und andere, wie Adam, waren vor allem daran interessiert, wie frei zugänglicher Code Menschen helfen kann.
-
-//You can either lament progress or embrace it.
-//I chose to embrace it and decided that I wanted to empower people and help them feel a sense of control over the way they use computers and technology.
-//I started meeting all kinds of people from the free software movement, some were really interested in the way the code worked and others, like Adam, were the most interested in how freely available code could help people.
-
-Wir lernten uns 2009 bei ((LFNW)) (LinuxFest Northwest) kennen, einer kostenlosen Community-Konferenz in Bellingham, Washington.
-Ein gemeinsamer Freund hatte mir empfohlen, mir bei einem Besuch in Washington anlässlich des LFNW auch einmal Seattle anzusehen – was bedeutete, von Seattle nach Bellingham gemeinsam zu fahren.
+Adam und ich lernten uns 2009 bei ((LFNW)) (LinuxFest Northwest) kennen, einer kostenlosen Community-Konferenz in Bellingham, Washington.
+Ein gemeinsamer Freund hatte mir empfohlen, bei einem Besuch in Washington anlässlich des LFNW auch einmal Seattle zu besuchen – was bedeutete, dass wir gemainsam von Seattle nach Bellingham fuhren.
 Wir trafen uns alle in Seattle zum Mittagessen und machten uns dann gemeinsam auf die zweistündige Autofahrt nach Bellingham.
 Auf diesen Fahrten begannen wir wirklich, über das Fehlen einer Freie-Software-Veranstaltung in Seattle zu sprechen.
 Uns wurde klar, dass es in Seattle Leute brauchte, die ihre Unternehmen zur Sponsorenrolle bewegen konnten (wie Adam und Rob Smith), und jemanden, der sich um Referenten kümmern und die Veranstaltung in der Freie-Software-Community bekannt machen konnte – und so kam es, dass ich (als Bewohnerin von Massachusetts) Mitbegründerin einer jährlichen Veranstaltung in Seattle wurde.
-
-//We met in 2009 at ((LFNW)) (LinuxFest Northwest), a free community conference in Bellingham, Washington.
-//A mutual friend had suggested that I should check out Seattle sometime when visiting Washington state for LFNW, which meant carpooling from Seattle to Bellingham.
-//We'd all meet for lunch in Seattle and then do the two hour car ride up to Bellingham together.
-//Those car rides are when we all really started talking about the lack of a free software event in Seattle.
-//We realized we needed some folks in Seattle who could get their companies to sponsor (like Adam and Rob Smith) and someone who could help get some speakers and promote the event to the free software community, which is how I (as a Massachusetts resident) ended up co-founding an annual Seattle event.
-
-// FIXME (for Fiona) partially translated image caption
 
 [#image-seagl-crew]
 .Die SeaGL crew. Von links nach rechts: Salt, Deb, Patch, (mit french fry), Adam, Rob. Nicht im Bild: Chris, Jesse, Bri, Lisa, and viele andere.
@@ -171,59 +154,30 @@ Keine Keynotes, viele gemeinsam genutzte Mehrfachsteckdosen und ein paar Freund*
 Wir hatten bewusst einen Freitag gewählt, um eventuell Studierende anzusprechen, solange der Campus geöffnet war, und einen Samstag, um den zweiten Tag für diejenigen zugänglich zu machen, deren Arbeitsstellen eine Teilnahme unter der Woche nicht unterstützten.
 Die Veranstaltung war – und ist bis heute – kostenlos und offen für alle.
 
-//((SeaGL)) kicked off in 2013 at Seattle Central College and it was pretty scrappy.
-//No keynotes, lots of shared power strips and a few friends that had gotten roped in to help without a lot of idea of what they'd signed up for.
-//We had chosen a Friday to possibly attract students while the campus was open and a Saturday to make the second day easy for people whose jobs wouldn't support their attendance during the work week.
-//The event was and remains both free to attend and open to everyone.
-
 Adam tauchte bei unserer ersten Veranstaltung mit einem kleinen Stapel „Print-on-Demand“-Hüten und -T-Shirts auf, versehen mit unserem brandneuen Logo (natürlich eine seagull (eng. Möwe).
 Die Auswahl der Vorträge lief nach dem Motto: „Wenn du einen Vortrag halten willst, dann halt einen.“
 Adam hielt großartige Einführungsvorträge zu Git und Hadoop, und ich sprach über politische Rahmenbedingungen und Community-Organizing.
 Wir hatten es noch nicht schriftlich festgehalten, aber SeaGL war von Anfang an dazu bestimmt, eine Konferenz für Anfängerinnen und Expertinnen zu sein, für Programmierer*innen und Politikbegeisterte, und für Vorträge über das gesamte Ökosystem – seine Schwächen, sein Potenzial und die Chancen zur Zusammenarbeit mit anderen Initiativen, die Menschen stärken wollen.
-
-//Adam showed up to our first event with a small pile of "`print on demand`" hats and shirts with our brand new logo (a seagull of course.)
-//Talk selection was, "`if you want to do a talk, do a talk.`" Adam gave some great intro talks on Git and Hadoop and I gave a policy talk and community organizing talk.
-//We hadn't written it down yet, but SeaGL was destined to become a conference for beginners and experts, for coders and policy nerds and for talks about the ecosystem; the flaws, the potential and the opportunities for partnership with other efforts to empower people.
 
 Nach dieser chaotischen ersten Ausgabe wurde uns klar: SeaGL sollte für alle sein – aber ganz besonders für Menschen, die einen Einstieg in Open Source suchten, in einer vielfältigen, teuren und technologiegetriebenen Region wie Seattle.
 Wir wollten, dass SeaGL eine großartige erste Tech-Konferenz für Teilnehmende wird und eine einladende Plattform für angehende Vortragende bietet.
 Später weiteten wir dieses Ziel aus und bemühten uns gezielt darum, weniger bekannte Sprecher*innen zu finden und ihnen ihre erste Keynote-Möglichkeit zu bieten.
 Das gesamte SeaGL-Team (einschließlich Adam, natürlich!) war und ist mit voller Leidenschaft dabei, Neulinge willkommen zu heißen und eine freundliche, sichere und neugierige Atmosphäre zu schaffen.
 
-//After that chaotic first edition, we solidified that we wanted SeaGL to be for everyone, but especially for people who were looking for a way into open source in the diverse, expensive, and tech-heavy Seattle area.
-//We wanted SeaGL to be a great first tech conference for attendees and a welcoming platform for aspiring speakers.
-//We later extended this to working towards finding lesser known speakers and offering them their first keynote opportunity.
-//The whole SeaGL crew (including Adam of course!) have always been passionate about welcoming in newcomers and fastidious about hosting a friendly, safe and curiosity positive environment.
-
 Adam und ich kennen uns schon seit vielen Jahren.
 Ich habe seine Tochter kennengelernt, die die talentierte Illustratorin dieses Buches ist, und auch seine Frau, die klug ist und unermüdlich neugierig darauf, wie Technologie unser Leben beeinflusst.
 Sogar einige der Hühner habe ich getroffen – sie sind tatsächlich blitzsauber, wenn auch leider nicht besonders schlau.
 Zum Glück werden sie äußerst gut versorgt, sodass sie nicht allzu viel Grips brauchen.
-
-//Adam and I have known each other for a long time.
-//I've met his daughter, who is the talented illustrator for this book, and his wife who is also smart and relentlessly curious about how technology affects our lives.
-//I've even met some of the chickens, who are indeed squeaky clean, although sadly not all that smart.
-//Luckily, they are extremely well cared for so they don't need to be too bright.
 
 Kurz gesagt: Adam ist sehr engagiert – sowohl für Freie Software als auch dafür, Menschen zu stärken.
 Außerdem ist er unglaublich nett!
 Wirklich einer der nettesten Menschen, die ich je getroffen habe.
 Wenn dich die Vorstellung anspricht, etwas Herausforderndes mit einem geduldigen und einfühlsamen Mentor anzugehen, und du neugierig auf das Thema Self-Hosting bist, dann ist dieses Buch genau das Richtige für dich.
 
-//In brief, Adam is very dedicated to both free software and empowering people.
-//He is also very, very nice!
-//Like truly one of the nicest people I have ever met.
-//If the idea of doing something hard with a patient and gentle mentor is appealing to you and you are curious about self-hosting, then this is the book for you.
-
 Self-Hosting ist schwierig.
-Ich selbst habe still Mailinglisten verfolgt, die versprachen, es einfach zu machen, habe Vorträge besucht, Videos geschaut und Artikel gelesen – aber wirklich einfach wurde es dadurch nie.
+Ich selbst habe still Mailinglisten verfolgt, die versprachen, es einfach zu machen. Ich habe Vorträge besucht, Videos geschaut und Artikel gelesen – aber wirklich einfach wurde es nie.
 Manche dieser Ressourcen fingen gefühlt erst bei Kapitel 2 an, andere waren voller Kommentare, die einem das Gefühl gaben, dass jede einigermaßen intelligente Person die fehlenden Informationen schon irgendwie selbst finden müsste.
 Zum Glück hat Adam alles aufgenommen, was echte Anfänger*innen brauchen, um loszulegen – und dabei trotzdem viele Wahlmöglichkeiten offengelassen.
-
-//Self-hosting is hard.
-//I've personally lurked on mailing lists that were going to make this easy, gone to talks, watched videos and read articles, but they've never quite managed to make it easy.
-//Some of those resources were starting at chapter 2, others were full of comments that made me feel like any random person of reasonable intelligence should be able to find the information that wasn't included.
-//Fortunately, Adam has included everything that a true beginner needs to get started while giving the reader plenty of options.
 
 Self-Hosting ist aber auch wichtig.
 In der Technik – und in der Welt insgesamt – verändert sich vieles sehr schnell.
@@ -231,26 +185,17 @@ Was man kontrolliert und was nicht, ist ständig im Wandel.
 Self-Hosting gibt dir die Möglichkeit, ein paar Dinge in deiner eigenen Hand zu behalten – deine persönlichen Daten, deine Medien und die Art, wie du mit deiner digitalen Umgebung interagierst.
 Es ermöglicht dir, selbst zu entscheiden, was du brauchst, und selbst zu wählen, wie du diesen Bedarf decken willst – ohne um Erlaubnis zu fragen oder dich an ein Unternehmen zu binden, dem du als Individuum egal bist.
 
-//Self-hosting is also important.
-//Things change quickly in tech and in the wider world.
-//What you control and what you don't is constantly shifting.
-//Self-hosting gives you a chance to keep a few things to yourself and be in charge of your personal data, your media and the way you interact with your computing environment.
-//Self-hosting lets you decide what your needs are and choose how to address them, without asking for permission or getting locked into a contractual relationship with a company that doesn't care about you as an individual.
-
 Du solltest dieses Buch lesen, es mit anderen teilen und vielleicht – wenn du soweit bist – etwas an die Self-Hosting-Community zurückgeben.
-
-//You should read this book, share it with other people, and maybe, once you're ready, contribute back to the self-hosting community.
 
 --
 Willkommen in der Welt des Self-Hosting,
-//Welcome to the world of hosting,
 --
 
 [.big]#Deb Nicholson#
 
 --
-Founder, Seattle GNU/Linux Conference +
-Executive Director, Python Software Foundation
+Gründerin, Seattle GNU/Linux Conference +
+Geschäftsführerin, Python Software Foundation
 --
 
 :sectnums:
@@ -263,20 +208,9 @@ Sie verspricht Privatsphäre, Freiheit und Nachhaltigkeit.
 Datensouveränität zu verwirklichen ist sowohl spannend als auch praktisch – und sie fördert ((prosoziales Verhalten)).
 Self-Hosting (also das Betreiben eines eigenen Servers) ist ein hervorragender Weg zur Datensouveränität.
 
-//(((data sovereignty)))
-//Data sovereignty means having full control of your data.
-//It brings the promise of privacy, liberty, and longevity.
-//Realizing data sovereignty is both fun and practical, and supports ((prosocial behavior)).
-//Self-hosting (running your own server) is an excellent path to data sovereignty.
-
 Dieses Buch wird dir helfen, Self-Hosting effizient zu erlernen und in der Praxis anzuwenden.
 Du wirst Selbstvertrauen im Umgang mit den damit verbundenen Herausforderungen gewinnen und die Vorteile aus erster Hand erleben.
 Die Fähigkeiten, die du dir aneignest, sind sowohl zu Hause, am Arbeitsplatz als auch in deiner Gemeinschaft anwendbar.
-
-//This book will help you efficiently learn and practice self-hosting.
-//You'll gain confidence facing its challenges while enjoying its benefits first-hand.
-//The skills you will build are applicable at home, at work, and in your community.
-
 
 === Willkommen
 
@@ -287,20 +221,10 @@ Das Self-Hosting-Ökosystem ist überfüllt und oft verwirrend – deshalb habe 
 Ich werde dir dabei helfen, deinen eigenen Server bereitzustellen (einzurichten) und einige nützliche Webdienste darauf zu installieren.
 Bring mit, was auch immer du an Sysadmin-Erfahrung hast, ein paar motivierte Nutzer*innen – und den Wunsch, dir echte Self-Hosting-Kompetenz anzueignen.
 
-//I'd like to help you get a server up and running.
-//The self-hosting ecosystem is crowded and confusing, so I've taken care of a number of difficult choices with sensible, tested defaults.
-//I'll help you provision (set up) your own server and a few useful web services.
-//Bring along whatever sysadmin experience you've got, some willing users, and a desire to gain self-hosting competency.
-
 Das Internet ist oft ein unerbittlicher Kampf um Geld und Aufmerksamkeit.
 Unser Verhalten wird endlos getrackt – wir sind das Produkt.
 Der Smog der Überwachung erstickt unsere Freiheit und untergräbt das Vertrauen.
 Wir werden:
-
-//The Internet is often a relentless cash-grab and attention vampire.
-//Our actions are infinitely measured; _we_ are the product.
-//The smog of surveillance stifles our freedom and erodes trust.
-//We will:
 
 * Uns nicht mit billigen ((Cloud))-Diensten zufriedengeben.
 * Ablenkungen reduzieren.
@@ -312,25 +236,10 @@ Wir werden:
 * Uns anpassen und wachsen, wenn sich Software weiterentwickelt – und dabei unsere Daten und Metadaten mitnehmen.
 * Teilen, was und wann es sinnvoll ist – mit den Menschen, denen wir vertrauen.
 
-//* Not settle for cheap ((cloud)) services.
-//* Reduce distractions.
-//* Cherish our attention, time, and freedom.
-//* Breathe the crisp, clear air of reduced surveillance by providing our own alternative to the chilling popular default of trading privacy for convenience.
-//* Save money by efficiently running lots of services on our own hardware with negligible incremental cost.
-//* Do well by our friends, families, and social groups.
-//* Do things we can't do with public services because we have full access to all our own raw data.
-//* Adapt and grow as software evolves, taking our data and metadata along with us.
-//* Share what and when it makes sense to share with whom we trust.
-
 Dies ist das Buch, das ich mir gewünscht hätte, als ich versucht habe, meinen Kindern ein sicheres Online-Erlebnis zu ermöglichen.
 
 Neue Self-Hosterinnen können dieses Buch als Einstieg nutzen.
 Erfahrene Self-Hosterinnen können meine Entscheidungen mit ihren eigenen vergleichen.
-
-//This is the book I wish I'd had when I was struggling to provide a safe online experience for my kids.
-
-//New self-hosters can use this book to get started.
-//Experienced self-hosters can compare my choices to theirs.
 
 ==== Voraussetzungen
 
@@ -341,13 +250,6 @@ Falls dir eines dieser Konzepte nicht vertraut ist, hilft dir ein kurzer Abstech
 Ich empfehle das Hosting auf Bare Metal (greifbarer, lokal betriebener Computer-Hardware), was einige Anforderungen an den physischen Standort deines Servers mit sich bringt.
 Mehr zu den Details und Anforderungen von Bare-Metal-Hosting findest du im Abschnitt <<Hardware vorbereiten>>.
 
-//To get the most out of this book, the sysadmin experience you bring along should include the ability to configure your ((router)) and ((LAN)) (local area network), install Linux on a computer (hereafter referred to as your _server_), connect to your server with ((SSH)) (secure shell), edit text files and run commands on your server, and transfer files to and from your server.
-
-//If you're unfamiliar with any of these concepts, a quick trip to your favorite search engine or local user group should yield enough pointers to get started.
-
-//I recommend hosting on ((bare metal)) (tangible nearby computer hardware), and this comes with some prerequisites for the physical space where your server resides.
-//Read more about the ins and outs of bare metal in <<Prepare hardware>>.
-
 Zum Schluss noch einige bewährte Vorgehensweisen, die du beim Lesen im Hinterkopf behalten solltest:
 
 Dokumentiere alles, was du tust – selbst wenn es nur für dein zukünftiges Ich ist.
@@ -356,14 +258,6 @@ Bleib fokussiert, mach Pausen, sei geduldig und achte auf deinen Körper.
 Bitte um Hilfe und fordere aktiv Rückmeldungen ein.
 Höre auf deine Nutzer*innen, sammle Daten und passe dich entsprechend an.
 
-//Finally, some best practices to keep in mind as you read along:
-
-//Document everything you do, if only for your future self.
-//Recruit and train help, leveraging said documentation to share knowledge.
-//Focus, take breaks, be patient, and take care of your body.
-//Ask for help and ask for feedback.
-//Listen to users, gather data, and adapt accordingly.
-
 === Unterstütze den Author
 
 Ich habe dieses Buch aus nach jahrelanger Recherche mit eigenen Reseourcen  viel Unterstützung großartiger Menschen geschrieben.
@@ -371,30 +265,19 @@ Siehe <<Danksagungen>> (gegen Ende des Buches).
 
 Bitte https://selfhostbook.com/buy/[kaufe ein Exemplar] für dich selbst oder für jemand anderen – besonders, wenn du möchtest, dass ich in Zukunft weitere Bücher schreibe.
 
-//I wrote this book with my own resources after years of research with lots of help from awesome people.
-//See <<Acknowledgments>> (near the end of the book).
-
-//Please https://selfhostbook.com/buy/[buy a copy] for yourself or someone else, especially if you'd like me to write more books in the future.
-
-=== Version
+=== Textversion
 
 Dieses Buch wurde am *{build_date_time}* mit `LANG` auf Einstellung `*{build_locale_lang}*` von der Quelle `{docname}{docfilesuffix}` mit Stand `{build_git_commit}`, Zweig `{build_git_branch}`, Makierung `{build_git_tag}`, mit *{build_os_release}* generiert.
 
-//This book was generated on *{build_date_time}* with `LANG` set to `*{build_locale_lang}*` from source `{docname}{docfilesuffix}` at commit `{build_git_commit}`, branch `{build_git_branch}`, tag `{build_git_tag}`, on *{build_os_release}*.
-
 === Urheberrecht und Lizenz
 
-_{doctitle}_ ist {copyright} geschuetzt.
+_{doctitle}_ ist {copyright}.
 Manche Rechte vorbehalten.
 
-//_{doctitle}_ is {copyright}.
-//Some rights reserved.
 
 ==== Vervielfältigung dieses Buches
 
 Dieses Buch steht unter der Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) Lizenz.
-
-//This book is licensed under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License.
 
 image::cc-by-sa.svg[align="center"]
 
@@ -408,11 +291,6 @@ Bearbeiten::
 _Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange Sie sich an die Lizenzbedingungen halten._
 
 //Share::
-//  copy and redistribute the material in any medium or format
-//Adapt::
-//  remix, transform, and build upon the material
-
-//_The licensor cannot revoke these freedoms as long as you follow the license terms._
 
 ===== Unter folgenden Bedingungen...
 
@@ -424,13 +302,6 @@ Weitergabe unter gleichen Bedingungen::
 Keine weiteren Einschränkungen::
   Sie dürfen keine zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen rechtlich irgendetwas untersagen, was die Lizenz erlaubt.
 
-//Attribution::
-//  You must give appropriate credit, provide a link to the license, and indicate if changes were made.
-//You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-//ShareAlike::
-//  If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
-//No additional restrictions::
-//  You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
 ===== Hinweise
 
@@ -439,51 +310,47 @@ Sie müssen sich nicht an diese Lizenz halten hinsichtlich solcher Teile des Mat
 Es werden keine Garantien gegeben und auch keine Gewähr geleistet. 
 Die Lizenz verschafft Ihnen möglicherweise nicht alle Erlaubnisse, die Sie für die jeweilige Nutzung brauchen. Es können beispielsweise andere Rechte wie Persönlichkeits- und Datenschutzrechte zu beachten sein, die Ihre Nutzung des Materials entsprechend beschränken.
 
-//You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
 
-//No warranties are given.
-//The license may not give you all of the permissions necessary for your intended use.
-//For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
+==== Kopiere auch den Code dieses Buches
 
-==== Copy this book's code, too
+Siehe <<Weitere Ressourcen>> für den Source Code.
+Der source code umfasst zwei Originalwerke, die du kopieren, verändern und weitergeben darfst.
+Zum einen das Buch selbst, inklusive des Codes zur Erstellung schön gesetzter Versionen.
+Zum anderen ein Lernwerkzeug namens mario (siehe <<_mario>>).
 
-See <<More resources>> for how to get the source code.
-It includes two original works for you to copy, modify, and share.
-First, the book itself, along with code to generate beautifully typeset versions.
-Second, a learning tool called mario (see <<_mario>>).
+Die Lizenz für sämtlichen originalen Source Code im Zusammenhang mit diesem Buch ist die GNU AGPL (Affero General Public License), veröffentlicht von der Free Software Foundation, entweder in Version 3 der Lizenz oder (nach deiner Wahl) jeder späteren Version.
+Eine Kopie der AGPL ist in `mario/COPYING` enthalten.
 
-The license for all original source code related to this book is the GNU AGPL (Affero General Public License) as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-A copy of the AGPL is included in `mario/COPYING`.
 
-=== Disclaimer
+=== Haftungsausschluss
 
-I offer no warranty and no guarantee.
-Buying or reading this text is not an agreement for support.
+Ich übernehme keine Gewährleistung und keine Garantie.
+Der Kauf oder das Lesen dieses Textes stellt keine Vereinbarung über Support dar.
 
-While every precaution has been taken in the preparation of this book, I assume no responsibility for errors or omissions or for damages resulting from the use of its code or contents.
+Obwohl bei der Erstellung dieses Buches mit größter Sorgfalt vorgegangen wurde, übernehme ich keine Verantwortung für Fehler oder Auslassungen sowie keine Haftung für Schäden, die aus der Nutzung des Codes oder der Inhalte entstehen.
 
-I am not professionally affiliated with the products or paid for by the companies mentioned in this book.
-Their copyrights, trademarks and intellectual property are their own.
+Ich bin nicht beruflich mit den im Buch genannten Produkten verbunden und werde von den genannten Unternehmen nicht bezahlt.
+Deren Urheberrechte, Marken und geistiges Eigentum gehören ihnen selbst.
 
-My opinions are my own.
+Alle geäußerten Meinungen sind meine eigenen.
 
-I include direct references to many products and companies and add my specific, hard-won lessons on their comparative strengths and weaknesses.
-My intent is to educate and inform.
+Ich beziehe mich in diesem Buch direkt auf viele Produkte und Unternehmen und teile meine konkreten, mühsam gewonnenen Erkenntnisse über ihre jeweiligen Stärken und Schwächen.
+Mein Ziel ist es, aufzuklären und zu informieren.
 
-I will take shortcuts.
-I will not seek to deeply and exhaustively explore each topic.
-I want you to get to the good stuff quickly, then decide if, when, and where you want to dive deeper.
+Ich werde Abkürzungen nehmen.
+Ich beabsichtige nicht, jedes Thema vollständig und erschöpfend zu behandeln.
+Ich möchte, dass du schnell zum Wesentlichen kommst – und dann selbst entscheidest, ob, wann und wo du tiefer einsteigen möchtest.
 
-If you find contradictions to these statements, please let me know.
+Wenn du Widersprüche zu diesen Aussagen findest, gib mir bitte Bescheid.
 
-I'm human and error-prone.
-I'll make it easy to contact me about missing or incorrect information and to improve it yourself if you choose.
-Please do!
-See <<More resources>> for contact information and how to share improvements.
+Ich bin ein Mensch und mache Fehler.
+Ich mache es dir leicht, Kontakt mit mir aufzunehmen, fehlende oder fehlerhafte Informationen zu melden – und sie bei Interesse auch selbst zu verbessern.
+Bitte tu das!
+Siehe <<Weitere Ressourcen>> für Kontaktinformationen und Hinweise, wie du Verbesserungen teilen kannst.
 
-=== Style
+=== Schreibstil
 
-Text formatting:
+Textformattierung:
 
 [cols="2,3",id=style]
 .Typographical conventions
@@ -502,36 +369,38 @@ Replace `.example.com` with your actual domain name.
 |<<System design>> |Cross-reference to another section or chapter.
 |===
 
-Admonitions:
+Hinweise:
 
-NOTE: Admonitions like this note draw your attention to auxiliary information.
+NOTE: Hilfreiche oder ergänzende Informationen.
 
-TIP: Here's a tip,
+TIP: Hier ist ein praktischer Tip!
 
-IMPORTANT: something of import,
+IMPORTANT: Etwas von besonderer Bedeutung.
 
-CAUTION: a cautionary message, and
+CAUTION: Eine vorsorgliche Warnung.
 
-WARNING: a specific warning.
+WARNING: Eine konkrete Warnung vor möglichen Problemen.
 
-Sidebars:
+Seitenleisten:
 
 ****
-Stand-alone or supplemental content may be visually separated using a sidebar like this one.
-Sidebars may or may not have titles.
+Eigenständige oder ergänzende Inhalte werden visuell abgesetzt in einer Seitenleiste wie dieser dargestellt.
+Seitenleisten können mit oder ohne Titel erscheinen.
 ****
 
-Code snippets:
+Codeausschnitte:
 
-.Example code snippet (🚀 server)
+.Beispiel-Codeausschnitt (🚀 server)
 [source#example-code-snippet,bash]
 ----
 echo foo | sed s/foo/bar/
 ----
 
-Snippet titles may indicate where the code should be be run.
-If the location is omitted, one or more intended runtime environments will be explained in context.
-"`🚀 server`" indicates this particular example Bash script snippet is intended to be run on your server.
+Titel von Codeausschnitten können angeben, wo der Code ausgeführt werden soll.
+Wird kein Ort genannt, wird der oder die beabsichtigten Ausführungsumgebungen im Text erklärt.
+
+In diesem Fall weist "`🚀 server`" darauf hin, dass dieser Bash-Skript-Ausschnitt auf deinem Server ausgeführt werden soll.
+
 
 == Background
 
