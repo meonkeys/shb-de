@@ -394,274 +394,281 @@ Titel von Codeausschnitten können angeben, wo der Code ausgeführt werden soll.
 Wird kein Ort genannt, wird der oder die beabsichtigten Ausführungsumgebungen im Text erklärt.
 In diesem Fall weist "`🚀 server`" darauf hin, dass dieser Bash-Skript-Ausschnitt auf deinem Server ausgeführt werden soll.
 
-== Background
+== Hintergrund
 
-You might be thinking, "`this looks like a lot of background!`"
-And you'd be right.
+Du denkst vielleicht: „Das ist aber ganz schön viel Hintergrundinformation!“
+Und du hast recht.
 
-I go deep into background here because of something I found while giving talks about self-hosting: people know how to learn and discern, they wish for meaningful motivation to commit to learning.
+Ich gehe hier absichtlich so ausführlich auf den Hintergrund ein, weil ich beim Halten von Vorträgen über Self-Hosting etwas Wichtiges festgestellt habe:
+Menschen wissen, wie man lernt und unterscheidet – aber sie wünschen sich eine sinnvolle Motivation, sich wirklich auf das Lernen einzulassen.
 
-I hope you find that here.
+Ich hoffe, dass du genau das hier findest.
 
-=== Who am I?
+=== Wer bin ich?
 
-I'm a dad, tech entrepreneur, and FOSS (free and open source software) enthusiast.
-I love to parent, care, laugh, sing, listen, code, build, produce, debug, architect, debug, lead, manage, debug some more, lecture, and write.
-I'm good at administering and securing systems and processes while ensuring privacy, compliance, and reliability.
+Ich bin Vater, Tech-Unternehmer und begeisterter Verfechter von FOSS (freier und quelloffener Software).
+Ich liebe es, zu erziehen, zu sorgen, zu lachen, zu singen, zuzuhören, zu programmieren, zu bauen, zu gestalten, zu debuggen, zu entwerfen, zu führen, zu managen – und noch mehr zu debuggen, zu lehren und zu schreiben.
 
-I'm most proud of my family, growing https://mifos.org[Mifos], founding https://seagl.org[SeaGL], selling https://csats.com[C-SATS], and writing this book.
+Ich bin gut darin, Systeme und Prozesse zu verwalten und abzusichern, während ich gleichzeitig Datenschutz, Compliance und Zuverlässigkeit sicherstelle.
 
-I've been running my own services for decades.
-I started with a blog and photo album running on a buddy's machine.
-The feeling of freedom and control was exciting and it complemented my effectiveness at work, so I kept on, running many of my own services, although rarely on my own hardware.
+Am meisten stolz bin ich auf meine Familie, auf den Ausbau von https://mifos.org[Mifos], die Mitbegründung von https://seagl.org[SeaGL], den Verkauf von https://csats.com[C-SATS], und Buch geschrieben zu haben.
 
-Once I had a family, our data storage and capability needs increased.
-A simple network drive and file sync were no longer enough.
-We were all stuck at home and online at the start of the pandemic, and I was wary of companies swooping in to capitalize on our captivity.
-I started dabbling more with self-hosting at home and found it suprisingly easy, useful, and fun.
-I wanted more services for managing our data and I enjoyed the autonomy of our own bare metal.
+Ich betreibe seit Jahrzehnten meine eigenen Dienste.
+Angefangen hat es mit einem Blog und einem Fotoalbum, die auf dem Rechner eines Freundes liefen.
+Das Gefühl von Freiheit und Kontrolle war elektrisierend – und es unterstützte gleichzeitig meine Effektivität bei der Arbeit.
+Deshalb habe ich weitergemacht und viele meiner Dienste selbst betrieben – wenn auch selten auf eigener Hardware.
 
-Around the same time, I decided to de-Google (stop using Google).
-The family needs and my de-Googling coincided well.
-Self-hosting was a serendipitous fit.
-Just _trying_ to de-Google was a fascinating and fulfilling journey, punctuated with many self-hosting experiments.
+Als ich eine Familie hatte, wuchsen unsere Anforderungen an Datenspeicherung und Funktionalität.
+Ein einfaches Netzlaufwerk und Datei-Synchronisation reichten nicht mehr aus.
+Zu Beginn der Pandemie saßen wir alle zuhause fest – und online.
+Ich wurde skeptisch gegenüber Unternehmen, die aus dieser neuen Abhängigkeit Kapital schlagen wollten.
+Also begann ich, mehr zu Hause selbst zu hosten – und stellte fest, wie überraschend einfach, nützlich und unterhaltsam das sein kann.
 
-=== Why did I write this book?
+Etwa zur gleichen Zeit entschloss ich mich, mich von Google zu lösen (De-Googling).
+Der Familienbedarf und mein Wunsch, Google zu meiden, passten hervorragend zusammen.
+Self-Hosting war ein glücklicher Zufallstreffer.
+Allein der Versuch, Google hinter sich zu lassen, war eine faszinierende und erfüllende Reise – begleitet von zahlreichen Self-Hosting-Experimenten.
 
-I wrote this book to promote ((data sovereignty)) as a prosocial behavior.
-This is easier to achieve than ever before with self-hosting, and I wanted to share that in book form.
-Existing books lack a good, fast, and cheap technique for self-hosting on ((bare metal)).
-I figured one out and I think you'll love it.
-It works fine if you run your server in the cloud too, it just costs a lot more (see <<Server>>).
+=== Warum habe ich dieses Buch geschrieben?
 
-Also, learning is fun.
-I learn when I write.
-While learning how my phone works, it struck me how important it is to understand _how "`the cloud`" works_, since the modern phone experience relies heavily on services and data in public clouds.
-In trying to make my phone "`my own`" (do what I want to help me live my best life), I was inspired to host my own data in my own cloud.
+Ich habe dieses Buch geschrieben, um ((Datensouveränität)) als prosoziales Verhalten zu fördern.
+Dank Self-Hosting ist das heute einfacher denn je – und ich wollte dieses Wissen in Buchform weitergeben.
 
-Also, most tech folks I know self-host _something_, likely something I've never heard of.
-There's always another self-hosted service to try out, learn about, improve, and share.
+Die bisherigen Bücher zu diesem Thema bieten keine gute, schnelle und günstige Methode, um Self-Hosting auf eigener Hardware ((Bare Metal)) umzusetzen.
+Ich habe eine solche Methode gefunden – und ich glaube, du wirst sie lieben.
+Sie funktioniert übrigens auch in der Cloud, kostet dort aber deutlich mehr (siehe <<Server>>).
 
-Also, I wanted to write the book I wish _I_ had when I started self-hosting.
+Außerdem: Lernen macht Spaß.
+Ich lerne beim Schreiben.
+Als ich erforschte, wie mein Handy eigentlich funktioniert, wurde mir bewusst, wie wichtig es ist, zu verstehen, wie „die Cloud“ funktioniert – denn moderne Smartphones basieren stark auf Cloud-Diensten und -Daten.
+Beim Versuch, mein Handy wirklich „mein eigenes“ zu machen (also so, dass es mir hilft, mein bestes Leben zu leben), kam mir die Idee, meine Daten in meiner eigenen Cloud zu hosten.
 
-Also, so there's a _book_ about this.
-There are countless videos, articles, and chunks of code online for doing everything in this book and more.
-Many are excellent.
-This book is yours to keep, hold, and refer back to as you try, test, and learn.
+Fast alle Techies, die ich kenne, hosten irgendetwas selbst – oft etwas, das ich noch nie gehört habe.
+Es gibt immer einen neuen Self-Hosting-Dienst zum Ausprobieren, Lernen, Optimieren und Weiterempfehlen.
 
-Also, there's a stark gap between useful individual computers and useful ((cloud)) services.
-It's easy to pay for cloud, but the true price is obscured: surveillance, lock-in, inflexibility.
+Ich wollte außerdem das Buch schreiben, das ich mir gewünscht hätte, als ich mit Self-Hosting anfing.
 
-Also, I can picture a future where owning a truly privacy-respecting home data appliance becomes as commonplace as owning a refrigerator.
-Creating this appliance has been attempted many times and it'll be attempted again.
-Until it succeeds and sticks, self-hosting--setting up a server and services for yourself and others--is a great way to go.
+Und: Es sollte einfach ein Buch darüber geben.
+Online findest du unzählige Videos, Artikel und Code-Schnipsel, die alles in diesem Buch und mehr abdecken.
+Viele davon sind großartig.
+Aber dieses Buch gehört dir – zum Nachschlagen, Ausprobieren und Lernen.
 
-=== What's with the title?
+Und: Es gibt eine auffällige Lücke zwischen einem nützlichen Einzelrechner und nützlichen ((Cloud-Diensten)).
+Cloud ist leicht zu bezahlen – aber die wahren Kosten sind verborgen: Überwachung, Abhängigkeit, Inflexibilität.
+
+Ich kann mir gut vorstellen, dass wir in Zukunft Datengeräte für den privaten Haushalt besitzen werden, die Privatsphäre wirklich respektieren – so selbstverständlich wie heute ein Kühlschrank.
+Solche Geräte wurden schon oft versucht und es wird immer wieder neue Versuche geben.
+Bis sich ein solches Gerät durchsetzt, bleibt Self-Hosting – also das Einrichten eines eigenen Servers und eigener Dienste – eine hervorragende Lösung.
+
+
+=== Warum dieser Titel?
 
 ==== Steadfast Self-Hosting
 
-I like the word _steadfast_.
-It reminds me of reliable things and people.
+Ich mag das Wort _steadfast_ (_standhaft_).
+Es erinnert mich an verlässliche Dinge und Menschen.
 
-(((data sovereignty)))
-The key to reliable self-hosting is data sovereignty.
-Software will change, services will change, you will change and the world will change.
-You've got to have control of your data if you want it to reliably serve you well through all that change.
+(((Datensouveränität)))
+Der Schlüssel zu zuverlässigem Self-Hosting ist Datensouveränität.
+Software wird sich ändern, Dienste werden sich ändern, du wirst dich ändern, und die Welt wird sich ändern.
+Wenn deine Daten dir durch all diese Veränderungen zuverlässig dienen sollen, musst du die Kontrolle über sie haben.
 
-It does make a difference to have your own copy.
-You might lose access to something you "`bought`" because you were actually renting it.
-It might even change right under your nose.
-More on this:
+Es macht tatsächlich einen Unterschied, eine eigene Kopie zu besitzen.
+Du könntest den Zugriff auf etwas verlieren, das du vermeintlich „gekauft“ hast – weil du es in Wahrheit nur gemietet hast.
+Es könnte sich sogar direkt vor deinen Augen verändern.
+Mehr dazu:
 
 * https://kotaku.com/sony-ps4-ps5-discovery-mythbusters-tv-1851066164[PlayStation To Delete A Ton Of TV Shows Users Already Paid For] by Ethan Gach
 * https://defectivebydesign.org/what_is_drm[What is DRM?] by the Free Software Foundation
 * https://nytimes.com/2023/04/04/arts/dahl-christie-stine-kindle-edited.html[It's Their Content, You're Just Licensing it] by Reggie Ugwu
 
 (((source of truth)))
-Saving copies of data someone else is hosting for you is fine.
-Self-hosting goes a step beyond, giving you far-reaching control of how your data are used and shared.
-You'll gain agency over authoritative copies of your files, allowing you to know and control your source of truth.
-All this with reliability and flexibility within a reasonable budget.
+Das Speichern von Kopien von Daten, die jemand anderes für dich hostet, ist in Ordnung.
+Self-Hosting geht einen Schritt weiter und verschafft dir weitreichende Kontrolle darüber, wie deine Daten verwendet und geteilt werden.
+Du erhältst die Kontrolle über autoritative Kopien deiner Dateien – du weißt also, was die "Wahrheit" ist und kannst sie bestimmen.
+Und das alles mit Zuverlässigkeit und Flexibilität zu einem vertretbaren Budget.
 
-Self-hosting means providing computing services by and for individuals, families, and hobbyists in ((SOHO)) (small office / home office) environments.
+Self-Hosting bedeutet, Computerdienste von und für Einzelpersonen, Familien und Hobby-Anwender in SOHO-Umgebungen (Small Office / Home Office) bereitzustellen.
 
-"`Small community hosting`" is perhaps a more accurate and appropriate term here.
-You're reading the right book to host services for a small community.
+Vielleicht ist „Hosting für kleine Gemeinschaften“ sogar der treffendere Begriff.
+Du liest auf jeden Fall das richtige Buch, wenn du Dienste für eine kleine Gemeinschaft bereitstellen möchtest.
 
-Last, a note on terminology.
-When it comes to compilers in computer science (and perhaps also other areas in tech), "`self-hosting`" refers to the wonderfully satisfying milestone when a programming language is able to compile itself.
-I apologize to my friends in related disciplines for blatantly overloading the term "`self-hosting`" to mean small community hosting.
-You had it first, I'm borrowing it and hoping our contextual lane lines will sufficiently prevent collisions.
+Zum Schluss noch ein Hinweis zur Terminologie:
+In der Informatik – insbesondere bei Compilern – bezeichnet „Self-Hosting“ einen besonders schönen Meilenstein: nämlich wenn eine Programmiersprache sich selbst kompilieren kann.
+An meine Freunde in den angrenzenden Disziplinen:
+Es tut mir leid, dass ich den Begriff „Self-Hosting“ hier so frei überlade, um „Hosting für kleine Gemeinschaften“ zu meinen.
+Ihr hattet ihn zuerst – ich leihe ihn mir nur aus und hoffe, dass unsere kontextuellen Fahrbahnmarkierungen Zusammenstöße verhindern.
 
 ==== Rapid-Rise Personal Cloud
 
-_Rapid_ is there to get you excited to jump right in and learn.
-_Rapid_ does not mean _reckless_!
-I'm a strong advocate of a thoughtful and robust approach to self-hosting.
-When you encounter a challenge, slow down to learn faster.
-Once you understand a concept, practice it.
-Fail fast and often, with rapid iterations trending towards perfection.
+_Rapid_ ist dazu da, dich zu motivieren, sofort einzusteigen und zu lernen
+_Rapid_ bedeutet nicht gleich _rücksichtslos_!
+Ich setze mich entschieden für einen durchdachten und robusten Ansatz beim Self-Hosting ein.
+Wenn du auf eine Herausforderung stößt, nimm dir Zeit – so lernst du am Ende schneller.
+Sobald du ein Konzept verstanden hast, übe es.
+Scheitere früh und oft – mit schnellen Iterationen auf dem Weg zur Perfektion.
 
-_Rapid-rise_ is something you might find on a package of baker's yeast, and I love fresh-baked bread.
-If your server is a loaf of bread, this book is your rapid-rise yeast.
+_Rapid-rise_ steht oft auf einer Packung Backhefe – und ich liebe frisch gebackenes Brot.
+Wenn dein Server also ein Laib Brot ist, dann ist dieses Buch deine Schnellhefe.
 
 [#image-bread-server]
-.Server in the shape of a loaf of bread.
+.Server in der Form eines Brots.
 image::bread-server.png[align="center",scaledwidth=80%]
 
-_Cloud_ implies scalable and automatable.
-_Personal_ scopes that scalability to what's reasonable for a small group.
-A ((bare metal)) server can scale (to a degree) within its box.
-It can scale automatically by using more or less power according to ((compute)) demand, and manually when you upgrade hardware components (say, adding another hard drive).
+_Cloud_ bedeutet, dass es skalierbar und automatisierbar ist.
+_Personal_ begrenzt diese Skalierbarkeit auf ein sinnvolles Maß für eine kleine Gruppe.“
+Ein ((Bare Metal)) Server kann innerhalb seiner eigenen Hardware bis zu einem gewissen Maß skalieren
+Es kann sich automatisch anpassen, indem es je nach ((Rechen-))Bedarf mehr oder weniger Leistung nutzt, und manuell, wenn man Hardware-Komponenten aufrüstet (zum Beispiel durch Hinzufügen einer weiteren Festplatte).”
 
-I'll also admit my inner child enjoys multiple meanings of the phrase _Personal Cloud_.
+Ich gebe zu, mein inneres Kind freut sich über die Mehrdeutigkeiten des Begriffs _Personal Cloud_.
 
-=== Who is this for?
+=== Für wen ist dieses Buch??
 
-This book is for people who are kind to others, brave in trying new things, curious about the possibilities of self-hosting, and either uncertain how to do so or eager to improve their existing homelab (self-hosting setup).
+Dieses Buch ist für Menschen, die freundlich zu anderen sind, mutig darin, Neues auszuprobieren, neugierig auf die Möglichkeiten des Self-Hostings und entweder unsicher, wie sie es angehen sollen, oder eifrig, ihr bestehendes Homelab (Self-Hosting-Setup) zu verbessern.
 
-This book is for people who want to know where their data live, and to be able to work all kinds of magic with it.
-It's a "`from scratch`" or "`the hard way`" approach, and it keeps the doors wide open to many possibilities with a principled self-hosting technique.
-I'll sometimes recount what worked for me rather than specifically recommend what you should do.
+Dieses Buch ist für Menschen, die wissen wollen, wo ihre Daten leben, und in der Lage sein möchten, allerlei Magie damit zu vollbringen.
+Es ist ein „von Grund auf“ oder „der harte Weg“-Ansatz und hält die Türen weit offen für viele Möglichkeiten mit einer prinzipientreuen Self-Hosting-Technik.
+Manchmal berichte ich, was für mich funktioniert hat, anstatt konkret zu empfehlen, was du tun solltest.
 
-This book is for people curious about or already biased towards FOSS.
-And--as much as I'll blather on about FOSS--I'm not here to judge.
-I'm here to _grow_, primarily by sharing and learning.
+Dieses Buch ist für Menschen, die neugierig auf FOSS sind oder diesem bereits zugeneigt sind.
+Und – so viel ich auch über FOSS reden werde – ich bin hier nicht, um zu urteilen.
+Ich bin hier, um zu wachsen, vor allem durch Teilen und Lernen.
 
-This book is for students, especially tech-savvy or tech-adjacent students active in clubs and teams.
+Dieses Buch ist für Studierende, insbesondere technikaffine oder techniknahe Studierende, die in Clubs und Teams aktiv sind.
 
-This book provides motivation for self-hosting with an excellent process for learning same.
-Its version-specific material is expected to fall out of date.
-Its motivation and process for learning will become more relevant as time passes.
+Dieses Buch bietet Motivation für Self-Hosting und einen exzellenten Lernprozess dafür.
+Seine versionsspezifischen Inhalte werden voraussichtlich mit der Zeit veralten.
+Seine Motivation und sein Lernprozess werden mit der Zeit immer relevanter.
 
-This book is for those trying to live more for others and less for themselves; selfishly enjoying the act of being selfless.
-Leaders, parents/guardians, members of a collective or a handful of friends.
-People who want to self host, who _also_ love others and doing other things besides systems administration.
-I'll save you some precious time for those other things while making the sysadmin bits fun.
+Dieses Buch ist für diejenigen, die versuchen, mehr für andere und weniger für sich selbst zu leben; die selbstlos sind und dabei das „selbstlos sein“ genießen.
+Führungskräfte, Eltern/Erziehungsberechtigte, Mitglieder einer Gemeinschaft oder einer kleinen Gruppe von Freunden.
+Menschen, die Self-Hosting betreiben wollen, die auch andere lieben und neben der Systemadministration noch andere Dinge tun möchten.
+Ich werde dir wertvolle Zeit für diese anderen Dinge sparen, während ich die Sysadmin-Anteile unterhaltsam gestalte.
 
-Similar to "`small community hosting`", _Small Group Cloud_ would be more accurate title words than _Personal Cloud_.
-"`Small group`" is a great target size for what you'll create.
-I wouldn't bother doing all this just for yourself.
+Ähnlich wie bei „small community hosting“ wären _Small Group Cloud_ passendere Bezeichnungen als _Personal Cloud_.
+_Small group_ (Kleingruppe) ist eine großartige Zielgröße für das, was du erschaffen wirst.
+Ich würde mir die Mühe nicht machen, das alles nur für mich selbst zu tun.
 
-This book is for people into (or hoping to get into) self-hosting.
-It is geared towards useful, secure, and quick setup of a single bare metal server with many services.
+Dieses Buch richtet sich an Menschen, die sich für Self-Hosting interessieren oder daran interessiert sind, damit zu beginnen.
+Es ist darauf ausgelegt, die nützliche, sichere und schnelle Einrichtung eines einzelnen Bare-Metal-Servers mit vielen Diensten zu unterstützen.
 
-This book is for people who want to _de-Google_, _de-iTunes_, _de-OneDrive_, _de-Dropbox_, _de-Whatever_.
+Dieses Buch ist für Menschen, die _de-Google_, _de-iTunes_, _de-OneDrive_, _de-Dropbox_, _de-Wasauchimmer_ machen möchten.
 
-=== What is this book _not_?
+=== Was ist dieses Buch _nicht_?
 
-This is not a comprehensive guide to self-hosting.
-I won't attempt to enumerate the endless ways to mix and match hardware, operating systems, isolation techniques, and services.
-This book is for small scale.
-Look elsewhere for:
+Dies ist kein umfassender Leitfaden zum Thema Self-Hosting.
+Ich werde nicht versuchen, die endlosen Möglichkeiten aufzulisten, wie man Hardware, Betriebssysteme, Isolierungstechniken und Dienste kombinieren kann.
+Dieses Buch richtet sich an den kleinen Maßstab.
+Suchen Sie anderswo nach:
 
-* high availability
-* enterprise security
-* N + 1 redundancy
-* managing many machines
-* clustering
-* single sign-on
-* advanced monitoring and metrics centralization
-* regulatory compliance
-* intrusion/threat detection/prevention
-* in-depth security hardening
-* running your own container registry
-* 100% offline / off-the-grid self-hosting
+* Hochverfügbarkeit
+* Enterprise-Sicherheit
+* N+1-Redundanz
+* Verwaltung vieler Rechner
+* Clustering
+* Single Sign-On
+* Erweiterte Überwachung und Zentralisierung von Metriken
+* Einhaltung gesetzlicher Vorschriften
+* Erkennung und Abwehr von Eindringlingen/Bedrohungen
+* Tiefgehende Sicherheitshärtung
+* Betrieb eines eigenen Container-Registrierung
+* 100 % Offline- / autarkes Self-Hosting
 
-There are some topics like these I'll skip or cover only briefly.
-Any one of these topics is an entire industry, another piece of hardware, a setting on your home router, a potential career, none or all of the above, and otherwise well worth further consideration.
-You can and should be aware of them.
-If you feel I've completely omitted proper detail about something critically relevant to my method of self-hosting, please let me know.
+TEs gibt einige Themen wie diese, die ich überspringen oder nur kurz behandeln werde.
+Jedes einzelne dieser Themen ist eine ganze Branche, ein weiteres Stück Hardware, eine Einstellung an deinem Heimrouter, eine potenzielle Karriere, keines oder alles davon – und auf jeden Fall eine Überlegung wert.
+Du kannst und solltest dir ihrer bewusst sein.
+Falls du das Gefühl hast, dass ich etwas, das für meine Methode des Self-Hostings kritisch relevant ist, komplett ausgelassen habe, lass es mich bitte wissen.
 
-This book is not for the heavily-resourced already-done-thats.
-If you have $50k and unlimited time to spend on your concrete bunker homelab... well then, may I have a tour?
-I would _love_ to see that.
-If you are more curious than certain you may still enjoy learning from my choices.
+Dieses Buch richtet sich nicht an diejenigen, die bereits mit umfangreichen Ressourcen alles umgesetzt haben.
+Wenn du 50.000 Dollar und unbegrenzt Zeit hast, um deinen Betonbunker-Homelab einzurichten … nun, darf ich eine Führung haben?
+Ich würde das wirklich gern sehen.
+Wenn du eher neugierig als sicher bist, kannst du trotzdem Spaß daran haben, aus meinen Entscheidungen zu lernen.
 
-I'm not writing to accommodate hardline software patent and license activists.
-These wonderful folks will spot my intentional use of the word _open_ and omission of the word _libre_.
-I love all these words, I agree words are important, and I stand on the side of inclusion at the cost of idealism (while maintaining hope these concepts are not mutually exclusive).
-I thank the activists for helping swing the needle towards freedom, to all our benefit.
+Ich schreibe nicht, um es hartgesottenen Software-Patent- und Lizenz-Aktivisten recht zu machen.
+Diese großartigen Menschen werden meine absichtliche Verwendung des Wortes _open_ (_offen_) und das Weglassen des Wortes _libre_ (_frei_) sofort bemerken.
+Ich liebe all diese Begriffe, ich stimme zu, dass Worte wichtig sind, und ich stehe auf der Seite der Inklusion – auch wenn das Idealismus kosten kann (wobei ich hoffe, dass diese Konzepte sich nicht ausschließen).
+Ich danke den Aktivisten dafür, dass sie geholfen haben, die Nadel in Richtung Freiheit zu bewegen – zu unserem aller Nutzen.
 
-This book is not a manifesto for always/only self-hosting.
-It's fine to self-host some services and pay for others.
-You'll come up with your own checklist for what to self-host and when.
-Mine focuses on providing a useful, reliable, future-proof cloud for me and my family.
+Dieses Buch ist kein Manifest für immer und ausschließlich Self-Hosting.
+Es ist vollkommen in Ordnung, einige Dienste selbst zu hosten und für andere zu bezahlen.
+Du wirst deine eigene Checkliste entwickeln, was du wann selbst hosten möchtest.
+Meine fokussiert darauf, mir und meiner Familie eine nützliche, verlässliche und zukunftssichere Cloud bereitzustellen.
 
-This book is not the fastest path to trying out web services.
-You can usually find demo instances running for particular projects.
-There are cloud providers that will run a service for you and host your data.
+Dieses Buch ist nicht der schnellste Weg, um Webdienste auszuprobieren.
+Für viele Projekte findest du meist Demo-Instanzen im Netz.
+Es gibt Cloud-Anbieter, die einen Dienst für dich betreiben und deine Daten hosten.
 
-See also: <<Alternatives to mario>>.
+Siehe auch: <<Alternativen zu Mario>>.
 
-=== How write book?
+=== Wie Buch schreiben?
 
-Why are you talking like a caveman?
+Wieso sprichst du wie ein Höhlenmensch?
 
 (((Vim)))
-I wrote the book originally in Markdown plain text in my steadfast text editor, https://www.vim.org[Vim].
+Ich habe das Buch ursprünglich in Markdown-Klartext in meinem zuverlässigen Texteditor geschrieben, https://www.vim.org[Vim].
 (((Pandoc)))
-I applied generous amounts of https://pandoc.org[Pandoc], time, and love.
-Pandoc is a fantastic FOSS tool which allowed me to use that single plain text file with fairly human-readable Markdown syntax to generate several different decent outputs.
-While revising, I came across the build system for https://github.com/progit/progit2[Pro Git 2] (thank you Scott and Ben!).
-In short order I converted the book to https://asciidoc.org[AsciiDoc] and ported my typesetting code to https://asciidoctor.org[Asciidoctor].
-This simplified the book build and gave me more and better output formats.
+Ich habe großzügige Mengen an https://pandoc.org[Pandoc], Zeit, and Liebe angewandt.
+Pandoc ist ein fantastisches FOSS-Tool, das es mir ermöglichte, diese einzelne Klartextdatei mit gut lesbarem Markdown Satzbau zu verwenden, um mehrere unterschiedliche, ansprechende Outputs zu erzeugen.
+Beim Überarbeiten bin ich auf das Build-System von https://github.com/progit/progit2[Pro Git 2] gestoßen. (Danke an Scott und Ben!).
+Kurz gesagt habe ich das Buch auf https://asciidoc.org[AsciiDoc] umgestellt und meinen Satzcode auf https://asciidoctor.org[Asciidoctor] portiert.
+Das vereinfachte den Bucherstellungsprozess und ermöglichte mir mehr und bessere Output-Formate.
 
-TIP: Check out the source code--you're welcome to hack away at it.
-See <<Weitere Ressourcen>>.
+TIP: Schau dir den Quellcode an – du bist herzlich eingeladen, ihn zu bearbeiten und anzupassen.
+Siehe <<Weitere Ressourcen>>.
 
-I tried to stick with off-the-shelf FOSS software as much as possible, with minimal customization.
-This helped me focus on the content while keeping the book simple enough to self-publish.
+Ich habe versucht, so viel wie möglich auf Standard-FOSS-Software zurückzugreifen und nur minimal anzupassen.
+Das hat mir geholfen, mich auf den Inhalt zu konzentrieren und das Buch einfach genug zu halten, um es selbst zu veröffentlichen.
 
-==== When write book?
+==== Wann Buch schreiben?
 
-Still with the caveman.
-Enough already.
-I wrote this in 2023.
-And, listen, even blessed cave-dwellers like us should give self-hosting a shot.
-We got this!
+Immer noch mit dem Höhlenmenschen.
+Reicht jetzt aber.
+Ich habe dieses Buch 2023 geschrieben.
+Und hör zu, selbst wir gesegneten Höhlenbewohner sollten dem Selbst-Hosting eine Chance geben.
+Wir schaffen das!
 
-==== Where?
+==== Wo?
 
 Seattle.
 
-==== Hey now.
+==== Hey.
 
-Admittedly, those last few sections exist so I could cover all https://en.wikipedia.org/wiki/Five_Ws[5 Ws] and include the caveman gimmick.
+Zugegeben, die letzten paar Abschnitte existieren nur, damit ich alle https://en.wikipedia.org/wiki/Five_Ws[5 Ws] (wer, was, wann, wo, warum) abdecken und das ‚Höhlenmenschen‘-Gimmick einbauen kann.
 
-=== A note on FOSS
+=== Eine Anmerkung zu FOSS
 
 (((FOSS, author's bias towards)))
-I prefer FOSS over non-FOSS.
-This can be a polarizing topic.
-Heck, even using the term FOSS instead of the other variants can be polarizing.
-These are just distractions.
-Today we need compromise, patience, and kindness.
-Curiosity over certainty.
 
-Here's my promise to you, dear Reader:
+Ich bevorzuge FOSS gegenüber nicht-FOSS.
+Das kann ein polarisierendes Thema sein.
+Allein schon der Gebrauch des Begriffs FOSS statt anderer Varianten kann kontrovers sein.
+Aber das alles sind nur Ablenkungen.
+Gerade heute brauchen wir Kompromissbereitschaft, Geduld und Freundlichkeit.
+Neugier statt Gewissheit.
 
-I will try not to get too preachy.
+Hier ist mein Versprechen an dich, lieber Leserin:
 
-I will prioritize _practical_ solutions over _idealistic_ ones.
-I will sometimes fail to do this when it comes to FOSS.
-Most notably, I will barely acknowledge the existence of non-FOSS alternatives in this book.
+Ich werde versuchen, nicht zu sehr zu predigen.
 
-I'm aware of the tension between practical and idealistic solutions, and I believe this tension is a Good Thing because it reminds us to think critically about what ((cloud)) services we _should_ pay for and use, not just what we _can_ pay for and use.
-It's worth a moment's thought.
+Ich werde _praktische_ Lösungen _idealistischen_ vorziehen.
+Manchmal werde ich das nicht schaffen – besonders wenn es um FOSS geht.
+Am deutlichsten zeigt sich das darin, dass ich in diesem Buch nicht-FOSS-Alternativen kaum erwähne.
 
-Our data matter and our personal choices matter.
-The impact spreads to the groups you are a part of, as does the opportunity for improvement.
+Ich kenne die Spannung zwischen praktischen und idealistischen Lösungen, und ich glaube, dass diese Spannung etwas Gutes ist – weil sie uns dazu bringt, kritisch zu überlegen, welche ((Cloud))-Dienste wir nutzen sollten, und nicht nur, welche wir nutzen können.
+Das ist eine kurze Überlegung wert.
 
-I believe self-hosting ((FOSS)) is doable and affords many practical benefits over non-FOSS.
+Unsere Daten sind wichtig, und unsere persönlichen Entscheidungen ebenso.
+Ihre Auswirkungen betreffen auch die Gruppen, zu denen wir gehören – ebenso wie die Chance auf Verbesserung.
+
+Ich glaube, dass selbstgehostetes ((FOSS)) machbar ist und viele praktische Vorteile gegenüber nicht-FOSS bietet.
 
 // without this forced pagebreak we get a few orphaned words
 ifdef::shb-printPDF[]
 <<<
 endif::[]
 
-Hang in there and give me some feedback.
-You'll strike your own balance between idealism and practicality and I'm interested to know where you land.
+Halte durch und gib mir Rückmeldung.
+Du wirst deinen eigenen Mittelweg zwischen Idealismus und Pragmatismus finden, und ich bin gespannt, wo du am Ende landest.
 
 == Your journey
 
