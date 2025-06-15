@@ -662,11 +662,6 @@ Ihre Auswirkungen betreffen auch die Gruppen, zu denen wir gehören – ebenso w
 
 Ich glaube, dass selbstgehostetes ((FOSS)) machbar ist und viele praktische Vorteile gegenüber nicht-FOSS bietet.
 
-// without this forced pagebreak we get a few orphaned words
-ifdef::shb-printPDF[]
-<<<
-endif::[]
-
 Halte durch und gib mir Rückmeldung.
 Du wirst deinen eigenen Mittelweg zwischen Idealismus und Pragmatismus finden, und ich bin gespannt, wo du am Ende landest.
 
