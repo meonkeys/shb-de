@@ -1161,10 +1161,10 @@ Sichere die WAN-Grenze: überwache die Verkehrsdaten, setze ein ((IPS)) (Intrusi
 Schließe die WAN-Grenze: erlaube keinen eingehenden WAN-Zugriff.
 
 Solltest du dich entscheiden, einen Dienst öffentlich zugänglich zu machen, helfen diese Maßnahmen, ihn zu sichern.
-„`Öffentliche Mailinglisten vermeiden`“ ist nicht als Maßnahme aufgeführt, da es nur die URL zum veralteten Dienst verschleiert und man sich nicht auf „`Sicherheit durch Verschleierung`“ verlassen sollte.
+„Öffentliche Mailinglisten vermeiden“ ist nicht als Maßnahme aufgeführt, da es nur die URL zum veralteten Dienst verschleiert und man sich nicht auf „Sicherheit durch Verschleierung“ verlassen sollte.
 
 [%unbreakable]
-TIP: Die Absicherung auf mehreren Ebenen (Betriebssystem-Firewall, Dienst, WAN-Grenze) zeigt das Prinzip der „`Verteidigung in der Tiefe`“ („defense in depth“), eine gängige und sinnvolle Sicherheitsstrategie.
+TIP: Die Absicherung auf mehreren Ebenen (Betriebssystem-Firewall, Dienst, WAN-Grenze) zeigt das Prinzip der „Verteidigung in der Tiefe“ („defense in depth“), eine gängige und sinnvolle Sicherheitsstrategie.
 
 ==== VPN
 
