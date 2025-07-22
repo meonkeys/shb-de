@@ -867,7 +867,7 @@ image::inside-chassis.jpg[align="center",scaledwidth=80%]
 (((Docker)))
 Ich war angenehm überrascht von ((container))s (erklärt in <<Contained services>>), insbesondere nach meinen gemischten früheren Erfahrungen mit VMs.
 VMs sind anfangs einfach, weil sie sich wie echte Hardware verhalten.
-Linux in eine VM zu installieren ist genauso einfach wie auf Bare Metal (manchmal sogar einfacher).
+Linux in eine VM zu installieren ist genauso einfach wie auf ((Bare Metal)) (manchmal sogar einfacher).
 Dann kann man einen oder mehrere Dienste in der VM einrichten.
 Der eigentliche Haken liegt in der Wartung:
 Das Pflegen einer VM kann genauso aufwendig sein wie die Wartung eines Bare-Metal-Servers.
@@ -1251,8 +1251,8 @@ Weitere ZFS-Konzepte, die es sich zu lernen lohnt: Fragmentierung, ARC (Adaptive
 
 (((operating system)))
 (((Ubuntu)))
-(Linux ist eine beliebte und vernünftige Wahl für Self-Hosting. Ich empfehle einen 64-Bit-Ubuntu-Linux-Server mit mindestens 2 GB Arbeitsspeicher und 30 GB Speicherplatz. 
-Ubuntu LTS (Long-Term Support)-Versionen sind am stabilsten, und ich empfehle genau diese. 
+((Linux)) ist eine beliebte und vernünftige Wahl für Self-Hosting. Ich empfehle einen 64-Bit-Ubuntu-Linux-Server mit mindestens 2 GB Arbeitsspeicher und 30 GB Speicherplatz. 
+Ubuntu ((LTS)) (Long-Term Support)-Versionen sind am stabilsten, und ich empfehle genau diese. 
 Steadfast bezieht sich speziell auf 24.04, die LTS-Version von April 2024. 
 Version 24.04 ist heute stabil und wird bis April 2034 Updates erhalten, was viele weitere Jahre Stabilität verspricht, bevor Steadfast überarbeitet werden muss. 
 Die Installation des Betriebssystems ist im Allgemeinen schnell und schmerzlos, siehe Abschnitt 7.3 <<OS install>>.
