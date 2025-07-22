@@ -1211,7 +1211,7 @@ Siehe <<Backups>>.
 * Achte auf Datenpannen und schütze deine Identität.
 ** Sperre deine Kreditinformationen nach einem Datenleak.
 * Informiere dich über Kompartimentierung (Isolation) und das Prinzip der geringsten Privilegien.
-***
+****
 
 Zusätzliche Lektüre:
 
