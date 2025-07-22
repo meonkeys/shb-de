@@ -598,7 +598,7 @@ Dieses Buch ist nicht der schnellste Weg, um Webdienste auszuprobieren.
 Für viele Projekte findest du meist Demo-Instanzen im Netz.
 Es gibt Cloud-Anbieter, die einen Dienst für dich betreiben und deine Daten hosten.
 
-Siehe auch: <<Alternativen zu mario>>.
+Siehe auch: <<Alternativen zu Mario>>.
 
 === Wie Buch schreiben?
 
@@ -662,415 +662,416 @@ Ihre Auswirkungen betreffen auch die Gruppen, zu denen wir gehören – ebenso w
 
 Ich glaube, dass selbstgehostetes ((FOSS)) machbar ist und viele praktische Vorteile gegenüber nicht-FOSS bietet.
 
+// without this forced pagebreak we get a few orphaned words
+ifdef::shb-printPDF[]
+<<<
+endif::[]
+
 Halte durch und gib mir Rückmeldung.
 Du wirst deinen eigenen Mittelweg zwischen Idealismus und Pragmatismus finden, und ich bin gespannt, wo du am Ende landest.
 
-== Your journey
+== Deine Reise
 
-Continuing advances in hardware and software means self-hosting today is easier and cheaper than ever before.
-And in one key way, much more complex: there are an overwhelming number of choices to be made for someone starting out on this journey.
+Die stetigen Fortschritte in Hard- und Software machen Self-Hosting heute einfacher und günstiger denn je.
+Und in einem entscheidenden Punkt deutlich komplexer: Für Einsteiger gibt es eine überwältigende Anzahl an Entscheidungen zu treffen.
 
-Hang in there.
-I'll help you narrow the choices by providing specific, focused guidance.
+Halte durch.
+Ich helfe dir, die Auswahl einzugrenzen, indem ich dir gezielte und praxisnahe Empfehlungen gebe.
 
-Don't worry too much about the specific choices you make.
-Your personal cloud will be malleable.
-Swap out bits as you like.
-If you choose poorly, just choose again (ideally based on metrics and user needs).
+Mach dir nicht zu viele Sorgen über einzelne Entscheidungen.
+Deine persönliche Cloud ist formbar.
+Tausche nach Belieben Komponenten aus.
+Wenn du dich mal falsch entscheidest, triff einfach eine neue Entscheidung – idealerweise basierend auf Metriken und tatsächlichen Nutzerbedürfnissen.
 
-You aren't a failure if you don't get it right the first time.
+Du bist keine Versagerin, wenn du nicht gleich beim ersten Mal alles richtig machst.
 
-It is OK to slowly migrate from whatever you currently use.
-No need to upset everything all at once.
+Es ist völlig in Ordnung, langsam von dem umzusteigen, was du derzeit nutzt.
+Du musst nicht alles auf einmal umkrempeln.
 
-It is OK to _not migrate at all_ and just follow this book to expand your own personal learning and experimentation.
+Es ist auch völlig in Ordnung, gar nicht umzusteigen und dieses Buch nur zur persönlichen Weiterbildung und zum Experimentieren zu nutzen.
 
-It is OK if you don't adhere perfectly to your or someone else's ideals.
-Stick to your values while you question and develop these values.
-Enjoy your journey.
+Und es ist okay, wenn du nicht perfekt nach deinen oder den Idealen anderer lebst.
+Halte an deinen Werten fest, während du sie gleichzeitig hinterfragst und weiterentwickelst.
+Genieße deine Reise.
 
-=== Why you should self-host
+=== Warum du deine Software selbst hosten solltest
 
-Ask again--as you should--why the heck would anyone self-host software services?
-So many reasons!
+Frag dich ruhig noch einmal – wie man es tun sollte – warum zur Hölle sollte überhaupt jemand Software-Dienste selbst hosten?
+Es gibt so viele gute Gründe!
 
-* Flexibility
-** run only the services you and your users want
-** use multiple services backed by the same data storage
-** automate what you want, when you want
-** unlimited sharing
-** unlimited streaming
-** unlimited choices
-* Fun!
-** learn and grow
-** self-hosting is a doable challenge
-** solve right-sized puzzles as you learn and improve
-** be part of the thriving self-hosting community
-* Be future-proof
-** insulate your users from the unpredictable shifting of proprietary product prices, service offerings, and UI/UX
-** share your hard-earned data to your friends and family, forever
-** migrate to something else easily if and when you need to (for example, using a newer/better photo server once one becomes available)
-** it's really the _data_ that must be safeguarded, the frontends to those data (file viewers, editors, etc) will change when _you_ choose
-* Democratize computing
-** self-hosted software (especially FOSS) enables data and computational autonomy
-* Conserve electricity
-** backend cloud power per device drops dramatically with a few users
-** save even more power the more users you add
-** see linked articles in <<Server>>
-* Save money
-** self-hosted hardware will typically beat cloud (renting someone else's)
-** savings increase as your users`' data storage requirements enter the terabyte range
-** save more with every service you run
-** avoid unexpected public cloud costs
-*** egress fees make it expensive to download your data and move it somewhere else
-*** forgetting to shut down a VM (virtual machine) can get expensive quickly
-*** you could spend excessive time and money navigating the public cloud's confusing menu of service offerings
-** avoid unexpected public clouds changes
-*** changes in license fees
-*** changes in usage fees
-*** changes in support costs
-*** changes in service offerings
-** near-zero incremental cost of adding users and services
-* Speed / Save time
-** a nearby server can have much better response times, assuming reasonable hardware and well-behaved services
-** nearby data ("`data locality`") means you don't need round-trips to someone else's data center to run experiments
-** shared storage allows you to front your data with multiple services, choosing read-write/read-only access sensibly
-* Avoid vendor lock-in
-** you'll be able to use software features public cloud providers don't offer or don't yet exist because you fully own and control your raw data
-** when you buy something with DRM, you don't really own it
-** is there an integration you count on?
-Sometimes a service stops working with another service.
-This happens less often with FOSS because anyone can simply fork (copy, modify, and share) a project.
-* Privacy
-** avoid the chilling effect of mass surveillance
-** with a personal cloud you can safely and confidently keep GPS latitude and longitude in your photo metadata
-** once you keep your location metadata, you can do creative things with it
-** if you don't _need_ to share your location and behavior with Google every second, why do you?
-** remove yourself from the equation of user analysis data--when you stream video from someone else's service, they know and analyze every time you (or your kids) (re-)watch a video you "`own`", every time you rewind, fast-forward, pause... but do they need to? why?
-* Unlock new possibilities
-** apply arbitrary workflows to uploaded files
-** deploy trustworthy, offline generative AI (artificial intelligence) models
-** enjoy features that don't exist in public services
+* Flexibilität
+** nur die Dienste ausführen, die du und deine Nutzer*innen wollen
+** mehrere Dienste nutzen, die denselben Datenspeicher verwenden
+** automatisiere, was du willst, wann du willst
+** unbegrenztes Teilen
+** unbegrenztes Streaming
+** unbegrenzte Auswahlmöglichkeiten
+* Spaß!
+** lernen und wachsen
+** Self-Hosting ist eine machbare Herausforderung
+** passende Rätsel lösen, während du lernst und dich verbesserst
+** Teil der florierenden Self-Hosting-Community sein
+* Zukunftssicher sein
+** deine Nutzer*innen von den unvorhersehbaren Änderungen proprietärer Produktpreise, Serviceangebote und UI/UX abschirmen
+** deine hart erarbeiteten Daten mit Freunden und Familie teilen – für immer
+** problemlos auf etwas anderes migrieren, wenn nötig (zum Beispiel, wenn ein neuer/besserer Fotoserver verfügbar wird)
+** es sind wirklich die Daten, die geschützt werden müssen; die Frontends zu diesen Daten (Dateiviewer, Editoren etc.) werden sich ändern, wenn du es entscheidest
+* Computing demokratisieren
+** selbstgehostete Software (insbesondere FOSS) ermöglicht Daten- und Rechenautonomie
+* Strom sparen
+** der Energieverbrauch im Cloud-Backend pro Gerät sinkt drastisch bei wenigen Nutzern
+** je mehr Nutzer, desto mehr Stromersparnis
+** siehe verlinkte Artikel in <<Server>>
+* Geld sparen
+** selbstgehostete Hardware ist in der Regel günstiger als die Cloud (also gemietete Dienste)
+** Einsparungen steigen, wenn der Speicherbedarf deiner Nutzer*innen in den Terabyte-Bereich geht
+** spare mehr mit jedem weiteren Dienst, den du betreibst
+** unerwartete Kosten bei Public-Cloud-Anbietern vermeiden
+*** Egress-Gebühren machen es teuer, deine Daten herunterzuladen und umzuziehen
+*** vergisst man, eine VM (virtuelle Maschine) zu stoppen, kann es schnell teuer werden
+*** du könntest übermäßig viel Zeit und Geld damit verbringen, dich durch das verwirrende Service-Menü der Public Cloud zu kämpfen
+** unerwartete Änderungen bei Public-Cloud-Anbietern vermeiden
+*** Änderungen bei Lizenzgebühren
+*** Änderungen bei Nutzungsgebühren
+*** Änderungen bei Supportkosten
+*** Änderungen im Serviceangebot
+** nahezu keine zusätzlichen Kosten für weitere Nutzer und Dienste
+* Geschwindigkeit / Zeit sparen
+** ein lokaler Server kann deutlich bessere Reaktionszeiten haben, vorausgesetzt, die Hardware ist angemessen und die Dienste gut konfiguriert
+** lokale Daten ("data locality") bedeuten, dass du keine Rundreisen zu Rechenzentren anderer machen musst, um zu experimentieren
+** gemeinsamer Speicher erlaubt es dir, deine Daten über mehrere Dienste bereitzustellen, mit sinnvoll definiertem Lese-/Schreibzugriff
+* Vendor Lock-in vermeiden
+** du kannst Softwarefunktionen nutzen, die Public-Cloud-Anbieter nicht anbieten oder die es dort noch nicht gibt, da du vollständigen Zugriff auf deine Rohdaten hast
+** wenn du etwas mit DRM kaufst, besitzt du es nicht wirklich
+** gibt es eine Integration, auf die du dich verlässt? Manchmal funktioniert ein Dienst nicht mehr mit einem anderen. Das passiert bei FOSS seltener, weil jeder ein Projekt einfach forken (kopieren, ändern und teilen) kann.
+* Privatsphäre
+** den abschreckenden Effekt der Massenüberwachung vermeiden
+** mit einer persönlichen Cloud kannst du GPS-Breitengrad und -Längengrad sicher in deinen Fotometadaten behalten
+** sobald du deine Standortdaten speicherst, kannst du kreative Dinge damit tun
+** wenn du deine Position und dein Verhalten nicht ständig mit Google teilen musst, warum tust du es?
+** entferne dich aus der Gleichung der Nutzeranalyse – wenn du ein Video über einen fremden Dienst streamst, wissen sie und analysieren jedes Mal, wenn du (oder deine Kinder) ein Video, das du "besitzt", (erneut) ansiehst, zurückspulst, vorspulst, pausierst... aber müssen sie das wissen? warum?
+* Neue Möglichkeiten erschließen
+** beliebige Workflows auf hochgeladene Dateien anwenden
+** vertrauenswürdige, offline-fähige generative KI-Modelle einsetzen
+** Funktionen genießen, die es in öffentlichen Diensten nicht gibt
 
-=== Why you should not self-host
+=== Warum du deine Software nicht selbst hosten solltest
 
-Self-hosting is more complex and time-consuming than paying for the same functionality, especially at first.
-It takes discipline and patience, like learning a new instrument (but _this_ instrument eventually plays itself!).
+Self-Hosting ist komplexer und zeitaufwendiger als das Bezahlen für die gleiche Funktionalität – besonders am Anfang.
+Es erfordert Disziplin und Geduld, wie das Erlernen eines neuen Instruments (aber dieses Instrument spielt irgendwann von selbst!).
 
-If something breaks, you're fixing it.
-Sometimes you get a useful error, sometimes you can search the web for a quick fix.
-Sometimes you don't and can't.
+Wenn etwas kaputtgeht, bist du die Person, die es repariert.
+Manchmal bekommst du eine hilfreiche Fehlermeldung, manchmal findest du im Web eine schnelle Lösung.
+Manchmal bekommst du keine – und kannst auch keine finden.
 
-CAUTION: If you don't enjoy troubleshooting and debugging, self-hosting might not be for you.
+ACHTUNG: Wenn dir Fehlersuche und Debugging keinen Spaß machen, ist Self-Hosting vielleicht nichts für dich.
 
-If you don't take care with ((backups)) and security, you'll risk time, energy, and trust with people you care about.
+Wenn du nicht sorgfältig mit ((Backups)) und Sicherheit umgehst, riskierst du Zeit, Energie und das Vertrauen von Menschen, die dir wichtig sind.
 
 (((HVAC)))
-On-premise self-hosting entails additional meatspace-specific considerations.
-You need to ensure sufficient power, connectivity, HVAC (heating, ventilation, and air conditioning), and security.
-Just don't keep your server outside.
+Self-Hosting vor Ort bringt zusätzliche physische Überlegungen mit sich.
+Du musst für ausreichende Stromversorgung, Konnektivität, HVAC (Heizung, Lüftung und Klimatisierung) und Sicherheit sorgen.
+Stell deinen Server einfach nicht draußen ab.
 
-== Practical examples
+== Praktische Beispiele
 
-I use lots of software during my daily routine.
-I'll need to look something up, get a ride, buy food, and so on.
-Much of this software is, sadly, quite annoying!
-It always seems to want more of my time, attention, and money, when I only want the practical outcome it purports to help me achieve.
-As a result I trust it less and constantly think of how I might replace it with something I like and trust more.
+Ich verwende täglich viele verschiedene Softwaretools.
+Ich muss etwas nachschlagen, eine Fahrt organisieren, Essen kaufen und so weiter.
+Viel von dieser Software ist leider ziemlich nervig!
+Sie scheint immer mehr von meiner Zeit, Aufmerksamkeit und meinem Geld zu wollen – dabei will ich doch nur das praktische Ergebnis erreichen, bei dem sie mir angeblich helfen soll.
+Deshalb vertraue ich ihr immer weniger und überlege ständig, wie ich sie durch etwas ersetzen kann, das ich lieber mag und dem ich mehr vertraue.
 
-Here are a couple examples where I've improved on a public service with something self-hosted, followed by some surprises I encountered along the way.
+Hier sind ein paar Beispiele, bei denen ich einen öffentlichen Dienst durch eine selbstgehostete Lösung verbessert habe – gefolgt von einigen Überraschungen, auf die ich dabei gestoßen bin.
 
 === Criminal chickens
 
-My family has a homemade chicken safety system and the videos are important to me.
-I used to just plop them on YouTube because hey, it's free and it "`just works`", right?
+Meine Familie hat ein selbstgebautes Sicherheitssystem für unsere Hühner, und die Videos sind mir wichtig.
+Früher habe ich sie einfach auf YouTube hochgeladen, weil hey, es ist kostenlos und es „`funktioniert einfach`“, oder?
 
-Except when it doesn't.
-YouTube sometimes felt my chickens were being spammy, deceptive, and/or scammy.
+Außer wenn es das nicht tut.
+YouTube fand manchmal, dass meine Hühner Spam und/oder Betrug seien.
 
 [#image-YT-censor]
-.Screenshot of an email from YouTube content team having removed my chicken coop camera video.
+.Screenshot einer E-Mail vom YouTube-Content-Team, welches mein Video von der Hühnerstall-Kamera entfernt hat.
 image::YT-censor.png[align="center",scaledwidth=80%]
 
-For the record, our chickens are _squeaky clean_.
+Nur fürs Protokoll: Unsere Hühner sind _blitzsauber_.
 
 [#image-squeaky-clean-chicken]
-.One absolutely upstanding, hard-working, law-abiding chicken.
+.Eine absolut rechtschaffene, fleißige, gesetzestreue Henne.
 image::squeaky-clean-chicken.png[align="center",scaledwidth=50%]
 
-Once I stood up my personal cloud I felt freedom and ease when posting and hosting these videos.
-I no longer needed to complete any YouTube paperwork to be able to keep an eye on my chickens.
-I can safely ignore their audit and its erroneous policy violation claim.
+Als ich meine persönliche Cloud eingerichtet hatte, fühlte ich Freiheit und Leichtigkeit beim Posten und Hosten dieser Videos.
+Ich musste keine YouTube-Formulare mehr ausfüllen, nur um meine Hühner im Blick behalten zu können.
+Ich kann deren Prüfung und die fälschliche Behauptung eines Richtlinienverstoßes nun getrost ignorieren.
 
 [#image-YT-audit]
-.Screenshot of a YouTube legal audit for my old API client.
+.Screenshot einer YouTube-Rechtsprüfung für meinen alten API-Client.
 image::YT-audit.png[align="center",scaledwidth=80%]
 
-I also no longer need to work with YouTube's API (application programming interface), including registering an API client and completing periodic audits.
-After standing up Nextcloud I deleted my YouTube API client to upload videos, cleaning up my code and simplifying its maintenance.
-Turns out the Nextcloud Talk API is easier for posting my chicken coop photos and videos anyway.
+Ich muss auch nicht mehr mit der YouTube-API (Application Programming Interface) arbeiten, einschließlich der Registrierung eines API-Clients und der Durchführung regelmäßiger Prüfungen.
+Nachdem ich Nextcloud eingerichtet hatte, habe ich meinen YouTube-API-Client zum Hochladen von Videos gelöscht, meinen Code bereinigt und die Wartung vereinfacht.
+Es stellt sich heraus, dass die Nextcloud Talk API sowieso einfacher ist, um Fotos und Videos von meinem Hühnerstall zu posten.
 
-With my own cloud I'm also able to tune quotas and rate limits as desired.
-Full speed ahead!
+Mit meiner eigenen Cloud kann ich auch Quoten und Geschwindigkeitsbegrenzungen nach Belieben anpassen.
+Volle Fahrt voraus!
 
-=== Photo search by location
+=== Fotosuche nach Standort
 
-Here's one more pro-personal-cloud example.
-This one worked because I am comfortable storing location metadata in my self-hosted photos.
+Hier ist noch ein Beispiel, das für eine persönliche Cloud spricht.
+Dieses hat funktioniert, weil ich es gewohnt bin, Standort-Metadaten in meinen selbstgehosteten Fotos zu speichern.
 
-A while back I was trying to find some particular photos from a pile of thousands, taking up terabytes on disk.
-I knew where I was when I took the photos (within 10 miles or so) and my photos have embedded locations.
-I couldn't remember when they were taken.
+Vor einiger Zeit wollte ich bestimmte Fotos aus einem Haufen von Tausenden finden, die mehrere Terabyte Speicherplatz belegten.
+Ich wusste, wo ich war, als ich die Fotos gemacht habe (auf etwa 10 Meilen genau), aber ich konnte mich nicht erinnern, wann sie aufgenommen wurden.
 
-My photos are just a bunch of JPEG files.
-I examined them with a small Python program I wrote.
-I looked for any photos taken within 10 miles of the point I knew.
-The key was being able to access the data directly and quickly.
+Meine Fotos sind einfach eine Sammlung von JPEG-Dateien.
+Ich habe sie mit einem kleinen Python-Programm untersucht, das ich selbst geschrieben habe.
+Ich suchte nach allen Fotos, die im Umkreis von 10 Meilen um den Punkt aufgenommen wurden, den ich kannte.
+Der Schlüssel war, direkt und schnell auf die Daten zugreifen zu können.
 
-This is just one (likely outdated) example.
-By the time you read this you may be able to query your photos with a sentence like: "`show me all photos taken within 10 miles of Mexico City`", and it'll just work.
+Das ist nur ein (wahrscheinlich bald veraltetes) Beispiel.
+Wenn du das hier liest, kannst du deine Fotos vielleicht schon mit einem Satz wie „`Zeig mir alle Fotos, die im Umkreis von 10 Meilen um Mexiko-Stadt aufgenommen wurden`“ abfragen – und es funktioniert einfach.
 
-Then you can move on to saving the world.
-Just make sure you've got your data!
+Dann kannst du dich der Rettung der Welt widmen.
+Stell nur sicher, dass du deine Daten hast!
 
-=== Surprises
+=== Überraschungen
 
-Should you choose to proceed: godspeed, traveler.
-This is seriously fun stuff.
+Falls du dich entscheidest, weiterzumachen: gute Reise, Reisende\*r.
+Das hier macht wirklich Spaß.
 
-You may be surprised by how fast and easy some things are with self-hosting.
-I'd love to know how this goes for you.
+Du wirst vielleicht überrascht sein, wie schnell und einfach manche Dinge beim Self-Hosting funktionieren.
+Ich würde zu gern erfahren, wie es bei dir läuft.
 
-You may also be surprised by how time-consuming and difficult some things are.
-Maybe you'll get held up with hardware (and its power, wires, cooling, failures).
-Maybe networking.
-Maybe "`change management`" (trying to convince your users to use Nextcloud instead of Dropbox).
+Du wirst vielleicht aber auch überrascht sein, wie zeitaufwendig und schwierig manche Dinge sein können.
+Vielleicht hängst du an der Hardware fest (und deren Stromversorgung, Verkabelung, Kühlung, Ausfällen).
+Vielleicht am Netzwerk.
+Vielleicht am „`Change Management`“ (deine Nutzer\*innen davon zu überzeugen, Nextcloud statt Dropbox zu verwenden).
 
-Here are some things that surprised me, both positively and negatively.
+Hier sind einige Dinge, die mich überrascht haben – im Positiven wie im Negativen.
 
-==== Good surprises
+==== Gute Überraschungen
 
-===== Hardware wasn't that hard
+===== Hardware war gar nicht so schwierig.
 
-With help from a friend (thanks Rob!), I bought a reliable and cheap refurbished server.
-I thought I'd be tinkering with wires, cards, and CMOS batteries.
-Not so!
-I opened the chassis to see the guts.
-I confirmed the contents were normal server guts, or close enough.
-The CPUs and memory sticks were all there as advertised.
+Mit Hilfe eines Freundes (danke, Rob!) habe ich einen zuverlässigen und günstigen, generalüberholten Server gekauft.
+Ich dachte, ich müsste an Kabeln, Karten und CMOS-Batterien herumbasteln.
+Aber nein!
+Ich habe das Gehäuse geöffnet, um einen Blick ins Innere zu werfen.
+Ich konnte bestätigen: ganz normale Server-Innereien – oder zumindest nah genug dran.
+Die CPUs und RAM-Riegel waren wie angekündigt vorhanden.
 
-I plugged it in; it worked.
+Ich habe ihn eingesteckt – und er hat funktioniert.
 
 [#image-inside-chassis]
-.View inside the server showing two empty PCI-E card slots.
+.Blick ins Innere des Servers mit zwei leeren PCI-E-Steckplätzen.
 image::inside-chassis.jpg[align="center",scaledwidth=80%]
 
 ===== Containers == happy
 
 (((Docker)))
-I was pleasantly surprised by ((container))s (explained in <<Contained services>>) following my varied earlier experiences with ((VM))s.
-VMs are simple at first because they behave much like physical hardware.
-Installing Linux into a VM is as easy as installing it onto ((bare metal)) (sometimes even easier).
-Then you can set up one or more services in the VM.
-The real rub here is with maintenance; maintaining a VM can be as complex as maintaining a bare metal server.
+Ich war angenehm überrascht von ((container))s (erklärt in <<Contained services>>), insbesondere nach meinen gemischten früheren Erfahrungen mit VMs.
+VMs sind anfangs einfach, weil sie sich wie echte Hardware verhalten.
+Linux in eine VM zu installieren ist genauso einfach wie auf Bare Metal (manchmal sogar einfacher).
+Dann kann man einen oder mehrere Dienste in der VM einrichten.
+Der eigentliche Haken liegt in der Wartung:
+Das Pflegen einer VM kann genauso aufwendig sein wie die Wartung eines Bare-Metal-Servers.
 
-Containers take a different approach and simulate much less of a bare metal server.
-They are fast and small compared with VMs, allowing higher non-conflicting service density.
-That is, you can stand up more services per server and they don't interfere with one another (e.g. by requiring different versions of PHP (PHP: Hypertext Processor)).
-One container typically contains only one service.
+Container verfolgen einen anderen Ansatz und simulieren deutlich weniger von einem Bare-Metal-Server.
+Sie sind im Vergleich zu VMs schneller und ressourcenschonender, was eine höhere, konfliktfreie Dichte von Diensten ermöglicht.
+Das heißt: Du kannst mehr Dienste pro Server betreiben, ohne dass sie sich gegenseitig stören (z. B. weil sie unterschiedliche Versionen von PHP benötigen).
+Ein Container enthält in der Regel genau einen Dienst.
 
-(((isolation)))
-Isolation of containers is limited compared to VMs.
-The kernel (the part of the OS that talks directly with the underlying hardware) is shared, for example.
-Limited isolation keeps the resource and maintenance costs of container-based isolation low compared with VMs.
+(((Isolation)))
+Die Isolierung von Containern ist im Vergleich zu VMs begrenzt.
+Zum Beispiel wird der Kernel (der Teil des Betriebssystems, der direkt mit der zugrunde liegenden Hardware kommuniziert) gemeinsam genutzt.
+Diese begrenzte Isolierung hält jedoch die Ressourcen- und Wartungskosten bei containerbasierter Isolierung deutlich niedriger als bei VMs.
 
-Containers are excellent for a consistent and resilient personal cloud.
-They are easy to declare (in code), build, deploy, test, and repeat.
-They can also be used along with VMs: you might use a VM as your server instead of bare metal.
+Container eignen sich hervorragend für eine konsistente und stabile persönliche Cloud.
+Sie lassen sich leicht deklarieren (im Code), bauen, bereitstellen, testen und reproduzieren.
+Container können auch zusammen mit VMs verwendet werden: Du könntest zum Beispiel eine VM als Server nutzen, anstelle von Bare Metal.
 
-I chose Docker to manage containers because it is popular and I have experience with it.
-Your server is also considered a _host_ since it it is a _host_ to Docker containers.
+Ich habe mich für Docker zur Verwaltung von Containern entschieden, weil es weit verbreitet ist und ich Erfahrung damit habe.
+Dein Server wird dabei auch als Host bezeichnet, da er die Docker-Container hostet.
 
-One downside of Docker is how often root access is assumed in example code and popular public images.
-Running as `root` makes containers simpler but less secure.
+Ein Nachteil von Docker ist, dass in Beispielcode und öffentlichen Images oft Root-Zugriff vorausgesetzt wird.
+Das Ausführen als `root` vereinfacht Container zwar, macht sie aber auch unsicherer.
 
-===== Go paperless with OCR
+==== Papierlos mit OCR
 
-Another smile-worthy advancement is free ((OCR)) (optical character recognition).
-I keep trying to "`go paperless`" by scanning in all my paper files.
-After scanning papers I am shouldered with, unsurprisingly, a bunch of PDFs of images.
+Eine weitere fortschrittliche Entwicklung, die ein Lächeln wert ist, ist kostenlose OCR (optocal character recognition/ optische Zeichenerkennung).
+Ich versuche immer wieder, "`papierlos zu werden`", indem ich all meine Papierdokumente einscanne.
+Nach dem Scannen bleibe ich – wenig überraschend – mit einem Haufen PDF-Dateien voller Bilder zurück.
 (((Paperless-ngx)))
-These can be easily OCR'd and managed with tools like https://docs.paperless-ngx.com/[Paperless-ngx] and https://apps.nextcloud.com/apps/fulltextsearch[Nextcloud Full text search].
+Diese lassen sich ganz einfach mit Tools wie https://docs.paperless-ngx.com/[Paperless-ngx] und https://apps.nextcloud.com/apps/fulltextsearch[Nextcloud Full text search]  per OCR verarbeiten und verwalten.
 
-===== Jellyfin works well
+===== Jellyfin funktioniert gut
 
-((Jellyfin)) is a personal streaming media server.
-I was stoked to see how Jellyfin showed up as an excellent and complete FOSS alternative to ((Plex)).
+((Jellyfin)) ist ein persönlicher Streaming-Medienserver.
+Ich war begeistert zu sehen, wie Jellyfin sich als ausgezeichnete und vollständige FOSS-Alternative zu ((Plex)) herausgestellt hat.
 
-==== Bad surprises
+==== Schlechte Überraschungen
 
-===== Traefik learning curve
+===== Traefik-Lernkurve
 
-The ((Traefik)) reverse proxy was surprisingly challenging to set up because my networking fundamentals were rusty.
-I've got it working reliably and I still need to keep improving my fundamental knowledge in networking.
+Der ((Traefik))-Reverse-Proxy war überraschend herausfordernd einzurichten, da meine Netzwerkgrundlagen etwas eingerostet waren.
+Ich habe ihn nun zuverlässig zum Laufen gebracht, muss aber mein grundlegendes Netzwerkwissen weiterhin verbessern.
+Siehe <<Reverse Proxy>> für mehr Informationen über Traefik.
 
-See <<Reverse Proxy>> for more about Traefik.
-
-===== Nextcloud bugs
+===== Nextcloud Bugs
 
 (((Nextcloud, surprises with)))
-I was frustrated with some bugs in Nextcloud.
-These felt like the most urgent since I rely heavily on it.
+Ich war frustriert über einige Probleme in Nextcloud.
+Diese fühlten sich besonders dringend an, da ich stark darauf angewiesen bin.
 
-Community support is hit or miss.
-Nextcloud seems more popular outside the USA.
+Der Community-Support ist mal gut, mal weniger gut.
+Nextcloud scheint außerhalb der USA populärer zu sein.
 
-Not all Nextcloud apps are ready for prime time.
-See <<Customization>>.
+Nicht alle Nextcloud-Apps sind schon ausgereift.
+Mehr unter <<Personalisierung>>.
 
-===== Jitsi and ports
+===== Jitsi and Ports
 
-((Jitsi)) is a self-hostable FOSS video call platform.
-I gave up trying to get Jitsi running in Docker.
-I recall lots of open ports or port ranges being a problem.
-This service might be easier to self-host in a virtual machine.
+((Jitsi)) ist eine selbstgehostete FOSS-Videokonferenzplattform.
+Ich habe aufgegeben, Jitsi in Docker zum Laufen zu bringen.
+Ich erinnere mich, dass viele offene Ports oder Portbereiche ein Problem waren.
+Dieser Dienst könnte leichter in einer virtuellen Maschine selbst gehostet werden.
 
-There's also a workaround assigning port ranges to specific IP addresses, but this is beyond the scope of this book.
-I will eventually give it another shot because https://jitsi.org/blog/authentication-on-meet-jit-si/[logging in is now required when using the free 8x8-hosted Jitsi service].
+Es gibt auch eine Umgehungslösung, bei der Portbereiche bestimmten IP-Adressen zugewiesen werden, aber das geht über den Umfang dieses Buches hinaus.
+Ich werde es irgendwann nochmal versuchen, weil https://jitsi.org/blog/authentication-on-meet-jit-si/[logging in is now required when using the free 8x8-hosted Jitsi service].
 
-==== Absorb them all
+==== Nimm sie alle auf
 
-When it comes to surprises, try to absorb the bad ones when they affect your users.
-Ideally _before_ they affect your users, via research, planning, and testing you're likely already doing.
+Wenn es um Überraschungen geht, versuche die schlechten zu verkraften, wenn sie deine Nutzer betreffen.
+Im Idealfall _bevor_ sie deine Nutzer betreffen, durch Recherche, Planung und Tests, die du wahrscheinlich schon machst.
 
 (((dogfooding)))
-Dogfood what you self-host.
-Try your best to ensure everything is attractive and useful, then wait.
-Be patient.
-Never try to force people to use whatever you self-host.
+Nutze selbst, was du selbst hostest.
 
-I hope this book inspires you with many positive surprises and helps you and your users avoid many negative ones.
+Gib dein Bestes, um alles attraktiv und nützlich zu gestalten, und warte dann ab.
+Sei geduldig.
+Versuche niemals, Menschen zu zwingen, das zu nutzen, was du selbst hostest.
 
-== Plan
+Ich hoffe, dieses Buch inspiriert dich mit vielen positiven Überraschungen und hilft dir und deinen Nutzern, viele negative zu vermeiden.
 
-We'll now briefly cover the salient points of a self-hosting plan.
-I love this part!
-I get excited about what's to come, and I know a solid plan makes a vision real.
+== Planung
 
-Make _your_ plan.
-Maintain and improve your plan along with your server.
-Share the plan with other admins.
+Wir werden jetzt kurz die wichtigsten Punkte eines Selbsthosting-Plans durchgehen.
+Ich liebe diesen Teil!
+Ich freue mich auf das, was kommt, und ich weiß, dass ein solider Plan eine Vision Wirklichkeit werden lässt.
 
-Yes, other admins.
-You need someone to cover for you when you are not available, or a crystal clear expectation that when you die, the server dies too.
+Mach _deinen_ Plan.
+Pflege und verbessere deinen Plan gemeinsam mit deinem Server.
+Teile den Plan mit anderen Administrator*innen.
+
+Ja, anderen Administrator*innen.
+Du brauchst jemanden, der dich vertreten kann, wenn du nicht verfügbar bist, oder eine glasklare Erwartung, dass der Server mit dir stirbt.
 
 === Budget
 
-Consider the time and cost of self-hosting.
-To yourself _and your users_.
-How much do you have and want to spend?
-Write down a number and stick to it.
+Berücksichtige die Zeit und die Kosten des Selbsthostings – für dich selbst _und deine Nutzer*innen_.
+Wie viel hast du zur Verfügung und wie viel möchtest du ausgeben? Schreib eine Zahl auf und halte dich daran.
 
-=== Resources
+=== Ressourcen
 
-Sketch out your thoughts on resources you'll need.
-Some ideas:
+Skizziere deine Gedanken zu den Ressourcen, die du benötigen wirst.
+Einige Ideen:
 
-Compute and memory::
-CPU and RAM are the fundamental resources necessary for computation.
-See <<Map services to resources>> for ideas on how to estimate requirements based on the services you'll host.
-GPU workloads are not covered in this book, although <<_whats_next>>, and <<Exercises>> touch on a few things you might try on your own.
+Rechenleistung und Speicher:
+CPU und RAM sind die grundlegenden Ressourcen, die für die Berechnung notwendig sind.
+Siehe <<Map services to resources>> für Ideen, wie du Anforderungen basierend auf den Diensten, die du hosten wirst, abschätzen kannst.
+GPU-Arbeitslasten werden in diesem Buch nicht behandelt, obwohl <<_whats_next>> und <<Exercises>> einige Dinge ansprechen, die du selbst ausprobieren kannst.
 
-Data storage::
-Estimate how much storage space you'll need.
-There's a significant jump in complexity and cost with each jump in unit (for example, GB (gigabyte) to TB (terabyte)).
-This book is appropriate for data storage up to about 10 TB.
-See <<Hard drives>> for how to spend less on storage by self-hosting.
+Datenspeicher:
+Schätze, wie viel Speicherplatz du benötigen wirst.
+Mit jedem Sprung in der Einheit (zum Beispiel von GB (Gigabyte) zu TB (Terabyte)) steigt die Komplexität und die Kosten deutlich an.
+Dieses Buch ist für Datenspeicher bis etwa 10 TB geeignet.
+Siehe <<Hard drives>> für Tipps, wie du beim Speicher durch Self-Hosting Geld sparen kannst.
 
-Electricity::
-Check your home power bill for the cost per kWh and run some estimates.
-See <<Server>> for an example of the power used by a capable server.
+Strom:
+Überprüfe deine Stromrechnung auf die Kosten pro kWh und mache einige Berechnungen.
+Siehe <<Server>> für ein Beispiel, wie viel Strom ein leistungsfähiger Server verbraucht.
 
-Support::
-Who will help you when you get stuck?
-<<Support>> has some ideas.
+Support:
+Wer hilft dir, wenn du mal nicht weiterkommst?
+<<Support>> bietet einige Ideen.
 
-Physical location::
-Where will the server live?
-Will you have to install new wiring for power or network?
-<<Networking>> covers my home setup.
+Physischer Standort:
+Wo soll der Server stehen?
+Musst du neue Leitungen für Strom oder Netzwerk verlegen?
+<<Networking>> beschreibt meine Heiminstallation.
 
-=== Schedule
+=== Zeitlicher Ablauf
 
-Rough out key dates so you and your users can plan ahead.
-For example:
+Skizziere grob wichtige Termine, damit du und deine Nutzer vorausplanen können.
+Zum Beispiel:
 
-Apr 28::
-  Brainstorm, plan.
-Apr 30::
-  Order hardware.
-May 3::
-  Pull ethernet from router into garage.
-May 5::
-  Set up server: Install hard drives, power on, install OS, start services.
-Jun 9::
-  Review result against original goals.
+28. April::
+Brainstorming, Planung.
+30. April::
+Hardware bestellen.
+3. Mai::
+Ethernet-Kabel vom Router in die Garage verlegen.
+5. Mai::
+Server einrichten: Festplatten einbauen, einschalten, Betriebssystem installieren, Dienste starten.
+9. Juni::
+Ergebnis im Vergleich zu den ursprünglichen Zielen überprüfen.
 
-Invite others to participate, starting at the beginning when you brainstorm and plan.
-This is a great time to include other people who may help care for the server.
+Lade andere ein, mitzumachen, idealerweise schon zu Beginn beim Brainstorming und der Planung.
+Das ist eine großartige Gelegenheit, weitere Personen einzubeziehen, die bei der Betreuung des Servers helfen können.
 
-=== Transition
+=== Umstellung
 
 (((change management)))
-Your users already have their data somewhere else.
-Consider how you'll help them migrate their data onto the server.
+Ihre Benutzer haben ihre Daten bereits an einem anderen Ort.
+Überlegen Sie, wie Sie ihnen helfen können, ihre Daten auf den Server zu migrieren.
 
-The key to this is excellent communication.
-Include this in your plan and seek buy-in since migration cost is a reality for every transition.
+Der Schlüssel dazu ist ausgezeichnete Kommunikation.
+Nehmen Sie dies in Ihren Plan auf und sorgen Sie für Zustimmung, da die Migrationskosten bei jeder Umstellung eine Realität sind.
 
-TIP: To learn more about gracefully transitioning users between systems, study _change management_.
+TIP: Um mehr darüber zu erfahren, wie man Benutzer sanft zwischen Systemen überführt, beschäftigen Sie sich mit dem Thema _Change Management_.
 
-=== Sysadmin mindset
+=== Sysadmin Mindset
 
 (((sysadmin, mindset of a Steadfast)))
-The server exists for the users.
-It is important to establish the right mindset to be able to provide an excellent user experience.
+Der Server existiert für die Nutzer.
+Es ist wichtig, die richtige Einstellung zu haben, um eine hervorragende Nutzererfahrung bieten zu können.
 
-Make sure your self-hosted services work well for your users.
-Solicit their input often and take it seriously.
-Carefully tease out their _wants_ vs. their _needs_.
+Stelle sicher, dass deine selbstgehosteten Dienste gut für deine Nutzer funktionieren.
+Bitte sie regelmäßig um Feedback und nimm es ernst.
+Unterscheide sorgfältig zwischen ihren _Wünschen_ und ihren _Bedürfnissen_.
 
-Translate the word "`users`" as necessary.
-Perhaps: "`those most dear to you, those you care about most above all others, those who give you meaning and purpose.`"
-Yeah, that's way over the top.
-You get the point: we must be thoughtful about what users experience or it will be frustrating for everyone.
+Übersetze das Wort „Nutzer“ je nach Kontext passend.
+Vielleicht: „die dir am meisten am Herzen liegen, die du über alle anderen hinweg am meisten schätzt, diejenigen, die dir Sinn und Zweck geben.“
+Ja, das ist etwas übertrieben.
+Du verstehst den Punkt: Wir müssen aufmerksam sein, was die Nutzer erleben, sonst wird es für alle frustrierend.
 
-Ideally you already know your users in real life.
-Stay connected with them in real life to better support them online.
+Ideal ist es, wenn du deine Nutzer bereits im echten Leben kennst.
+Bleibe auch im echten Leben mit ihnen in Verbindung, um sie online besser unterstützen zu können.
 
-== System design
+== System Design
 
-Let's dive into the design of a _Steadfast_ system.
+Tauchen wir ein in die Gestaltung eines _Steadfast_ Systems.
 
-=== Service stack
+=== Dienst-Stack
 
-A _Steadfast_ system presents nicely as a simplified stack of colored boxes.
-The vertical ordering of the stack is based on where and how frequently a sysadmin will likely act and investigate at that layer when supporting or troubleshooting (most frequently at top), and amount abstracted from bare metal (least at bottom).
+Ein _Steadfast_ System lässt sich gut als vereinfachter Stapel farbiger Kästchen darstellen.
+Die vertikale Anordnung dieses Stacks richtet sich danach, wo und wie häufig eine Systemadministratorin wahrscheinlich auf dieser Ebene agieren oder bei Support- oder Fehlersuche eingreifen wird (am häufigsten oben), sowie danach, wie stark die jeweilige Ebene vom Bare Metal abstrahiert ist (am wenigsten unten).
 
 [#image-service-stack]
 .Layers of a Steadfast system. From the bottom, hardware: bare metal, filesystem: ext4 for / and optionally ZFS for /data, OS: Ubuntu LTS 64-bit server, container runtime: Docker, containers: Nextcloud file sharing app, Jellyfin media server, Wallabag article reader.
 image::service-stack.svg[align="center",scaledwidth=80%]
 
-I am most often working around the top layers e.g. adding or updating a container.
-Less often I am updating OS (operating system) packages.
-Less often still I might examine versions of a configuration file stored on disk from its ZFS automatic snapshots.
-Finally, when my server dies, I'll be on that bottom layer fixing or replacing hardware.
-Here's where to look for details on each layer:
+Am häufigsten arbeite ich in den oberen Schichten – zum Beispiel beim Hinzufügen oder Aktualisieren eines Containers.
+Seltener aktualisiere ich Betriebssystempakete.
+Noch seltener sehe ich mir Versionen einer Konfigurationsdatei an, die auf der Festplatte gespeichert sind – dank automatischer Snapshots von ZFS.
+Und schließlich, wenn mein Server ausfällt, befinde ich mich ganz unten im Stack: Ich repariere oder ersetze die Hardware.
+Hier findest du die entsprechenden Abschnitte mit Details zu jeder Ebene:
 
-* services in containers:
-** <<Nextcloud: file sync and share>>
-** <<Jellyfin: stream audio and video>>
-** <<Wallabag: save and read articles>>
+* Dienste in Containern:
+** <<Nextcloud: Dateisynchronisation und -Freigabe>>
+** <<Jellyfin: Audio- und Videostreaming>>
+** <<Wallabag: Artikel speichern und lesen>>
 * container runtime:
 ** <<Containers == happy>>
 ** <<Contained services>>
@@ -1078,232 +1079,230 @@ Here's where to look for details on each layer:
 * filesystem: <<Filesystem>>
 * hardware: <<Server>>
 
-There are also two services in containers covered later and _not_ pictured in the diagram:
+Es gibt außerdem zwei Dienste in Containern, die später behandelt werden und _nicht_ im Diagramm dargestellt sind:
 
 * <<Watchtower: service updater>>
 * <<Scratch: visual programming>>
 
-=== Digital security
+=== Digitale Sicherheit
 
-Let's cover the basic tools for understanding and securing your server.
+Lass uns die grundlegenden Werkzeuge kennenlernen, um deinen Server zu verstehen und abzusichern.
 
-==== Categorize your data
+==== Categoriziere deine Daten
 
-First, consider your data.
-It helps to break it down into two common categories:
+Zuerst solltest du deine Daten betrachten.
+Es hilft, sie in zwei gängige Kategorien aufzuteilen:
 
-===== Sensitive data
+===== Saidensible Daten
 
-Examples: passwords, credit card numbers, government ID numbers.
-Recommendations:
+Beispiele: Passwörter, Kreditkartennummern, staatliche Ausweisnummern.
+Empfehlungen:
 
-. Store offline only if possible.
-. If ever saved on a computer, store encrypted.
-. Easy fix: store in a ((password manager)).
+. Wenn möglich, nur offline speichern.
+. Falls jemals auf einem Computer gespeichert, dann verschlüsselt.
+. Einfache Lösung: in einem ((Passwortmanager)) speichern.
 
-===== Everything else
+===== Alles Andere
 
-Examples: notes, photos, documents, personal information.
-Recommendations:
+Beispiele: Notizen, Fotos, Dokumente, persönliche Informationen.
+Empfehlungen:
 
-. Store on encrypted media, including backups.
-. Access only with up-to-date software you trust.
-. Disallow WAN (wide area network) access to these data.
+. Auf verschlüsselten Medien speichern, einschließlich Backups.
+. Nur mit aktueller, vertrauenswürdiger Software darauf zugreifen.
+. WAN-Zugriff (Wide Area Network) auf diese Daten untersagen.
 
-==== WAN access
+==== WAN-Zugriff
 
-(((WAN access)))
-Once you've categorized your data, think about how people will get to it.
-At home you can generally just connect directly to your server.
-When you're away or you're trying to share with someone else, you're talking WAN access.
+(((WAN-Zugriff)))
+Sobald du deine Daten kategorisiert hast, überlege dir, wie Menschen darauf zugreifen werden.
+Zuhause kannst du im Allgemeinen direkt auf deinen Server zugreifen.
+Wenn du jedoch unterwegs bist oder Daten mit jemand anderem teilen möchtest, geht es um WAN-Zugriff (Wide Area Network).
 
-(((router)))
+(((Router)))
 (((port forward)))
-WAN access is--informally--remote access to services and data running in your LAN.
-One means of allowing WAN access to a service is by port forwarding HTTPS traffic through your router/firewall.
-Port forwarding without taking additional security measures is both risky and convenient.
+WAN-Zugriff ist – informell gesagt – der Fernzugriff auf Dienste und Daten, die in deinem lokalen Netzwerk (LAN) laufen.
+Eine Möglichkeit, WAN-Zugriff auf einen Dienst zu ermöglichen, ist das Weiterleiten von HTTPS-Verkehr (Portweiterleitung) über deinen Router oder deine Firewall.
+Portweiterleitung ohne zusätzliche Sicherheitsmaßnahmen ist zugleich riskant und bequem.
 
-NOTE: Consider alternatives to port forwarding, such as using a VPN.
+NOTE: Ziehe Alternativen zur Portweiterleitung in Betracht, wie etwa die Verwendung einer VPN.
 
-==== Threat model
+==== Bedrohungsmodell
 
 (((threat model)))
-Let's back up a step and talk about threat modeling.
-Your _threat model_ is how you'll consider threats to your data and how you'll mitigate these threats.
-With your threat model in mind, you'll be able to gain confidence in, for example, the decision of whether or not you should permit WAN access.
+Gehen wir einen Schritt zurück und sprechen über Bedrohungsmodellierung.
+Dein Bedrohungsmodell beschreibt, wie du Bedrohungen für deine Daten einschätzt und wie du ihnen entgegenwirken willst.
+Mit einem klaren Bedrohungsmodell kannst du fundierte Entscheidungen treffen – zum Beispiel darüber, ob du den WAN-Zugriff auf deinen Server erlauben solltest oder nicht.
 
-WARNING: If you already know you are a valuable target (public figure, high net worth, wartime journalist, responsible for a server with information about many people), buckle up for a longer journey.
-This guide is not sufficient for your threat model.
+WARNING: Wenn du bereits weißt, dass du ein wertvolles Ziel bist (z. B. öffentliche Person, hohes Vermögen, Kriegsberichterstatter*in oder verantwortlich für einen Server mit Informationen über viele Menschen), dann gilt: Mach dich auf eine längere Reise gefasst.
+Dieses Buch allein reicht nicht aus, um deinem Bedrohungsmodell gerecht zu werden.
 
-Let's build a simple example threat model for the "`everything else`" data class.
-Consider:
+Lass uns ein einfaches Beispiel für ein Bedrohungsmodell für die Datenklasse "alles andere" erstellen.
+Überlege dir dabei folgende Punkte:
 
-Assets::
-  Data you are trying to protect.
-Actors/Threats/Vectors::
-  People and bots acting badly, and their means of attack.
-Includes mistakes and bugs.
-Mitigations::
-  Steps taken to reduce chances attacks succeed.
+Anlagen::
+  Daten, die du schützen möchtest.
+Akteure / Bedrohungen / Angriffsvektoren::
+  Menschen und Bots, die in böser Absicht handeln – sowie deren Angriffsmethoden.
+Auch unbeabsichtigte Fehler und Software-Bugs zählen dazu.
+Gegenmaßnahmen::
+  Maßnahmen zur Risikominimierung, damit Angriffe weniger wahrscheinlich sind oder weniger Schaden anrichten.
 
-Put it all together and you get my 100% marketing-friendly threat model acronym *A.A/T/V.M.* (all punctuation is vocalized).
-Really just rolls off the tongue!
+Füg das alles zusammen, und du erhältst mein absolut marketingfreundliches Akronym für ein Bedrohungsmodell: A.A/T/V.M. (jede Zeichensetzung wird mitgesprochen).
+Geht einem wirklich leicht über die Lippen!
 
-==== Example: WAN access
+==== Beispiel: WAN-Zugriff
 
-Test ((WAN access)) with this threat model.
+Teste ((WAN-Zugriff)) mit diesem Bedrohungsmodell.
 
-Assets::
-  Files with personal information stored in out-of-date service (e.g. an old, vulnerable version of Nextcloud).
-Actors/Threats/Vectors::
-  Bot scrapes websites and finds URL to service on a public mailing list archive.(((bot)))
-Bot automatically attempts exploit against known vulnerability in service.
-Exploit succeeds, bot owner gains access to compute resources and personal information.
-Mitigations::
-  Keep service up to date.
-Secure WAN boundary: monitor traffic logs, employ an ((IPS)) (intrusion prevention system), only cross into ((LAN)) using a VPN (virtual private network).
-Close WAN boundary: disallow all inbound WAN access.
+Anlagen::
+  Dateien mit persönlichen Informationen, die in einem veralteten Dienst gespeichert sind (z. B. eine alte, verwundbare Version von Nextcloud).
+Akteure / Bedrohungen / Angriffsvektoren::
+  Ein Bot durchsucht Websites und findet eine URL zu einem Dienst in einem öffentlich zugänglichen Mailinglisten-Archiv.
+Der Bot versucht automatisch, eine bekannte Schwachstelle im Dienst auszunutzen.
+Der Angriff gelingt, und der Bot-Betreiber erhält Zugriff auf Rechenressourcen und persönliche Informationen.
+Gegenmaßnahmen::
+  Halte den Dienst aktuell.
+Sichere die WAN-Grenze: überwache die Verkehrsdaten, setze ein ((IPS)) (Intrusion Prevention System (Einbruchsschutzsystem)) ein, und lasse den Zugriff ins ((LAN)) nur über ein VPN (Virtual Private Network) zu.
+Schließe die WAN-Grenze: erlaube keinen eingehenden WAN-Zugriff.
 
-Should you choose to expose a service, these mitigations will help secure it.
-"`Avoid public mailing lists`" is not listed in mitigations as it only obscures the URL to the out-of-date service, and one shouldn't rely on "`security through obscurity`".
+Solltest du dich entscheiden, einen Dienst öffentlich zugänglich zu machen, helfen diese Maßnahmen, ihn zu sichern.
+„`Öffentliche Mailinglisten vermeiden`“ ist nicht als Maßnahme aufgeführt, da es nur die URL zum veralteten Dienst verschleiert und man sich nicht auf „`Sicherheit durch Verschleierung`“ verlassen sollte.
 
 [%unbreakable]
-TIP: Mitigating at multiple layers (OS firewall, service, WAN boundary) demonstrates "`defense in depth`", a common and worthwhile security practice.
+TIP: Die Absicherung auf mehreren Ebenen (Betriebssystem-Firewall, Dienst, WAN-Grenze) zeigt das Prinzip der „`Verteidigung in der Tiefe`“ („defense in depth“), eine gängige und sinnvolle Sicherheitsstrategie.
 
 ==== VPN
 
-A ((VPN)) can secure your WAN boundary by only allowing authenticated users and adding a layer of encryption.
-You can safely teleport back into your ((LAN)) while you are remote.
+Ein ((VPN)) kann deine WAN-Grenze absichern, indem es nur authentifizierte Benutzer zulässt und eine Verschlüsselungsschicht hinzufügt.
+So kannst du dich sicher in dein ((LAN)) „teleportieren“, während du remote bist.
 
-If all your users are able to use a VPN, you can keep ports closed for HTTP/S traffic and instead only allow VPN traffic.
-Assuming your VPN server is well-configured and up to date, this is an excellent way to reduce your ((attack surface)).
+Wenn alle deine Nutzer ein VPN verwenden können, kannst du die Ports für HTTP/S-Verkehr geschlossen halten und stattdessen nur VPN-Verkehr erlauben.
+Vorausgesetzt, dein VPN-Server ist gut konfiguriert und aktuell, ist dies eine hervorragende Möglichkeit, deine ((Angriffsfläche)) zu reduzieren.
 
-VPN technology enjoyed a major upgrade with https://www.wireguard.com[Wireguard].
-From a user perspective there's no heavyweight login process, as with older VPNs.
-((Wireguard)) is fast, easy, and secure.
+Die VPN-Technologie erhielt ein großes Upgrade durch [https://www.wireguard.com\[Wireguard](https://www.wireguard.com[Wireguard)].
+Aus Nutzersicht gibt es keinen schweren Login-Prozess mehr, wie bei älteren VPNs.
+((Wireguard)) ist schnell, einfach und sicher.
 
-==== Full-disk encryption
+==== Full-disk Verschlüsselung
 
 (((encryption, full-disk)))
-Encrypting prevents data recovery by an attacker.
-You'll have to enter a password on boot, though.
-This is inconvenient if you have intermittent power and/or no remote management capability.
-There's also the reasonable argument that full-disk encryption offers little for an always-on server: during normal operation you've already supplied the decryption key.
+Das Verschlüsseln verhindert, dass ein Angreifer Daten wiederherstellen kann.
+Beim Hochfahren musst du allerdings ein Passwort eingeben.
+Das ist unpraktisch, wenn es zu Stromausfällen kommt und/oder keine Fernverwaltung möglich ist.
+Außerdem wird zu Recht argumentiert, dass Vollplattenverschlüsselung für einen ständig eingeschalteten Server wenig bringt: Im Normalbetrieb hast du den Entschlüsselungsschlüssel ja bereits eingegeben.
 
-If you decide you want full-disk encryption, choose it during <<OS install>>.
-Review the material earlier in this chapter if you want help with your decision.
+Wenn du dich für Vollplattenverschlüsselung entscheidest, wähle sie während der <<OS-Installation>> aus.
+Sieh dir die vorherigen Abschnitte dieses Kapitels an, falls du bei der Entscheidung Unterstützung möchtest.
 
-==== More tips
+==== Mehr Tips
 
 [#self-hoster-security-tips]
-.Self-hoster security tips
+.Self-hoster Sicherheitstips
 ****
-* Maintain useful encrypted backups.
-Perform test restores to prove they are useful.
-See <<Backups>>.
-* Avoid running commands as the `root` user.
-* Use multi-factor authentication.
-* Use firewalls.
-* Use strong passwords.
-* Be very careful when port forwarding or don't do it at all.
-* Be vigilant about all the usual stuff too: phishing, malware, SMS spoofing, and social attacks.
-** Take caution with email links and attachments.
-** Don't install untrusted software.
-Always use HTTPS.
-** Use a special passphrase with your mobile carrier as an extra layer of authentication.
-** Question urgency and suspicious requests.
-* Send unrecognized calls to voicemail.
-* Pay attention to data breaches and protect your identity.
-** Freeze your credit after a breach.
-* Learn about compartmentalization and the principle of least privilege.
-****
+* Pflege nützliche, verschlüsselte Backups.
+Führe Test-Wiederherstellungen durch, um deren Nützlichkeit zu bestätigen.
+Siehe <<Backups>>.
+* Vermeide es, Befehle als root-Benutzer auszuführen.
+* Nutze Multi-Faktor-Authentifizierung.
+* Setze Firewalls ein.
+* Verwende starke Passwörter.
+* Sei sehr vorsichtig beim Port-Forwarding oder lasse es am besten ganz weg.
+* Sei wachsam bei all den üblichen Dingen: Phishing, Malware, SMS-Spoofing und Social-Engineering-Angriffen.
+** Sei vorsichtig mit Links und Anhängen in E-Mails.
+** Installiere keine nicht vertrauenswürdige Software. Always use HTTPS.
+** Nutze bei deinem Mobilfunkanbieter eine spezielle Passphrase als zusätzliche Authentifizierungsebene.
+** Hinterfrage Dringlichkeit und verdächtige Anfragen kritisch.
+* Leite unbekannte Anrufe auf die Mailbox um.
+* Achte auf Datenpannen und schütze deine Identität.
+** Sperre deine Kreditinformationen nach einem Datenleak.
+* Informiere dich über Kompartimentierung (Isolation) und das Prinzip der geringsten Privilegien.
+***
 
-Further reading:
+Zusätzliche Lektüre:
 
 * https://oreilly.com/library/view/personal-cybersecurity-how/9781484224304/[Personal Cybersecurity: How to Avoid and Recover from Cybercrime] by Marvin Waschke
 * https://modernprivatelife.com/how-to-choose-privacy-threat-model/[Personal Privacy Threat Modeling (With LOTS Of Examples)] by Eliza
 * https://arstechnica.com/information-technology/2017/07/how-i-learned-to-stop-worrying-mostly-and-love-my-threat-model/[How I learned to stop worrying (mostly) and love my threat model] by Sean Gallagher
 
-=== Filesystem
+=== Dateisystem
 
 (((ZFS)))
-I recommend (and will demonstrate) starting with one ((ext4)) filesystem and, optionally, one ZFS filesystem.
-ext4 is the stable, simple, and default filesystem for Ubuntu.
-ZFS (originally: Zettabyte File System) provides encryption, lightweight snapshots and ((RAID)) (redundant array of inexpensive disks).
+Ich empfehle (und werde demonstrieren), mit einem einzigen ((ext4))-Dateisystem zu beginnen und optional einem ZFS-Dateisystem.
+ext4 ist das stabile, einfache und standardmäßige Dateisystem für Ubuntu.
+ZFS (ursprünglich: Zettabyte File System) bietet Verschlüsselung, leichte Snapshots und ((RAID)) (redundante Anordnung kostengünstiger Festplatten).
 
-You may optionally use ZFS for storage (`/data`) on your server following <<ZFS setup>>.
-For the root (`/`) partition, I recommend using ext4 instead of ZFS to:
+Optional kannst du ZFS für den Speicher (/data) auf deinem Server verwenden, wie unter <<ZFS setup>> beschrieben.
+Für die Root-Partition (/) empfehle ich stattdessen ext4 zu verwenden, um:
 
-* stick as closely as possible to the default Ubuntu install
-* avoid Docker filesystem clutter
-** when `/var/lib/docker` is on ZFS, many Docker-related filesystems are created, cluttering up `zfs list` a bit
-* avoid taking ZFS snapshots of the OS, since
-** we don't need to
-** the OS will live outside ZFS folders
-** we won't modify the OS--changes will be managed upstream (e.g. during package updates or via mario)
+* So nah wie möglich an der Standard-Ubuntu-Installation bleiben
+* Docker-Dateisystem-Müll vermeiden
+** Wenn /var/lib/docker auf ZFS liegt, werden viele Docker-bezogene Dateisysteme erstellt, die die Ausgabe von zfs list etwas unübersichtlich machen
+* ZFS-Snapshots des Betriebssystems vermeiden, da
+** wir sie nicht brauchen
+** das Betriebssystem außerhalb der ZFS-Verzeichnisse liegt
+** wir das Betriebssystem nicht verändern werden – Änderungen werden upstream verwaltet (z. B. bei Paketupdates oder über mario)
 
-Docker volumes (persistent container data) will be on ZFS.
-The ((container))'s filesystem--everything besides mounted volumes with persistent data--is ephemeral and stored on ext4 in `/var/lib/docker`.
-To learn more about ZFS, see:
+Docker-Volumes (persistente Container-Daten) werden auf ZFS gespeichert.
+Das Dateisystem des ((Containers) – also alles außer den gemounteten Volumes mit persistenten Daten – ist flüchtig (ephemeral) und liegt auf ext4 unter /var/lib/docker.
+Um mehr über ZFS zu erfahren, siehe:
 
 * https://arstechnica.com/information-technology/2014/01/bitrot-and-atomic-cows-inside-next-gen-filesystems/[Bitrot and atomic COWs: Inside "`next-gen`" filesystems] by Jim Salter
 * https://arstechnica.com/information-technology/2020/05/zfs-101-understanding-zfs-storage-and-performance/[ZFS 101—Understanding ZFS storage and performance] by Jim Salter
 * https://wiki.debian.org/ZFS[ZFS (Debian wiki page)] by various authors
 
-Other ZFS concepts worth learning about: fragmentation, ARC (adaptive replacement cache), resilvering, scrubbing, `ashift`, and `recordsize`.
+Weitere ZFS-Konzepte, die es sich zu lernen lohnt: Fragmentierung, ARC (Adaptive Replacement Cache), Resilvering, Scrubbing, `ashift` und `recordsize`.
 
-=== Operating system
+=== Betriebssystem
 
 (((operating system)))
 (((Ubuntu)))
-((Linux)) is a popular and reasonable choice for self-hosting.
-I recommend a 64-bit Ubuntu Linux server with at least 2GB memory and 30GB storage.
-Ubuntu ((LTS)) (long-term support) releases are the most stable and I recommend them.
-_Steadfast_ specifically mentions 24.04, the LTS release from April 2024.
-24.04 is stable today, and will receive updates https://ubuntu.com/about/release-cycle[until April 2034], promising many more years of stability until _Steadfast_ must be revised.
-Installing the OS is generally quick and painless, see <<OS install>>.
+(Linux ist eine beliebte und vernünftige Wahl für Self-Hosting. Ich empfehle einen 64-Bit-Ubuntu-Linux-Server mit mindestens 2 GB Arbeitsspeicher und 30 GB Speicherplatz. 
+Ubuntu LTS (Long-Term Support)-Versionen sind am stabilsten, und ich empfehle genau diese. 
+Steadfast bezieht sich speziell auf 24.04, die LTS-Version von April 2024. 
+Version 24.04 ist heute stabil und wird bis April 2034 Updates erhalten, was viele weitere Jahre Stabilität verspricht, bevor Steadfast überarbeitet werden muss. 
+Die Installation des Betriebssystems ist im Allgemeinen schnell und schmerzlos, siehe Abschnitt 7.3 <<OS install>>.
 
-==== Customizations
+==== Personalisierung
 
-It's good practice to minimize and carefully track customizations to the operating system from a default install.
-This eases maintenance, including eventual re-installs.
-Not mucking about on the server takes discipline, especially for old-school hands-on sysadmins like me.
+Es ist gute Praxis, Anpassungen am Betriebssystem möglichst gering zu halten und sorgfältig zu dokumentieren, wenn man von einer Standardinstallation ausgeht.
+Das erleichtert die Wartung, einschließlich eventueller Neuinstallationen.
+Nicht ständig am Server herumzubasteln erfordert Disziplin, besonders für altgediente, hands-on Systemadministratoren wie mich.
 
-Try to avoid SSH'ing into the server and making one-off changes.
-You'll learn how to instead modify mario's configuration files and re-provision the server in <<_mario>>.
+Versuche, es zu vermeiden, dich per SSH direkt auf den Server einzuloggen und dort Einzeländerungen vorzunehmen.
+Du wirst lernen, stattdessen die Konfigurationsdateien von mario zu bearbeiten und den Server neu zu provisionieren (siehe <<_mario>>).
 
-You can and should still ((SSH)) into the server, but when you do, try to only run read-only or exceptional read-write commands.
-I often do something manually, undo it, then do the same thing with mario to confirm results are as expected.
+Natürlich kannst und solltest du dich weiterhin per ((SSH)) auf den Server verbinden, aber versuche dann, nur Lesezugriffe oder nur ausnahmsweise Schreibzugriffe auszuführen.
+Ich mache oft erst etwas manuell, mache es rückgängig und erledige dann denselben Schritt mit mario, um sicherzustellen, dass das Ergebnis wie erwartet ist.
 
 ****
-Example read-only server-side operations:
+Beispiele für serverseitige Leseoperationen:
 
-* show per-container resource usage: `sudo docker stats`
-* follow container log messages: `sudo docker compose logs -f` (run this in a folder containing a `compose.yml` file)
-* check server health: `date; tail /proc/pressure/*`
+* Ressourcenverbrauch pro Container anzeigen:`sudo docker stats`
+* Container-Logmeldungen verfolgen (ausführen im Verzeichnis mit einer `compose.yml`-Datei):`sudo docker compose logs -f`
+* Server-Gesundheit prüfen:`date; tail /proc/pressure/*`
 
-Example read-write server-side operations:
+Beispiele für serverseitige Schreiboperationen:
 
-* upgrade OS packages: `sudo apt full-upgrade`
-* change permissions for a folder: `chmod 0700 ~/bin/`
+* Betriebssystem-Pakete aktualisieren:`sudo apt full-upgrade`
+* Berechtigungen für einen Ordner ändern:`chmod 0700 ~/bin/`
 ****
 
-Start a "`monthly maintenance`" checklist like the one found in <<Server maintenance>>.
-Include these read-write operations in your checklist.
-Whenever possible, use mario to perform read-write operations.
+Beginne mit einer Checkliste für die "`monatliche Wartung`", wie sie in <<Server maintenance>> zu finden ist.
+Nimm diese schreibenden (read-write) Operationen in deine Checkliste auf.
+Führe schreibende Operationen nach Möglichkeit mit mario durch.
 
-Always use `sudo` to run privileged commands instead of logging in as `root`.
-This ensures every command is captured in `/var/log/auth.log` along with when it was executed, and by whom.
+Verwende stets `sudo`, um privilegierte Befehle auszuführen, anstatt dich direkt als `root` anzumelden.
+So wird jeder Befehl zusammen mit Zeitpunkt und ausführender Person in `/var/log/auth.log` protokolliert.
 
-Upgrades may be automated.
-This is appropriate once you have sufficient scale (along with trust and control of the source of the upgrades).
-I usually do OS upgrades manually because I manage few systems so the burden is minimal and infrequent, and upgrading a package may require testing or manual intervention (e.g. rebooting).
-These reasons are similar to the reasons I install the OS itself by hand.
+Upgrades können automatisiert werden.
+Das ist sinnvoll, sobald man eine gewisse Skalierung erreicht hat – vorausgesetzt, man hat Vertrauen in und Kontrolle über die Quelle der Updates.
+Ich persönlich führe Betriebssystem-Upgrades meist manuell durch, da ich nur wenige Systeme betreue. Der Aufwand ist dadurch gering und selten, und das Aktualisieren eines Pakets kann Tests oder manuelle Eingriffe (z. B. einen Neustart) erfordern.
+Aus ähnlichen Gründen installiere ich auch das Betriebssystem selbst von Hand.
 
-My OS is more a pet than cattle (see "`cattle vs. pets`" in <<Glossary>>).
-Perhaps it is a pet phoenix.
-When it dies, it will be relatively easy to revive from the ashes.
-It is backed up, there are few manual steps to perform, and all the manual steps are carefully documented.
+Mein Betriebssystem ist eher ein Haustier als ein Nutztier (siehe „*cattle vs. pets*“ im <<Glossary>>).
+Vielleicht ist es sogar ein *Haustier-Phönix*:
+Wenn es stirbt, lässt es sich relativ leicht aus der Asche wiederbeleben.
+Es wird regelmäßig gesichert, es gibt nur wenige manuelle Schritte – und alle manuellen Schritte sind sorgfältig dokumentiert.
 
 === Contained services
 
@@ -1478,7 +1477,7 @@ The good ones will likely share at least some of these traits.
 * Flexible and extensible (easy to customize and extend with plugins and such).
 ****
 
-See also: <<solution-viability-checklist>> in <<Alternativen zu mario>>.
+See also: <<solution-viability-checklist>> in <<Alternatives to mario>>.
 
 These traits are based on standard industry practice as well as my personal values and preferences.
 Your own list may differ if, for example, you don't prefer FOSS licensing or do prefer a particular programming language.
@@ -2915,7 +2914,7 @@ It would be convenient for users to be able to log in once to get access to all 
 
 https://goauthentik.io[Authentik] is one service providing this, and appears to have all the features I want (single sign-on, backend user database, integrates with everything I self-host).
 I want to try it out and see it running well for a good while before adding it to mario.
-Some of the other self-hosting solutions mentioned in <<Alternativen zu mario>> do include FOSS central identity management.
+Some of the other self-hosting solutions mentioned in <<Alternatives to mario>> do include FOSS central identity management.
 
 === Enforce SSH public key auth
 
@@ -3422,7 +3421,7 @@ Don't expect much from these, although you may get lucky from time to time.
 ** https://matrix.to/#/#selfhosted:matrix.org[self-hosted chat]
 * Hire me to help you out.
 
-=== Alternativen zu mario
+=== Alternatives to mario
 
 If you're in a hurry, you can find one-click-install appliances with many ready-to-go apps.
 (((FreedomBox)))
