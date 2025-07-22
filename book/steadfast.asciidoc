@@ -360,7 +360,7 @@ https scheme is assumed and omitted.
 Full URL appears in print version.
 |`\https://cloud.example.com` |Non-working example link.
 Replace `.example.com` with your actual domain name.
-|<<System design>> |Cross-reference to another section or chapter.
+|<<System Design>> |Cross-reference to another section or chapter.
 |===
 
 Hinweise:
