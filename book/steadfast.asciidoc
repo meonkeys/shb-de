@@ -1001,16 +1001,16 @@ Musst du neue Leitungen für Strom oder Netzwerk verlegen?
 Skizziere grob wichtige Termine, damit du und deine Nutzer vorausplanen können.
 Zum Beispiel:
 
-28. April::
-Brainstorming, Planung.
-30. April::
-Hardware bestellen.
-3. Mai::
-Ethernet-Kabel vom Router in die Garage verlegen.
-5. Mai::
-Server einrichten: Festplatten einbauen, einschalten, Betriebssystem installieren, Dienste starten.
-9. Juni::
-Ergebnis im Vergleich zu den ursprünglichen Zielen überprüfen.
+28.{nbsp}April::
+  Brainstorming, Planung.
+30.{nbsp}April::
+  Hardware bestellen.
+3.{nbsp}Mai::
+  Ethernet-Kabel vom Router in die Garage verlegen.
+5.{nbsp}Mai::
+  Server einrichten: Festplatten einbauen, einschalten, Betriebssystem installieren, Dienste starten.
+9.{nbsp}Juni::
+  Ergebnis im Vergleich zu den ursprünglichen Zielen überprüfen.
 
 Lade andere ein, mitzumachen, idealerweise schon zu Beginn beim Brainstorming und der Planung.
 Das ist eine großartige Gelegenheit, weitere Personen einzubeziehen, die bei der Betreuung des Servers helfen können.
