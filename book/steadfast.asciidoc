@@ -1070,8 +1070,8 @@ Hier findest du die entsprechenden Abschnitte mit Details zu jeder Ebene:
 * container runtime:
 ** <<Containers == happy>>
 ** <<Contained services>>
-* OS: <<Operating system>>
-* filesystem: <<Filesystem>>
+* OS: <<Betriebssystem>>
+* filesystem: <<Dateisystem>>
 * hardware: <<Server>>
 
 Es gibt außerdem zwei Dienste in Containern, die später behandelt werden und _nicht_ im Diagramm dargestellt sind:
@@ -1249,7 +1249,7 @@ Weitere ZFS-Konzepte, die es sich zu lernen lohnt: Fragmentierung, ARC (Adaptive
 
 === Betriebssystem
 
-(((operating system)))
+(((Betriebssystem)))
 (((Ubuntu)))
 ((Linux)) ist eine beliebte und vernünftige Wahl für Self-Hosting. Ich empfehle einen 64-Bit-Ubuntu-Linux-Server mit mindestens 2 GB Arbeitsspeicher und 30 GB Speicherplatz.
 Ubuntu ((LTS)) (Long-Term Support)-Versionen sind am stabilsten, und ich empfehle genau diese.
@@ -2499,9 +2499,9 @@ This chapter covers what they provide and how to manage them.
 |===
 |Purpose |See
 
-|sync and share files, groupware |<<Nextcloud: file sync and share>>
-|stream music and home movies |<<Jellyfin: stream audio and video>>
-|read articles offline, without distractions |<<Wallabag: save and read articles>>
+|sync and share files, groupware |<<Nextcloud: Dateisynchronisation und -Freigabe>>
+|stream music and home movies |<<Jellyfin: Audio- und Videostreaming>>
+|read articles offline, without distractions |<<Wallabag: Artikel speichern und lesen>>
 |keep other services up to date |<<Watchtower: service updater>>
 |learn to code with visual tools |<<Scratch: visual programming>>
 |===
@@ -2523,7 +2523,7 @@ The server-side commands for managing services are standardized: You'll see the 
 
 <<<
 
-=== Nextcloud: file sync and share
+=== Nextcloud: Dateisynchronisation und -Freigabe
 
 (((Nextcloud)))
 A _Steadfast_ personal cloud needs convenient file sharing and synchronization.
@@ -2557,7 +2557,7 @@ See <<Various issues>>.
 
 <<<
 
-=== Jellyfin: stream audio and video
+=== Jellyfin: Audio- und Videostreaming
 
 (((Jellyfin)))
 https://jellyfin.org[Jellyfin] is a personal streaming media server.
@@ -2630,7 +2630,7 @@ To see the Nextcloud-managed media files in Jellyfin, add two media libraries:
 
 <<<
 
-=== Wallabag: save and read articles
+=== Wallabag: Artikel speichern und lesen
 
 (((Wallabag)))
 https://wallabag.org[Wallabag] saves articles for distraction-free offline reading.
