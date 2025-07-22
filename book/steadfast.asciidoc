@@ -972,26 +972,26 @@ Wie viel hast du zur Verfügung und wie viel möchtest du ausgeben? Schreib eine
 Skizziere deine Gedanken zu den Ressourcen, die du benötigen wirst.
 Einige Ideen:
 
-Rechenleistung und Speicher:
+Rechenleistung und Speicher::
 CPU und RAM sind die grundlegenden Ressourcen, die für die Berechnung notwendig sind.
 Siehe <<Map services to resources>> für Ideen, wie du Anforderungen basierend auf den Diensten, die du hosten wirst, abschätzen kannst.
 GPU-Arbeitslasten werden in diesem Buch nicht behandelt, obwohl <<_whats_next>> und <<Exercises>> einige Dinge ansprechen, die du selbst ausprobieren kannst.
 
-Datenspeicher:
+Datenspeicher::
 Schätze, wie viel Speicherplatz du benötigen wirst.
 Mit jedem Sprung in der Einheit (zum Beispiel von GB (Gigabyte) zu TB (Terabyte)) steigt die Komplexität und die Kosten deutlich an.
 Dieses Buch ist für Datenspeicher bis etwa 10 TB geeignet.
 Siehe <<Hard drives>> für Tipps, wie du beim Speicher durch Self-Hosting Geld sparen kannst.
 
-Strom:
+Strom::
 Überprüfe deine Stromrechnung auf die Kosten pro kWh und mache einige Berechnungen.
 Siehe <<Server>> für ein Beispiel, wie viel Strom ein leistungsfähiger Server verbraucht.
 
-Support:
+Support::
 Wer hilft dir, wenn du mal nicht weiterkommst?
 <<Support>> bietet einige Ideen.
 
-Physischer Standort:
+Physischer Standort::
 Wo soll der Server stehen?
 Musst du neue Leitungen für Strom oder Netzwerk verlegen?
 <<Networking>> beschreibt meine Heiminstallation.
