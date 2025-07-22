@@ -865,7 +865,7 @@ image::inside-chassis.jpg[align="center",scaledwidth=80%]
 ===== Containers == happy
 
 (((Docker)))
-Ich war angenehm überrascht von ((container))s (erklärt in <<Contained services>>), insbesondere nach meinen gemischten früheren Erfahrungen mit VMs.
+Ich war angenehm überrascht von ((Container))s (erklärt in <<Contained services>>), insbesondere nach meinen gemischten früheren Erfahrungen mit VMs.
 VMs sind anfangs einfach, weil sie sich wie echte Hardware verhalten.
 Linux in eine VM zu installieren ist genauso einfach wie auf ((Bare Metal)) (manchmal sogar einfacher).
 Dann kann man einen oder mehrere Dienste in der VM einrichten.
