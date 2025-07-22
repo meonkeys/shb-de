@@ -781,7 +781,7 @@ Hier sind ein paar Beispiele, bei denen ich einen öffentlichen Dienst durch ein
 === Criminal chickens
 
 Meine Familie hat ein selbstgebautes Sicherheitssystem für unsere Hühner, und die Videos sind mir wichtig.
-Früher habe ich sie einfach auf YouTube hochgeladen, weil hey, es ist kostenlos und es „`funktioniert einfach`“, oder?
+Früher habe ich sie einfach auf YouTube hochgeladen, weil hey, es ist kostenlos und es „funktioniert einfach“, oder?
 
 Außer wenn es das nicht tut.
 YouTube fand manchmal, dass meine Hühner Spam und/oder Betrug seien.
@@ -825,7 +825,7 @@ Ich suchte nach allen Fotos, die im Umkreis von 10 Meilen um den Punkt aufgenomm
 Der Schlüssel war, direkt und schnell auf die Daten zugreifen zu können.
 
 Das ist nur ein (wahrscheinlich bald veraltetes) Beispiel.
-Wenn du das hier liest, kannst du deine Fotos vielleicht schon mit einem Satz wie „`Zeig mir alle Fotos, die im Umkreis von 10 Meilen um Mexiko-Stadt aufgenommen wurden`“ abfragen – und es funktioniert einfach.
+Wenn du das hier liest, kannst du deine Fotos vielleicht schon mit einem Satz wie „Zeig mir alle Fotos, die im Umkreis von 10 Meilen um Mexiko-Stadt aufgenommen wurden“ abfragen – und es funktioniert einfach.
 
 Dann kannst du dich der Rettung der Welt widmen.
 Stell nur sicher, dass du deine Daten hast!
@@ -841,7 +841,7 @@ Ich würde zu gern erfahren, wie es bei dir läuft.
 Du wirst vielleicht aber auch überrascht sein, wie zeitaufwendig und schwierig manche Dinge sein können.
 Vielleicht hängst du an der Hardware fest (und deren Stromversorgung, Verkabelung, Kühlung, Ausfällen).
 Vielleicht am Netzwerk.
-Vielleicht am „`Change Management`“ (deine Nutzer\*innen davon zu überzeugen, Nextcloud statt Dropbox zu verwenden).
+Vielleicht am „Change Management“ (deine Nutzer\*innen davon zu überzeugen, Nextcloud statt Dropbox zu verwenden).
 
 Hier sind einige Dinge, die mich überrascht haben – im Positiven wie im Negativen.
 
