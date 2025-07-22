@@ -832,7 +832,7 @@ Stell nur sicher, dass du deine Daten hast!
 
 === Überraschungen
 
-Falls du dich entscheidest, weiterzumachen: gute Reise, Reisende\*r.
+Falls du dich entscheidest, weiterzumachen: gute Reise, Reisender.
 Das hier macht wirklich Spaß.
 
 Du wirst vielleicht überrascht sein, wie schnell und einfach manche Dinge beim Self-Hosting funktionieren.
@@ -841,7 +841,7 @@ Ich würde zu gern erfahren, wie es bei dir läuft.
 Du wirst vielleicht aber auch überrascht sein, wie zeitaufwendig und schwierig manche Dinge sein können.
 Vielleicht hängst du an der Hardware fest (und deren Stromversorgung, Verkabelung, Kühlung, Ausfällen).
 Vielleicht am Netzwerk.
-Vielleicht am „Change Management“ (deine Nutzer\*innen davon zu überzeugen, Nextcloud statt Dropbox zu verwenden).
+Vielleicht am „Change Management“ (deine Nutzerinnen davon zu überzeugen, Nextcloud statt Dropbox zu verwenden).
 
 Hier sind einige Dinge, die mich überrascht haben – im Positiven wie im Negativen.
 
