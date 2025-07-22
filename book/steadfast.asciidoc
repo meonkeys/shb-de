@@ -1226,19 +1226,19 @@ Ich empfehle (und werde demonstrieren), mit einem einzigen ((ext4))-Dateisystem 
 ext4 ist das stabile, einfache und standardmäßige Dateisystem für Ubuntu.
 ZFS (ursprünglich: Zettabyte File System) bietet Verschlüsselung, leichte Snapshots und ((RAID)) (redundante Anordnung kostengünstiger Festplatten).
 
-Optional kannst du ZFS für den Speicher (/data) auf deinem Server verwenden, wie unter <<ZFS setup>> beschrieben.
-Für die Root-Partition (/) empfehle ich stattdessen ext4 zu verwenden, um:
+Optional kannst du ZFS für den Speicher (`/data`) auf deinem Server verwenden, wie unter <<ZFS setup>> beschrieben.
+Für die Root-Partition (`/`) empfehle ich stattdessen ext4 zu verwenden, um:
 
 * So nah wie möglich an der Standard-Ubuntu-Installation bleiben
 * Docker-Dateisystem-Müll vermeiden
-** Wenn /var/lib/docker auf ZFS liegt, werden viele Docker-bezogene Dateisysteme erstellt, die die Ausgabe von zfs list etwas unübersichtlich machen
+** Wenn `/var/lib/docker` auf ZFS liegt, werden viele Docker-bezogene Dateisysteme erstellt, die die Ausgabe von `zfs list` etwas unübersichtlich machen
 * ZFS-Snapshots des Betriebssystems vermeiden, da
 ** wir sie nicht brauchen
 ** das Betriebssystem außerhalb der ZFS-Verzeichnisse liegt
 ** wir das Betriebssystem nicht verändern werden – Änderungen werden upstream verwaltet (z. B. bei Paketupdates oder über mario)
 
 Docker-Volumes (persistente Container-Daten) werden auf ZFS gespeichert.
-Das Dateisystem des ((Container))s – also alles außer den gemounteten Volumes mit persistenten Daten – ist flüchtig (ephemeral) und liegt auf ext4 unter /var/lib/docker.
+Das Dateisystem des ((Container))s – also alles außer den gemounteten Volumes mit persistenten Daten – ist flüchtig (ephemeral) und liegt auf ext4 unter `/var/lib/docker`.
 Um mehr über ZFS zu erfahren, siehe:
 
 * https://arstechnica.com/information-technology/2014/01/bitrot-and-atomic-cows-inside-next-gen-filesystems/[Bitrot and atomic COWs: Inside "`next-gen`" filesystems] by Jim Salter
