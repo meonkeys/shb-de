@@ -892,7 +892,7 @@ Dein Server wird dabei auch als Host bezeichnet, da er die Docker-Container host
 Ein Nachteil von Docker ist, dass in Beispielcode und öffentlichen Images oft Root-Zugriff vorausgesetzt wird.
 Das Ausführen als `root` vereinfacht Container zwar, macht sie aber auch unsicherer.
 
-==== Papierlos mit OCR
+===== Papierlos mit OCR
 
 Eine weitere fortschrittliche Entwicklung, die ein Lächeln wert ist, ist kostenlose OCR (optocal character recognition/ optische Zeichenerkennung).
 Ich versuche immer wieder, „papierlos zu werden“, indem ich all meine Papierdokumente einscanne.
