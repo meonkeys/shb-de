@@ -759,7 +759,7 @@ Wenn etwas kaputtgeht, bist du die Person, die es repariert.
 Manchmal bekommst du eine hilfreiche Fehlermeldung, manchmal findest du im Web eine schnelle Lösung.
 Manchmal bekommst du keine – und kannst auch keine finden.
 
-ACHTUNG: Wenn dir Fehlersuche und Debugging keinen Spaß machen, ist Self-Hosting vielleicht nichts für dich.
+CAUTION: Wenn dir Fehlersuche und Debugging keinen Spaß machen, ist Self-Hosting vielleicht nichts für dich.
 
 Wenn du nicht sorgfältig mit ((Backups)) und Sicherheit umgehst, riskierst du Zeit, Energie und das Vertrauen von Menschen, die dir wichtig sind.
 
