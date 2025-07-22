@@ -1255,7 +1255,7 @@ Weitere ZFS-Konzepte, die es sich zu lernen lohnt: Fragmentierung, ARC (Adaptive
 Ubuntu ((LTS)) (Long-Term Support)-Versionen sind am stabilsten, und ich empfehle genau diese.
 Steadfast bezieht sich speziell auf 24.04, die LTS-Version von April 2024.
 Version 24.04 ist heute stabil und wird bis April 2034 Updates erhalten, was viele weitere Jahre Stabilität verspricht, bevor Steadfast überarbeitet werden muss.
-Die Installation des Betriebssystems ist im Allgemeinen schnell und schmerzlos, siehe Abschnitt 7.3 <<OS install>>.
+Die Installation des Betriebssystems ist im Allgemeinen schnell und schmerzlos, siehe <<OS-Installation>>.
 
 ==== Personalisierung
 
@@ -1977,7 +1977,7 @@ The advantage of using mario instead is that each change (say, installing a pack
 The real payoff of this practice is realized when you collaborate with others, including your future self.
 It's not often easy to remember what you did a year ago and why.
 
-Once your server is online following <<OS install>>, use mario to configure and start services.
+Once your server is online following <<OS-Installation>>, use mario to configure and start services.
 
 Please download the source code (see <<Weitere Ressourcen>>).
 It'll be helpful to have this handy so you can follow along as you read.
@@ -2020,7 +2020,7 @@ mario runs on your ((admin computer)) and expects to be able to connect directly
 Here's how to get this working.
 
 First, map your server IP address to a convenient name.
-Using the IP address from <<OS install>>, add a line like this to your hosts file (e.g. `/etc/hosts`):
+Using the IP address from <<OS-Installation>>, add a line like this to your hosts file (e.g. `/etc/hosts`):
 
 .line to add to hosts file (🏠 admin computer)
 [source%unbreakable#line-for-hosts,text]
@@ -2160,7 +2160,7 @@ This will be a name like `example.duckdns.org` or `example.com`.
 Individual services will be named based on this, e.g. `jellyfin.example.com`.
 
 Finish editing `config` and run `provision.sh` again.
-This run will ask you for the password you set during <<OS install>> and subsequent runs will not.
+This run will ask you for the password you set during <<OS-Installation>> and subsequent runs will not.
 You should see output similar to this:
 
 .mario second run output (🏠 admin computer)
@@ -2193,7 +2193,7 @@ Proceed directly to <<Start services>>.
 
 (((DNS)))
 Your server needs a name.
-You'll obtain a domain name from a registrar and input this hostname during <<OS install>>.
+You'll obtain a domain name from a registrar and input this hostname during <<OS-Installation>>.
 I recommend using a single domain name and naming all your services with subdomains (e.g. `cloud.example.com`).
 You can either use a free domain name or buy a domain name from a registrar.
 mario needs the domain name to be able to use a DNS provider with an API for setting up HTTPS web traffic encryption.
