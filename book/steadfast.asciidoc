@@ -1272,17 +1272,17 @@ Ich mache oft erst etwas manuell, mache es rückgängig und erledige dann densel
 ****
 Beispiele für serverseitige Leseoperationen:
 
-* Ressourcenverbrauch pro Container anzeigen:`sudo docker stats`
-* Container-Logmeldungen verfolgen (ausführen im Verzeichnis mit einer `compose.yml`-Datei):`sudo docker compose logs -f`
-* Server-Gesundheit prüfen:`date; tail /proc/pressure/*`
+* Ressourcenverbrauch pro Container anzeigen: `sudo docker stats`
+* Container-Logmeldungen verfolgen (ausführen im Verzeichnis mit einer `compose.yml`-Datei): `sudo docker compose logs -f`
+* Server-Gesundheit prüfen: `date; tail /proc/pressure/*`
 
 Beispiele für serverseitige Schreiboperationen:
 
-* Betriebssystem-Pakete aktualisieren:`sudo apt full-upgrade`
-* Berechtigungen für einen Ordner ändern:`chmod 0700 ~/bin/`
+* Betriebssystem-Pakete aktualisieren: `sudo apt full-upgrade`
+* Berechtigungen für einen Ordner ändern: `chmod 0700 ~/bin/`
 ****
 
-Beginne mit einer Checkliste für die "`monatliche Wartung`", wie sie in <<Server maintenance>> zu finden ist.
+Beginne mit einer Checkliste für die „monatliche Wartung“, wie sie in <<Server maintenance>> zu finden ist.
 Nimm diese schreibenden (read-write) Operationen in deine Checkliste auf.
 Führe schreibende Operationen nach Möglichkeit mit mario durch.
 
@@ -1294,7 +1294,7 @@ Das ist sinnvoll, sobald man eine gewisse Skalierung erreicht hat – vorausgese
 Ich persönlich führe Betriebssystem-Upgrades meist manuell durch, da ich nur wenige Systeme betreue. Der Aufwand ist dadurch gering und selten, und das Aktualisieren eines Pakets kann Tests oder manuelle Eingriffe (z. B. einen Neustart) erfordern.
 Aus ähnlichen Gründen installiere ich auch das Betriebssystem selbst von Hand.
 
-Mein Betriebssystem ist eher ein Haustier als ein Nutztier (siehe „*cattle vs. pets*“ im <<Glossary>>).
+Mein Betriebssystem ist eher ein Haustier als ein Nutztier (siehe „cattle vs. pets“ im <<Glossary>>).
 Vielleicht ist es sogar ein *Haustier-Phönix*:
 Wenn es stirbt, lässt es sich relativ leicht aus der Asche wiederbeleben.
 Es wird regelmäßig gesichert, es gibt nur wenige manuelle Schritte – und alle manuellen Schritte sind sorgfältig dokumentiert.
