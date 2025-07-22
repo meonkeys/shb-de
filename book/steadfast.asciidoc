@@ -1238,7 +1238,7 @@ Für die Root-Partition (/) empfehle ich stattdessen ext4 zu verwenden, um:
 ** wir das Betriebssystem nicht verändern werden – Änderungen werden upstream verwaltet (z. B. bei Paketupdates oder über mario)
 
 Docker-Volumes (persistente Container-Daten) werden auf ZFS gespeichert.
-Das Dateisystem des ((Containers) – also alles außer den gemounteten Volumes mit persistenten Daten – ist flüchtig (ephemeral) und liegt auf ext4 unter /var/lib/docker.
+Das Dateisystem des ((Container))s – also alles außer den gemounteten Volumes mit persistenten Daten – ist flüchtig (ephemeral) und liegt auf ext4 unter /var/lib/docker.
 Um mehr über ZFS zu erfahren, siehe:
 
 * https://arstechnica.com/information-technology/2014/01/bitrot-and-atomic-cows-inside-next-gen-filesystems/[Bitrot and atomic COWs: Inside "`next-gen`" filesystems] by Jim Salter
