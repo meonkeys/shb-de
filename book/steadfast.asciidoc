@@ -1241,7 +1241,7 @@ Docker-Volumes (persistente Container-Daten) werden auf ZFS gespeichert.
 Das Dateisystem des ((Container))s – also alles außer den gemounteten Volumes mit persistenten Daten – ist flüchtig (ephemeral) und liegt auf ext4 unter `/var/lib/docker`.
 Um mehr über ZFS zu erfahren, siehe:
 
-* https://arstechnica.com/information-technology/2014/01/bitrot-and-atomic-cows-inside-next-gen-filesystems/[Bitrot and atomic COWs: Inside "`next-gen`" filesystems] by Jim Salter
+* https://arstechnica.com/information-technology/2014/01/bitrot-and-atomic-cows-inside-next-gen-filesystems/[Bitrot and atomic COWs: Inside „next-gen“ filesystems] by Jim Salter
 * https://arstechnica.com/information-technology/2020/05/zfs-101-understanding-zfs-storage-and-performance/[ZFS 101—Understanding ZFS storage and performance] by Jim Salter
 * https://wiki.debian.org/ZFS[ZFS (Debian wiki page)] by various authors
 
@@ -1442,7 +1442,7 @@ I'll start by providing tools to evaluate services, then continue to OS installa
 
 Services are long-running software programs on your server.
 Some have an interface, some run in the background on a schedule.
-"`Web services`" are the ones you can connect to using a web browser or other tool speaking HTTP.
+„Web services“ are the ones you can connect to using a web browser or other tool speaking HTTP.
 
 ==== Choose services
 
@@ -1511,7 +1511,7 @@ It's good practice to visualize succession, to be prepared for an eventual fork 
 Nextcloud is a fork of ((ownCloud)), after all (see <<Nextcloud vs. ownCloud>>).
 
 Second, sprawling complexity.
-"`Nextcloud`" is not one thing, it is a collection of _many_ software projects and services under various degrees of control by a single company.
+„Nextcloud“ is not one thing, it is a collection of _many_ software projects and services under various degrees of control by a single company.
 This complexity makes forking costly and time-consuming.
 Even switching between extant forks (say, migrating back to ownCloud from Nextcloud) may be complex.
 They are clearly _not_ trying to lock in customers, but the complexity itself may ultimately have that effect.
@@ -1541,7 +1541,7 @@ I go into detail about a few of these services later in the book.
 |wallabag |article saver |Docker |1 |1 GB
 |===
 
-"`Cores`" represents relative peak compute requirements.
+„Cores“ represents relative peak compute requirements.
 RAM: peak memory.
 These were rough estimates based on published documentation.
 The estimates turned out to be accurate enough.
@@ -1563,7 +1563,7 @@ While there is a learning curve for understanding basic computer hardware compon
 You'll need a server.
 
 (((compute)))
-You can always pay for "`compute`" in someone else's cloud, but it'll end up costing more in the long run.
+You can always pay for „compute“ in someone else's cloud, but it'll end up costing more in the long run.
 
 If you're in a hurry, you can start with pretty much any old desktop or laptop, or your own VM running on either.
 Use something more powerful and expandable than a Raspberry Pi, though.
@@ -1578,7 +1578,7 @@ I sought professional commodity hardware for its replace-ability.
 It can handle a reasonable amount of bursty compute needs, including building Docker images, flurries of user activity, and some generative ((AI)) (even without a GPU).
 
 I found a used refurbished 1U rackmount server on eBay for about $1,000.
-This is sometimes called "`off-lease enterprise hardware`".
+This is sometimes called „off-lease enterprise hardware“.
 A 1U server is one https://en.wikipedia.org/wiki/Rack_unit[rack unit] tall, like a long pizza box.
 Tech companies dump these by the truckload so you can usually find a good deal.
 Mine has two 24-core CPUs and 128 GB RAM.
@@ -1737,7 +1737,7 @@ Refer to https://ubuntu.com/tutorials/install-ubuntu-server[this tutorial] for s
 You may also be able to leave this as the default (DHCP/dynamic), and use your LAN router to assign an IP address that doesn't change.
 . Optional: use full-disk encryption.
 See <<Full-disk encryption>>.
-. *Note the username and password* when you set up a user account (called a "`Profile`" in the installer). You'll need these soon.
+. *Note the username and password* when you set up a user account (called a „Profile“ in the installer). You'll need these soon.
 . *Install OpenSSH server* when prompted to do so.
 . *Do not install Nextcloud or Docker*, let mario install these later.
 
@@ -1855,7 +1855,7 @@ Here are examples you might use as starting points.
 ****
 
 Note that Ubuntu server comes with the `unattended-upgrades` package, which automatically installs security updates for you.
-You may want to instead have "`confirm OS package upgrades worked`" on your checklist.
+You may want to instead have „confirm OS package upgrades worked“ on your checklist.
 
 Yearly tasks are typically more work and involve aspects of a system and its dependencies which should change less often.
 
@@ -1873,7 +1873,7 @@ The following sections cover specific maintenance tips and tricks.
 
 Plan on hardware failure.
 If you can afford it, the easiest way to reliably run one server is to _buy two identical servers_.
-Use the second for parts or a ready as-is replacement machine (also called a "`cold spare`").
+Use the second for parts or a ready as-is replacement machine (also called a „cold spare“).
 
 ==== Software updates
 
@@ -1892,7 +1892,7 @@ This is relatively safe and typically requires little to no interaction besides 
 A reboot may be required afterwards (e.g. when the kernel is upgraded).
 The server will say if a reboot is required upon login.
 
-Each service in <<Services>> includes a "`Maintenance notes`" section with update instructions.
+Each service in <<Services>> includes a „Maintenance notes“ section with update instructions.
 Container images can be updated by hand with ((Docker Compose)) or automatically by ((Watchtower)).
 See <<Watchtower: service updater>> for details.
 
@@ -1997,7 +1997,7 @@ Something else does or will do its job better.
 Here are some suggestions to get the most out of mario.
 
 The first time you run mario, follow the instructions as closely as possible.
-Many assumptions are made so it works "`out of the box`", and it is meant to be easily customizable.
+Many assumptions are made so it works „out of the box“, and it is meant to be easily customizable.
 
 mario configuration files are declarative: They contain the _state_ you want your server to end up at, not all the individual commands you'd run manually to achieve the same state.
 mario's `provision.sh` runs Ansible, and Ansible runs the commands for you on the server (like running `chmod` on a file) in a predictable and repeatable manner.
@@ -2613,7 +2613,7 @@ https://github.com/jmshrv/finamp[Finamp] for music, and https://github.com/jarne
 Jellyfin and Nextcloud both run on the same server.
 You can use this fact to leverage their individual strengths as services while they operate on the same data, one as the media streamer and one as the media file manager.
 mario creates special music and video folders on the server and makes them available to both services.
-Nextcloud "`external storages`" lets you upload files to these folders and Jellyfin will automatically notice and allow streaming the files you upload.
+Nextcloud „external storages“ lets you upload files to these folders and Jellyfin will automatically notice and allow streaming the files you upload.
 
 Nextcloud's `compose.yml` file has the entry `/data/shared/media/video:/data/video:rw` in `volumes`.
 `/data/shared/media/video` is the path on the server that will hold the actual video files, `/data/video` is where they'll show up inside the container, and `rw` says Nextcloud has read and write access to this volume.
@@ -2625,8 +2625,8 @@ Jellyfin only needs read access to the folders to be able to stream the files th
 
 To see the Nextcloud-managed media files in Jellyfin, add two media libraries:
 
-. Choose content type "`Movies`", click the "`+`" icon next to "`Folders`", and choose `/data/video`.
-. Choose content type "`Music`", click the "`+`" icon next to "`Folders`", and choose `/data/music`.
+. Choose content type „Movies“, click the „+“ icon next to „Folders“, and choose `/data/video`.
+. Choose content type „Music“, click the „+“ icon next to „Folders“, and choose `/data/music`.
 
 <<<
 
@@ -2736,7 +2736,7 @@ I don't let Watchtower auto-upgrade my Nextcloud service, for example.
 
 ((Scratch)) is a popular and very approachable visual programming language geared towards interactive multimedia and learning.
 The most well-known https://scratch.mit.edu[public online version] adds sharing, studios, comments, stars, hearts, endless memes and games.
-These "`social`" features may be exactly what a user wants/needs (e.g. one may remix an existing project and learn from it), or it may unintentionally reorient a user from productive creation to mindless consumption (e.g. doomscrolling).
+These „social“ features may be exactly what a user wants/needs (e.g. one may remix an existing project and learn from it), or it may unintentionally reorient a user from productive creation to mindless consumption (e.g. doomscrolling).
 
 This is where your new _Steadfast_ power comes in: Scratch can be self-hosted without the social features.
 In fact, that's the simplest way to self-host it.
@@ -2780,7 +2780,7 @@ Seek both breadth and depth.
 
 For breadth, look for a comprehensive book about Linux since mario expects Linux, and a better understanding of Linux can help you customize your server with confidence.
 There aren't any Ubuntu-specific dependencies, but Ubuntu is the only Linux flavor mario has been extensively tested on at the time of writing.
-One of my first purchases when I wanted to just finally "`get`" Linux was _UNIX: The Complete Reference_, a thousand-page monster covering many, many concepts.
+One of my first purchases when I wanted to just finally „get“ Linux was _UNIX: The Complete Reference_, a thousand-page monster covering many, many concepts.
 I studied it in chunks, referred to it often, and never read it cover to cover.
 If I started learning again from scratch today, I'd still have a book like that handy while studying online resources and trying stuff at home.
 
@@ -2894,7 +2894,7 @@ Queries for domain names not on any block list will be answered directly or sent
 I set up my Pi-hole to pass queries on to my home router, which will then query a DNS server outside my LAN as necessary.
 
 It's easy to block individual domain names or entire lists as you see fit.
-I've used this as an "`impulse blocker`", helping the kids avoid distractions during remote school.
+I've used this as an „impulse blocker“, helping the kids avoid distractions during remote school.
 
 The Pi-Hole also has a list of local DNS entries.
 I add a few domain names to this list for servers inside my LAN.
@@ -3030,11 +3030,11 @@ Check logs for all containers related to Netcloud with `dc nextcloud logs -f`.
 
 Check Nextcloud internal logs at `/settings/admin/logging` in the web UI or `/data/nextcloud/root/data/nextcloud.log` on the server.
 These include specific Nextcloud internal server messages and are often more useful to me than the container logs.
-If you see a warning about "`1 error in the logs since DATE`" (or perhaps a couple) at `/settings/admin/logging`, you can probably ignore it.
+If you see a warning about „1 error in the logs since DATE“ (or perhaps a couple) at `/settings/admin/logging`, you can probably ignore it.
 These initial logged errors appear to be harmless, possibly a result of some install-time race conditions.
 It is still a good idea to review all logged errors.
 
-Review "`Security & setup warnings`" at `/settings/admin/overview`.
+Review „Security & setup warnings“ at `/settings/admin/overview`.
 You can ignore the warning ‟Could not check for JavaScript support. Please check manually if your webserver serves `.mjs` files using the JavaScript MIME type.” if this succeeds on your admin computer:
 
 .JavaScript fetch test (🏠 admin computer)
@@ -3054,13 +3054,13 @@ dc nextcloud exec app \
   curl -I https://cloud.example.com/apps/settings/js/esm-test.mjs
 ----
 
-Some maintenance requires the `occ` tool (short for "`ownCloud command`").
+Some maintenance requires the `occ` tool (short for „ownCloud command“).
 Run it with `dc nextcloud exec --user www-data app php occ`.
 
 Add `/data/video` as an External storage.
 Media files uploaded there will automatically appear in Jellyfin.
-First, visit `/settings/apps/featured` and install the "`External storage support`" app.
-Next, visit `/settings/admin/externalstorages` and install the "`External storage support`" app.
+First, visit `/settings/apps/featured` and install the „External storage support“ app.
+Next, visit `/settings/admin/externalstorages` and install the „External storage support“ app.
 
 * Folder name: Video
 * External storage: Local
@@ -3081,13 +3081,13 @@ Running `dc nextcloud pull && dc nextcloud up -d` (on the server) will pull the 
 Using this tag will likely be stable enough for you and your users.
 `stable` generally corresponds to the version they call _previous_ at https://docs.nextcloud.com/.
 
-You may opt to "`pin`" your Nextcloud to a more specific tag such as `27.1.5-apache`.
+You may opt to „pin“ your Nextcloud to a more specific tag such as `27.1.5-apache`.
 This gives you the chance to review and test each upgrade.
 You can pin a release tag in Nextcloud's `compose.yml` where the image name appears, just trade `stable` for the tag you choose.
 All available tags are https://hub.docker.com/_/nextcloud[listed at Docker Hub].
 
 NOTE: Nextcloud's blog posts and marketing materials use different version names than the release versions from source control.
-"`Hub 6`" on the blog refers to versions `27.\_._` in source control, "`Hub 7`" to `28.\_._`, and so on.
+„Hub 6“ on the blog refers to versions `27.\_._` in source control, „Hub 7“ to `28.\_._`, and so on.
 
 ===== Release cadence
 
@@ -3098,7 +3098,7 @@ Developers need to modify their apps each time at least slightly, or heavily if 
 Thankfully the Nextcloud team https://help.nextcloud.com/t/new-process-for-documenting-core-code-changes-that-affect-app-developers/149828/1[carefully documents changes] to ease app maintenance for developers.
 
 As a _Steadfast_ sysadmin, be sure to check your `/settings/admin/overview` page before upgrading Nextcloud to make sure all the apps you use will work with the version you're upgrading to.
-You can override an out-of-date app with the "`enable untested app`" option under `/settings/apps`.
+You can override an out-of-date app with the „enable untested app“ option under `/settings/apps`.
 Sometimes this works.
 
 Since four months seemed to me like a short window for major releases I started a https://help.nextcloud.com/t/major-release-cadence/161685[thread about it].
@@ -3118,11 +3118,11 @@ They've since https://github.com/nextcloud/server/pull/33540[fixed the root caus
 
 (((Nextcloud, apps for)))
 Nextcloud can be used as-is (see <<Basic install>>) or heavily customized.
-The simplest and safest way to customize is by installing an app from the built-in app store (`/settings/apps`), especially if an app is marked "`featured`".
+The simplest and safest way to customize is by installing an app from the built-in app store (`/settings/apps`), especially if an app is marked „featured“.
 These _Nextcloud apps_ are installed on the server, expanding the functionality of a base Nextcloud instance.
 
 Here are some Nextcloud apps I've tried, what they do, and a ruling on whether they're worth looking into.
-Read "`Worth your time?`" as "`Adam maybe tried this app and has shared his opinion whether others will find this particular app worth the effort to learn and maintain, based on his own experiences projected onto our possibly different use cases.`"
+Read „Worth your time?“ as „Adam maybe tried this app and has shared his opinion whether others will find this particular app worth the effort to learn and maintain, based on his own experiences projected onto our possibly different use cases.“
 Grain of salt, in other words.
 When in doubt, start small (default Nextcloud install), and roll these out thoughtfully if you do at all.
 
@@ -3145,15 +3145,15 @@ When in doubt, start small (default Nextcloud install), and roll these out thoug
 |Duplicate Finder |find and cull duplicate files |*No*. Slow and opaque. I recommend https://github.com/pauldreik/rdfind[rdfind] instead.
 |Electronic Signatures |e-sign documents |*No*. Requires a 3rd party service. I'd rather have drawn signatures. See <<Draw signature in forms>>.
 |End-to-End Encryption |encrypt files server-side, decrypt with client |*No*. Unnervingly buggy. Confusing UI/UX. See <<End-to-End Encryption>>.
-|Files |file management, sharing |*Yes*, although the "`Versions`" tab is not very useful.
+|Files |file management, sharing |*Yes*, although the „Versions“ tab is not very useful.
 |Forms |Google Forms alternative |*Yes*.
 |Full text search |search through all documents |*Maybe*. Fast. Buggy. Likely dormant project. See <<Full text search>>.
-|Holiday Calendars |easily add public holiday calendars |*Yes*. The configuration for this app shows up under "`Personal`" -> "`Availability`" for me, not "`Groupware`" (although the URL path is `/settings/user/groupware`).
+|Holiday Calendars |easily add public holiday calendars |*Yes*. The configuration for this app shows up under „Personal“ -> „Availability“ for me, not „Groupware“ (although the URL path is `/settings/user/groupware`).
 |Maps |maps and directions |*Yes*. Grab a cup of tea if you have lots of photos with GPS coordinate metadata.
 |Mail |email |*No opinion*. I tried it briefly and it choked on my bazillion Gmail messages. And yes, I do want to de-Gmail someday.
 |Memories |photos |*Yes*. Requires Photos.
 |News |track blogs and news via rss/atom feeds |*Yes*.
-|Nextcloud Office |edit spreadsheets, slides, etc. |*Yes*. I don't love this but I need it. Maybe that's a "`No`"? Mobile apps for this are painful. See <<Nextcloud Office>>.
+|Nextcloud Office |edit spreadsheets, slides, etc. |*Yes*. I don't love this but I need it. Maybe that's a „No“? Mobile apps for this are painful. See <<Nextcloud Office>>.
 |Notes |simple markdown-based note taking |*Yes*. There's an excellent companion mobile app. Replaced Google Notes for me.
 |Passwords |password manager |*No*. Dormant.
 |PhoneTrack |location sharing and tracking |*Yes*. UI is feature-rich and complicated. Traveled movement lines are cool.
@@ -3191,7 +3191,7 @@ It can be your single reliable source of truth for contacts, calendars, tasks, a
 You can open files and edit them, but the UI/UX is bad.
 See <<Mobile text editing is hard>> for a couple workarounds.
 
-Besides the primary mobile app (called simply "`Nextcloud`"), there are other mobile apps made to work with Nextcloud apps.
+Besides the primary mobile app (called simply „Nextcloud“), there are other mobile apps made to work with Nextcloud apps.
 Here are the ones I recommend.
 I don't have an iPhone so these are only Android apps.
 
@@ -3217,7 +3217,7 @@ DAVx5 is not needed on Murena phones (/e/ OS).
 There are actually two Cookbook apps.
 Either works fine for me.
 I'm not picky, I just need to see the ingredients and directions.
-Looks like the one by "`Teifun2`" is more popular.
+Looks like the one by „Teifun2“ is more popular.
 
 Maps Geofavorites lets you easily save arbitrary GPS coordinates to the Maps Nextcloud app.
 Handy for remembering where you parked your bike, for example.
@@ -3254,12 +3254,12 @@ See also: <<traits-of-good-services>> and <<traits-of-bad-services>> in <<Choose
 ==== Nextcloud Office
 
 (((Nextcloud, office and)))
-https://nextcloud.com/office/ gives some strong hints how the company behind Nextcloud wants us to think of "`office`" and their plans for it as a suite of related tools.
+https://nextcloud.com/office/ gives some strong hints how the company behind Nextcloud wants us to think of „office“ and their plans for it as a suite of related tools.
 They clearly intend a holistic, integrated office experience, and Nextcloud can be configured to be used in this manner.
 https://nextcloud.com/office/ covers editing office documents (rich text and spreadsheets) collaboratively, along with uses for the Notes, Collectives, and Tables apps.
 It provides some clever and useful workflow ideas.
 
-Given that wide a scope, ((groupware)) should be part of "`office`" too, so instead let's for now focus specifically on collaborative editing of office documents.
+Given that wide a scope, ((groupware)) should be part of „office“ too, so instead let's for now focus specifically on collaborative editing of office documents.
 Doing this within Nextcloud requires an https://apps.nextcloud.com/apps/richdocuments[app called Nextcloud Office] as well as a separate backend service, either ((Collabora)) or ((ONLYOFFICE)).
 My strong preference is for Collabora, in line with <<Good for self-hosting>>; despite fewer stars on GitHub, it appears Collabora development is flourishing while ONLYOFFICE is stagnant (although it's hard to tell which of the many ONLYOFFICE repositories on GitHub are relevant here).
 
@@ -3275,7 +3275,7 @@ If you ignore it and tap to navigate your way into a folder or open a file, you 
 Workarounds:
 
 * wait until the spinner completes (usually takes me about one second)
-* reduce chance of reordering with "`A - Z`" or "`Z - A`" sorting instead of "`Newest first`" or "`Oldest first`"
+* reduce chance of reordering with „A - Z“ or „Z - A“ sorting instead of „Newest first“ or „Oldest first“
 
 ===== Mobile text editing is hard
 
@@ -3292,11 +3292,11 @@ With Notes you have a better chance of up-to-date data and fewer conflicts.
 Another workaround is to use https://github.com/gsantner/markor[Markor].
 Install that app, then:
 
-. In the Nextcloud mobile app, "`Download`" or "`Sync`" the file you wish to view or edit locally.
+. In the Nextcloud mobile app, „Download“ or „Sync“ the file you wish to view or edit locally.
 This caches a copy on your phone.
-. In the Nextcloud mobile app, choose "`open with`" for the file.
+. In the Nextcloud mobile app, choose „open with“ for the file.
 Should open instantly.
-. If you make changes to the file, save it, then manually "`Sync`" the file in the Nextcloud app.
+. If you make changes to the file, save it, then manually „Sync“ the file in the Nextcloud app.
 It appears local changes like these never make it to the server otherwise.
 
 See https://jenson.org/text/ for background on why mobile text editing is a complex and multifaceted problem.
@@ -3312,10 +3312,10 @@ Users with iOS and other OSes besides Android can sync groupware-related data ht
 
 Collaborating on plain text and Markdown text files sometimes results in spurious conflicts.
 Editing is interrupted before it starts, and the web-based text file editor shows you two versions of the file side by side.
-The left side is labeled "`Use current version`", and the right says "`Use the saved version`" (or equivalents for your locale or specific client).
+The left side is labeled „Use current version“, and the right says „Use the saved version“ (or equivalents for your locale or specific client).
 
-Apparently the browser has a saved copy in local storage or something that gets loaded first and considers it the "`current`" version.
-Then it loads the one on the right and calls it the "`saved`" version, and if they differ you get to choose.
+Apparently the browser has a saved copy in local storage or something that gets loaded first and considers it the „current“ version.
+Then it loads the one on the right and calls it the „saved“ version, and if they differ you get to choose.
 
 Workaround: pick the one on the right.
 That's the latest and greatest copy as it exists server-side.
@@ -3330,7 +3330,7 @@ If you're curious and want to dig in deeper, follow these links:
 Related desktop client bug: https://github.com/nextcloud/desktop/issues/2467[Nextcloud-Client creating conflicts when it should not].
 Conflicts seem to appear in cases where there shouldn't be any.
 Workarounds: wait 10 seconds or so between saves until the desktop client syncs and returns to idle (roll your eyes while you wait).
-Also, check out the https://apps.nextcloud.com/apps/files_lock[Temporary files lock] app for semi-automated advisory locking (e.g. quickly communicate "`gimme a minute, I'm editing that Markdown text file`").
+Also, check out the https://apps.nextcloud.com/apps/files_lock[Temporary files lock] app for semi-automated advisory locking (e.g. quickly communicate „gimme a minute, I'm editing that Markdown text file“).
 
 ===== Draw signature in forms
 
@@ -3355,11 +3355,11 @@ I hope they do decide to release them, for the same reasons the rest of Nextclou
 ===== Spurious event updated notifications
 
 The Calendar app is quite useful and perhaps the most heavily used by me and my users.
-I have grown to expect one particular erroneous "`event updated`" notifications, possibly caused by calendar client/sync issues.
+I have grown to expect one particular erroneous „event updated“ notifications, possibly caused by calendar client/sync issues.
 
-On one shared calendar (with many clients) I often get notifications that so-and-so "`updated event XYZ in calendar ABC`", but the only actual thing that occurred is that one of the clients just sync'd (or perhaps made some innocuous change to an event) and https://github.com/nextcloud/calendar/issues/5879[Nextcloud thinks it was a meaningful update].
+On one shared calendar (with many clients) I often get notifications that so-and-so „updated event XYZ in calendar ABC“, but the only actual thing that occurred is that one of the clients just sync'd (or perhaps made some innocuous change to an event) and https://github.com/nextcloud/calendar/issues/5879[Nextcloud thinks it was a meaningful update].
 At least, I think that's what's happening... some changes (like changing the event's date) do show up with the old and new values made explicit.
-As an aside, I do like this "`explicit diff`" behavior showing the exact changes made to an event's Title, Time, Location, or Description.
+As an aside, I do like this „explicit diff“ behavior showing the exact changes made to an event's Title, Time, Location, or Description.
 
 ==== End-to-End Encryption
 
@@ -3384,7 +3384,7 @@ Make sure it works with all clients you plan to use it with (e.g. desktop, mobil
 ==== AIO installer
 
 (((Nextcloud, installing)))
-Among the myriad Nextcloud install methods, there's a relatively new and interesting AIO ("`all-in-one`") installer (https://nextcloud.com/all-in-one).
+Among the myriad Nextcloud install methods, there's a relatively new and interesting AIO („all-in-one“) installer (https://nextcloud.com/all-in-one).
 It's free for an instance with less than 100 users.
 The AIO takes a different approach than mario, it configures and manages multiple Nextcloud-related service containers for you.
 I recommend the mario method instead for its flexible and empowering experience of learning how to add and manage individual containers yourself.
@@ -3455,7 +3455,7 @@ If and when I adopt something new, it must pass a high bar, ideally most or all 
 * [ ] Will it help me learn what I need/want to learn, and safely take care of the rest for me without my needing to learn more?
 * [ ] Will it help me figure out why I made a change to one of my services two years ago?
 * [ ] Does it phone home, using telemetry or my data in a way I don't approve?
-* [ ] Does it hold back "`enterprise`" features I need, even for my scaled-down use case?
+* [ ] Does it hold back „enterprise“ features I need, even for my scaled-down use case?
 Is it annoying about this, reminding me often?
 * [ ] If I want paid support, is it available?
 * [ ] Is it popular?
@@ -3631,7 +3631,7 @@ ____
 Everybody loves a puppy, right?
 _Right??_
 I sure hope so.
-Because--fair warning--if you spend too much time with your "`puppy`" (self-hosting, FOSS, etc.), your partner will show up with an actual puppy.
+Because--fair warning--if you spend too much time with your „puppy“ (self-hosting, FOSS, etc.), your partner will show up with an actual puppy.
 
 [#image-puppy]
 .Open Source is free like a puppy. Pictured: actual puppy.
@@ -3657,7 +3657,7 @@ Thank you, thank you, thank you.
 Sometimes I feel more like a birthday boy than an author, accepting gifts from so many generous people.
 I truly couldn't have done this alone and I am so, so grateful for you.
 
-Thanks to Eva for more than I could ever account for here, from "`What if it rains?`" to leading by learning and fearlessly doing.
+Thanks to Eva for more than I could ever account for here, from „What if it rains?“ to leading by learning and fearlessly doing.
 For supporting my dreams, including this book: your several inspiring rounds of thoughtful code review, technical critique, developmental editing, copy editing, proof reading, and line editing.
 
 Thanks to my daughter for your fantastic illustrations.
@@ -3672,7 +3672,7 @@ Thanks to the contributors to the myriad FOSS programs I used to create this boo
 
 Thanks to Rob Smith and all #underlug for help with hardware, networking, Ansible, and Traefik.
 
-Thanks to the "`Deadbeat Dads`" Bryan Daisley and Rob Floberg for your invaluable feedback.
+Thanks to the „Deadbeat Dads“ Bryan Daisley and Rob Floberg for your invaluable feedback.
 
 // alphabetical by last name
 
@@ -3715,13 +3715,13 @@ Specialists in computer science, security, administration, networking and so on 
 ((change management))::
   The means and methods of transitioning a group of people from one set of tools and processes to another.
 ((cloud))::
-  An ambiguous amount of remote hardware. Scalable, programmable, and networked. "`The cloud`" or "`public cloud`" is someone else's hardware while "`personal cloud`" is your own.
+  An ambiguous amount of remote hardware. Scalable, programmable, and networked. „The cloud“ or „public cloud“ is someone else's hardware while „personal cloud“ is your own.
 ((cluster))::
   Collated collection of machines treated as a single machine to achieve higher scale computing power.
 ((compute))::
   Noun: CPU or GPU resources expended when running software services.
 ((container))::
-  Running instance of an image. Containers may also be referred to as "`guests`", although this is more commonly used to describe VMs.
+  Running instance of an image. Containers may also be referred to as „guests“, although this is more commonly used to describe VMs.
 ((CPU))::
   Central processing unit. The main brain of the computer; the place where most of the math happens.
 ((data))::
@@ -3731,7 +3731,7 @@ Specialists in computer science, security, administration, networking and so on 
 ((deploy))::
   Prepare a service for use. Typically involves building or copying files before a service is started.
 ((dogfooding))::
-  Being a user of something you also created and/or maintain. "`Eat your own dogfood.`"
+  Being a user of something you also created and/or maintain. „Eat your own dogfood.“
 ((DHCP))::
   Dynamic Host Configuration Protocol. This is one way computers get IP addresses and related networking settings.
 ((DIY))::
@@ -3753,7 +3753,7 @@ Specialists in computer science, security, administration, networking and so on 
 ((FOSS))::
   Free and open-source software. An acronym designed to unite the goals of the FSF and the OSI.
 ((FSF))::
-  Free Software Foundation. They strongly defend the "`F`" in FOSS.
+  Free Software Foundation. They strongly defend the „F“ in FOSS.
 ((frontend))::
   The UI for a system or service.
 ((full-disk encryption))::
@@ -3773,9 +3773,9 @@ Specialists in computer science, security, administration, networking and so on 
 ((HDD))::
   Hard disk drive. Stores ones and zeros on spinning metal platters.
 ((homelab))::
-  A physical or conceptional space for do-it-yourself flexible systems administration leaning and experimentation. A homelab is not quite what this book describes, it is more of an at-home hardware, software, and electronics maker-space. A _Steadfast_ server (or "`personal cloud`") should be nearly always online and useful--at least the user-facing part. Some self-hosters call this environment "`homeprod`". Far from this level of hair-splitting detail, I'll use "`homelab`" as a shortcut for "`self-hosting setup`" and/or "`homeprod`".
+  A physical or conceptional space for do-it-yourself flexible systems administration leaning and experimentation. A homelab is not quite what this book describes, it is more of an at-home hardware, software, and electronics maker-space. A _Steadfast_ server (or „personal cloud“) should be nearly always online and useful--at least the user-facing part. Some self-hosters call this environment „homeprod“. Far from this level of hair-splitting detail, I'll use „homelab“ as a shortcut for „self-hosting setup“ and/or „homeprod“.
 ((host))::
-  The computer where Docker containers run. Also called a "`server`" in this text.
+  The computer where Docker containers run. Also called a „server“ in this text.
 ((hostname))::
   Name for a single server/computer/device.
 ((HVAC))::
@@ -3801,7 +3801,7 @@ Specialists in computer science, security, administration, networking and so on 
 ((LFNW))::
   LinuxFest Northwest. Annual conference in Bellingham, Washington dedicated to serving and connecting open source communities. Established in 2000.
 ((Linux))::
-  The most popular server OS. Also works fine on a desktop or laptop. The old me would have insisted on calling it "`GNU/Linux`" or "`a Linux distribution`". A lot has happened since then, and I've come to believe "`Linux`" is enough to describe the OS used for self-hosting in the context of this book.
+  The most popular server OS. Also works fine on a desktop or laptop. The old me would have insisted on calling it „GNU/Linux“ or „a Linux distribution“. A lot has happened since then, and I've come to believe „Linux“ is enough to describe the OS used for self-hosting in the context of this book.
 ((low-code))::
   High-level application development platform with reduced focus on traditional programming. Typically provides a GUI and requires less files with configuration and code. Useful for prototyping or replacing some simpler data entry and analysis applications.
 ((LTS))::
@@ -3822,7 +3822,7 @@ Specialists in computer science, security, administration, networking and so on 
 OS::
   Operating system.
 ((OSI))::
-  Open Source Initiative. More concerned with the "`OSS`" of FOSS.
+  Open Source Initiative. More concerned with the „OSS“ of FOSS.
 ((PHP))::
   PHP: Hypertext Processor. Programming language built for the web.
 ((PoE))::
@@ -3834,25 +3834,25 @@ OS::
 ((port forward))::
   Router configuration to send traffic for a particular port to a computer inside a LAN.
 ((process))::
-  Instance of running software. Note that "`running`" processes are described in more detail by a lower-level state such as running, sleeping, idle, waiting for I/O completion and--my personal favorite--zombie.
+  Instance of running software. Note that „running“ processes are described in more detail by a lower-level state such as running, sleeping, idle, waiting for I/O completion and--my personal favorite--zombie.
 ((provision))::
-  As in, "`provision a server`". Set up a machine or otherwise bring it into alignment with a known/good configuration.
+  As in, „provision a server“. Set up a machine or otherwise bring it into alignment with a known/good configuration.
 ((RAID))::
   Redundant array of inexpensive disks. Allows flexible use of multiple drives for redundancy and/or speed, as desired.
 ((registrar))::
   Domain name vendor. May also offer other name- and hosting-related services.
 ((reproducible))::
-  Able to be repeated following specific steps. E.g. "`repro`" a bug or "`a reproducible [software] build`". If two people try to repro a bug, they should have the same experience. If two people each build an image from the same `Dockerfile`, they should produce the same image. In practice, bug repros and build products are close enough and never exactly the same.
+  Able to be repeated following specific steps. E.g. „repro“ a bug or „a reproducible [software] build“. If two people try to repro a bug, they should have the same experience. If two people each build an image from the same `Dockerfile`, they should produce the same image. In practice, bug repros and build products are close enough and never exactly the same.
 ((reverse proxy))::
   Networking software for filtering and directing traffic. In a self-hosted context, useful for SSL termination and for running several self-hosted web services with different domain names with a single IP address.
 ((router))::
   Network device used to handle traffic at the boundary between networks such as a WAN and LAN. A SOHO router typically also provides various other functions including DNS, DHCP, switching, firewalling, and Wi-Fi. See: port forward. A Traefik router is something different: this is a software logic connecting entrypoints to services. See <<Traefik architecture>>.
 ((runtime))::
-  The period of time when a software is running; when a set of machine instructions becomes a running process. Also used to describe a set of tools/libraries to facilitate same. May appear as "`runtime environment`" in the latter form.
+  The period of time when a software is running; when a set of machine instructions becomes a running process. Also used to describe a set of tools/libraries to facilitate same. May appear as „runtime environment“ in the latter form.
 ((SeaGL))::
   Seattle GNU/Linux Conference. Held yearly since 2013.
 ((server))::
-  A computer that generally stays powered on and uses networking for interaction instead of a monitor, keyboard, or mouse. Also called a "`host`".
+  A computer that generally stays powered on and uses networking for interaction instead of a monitor, keyboard, or mouse. Also called a „host“.
 ((service))::
   A long-running process used by other local and remote processes to do something useful.
 ((SOHO))::
@@ -3866,27 +3866,27 @@ OS::
 ((SSH))::
   Secure Shell. Provides encrypted remote command line access to a server.
 ((SSL termination))::
-  Accepting encrypted traffic and passing along unencrypted traffic. Act performed by Traefik reverse proxy in a mario-provisioned server. More accurately and less often referred to as "`TLS termination`". Actual SSL is deprecated.
+  Accepting encrypted traffic and passing along unencrypted traffic. Act performed by Traefik reverse proxy in a mario-provisioned server. More accurately and less often referred to as „TLS termination“. Actual SSL is deprecated.
 ((sysadmin))::
-  Portmanteau of "`systems administrator`". A party responsible for the upkeep of a computer system.
+  Portmanteau of „systems administrator“. A party responsible for the upkeep of a computer system.
 ((threat model))::
   Analysis of risks and defenses of digital assets.
 ((TB))::
   Terabyte. Like GB, can be either base-10 or base-2, so: 1,000^4^ (1,000,000,000,000) bytes for HDDs and 1,024^4^ (1,099,511,627,776) bytes for RAM.
 ((TLD))::
-  Top-level domain. For "`example.com`", "`.com`" is the TLD.
+  Top-level domain. For „example.com“, „.com“ is the TLD.
 ((UI))::
-  User interface. The means of interaction between a user and a system, e.g.: a web site or mobile app. Often considered along with user experience and notated "`UI/UX`".
+  User interface. The means of interaction between a user and a system, e.g.: a web site or mobile app. Often considered along with user experience and notated „UI/UX“.
 ((UPS))::
   Uninterruptible power supply. A battery that sits between your server and an outlet, often with extra features such as a power outage alarm or surge suppressor.
 ((UX))::
-  User experience. The nature of interaction between a user and a system they are using. Includes ease of use and steps involved to complete a task. Often considered along with user interface and written as "`UI/UX`".
+  User experience. The nature of interaction between a user and a system they are using. Includes ease of use and steps involved to complete a task. Often considered along with user interface and written as „UI/UX“.
 ((volume))::
   Docker facility to mount a folder on the server to a folder inside a container. This is a common means of persisting container data that would otherwise be ephemeral.
 ((VM))::
   Virtual machine. OS isolation technique simulating nearly all aspects of hardware including power, input, and output.
 ((VPN))::
-  Virtual private network. Useful to "`teleport home`" and behave (from a networking perspective) as if you are inside your home LAN.
+  Virtual private network. Useful to „teleport home“ and behave (from a networking perspective) as if you are inside your home LAN.
 ((WAN))::
   Wide-area network. Everything outside your LAN / home network / router.
 ((ZFS))::
