@@ -1174,7 +1174,7 @@ So kannst du dich sicher in dein ((LAN)) „teleportieren“, während du remote
 Wenn alle deine Nutzer ein VPN verwenden können, kannst du die Ports für HTTP/S-Verkehr geschlossen halten und stattdessen nur VPN-Verkehr erlauben.
 Vorausgesetzt, dein VPN-Server ist gut konfiguriert und aktuell, ist dies eine hervorragende Möglichkeit, deine ((Angriffsfläche)) zu reduzieren.
 
-Die VPN-Technologie erhielt ein großes Upgrade durch [https://www.wireguard.com\[Wireguard](https://www.wireguard.com[Wireguard)].
+Die VPN-Technologie erhielt ein großes Upgrade durch https://www.wireguard.com[Wireguard].
 Aus Nutzersicht gibt es keinen schweren Login-Prozess mehr, wie bei älteren VPNs.
 ((Wireguard)) ist schnell, einfach und sicher.
 
