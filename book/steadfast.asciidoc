@@ -392,7 +392,7 @@ echo foo | sed s/foo/bar/
 
 Titel von Codeausschnitten können angeben, wo der Code ausgeführt werden soll.
 Wird kein Ort genannt, wird der oder die beabsichtigten Ausführungsumgebungen im Text erklärt.
-In diesem Fall weist "`🚀 server`" darauf hin, dass dieser Bash-Skript-Ausschnitt auf deinem Server ausgeführt werden soll.
+In diesem Fall weist „🚀 server“ darauf hin, dass dieser Bash-Skript-Ausschnitt auf deinem Server ausgeführt werden soll.
 
 == Hintergrund
 
@@ -895,7 +895,7 @@ Das Ausführen als `root` vereinfacht Container zwar, macht sie aber auch unsich
 ==== Papierlos mit OCR
 
 Eine weitere fortschrittliche Entwicklung, die ein Lächeln wert ist, ist kostenlose OCR (optocal character recognition/ optische Zeichenerkennung).
-Ich versuche immer wieder, "`papierlos zu werden`", indem ich all meine Papierdokumente einscanne.
+Ich versuche immer wieder, „papierlos zu werden“, indem ich all meine Papierdokumente einscanne.
 Nach dem Scannen bleibe ich – wenig überraschend – mit einem Haufen PDF-Dateien voller Bilder zurück.
 (((Paperless-ngx)))
 Diese lassen sich ganz einfach mit Tools wie https://docs.paperless-ngx.com/[Paperless-ngx] und https://apps.nextcloud.com/apps/fulltextsearch[Nextcloud Full text search]  per OCR verarbeiten und verwalten.
