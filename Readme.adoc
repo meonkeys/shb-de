@@ -25,6 +25,7 @@ See also:
 == 📑 to do
 
 * [ ] translate the word "Colophon"
+* [ ] translate figures, e.g. "Layers of a Steadfast system"
 * [ ] figure out if section references can be customized -- currently they use English-style double-quotes
 
 == 📜 Warranty
