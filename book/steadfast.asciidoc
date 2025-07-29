@@ -1295,7 +1295,7 @@ Ich persönlich führe Betriebssystem-Upgrades meist manuell durch, da ich nur w
 Aus ähnlichen Gründen installiere ich auch das Betriebssystem selbst von Hand.
 
 Mein Betriebssystem ist eher ein Haustier als ein Nutztier (siehe „cattle vs. pets“ im <<Glossary>>).
-Vielleicht ist es sogar ein *Haustier-Phönix*:
+Vielleicht ist es sogar ein Haustier-Phönix:
 Wenn es stirbt, lässt es sich relativ leicht aus der Asche wiederbeleben.
 Es wird regelmäßig gesichert, es gibt nur wenige manuelle Schritte – und alle manuellen Schritte sind sorgfältig dokumentiert.
 
