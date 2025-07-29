@@ -1254,7 +1254,7 @@ Weitere ZFS-Konzepte, die es sich zu lernen lohnt: Fragmentierung, ARC (Adaptive
 ((Linux)) ist eine beliebte und vernünftige Wahl für Self-Hosting. Ich empfehle einen 64-Bit-Ubuntu-Linux-Server mit mindestens 2 GB Arbeitsspeicher und 30 GB Speicherplatz.
 Ubuntu ((LTS)) (Long-Term Support)-Versionen sind am stabilsten, und ich empfehle genau diese.
 Steadfast bezieht sich speziell auf 24.04, die LTS-Version von April 2024.
-Version 24.04 ist heute stabil und wird bis April 2034 Updates erhalten, was viele weitere Jahre Stabilität verspricht, bevor Steadfast überarbeitet werden muss.
+Version 24.04 ist heute stabil und https://ubuntu.com/about/release-cycle[wird bis April 2034 Updates] erhalten, was viele weitere Jahre Stabilität verspricht, bevor Steadfast überarbeitet werden muss.
 Die Installation des Betriebssystems ist im Allgemeinen schnell und schmerzlos, siehe <<OS-Installation>>.
 
 ==== Personalisierung
