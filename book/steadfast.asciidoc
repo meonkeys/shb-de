@@ -1703,7 +1703,7 @@ CAUTION: Portweiterleitung ermöglicht eingehende Verbindungen durch deine WAN-G
 Lies unbedingt <<Digitale Sicherheit>>, bevor du irgendwelche Ports weiterleitest.
 
 Erstelle eine Skizze, um dein Netzwerk besser zu verstehen.
-Hier ist ein einfaches Diagramm, das ich mit [https://asciiflow.com](https://asciiflow.com) erstellt habe, um die Verkabelung zu planen und den Datenfluss durch meine Netzwerkgeräte zu visualisieren:
+Hier ist ein einfaches Diagramm, das ich mit https://asciiflow.com erstellt habe, um die Verkabelung zu planen und den Datenfluss durch meine Netzwerkgeräte zu visualisieren:
 
 ifdef::backend-html5,backend-pdf[]
 [#image-WAN-to-LAN-traffic]
