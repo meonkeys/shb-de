@@ -1282,7 +1282,7 @@ Beispiele für serverseitige Schreiboperationen:
 * Berechtigungen für einen Ordner ändern: `chmod 0700 ~/bin/`
 ****
 
-Beginne mit einer Checkliste für die „monatliche Wartung“, wie sie in <<Server maintenance>> zu finden ist.
+Beginne mit einer Checkliste für die „monatliche Wartung“, wie sie in <<Serverwartung>> zu finden ist.
 Nimm diese schreibenden (read-write) Operationen in deine Checkliste auf.
 Führe schreibende Operationen nach Möglichkeit mit mario durch.
 
@@ -1323,7 +1323,7 @@ Für ein einzelnes Serversystem ist Docker Compose meist die passendere Wahl.
 Es ist außerdem ratsam, Dienste und deren Abhängigkeiten _nicht_ mit allem anderen auf dem primären Speicher des Servers zu vermischen.
 Anfangs erscheint es einfach, alles auf einem einzigen Dateisystem zu betreiben – besonders, wenn es nur einen Dienst gibt.
 Doch je mehr Dienste hinzukommen, desto komplizierter wird es.
-https://en.wikipedia.org/wiki/Dependency_hell[Doch je mehr Dienste hinzukommen, desto komplizierter wird es.].
+https://en.wikipedia.org/wiki/Dependency_hell[Doch je mehr Dienste hinzukommen, desto komplizierter wird es].
 
 Viele der verzweifelten Supportanfragen von Self-Hostern, die ich in FOSS-Communities sehe, betreffen Inkompatibilitäten zwischen bestimmten PHP-Versionen oder relationalen Datenbankversionen, die von zwei verschiedenen Diensten benötigt werden.
 Docker mildert dieses Problem, indem es Abhängigkeiten bündelt.
@@ -1475,7 +1475,7 @@ Die guten Dienste weisen in der Regel zumindest einige der folgenden Merkmale au
 
 ****
 
-Siehe auch <<Lösungs-Tauglichkeits-Checkliste>> in <<Alternativen zu mario>>.
+Siehe auch <<solution-viability-checklist>> in <<Alternativen zu mario>>.
 
 Diese Merkmale basieren sowohl auf gängigen Branchenstandards als auch auf meinen persönlichen Werten und Vorlieben.
 Deine eigene Liste kann sich davon unterscheiden – zum Beispiel, wenn du FOSS-Lizenzen weniger bevorzugst oder eine bestimmte Programmiersprache bevorzugst.
@@ -1499,7 +1499,7 @@ Hier sind einige Hinweise darauf, dass ein selbst gehosteter Dienst möglicherwe
 * Häufige, störende Werbung oder Kaufaufforderungen
 * Bewusste Herstellerbindung (Vendor Lock-in)
 * Abhängigkeit von geschlossenen/proprietären Standards oder Diensten
-* Open-Core-Modell ([https://de.wikipedia.org/wiki/Open-Core-Modell](https://de.wikipedia.org/wiki/Open-Core-Modell))
+* https://de.wikipedia.org/wiki/Open-Core-Modell[Open-Core-Modell]
 
 ****
 
@@ -1509,7 +1509,7 @@ Nextcloud hat deutlich mehr positive als negative Eigenschaften – aber diese P
 
 (((fork)))
 Zunächst ihr offenbar nicht-FOSS-kompatibles Build-Skript.
-[Nicks Erklärung](https://help.nextcloud.com/t/build-bzip-and-package-from-git/58341/2) dafür ist nachvollziehbar:
+https://help.nextcloud.com/t/build-bzip-and-package-from-git/58341/2[Nicks Erklärung] dafür ist nachvollziehbar:
 Es ist für sie bequemer, Geheimnisse direkt im Build-Skript zu hinterlegen und das gesamte Skript geheim zu halten.
 Aber: Hardcodierte Geheimnisse sind schlechte Praxis, das Verstecken eines Build-Skripts könnte ein Verstoß gegen die AGPL-Lizenz sein,
 und es erschwert das Forken.
@@ -1583,11 +1583,11 @@ Wenn du mit etwas zu Kleinem startest, fehlt es dir schnell an Geschwindigkeit u
 Ich habe bereits mit vielen verschiedenen Servern gearbeitet und mich für dieses Self-Hosting-Abenteuer gründlich vorbereitet. Daher hatte ich eine ziemlich klare Vorstellung davon, was ich wollte.
 Ich habe mich für etwas entschieden, das leistungsstark, günstig und schnell ist – mit viel Speicherplatz und Raum für Erweiterungen.
 Ich habe gezielt nach professioneller Standardhardware gesucht, weil sie im Fall eines Defekts leichter austauschbar ist.
-Der Server sollte mit plötzlichen Lastspitzen gut zurechtkommen, z. B. beim Bauen von Docker-Images, bei kurzfristig hoher Benutzeraktivität oder auch bei etwas generativer **KI** – selbst ohne GPU.
+Der Server sollte mit plötzlichen Lastspitzen gut zurechtkommen, z. B. beim Bauen von Docker-Images, bei kurzfristig hoher Benutzeraktivität oder auch bei etwas generativer ((KI)) – selbst ohne GPU.
 
 Ich habe auf eBay einen gebrauchten, generalüberholten 1U-Rackmount-Server für etwa 1.000 USD gefunden.
 Solche Geräte werden oft als „off-lease enterprise hardware“ bezeichnet – also Leasing-Rückläufer aus dem Unternehmensbereich.
-Ein 1U-Server ist ein **Rack Unit** hoch – etwa so groß wie eine lange Pizzaschachtel ([Wikipedia-Link](https://de.wikipedia.org/wiki/Rack-Einheit)).
+Ein 1U-Server ist ein https://de.wikipedia.org/wiki/Rack-Einheit[Rack Unit] hoch – etwa so groß wie eine lange Pizzaschachtel.
 Technologiekonzerne stoßen diese Geräte massenweise ab, sodass man oft ein gutes Angebot findet.
 Mein Server hat zwei 24-Kern-CPUs und 128 GB RAM.
 
@@ -3263,7 +3263,7 @@ Based on those two sets of metrics it appears Nextcloud is thriving and ownCloud
 Another interpretation is that ownCloud has a smaller and slower-moving core codebase.
 More work is necessary to make a truly rigorous comparison.
 
-See also: <<traits-of-good-services>> and <<traits-of-bad-services>> in <<Choose services>>.
+See also: <<traits-of-good-services>> and <<traits-of-bad-services>> in <<Dienstwahl>>.
 
 ==== Nextcloud Office
 
@@ -3456,8 +3456,8 @@ I evaluated these only just enough to get the sense they didn't fit my wants and
 I'm a crotchety old man and I'm reluctant to change, but I still do, sometimes.
 If and when I adopt something new, it must pass a high bar, ideally most or all these tests:
 
-.Checklist: Self-Hosting Solution Viability
-[#Lösungs-Tauglichkeits-Checkliste]
+.Checkliste: Lösungs-Tauglichkeits
+[#solution-viability-checklist]
 ****
 * [ ] Will it work for years with minimal tinkering?
 * [ ] Is it easily extensible?
@@ -3476,7 +3476,7 @@ Is it annoying about this, reminding me often?
 Has it been around a while, and do I expect it to endure?
 ****
 
-See also: <<traits-of-good-services>> and <<traits-of-bad-services>> in <<Choose services>>.
+See also: <<traits-of-good-services>> and <<traits-of-bad-services>> in <<Dienstwahl>>.
 
 After brief reviews, I find existing self-hosting solutions generally:
 
