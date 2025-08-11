@@ -1376,9 +1376,9 @@ mario verwendet Traefik als Reverse-Proxy.
 
 ==== Traefik Architektur
 
-Hier ein Überblick darüber, wie Traefik funktioniert und wie es mit Nextcloud und anderen selbstgehosteten Webdiensten zusammenarbeitet:
+Hier ein Überblick darüber, wie ((Traefik)) funktioniert und wie es mit Nextcloud und anderen selbstgehosteten Webdiensten zusammenarbeitet:
 
-Wir möchten, dass HTTPS-Anfragen an Port 443, die für cloud.example.com bestimmt sind, beim Nextcloud-Dienst ankommen.
+Wir möchten, dass ((HTTPS))-Anfragen an Port 443, die für cloud.example.com bestimmt sind, beim Nextcloud-Dienst ankommen.
 Um diesen Vorgang zu verstehen, hilft es, das mitgelieferte Traefik-Architekturdiagramm zu studieren – ebenso wie die Quelltexte von mario.
 
 [#image-traefik-architecture]
@@ -2353,9 +2353,9 @@ Das Skript `dc` führt `sudo` automatisch für Sie aus.
 
 (((Traefik)))
 Richten Sie zuerst den ((Reverse Proxy)) ein.
-Starten Sie auf Ihrem Server Traefik mit dc traefik up -d.
-Wenn das funktioniert hat, warten Sie ein bis zwei Minuten und besuchen Sie https://traefik.example.com in einem Webbrowser, um das Traefik-Dashboard zu sehen.
-Während Sie auf das Dashboard warten, können Sie die Logs mit dc traefik logs -f mitverfolgen.
+Starten Sie auf Ihrem Server Traefik mit `dc traefik up -d`.
+Wenn das funktioniert hat, warten Sie ein bis zwei Minuten und besuchen Sie `\https://traefik.example.com` in einem Webbrowser, um das Traefik-Dashboard zu sehen.
+Während Sie auf das Dashboard warten, können Sie die Logs mit `dc traefik logs -f` mitverfolgen.
 
 Es kann ein bis zwei Minuten dauern, bis Traefik die Let's Encrypt-Zertifikate für die HTTPS-Verschlüsselung eingerichtet hat, also machen Sie sich keine Sorgen, wenn Sie anfangs Warnungen über ungültige Zertifikate sehen.
 Für einen funktionierenden Traefik-Dienst sollte in etwa Folgendes erscheinen:
@@ -2384,7 +2384,7 @@ rp-1 | Testing certificate renew... acmeCA=... providerName=myresolver.acme
 ^Ccanceled
 ----
 
-Wenn du eine Weile gewartet, die Seite neu geladen hast und dein Browser immer noch ungültige Zertifikatswarnungen zeigt, wenn du versuchst, `https://traefik.example.com` zu besuchen, lies die Traefik-Logmeldungen sorgfältig durch und sieh dir auch <\<Verschlüsselungszertifikate>> für Schritte zur Fehlerbehebung an.
+Wenn du eine Weile gewartet, die Seite neu geladen hast und dein Browser immer noch ungültige Zertifikatswarnungen zeigt, wenn du versuchst, `https://traefik.example.com` zu besuchen, lies die Traefik-Logmeldungen sorgfältig durch und sieh dir auch <<Verschlüsselungszertifikate>> für Schritte zur Fehlerbehebung an.
 Sobald du das Dashboard sehen kannst, beende das Verfolgen der Traefik-Logs mit kbd:\[Strg+c].
 
 ==== Andere Dienste starten
@@ -3457,7 +3457,7 @@ I'm a crotchety old man and I'm reluctant to change, but I still do, sometimes.
 If and when I adopt something new, it must pass a high bar, ideally most or all these tests:
 
 .Checklist: Self-Hosting Solution Viability
-[#solution-viability-checklist]
+[#Lösungs-Tauglichkeits-Checkliste]
 ****
 * [ ] Will it work for years with minimal tinkering?
 * [ ] Is it easily extensible?
