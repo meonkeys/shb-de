@@ -1437,7 +1437,7 @@ Siehe <<Verschlüsselungszertifikate>> für Details.
 
 == Implementierung
 
-Nun sind wir bereit, die ersten drei Schichten im <<Dienst-Stack>> bereitzustellen: **Hardware**, **Dateisystem** und **Betriebssystem**.
+Nun sind wir bereit, die ersten drei Schichten im <<Dienst-Stack>> bereitzustellen: Hardware, Dateisystem und Betriebssystem.
 Ich beginne damit, Werkzeuge zur Bewertung von Diensten bereitzustellen und fahre dann mit der Installation des Betriebssystems und der Serverwartung fort.
 
 === Dienstplan
@@ -1449,7 +1449,7 @@ Einige bieten eine Benutzeroberfläche, andere laufen im Hintergrund nach einem 
 ==== Dienstwahl
 
 Beginne damit, deine bisherigen Anforderungen und Pläne zu überprüfen, und nutze das folgende Material, um fundierte Entscheidungen darüber zu treffen, welche Dienste du betreiben möchtest.
-Du kannst auch direkt zu <<Hardware vorbereiten>> springen, um dem vorgeschlagenen Pfad zu folgen und zunächst die Dienste zu verwenden, die *mario* standardmäßig installiert. Später kannst du zu diesem Abschnitt zurückkehren, wenn du weitere Dienste hinzufügen möchtest.
+Du kannst auch direkt zu <<Hardware vorbereiten>> springen, um dem vorgeschlagenen Pfad zu folgen und zunächst die Dienste zu verwenden, die mario standardmäßig installiert. Später kannst du zu diesem Abschnitt zurückkehren, wenn du weitere Dienste hinzufügen möchtest.
 
 ===== Geeignet fürs Self-Hosting
 
