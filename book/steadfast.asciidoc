@@ -1312,7 +1312,7 @@ Probiere Kubernetes aus (vorallem eine der interessanten Micro-Versionen) falls 
 Ich persoenlich fand es zu viel.
 Falls ich aber hohe Verfügbarkeit fur Clustering benötigte wurde ich eher Kubernetes nutzen.
 Falls einer der Computer des Kubernetes ((Cluster)) defekt ist können Dienste automatisch auf intakte Hardware im Cluster übertreten.
-Unabhängig von deiner Wahl solltest du mit deinen Nutzern klare Erwartungen darüber setzten, wie lange dein Server im Falle eines Defektes eventuell ausfallen kann. 
+Unabhängig von deiner Wahl solltest du mit deinen Nutzern klare Erwartungen darüber setzten, wie lange dein Server im Falle eines Defektes eventuell ausfallen kann.
 
 (((isolation)))
 Docker schafft eine gute Balance zwischen Eigenschaften und Benutzerfreundlichkeit, weshalb es einfach ist einen Deinst in Isolation zu betreiben.
@@ -1599,7 +1599,7 @@ Die Lüfter sind viel lauter als bei einem Desktop-PC, besonders unter Last.
 Der Server soll eigentlich eine gute Belüftung sowie Temperatur- und Feuchtigkeitsregulierung haben,
 hat sich aber bisher auch bei längeren Zeiträumen unter dem Gefrierpunkt und über 38 °C als äußerst robust erwiesen.
 (((IPMI)))
-Er verfügt über mehrere Enterprise-Funktionen, die die Wartung erleichtern – wie redundante Netzteile, Hot-Swap-Festplatteneinschübe, zahlreiche Sensoren und Fernwartung über einen Webbrowser oder IPMI. 
+Er verfügt über mehrere Enterprise-Funktionen, die die Wartung erleichtern – wie redundante Netzteile, Hot-Swap-Festplatteneinschübe, zahlreiche Sensoren und Fernwartung über einen Webbrowser oder IPMI.
 
 Der durchschnittliche Stromverbrauch liegt bei 130 W, also etwa 1.140 kWh pro Jahr – das entspricht ungefähr 138,15$ in Seattle.
 Das ist in etwa so viel wie eine helle Glühlampe verbraucht, und für eine einzelne Person etwas verschwenderisch.
