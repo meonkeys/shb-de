@@ -1142,7 +1142,7 @@ Auch unbeabsichtigte Fehler und Software-Bugs zählen dazu.
 Gegenmaßnahmen::
   Maßnahmen zur Risikominimierung, damit Angriffe weniger wahrscheinlich sind oder weniger Schaden anrichten.
 
-Füg das alles zusammen, und du erhältst mein absolut marketingfreundliches Akronym für ein Bedrohungsmodell: A.A/B/A.G. (jede Zeichensetzung wird mitgesprochen).
+Füg das alles zusammen, und du erhältst mein absolut marketingfreundliches Akronym für ein Bedrohungsmodell: *A.A/B/A.G.* (jede Zeichensetzung wird mitgesprochen).
 Geht einem wirklich leicht über die Lippen!
 
 ==== Beispiel: WAN-Zugriff
