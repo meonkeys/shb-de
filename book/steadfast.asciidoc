@@ -2501,7 +2501,7 @@ canceled
 TIP: Für Bonuspunkte kannst du deinen kleinen Testdienst in mario integrieren.
 
 Das ist auch die Grundlage, um später spannendere Dienste hinzuzufügen.
-Nur ein paar zusätzliche Zeilen Code und Konfiguration reichen, um einen kleinen API- oder Webdienst zu erstellen – und mit ein paar weiteren Zeilen kannst du ihn über deinen Reverse Proxy veröffentlichen.
+Nur ein paar zusätzliche Zeilen Code und Konfiguration reichen, um einen kleinen ((API))- oder Webdienst zu erstellen – und mit ein paar weiteren Zeilen kannst du ihn über deinen Reverse Proxy veröffentlichen.
 
 == Dienste
 
