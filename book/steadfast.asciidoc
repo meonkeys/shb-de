@@ -1956,8 +1956,8 @@ Habe *1* externes (remote) Backup.
 (((backups, using Borg for)))
 (((Borg)))
 (((restic)))
-Ich empfehle eine Backup-Strategie, die ZFS-Snapshots mit entweder [https://restic.net\[restic](https://restic.net[restic)] oder [https://borgbackup.org\[Borg](https://borgbackup.org[Borg)] kombiniert, um die Daten extern zu sichern.
-[https://reddit.com/r/BorgBackup/comments/v3bwfg/\[Hier](https://reddit.com/r/BorgBackup/comments/v3bwfg/[Hier) ist ein guter Vergleich zwischen restic und Borg].
+Ich empfehle eine Backup-Strategie, die ZFS-Snapshots mit entweder https://restic.net[restic] oder https://borgbackup.org[Borg] kombiniert, um die Daten extern zu sichern.
+https://reddit.com/r/BorgBackup/comments/v3bwfg/[Hier ist ein guter Vergleich zwischen restic und Borg].
 
 Hier sind einige Beispielbefehle, die zeigen, wie man ein ZFS-Dateisystem sichert.
 Du kannst sie als Ausgangspunkt für dein eigenes Backup-Skript verwenden.
@@ -1984,7 +1984,7 @@ Es kann deinen Snapshot extern sichern – gemäß der 3-2-1-Regel.
 
 (((Ansible)))
 ((mario)) ist ein Tool, das ich entwickelt habe, um dir beim Einrichten und Warten eines Servers zu helfen.
-Es ist im Wesentlichen ein Wrapper um das bewährte [https://ansible.com\[Ansible\]-Systembereitstellungstool](https://ansible.com[Ansible]-Systembereitstellungstool).
+Es ist im Wesentlichen ein Wrapper um das bewährte https://ansible.com[Ansible-Systembereitstellungstool].
 Alles, was ich mit mario mache, lässt sich auch manuell direkt auf dem Server erledigen.
 Der Vorteil bei der Verwendung von mario ist jedoch, dass jede Änderung (z. B. die Installation eines Pakets) konsistent und mit Prüfprotokoll durchgeführt wird.
 Der wahre Nutzen dieser Praxis zeigt sich vor allem bei der Zusammenarbeit mit anderen – einschließlich deinem zukünftigen Ich.
