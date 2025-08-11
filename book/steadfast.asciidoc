@@ -2472,8 +2472,8 @@ services:
     command: ping example.com
 ----
 
-Im Ordner `~/ping/` führe Befehl "sudo docker compose up" aus.
-Drücke nach ein paar Sekunden Strg + C.
+Im Ordner `~/ping/` führe Befehl `sudo docker compose up` aus.
+Drücke nach ein paar Sekunden kbd:[Strg+C].
 Du solltest dann ungefähr so etwas sehen:
 
 .start tiny test service (🚀 server)
