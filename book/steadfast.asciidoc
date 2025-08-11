@@ -847,7 +847,7 @@ Hier sind einige Dinge, die mich überrascht haben – im Positiven wie im Negat
 
 ==== Gute Überraschungen
 
-===== Hardware war gar nicht so schwierig.
+===== Hardware war gar nicht so schwierig
 
 Mit Hilfe eines Freundes (danke, Rob!) habe ich einen zuverlässigen und günstigen, generalüberholten Server gekauft.
 Ich dachte, ich müsste an Kabeln, Karten und CMOS-Batterien herumbasteln.
