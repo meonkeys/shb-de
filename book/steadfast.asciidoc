@@ -2458,7 +2458,7 @@ Wenn Traefik bereits läuft, haben wir diese Bestätigung eigentlich schon (weil
 aber es kann trotzdem ein praktisches Werkzeug für später sein – oder zumindest ein positiver Schritt in Richtung eigener nützlicher Dienste.
 
 Dieser Testdienst demonstriert das Pingen eines öffentlichen Servers.
-Erstelle _auf deinem Server_ den Ordner: ~/ping/.
+Erstelle _auf deinem_ Server den Ordner: `~/ping/`.
 Lege in diesem Ordner eine Datei `compose.yml` mit folgendem Inhalt an:
 
 .tiny test service config (🚀 server)
