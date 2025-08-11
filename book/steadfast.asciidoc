@@ -1076,7 +1076,7 @@ Hier findest du die entsprechenden Abschnitte mit Details zu jeder Ebene:
 
 Es gibt außerdem zwei Dienste in Containern, die später behandelt werden und _nicht_ im Diagramm dargestellt sind:
 
-* <<Watchtower: service updater>>
+* <<Watchtower: Dienst-Updates>>
 * <<Scratch: visual programming>>
 
 === Digitale Sicherheit
@@ -2516,7 +2516,7 @@ This chapter covers what they provide and how to manage them.
 |sync and share files, groupware |<<Nextcloud: Dateisynchronisation und -Freigabe>>
 |stream music and home movies |<<Jellyfin: Audio- und Videostreaming>>
 |read articles offline, without distractions |<<Wallabag: Artikel speichern und lesen>>
-|keep other services up to date |<<Watchtower: service updater>>
+|keep other services up to date |<<Watchtower: Dienst-Updates>>
 |learn to code with visual tools |<<Scratch: visual programming>>
 |===
 
@@ -2701,7 +2701,7 @@ I want to be able to https://github.com/wallabag/wallabag/issues/679[share conte
 
 <<<
 
-=== Watchtower: service updater
+=== Watchtower: Dienst-Updates
 
 ((Watchtower)) is handy for keeping your Docker containers up to date.
 It will discover and check outdated containers, pull new images, and restart services to create new containers.
