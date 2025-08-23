@@ -48,7 +48,7 @@ endif::backend-html5[]
 include::locale/attributes-de.adoc[]
 
 [colophon%notitle%nonfacing]
-== Colophon
+== Kolophon
 
 --
 _{doctitle}_
@@ -56,8 +56,8 @@ _{doctitle}_
 
 --
 {copyright}.
-Some rights reserved.
-This book is licensed under a https://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License].
+Manche Rechte vorbehalten.
+Dieses Buch ist lizenziert unter einer https://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License].
 
 image::cc-by-sa.svg[align="center"]
 --
@@ -68,15 +68,15 @@ Mehr von ihrer großartigen Kunst findest du im Laufe des Buches.
 --
 
 --
-Technical editing by https://www.wondra.codes[Lenny Wondra].
+Technische Redaktion von https://www.wondra.codes[Lenny Wondra].
 --
 
 --
-German translation by Fiona Burkart.
+Deutsche Übersetzung von Fiona Burkart.
 --
 
 --
-First published in 2024 by https://sunrisedata.io[Sunrise Data Press].
+Erstmals veröffentlicht im Jahr 2024 von https://sunrisedata.io[Sunrise Data Press].
 --
 
 --
@@ -155,7 +155,7 @@ Die Auswahl der Vorträge lief nach dem Motto: „Wenn du einen Vortrag halten w
 Adam hielt großartige Einführungsvorträge zu Git und Hadoop, und ich sprach über politische Rahmenbedingungen und Community-Organizing.
 Wir hatten es noch nicht schriftlich festgehalten, aber SeaGL war von Anfang an dazu bestimmt, eine Konferenz für Anfängerinnen und Expertinnen zu sein, für Programmierer*innen und Politikbegeisterte, und für Vorträge über das gesamte Ökosystem – seine Schwächen, sein Potenzial und die Chancen zur Zusammenarbeit mit anderen Initiativen, die Menschen stärken wollen.
 
-Nach dieser chaotischen ersten Ausgabe wurde uns klar: SeaGL sollte für alle sein – aber ganz besonders für Menschen, die einen Einstieg in Open Source suchten, in einer vielfältigen, teuren und technologiegetriebenen Region wie Seattle.
+Nach dieser chaotischen ersten Ausgabe wurde uns klar: SeaGL sollte für alle sein – aber ganz besonders für Menschen, die einen Einstieg in Open Quellesuchten, in einer vielfältigen, teuren und technologiegetriebenen Region wie Seattle.
 Wir wollten, dass SeaGL eine großartige erste Tech-Konferenz für Teilnehmende wird und eine einladende Plattform für angehende Vortragende bietet.
 Später weiteten wir dieses Ziel aus und bemühten uns gezielt darum, weniger bekannte Sprecher*innen zu finden und ihnen ihre erste Keynote-Möglichkeit zu bieten.
 Das gesamte SeaGL-Team (einschließlich Adam, natürlich!) war und ist mit voller Leidenschaft dabei, Neulinge willkommen zu heißen und eine freundliche, sichere und neugierige Atmosphäre zu schaffen.
@@ -243,7 +243,7 @@ Um das Beste aus diesem Buch herauszuholen, solltest du über grundlegende Sysad
 
 Falls dir eines dieser Konzepte nicht vertraut ist, hilft dir ein kurzer Abstecher zu deiner bevorzugten Suchmaschine oder ein Besuch bei einer lokalen Nutzergruppe sicher weiter.
 
-Ich empfehle das Hosting auf Bare Metal (greifbarer, lokal betriebener Computer-Hardware), was einige Anforderungen an den physischen Standort deines Servers mit sich bringt.
+Ich empfehle das Hosting auf bloßes Metal (greifbarer, lokal betriebener Computer-Hardware), was einige Anforderungen an den physischen Standort deines Servers mit sich bringt.
 Mehr zu den Details und Anforderungen von Bare-Metal-Hosting findest du im Abschnitt <<Hardware vorbereiten>>.
 
 Zum Schluss noch einige bewährte Vorgehensweisen, die du beim Lesen im Hinterkopf behalten solltest:
@@ -307,12 +307,12 @@ Die Lizenz verschafft Ihnen möglicherweise nicht alle Erlaubnisse, die Sie für
 
 ==== Kopiere auch den Code dieses Buches
 
-Siehe <<Weitere Ressourcen>> für den Source Code.
-Der source code umfasst zwei Originalwerke, die du kopieren, verändern und weitergeben darfst.
+Siehe <<Weitere Ressourcen>> für den Quellcode.
+Der Quellcode umfasst zwei Originalwerke, die du kopieren, verändern und weitergeben darfst.
 Zum einen das Buch selbst, inklusive des Codes zur Erstellung schön gesetzter Versionen.
 Zum anderen ein Lernwerkzeug namens mario (siehe <<_mario>>).
 
-Die Lizenz für sämtlichen originalen Source Code im Zusammenhang mit diesem Buch ist die GNU AGPL (Affero General Public License), veröffentlicht von der Free Software Foundation, entweder in Version 3 der Lizenz oder (nach deiner Wahl) jeder späteren Version.
+Die Lizenz für sämtlichen originalen Quellcode im Zusammenhang mit diesem Buch ist die GNU AGPL (Affero General Public License), veröffentlicht von der Free Software Foundation, entweder in Version 3 der Lizenz oder (nach deiner Wahl) jeder späteren Version.
 Eine Kopie der AGPL ist in `mario/COPYING` enthalten.
 
 
@@ -434,7 +434,7 @@ Allein der Versuch, Google hinter sich zu lassen, war eine faszinierende und erf
 Ich habe dieses Buch geschrieben, um ((Datensouveränität)) als prosoziales Verhalten zu fördern.
 Dank Self-Hosting ist das heute einfacher denn je – und ich wollte dieses Wissen in Buchform weitergeben.
 
-Die bisherigen Bücher zu diesem Thema bieten keine gute, schnelle und günstige Methode, um Self-Hosting auf eigener Hardware ((Bare Metal)) umzusetzen.
+Die bisherigen Bücher zu diesem Thema bieten keine gute, schnelle und günstige Methode, um Self-Hosting auf eigener Hardware ((bloßes Metal)) umzusetzen.
 Ich habe eine solche Methode gefunden – und ich glaube, du wirst sie lieben.
 Sie funktioniert übrigens auch in der Cloud, kostet dort aber deutlich mehr (siehe <<Server>>).
 
@@ -482,7 +482,7 @@ Mehr dazu:
 * https://defectivebydesign.org/what_is_drm[What is DRM?] by the Free Software Foundation
 * https://nytimes.com/2023/04/04/arts/dahl-christie-stine-kindle-edited.html[It's Their Content, You're Just Licensing it] by Reggie Ugwu
 
-(((source of truth)))
+(((Quelleof truth)))
 Das Speichern von Kopien von Daten, die jemand anderes für dich hostet, ist in Ordnung.
 Self-Hosting geht einen Schritt weiter und verschafft dir weitreichende Kontrolle darüber, wie deine Daten verwendet und geteilt werden.
 Du erhältst die Kontrolle über autoritative Kopien deiner Dateien – du weißt also, was die "Wahrheit" ist und kannst sie bestimmen.
@@ -517,7 +517,7 @@ image::bread-server.png[align="center",scaledwidth=80%]
 
 _Cloud_ bedeutet, dass es skalierbar und automatisierbar ist.
 _Personal_ begrenzt diese Skalierbarkeit auf ein sinnvolles Maß für eine kleine Gruppe.“
-Ein ((Bare Metal)) Server kann innerhalb seiner eigenen Hardware bis zu einem gewissen Maß skalieren
+Ein ((bloßes Metal)) Server kann innerhalb seiner eigenen Hardware bis zu einem gewissen Maß skalieren
 Es kann sich automatisch anpassen, indem es je nach ((Rechen-))Bedarf mehr oder weniger Leistung nutzt, und manuell, wenn man Hardware-Komponenten aufrüstet (zum Beispiel durch Hinzufügen einer weiteren Festplatte).”
 
 Ich gebe zu, mein inneres Kind freut sich über die Mehrdeutigkeiten des Begriffs _Personal Cloud_.
@@ -633,7 +633,7 @@ Seattle.
 
 ==== Hey.
 
-Zugegeben, die letzten paar Abschnitte existieren nur, damit ich alle https://en.wikipedia.org/wiki/Five_Ws[5 Ws] (wer, was, wann, wo, warum) abdecken und das ‚Höhlenmenschen‘-Gimmick einbauen kann.
+Zugegeben, die letzten paar Abschnitte existieren nur, damit ich alle https://de.wikipedia.org/wiki/Fragetechnik#Offene_W-Fragen_in_der_Praxis[5 Ws] (wer, was, wann, wo, warum) abdecken und das ‚Höhlenmenschen‘-Gimmick einbauen kann.
 
 === Eine Anmerkung zu FOSS
 
@@ -867,7 +867,7 @@ image::inside-chassis.jpg[align="center",scaledwidth=80%]
 (((Docker)))
 Ich war angenehm überrascht von ((Container))s (erklärt in <<Contained services>>), insbesondere nach meinen gemischten früheren Erfahrungen mit VMs.
 VMs sind anfangs einfach, weil sie sich wie echte Hardware verhalten.
-Linux in eine VM zu installieren ist genauso einfach wie auf ((Bare Metal)) (manchmal sogar einfacher).
+Linux in eine VM zu installieren ist genauso einfach wie auf ((bloßes Metal)) (manchmal sogar einfacher).
 Dann kann man einen oder mehrere Dienste in der VM einrichten.
 Der eigentliche Haken liegt in der Wartung:
 Das Pflegen einer VM kann genauso aufwendig sein wie die Wartung eines Bare-Metal-Servers.
@@ -884,7 +884,7 @@ Diese begrenzte Isolierung hält jedoch die Ressourcen- und Wartungskosten bei c
 
 Container eignen sich hervorragend für eine konsistente und stabile persönliche Cloud.
 Sie lassen sich leicht deklarieren (im Code), bauen, bereitstellen, testen und reproduzieren.
-Container können auch zusammen mit VMs verwendet werden: Du könntest zum Beispiel eine VM als Server nutzen, anstelle von Bare Metal.
+Container können auch zusammen mit VMs verwendet werden: Du könntest zum Beispiel eine VM als Server nutzen, anstelle von bloßes Metal.
 
 Ich habe mich für Docker zur Verwaltung von Containern entschieden, weil es weit verbreitet ist und ich Erfahrung damit habe.
 Dein Server wird dabei auch als Host bezeichnet, da er die Docker-Container hostet.
@@ -911,7 +911,7 @@ Ich war begeistert zu sehen, wie Jellyfin sich als ausgezeichnete und vollständ
 
 Der ((Traefik))-Reverse-Proxy war überraschend herausfordernd einzurichten, da meine Netzwerkgrundlagen etwas eingerostet waren.
 Ich habe ihn nun zuverlässig zum Laufen gebracht, muss aber mein grundlegendes Netzwerkwissen weiterhin verbessern.
-Siehe <<Reverse Proxy>> für mehr Informationen über Traefik.
+Siehe <<Reverse-Proxy>> für mehr Informationen über Traefik.
 
 ===== Nextcloud Bugs
 
@@ -1051,10 +1051,10 @@ Tauchen wir ein in die Gestaltung eines _Steadfast_ Systems.
 === Dienst-Stack
 
 Ein _Steadfast_ System lässt sich gut als vereinfachter Stapel farbiger Kästchen darstellen.
-Die vertikale Anordnung dieses Stacks richtet sich danach, wo und wie häufig eine Systemadministratorin wahrscheinlich auf dieser Ebene agieren oder bei Support- oder Fehlersuche eingreifen wird (am häufigsten oben), sowie danach, wie stark die jeweilige Ebene vom Bare Metal abstrahiert ist (am wenigsten unten).
+Die vertikale Anordnung dieses Stacks richtet sich danach, wo und wie häufig eine Systemadministratorin wahrscheinlich auf dieser Ebene agieren oder bei Support- oder Fehlersuche eingreifen wird (am häufigsten oben), sowie danach, wie stark die jeweilige Ebene vom bloßes Metal abstrahiert ist (am wenigsten unten).
 
 [#image-service-stack]
-.Layers of a Steadfast system. From the bottom, hardware: bare metal, filesystem: ext4 for / and optionally ZFS for /data, OS: Ubuntu LTS 64-bit server, container runtime: Docker, containers: Nextcloud file sharing app, Jellyfin media server, Wallabag article reader.
+.Schichten eines Steadfast systems. Von unten, Hardware: bloßes Metal, Dateisystemsystem: ext4 for / and optionally ZFS for /data, Betriebssystem: Ubuntu LTS 64-bit server, Containerlaufzeit: Docker, Container: Nextcloud Dateifreigabe, Jellyfin Medienserver, Wallabag Artikelleser.
 image::service-stack.svg[align="center",scaledwidth=80%]
 
 Am häufigsten arbeite ich in den oberen Schichten – zum Beispiel beim Hinzufügen oder Aktualisieren eines Containers.
@@ -1088,7 +1088,7 @@ Lass uns die grundlegenden Werkzeuge kennenlernen, um deinen Server zu verstehen
 Zuerst solltest du deine Daten betrachten.
 Es hilft, sie in zwei gängige Kategorien aufzuteilen:
 
-===== Saidensible Daten
+===== Sensible Daten
 
 Beispiele: Passwörter, Kreditkartennummern, staatliche Ausweisnummern.
 Empfehlungen:
@@ -1382,7 +1382,7 @@ Wir möchten, dass ((HTTPS))-Anfragen an Port 443, die für cloud.example.com be
 Um diesen Vorgang zu verstehen, hilft es, das mitgelieferte Traefik-Architekturdiagramm zu studieren – ebenso wie die Quelltexte von mario.
 
 [#image-traefik-architecture]
-.Abbildung 8. Traefik-Architekturdiagramm, das zeigt, wie eine Anfrage einen Dienst erreicht.Aus dem MIT-lizenzierten Quellcode von Traefik. Danke an Peka für das Gopher-Logo, lizenziert unter CC-BY-3.0.
+. Traefik-Architekturdiagramm, das zeigt, wie eine Anfrage einen Dienst erreicht.Aus dem MIT-lizenzierten Quellcode von Traefik. Danke an Peka für das Gopher-Logo, lizenziert unter CC-BY-3.0.
 image::traefik-architecture.png[]
 
 (((router, Traefik)))
@@ -1402,7 +1402,7 @@ Konkret heißt das: `websecure` → `nc-https` → `app`.
 
 Die folgenden beiden Snippets aus dem Mario-Quellcode zeigen, wie wir Traefik für Nextcloud einrichten.
 
-.Traefik-Konfigurationsausschnitt (🏠 admin computer)
+.Traefik-Konfigurationsausschnitt (🏠 Admincomputer)
 [source#traefik-config,yaml]
 ----
 # from traefik/compose.yml
@@ -1414,7 +1414,7 @@ services:
 
 <1> Definiere den Entrypoint `websecure` im Dienst `reverse-proxy`, der Datenverkehr über Port 443 entgegennimmt.
 
-.Nextcloud-Konfigurationsausschnitt (🏠 admin computer)
+.Nextcloud-Konfigurationsausschnitt (🏠 Admincomputer)
 [source#nextcloud-config,yaml]
 ----
 # from nextcloud/compose.yml
@@ -1622,7 +1622,7 @@ image::bird-on-server.jpg[align="center",scaledwidth=50%]
 
 ==== Admincomputer
 
-(((admin computer)))
+(((Admincomputer)))
 Es ist hilfreich, einen separaten Computer vom Server zu haben, um Änderungen vorzunehmen.
 Ich verwende normalerweise ein Laptop als Admincomputer, um mario zu betreiben.
 
@@ -1636,14 +1636,14 @@ TIP: Sei selbst Nutzer*in der Dienste, die du betreibst.
 Das nennt man _Dogfooding_.
 Dogfooding sorgt dafür, dass du ehrlich mit dir selbst bleibst und dich besser in andere hineinversetzen kannst.
 
-==== Hard drives
+==== Festplattenlaufwerke
 
 (((ZFS, snapshots and)))
-Ich verwende ((Festplattenlaufwerke (HDDs))) zur Datenspeicherung – hauptsächlich, um Kosten gegenüber öffentlichem Cloud-Speicher oder ((SSD))s (Solid-State-Laufwerken) zu sparen.
-Die Kosten für ((Block Storage)) in der Public Cloud übersteigen bei Weitem die Gigabyte-Stunden-Kosten meiner Festplattenlaufwerke.
-Ich habe den Preis für einen Monat 5 TB Festplattenlaufwerke-Blockspeicher bei AWS auf 228,10 $ geschätzt.
+Ich verwende Festplattenlaufwerke (Hard Disk Drives ((HDDs))) zur Datenspeicherung – hauptsächlich, um Kosten gegenüber öffentlichem Cloud-Speicher oder ((SSD))s (Solid-State-Laufwerken) zu sparen.
+Die Kosten für ((Blockspeicher)) in der Public Cloud übersteigen bei Weitem die Gigabyte-Stunden-Kosten meiner Festplattenlaufwerke.
+Ich habe den Preis für einen 5 TB Blockspeicher bei AWS auf 228,10 $ pro Monat geschätzt.
 Mit ZFS erstelle ich außerdem alle 15 Minuten einen Snapshot (im Grunde ein vollständiges lokales Backup).
-Ein Monat stündlicher Snapshots (das nächstvergleichbare Angebot, das ich finden konnte) kostet weitere 310,68 $ bei AWS.
+Der monatliche Preis für stündliche Snapshots (das nächstvergleichbare Angebot, das ich finden konnte) kostet weitere 310,68 $ bei AWS.
 Das ergibt 535,67 $ gesamt – also etwa so viel, wie ich für meine Festplatten ausgegeben habe.
 Ich hatte meine Ausgaben also nach einem Monat wieder drin – und die Festplatten sollten _jahrelang_ halten.
 
@@ -1652,7 +1652,7 @@ Zur Redundanz empfehle ich, zwei identische Festplatten im Spiegelmodus (RAID 
 Das bietet nicht nur Datensicherheit bei Ausfall einer Festplatte, sondern auch bessere Leseleistung (bei den meisten Lesezugriffen).
 Beachte aber: Die nutzbare Speicherkapazität wird dabei halbiert.
 
-Festplattenlaufwerke (HDDs) sind völlig ausreichend schnell, wenn man die Antwortzeiten selbstgehosteter Dienste als Maßstab nimmt. Das Betriebssystem und die Dienste arbeiten effizient mit Daten-Caching, sofern der Server über ausreichend RAM verfügt.
+((HDDs)) sind völlig ausreichend schnell, wenn man die Antwortzeiten selbstgehosteter Dienste als Maßstab nimmt. Das Betriebssystem und die Dienste arbeiten effizient mit Daten-Caching, sofern der Server über ausreichend RAM verfügt.
 Remote-Backups können länger dauern – das ist in Ordnung.
 
 Ich verwende eine SSD für das Betriebssystem und alles außerhalb meiner Fotos/Dokumente usw., da die Startzeit des Betriebssystems entscheidend ist und dieses beim Booten nur wenig von Dateisystem-Caching profitiert.
@@ -1732,7 +1732,7 @@ Falls deine Stromversorgung zu Hause unzuverlässig ist, solltest du eine USV (u
 Schütze deinen Server wie andere Wertsachen in deinem Zuhause.
 Mindestens solltest du den physischen Zugang einschränken.
 
-=== Betriebssystem-Installation (OS-Installation)
+=== OS-Installation
 
 Hier ist eine Anleitung zur Einrichtung deines Servers.
 Die Installation des Betriebssystems dauert etwa fünf Minuten, wenn alles reibungslos verläuft.
@@ -1773,7 +1773,7 @@ Die folgende Anleitung zeigt dir, wie du einen einfachen Pool aus zwei gespiegel
 Das ist ein sinnvoller Ausgangspunkt: Du erhältst damit bessere Fehlertoleranz und schnellere Leseleistung als mit nur einer einzelnen Festplatte.
 
 Auf dem Server führst du diese Befehle als `root` aus (Tipp: zuerst `sudo su -` eingeben).
-Der Code unten geht davon aus, dass du mit einer Festplatte für das Betriebssystem angefangen hast, das OS diese als `/dev/sda` erkannt hat,
+Der Code unten geht davon aus, dass du mit einer Festplatte für das Betriebssystem angefangen hast, und dass das Betriebssystem diese als `/dev/sda` erkannt hat,
 und dass du zwei weitere Festplatten hinzugefügt hast, die als `/dev/sdb` und `/dev/sdc` erkannt wurden.
 Passe das bei Bedarf an — verwende `lsblk`, um deine Laufwerke zu identifizieren.
 
@@ -2037,7 +2037,7 @@ So bringst du das zum Laufen.
 Weise zuerst der IP-Adresse deines Servers einen leicht zu merkenden Namen zu.
 Füge mit der IP-Adresse aus <<OS-Installation>> eine Zeile wie diese in deine Hosts-Datei ein (z. B. /etc/hosts):
 
-.line to add to hosts file (🏠 admin computer)
+.line to add to hosts file (🏠 Admincomputer)
 [source%unbreakable#line-for-hosts,text]
 ----
 192.168.1.100	mario_server
@@ -2046,7 +2046,7 @@ Füge mit der IP-Adresse aus <<OS-Installation>> eine Zeile wie diese in deine H
 Bestätige, dass du den Server unter dem Namen mario_server anpingen kannst.
 So sieht es aus, wenn es funktioniert:
 
-.test ping server (🏠 admin computer)
+.test ping server (🏠 Admincomputer)
 [source%unbreakable#test-ping-server,text]
 ----
 $ ping mario_server
@@ -2064,7 +2064,7 @@ Als Nächstes soll dein SSH-Client beim Ausführen von ssh mario_server den rich
 Hier ist eine Beispielkonfigurationsvorlage für den ((OpenSSH))-Client.
 Ersetze your-username durch den Benutzernamen deines Serverkontos.
 
-.customize OpenSSH client configuration (🏠 admin computer)
+.customize OpenSSH client configuration (🏠 Admincomputer)
 [source%unbreakable#customize-openssh-client,text]
 ----
 Host mario_server
@@ -2075,7 +2075,7 @@ Du kannst das in ~/.ssh/config einfügen und bei Bedarf an deinen verwendeten SS
 Teste die Verbindung mit ssh mario_server.
 Du wirst möglicherweise so etwas sehen:
 
-.SSH host fingerprint prompt (🏠 admin computer)
+.SSH host fingerprint prompt (🏠 Admincomputer)
 [source%unbreakable#ssh-host-fing,text]
 ----
 Die Echtheit des Hosts »mario\_server (192.168.1.100)« kann nicht festgestellt werden.
@@ -2106,7 +2106,7 @@ Wenn du bereits ein Schlüsselpaar hast, verwende dieses.
 Kopiere den öffentlichen Schlüssel mit `ssh-copy-id` oder einem ähnlichen Tool auf den Server.
 Zum Beispiel:
 
-.install SSH key on server (🏠 admin computer)
+.install SSH key on server (🏠 Admincomputer)
 [source%unbreakable#install-ssh-pubkey,text]
 ----
 $ ssh-copy-id mario_server
@@ -2123,7 +2123,7 @@ and check to make sure that only the key(s) you wanted were added.
 Teste, ob bisher alles funktioniert, indem du `ssh mario_server` ausführst.
 Du solltest etwa Folgendes sehen:
 
-.successful SSH to server (🏠 admin computer)
+.successful SSH to server (🏠 Admincomputer)
 [source#successful-ssh-to-server,text]
 ----
 $ ssh mario_server
@@ -2139,7 +2139,7 @@ user@server:~$
 
 Führe `provision.sh` auf deinem ((Admin-Computer)) aus (*nicht* auf deinem Server):
 
-.mario first run (🏠 admin computer)
+.mario first run (🏠 Admincomputer)
 [source%unbreakable#mario-first-run,bash]
 ----
 cd mario/ansible
@@ -2148,7 +2148,7 @@ cd mario/ansible
 
 Beim ersten Aufruf überprüft mario die Voraussetzungen und fordert dich auf, server­spezifische Werte in eine Konfigurationsdatei einzugeben.
 
-.mario first run output (🏠 admin computer)
+.mario first run output (🏠 Admincomputer)
 [source%unbreakable#mario-first-output,text]
 ----
 You don't have a config file. I'll create one for you now.
@@ -2175,7 +2175,7 @@ Beende das Bearbeiten von `config` und führe anschließend `provision.sh` erneu
 Dieser Durchlauf fragt dich nach dem Passwort, das du während der <<OS-Installation>> festgelegt hast. Bei weiteren Durchläufen ist das nicht mehr nötig.
 Die Ausgabe sollte in etwa so aussehen:
 
-.mario second run output (🏠 admin computer)
+.mario second run output (🏠 Admincomputer)
 [source#mario-second-run,text]
 ----
 BECOME password:
@@ -2279,13 +2279,13 @@ Hier ist noch einmal die `hosts`-Datei:
 
 // Das könnte auch eine einzelne Zeile mit einer IP-Adresse und mehreren Hostnamen sein.
 
-.hosts file with service names (🏠 admin computer)
+.hosts file with service names (🏠 Admincomputer)
 [source%unbreakable#hosts-file-with-service-names,text]
 ----
-# for provisioning from admin computer
+# for provisioning from Admincomputer
 192.168.1.100	mario_server
 
-# for accessing services from admin computer
+# for accessing services from Admincomputer
 192.168.1.100	traefik.example.com
 192.168.1.100	cloud.example.com
 192.168.1.100	jellyfin.example.com
@@ -2349,10 +2349,10 @@ dc traefik up -d
 TIP: Für einige Befehle, darunter `docker compose`, ist `sudo` erforderlich.
 Das Skript `dc` führt `sudo` automatisch für Sie aus.
 
-==== Reverse Proxy starten
+==== Reverse-Proxy starten
 
 (((Traefik)))
-Richten Sie zuerst den ((Reverse Proxy)) ein.
+Richten Sie zuerst den ((Reverse-Proxy)) ein.
 Starten Sie auf Ihrem Server Traefik mit `dc traefik up -d`.
 Wenn das funktioniert hat, warten Sie ein bis zwei Minuten und besuchen Sie `\https://traefik.example.com` in einem Webbrowser, um das Traefik-Dashboard zu sehen.
 Während Sie auf das Dashboard warten, können Sie die Logs mit `dc traefik logs -f` mitverfolgen.
@@ -2420,7 +2420,7 @@ Dies nennt man *SSL-Termination* und wird in Traefiks `compose.yml` über Zeilen
 Schau dir einmal die `compose.yml`-Datei eines beliebigen mit mario gelieferten Dienstes an.
 Jeder Dienst hat im Router-Abschnitt eine `tls`-Sektion definiert, um HTTPS-Verschlüsselung und SSL-Terminierung zu aktivieren.
 
-Falls beim Aufruf deiner Webdienste Zertifikatswarnungen erscheinen, prüfe zuerst die Traefik-Logs wie in <<Start reverse proxy>> beschrieben.
+Falls beim Aufruf deiner Webdienste Zertifikatswarnungen erscheinen, prüfe zuerst die Traefik-Logs wie in <<Start Reverse-Proxy>> beschrieben.
 Um die Protokollausgabe von Traefik zu erweitern, ändere in der `compose.yml` von Traefik den Eintrag
 `--log.level=INFO` zu `--log.level=DEBUG`, führe die Provisionierung erneut aus und starte Traefik neu.
 Falls das Problem weiterhin besteht, überprüfe, ob DNS-Abfragen erfolgreich sind, da dies die DNS-Challenge beeinflusst.
@@ -2429,7 +2429,7 @@ Falls das Problem weiterhin besteht, überprüfe, ob DNS-Abfragen erfolgreich si
 [source#example-dns-tests,bash]
 ----
 ####
-# Try these commands on both the admin computer and server.
+# Try these commands on both the Admincomputer and server.
 # Replace dig (and its arguments) with your favorite DNS tool.
 # Replace traefik.example.com with your Traefik service name.
 ####
@@ -2501,37 +2501,37 @@ canceled
 TIP: Für Bonuspunkte kannst du deinen kleinen Testdienst in mario integrieren.
 
 Das ist auch die Grundlage, um später spannendere Dienste hinzuzufügen.
-Nur ein paar zusätzliche Zeilen Code und Konfiguration reichen, um einen kleinen ((API))- oder Webdienst zu erstellen – und mit ein paar weiteren Zeilen kannst du ihn über deinen Reverse Proxy veröffentlichen.
+Nur ein paar zusätzliche Zeilen Code und Konfiguration reichen, um einen kleinen ((API))- oder Webdienst zu erstellen – und mit ein paar weiteren Zeilen kannst du ihn über deinen Reverse-Proxy veröffentlichen.
 
 == Dienste
 
-Now you can try out the services provisioned by mario.
-This chapter covers what they provide and how to manage them.
+Jetzt kannst du die von mario bereitgestellten Dienste ausprobieren.
+Dieses Kapitel behandelt, was sie bieten und wie du sie verwaltest.
 
 [#purposes-of-default-mario-services]
-.Purposes of default mario services
+.Verwendungszwecke der standardmäßigen mario-Dienste
 |===
-|Purpose |See
+|Verwendungszweck |Siehe
 
-|sync and share files, groupware |<<Nextcloud: Dateisynchronisation und -Freigabe>>
-|stream music and home movies |<<Jellyfin: Audio- und Videostreaming>>
-|read articles offline, without distractions |<<Wallabag: Artikel speichern und lesen>>
-|keep other services up to date |<<Watchtower: Dienst-Updates>>
-|learn to code with visual tools |<<Scratch: visual programming>>
+|Dateien synchronisieren und freigeben, Groupware |<<Nextcloud: Dateisynchronisation und -Freigabe>>
+|Musik und Heimvideos streamen |<<Jellyfin: Audio- und Videostreaming>>
+|Artikel offline und ohne Ablenkung lesen |<<Wallabag: Artikel speichern und lesen>>
+|Andere Dienste auf dem neuesten Stand halten |<<Watchtower: Dienst-Updates>>
+|Programmieren mit visuellen Werkzeugen lernen |<<Scratch: visual programming>>
 |===
 
-These particular services are a small fraction of those available to self-host.
-They reflect my users`' preferences (including and over-indexed to my own) in reading, sharing, media, and so on.
-Getting them running will provide some useful functionality for your users and a good starting point for self-hosting whatever you want.
+Diese speziellen Dienste sind nur ein kleiner Bruchteil derjenigen, die für das Self-Hosting verfügbar sind.
+Sie spiegeln die Vorlieben meiner Nutzerinnen wider (einschließlich – und überproportional – meiner eigenen) in den Bereichen Lesen, Teilen, Medien usw.
+Wenn Sie diese Dienste zum Laufen bringen, bieten sie Ihren Nutzerinnen bereits nützliche Funktionen und dienen als guter Ausgangspunkt, um alles Mögliche selbst zu hosten.
 
-For each service you'll find my personal commentary and issues I encountered.
-If I mention a feature I'd like to see added, I've also thought of adding it myself (or trying to convince someone else to add it, or raising money to pay someone to add it).
-If I link to a bug that is closed in an issue tracker, it's because I have tested and, at the time of writing, I'm still experiencing the bug in an official/supported release that is supposed to have the fix.
+Zu jedem Dienst finden Sie meine persönlichen Kommentare und Probleme, auf die ich gestoßen bin.
+Falls ich eine Funktion erwähne, die ich gern hinzugefügt sehen würde, habe ich auch schon darüber nachgedacht, sie selbst zu implementieren (oder jemanden davon zu überzeugen, sie hinzuzufügen, oder Geld zu sammeln, um jemanden für die Umsetzung zu bezahlen).
+Wenn ich auf einen geschlossenen Bug im Issue-Tracker verweise, liegt das daran, dass ich den Fehler getestet habe und er – zum Zeitpunkt des Schreibens – in einer offiziellen bzw. unterstützten Version, die angeblich die Korrektur enthält, weiterhin auftritt.
 
-Mobile usage is high for the users I support, so that was also a factor when I chose these services.
-Nextcloud, Jellyfin, and Wallabag have mobile apps and integrations, and I use these often.
+Die mobile Nutzung ist bei den von mir betreuten Nutzer*innen hoch, daher war dies ebenfalls ein Auswahlkriterium.
+Nextcloud, Jellyfin und Wallabag verfügen über mobile Apps und Integrationen, die ich häufig verwende.
 
-The server-side commands for managing services are standardized: You'll see the pattern `dc SERVICE ACTION ARGS` repeated many times.
+Die serverseitigen Befehle zur Verwaltung von Diensten sind standardisiert: Sie werden das Muster dc: SERVICE ACTION ARGS immer wieder sehen.
 
 // this forced page break was originally just to improve the print PDF layout, but I find it doesn't hurt the screen PDF layout so I don't use an ifdef::shb-printPDF[]
 
@@ -2540,143 +2540,143 @@ The server-side commands for managing services are standardized: You'll see the 
 === Nextcloud: Dateisynchronisation und -Freigabe
 
 (((Nextcloud)))
-A _Steadfast_ personal cloud needs convenient file sharing and synchronization.
-Nextcloud is an excellent choice given its stability and popularity.
-It can be daunting to self-host, but mario makes it easy and fun.
+Eine Steadfast Personal Cloud benötigt bequeme Dateifreigabe und Synchronisierung.
+Nextcloud ist aufgrund seiner Stabilität und Popularität eine ausgezeichnete Wahl.
+Das Selbst-Hosting kann entmutigend wirken, aber mario macht es einfach und sogar spaßig.
 
 [#image-screenshot-nextcloud]
-.Nextcloud Files app screenshot showing files, folders, and share buttons.
+.Nextcloud Files-App-Screenshot mit Dateien, Ordnern und Teilen-Schaltflächen.
 image::nextcloud.png[align="center",scaledwidth=80%]
 
-A well-maintained Nextcloud server provides a solid foundation for de-Googling.
-Nextcloud can be self-hosted for free when installed via mario.
-Once you've got Nextcloud running, see <<More about Nextcloud>> for lots of my opinions on how best to customize it.
+Ein gut gepflegter Nextcloud-Server bietet eine solide Grundlage für das „De-Googlen“.
+Nextcloud kann kostenlos selbst gehostet werden, wenn es über mario installiert wird.
+Sobald Sie Nextcloud zum Laufen gebracht haben, finden Sie unter <<Mehr über Nextcloud>> viele meiner Gedanken darüber, wie man es am besten anpasst.
 
 [#nextcloud_quick_start]
-==== Quick start
+==== Schnellstart
 
-. Provision with mario from your admin computer.
-. Start Nextcloud with `dc nextcloud up -d` on your server.
-. Navigate to `\https://cloud.example.com` on your admin computer.
-. Follow the web-based setup page to create an admin account.
-. Skip installing recommended apps.
+. Provisionieren Sie mit mario von Ihrem Admin-Computer.
+. Starten Sie Nextcloud mit dc nextcloud up -d auf Ihrem Server.
+. Rufen Sie \https://cloud.example.com auf Ihrem Admin-Computer auf.
+. Folgen Sie der webbasierten Setup-Seite, um ein Admin-Konto zu erstellen.
+. Überspringen Sie die Installation der empfohlenen Apps.
 
-==== Maintenance notes
+==== MWartungshinweise
 
-Run `dc nextcloud pull && dc nextcloud up -d` on your server to upgrade and replace Nextcloud service containers.
+Führen Sie dc nextcloud pull && dc nextcloud up -d auf Ihrem Server aus, um die Nextcloud-Service-Container zu aktualisieren und zu ersetzen.
 
-==== Issues
+==== Probleme
 
-See <<Various issues>>.
+Siehe <<Verschiedene Probleme>>.
 
 <<<
 
 === Jellyfin: Audio- und Videostreaming
 
 (((Jellyfin)))
-https://jellyfin.org[Jellyfin] is a personal streaming media server.
-mario will set up a basic Jellyfin server.
+https://jellyfin.org[Jellyfin] ist ein persönlicher Streaming-Medienserver.
+mario richtet einen grundlegenden Jellyfin-Server ein.
 
 [#image-screenshot-jellyfin]
-.Jellyfin screenshot showing metadata for a movie. Big Buck Bunny is licensed CC BY-3.0 by the Blender Foundation.
+.Jellyfin-Screenshot mit Metadaten zu einem Film. Big Buck Bunny ist unter der Lizenz CC BY-3.0 von der Blender Foundation veröffentlicht.
 image::jellyfin.png[align="center",scaledwidth=80%]
 
-==== Quick start
+==== Schnellstart
 
-. Provision with mario from your admin computer.
-. Start Jellyfin with `dc jellyfin up -d` on your server.
-. Navigate to `\https://jellyfin.example.com` on your admin computer.
-. Follow web-based setup steps.
+. Provisioniere mit mario vom Admin-Computer aus.
+. Starte Jellyfin mit dc jellyfin up -d auf dem Server.
+. Navigieren zu \https://jellyfin.example.com auf dem Admin-Computer.
+. Folgen den webbasierten Einrichtungsschritten.
 
 (((Jellyfin, using a GPU with)))
-If you have a GPU, look into https://jellyfin.org/docs/general/administration/hardware-acceleration/[hardware acceleration].
-This is useful if videos can't be played directly by a client and need to be transcoded on the fly.
-Jellyfin can transcode using only CPU, but it is way faster with a GPU.
+Wenn Sie über eine GPU verfügen, sollten Sie sich die Hardwarebeschleunigung ansehen.
+Diese ist nützlich, wenn Videos nicht direkt von einem Client abgespielt werden können und daher on the fly transkodiert werden müssen.
+Jellyfin kann zwar auch nur mit der CPU transkodieren, mit einer GPU geht es jedoch deutlich schneller.
 
 [%unbreakable]
-TIP: Jellyfin can take advantage of some CPUs with built-in hardware transcoding.
-Intel Quick Sync Video, for instance.
+TIP: Jellyfin kann auch bestimmte CPUs mit integrierter Hardware-Transkodierung nutzen,
+zum Beispiel Intel Quick Sync Video.
 
-==== Maintenance notes
+==== Wartungshinweise
 
-Run `dc jellyfin pull && dc jellyfin up -d` on your server to upgrade and replace the Jellyfin service container.
+Führen Sie dc jellyfin pull && dc jellyfin up -d auf Ihrem Server aus, um den Jellyfin-Dienstcontainer zu aktualisieren und zu ersetzen.
 
-==== Issues
+==== Probleme
 
-Here are some features I'd love to see implemented in Jellyfin.
+Hier sind einige Funktionen, die ich gerne in Jellyfin implementiert sehen würde.
 
-===== Feature: Share playlists
+===== Funktion: Geteilte Playlists
 
-https://github.com/jellyfin/jellyfin/issues/6264#issuecomment-1338518980[Playlists are private by design].
-https://features.jellyfin.org/posts/173/share-playlists[I'd like the ability to share them].
+https://github.com/jellyfin/jellyfin/issues/6264#issuecomment-1338518980[Playlists sind automatisch privat].
+https://features.jellyfin.org/posts/173/share-playlists[Ich mag die Möglichkeit sie zu teilen].
 
-===== Feature: Clips
+===== Funktion: Clips
 
-I often want to share, hear, or re-watch a specific part of some media.
-I think it would be just so cool to be able to https://features.jellyfin.org/posts/1036/bookmark-audio-video-segments[create clips] without actually creating new media files.
+Ich möchte oft einen bestimmten Teil eines Mediums teilen, anhören oder erneut ansehen.
+Es wäre großartig, wenn man [https://features.jellyfin.org/posts/1036/bookmark-audio-video-segments\[Clips](https://features.jellyfin.org/posts/1036/bookmark-audio-video-segments[Clips) erstellen] könnte, ohne tatsächlich neue Mediendateien erstellen zu müssen.
 
-===== Feature: Offline mobile media
+===== Funktion: Offline Medien mobil schauen
 
-I want a Jellyfin mobile app that will automatically cache media and https://features.jellyfin.org/posts/218/support-offline-mode-on-android-mobile[allow playing while offline].
+Ich möchte eine Jellyfin-Mobile-App, die Medien automatisch zwischenspeichert und https://features.jellyfin.org/posts/218/support-offline-mode-on-android-mobile[Offline-Wiedergabe ermöglicht].
 
-Workaround: there are two separate mobile apps that can download and cache media for offline playing.
-https://github.com/jmshrv/finamp[Finamp] for music, and https://github.com/jarnedemeulemeester/findroid[Findroid] for video.
+Workaround: Es gibt zwei separate Mobile-Apps, die Medien für die Offline-Wiedergabe herunterladen und zwischenspeichern können https://github.com/jmshrv/finamp\[Finamp] für Musik und https://github.com/jarnedemeulemeester/findroid\[Findroid]für Videos
 
-==== Manage Jellyfin media with Nextcloud
+==== Jellyfin-Medien mit Nextcloud verwalten
 
-Jellyfin and Nextcloud both run on the same server.
-You can use this fact to leverage their individual strengths as services while they operate on the same data, one as the media streamer and one as the media file manager.
-mario creates special music and video folders on the server and makes them available to both services.
-Nextcloud „external storages“ lets you upload files to these folders and Jellyfin will automatically notice and allow streaming the files you upload.
+Jellyfin und Nextcloud laufen beide auf demselben Server.
+Du kannst diese Tatsache nutzen, um ihre individuellen Stärken als Dienste zu kombinieren, während sie auf denselben Daten arbeiten, der eine als Media-Streamer und der andere als Medien-Dateimanager.
+mario erstellt spezielle Musik- und Videoordner auf dem Server und stellt sie beiden Diensten zur Verfügung.
+Nextclouds „External Storages“ ermöglicht es dir, Dateien in diese Ordner hochzuladen, und Jellyfin wird die hochgeladenen Dateien automatisch erkennen und das Streamen ermöglichen.
 
-Nextcloud's `compose.yml` file has the entry `/data/shared/media/video:/data/video:rw` in `volumes`.
-`/data/shared/media/video` is the path on the server that will hold the actual video files, `/data/video` is where they'll show up inside the container, and `rw` says Nextcloud has read and write access to this volume.
-There's another similar folder for music files.
-See <<Detailed setup>> for how to add them as external storages in Nextcloud.
+Nextclouds compose.yml-Datei hat den Eintrag /data/shared/media/video:/data/video:rw in volumes.
+/data/shared/media/video ist der Pfad auf dem Server, der die eigentlichen Videodateien enthält, /data/video ist der Ort, an dem sie im Container erscheinen, und rw bedeutet, dass Nextcloud Lese- und Schreibzugriff auf dieses Volume hat.
+Es gibt einen weiteren ähnlichen Ordner für Musikdateien.
+Siehe <<Detailed setup>>, um zu erfahren, wie man sie in Nextcloud als „External Storages“ hinzufügt.
 
-In Jellyfin's `compose.yml` file you'll find similar lines to add music and videos volumes, but with `ro` (for read-only) instead of `rw`.
-Jellyfin only needs read access to the folders to be able to stream the files they contain.
+In Jellyfins compose.yml-Datei findest du ähnliche Zeilen zum Hinzufügen von Musik- und Video-Volumes, aber mit ro (für Read-Only) statt rw.
+Jellyfin benötigt nur Lesezugriff auf die Ordner, um die darin enthaltenen Dateien streamen zu können.
 
-To see the Nextcloud-managed media files in Jellyfin, add two media libraries:
+Um die von Nextcloud verwalteten Mediendateien in Jellyfin anzuzeigen, füge zwei Medienbibliotheken hinzu:
 
-. Choose content type „Movies“, click the „+“ icon next to „Folders“, and choose `/data/video`.
-. Choose content type „Music“, click the „+“ icon next to „Folders“, and choose `/data/music`.
+Wähle den Inhaltstyp „Movies“, klicke auf das „+“-Symbol neben „Folders“ und wähle /data/video.
+
+Wähle den Inhaltstyp „Music“, klicke auf das „+“-Symbol neben „Folders“ und wähle /data/music.
 
 <<<
 
 === Wallabag: Artikel speichern und lesen
 
 (((Wallabag)))
-https://wallabag.org[Wallabag] saves articles for distraction-free offline reading.
+https://wallabag.org[Wallabag] speichert Artikel für offline Lesen ohne Ablenkungen. 
 
 [#image-screenshot-wallabag]
-.Wallabag screenshot showing unread articles view.
+.Wallabag screenshot der ungelesene Artikel in der Sammlung zeigt.
 image::wallabag.png[align="center",scaledwidth=80%]
 
-==== Quick start
+==== Schnellstart
 
-. Provision with mario from your admin computer.
-. Start Wallabag with `dc wallabag up -d` on your server.
-. Navigate to `\https://wallabag.example.com` on your admin computer.
-. Log in as `wallabag` user with password `wallabag`.
-. Update password for `wallabag` user.
+. Mit mario von deinem Admincomputer bereitstellen.
+. Starte Wallabag mit dc wallabag up -d auf deinem Server.
+. Gehe auf \https://wallabag.example.com auf deinem Admincomputer.
+. Melde dich als Benutzer wallabag mit dem Passwort wallabag an.
+. Aktualisiere das Passwort für den Benutzer wallabag.
 
-==== Maintenance notes
+==== Wartungshinweise
 
-Run `dc wallabag pull && dc wallabag up -d` on your server to upgrade and replace Wallabag service containers.
-If you run into any issues, try manually applying database upgrades (see <<Bug: Upgrades break everything>>).
+Führe auf deinem Server dc wallabag pull && dc wallabag up -d aus, um die Wallabag-Dienstcontainer zu aktualisieren und zu ersetzen.
+Wenn Probleme auftreten, versuche, Datenbank-Upgrades manuell anzuwenden (siehe <<Bug: Upgrades machen alles kaputt>>).
 
-==== Issues
+==== Probleme
 
-Here's one issue I have with Wallabag and a feature I want.
+Hier ist ein Problem, das ich mit Wallabag habe, und eine Funktion, die ich mir wünsche.
 
-===== Bug: Upgrades break everything
+===== Bug: Upgrades machen alles kaputt
 
-https://github.com/wallabag/wallabag/issues/6649[Database migrations are not (always?) automatically applied].
-There may be other duplicate or related bug reports for this same thing, that's just one example.
-Luckily, there's an https://github.com/wallabag/docker#upgrading[easy workaround].
+https://github.com/wallabag/wallabag/issues/6649[Datenbankmigrationen werden nicht (immer?) automatisch angewandt].
+Es könnte noch andere doppelte oder verwandte Bugberichte für dasselbe Problem geben, das ist nur ein Beispiel.
+Zum Glück kann man https://github.com/wallabag/docker#upgrading[das Problem einfach umgehen].
 
-Apply the workaround to a mario system with:
+Wenden die Problemumgehung in einem mario system wie folgt an:
 
 .force Wallabag database migration (🚀 server)
 [source%unbreakable#force-wallabage-db-migration,bash]
@@ -2685,101 +2685,101 @@ dc wallabag exec app /var/www/wallabag/bin/console \
   doctrine:migrations:migrate --env=prod --no-interaction
 ----
 
-The `exec` command says we want to run something in a container.
-This runs the `console` utility in the `app` service container.
-The second line indicates necessary database migrations (schema and data updates) should be run using `prod` settings, without interactive prompts.
+Der Befehl exec bedeutet, dass wir etwas in einem Container ausführen wollen.
+Dies führt das Dienstprogramm console im app-Service-Container aus.
+Die zweite Zeile gibt an, dass notwendige Datenbankmigrationen (Schema- und Datenaktualisierungen) mit den prod-Einstellungen ohne interaktive Eingabeaufforderungen ausgeführt werden sollen.
 
-This is idempotent, as database migrations should be.
-After the first run, subsequent runs output: `[OK] Already at the latest version`.
+Dies ist idempotent, wie Datenbankmigrationen sein sollten.
+Nach dem ersten Durchlauf geben nachfolgende Durchläufe aus: [OK] Already at the latest version.
 
-It's unclear why thes migration is not automatically performed during an upgrade.
-Perhaps it is only necessary in special cases--I've only had to do it twice in a few years.
+Es ist unklar, warum diese Migration nicht automatisch während eines Upgrades durchgeführt wird.
+Vielleicht ist sie nur in speziellen Fällen notwendig – ich musste sie in den letzten Jahren nur zweimal ausführen.
 
-===== Feature: Share with other users
+===== Funktion: Inhalte mit anderen Nutzern teilen
 
-I want to be able to https://github.com/wallabag/wallabag/issues/679[share content with other Wallabag users, within Wallabag].
+I möchte die Möglichkeit haben, https://github.com/wallabag/wallabag/issues/679[Inhalte mit anderen Wallabag Nutzern in Rahmen des Wallabag programs zu teilen].
 
 <<<
 
 === Watchtower: Dienst-Updates
 
-((Watchtower)) is handy for keeping your Docker containers up to date.
-It will discover and check outdated containers, pull new images, and restart services to create new containers.
+((Watchtower)) ist praktisch, um Ihre Docker-Container auf dem neuesten Stand zu halten.
+Es erkennt und überprüft veraltete Container, lädt neue Images herunter und startet Dienste neu, um neue Container zu erstellen.
 
-// source: https://containrrr.dev/watchtower/images/logo-450px.png
-// appears at: https://containrrr.dev/watchtower/
-// license of the rest of watchtower is Apache 2.0
-// This logo does not have license text.
-// This logo image consists only of simple geometric shapes or text. It does not meet the threshold of originality needed for copyright protection, and is therefore in the public domain.
-// See https://commons.wikimedia.org/wiki/Commons:Threshold_of_originality
-// and https://en.wikipedia.org/wiki/Public_domain
+// Quelle: https://containrrr.dev/watchtower/images/logo-450px.png
+// Erscheint an: https://containrrr.dev/watchtower/
+// Die Lizenz der anderen watchtower teile ist Apache 2.0
+// Dieses logo hat keinen Lizenztext.
+// Dieses Logo-Bild besteht nur aus einfachen geometrischen Formen oder Text. Es erreicht nicht die nötige Schöpfungshöhe für einen urheberrechtlichen Schutz und ist daher gemeinfrei.
+// Siehe https://commons.wikimedia.org/wiki/Commons:Threshold_of_originality
+// und https://en.wikipedia.org/wiki/Public_domain
 
 image::watchtower.png[align="center",scaledwidth=40%]
 
-If you never want containers upgrading automatically, don't run Watchtower.
-Or, use https://containrrr.dev/watchtower/arguments/[configuration settings] to allow or block auto-upgrades for particular containers.
-mario uses a container label to prevent watchtower from updating Scratch, for example.
+Wenn du niemals möchtest, dass Container automatisch aktualisiert werden, führe Watchtower nicht aus.
+Oder verwende die Konfigurationseinstellungen, um automatische Updates für bestimmte Container zu erlauben oder zu blockieren.
+mario verwendet zum Beispiel ein Container-Label, um zu verhindern, dass Watchtower Scratch aktualisiert.
 
-==== Quick start
+==== Schnellstart
 
-. Provision with mario from your admin computer.
-. Start Watchtower with `dc watchtower up -d` on your server.
+. Provisioniere mit mario vom Admincomputer.
+. Starte Watchtower mit `dc watchtower up -d` von deinem server.
 
 From now on it'll run in the background, automatically upgrading containers whenever possible, on a reasonable schedule (every 24 hours by default).
 You can forget about it until it breaks (or breaks something else).
 
-==== Maintenance notes
+==== Wartungshinweise
 
-Run `dc watchtower pull && dc watchtower up -d` on your server to upgrade and replace the Watchtower service container.
+Führe auf deinem Server dc watchtower pull && dc watchtower up -d aus, um den Watchtower-Service-Container zu aktualisieren und zu ersetzen.
 
-==== Issues
+==== Probleme
 
-It https://github.com/containrrr/watchtower/issues/90[does not automatically roll back if a container upgrade fails].
-Granted, this would be challenging to implement.
-A service might only have one-way database migrations, for example.
-I think the Watchtower maintainers made the right decision to omit automatic rollbacks (likely to keep Watchtower simple).
+Es https://github.com/containrrr/watchtower/issues/90[führt kein automatisches Rollback durch, wenn ein Container-Upgrade fehlschlägt].
+Zugegeben, das wäre schwierig umzusetzen.
+Ein Dienst könnte zum Beispiel nur unidirektionale Datenbankmigrationen haben.
+Ich denke, die Watchtower-Maintainer haben die richtige Entscheidung getroffen, automatische Rollbacks wegzulassen (wahrscheinlich, um Watchtower einfach zu halten).
 
-You may experience an issue where a service is broken by Watchtower.
-If you suspect this is the case and you know when the service started breaking, try to correlate that with any upgrades appearing in `dc watchtower logs`.
-I avoid this by only using Watchtower for non-critical services.
-I don't let Watchtower auto-upgrade my Nextcloud service, for example.
+Es kann passieren, dass ein Dienst durch Watchtower beschädigt wird.
+Wenn du den Verdacht hast und weißt, wann der Dienst kaputtging, versuche dies mit den Upgrades in dc watchtower logs zu korrelieren.
+Ich vermeide das, indem ich Watchtower nur für nicht-kritische Dienste nutze.
+Zum Beispiel lasse ich Watchtower meinen Nextcloud-Dienst nicht automatisch upgraden.
 
 <<<
 
-=== Scratch: visual programming
+=== Scratch: visuelle Programmierung
 
-((Scratch)) is a popular and very approachable visual programming language geared towards interactive multimedia and learning.
-The most well-known https://scratch.mit.edu[public online version] adds sharing, studios, comments, stars, hearts, endless memes and games.
-These „social“ features may be exactly what a user wants/needs (e.g. one may remix an existing project and learn from it), or it may unintentionally reorient a user from productive creation to mindless consumption (e.g. doomscrolling).
+((Scratch)) ist eine beliebte und sehr zugängliche visuelle Programmiersprache, die auf interaktive Multimedia-Anwendungen und Lernen ausgelegt ist.
+Die bekannteste https://scratch.mit.edu[öffentliche Online-Version] bietet Teilen, Studios, Kommentare, Sterne, Herzen, endlose Memes und Spiele.
+Diese „sozialen“ Funktionen können genau das sein, was ein Nutzer will/benötigt (z.B. ein bestehendes Projekt remixen und daraus lernen), oder sie können einen Nutzer unbeabsichtigt von produktiver Erstellung hin zu gedankenlosem Konsum umleiten (z.B. Doomscrolling).
 
-This is where your new _Steadfast_ power comes in: Scratch can be self-hosted without the social features.
-In fact, that's the simplest way to self-host it.
-This is a great option if your users want to focus on creating in Scratch and being social in person. 😉
+Hier kommt deine neue Steadfast-Macht ins Spiel: Scratch kann selbst gehostet werden, ohne die sozialen Funktionen.
+Tatsächlich ist das die einfachste Art, es selbst zu hosten.
+Dies ist eine großartige Option, wenn deine Nutzer sich auf das Erstellen in Scratch konzentrieren und persönlich sozial interagieren möchten. 😉
 
 [#image-screenshot-scratch]
-.Scratch screenshot showing a new empty project.
+.Scratch Screenshot eines neuen Projektes.
 image::scratch.png[align="center",scaledwidth=80%]
 
-Scratch doesn't require any persistent data, setup, nor auth.
+Scratch benötigt keine persistenten Daten, keine Einrichtung und keine Authentifizierung.
 
-==== Quick start
+==== Schnellstart
 
-. Provision with mario from your admin computer.
-. Start Scratch with `dc scratch up -d` on your server.
-. Navigate to `\https://scratch.example.com` on your admin computer.
+. Mit mario vom Admincomputer bereitstellen.
+. Scratch auf deinem Server mit `dc scratch up -d` starten.
+. Auf deinem Admincomputer zu `\https://scratch.example.com` navigieren.
 
-==== Maintenance notes
+==== Wartungshinweise
 
-Scratch uses a custom Docker image so the upgrade process is significantly more complex than upgrading other services.
-First, open the Scratch `custom/Dockerfile` on your admin computer.
-That `Dockerfile` can be found in a subfolder of `mario/ansible` in the mario source code.
+Scratch verwendet ein benutzerdefiniertes Docker-Image, daher ist der Upgrade-Prozess deutlich komplexer als bei anderen Diensten.
+Öffne zunächst das Scratch-custom/Dockerfile auf deinem Admincomputer.
+Dieses Dockerfile befindet sich in einem Unterordner von mario/ansible im mario-Quellcode.
 
-If you want to base the image on a newer version of Node.js, visit the https://hub.docker.com/_/node[Node.js page on Docker Hub] and select a version to use in the `FROM` line of the `Dockerfile`.
-If you want to upgrade Scratch, visit the https://github.com/scratchfoundation/scratch-gui/releases[releases page] and select a version to use for `SCRATCH_VERSION` in the `Dockerfile`.
+Wenn du das Image auf einer neueren Version von Node.js basieren lassen willst, besuche die https://hub.docker.com/_/node[Node.js-Seite auf Docker Hub] und wähle eine Version für die FROM-Zeile im Dockerfile.
+Wenn du Scratch aktualisieren möchtest, besuche die https://github.com/scratchfoundation/scratch-gui/releases[Releases-Seite] und wähle eine Version für SCRATCH_VERSION im Dockerfile.
 
-Re-run `provision.sh` on the admin computer.
-Re-build the image with `dc scratch build --pull` on the server.
-Finally, replace the Scratch service container by running `dc scratch up -d` on the server.
+Führe provision.sh erneut auf dem Admincomputer aus.
+Baue das Image auf dem Server mit dc scratch build --pull neu.
+Schließlich ersetze den Scratch-Dienstcontainer, indem du dc scratch up -d auf dem Server ausführst.
 
 == What's next?
 
@@ -2803,7 +2803,7 @@ Learn how a computer works.
 Push past abstractions and make progress towards first principles.
 Take a computer science class in an area supporting something else you want to do.
 For example, if you want to code your own web services, take a class in programming for the web.
-If you want to understand how source code makes a computer do things, take a class in compilers.
+If you want to understand how Quellcode makes a computer do things, take a class in compilers.
 
 Work through this book in a class or small group.
 See <<Discussion topics>> and <<Exercises>>.
@@ -2932,7 +2932,7 @@ I think https://security.stackexchange.com/q/3887[it's a good idea] but I didn't
 I'm using this as an opportunity to demonstrate how to extend mario.
 Add this Ansible task to `roles/base/tasks/main.yml`:
 
-.enforce SSH public key auth (🏠 admin computer)
+.enforce SSH public key auth (🏠 Admincomputer)
 [source#enforce-ssh-pubkey-auth,yaml]
 ----
 # This does not affect logging in from a console (e.g. directly connected
@@ -2950,7 +2950,7 @@ Add this Ansible task to `roles/base/tasks/main.yml`:
 
 Add this to `roles/base/handlers/main.yml`:
 
-.Ansible handler to restart SSH (🏠 admin computer)
+.Ansible handler to restart SSH (🏠 Admincomputer)
 [source%unbreakable#ansible-ssh-restarter,yaml]
 ----
 - name: restart sshd
@@ -2961,7 +2961,7 @@ Add this to `roles/base/handlers/main.yml`:
 
 Create `roles/base/files/pka-only.conf` with:
 
-.SSH server config lines (🏠 admin computer)
+.SSH server config lines (🏠 Admincomputer)
 [source%unbreakable#ssh-server-config,text]
 ----
 PasswordAuthentication no
@@ -2978,7 +2978,7 @@ Read <<Digitale Sicherheit>> to decide if you want this or not.
 You may remove this protection by removing the `lan-only` ((middleware)) from the corresponding router's Traefik label.
 For example, to allow WAN access to Nextcloud, make this change in Nextcloud's `compose.yml`:
 
-.patch for WAN access to Nextcloud (🏠 admin computer)
+.patch for WAN access to Nextcloud (🏠 Admincomputer)
 [source%unbreakable#open-wan-access,diff]
 ----
 - traefik.http.routers.nc-https.middlewares=nc-head,nc-redir,lan-only
@@ -3016,7 +3016,7 @@ I'll assume primary storage on a local HDD set up by mario.
 
 (((Nextcloud, security and)))
 A basic Nextcloud install appears to have excellent security.
-The source is in heavy use and is backed by a solid company with a reputation that depends on their commitment to security.
+The Quelle is in heavy use and is backed by a solid company with a reputation that depends on their commitment to security.
 They make it easy to lock down and vet (it is FOSS after all).
 The defaults appear secure.
 They follow best practices.
@@ -3049,9 +3049,9 @@ These initial logged errors appear to be harmless, possibly a result of some ins
 It is still a good idea to review all logged errors.
 
 Review „Security & setup warnings“ at `/settings/admin/overview`.
-You can ignore the warning ‟Could not check for JavaScript support. Please check manually if your webserver serves `.mjs` files using the JavaScript MIME type.” if this succeeds on your admin computer:
+You can ignore the warning ‟Could not check for JavaScript support. Please check manually if your webserver serves `.mjs` files using the JavaScript MIME type.” if this succeeds on your Admincomputer:
 
-.JavaScript fetch test (🏠 admin computer)
+.JavaScript fetch test (🏠 Admincomputer)
 [source%unbreakable#js-fetch-admin,bash]
 ----
 curl -I https://cloud.example.com/apps/settings/js/esm-test.mjs
@@ -3100,8 +3100,8 @@ This gives you the chance to review and test each upgrade.
 You can pin a release tag in Nextcloud's `compose.yml` where the image name appears, just trade `stable` for the tag you choose.
 All available tags are https://hub.docker.com/_/nextcloud[listed at Docker Hub].
 
-NOTE: Nextcloud's blog posts and marketing materials use different version names than the release versions from source control.
-„Hub 6“ on the blog refers to versions `27.\_._` in source control, „Hub 7“ to `28.\_._`, and so on.
+NOTE: Nextcloud's blog posts and marketing materials use different version names than the release versions from Quellecontrol.
+„Hub 6“ on the blog refers to versions `27.\_._` in Quellecontrol, „Hub 7“ to `28.\_._`, and so on.
 
 ===== Release cadence
 
@@ -3201,7 +3201,7 @@ The GitHub project repositories are pretty quiet. See:
 
 (((Nextcloud, mobile and)))
 Nextcloud works OK as the backend for a mobile device.
-It can be your single reliable source of truth for contacts, calendars, tasks, and most everything else that matters on mobile.
+It can be your single reliable Quelleof truth for contacts, calendars, tasks, and most everything else that matters on mobile.
 You can open files and edit them, but the UI/UX is bad.
 See <<Mobile text editing is hard>> for a couple workarounds.
 
@@ -3277,7 +3277,7 @@ Given that wide a scope, ((groupware)) should be part of „office“ too, so in
 Doing this within Nextcloud requires an https://apps.nextcloud.com/apps/richdocuments[app called Nextcloud Office] as well as a separate backend service, either ((Collabora)) or ((ONLYOFFICE)).
 My strong preference is for Collabora, in line with <<Good for self-hosting>>; despite fewer stars on GitHub, it appears Collabora development is flourishing while ONLYOFFICE is stagnant (although it's hard to tell which of the many ONLYOFFICE repositories on GitHub are relevant here).
 
-==== Various issues
+==== Verschiedene Probleme
 
 Here's a selection of my favorite bugs and feature requests for Nextcloud.
 
@@ -3407,9 +3407,9 @@ See the https://github.com/nextcloud/all-in-one[AIO readme] for more information
 
 == Weitere Ressourcen
 
-Visit https://selfhostbook.com for all supporting material including source code for this book and mario.
+Visit https://selfhostbook.com for all supporting material including Quellcode for this book and mario.
 
-* https://selfhostbook.com/code/[Source code]
+* https://selfhostbook.com/code/[Quellcode]
 * https://selfhostbook.com/contact/[Contact information]
 
 Patches and feedback are most welcome.
@@ -3528,7 +3528,7 @@ Here are some conversation starters for a class or small group.
 Why?
 For whom?
 . What are some considerations when choosing between public cloud and on-premise self-hosting?
-. Compare and contrast different options for bare metal self-hosting hardware in terms of setup cost, power usage, and expandability.
+. Compare and contrast different options for bloßes Metal self-hosting hardware in terms of setup cost, power usage, and expandability.
 . Why does the author encrypt all network traffic, even in a closed LAN?
 . Review this book for poor security practices.
 How might it be improved?
@@ -3639,7 +3639,7 @@ Please apply similar detailed steps elsewhere as desired.
 In the words of Scott McNealy, former CEO of Sun Microsystems:
 
 ____
-Open source is free like a puppy is free.
+Open Quelleis free like a puppy is free.
 ____
 
 Everybody loves a puppy, right?
@@ -3648,7 +3648,7 @@ I sure hope so.
 Because--fair warning--if you spend too much time with your „puppy“ (self-hosting, FOSS, etc.), your partner will show up with an actual puppy.
 
 [#image-puppy]
-.Open Source is free like a puppy. Pictured: actual puppy.
+.Open Quelleis free like a puppy. Pictured: actual puppy.
 image::puppy.jpg[align="center",scaledwidth=80%]
 
 If your problem is _that_ cute, I suppose it's not too a bad problem to have.
@@ -3706,7 +3706,7 @@ Here's a list of definitions for some of the more non-obvious terms I use in thi
 These stick to common use as much as possible.
 Specialists in computer science, security, administration, networking and so on will have more nuanced definitions.
 
-// source for "These days that pretty much means git" statement: https://en.wikipedia.org/wiki/Git#Adoption
+// Quellefor "These days that pretty much means git" statement: https://en.wikipedia.org/wiki/Git#Adoption
 
 ((AI))::
   Artificial intelligence.
@@ -3716,7 +3716,7 @@ Specialists in computer science, security, administration, networking and so on 
   Total of possible attack vectors. Fewer is more secure. Example: closing all but the ports you need open reduces yours.
 ((backend))::
   I use this term to refer to either a service (e.g. a database) or server. It's something you more frequently interact with indirectly, say, via a frontend like a web app or mobile UI.
-((bare metal))::
+((bloßes Metal))::
   Physical nearby computing resources, as opposed to rented compute time on someone else's hardware. Used in this book primarily to indicate hardware autonomy.
 ((block storage))::
   Cloud storage option with direct filesystem access including files and folders. Used directly/natively/locally from an OS. Size is relatively fixed and determined at creation time.
@@ -3759,13 +3759,13 @@ Specialists in computer science, security, administration, networking and so on 
 ((egress))::
   Any outbound data transfer or download, in public cloud terms.
 ((entrypoint))::
-  How traffic enters the Traefik reverse proxy; network ports.
+  How traffic enters the Traefik Reverse-Proxy; network ports.
 ((firewall))::
   Means of controlling network traffic between computers.
 ((fork))::
   Verb: to split one software project into two. Noun: a derivative software work. The fork diverges from the original (otherwise it would simply be a copy). One or many software projects may succeed the original. Forking software is a useful and common activity.
 ((FOSS))::
-  Free and open-source software. An acronym designed to unite the goals of the FSF and the OSI.
+  Free and open-Quellesoftware. An acronym designed to unite the goals of the FSF and the OSI.
 ((FSF))::
   Free Software Foundation. They strongly defend the „F“ in FOSS.
 ((frontend))::
@@ -3813,7 +3813,7 @@ Specialists in computer science, security, administration, networking and so on 
 ((LAN))::
   Local area network. For example, the network used by computers and devices to talk with each other inside your home.
 ((LFNW))::
-  LinuxFest Northwest. Annual conference in Bellingham, Washington dedicated to serving and connecting open source communities. Established in 2000.
+  LinuxFest Northwest. Annual conference in Bellingham, Washington dedicated to serving and connecting open Quellecommunities. Established in 2000.
 ((Linux))::
   The most popular server OS. Also works fine on a desktop or laptop. The old me would have insisted on calling it „GNU/Linux“ or „a Linux distribution“. A lot has happened since then, and I've come to believe „Linux“ is enough to describe the OS used for self-hosting in the context of this book.
 ((low-code))::
@@ -3836,7 +3836,7 @@ Specialists in computer science, security, administration, networking and so on 
 OS::
   Operating system.
 ((OSI))::
-  Open Source Initiative. More concerned with the „OSS“ of FOSS.
+  Open QuelleInitiative. More concerned with the „OSS“ of FOSS.
 ((PHP))::
   PHP: Hypertext Processor. Programming language built for the web.
 ((PoE))::
@@ -3857,7 +3857,7 @@ OS::
   Domain name vendor. May also offer other name- and hosting-related services.
 ((reproducible))::
   Able to be repeated following specific steps. E.g. „repro“ a bug or „a reproducible [software] build“. If two people try to repro a bug, they should have the same experience. If two people each build an image from the same `Dockerfile`, they should produce the same image. In practice, bug repros and build products are close enough and never exactly the same.
-((reverse proxy))::
+((Reverse-Proxy))::
   Networking software for filtering and directing traffic. In a self-hosted context, useful for SSL termination and for running several self-hosted web services with different domain names with a single IP address.
 ((router))::
   Network device used to handle traffic at the boundary between networks such as a WAN and LAN. A SOHO router typically also provides various other functions including DNS, DHCP, switching, firewalling, and Wi-Fi. See: port forward. A Traefik router is something different: this is a software logic connecting entrypoints to services. See <<Traefik architecture>>.
@@ -3871,16 +3871,16 @@ OS::
   A long-running process used by other local and remote processes to do something useful.
 ((SOHO))::
   Small office / home office.
-((source control))::
-  A system for tracking changes in source code along with who made the change, why, and when. Git is one such system.
-((source of truth))::
+((Quellecontrol))::
+  A system for tracking changes in Quellcode along with who made the change, why, and when. Git is one such system.
+((Quelleof truth))::
   The authoritative (home for a) document, perhaps among some number of available choices/copies.
 ((SSD))::
   Solid-state drive. A hard drive that doesn't spin.
 ((SSH))::
   Secure Shell. Provides encrypted remote command line access to a server.
 ((SSL termination))::
-  Accepting encrypted traffic and passing along unencrypted traffic. Act performed by Traefik reverse proxy in a mario-provisioned server. More accurately and less often referred to as „TLS termination“. Actual SSL is deprecated.
+  Accepting encrypted traffic and passing along unencrypted traffic. Act performed by Traefik Reverse-Proxy in a mario-provisioned server. More accurately and less often referred to as „TLS termination“. Actual SSL is deprecated.
 ((sysadmin))::
   Portmanteau of „systems administrator“. A party responsible for the upkeep of a computer system.
 ((threat model))::
