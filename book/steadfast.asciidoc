@@ -2014,7 +2014,7 @@ Es werden viele Annahmen getroffen, damit es „out of the box“ funktioniert, 
 
 Die Konfigurationsdateien von mario sind deklarativ:
 Sie enthalten den Zustand, in dem sich dein Server am Ende befinden soll – nicht all die einzelnen Befehle, die du manuell ausführen würdest, um denselben Zustand zu erreichen.
-marios provision.sh führt Ansible aus, und Ansible führt die Befehle für dich auf dem Server aus (z.B. ein chmod auf eine Datei) – auf vorhersehbare und wiederholbare Weise.
+marios `provision.sh` führt Ansible aus, und Ansible führt die Befehle für dich auf dem Server aus (z.B. ein chmod auf eine Datei) – auf vorhersehbare und wiederholbare Weise.
 Der gewünschte Endzustand, wie in den Konfigurationsdateien deklariert, wird durch Ansible erreicht und bestätigt.
 
 (((idempotent)))
@@ -2685,9 +2685,9 @@ dc wallabag exec app /var/www/wallabag/bin/console \
   doctrine:migrations:migrate --env=prod --no-interaction
 ----
 
-Der Befehl exec bedeutet, dass wir etwas in einem Container ausführen wollen.
-Dies führt das Dienstprogramm console im app-Service-Container aus.
-Die zweite Zeile gibt an, dass notwendige Datenbankmigrationen (Schema- und Datenaktualisierungen) mit den prod-Einstellungen ohne interaktive Eingabeaufforderungen ausgeführt werden sollen.
+Der Befehl `exec` bedeutet, dass wir etwas in einem Container ausführen wollen.
+Dies führt das Dienstprogramm `console` im app-Service-Container aus.
+Die zweite Zeile gibt an, dass notwendige Datenbankmigrationen (Schema- und Datenaktualisierungen) mit den `prod`-Einstellungen ohne interaktive Eingabeaufforderungen ausgeführt werden sollen.
 
 Dies ist idempotent, wie Datenbankmigrationen sein sollten.
 Nach dem ersten Durchlauf geben nachfolgende Durchläufe aus: [OK] Already at the latest version.
@@ -2717,7 +2717,7 @@ Es erkennt und überprüft veraltete Container, lädt neue Images herunter und s
 image::watchtower.png[align="center",scaledwidth=40%]
 
 Wenn du niemals möchtest, dass Container automatisch aktualisiert werden, führe Watchtower nicht aus.
-Oder verwende die Konfigurationseinstellungen, um automatische Updates für bestimmte Container zu erlauben oder zu blockieren.
+Oder verwende die https://containrrr.dev/watchtower/arguments/[Konfigurationseinstellungen], um automatische Updates für bestimmte Container zu erlauben oder zu blockieren.
 mario verwendet zum Beispiel ein Container-Label, um zu verhindern, dass Watchtower Scratch aktualisiert.
 
 ==== Schnellstart
@@ -2730,7 +2730,7 @@ You can forget about it until it breaks (or breaks something else).
 
 ==== Wartungshinweise
 
-Führe auf deinem Server dc watchtower pull && dc watchtower up -d aus, um den Watchtower-Service-Container zu aktualisieren und zu ersetzen.
+Führe auf deinem Server `dc watchtower pull && dc watchtower up -d` aus, um den Watchtower-Service-Container zu aktualisieren und zu ersetzen.
 
 ==== Probleme
 
@@ -2740,7 +2740,7 @@ Ein Dienst könnte zum Beispiel nur unidirektionale Datenbankmigrationen haben.
 Ich denke, die Watchtower-Maintainer haben die richtige Entscheidung getroffen, automatische Rollbacks wegzulassen (wahrscheinlich, um Watchtower einfach zu halten).
 
 Es kann passieren, dass ein Dienst durch Watchtower beschädigt wird.
-Wenn du den Verdacht hast und weißt, wann der Dienst kaputtging, versuche dies mit den Upgrades in dc watchtower logs zu korrelieren.
+Wenn du den Verdacht hast und weißt, wann der Dienst kaputtging, versuche dies mit den Upgrades in `dc watchtower logs` zu korrelieren.
 Ich vermeide das, indem ich Watchtower nur für nicht-kritische Dienste nutze.
 Zum Beispiel lasse ich Watchtower meinen Nextcloud-Dienst nicht automatisch upgraden.
 
@@ -2771,15 +2771,15 @@ Scratch benötigt keine persistenten Daten, keine Einrichtung und keine Authenti
 ==== Wartungshinweise
 
 Scratch verwendet ein benutzerdefiniertes Docker-Image, daher ist der Upgrade-Prozess deutlich komplexer als bei anderen Diensten.
-Öffne zunächst das Scratch-custom/Dockerfile auf deinem Admincomputer.
-Dieses Dockerfile befindet sich in einem Unterordner von mario/ansible im mario-Quellcode.
+Öffne zunächst das Scratch-`custom/Dockerfile` auf deinem Admincomputer.
+Dieses `Dockerfile` befindet sich in einem Unterordner von `mario/ansible` im mario-Quellcode.
 
-Wenn du das Image auf einer neueren Version von Node.js basieren lassen willst, besuche die https://hub.docker.com/_/node[Node.js-Seite auf Docker Hub] und wähle eine Version für die FROM-Zeile im Dockerfile.
-Wenn du Scratch aktualisieren möchtest, besuche die https://github.com/scratchfoundation/scratch-gui/releases[Releases-Seite] und wähle eine Version für SCRATCH_VERSION im Dockerfile.
+Wenn du das Image auf einer neueren Version von Node.js basieren lassen willst, besuche die https://hub.docker.com/_/node[Node.js-Seite auf Docker Hub] und wähle eine Version für die `FROM`-Zeile im `Dockerfile`.
+Wenn du Scratch aktualisieren möchtest, besuche die https://github.com/scratchfoundation/scratch-gui/releases[Releases-Seite] und wähle eine Version für `SCRATCH_VERSION` im `Dockerfile`.
 
-Führe provision.sh erneut auf dem Admincomputer aus.
-Baue das Image auf dem Server mit dc scratch build --pull neu.
-Schließlich ersetze den Scratch-Dienstcontainer, indem du dc scratch up -d auf dem Server ausführst.
+Führe `provision.sh` erneut auf dem Admincomputer aus.
+Baue das Image auf dem Server mit `dc scratch build --pull` neu.
+Schließlich ersetze den Scratch-Dienstcontainer, indem du `dc scratch up -d` auf dem Server ausführst.
 
 == What's next?
 
@@ -3552,7 +3552,7 @@ How could they be improved?
 . Summarize this book in one sentence.
 . How might you detect if your server has been compromised?
 
-== Exercises
+== Übungen
 
 Exercises for individual practice and study groups.
 
