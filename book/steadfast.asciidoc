@@ -925,7 +925,7 @@ Der Community-Support ist mal gut, mal weniger gut.
 Nextcloud scheint außerhalb der USA populärer zu sein.
 
 Nicht alle Nextcloud-Apps sind schon ausgereift.
-Mehr unter <<Personalisierung>>.
+Mehr unter <<Customization>>.
 
 ===== Jitsi and Ports
 
