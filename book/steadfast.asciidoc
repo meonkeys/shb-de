@@ -974,8 +974,8 @@ Einige Ideen:
 
 Rechenleistung und Speicher::
 Hauptprozessor und RAM sind die grundlegenden Ressourcen, die für die Berechnung notwendig sind.
-Siehe <<Map services to resources>> für Ideen, wie du Anforderungen basierend auf den Diensten, die du hosten wirst, abschätzen kannst.
-Grafikprozessor-Arbeitslasten werden in diesem Buch nicht behandelt, obwohl <<_whats_next>> und <<Exercises>> einige Dinge ansprechen, die du selbst ausprobieren kannst.
+Siehe <<Dienste Ressourcen zuordnen>> für Ideen, wie du Anforderungen basierend auf den Diensten, die du hosten wirst, abschätzen kannst.
+Grafikprozessor-Arbeitslasten werden in diesem Buch nicht behandelt, obwohl <<_wie_gehts_weiter>> und <<Übungen>> einige Dinge ansprechen, die du selbst ausprobieren kannst.
 
 Datenspeicher::
 Schätze, wie viel Speicherplatz du benötigen wirst.
