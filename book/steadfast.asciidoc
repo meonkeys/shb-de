@@ -874,7 +874,7 @@ Das Pflegen einer VM kann genauso aufwendig sein wie die Wartung eines Bare-Meta
 
 Container verfolgen einen anderen Ansatz und simulieren deutlich weniger von einem Bare-Metal-Server.
 Sie sind im Vergleich zu VMs schneller und ressourcenschonender, was eine höhere, konfliktfreie Dichte von Diensten ermöglicht.
-Das heißt: Du kannst mehr Dienste pro Server betreiben, ohne dass sie sich gegenseitig stören (z. B. weil sie unterschiedliche Versionen von PHP benötigen).
+Das heißt: Du kannst mehr Dienste pro Server betreiben, ohne dass sie sich gegenseitig stören (z.B. weil sie unterschiedliche Versionen von PHP benötigen).
 Ein Container enthält in der Regel genau einen Dienst.
 
 (((Isolation)))
@@ -1128,7 +1128,7 @@ Gehen wir einen Schritt zurück und sprechen über Bedrohungsmodellierung.
 Dein Bedrohungsmodell beschreibt, wie du Bedrohungen für deine Daten einschätzt und wie du ihnen entgegenwirken willst.
 Mit einem klaren Bedrohungsmodell kannst du fundierte Entscheidungen treffen – zum Beispiel darüber, ob du den WAN-Zugriff auf deinen Server erlauben solltest oder nicht.
 
-WARNING: Wenn du bereits weißt, dass du ein wertvolles Ziel bist (z. B. öffentliche Person, hohes Vermögen, Kriegsberichterstatter*in oder verantwortlich für einen Server mit Informationen über viele Menschen), dann gilt: Mach dich auf eine längere Reise gefasst.
+WARNING: Wenn du bereits weißt, dass du ein wertvolles Ziel bist (z.B. öffentliche Person, hohes Vermögen, Kriegsberichterstatter*in oder verantwortlich für einen Server mit Informationen über viele Menschen), dann gilt: Mach dich auf eine längere Reise gefasst.
 Dieses Buch allein reicht nicht aus, um deinem Bedrohungsmodell gerecht zu werden.
 
 Lass uns ein einfaches Beispiel für ein Bedrohungsmodell für die Datenklasse "alles andere" erstellen.
@@ -1150,7 +1150,7 @@ Geht einem wirklich leicht über die Lippen!
 Teste ((WAN-Zugriff)) mit diesem Bedrohungsmodell.
 
 Anlagen::
-  Dateien mit persönlichen Informationen, die in einem veralteten Dienst gespeichert sind (z. B. eine alte, verwundbare Version von Nextcloud).
+  Dateien mit persönlichen Informationen, die in einem veralteten Dienst gespeichert sind (z.B. eine alte, verwundbare Version von Nextcloud).
 Akteure / Bedrohungen / Angriffsvektoren::
   Ein Bot durchsucht Websites und findet eine URL zu einem Dienst in einem öffentlich zugänglichen Mailinglisten-Archiv.
 Der Bot versucht automatisch, eine bekannte Schwachstelle im Dienst auszunutzen.
@@ -1291,7 +1291,7 @@ So wird jeder Befehl zusammen mit Zeitpunkt und ausführender Person in `/var/lo
 
 Upgrades können automatisiert werden.
 Das ist sinnvoll, sobald man eine gewisse Skalierung erreicht hat – vorausgesetzt, man hat Vertrauen in und Kontrolle über die Quelle der Updates.
-Ich persönlich führe Betriebssystem-Upgrades meist manuell durch, da ich nur wenige Systeme betreue. Der Aufwand ist dadurch gering und selten, und das Aktualisieren eines Pakets kann Tests oder manuelle Eingriffe (z. B. einen Neustart) erfordern.
+Ich persönlich führe Betriebssystem-Upgrades meist manuell durch, da ich nur wenige Systeme betreue. Der Aufwand ist dadurch gering und selten, und das Aktualisieren eines Pakets kann Tests oder manuelle Eingriffe (z.B. einen Neustart) erfordern.
 Aus ähnlichen Gründen installiere ich auch das Betriebssystem selbst von Hand.
 
 Mein Betriebssystem ist eher ein Haustier als ein Nutztier (siehe „cattle vs. pets“ im <<Glossary>>).
@@ -1316,7 +1316,7 @@ Unabhängig von deiner Wahl solltest du mit deinen Nutzern klare Erwartungen dar
 
 (((isolation)))
 Docker schafft eine gute Balance zwischen Eigenschaften und Benutzerfreundlichkeit, weshalb es einfach ist einen Deinst in Isolation zu betreiben.
-((Docker Compose)) Docker Compose erweitert Docker um die Fähigkeit, Gruppen von Prozessen zu definieren und auszuführen, die zusammen einen vollständigen Dienst bereitstellen (z. B. einen Webserver und dessen Datenbank).
+((Docker Compose)) Docker Compose erweitert Docker um die Fähigkeit, Gruppen von Prozessen zu definieren und auszuführen, die zusammen einen vollständigen Dienst bereitstellen (z.B. einen Webserver und dessen Datenbank).
 Kubernetes kann das auch – und noch viel mehr, das du _nicht_ lernen musst, solange du _kein_ virtuelles Rechenzentrum aufbauen willst.
 Für ein einzelnes Serversystem ist Docker Compose meist die passendere Wahl.
 
@@ -1342,7 +1342,7 @@ Ein Image wird einmal erstellt, mit einer eindeutigen Kennung versehen und weite
 Es dient dann als Grundlage für unzählige Container, die sich zuverlässig gleich verhalten.
 
 Images werden über eine Datei namens `Dockerfile` definiert.
-Die `Dockerfile` sollte in der Versionskontrolle (z. B. Git) verfolgt werden.
+Die `Dockerfile` sollte in der Versionskontrolle (z.B. Git) verfolgt werden.
 Da mario Docker-Compose verwendet, ist eine weitere wichtige Datei `compose.yml`.
 Jeder Dienst hat seine eigene `compose.yml` Datei, die ebenfalls unter Versionskontrolle stehen sollte.
 Für Systemadministratoren bieten diese Konventionen ((reproduzierbare)) Images und Container.
@@ -1460,18 +1460,18 @@ Die guten Dienste weisen in der Regel zumindest einige der folgenden Merkmale au
 [#traits-of-good-services]
 ****
 * Einfach zu installieren, mit vorhandenen Anleitungen für das Selbst-Hosting
-* Kompatibel mit deiner bevorzugten Bereitstellungsmethode (z. B. gut gepflegtes Docker-Image, Anleitungen für Docker Compose und Traefik)
+* Kompatibel mit deiner bevorzugten Bereitstellungsmethode (z.B. gut gepflegtes Docker-Image, Anleitungen für Docker Compose und Traefik)
 * Aktive Community mit moderierten Chats, Foren, Mailinglisten, News und Meetups
-* Aktuelle Entwicklung sichtbar (z. B. neue Releases, Commits, Ankündigungen)
+* Aktuelle Entwicklung sichtbar (z.B. neue Releases, Commits, Ankündigungen)
 * Nutzung einer FOSS-Lizenz (Freie und Open-Source-Software)
 * Transparente Angaben zu Eigentümern und Sponsoren
 * Öffentliche Roadmap, Issue-Tracking, Continuous Integration, öffentliches Demo, Build-Skripte, Bug-/Security-Bounties
-* Bei Problemen lassen sich über Websuche leicht Informationen finden (z. B. bekannte Issues oder Workarounds)
+* Bei Problemen lassen sich über Websuche leicht Informationen finden (z.B. bekannte Issues oder Workarounds)
 * Gut strukturierter, sauberer Code
 * Nützliche und aktuelle Dokumentation
 * Vergleicht sich offen mit ähnlichen Projekten
 * Vollständig dokumentierte, nützliche API
-* Flexibel und erweiterbar (z. B. über Plugins oder Konfigurationsoptionen)
+* Flexibel und erweiterbar (z.B. über Plugins oder Konfigurationsoptionen)
 
 ****
 
@@ -1583,27 +1583,27 @@ Wenn du mit etwas zu Kleinem startest, fehlt es dir schnell an Geschwindigkeit u
 Ich habe bereits mit vielen verschiedenen Servern gearbeitet und mich für dieses Self-Hosting-Abenteuer gründlich vorbereitet. Daher hatte ich eine ziemlich klare Vorstellung davon, was ich wollte.
 Ich habe mich für etwas entschieden, das leistungsstark, günstig und schnell ist – mit viel Speicherplatz und Raum für Erweiterungen.
 Ich habe gezielt nach professioneller Standardhardware gesucht, weil sie im Fall eines Defekts leichter austauschbar ist.
-Der Server sollte mit plötzlichen Lastspitzen gut zurechtkommen, z. B. beim Bauen von Docker-Images, bei kurzfristig hoher Benutzeraktivität oder auch bei etwas generativer ((KI)) – selbst ohne GPU.
+Der Server sollte mit plötzlichen Lastspitzen gut zurechtkommen, z.B. beim Bauen von Docker-Images, bei kurzfristig hoher Benutzeraktivität oder auch bei etwas generativer ((KI)) – selbst ohne GPU.
 
-Ich habe auf eBay einen gebrauchten, generalüberholten 1U-Rackmount-Server für etwa 1.000 USD gefunden.
+Ich habe auf eBay einen gebrauchten, generalüberholten 1U-Rackmount-Server für etwa 1.000USD gefunden.
 Solche Geräte werden oft als „off-lease enterprise hardware“ bezeichnet – also Leasing-Rückläufer aus dem Unternehmensbereich.
 Ein 1U-Server ist ein https://de.wikipedia.org/wiki/Rack-Einheit[Rack Unit] hoch – etwa so groß wie eine lange Pizzaschachtel.
 Technologiekonzerne stoßen diese Geräte massenweise ab, sodass man oft ein gutes Angebot findet.
-Mein Server hat zwei 24-Kern-CPUs und 128 GB RAM.
+Mein Server hat zwei 24-Kern-CPUs und 128GB RAM.
 
 [#image-racked-server]
-.Selbstgebauter Rackmount-Server, an der Garagendecke montiert.Macht Spaß, ihn anzuschauen, und er ist aus dem Weg – aber für Wartungsarbeiten brauche ich eine Leiter, und er wiegt etwa 23 kg.
+.Selbstgebauter Rackmount-Server, an der Garagendecke montiert.Macht Spaß, ihn anzuschauen, und er ist aus dem Weg – aber für Wartungsarbeiten brauche ich eine Leiter, und er wiegt etwa 23kg.
 image::racked-server.jpg[align="center"]
 
 Die Lüfter sind viel lauter als bei einem Desktop-PC, besonders unter Last.
 Der Server soll eigentlich eine gute Belüftung sowie Temperatur- und Feuchtigkeitsregulierung haben,
-hat sich aber bisher auch bei längeren Zeiträumen unter dem Gefrierpunkt und über 38 °C als äußerst robust erwiesen.
+hat sich aber bisher auch bei längeren Zeiträumen unter dem Gefrierpunkt und über 38°C als äußerst robust erwiesen.
 (((IPMI)))
 Er verfügt über mehrere Enterprise-Funktionen, die die Wartung erleichtern – wie redundante Netzteile, Hot-Swap-Festplatteneinschübe, zahlreiche Sensoren und Fernwartung über einen Webbrowser oder IPMI.
 
-Der durchschnittliche Stromverbrauch liegt bei 130 W, also etwa 1.140 kWh pro Jahr – das entspricht ungefähr 138,15$ in Seattle.
+Der durchschnittliche Stromverbrauch liegt bei 130W, also etwa 1.140kWh pro Jahr – das entspricht ungefähr 138,15$ in Seattle.
 Das ist in etwa so viel wie eine helle Glühlampe verbraucht, und für eine einzelne Person etwas verschwenderisch.
-Aber bei fünf Nutzer*innen? Etwa 228 kWh pro Jahr und Person.
+Aber bei fünf Nutzer*innen? Etwa 228kWh pro Jahr und Person.
 Das ist _weniger_ als der Stromverbrauch der Cloud-Server-Infrastruktur, die nötig ist, um ein einziges mobiles Gerät über Googles oder Apples Cloud-Dienste zu versorgen.
 Weitere Literatur zu diesem Thema:
 
@@ -1641,14 +1641,14 @@ Dogfooding sorgt dafür, dass du ehrlich mit dir selbst bleibst und dich besser 
 (((ZFS, snapshots and)))
 Ich verwende Festplattenlaufwerke (Hard Disk Drives ((HDDs))) zur Datenspeicherung – hauptsächlich, um Kosten gegenüber öffentlichem Cloud-Speicher oder ((SSD))s (Solid-State-Laufwerken) zu sparen.
 Die Kosten für ((Blockspeicher)) in der Public Cloud übersteigen bei Weitem die Gigabyte-Stunden-Kosten meiner Festplattenlaufwerke.
-Ich habe den Preis für einen 5 TB Blockspeicher bei AWS auf 228,10 $ pro Monat geschätzt.
+Ich habe den Preis für einen 5TB Blockspeicher bei AWS auf 228,10 $ pro Monat geschätzt.
 Mit ZFS erstelle ich außerdem alle 15 Minuten einen Snapshot (im Grunde ein vollständiges lokales Backup).
-Der monatliche Preis für stündliche Snapshots (das nächstvergleichbare Angebot, das ich finden konnte) kostet weitere 310,68 $ bei AWS.
-Das ergibt 535,67 $ gesamt – also etwa so viel, wie ich für meine Festplatten ausgegeben habe.
+Der monatliche Preis für stündliche Snapshots (das nächstvergleichbare Angebot, das ich finden konnte) kostet weitere 310,68$ bei AWS.
+Das ergibt 535,67$ gesamt – also etwa so viel, wie ich für meine Festplatten ausgegeben habe.
 Ich hatte meine Ausgaben also nach einem Monat wieder drin – und die Festplatten sollten _jahrelang_ halten.
 
 (((RAID)))
-Zur Redundanz empfehle ich, zwei identische Festplatten im Spiegelmodus (RAID 1) zu verwenden.
+Zur Redundanz empfehle ich, zwei identische Festplatten im Spiegelmodus (RAID 1) zu verwenden.
 Das bietet nicht nur Datensicherheit bei Ausfall einer Festplatte, sondern auch bessere Leseleistung (bei den meisten Lesezugriffen).
 Beachte aber: Die nutzbare Speicherkapazität wird dabei halbiert.
 
@@ -1902,7 +1902,7 @@ sudo apt update && sudo apt full-upgrade
 Dies aktualisiert die lokalen Paketinformationen und – falls erfolgreich – das Betriebssystem.
 Root-Zugriff ist erforderlich, daher sudo.
 Das ist relativ sicher und erfordert in der Regel wenig bis keine Interaktion außer einer Bestätigung zum Fortfahren.
-Ein Neustart kann anschließend nötig sein (z. B. bei Kernel-Updates).
+Ein Neustart kann anschließend nötig sein (z.B. bei Kernel-Updates).
 Beim Einloggen zeigt der Server an, ob ein Neustart erforderlich ist.
 
 Jeder Dienst in <<Dienste>> enthält einen Abschnitt „Wartungshinweise“ mit Update-Anleitungen.
@@ -1986,7 +1986,7 @@ Es kann deinen Snapshot extern sichern – gemäß der 3-2-1-Regel.
 ((mario)) ist ein Tool, das ich entwickelt habe, um dir beim Einrichten und Warten eines Servers zu helfen.
 Es ist im Wesentlichen ein Wrapper um das bewährte https://ansible.com[Ansible-Systembereitstellungstool].
 Alles, was ich mit mario mache, lässt sich auch manuell direkt auf dem Server erledigen.
-Der Vorteil bei der Verwendung von mario ist jedoch, dass jede Änderung (z. B. die Installation eines Pakets) konsistent und mit Prüfprotokoll durchgeführt wird.
+Der Vorteil bei der Verwendung von mario ist jedoch, dass jede Änderung (z.B. die Installation eines Pakets) konsistent und mit Prüfprotokoll durchgeführt wird.
 Der wahre Nutzen dieser Praxis zeigt sich vor allem bei der Zusammenarbeit mit anderen – einschließlich deinem zukünftigen Ich.
 Es ist oft nicht leicht, sich ein Jahr später noch zu erinnern, was man getan hat und warum.
 
@@ -2014,7 +2014,7 @@ Es werden viele Annahmen getroffen, damit es „out of the box“ funktioniert, 
 
 Die Konfigurationsdateien von mario sind deklarativ:
 Sie enthalten den Zustand, in dem sich dein Server am Ende befinden soll – nicht all die einzelnen Befehle, die du manuell ausführen würdest, um denselben Zustand zu erreichen.
-marios provision.sh führt Ansible aus, und Ansible führt die Befehle für dich auf dem Server aus (z. B. ein chmod auf eine Datei) – auf vorhersehbare und wiederholbare Weise.
+marios provision.sh führt Ansible aus, und Ansible führt die Befehle für dich auf dem Server aus (z.B. ein chmod auf eine Datei) – auf vorhersehbare und wiederholbare Weise.
 Der gewünschte Endzustand, wie in den Konfigurationsdateien deklariert, wird durch Ansible erreicht und bestätigt.
 
 (((idempotent)))
@@ -2035,7 +2035,7 @@ mario läuft auf deinem ((Admin-Computer)) und erwartet, direkt per SSH eine Ver
 So bringst du das zum Laufen.
 
 Weise zuerst der IP-Adresse deines Servers einen leicht zu merkenden Namen zu.
-Füge mit der IP-Adresse aus <<OS-Installation>> eine Zeile wie diese in deine Hosts-Datei ein (z. B. /etc/hosts):
+Füge mit der IP-Adresse aus <<OS-Installation>> eine Zeile wie diese in deine Hosts-Datei ein (z.B. /etc/hosts):
 
 .line to add to hosts file (🏠 Admincomputer)
 [source%unbreakable#line-for-hosts,text]
@@ -2169,7 +2169,7 @@ Gib hier eine E-Mail-Adresse an, die zu deinem DNS-API-Anbieter passt.
 Unter dieser Adresse wirst du möglicherweise von Let's Encrypt kontaktiert.
 `MARIO_DOMAIN_NAME`::
 Das ist ein Name wie `beispiel.duckdns.org` oder `beispiel.com`.
-Einzelne Dienste werden darauf basierend benannt, z. B. `jellyfin.beispiel.com`.
+Einzelne Dienste werden darauf basierend benannt, z.B. `jellyfin.beispiel.com`.
 
 Beende das Bearbeiten von `config` und führe anschließend `provision.sh` erneut aus.
 Dieser Durchlauf fragt dich nach dem Passwort, das du während der <<OS-Installation>> festgelegt hast. Bei weiteren Durchläufen ist das nicht mehr nötig.
@@ -2206,13 +2206,13 @@ Fahre direkt fort mit <<Dienste starten>>.
 (((DNS)))
 Dein Server braucht einen Namen.
 Du erhältst einen Domainnamen von einem Registrar und gibst diesen Hostnamen während der <<OS-Installation>> ein.
-Ich empfehle, einen einzigen Domainnamen zu verwenden und alle Dienste über Subdomains zu benennen (z. B. `cloud.example.com`).
+Ich empfehle, einen einzigen Domainnamen zu verwenden und alle Dienste über Subdomains zu benennen (z.B. `cloud.example.com`).
 Du kannst entweder einen kostenlosen Domainnamen verwenden oder einen bei einem Registrar kaufen.
 mario benötigt den Domainnamen, um einen DNS-Anbieter mit API zur Einrichtung der HTTPS-Verschlüsselung für den Webverkehr verwenden zu können.
 Beachte, dass sich Registrar und DNS-Anbieter unterscheiden können.
 
 Du möchtest deinen Server vielleicht auch von unterwegs per Namen erreichen können, falls du WAN-Zugriff erlaubst und/oder eine dynamische WAN-IP-Adresse hast.
-Frage bei deinem DNS-Anbieter nach, wie du entsprechende Einträge (z. B. `A`- und `CNAME`-Einträge) hinzufügen kannst.
+Frage bei deinem DNS-Anbieter nach, wie du entsprechende Einträge (z.B. `A`- und `CNAME`-Einträge) hinzufügen kannst.
 
 ==== Öffentlicher DNS
 
@@ -2232,7 +2232,7 @@ Wenn du einen kostenlosen Domainnamen von einem Anbieter mit API möchtest, kann
 . Melde dich an und füge eine Domain hinzu.
 
 Deine Domain wird etwa so heißen: `blah.duckdns.org`.
-Verwende dies anstelle von `example.com`, wo es passt – z. B. `cloud.blah.duckdns.org` anstelle von `cloud.example.com`.
+Verwende dies anstelle von `example.com`, wo es passt – z.B. `cloud.blah.duckdns.org` anstelle von `cloud.example.com`.
 
 ===== Amazon Route 53
 
