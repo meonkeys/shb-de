@@ -2563,7 +2563,7 @@ Sobald Sie Nextcloud zum Laufen gebracht haben, finden Sie unter <<Mehr über Ne
 
 ==== MWartungshinweise
 
-Führen Sie dc nextcloud pull && dc nextcloud up -d auf Ihrem Server aus, um die Nextcloud-Service-Container zu aktualisieren und zu ersetzen.
+Führen Sie `dc nextcloud pull && dc nextcloud up -d` auf Ihrem Server aus, um die Nextcloud-Service-Container zu aktualisieren und zu ersetzen.
 
 ==== Probleme
 
@@ -2584,12 +2584,13 @@ image::jellyfin.png[align="center",scaledwidth=80%]
 ==== Schnellstart
 
 . Provisioniere mit mario vom Admin-Computer aus.
-. Starte Jellyfin mit dc jellyfin up -d auf dem Server.
-. Navigieren zu \https://jellyfin.example.com auf dem Admin-Computer.
+. Starte Jellyfin mit `dc jellyfin up -d` auf dem Server.
+. Navigieren zu `\https://jellyfin.example.com` auf dem Admin-Computer.
 . Folgen den webbasierten Einrichtungsschritten.
 
 (((Jellyfin, using a Grafikprozessor with)))
 Wenn Sie über eine Grafikprozessor verfügen, sollten Sie sich die Hardwarebeschleunigung ansehen.
+Wenn Sie über eine Grafikprozessor verfügen, sollten Sie sich die https://jellyfin.org/docs/general/administration/hardware-acceleration/[Hardwarebeschleunigung ansehen].
 Diese ist nützlich, wenn Videos nicht direkt von einem Client abgespielt werden können und daher on the fly transkodiert werden müssen.
 Jellyfin kann zwar auch nur mit der Hauptprozessor transkodieren, mit einer Grafikprozessor geht es jedoch deutlich schneller.
 
@@ -2599,7 +2600,7 @@ zum Beispiel Intel Quick Sync Video.
 
 ==== Wartungshinweise
 
-Führen Sie dc jellyfin pull && dc jellyfin up -d auf Ihrem Server aus, um den Jellyfin-Dienstcontainer zu aktualisieren und zu ersetzen.
+Führen Sie `dc jellyfin pull && dc jellyfin up -d` auf Ihrem Server aus, um den Jellyfin-Dienstcontainer zu aktualisieren und zu ersetzen.
 
 ==== Probleme
 
@@ -2613,13 +2614,13 @@ https://features.jellyfin.org/posts/173/share-playlists[Ich mag die Möglichkeit
 ===== Funktion: Clips
 
 Ich möchte oft einen bestimmten Teil eines Mediums teilen, anhören oder erneut ansehen.
-Es wäre großartig, wenn man [https://features.jellyfin.org/posts/1036/bookmark-audio-video-segments\[Clips](https://features.jellyfin.org/posts/1036/bookmark-audio-video-segments[Clips) erstellen] könnte, ohne tatsächlich neue Mediendateien erstellen zu müssen.
+Es wäre großartig, wenn man https://features.jellyfin.org/posts/1036/bookmark-audio-video-segments[Clips] erstellen könnte, ohne tatsächlich neue Mediendateien erstellen zu müssen.
 
 ===== Funktion: Offline Medien mobil schauen
 
 Ich möchte eine Jellyfin-Mobile-App, die Medien automatisch zwischenspeichert und https://features.jellyfin.org/posts/218/support-offline-mode-on-android-mobile[Offline-Wiedergabe ermöglicht].
 
-Workaround: Es gibt zwei separate Mobile-Apps, die Medien für die Offline-Wiedergabe herunterladen und zwischenspeichern können https://github.com/jmshrv/finamp\[Finamp] für Musik und https://github.com/jarnedemeulemeester/findroid\[Findroid]für Videos
+Workaround: Es gibt zwei separate Mobile-Apps, die Medien für die Offline-Wiedergabe herunterladen und zwischenspeichern können https://github.com/jmshrv/finamp[Finamp] für Musik und https://github.com/jarnedemeulemeester/findroid[Findroid]für Videos
 
 ==== Jellyfin-Medien mit Nextcloud verwalten
 
@@ -2628,19 +2629,19 @@ Du kannst diese Tatsache nutzen, um ihre individuellen Stärken als Dienste zu k
 mario erstellt spezielle Musik- und Videoordner auf dem Server und stellt sie beiden Diensten zur Verfügung.
 Nextclouds „External Storages“ ermöglicht es dir, Dateien in diese Ordner hochzuladen, und Jellyfin wird die hochgeladenen Dateien automatisch erkennen und das Streamen ermöglichen.
 
-Nextclouds compose.yml-Datei hat den Eintrag /data/shared/media/video:/data/video:rw in volumes.
-/data/shared/media/video ist der Pfad auf dem Server, der die eigentlichen Videodateien enthält, /data/video ist der Ort, an dem sie im Container erscheinen, und rw bedeutet, dass Nextcloud Lese- und Schreibzugriff auf dieses Volume hat.
+Nextclouds `compose.yml`-Datei hat den Eintrag `/data/shared/media/video:/data/video:rw` in volumes.
+`/data/shared/media/video` ist der Pfad auf dem Server, der die eigentlichen Videodateien enthält, `/data/video` ist der Ort, an dem sie im Container erscheinen, und `rw` bedeutet, dass Nextcloud Lese- und Schreibzugriff auf dieses Volume hat.
 Es gibt einen weiteren ähnlichen Ordner für Musikdateien.
 Siehe <<Detailed setup>>, um zu erfahren, wie man sie in Nextcloud als „External Storages“ hinzufügt.
 
-In Jellyfins compose.yml-Datei findest du ähnliche Zeilen zum Hinzufügen von Musik- und Video-Volumes, aber mit ro (für Read-Only) statt rw.
+In Jellyfins `compose.yml`-Datei findest du ähnliche Zeilen zum Hinzufügen von Musik- und Video-Volumes, aber mit `ro` (für Read-Only) statt `rw`.
 Jellyfin benötigt nur Lesezugriff auf die Ordner, um die darin enthaltenen Dateien streamen zu können.
 
 Um die von Nextcloud verwalteten Mediendateien in Jellyfin anzuzeigen, füge zwei Medienbibliotheken hinzu:
 
-Wähle den Inhaltstyp „Movies“, klicke auf das „+“-Symbol neben „Folders“ und wähle /data/video.
+Wähle den Inhaltstyp „Movies“, klicke auf das „+“-Symbol neben „Folders“ und wähle `/data/video`.
 
-Wähle den Inhaltstyp „Music“, klicke auf das „+“-Symbol neben „Folders“ und wähle /data/music.
+Wähle den Inhaltstyp „Music“, klicke auf das „+“-Symbol neben „Folders“ und wähle `/data/music`.
 
 <<<
 
@@ -2656,14 +2657,14 @@ image::wallabag.png[align="center",scaledwidth=80%]
 ==== Schnellstart
 
 . Mit mario von deinem Admincomputer bereitstellen.
-. Starte Wallabag mit dc wallabag up -d auf deinem Server.
-. Gehe auf \https://wallabag.example.com auf deinem Admincomputer.
+. Starte Wallabag mit `dc wallabag up -d` auf deinem Server.
+. Gehe auf `\https://wallabag.example.com` auf deinem Admincomputer.
 . Melde dich als Benutzer wallabag mit dem Passwort wallabag an.
 . Aktualisiere das Passwort für den Benutzer wallabag.
 
 ==== Wartungshinweise
 
-Führe auf deinem Server dc wallabag pull && dc wallabag up -d aus, um die Wallabag-Dienstcontainer zu aktualisieren und zu ersetzen.
+Führe auf deinem Server `dc wallabag pull && dc wallabag up -d` aus, um die Wallabag-Dienstcontainer zu aktualisieren und zu ersetzen.
 Wenn Probleme auftreten, versuche, Datenbank-Upgrades manuell anzuwenden (siehe <<Bug: Upgrades machen alles kaputt>>).
 
 ==== Probleme
