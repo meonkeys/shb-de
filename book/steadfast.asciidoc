@@ -981,7 +981,7 @@ Datenspeicher::
 Schätze, wie viel Speicherplatz du benötigen wirst.
 Mit jedem Sprung in der Einheit (zum Beispiel von GB (Gigabyte) zu TB (Terabyte)) steigt die Komplexität und die Kosten deutlich an.
 Dieses Buch ist für Datenspeicher bis etwa 10 TB geeignet.
-Siehe <<Hard drives>> für Tipps, wie du beim Speicher durch Self-Hosting Geld sparen kannst.
+Siehe <<Festplattenlaufwerke>> für Tipps, wie du beim Speicher durch Self-Hosting Geld sparen kannst.
 
 Strom::
 Überprüfe deine Stromrechnung auf die Kosten pro kWh und mache einige Berechnungen.
@@ -1226,7 +1226,7 @@ Ich empfehle (und werde demonstrieren), mit einem einzigen ((ext4))-Dateisystem 
 ext4 ist das stabile, einfache und standardmäßige Dateisystem für Ubuntu.
 ZFS (ursprünglich: Zettabyte File System) bietet Verschlüsselung, leichte Snapshots und ((RAID)) (redundante Anordnung kostengünstiger Festplatten).
 
-Optional kannst du ZFS für den Speicher (`/data`) auf deinem Server verwenden, wie unter <<ZFS setup>> beschrieben.
+Optional kannst du ZFS für den Speicher (`/data`) auf deinem Server verwenden, wie unter <<ZFS Setup>> beschrieben.
 Für die Root-Partition (`/`) empfehle ich stattdessen ext4 zu verwenden, um:
 
 * So nah wie möglich an der Standard-Ubuntu-Installation bleiben
@@ -2274,7 +2274,7 @@ Diese internen Namen sollten den öffentlichen Namen entsprechen und auf ausschl
 So kannst du innerhalb und außerhalb deines LAN dieselben Namen verwenden – und deine Let's-Encrypt-Zertifikate funktionieren weiterhin.
 Dein LAN-Router hat wahrscheinlich einen integrierten DNS-Server und erlaubt dir möglicherweise, IP-Adressen Namen zuzuweisen.
 
-Falls du keinen internen DNS-Server hast, kannst du weitere Hostnamen-zu-IP-Adressen-Zuordnungen anlegen – so wie bereits im Abschnitt <<SSH setup>> gezeigt.
+Falls du keinen internen DNS-Server hast, kannst du weitere Hostnamen-zu-IP-Adressen-Zuordnungen anlegen – so wie bereits im Abschnitt <<SSH Setup>> gezeigt.
 Hier ist noch einmal die `hosts`-Datei:
 
 // Das könnte auch eine einzelne Zeile mit einer IP-Adresse und mehreren Hostnamen sein.
@@ -2996,7 +2996,7 @@ Bei Jellyfin kannst du ebenfalls die gesamte Zeile mit dem Verweis auf das `lan-
 === Mehr zu Nextcloud
 
 Nextcloud ist ein zentraler Bestandteil meines Self-Hosting-Setups.
-Ich wollte viele zusätzliche Details einfügen, ohne <<Services>> zu überladen, daher findest du diese zusätzlichen Abschnitte hier.
+Ich wollte viele zusätzliche Details einfügen, ohne <<Dienste>> zu überladen, daher findest du diese zusätzlichen Abschnitte hier.
 
 ==== Grundinstallierung
 
@@ -3281,9 +3281,9 @@ Sie beabsichtigen eindeutig ein ganzheitliches, integriertes Office-Erlebnis, un
 https://nextcloud.com/office/ behandelt die kollaborative Bearbeitung von Office-Dokumenten (Textdokumente und Tabellen) sowie die Nutzung der Apps Notes, Collectives und Tables.
 Es liefert einige clevere und nützliche Ideen für Arbeitsabläufe.
 
-Angesichts dieses weiten Umfangs sollte Groupware ebenfalls Teil von „Office“ sein. Konzentrieren wir uns daher vorerst speziell auf die kollaborative Bearbeitung von Office-Dokumenten.
-Dies innerhalb von Nextcloud zu realisieren, erfordert eine App namens https://apps.nextcloud.com/apps/richdocuments[Nextcloud Office] sowie einen separaten Backend-Dienst, entweder Collabora oder ONLYOFFICE.
-Meine klare Präferenz liegt bei Collabora, im Einklang mit <<GGeeignet fürs Self-Hosting>>; trotz weniger GitHub-Sterne scheint die Entwicklung von Collabora zu florieren, während ONLYOFFICE stagniert (obwohl schwer zu sagen ist, welche der vielen ONLYOFFICE-Repositories auf GitHub hier relevant sind).
+Angesichts dieses weiten Umfangs sollte ((Groupware)) ebenfalls Teil von „Office“ sein. Konzentrieren wir uns daher vorerst speziell auf die kollaborative Bearbeitung von Office-Dokumenten.
+Dies innerhalb von Nextcloud zu realisieren, erfordert eine App namens https://apps.nextcloud.com/apps/richdocuments[Nextcloud Office] sowie einen separaten Backend-Dienst, entweder ((Collabora)) oder ((ONLYOFFICE)).
+Meine klare Präferenz liegt bei Collabora, im Einklang mit <<Geeignet fürs Self-Hosting>>; trotz weniger GitHub-Sterne scheint die Entwicklung von Collabora zu florieren, während ONLYOFFICE stagniert (obwohl schwer zu sagen ist, welche der vielen ONLYOFFICE-Repositories auf GitHub hier relevant sind).
 
 ==== Verschiedene Probleme
 
@@ -3792,7 +3792,7 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Used with a wink in this text because https://en.wikipedia.org/wiki/Project_management_triangle[typically we must pick two].
 ((Good Thing))::
   A hand-wavy way of saying something is self-evidently wonderful.
-((groupware))::
+((Groupware))::
   Software for group collaboration. Loosely: mail, calendar, and contacts. Sometimes includes collborative editing of office documents and spreadsheets.
 ((Grafikprozessor))::
   Graphics processing unit. Originally intended for graphics. Found to be useful for many specialized compute workloads including transcoding video.
@@ -3874,7 +3874,7 @@ OS::
 ((Reverse-Proxy))::
   Networking software for filtering and directing traffic. In a self-hosted context, useful for SSL termination and for running several self-hosted web services with different domain names with a single IP address.
 ((router))::
-  Network device used to handle traffic at the boundary between networks such as a WAN and LAN. A SOHO router typically also provides various other functions including DNS, DHCP, switching, firewalling, and Wi-Fi. See: port forward. A Traefik router is something different: this is a software logic connecting entrypoints to services. See <<Traefik architecture>>.
+  Network device used to handle traffic at the boundary between networks such as a WAN and LAN. A SOHO router typically also provides various other functions including DNS, DHCP, switching, firewalling, and Wi-Fi. See: port forward. A Traefik router is something different: this is a software logic connecting entrypoints to services. See <<Traefik Architektur>>.
 ((runtime))::
   The period of time when a software is running; when a set of machine instructions becomes a running process. Also used to describe a set of tools/libraries to facilitate same. May appear as „runtime environment“ in the latter form.
 ((SeaGL))::
