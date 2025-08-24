@@ -1054,7 +1054,7 @@ Ein _Steadfast_ System lässt sich gut als vereinfachter Stapel farbiger Kästch
 Die vertikale Anordnung dieses Stacks richtet sich danach, wo und wie häufig eine Systemadministratorin wahrscheinlich auf dieser Ebene agieren oder bei Support- oder Fehlersuche eingreifen wird (am häufigsten oben), sowie danach, wie stark die jeweilige Ebene vom bloßes Metal abstrahiert ist (am wenigsten unten).
 
 [#image-service-stack]
-.Schichten eines Steadfast systems. Von unten, Hardware: bloßes Metal, Dateisystemsystem: ext4 for / and optionally ZFS for /data, Betriebssystem: Ubuntu LTS 64-bit server, Containerlaufzeit: Docker, Container: Nextcloud Dateifreigabe, Jellyfin Medienserver, Wallabag Artikelleser.
+.Schichten eines Steadfast systems. Von unten, Hardware: bloßes Metal, Dateisystem: ext4 for / and optionally ZFS for /data, Betriebssystem: Ubuntu LTS 64-bit server, Containerlaufzeit: Docker, Container: Nextcloud Dateifreigabe, Jellyfin Medienserver, Wallabag Artikelleser.
 image::service-stack.svg[align="center",scaledwidth=80%]
 
 Am häufigsten arbeite ich in den oberen Schichten – zum Beispiel beim Hinzufügen oder Aktualisieren eines Containers.
