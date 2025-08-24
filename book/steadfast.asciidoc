@@ -974,7 +974,7 @@ Einige Ideen:
 
 Rechenleistung und Speicher::
 CPU und RAM sind die grundlegenden Ressourcen, die für die Berechnung notwendig sind.
-Siehe <<Map services to resources>> für Ideen, wie du Anforderungen basierend auf den Diensten, die du hosten wirst, abschätzen kannst.
+Siehe <<Dienste Ressourcen zuordnen>> für Ideen, wie du Anforderungen basierend auf den Diensten, die du hosten wirst, abschätzen kannst.
 GPU-Arbeitslasten werden in diesem Buch nicht behandelt, obwohl <<_whats_next>> und <<Exercises>> einige Dinge ansprechen, die du selbst ausprobieren kannst.
 
 Datenspeicher::
