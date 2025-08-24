@@ -1764,7 +1764,7 @@ Siehe <<ZFS Setup>>.
 
 (((ZFS, setting up)))
 Das Betriebssystem kümmert sich im Allgemeinen gut um sich selbst.
-Für eine robustere Datenspeicherung kannst du ein paar HDDs hinzufügen und sie mit **ZFS** verwalten.
+Für eine robustere Datenspeicherung kannst du ein paar HDDs hinzufügen und sie mit ZFS verwalten.
 
 ZFS bietet viele Funktionen und etwas zusätzliche Komplexität.
 Die Lernkurve lohnt sich.
