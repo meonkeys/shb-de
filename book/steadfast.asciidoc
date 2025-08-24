@@ -1587,7 +1587,7 @@ Der Server sollte mit plötzlichen Lastspitzen gut zurechtkommen, z.B. beim Baue
 
 Ich habe auf eBay einen gebrauchten, generalüberholten 1U-Rackmount-Server für etwa 1.000USD gefunden.
 Solche Geräte werden oft als „off-lease enterprise hardware“ bezeichnet – also Leasing-Rückläufer aus dem Unternehmensbereich.
-Ein 1U-Server ist ein https://de.wikipedia.org/wiki/Rack-Einheit[Rack Unit] hoch – etwa so groß wie eine lange Pizzaschachtel.
+Ein 1U-Server ist ein https://de.wikipedia.org/wiki/H%C3%B6heneinheit[Höheneinheit] hoch – etwa so groß wie eine lange Pizzaschachtel.
 Technologiekonzerne stoßen diese Geräte massenweise ab, sodass man oft ein gutes Angebot findet.
 Mein Server hat zwei 24-Kern-CPUs und 128GB RAM.
 
