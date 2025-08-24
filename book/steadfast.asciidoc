@@ -2556,8 +2556,8 @@ Sobald Sie Nextcloud zum Laufen gebracht haben, finden Sie unter <<Mehr über Ne
 ==== Schnellstart
 
 . Provisionieren Sie mit mario von Ihrem Admin-Computer.
-. Starten Sie Nextcloud mit dc nextcloud up -d auf Ihrem Server.
-. Rufen Sie \https://cloud.example.com auf Ihrem Admin-Computer auf.
+. Starten Sie Nextcloud mit `dc nextcloud up -d` auf Ihrem Server.
+. Rufen Sie `\https://cloud.example.com` auf Ihrem Admin-Computer auf.
 . Folgen Sie der webbasierten Setup-Seite, um ein Admin-Konto zu erstellen.
 . Überspringen Sie die Installation der empfohlenen Apps.
 
