@@ -1077,7 +1077,7 @@ Hier findest du die entsprechenden Abschnitte mit Details zu jeder Ebene:
 Es gibt außerdem zwei Dienste in Containern, die später behandelt werden und _nicht_ im Diagramm dargestellt sind:
 
 * <<Watchtower: Dienst-Updates>>
-* <<Scratch: visual programming>>
+* <<Scratch: visuelle Programmierung>>
 
 === Digitale Sicherheit
 
@@ -2517,7 +2517,7 @@ Dieses Kapitel behandelt, was sie bieten und wie du sie verwaltest.
 |Musik und Heimvideos streamen |<<Jellyfin: Audio- und Videostreaming>>
 |Artikel offline und ohne Ablenkung lesen |<<Wallabag: Artikel speichern und lesen>>
 |Andere Dienste auf dem neuesten Stand halten |<<Watchtower: Dienst-Updates>>
-|Programmieren mit visuellen Werkzeugen lernen |<<Scratch: visual programming>>
+|Programmieren mit visuellen Werkzeugen lernen |<<Scratch: visuelle Programmierung>>
 |===
 
 Diese speziellen Dienste sind nur ein kleiner Bruchteil derjenigen, die für das Self-Hosting verfügbar sind.
