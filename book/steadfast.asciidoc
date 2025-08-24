@@ -975,7 +975,7 @@ Einige Ideen:
 Rechenleistung und Speicher::
 CPU und RAM sind die grundlegenden Ressourcen, die für die Berechnung notwendig sind.
 Siehe <<Dienste Ressourcen zuordnen>> für Ideen, wie du Anforderungen basierend auf den Diensten, die du hosten wirst, abschätzen kannst.
-GPU-Arbeitslasten werden in diesem Buch nicht behandelt, obwohl <<_whats_next>> und <<Exercises>> einige Dinge ansprechen, die du selbst ausprobieren kannst.
+GPU-Arbeitslasten werden in diesem Buch nicht behandelt, obwohl <<_whats_next>> und <<Übungen>> einige Dinge ansprechen, die du selbst ausprobieren kannst.
 
 Datenspeicher::
 Schätze, wie viel Speicherplatz du benötigen wirst.
@@ -2780,6 +2780,8 @@ Wenn du Scratch aktualisieren möchtest, besuche die https://github.com/scratchf
 Führe `provision.sh` erneut auf dem Admincomputer aus.
 Baue das Image auf dem Server mit `dc scratch build --pull` neu.
 Schließlich ersetze den Scratch-Dienstcontainer, indem du `dc scratch up -d` auf dem Server ausführst.
+
+// FIXME: when "What's next?" is translated here, the reference <<_whats_next>> elsewhere in the book must also be updated.
 
 == What's next?
 
