@@ -1829,8 +1829,8 @@ zfs list
 ----
 
 Unter Ubuntu 24.04 LTS sind weitere Schritte erforderlich, damit dieses neue Dateisystem beim Serverstart automatisch eingebunden wird.
-Die folgenden Anweisungen stammen aus der Handbuchseite zfs-mount-generator(8) — mit einigen Korrekturen.
-Diese Befehle müssen mit Root-Rechten ausgeführt werden.
+Die folgenden Anweisungen stammen aus der Handbuchseite `zfs-mount-generator(8)` — mit einigen Korrekturen.
+Diese Befehle müssen mit `root`-Rechten ausgeführt werden.
 
 .ZFS mount on boot setup (🚀 server)
 [source#zfs-mount-on-boot,bash]
@@ -1900,7 +1900,7 @@ sudo apt update && sudo apt full-upgrade
 ----
 
 Dies aktualisiert die lokalen Paketinformationen und – falls erfolgreich – das Betriebssystem.
-Root-Zugriff ist erforderlich, daher sudo.
+Root-Zugriff ist erforderlich, daher `sudo`.
 Das ist relativ sicher und erfordert in der Regel wenig bis keine Interaktion außer einer Bestätigung zum Fortfahren.
 Ein Neustart kann anschließend nötig sein (z.B. bei Kernel-Updates).
 Beim Einloggen zeigt der Server an, ob ein Neustart erforderlich ist.
@@ -1912,7 +1912,7 @@ Siehe <<Watchtower: Dienst-Updates>> für Details.
 ==== Überwachung
 
 Behalte die Server-Gesundheit im Blick.
-Prüfe den freien Speicherplatz mit df -h.
+Prüfe den freien Speicherplatz mit `df -h`.
 Wenn sich der Server träge anfühlt, überprüfe die PSI (Pressure Stall Information) mit:
 
 .check PSI (🚀 server)
@@ -1921,14 +1921,14 @@ Wenn sich der Server träge anfühlt, überprüfe die PSI (Pressure Stall Inform
 tail /proc/pressure/*
 ----
 
-atop zeigt ebenfalls PSI-Werte an.
-Wenn dein PSI-Check hohe Ressourcennutzung anzeigt, versuche docker stats, um die Ressourcennutzung pro Container zu sehen.
+`atop` zeigt ebenfalls PSI-Werte an.
+Wenn dein PSI-Check hohe Ressourcennutzung anzeigt, versuche `docker stats`, um die Ressourcennutzung pro Container zu sehen.
 Das sollte dir helfen, das Problem auf bestimmte Dienste einzugrenzen.
 
-Wenn du ZFS verwendest, kannst du zpool iostat verwenden, um Ein-/Ausgabe-Statistiken für deine Speicherpools zu sehen.
+Wenn du ZFS verwendest, kannst du `zpool iostat` verwenden, um Ein-/Ausgabe-Statistiken für deine Speicherpools zu sehen.
 
-Auf Host-Ebene kannst du htop -d 100 verwenden, um Statistiken für alle Prozesse und Threads zu sehen.
-Verfolge alle protokollierten Ereignisse für den Host mit journalctl -f.
+Auf Host-Ebene kannst du `htop -d 100` verwenden, um Statistiken für alle Prozesse und Threads zu sehen.
+Verfolge alle protokollierten Ereignisse für den Host mit `journalctl -f`.
 
 ==== Backups
 
@@ -1975,7 +1975,7 @@ sudo zfs destroy -R main/secure/data@$snapName
 ----
 
 <1> Das Ausführen dieses Befehls zum Erstellen eines Snapshots dauert auf meinem Server 0,040 Sekunden.
-Sobald er abgeschlossen ist, erscheint ein neuer schreibgeschützter Ordner unter /data/.zfs/snapshot, der den Snapshot enthält.
+Sobald er abgeschlossen ist, erscheint ein neuer schreibgeschützter Ordner unter `/data/.zfs/snapshot`, der den Snapshot enthält.
 
 <2> Diese Zeile setzt voraus, dass du restic installiert und konfiguriert hast.
 Es kann deinen Snapshot extern sichern – gemäß der 3-2-1-Regel.
@@ -1984,7 +1984,7 @@ Es kann deinen Snapshot extern sichern – gemäß der 3-2-1-Regel.
 
 (((Ansible)))
 ((mario)) ist ein Tool, das ich entwickelt habe, um dir beim Einrichten und Warten eines Servers zu helfen.
-Es ist im Wesentlichen ein Wrapper um das bewährte https://ansible.com[Ansible-Systembereitstellungstool].
+Es ist im Wesentlichen ein Wrapper um das bewährte https://ansible.com[Ansible]-Systembereitstellungstool.
 Alles, was ich mit mario mache, lässt sich auch manuell direkt auf dem Server erledigen.
 Der Vorteil bei der Verwendung von mario ist jedoch, dass jede Änderung (z.B. die Installation eines Pakets) konsistent und mit Prüfprotokoll durchgeführt wird.
 Der wahre Nutzen dieser Praxis zeigt sich vor allem bei der Zusammenarbeit mit anderen – einschließlich deinem zukünftigen Ich.
@@ -2228,7 +2228,7 @@ NOTE: Öffentliche DNS-Einträge setzen keinen WAN-Zugriff voraus.
 
 Wenn du einen kostenlosen Domainnamen von einem Anbieter mit API möchtest, kannst du dein Glück mit Duck DNS versuchen.
 
-. Starte auf [https://duckdns.org](https://duckdns.org).
+. Starte auf https://duckdns.org.
 . Melde dich an und füge eine Domain hinzu.
 
 Deine Domain wird etwa so heißen: `blah.duckdns.org`.
@@ -2384,12 +2384,12 @@ rp-1 | Testing certificate renew... acmeCA=... providerName=myresolver.acme
 ^Ccanceled
 ----
 
-Wenn du eine Weile gewartet, die Seite neu geladen hast und dein Browser immer noch ungültige Zertifikatswarnungen zeigt, wenn du versuchst, `https://traefik.example.com` zu besuchen, lies die Traefik-Logmeldungen sorgfältig durch und sieh dir auch <<Verschlüsselungszertifikate>> für Schritte zur Fehlerbehebung an.
-Sobald du das Dashboard sehen kannst, beende das Verfolgen der Traefik-Logs mit kbd:\[Strg+c].
+Wenn du eine Weile gewartet, die Seite neu geladen hast und dein Browser immer noch ungültige Zertifikatswarnungen zeigt, wenn du versuchst, `\https://traefik.example.com` zu besuchen, lies die Traefik-Logmeldungen sorgfältig durch und sieh dir auch <<Verschlüsselungszertifikate>> für Schritte zur Fehlerbehebung an.
+Sobald du das Dashboard sehen kannst, beende das Verfolgen der Traefik-Logs mit kbd:[Strg+c].
 
 ==== Andere Dienste starten
 
-Das Starten eines mario-Dienstes erfolgt immer mit dc SERVICE up -d, genau wie wir es mit Traefik gemacht haben.
+Das Starten eines mario-Dienstes erfolgt immer mit `dc SERVICE up -d`, genau wie wir es mit Traefik gemacht haben.
 Um alles auf einmal hochzufahren, kannst du dieses Shell-Skript verwenden:
 
 .start all services ad-hoc Bash script (🚀 server)
@@ -2401,7 +2401,7 @@ done
 ----
 
 Dies wird auch Images abrufen und erstellen sowie Container bei Bedarf aktualisieren.
-Dienste, die nicht mit ihrer compose.yml-Datei übereinstimmen, werden neu gestartet.
+Dienste, die nicht mit ihrer `compose.yml`-Datei übereinstimmen, werden neu gestartet.
 Dies ist idempotent: Bereits laufende und aktuelle Dienste bleiben unverändert.
 
 === Verschlüsselungszertifikate
@@ -2531,7 +2531,7 @@ Wenn ich auf einen geschlossenen Bug im Issue-Tracker verweise, liegt das daran,
 Die mobile Nutzung ist bei den von mir betreuten Nutzer*innen hoch, daher war dies ebenfalls ein Auswahlkriterium.
 Nextcloud, Jellyfin und Wallabag verfügen über mobile Apps und Integrationen, die ich häufig verwende.
 
-Die serverseitigen Befehle zur Verwaltung von Diensten sind standardisiert: Sie werden das Muster dc: SERVICE ACTION ARGS immer wieder sehen.
+Die serverseitigen Befehle zur Verwaltung von Diensten sind standardisiert: Sie werden das Muster `dc SERVICE ACTION ARGS` immer wieder sehen.
 
 // this forced page break was originally just to improve the print PDF layout, but I find it doesn't hurt the screen PDF layout so I don't use an ifdef::shb-printPDF[]
 
@@ -2620,7 +2620,7 @@ Es wäre großartig, wenn man https://features.jellyfin.org/posts/1036/bookmark-
 
 Ich möchte eine Jellyfin-Mobile-App, die Medien automatisch zwischenspeichert und https://features.jellyfin.org/posts/218/support-offline-mode-on-android-mobile[Offline-Wiedergabe ermöglicht].
 
-Workaround: Es gibt zwei separate Mobile-Apps, die Medien für die Offline-Wiedergabe herunterladen und zwischenspeichern können https://github.com/jmshrv/finamp[Finamp] für Musik und https://github.com/jarnedemeulemeester/findroid[Findroid]für Videos
+Workaround: Es gibt zwei separate Mobile-Apps, die Medien für die Offline-Wiedergabe herunterladen und zwischenspeichern können https://github.com/jmshrv/finamp[Finamp] für Musik und https://github.com/jarnedemeulemeester/findroid[Findroid] für Videos
 
 ==== Jellyfin-Medien mit Nextcloud verwalten
 
@@ -2659,8 +2659,8 @@ image::wallabag.png[align="center",scaledwidth=80%]
 . Mit mario von deinem Admincomputer bereitstellen.
 . Starte Wallabag mit `dc wallabag up -d` auf deinem Server.
 . Gehe auf `\https://wallabag.example.com` auf deinem Admincomputer.
-. Melde dich als Benutzer wallabag mit dem Passwort wallabag an.
-. Aktualisiere das Passwort für den Benutzer wallabag.
+. Melde dich als Benutzer `wallabag` mit dem Passwort `wallabag` an.
+. Aktualisiere das Passwort für den Benutzer `wallabag`.
 
 ==== Wartungshinweise
 
@@ -2687,11 +2687,11 @@ dc wallabag exec app /var/www/wallabag/bin/console \
 ----
 
 Der Befehl `exec` bedeutet, dass wir etwas in einem Container ausführen wollen.
-Dies führt das Dienstprogramm `console` im app-Service-Container aus.
+Dies führt das Dienstprogramm `console` im `app`-Service-Container aus.
 Die zweite Zeile gibt an, dass notwendige Datenbankmigrationen (Schema- und Datenaktualisierungen) mit den `prod`-Einstellungen ohne interaktive Eingabeaufforderungen ausgeführt werden sollen.
 
 Dies ist idempotent, wie Datenbankmigrationen sein sollten.
-Nach dem ersten Durchlauf geben nachfolgende Durchläufe aus: [OK] Already at the latest version.
+Nach dem ersten Durchlauf geben nachfolgende Durchläufe aus: `[OK] Already at the latest version`.
 
 Es ist unklar, warum diese Migration nicht automatisch während eines Upgrades durchgeführt wird.
 Vielleicht ist sie nur in speziellen Fällen notwendig – ich musste sie in den letzten Jahren nur zweimal ausführen.
