@@ -1388,9 +1388,9 @@ image::traefik-architecture.png[]
 (((router, Traefik)))
 In den mario-Quelltexten (oder in den später gezeigten Codeausschnitten) lohnt sich ein Blick in die compose.yml-Dateien für Traefik und Nextcloud, in denen unter anderem Folgendes enthalten ist:
 
-* Der websecure-Eintrittspunkt, über den HTTPS-Verkehr auf Port 443 empfangen wird
-* Die App-Service-Definition für Nextcloud, die Traefik-Routing-Labels enthält
-* Die Host(…)-Regel im nc-https-Router, mit der eingehender Verkehr basierend auf dem Hostnamen weitergeleitet wird
+* Der `websecure`-((Eintrittspunkt)), über den HTTPS-Verkehr auf Port 443 empfangen wird
+* Die `app`-Service-Definition für Nextcloud, die Traefik-Routing-Labels enthält
+* Die `Host(...)`-Regel im `nc-https`-Router, mit der eingehender Verkehr basierend auf dem Hostnamen weitergeleitet wird
 
 [%unbreakable]
 NOTE: Die Symbole `app`, `websecure` und `nc-https` sind willkürlich gewählt.
@@ -1400,7 +1400,7 @@ Du kannst stattdessen auch längere, beschreibendere Namen verwenden.
 Die Routing-Labels verknüpfen den Entrypoint und den Router mit dem Dienst, unter dem sie definiert sind.
 Konkret heißt das: `websecure` → `nc-https` → `app`.
 
-Die folgenden beiden Snippets aus dem Mario-Quellcode zeigen, wie wir Traefik für Nextcloud einrichten.
+Die folgenden beiden Snippets aus dem mario-Quellcode zeigen, wie wir Traefik für Nextcloud einrichten.
 
 .Traefik-Konfigurationsausschnitt (🏠 Admincomputer)
 [source#traefik-config,yaml]
