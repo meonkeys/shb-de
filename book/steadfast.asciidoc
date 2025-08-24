@@ -2420,7 +2420,7 @@ Dies nennt man *SSL-Termination* und wird in Traefiks `compose.yml` über Zeilen
 Schau dir einmal die `compose.yml`-Datei eines beliebigen mit mario gelieferten Dienstes an.
 Jeder Dienst hat im Router-Abschnitt eine `tls`-Sektion definiert, um HTTPS-Verschlüsselung und SSL-Terminierung zu aktivieren.
 
-Falls beim Aufruf deiner Webdienste Zertifikatswarnungen erscheinen, prüfe zuerst die Traefik-Logs wie in <<Start Reverse-Proxy>> beschrieben.
+Falls beim Aufruf deiner Webdienste Zertifikatswarnungen erscheinen, prüfe zuerst die Traefik-Logs wie in <<Reverse-Proxy starten>> beschrieben.
 Um die Protokollausgabe von Traefik zu erweitern, ändere in der `compose.yml` von Traefik den Eintrag
 `--log.level=INFO` zu `--log.level=DEBUG`, führe die Provisionierung erneut aus und starte Traefik neu.
 Falls das Problem weiterhin besteht, überprüfe, ob DNS-Abfragen erfolgreich sind, da dies die DNS-Challenge beeinflusst.
