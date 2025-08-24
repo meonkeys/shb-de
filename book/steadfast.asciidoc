@@ -2987,7 +2987,7 @@ For example, to allow WAN access to Nextcloud, make this change in Nextcloud's `
 
 Similarly for Jellyfin, you may delete the whole line referencing the `lan-only` ((middleware)) in Jellyfin's `compose.yml` if you decide to expose that service on your WAN.
 
-=== More about Nextcloud
+=== Mehr über Nextcloud
 
 Nextcloud is a key part of my self-hosting setup.
 I wanted to include a lot of additional details without cluttering up <<Services>>, so you'll find these extra sections here.
