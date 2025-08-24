@@ -31,8 +31,8 @@ echo "🏗️	start at $(date)"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 WORK_DIR=/usr/src/app/book
 GID="$(id -g)"
-BUILD_DATE_TIME="$(date)"
 BUILD_LOCALE_LANG="de_DE.UTF-8"
+BUILD_DATE_TIME="$(LC_ALL=$BUILD_LOCALE_LANG date)"
 TWO_LETTER_LANG="de"
 BUILD_GIT_COMMIT="$(git rev-parse --short HEAD || echo FIXME)"
 BUILD_GIT_BRANCH="$(git branch --show-current || echo FIXME)"
@@ -47,7 +47,7 @@ if [[ "$OSTYPE" =~ linux-gnu ]]; then
 else
     # OSTYPE is intentionally coarse.
     # There are surely better ways to get detailed build OS info.
-    BUILD_OS_RELEASE="${OSTYPE:-unknown}"
+    BUILD_OS_RELEASE="${OSTYPE:-unbekannt}"
 fi
 
 echo '🚢	build image'
