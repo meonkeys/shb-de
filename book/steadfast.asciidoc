@@ -1294,7 +1294,7 @@ Das ist sinnvoll, sobald man eine gewisse Skalierung erreicht hat – vorausgese
 Ich persönlich führe Betriebssystem-Upgrades meist manuell durch, da ich nur wenige Systeme betreue. Der Aufwand ist dadurch gering und selten, und das Aktualisieren eines Pakets kann Tests oder manuelle Eingriffe (z.B. einen Neustart) erfordern.
 Aus ähnlichen Gründen installiere ich auch das Betriebssystem selbst von Hand.
 
-Mein Betriebssystem ist eher ein Haustier als ein Nutztier (siehe „cattle vs. pets“ im <<Glossary>>).
+Mein Betriebssystem ist eher ein Haustier als ein Nutztier (siehe „cattle vs. pets“ im <<Verzeichnis>>).
 Vielleicht ist es sogar ein Haustier-Phönix:
 Wenn es stirbt, lässt es sich relativ leicht aus der Asche wiederbeleben.
 Es wird regelmäßig gesichert, es gibt nur wenige manuelle Schritte – und alle manuellen Schritte sind sorgfältig dokumentiert.
@@ -2550,7 +2550,7 @@ image::nextcloud.png[align="center",scaledwidth=80%]
 
 Ein gut gepflegter Nextcloud-Server bietet eine solide Grundlage für das „De-Googlen“.
 Nextcloud kann kostenlos selbst gehostet werden, wenn es über mario installiert wird.
-Sobald Sie Nextcloud zum Laufen gebracht haben, finden Sie unter <<Mehr über Nextcloud>> viele meiner Gedanken darüber, wie man es am besten anpasst.
+Sobald Sie Nextcloud zum Laufen gebracht haben, finden Sie unter <<Mehr zu Nextcloud>> viele meiner Gedanken darüber, wie man es am besten anpasst.
 
 [#nextcloud_quick_start]
 ==== Schnellstart
@@ -2632,7 +2632,7 @@ Nextclouds „External Storages“ ermöglicht es dir, Dateien in diese Ordner h
 Nextclouds `compose.yml`-Datei hat den Eintrag `/data/shared/media/video:/data/video:rw` in volumes.
 `/data/shared/media/video` ist der Pfad auf dem Server, der die eigentlichen Videodateien enthält, `/data/video` ist der Ort, an dem sie im Container erscheinen, und `rw` bedeutet, dass Nextcloud Lese- und Schreibzugriff auf dieses Volume hat.
 Es gibt einen weiteren ähnlichen Ordner für Musikdateien.
-Siehe <<Detailed setup>>, um zu erfahren, wie man sie in Nextcloud als „External Storages“ hinzufügt.
+Siehe <<Detaillierte Einrichtung>>, um zu erfahren, wie man sie in Nextcloud als „External Storages“ hinzufügt.
 
 In Jellyfins `compose.yml`-Datei findest du ähnliche Zeilen zum Hinzufügen von Musik- und Video-Volumes, aber mit `ro` (für Read-Only) statt `rw`.
 Jellyfin benötigt nur Lesezugriff auf die Ordner, um die darin enthaltenen Dateien streamen zu können.
@@ -3725,6 +3725,7 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
 
 // Source for "These days that pretty much means git" statement: https://en.wikipedia.org/wiki/Git#Adoption
 
+// TODO - translate
 ((AI))::
   Artificial intelligence.
 ((API))::
