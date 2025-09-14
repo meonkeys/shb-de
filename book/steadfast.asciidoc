@@ -243,7 +243,7 @@ Um das Beste aus diesem Buch herauszuholen, solltest du über grundlegende Sysad
 
 Falls dir eines dieser Konzepte nicht vertraut ist, hilft dir ein kurzer Abstecher zu deiner bevorzugten Suchmaschine oder ein Besuch bei einer lokalen Nutzergruppe sicher weiter.
 
-Ich empfehle das Hosting auf bloßes Metal (greifbarer, lokal betriebener Computer-Hardware), was einige Anforderungen an den physischen Standort deines Servers mit sich bringt.
+Ich empfehle das Hosting auf Bare Metal (greifbarer, lokal betriebener Computer-Hardware), was einige Anforderungen an den physischen Standort deines Servers mit sich bringt.
 Mehr zu den Details und Anforderungen von Bare-Metal-Hosting findest du im Abschnitt <<Hardware vorbereiten>>.
 
 Zum Schluss noch einige bewährte Vorgehensweisen, die du beim Lesen im Hinterkopf behalten solltest:
@@ -434,7 +434,7 @@ Allein der Versuch, Google hinter sich zu lassen, war eine faszinierende und erf
 Ich habe dieses Buch geschrieben, um ((Datensouveränität)) als prosoziales Verhalten zu fördern.
 Dank Self-Hosting ist das heute einfacher denn je – und ich wollte dieses Wissen in Buchform weitergeben.
 
-Die bisherigen Bücher zu diesem Thema bieten keine gute, schnelle und günstige Methode, um Self-Hosting auf eigener Hardware ((bloßes Metal)) umzusetzen.
+Die bisherigen Bücher zu diesem Thema bieten keine gute, schnelle und günstige Methode, um Self-Hosting auf eigener Hardware ((Bare Metal)) umzusetzen.
 Ich habe eine solche Methode gefunden – und ich glaube, du wirst sie lieben.
 Sie funktioniert übrigens auch in der Cloud, kostet dort aber deutlich mehr (siehe <<Server>>).
 
@@ -517,7 +517,7 @@ image::bread-server.png[align="center",scaledwidth=80%]
 
 _Cloud_ bedeutet, dass es skalierbar und automatisierbar ist.
 _Personal_ begrenzt diese Skalierbarkeit auf ein sinnvolles Maß für eine kleine Gruppe.“
-Ein ((bloßes Metal)) Server kann innerhalb seiner eigenen Hardware bis zu einem gewissen Maß skalieren
+Ein ((Bare Metal)) Server kann innerhalb seiner eigenen Hardware bis zu einem gewissen Maß skalieren
 Es kann sich automatisch anpassen, indem es je nach ((Rechen-))Bedarf mehr oder weniger Leistung nutzt, und manuell, wenn man Hardware-Komponenten aufrüstet (zum Beispiel durch Hinzufügen einer weiteren Festplatte).”
 
 Ich gebe zu, mein inneres Kind freut sich über die Mehrdeutigkeiten des Begriffs _Personal Cloud_.
@@ -710,7 +710,7 @@ Es gibt so viele gute Gründe!
 ** deine Nutzer*innen von den unvorhersehbaren Änderungen proprietärer Produktpreise, Serviceangebote und UI/UX abschirmen
 ** deine hart erarbeiteten Daten mit Freunden und Familie teilen – für immer
 ** problemlos auf etwas anderes migrieren, wenn nötig (zum Beispiel, wenn ein neuer/besserer Fotoserver verfügbar wird)
-** es sind wirklich die Daten, die geschützt werden müssen; die Frontends zu diesen Daten (Dateiviewer, Editoren etc.) werden sich ändern, wenn du es entscheidest
+** es sind wirklich die Daten, die geschützt werden müssen; die Frontends zu diesen Daten (Dateiviewer, Editoren usw.) werden sich ändern, wenn du es entscheidest
 * Computing demokratisieren
 ** selbstgehostete Software (insbesondere FOSS) ermöglicht Daten- und Rechenautonomie
 * Strom sparen
@@ -867,14 +867,14 @@ image::inside-chassis.jpg[align="center",scaledwidth=80%]
 (((Docker)))
 Ich war angenehm überrascht von ((Container))s (erklärt in <<Contained services>>), insbesondere nach meinen gemischten früheren Erfahrungen mit VMs.
 VMs sind anfangs einfach, weil sie sich wie echte Hardware verhalten.
-Linux in eine VM zu installieren ist genauso einfach wie auf ((bloßes Metal)) (manchmal sogar einfacher).
+Linux in eine VM zu installieren ist genauso einfach wie auf ((Bare Metal)) (manchmal sogar einfacher).
 Dann kann man einen oder mehrere Dienste in der VM einrichten.
 Der eigentliche Haken liegt in der Wartung:
 Das Pflegen einer VM kann genauso aufwendig sein wie die Wartung eines Bare-Metal-Servers.
 
 Container verfolgen einen anderen Ansatz und simulieren deutlich weniger von einem Bare-Metal-Server.
 Sie sind im Vergleich zu VMs schneller und ressourcenschonender, was eine höhere, konfliktfreie Dichte von Diensten ermöglicht.
-Das heißt: Du kannst mehr Dienste pro Server betreiben, ohne dass sie sich gegenseitig stören (z.B. weil sie unterschiedliche Versionen von PHP benötigen).
+Das heißt: Du kannst mehr Dienste pro Server betreiben, ohne dass sie sich gegenseitig stören (z. B. weil sie unterschiedliche Versionen von PHP benötigen).
 Ein Container enthält in der Regel genau einen Dienst.
 
 (((Isolation)))
@@ -884,7 +884,7 @@ Diese begrenzte Isolierung hält jedoch die Ressourcen- und Wartungskosten bei c
 
 Container eignen sich hervorragend für eine konsistente und stabile persönliche Cloud.
 Sie lassen sich leicht deklarieren (im Code), bauen, bereitstellen, testen und reproduzieren.
-Container können auch zusammen mit VMs verwendet werden: Du könntest zum Beispiel eine VM als Server nutzen, anstelle von bloßes Metal.
+Container können auch zusammen mit VMs verwendet werden: Du könntest zum Beispiel eine VM als Server nutzen, anstelle von Bare Metal.
 
 Ich habe mich für Docker zur Verwaltung von Containern entschieden, weil es weit verbreitet ist und ich Erfahrung damit habe.
 Dein Server wird dabei auch als Host bezeichnet, da er die Docker-Container hostet.
@@ -923,7 +923,7 @@ Der Community-Support ist mal gut, mal weniger gut.
 Nextcloud scheint außerhalb der USA populärer zu sein.
 
 Nicht alle Nextcloud-Apps sind schon ausgereift.
-Mehr unter <<Customization>>.
+Mehr unter <<Personalisierung>>.
 
 ===== Jitsi and Ports
 
@@ -973,15 +973,15 @@ Skizziere deine Gedanken zu den Ressourcen, die du benötigen wirst.
 Einige Ideen:
 
 Rechenleistung und Speicher::
-CPU und RAM sind die grundlegenden Ressourcen, die für die Berechnung notwendig sind.
-Siehe <<Dienste Ressourcen zuordnen>> für Ideen, wie du Anforderungen basierend auf den Diensten, die du hosten wirst, abschätzen kannst.
-GPU-Arbeitslasten werden in diesem Buch nicht behandelt, obwohl <<_whats_next>> und <<Übungen>> einige Dinge ansprechen, die du selbst ausprobieren kannst.
+Hauptprozessor und RAM sind die grundlegenden Ressourcen, die für die Berechnung notwendig sind.
+Siehe <<Map services to resources>> für Ideen, wie du Anforderungen basierend auf den Diensten, die du hosten wirst, abschätzen kannst.
+Grafikprozessor-Arbeitslasten werden in diesem Buch nicht behandelt, obwohl <<_whats_next>> und <<Exercises>> einige Dinge ansprechen, die du selbst ausprobieren kannst.
 
 Datenspeicher::
 Schätze, wie viel Speicherplatz du benötigen wirst.
 Mit jedem Sprung in der Einheit (zum Beispiel von GB (Gigabyte) zu TB (Terabyte)) steigt die Komplexität und die Kosten deutlich an.
 Dieses Buch ist für Datenspeicher bis etwa 10 TB geeignet.
-Siehe <<Festplattenlaufwerke>> für Tipps, wie du beim Speicher durch Self-Hosting Geld sparen kannst.
+Siehe <<Hard drives>> für Tipps, wie du beim Speicher durch Self-Hosting Geld sparen kannst.
 
 Strom::
 Überprüfe deine Stromrechnung auf die Kosten pro kWh und mache einige Berechnungen.
@@ -1051,10 +1051,10 @@ Tauchen wir ein in die Gestaltung eines _Steadfast_ Systems.
 === Dienst-Stack
 
 Ein _Steadfast_ System lässt sich gut als vereinfachter Stapel farbiger Kästchen darstellen.
-Die vertikale Anordnung dieses Stacks richtet sich danach, wo und wie häufig eine Systemadministratorin wahrscheinlich auf dieser Ebene agieren oder bei Support- oder Fehlersuche eingreifen wird (am häufigsten oben), sowie danach, wie stark die jeweilige Ebene vom bloßes Metal abstrahiert ist (am wenigsten unten).
+Die vertikale Anordnung dieses Stacks richtet sich danach, wo und wie häufig eine Systemadministratorin wahrscheinlich auf dieser Ebene agieren oder bei Support- oder Fehlersuche eingreifen wird (am häufigsten oben), sowie danach, wie stark die jeweilige Ebene vom Bare Metal abstrahiert ist (am wenigsten unten).
 
 [#image-service-stack]
-.Schichten eines Steadfast systems. Von unten, Hardware: bloßes Metal, Dateisystem: ext4 for / and optionally ZFS for /data, Betriebssystem: Ubuntu LTS 64-bit server, Containerlaufzeit: Docker, Container: Nextcloud Dateifreigabe, Jellyfin Medienserver, Wallabag Artikelleser.
+.Schichten eines Steadfast systems. Von unten, Hardware: bare Metal, Dateisystemsystem: ext4 for / and optionally ZFS for /data, Betriebssystem: Ubuntu LTS 64-bit server, Containerlaufzeit: Docker, Container: Nextcloud Dateifreigabe, Jellyfin Medienserver, Wallabag Artikelleser.
 image::service-stack.svg[align="center",scaledwidth=80%]
 
 Am häufigsten arbeite ich in den oberen Schichten – zum Beispiel beim Hinzufügen oder Aktualisieren eines Containers.
@@ -1077,7 +1077,7 @@ Hier findest du die entsprechenden Abschnitte mit Details zu jeder Ebene:
 Es gibt außerdem zwei Dienste in Containern, die später behandelt werden und _nicht_ im Diagramm dargestellt sind:
 
 * <<Watchtower: Dienst-Updates>>
-* <<Scratch: visuelle Programmierung>>
+* <<Scratch: visual programming>>
 
 === Digitale Sicherheit
 
@@ -1128,7 +1128,7 @@ Gehen wir einen Schritt zurück und sprechen über Bedrohungsmodellierung.
 Dein Bedrohungsmodell beschreibt, wie du Bedrohungen für deine Daten einschätzt und wie du ihnen entgegenwirken willst.
 Mit einem klaren Bedrohungsmodell kannst du fundierte Entscheidungen treffen – zum Beispiel darüber, ob du den WAN-Zugriff auf deinen Server erlauben solltest oder nicht.
 
-WARNING: Wenn du bereits weißt, dass du ein wertvolles Ziel bist (z.B. öffentliche Person, hohes Vermögen, Kriegsberichterstatter*in oder verantwortlich für einen Server mit Informationen über viele Menschen), dann gilt: Mach dich auf eine längere Reise gefasst.
+WARNING: Wenn du bereits weißt, dass du ein wertvolles Ziel bist (z. B. öffentliche Person, hohes Vermögen, Kriegsberichterstatter*in oder verantwortlich für einen Server mit Informationen über viele Menschen), dann gilt: Mach dich auf eine längere Reise gefasst.
 Dieses Buch allein reicht nicht aus, um deinem Bedrohungsmodell gerecht zu werden.
 
 Lass uns ein einfaches Beispiel für ein Bedrohungsmodell für die Datenklasse "alles andere" erstellen.
@@ -1150,7 +1150,7 @@ Geht einem wirklich leicht über die Lippen!
 Teste ((WAN-Zugriff)) mit diesem Bedrohungsmodell.
 
 Anlagen::
-  Dateien mit persönlichen Informationen, die in einem veralteten Dienst gespeichert sind (z.B. eine alte, verwundbare Version von Nextcloud).
+  Dateien mit persönlichen Informationen, die in einem veralteten Dienst gespeichert sind (z. B. eine alte, verwundbare Version von Nextcloud).
 Akteure / Bedrohungen / Angriffsvektoren::
   Ein Bot durchsucht Websites und findet eine URL zu einem Dienst in einem öffentlich zugänglichen Mailinglisten-Archiv.
 Der Bot versucht automatisch, eine bekannte Schwachstelle im Dienst auszunutzen.
@@ -1226,7 +1226,7 @@ Ich empfehle (und werde demonstrieren), mit einem einzigen ((ext4))-Dateisystem 
 ext4 ist das stabile, einfache und standardmäßige Dateisystem für Ubuntu.
 ZFS (ursprünglich: Zettabyte File System) bietet Verschlüsselung, leichte Snapshots und ((RAID)) (redundante Anordnung kostengünstiger Festplatten).
 
-Optional kannst du ZFS für den Speicher (`/data`) auf deinem Server verwenden, wie unter <<ZFS Setup>> beschrieben.
+Optional kannst du ZFS für den Speicher (`/data`) auf deinem Server verwenden, wie unter <<ZFS setup>> beschrieben.
 Für die Root-Partition (`/`) empfehle ich stattdessen ext4 zu verwenden, um:
 
 * So nah wie möglich an der Standard-Ubuntu-Installation bleiben
@@ -1291,7 +1291,7 @@ So wird jeder Befehl zusammen mit Zeitpunkt und ausführender Person in `/var/lo
 
 Upgrades können automatisiert werden.
 Das ist sinnvoll, sobald man eine gewisse Skalierung erreicht hat – vorausgesetzt, man hat Vertrauen in und Kontrolle über die Quelle der Updates.
-Ich persönlich führe Betriebssystem-Upgrades meist manuell durch, da ich nur wenige Systeme betreue. Der Aufwand ist dadurch gering und selten, und das Aktualisieren eines Pakets kann Tests oder manuelle Eingriffe (z.B. einen Neustart) erfordern.
+Ich persönlich führe Betriebssystem-Upgrades meist manuell durch, da ich nur wenige Systeme betreue. Der Aufwand ist dadurch gering und selten, und das Aktualisieren eines Pakets kann Tests oder manuelle Eingriffe (z. B. einen Neustart) erfordern.
 Aus ähnlichen Gründen installiere ich auch das Betriebssystem selbst von Hand.
 
 Mein Betriebssystem ist eher ein Haustier als ein Nutztier (siehe „cattle vs. pets“ im <<Glossary>>).
@@ -1316,7 +1316,7 @@ Unabhängig von deiner Wahl solltest du mit deinen Nutzern klare Erwartungen dar
 
 (((isolation)))
 Docker schafft eine gute Balance zwischen Eigenschaften und Benutzerfreundlichkeit, weshalb es einfach ist einen Deinst in Isolation zu betreiben.
-((Docker Compose)) Docker Compose erweitert Docker um die Fähigkeit, Gruppen von Prozessen zu definieren und auszuführen, die zusammen einen vollständigen Dienst bereitstellen (z.B. einen Webserver und dessen Datenbank).
+((Docker Compose)) Docker Compose erweitert Docker um die Fähigkeit, Gruppen von Prozessen zu definieren und auszuführen, die zusammen einen vollständigen Dienst bereitstellen (z. B. einen Webserver und dessen Datenbank).
 Kubernetes kann das auch – und noch viel mehr, das du _nicht_ lernen musst, solange du _kein_ virtuelles Rechenzentrum aufbauen willst.
 Für ein einzelnes Serversystem ist Docker Compose meist die passendere Wahl.
 
@@ -1342,7 +1342,7 @@ Ein Image wird einmal erstellt, mit einer eindeutigen Kennung versehen und weite
 Es dient dann als Grundlage für unzählige Container, die sich zuverlässig gleich verhalten.
 
 Images werden über eine Datei namens `Dockerfile` definiert.
-Die `Dockerfile` sollte in der Versionskontrolle (z.B. Git) verfolgt werden.
+Die `Dockerfile` sollte in der Versionskontrolle (z. B. Git) verfolgt werden.
 Da mario Docker-Compose verwendet, ist eine weitere wichtige Datei `compose.yml`.
 Jeder Dienst hat seine eigene `compose.yml` Datei, die ebenfalls unter Versionskontrolle stehen sollte.
 Für Systemadministratoren bieten diese Konventionen ((reproduzierbare)) Images und Container.
@@ -1382,15 +1382,15 @@ Wir möchten, dass ((HTTPS))-Anfragen an Port 443, die für cloud.example.com be
 Um diesen Vorgang zu verstehen, hilft es, das mitgelieferte Traefik-Architekturdiagramm zu studieren – ebenso wie die Quelltexte von mario.
 
 [#image-traefik-architecture]
-.Traefik-Architekturdiagramm, das zeigt, wie eine Anfrage einen Dienst erreicht.Aus dem MIT-lizenzierten Quellcode von Traefik. Danke an Peka für das Gopher-Logo, lizenziert unter CC-BY-3.0.
+. Traefik-Architekturdiagramm, das zeigt, wie eine Anfrage einen Dienst erreicht.Aus dem MIT-lizenzierten Quellcode von Traefik. Danke an Peka für das Gopher-Logo, lizenziert unter CC-BY-3.0.
 image::traefik-architecture.png[]
 
 (((router, Traefik)))
 In den mario-Quelltexten (oder in den später gezeigten Codeausschnitten) lohnt sich ein Blick in die compose.yml-Dateien für Traefik und Nextcloud, in denen unter anderem Folgendes enthalten ist:
 
-* Der `websecure`-((Eintrittspunkt)), über den HTTPS-Verkehr auf Port 443 empfangen wird
-* Die `app`-Service-Definition für Nextcloud, die Traefik-Routing-Labels enthält
-* Die `Host(...)`-Regel im `nc-https`-Router, mit der eingehender Verkehr basierend auf dem Hostnamen weitergeleitet wird
+* Der websecure-Eintrittspunkt, über den HTTPS-Verkehr auf Port 443 empfangen wird
+* Die App-Service-Definition für Nextcloud, die Traefik-Routing-Labels enthält
+* Die Host(…)-Regel im nc-https-Router, mit der eingehender Verkehr basierend auf dem Hostnamen weitergeleitet wird
 
 [%unbreakable]
 NOTE: Die Symbole `app`, `websecure` und `nc-https` sind willkürlich gewählt.
@@ -1400,7 +1400,7 @@ Du kannst stattdessen auch längere, beschreibendere Namen verwenden.
 Die Routing-Labels verknüpfen den Entrypoint und den Router mit dem Dienst, unter dem sie definiert sind.
 Konkret heißt das: `websecure` → `nc-https` → `app`.
 
-Die folgenden beiden Snippets aus dem mario-Quellcode zeigen, wie wir Traefik für Nextcloud einrichten.
+Die folgenden beiden Snippets aus dem Mario-Quellcode zeigen, wie wir Traefik für Nextcloud einrichten.
 
 .Traefik-Konfigurationsausschnitt (🏠 Admincomputer)
 [source#traefik-config,yaml]
@@ -1457,21 +1457,21 @@ Du wirst feststellen, dass sich manche Dienste deutlich besser fürs Self-Hostin
 Die guten Dienste weisen in der Regel zumindest einige der folgenden Merkmale auf:
 
 .Merkmale eines guten selbstgehosteten Dienst
-[#traits-of-good-services]
+[#Merkmale-guter-Dienste]
 ****
 * Einfach zu installieren, mit vorhandenen Anleitungen für das Selbst-Hosting
-* Kompatibel mit deiner bevorzugten Bereitstellungsmethode (z.B. gut gepflegtes Docker-Image, Anleitungen für Docker Compose und Traefik)
+* Kompatibel mit deiner bevorzugten Bereitstellungsmethode (z. B. gut gepflegtes Docker-Image, Anleitungen für Docker Compose und Traefik)
 * Aktive Community mit moderierten Chats, Foren, Mailinglisten, News und Meetups
-* Aktuelle Entwicklung sichtbar (z.B. neue Releases, Commits, Ankündigungen)
+* Aktuelle Entwicklung sichtbar (z. B. neue Releases, Commits, Ankündigungen)
 * Nutzung einer FOSS-Lizenz (Freie und Open-Source-Software)
 * Transparente Angaben zu Eigentümern und Sponsoren
 * Öffentliche Roadmap, Issue-Tracking, Continuous Integration, öffentliches Demo, Build-Skripte, Bug-/Security-Bounties
-* Bei Problemen lassen sich über Websuche leicht Informationen finden (z.B. bekannte Issues oder Workarounds)
+* Bei Problemen lassen sich über Websuche leicht Informationen finden (z. B. bekannte Probleme oder Problemumgehung)
 * Gut strukturierter, sauberer Code
 * Nützliche und aktuelle Dokumentation
 * Vergleicht sich offen mit ähnlichen Projekten
 * Vollständig dokumentierte, nützliche API
-* Flexibel und erweiterbar (z.B. über Plugins oder Konfigurationsoptionen)
+* Flexibel und erweiterbar (z. B. über Plugins oder Konfigurationsoptionen)
 
 ****
 
@@ -1485,7 +1485,7 @@ Deine eigene Liste kann sich davon unterscheiden – zum Beispiel, wenn du FOSS-
 Hier sind einige Hinweise darauf, dass ein selbst gehosteter Dienst möglicherweise vermieden werden sollte.
 
 .Merkmale eines schlechten selbstgehosteten Dienst
-[#traits-of-bad-services]
+[#Merkmale-schlechter-Dienste]
 ****
 * Unbeliebt, inaktiv oder schlecht gepflegt:
 ** Wenige Maintainer oder Beitragende
@@ -1499,7 +1499,7 @@ Hier sind einige Hinweise darauf, dass ein selbst gehosteter Dienst möglicherwe
 * Häufige, störende Werbung oder Kaufaufforderungen
 * Bewusste Herstellerbindung (Vendor Lock-in)
 * Abhängigkeit von geschlossenen/proprietären Standards oder Diensten
-* https://de.wikipedia.org/wiki/Open-Core-Modell[Open-Core-Modell]
+* https://en.wikipedia.org/wiki/Open-core_model[Open-Core-Modell]
 
 ****
 
@@ -1583,27 +1583,27 @@ Wenn du mit etwas zu Kleinem startest, fehlt es dir schnell an Geschwindigkeit u
 Ich habe bereits mit vielen verschiedenen Servern gearbeitet und mich für dieses Self-Hosting-Abenteuer gründlich vorbereitet. Daher hatte ich eine ziemlich klare Vorstellung davon, was ich wollte.
 Ich habe mich für etwas entschieden, das leistungsstark, günstig und schnell ist – mit viel Speicherplatz und Raum für Erweiterungen.
 Ich habe gezielt nach professioneller Standardhardware gesucht, weil sie im Fall eines Defekts leichter austauschbar ist.
-Der Server sollte mit plötzlichen Lastspitzen gut zurechtkommen, z.B. beim Bauen von Docker-Images, bei kurzfristig hoher Benutzeraktivität oder auch bei etwas generativer ((KI)) – selbst ohne GPU.
+Der Server sollte mit plötzlichen Lastspitzen gut zurechtkommen, z. B. beim Bauen von Docker-Images, bei kurzfristig hoher Benutzeraktivität oder auch bei etwas generativer ((KI)) – selbst ohne Grafikprozessor.
 
-Ich habe auf eBay einen gebrauchten, generalüberholten 1U-Rackmount-Server für etwa 1.000USD gefunden.
+Ich habe auf eBay einen gebrauchten, generalüberholten 1HE-Gehäusestapel für etwa 1.000 USD gefunden.
 Solche Geräte werden oft als „off-lease enterprise hardware“ bezeichnet – also Leasing-Rückläufer aus dem Unternehmensbereich.
-Ein 1U-Server ist ein https://de.wikipedia.org/wiki/H%C3%B6heneinheit[Höheneinheit] hoch – etwa so groß wie eine lange Pizzaschachtel.
+Ein 1HE-Server ist eine https://de.wikipedia.org/wiki/H%C3%B6heneinheit[Höheneinheit] hoch – etwa so groß wie eine lange Pizzaschachtel.
 Technologiekonzerne stoßen diese Geräte massenweise ab, sodass man oft ein gutes Angebot findet.
-Mein Server hat zwei 24-Kern-CPUs und 128GB RAM.
+Mein Server hat zwei 24-Kern-CPUs und 128 GB RAM.
 
 [#image-racked-server]
-.Selbstgebauter Rackmount-Server, an der Garagendecke montiert.Macht Spaß, ihn anzuschauen, und er ist aus dem Weg – aber für Wartungsarbeiten brauche ich eine Leiter, und er wiegt etwa 23kg.
+.Selbstgebauter Gehäusestapel-Server, an der Garagendecke montiert.Macht Spaß, ihn anzuschauen, und er ist aus dem Weg – aber für Wartungsarbeiten brauche ich eine Leiter, und er wiegt etwa 23 kg.
 image::racked-server.jpg[align="center"]
 
 Die Lüfter sind viel lauter als bei einem Desktop-PC, besonders unter Last.
 Der Server soll eigentlich eine gute Belüftung sowie Temperatur- und Feuchtigkeitsregulierung haben,
-hat sich aber bisher auch bei längeren Zeiträumen unter dem Gefrierpunkt und über 38°C als äußerst robust erwiesen.
+hat sich aber bisher auch bei längeren Zeiträumen unter dem Gefrierpunkt und über 38 °C als äußerst robust erwiesen.
 (((IPMI)))
 Er verfügt über mehrere Enterprise-Funktionen, die die Wartung erleichtern – wie redundante Netzteile, Hot-Swap-Festplatteneinschübe, zahlreiche Sensoren und Fernwartung über einen Webbrowser oder IPMI.
 
-Der durchschnittliche Stromverbrauch liegt bei 130W, also etwa 1.140kWh pro Jahr – das entspricht ungefähr 138,15$ in Seattle.
+Der durchschnittliche Stromverbrauch liegt bei 130 W, also etwa 1.140 kWh pro Jahr – das entspricht ungefähr 138,15$ in Seattle.
 Das ist in etwa so viel wie eine helle Glühlampe verbraucht, und für eine einzelne Person etwas verschwenderisch.
-Aber bei fünf Nutzer*innen? Etwa 228kWh pro Jahr und Person.
+Aber bei fünf Nutzer*innen? Etwa 228 kWh pro Jahr und Person.
 Das ist _weniger_ als der Stromverbrauch der Cloud-Server-Infrastruktur, die nötig ist, um ein einziges mobiles Gerät über Googles oder Apples Cloud-Dienste zu versorgen.
 Weitere Literatur zu diesem Thema:
 
@@ -1611,7 +1611,7 @@ Weitere Literatur zu diesem Thema:
 * https://theguardian.com/sustainable-business/2014/sep/10/energy-consumption-behind-smart-phone[The spiralling energy consumption behind your smart phone] by Betsy Reed
 * https://increment.com/energy-environment/the-secret-energy-impact-of-your-phone/[The secret energy impact of your phone] by Owen Williams
 
-Ein Rackmount-Server wie meiner kann weit mehr als fünf Nutzer*innen bedienen –
+Ein Gehäusestapel-Server wie meiner kann weit mehr als fünf Nutzer*innen bedienen –
 vorausgesetzt, sie versuchen nicht alle gleichzeitig, Videos zu transkodieren.
 
 Außerdem eignet er sich hervorragend als beheizte Sitzstange.
@@ -1641,14 +1641,14 @@ Dogfooding sorgt dafür, dass du ehrlich mit dir selbst bleibst und dich besser 
 (((ZFS, snapshots and)))
 Ich verwende Festplattenlaufwerke (Hard Disk Drives ((HDDs))) zur Datenspeicherung – hauptsächlich, um Kosten gegenüber öffentlichem Cloud-Speicher oder ((SSD))s (Solid-State-Laufwerken) zu sparen.
 Die Kosten für ((Blockspeicher)) in der Public Cloud übersteigen bei Weitem die Gigabyte-Stunden-Kosten meiner Festplattenlaufwerke.
-Ich habe den Preis für einen 5TB Blockspeicher bei AWS auf 228,10 $ pro Monat geschätzt.
+Ich habe den Preis für einen 5 TB Blockspeicher bei AWS auf 228,10 $ pro Monat geschätzt.
 Mit ZFS erstelle ich außerdem alle 15 Minuten einen Snapshot (im Grunde ein vollständiges lokales Backup).
-Der monatliche Preis für stündliche Snapshots (das nächstvergleichbare Angebot, das ich finden konnte) kostet weitere 310,68$ bei AWS.
-Das ergibt 535,67$ gesamt – also etwa so viel, wie ich für meine Festplatten ausgegeben habe.
+Der monatliche Preis für stündliche Snapshots (das nächstvergleichbare Angebot, das ich finden konnte) kostet weitere 310,68 $ bei AWS.
+Das ergibt 535,67 $ gesamt – also etwa so viel, wie ich für meine Festplatten ausgegeben habe.
 Ich hatte meine Ausgaben also nach einem Monat wieder drin – und die Festplatten sollten _jahrelang_ halten.
 
 (((RAID)))
-Zur Redundanz empfehle ich, zwei identische Festplatten im Spiegelmodus (RAID 1) zu verwenden.
+Zur Redundanz empfehle ich, zwei identische Festplatten im Spiegelmodus (RAID 1) zu verwenden.
 Das bietet nicht nur Datensicherheit bei Ausfall einer Festplatte, sondern auch bessere Leseleistung (bei den meisten Lesezugriffen).
 Beachte aber: Die nutzbare Speicherkapazität wird dabei halbiert.
 
@@ -1658,7 +1658,7 @@ Remote-Backups können länger dauern – das ist in Ordnung.
 Ich verwende eine SSD für das Betriebssystem und alles außerhalb meiner Fotos/Dokumente usw., da die Startzeit des Betriebssystems entscheidend ist und dieses beim Booten nur wenig von Dateisystem-Caching profitiert.
 
 (((data sovereignty)))
-Eine interessante Alternative zu Festplatten für bestimmte Anwendungsfälle ist Object Storage.
+Eine interessante Alternative zu Festplatten für bestimmte Anwendungsfälle ist Objektspeicher.
 Dabei handelt es sich um einen skalierbaren, cloudbasierten, unstrukturierten Key-Value-Speicher,
 den das Betriebssystem nicht direkt nutzen kann – Nextcloud allerdings schon.
 
@@ -1666,7 +1666,7 @@ Bei der Entscheidung zwischen beiden Optionen gibt es viele Faktoren zu beachten
 
 * Kosten für Speicherung und Egress (Downloads)
 * Kontrolle, Autonomie und Datenhoheit
-* Softwareunterstützung für Object Storage
+* Softwareunterstützung für Objektspeicher
 * Direkter Zugriff auf die Daten
 * Zugriffsgeschwindigkeit und -methoden
 * Netzwerkverfügbarkeit
@@ -1764,7 +1764,7 @@ Siehe <<ZFS Setup>>.
 
 (((ZFS, setting up)))
 Das Betriebssystem kümmert sich im Allgemeinen gut um sich selbst.
-Für eine robustere Datenspeicherung kannst du ein paar HDDs hinzufügen und sie mit ZFS verwalten.
+Für eine robustere Datenspeicherung kannst du ein paar HDDs hinzufügen und sie mit **ZFS** verwalten.
 
 ZFS bietet viele Funktionen und etwas zusätzliche Komplexität.
 Die Lernkurve lohnt sich.
@@ -1829,8 +1829,8 @@ zfs list
 ----
 
 Unter Ubuntu 24.04 LTS sind weitere Schritte erforderlich, damit dieses neue Dateisystem beim Serverstart automatisch eingebunden wird.
-Die folgenden Anweisungen stammen aus der Handbuchseite `zfs-mount-generator(8)` — mit einigen Korrekturen.
-Diese Befehle müssen mit `root`-Rechten ausgeführt werden.
+Die folgenden Anweisungen stammen aus der Handbuchseite zfs-mount-generator(8) — mit einigen Korrekturen.
+Diese Befehle müssen mit Root-Rechten ausgeführt werden.
 
 .ZFS mount on boot setup (🚀 server)
 [source#zfs-mount-on-boot,bash]
@@ -1900,9 +1900,9 @@ sudo apt update && sudo apt full-upgrade
 ----
 
 Dies aktualisiert die lokalen Paketinformationen und – falls erfolgreich – das Betriebssystem.
-Root-Zugriff ist erforderlich, daher `sudo`.
+Root-Zugriff ist erforderlich, daher sudo.
 Das ist relativ sicher und erfordert in der Regel wenig bis keine Interaktion außer einer Bestätigung zum Fortfahren.
-Ein Neustart kann anschließend nötig sein (z.B. bei Kernel-Updates).
+Ein Neustart kann anschließend nötig sein (z. B. bei Kernel-Updates).
 Beim Einloggen zeigt der Server an, ob ein Neustart erforderlich ist.
 
 Jeder Dienst in <<Dienste>> enthält einen Abschnitt „Wartungshinweise“ mit Update-Anleitungen.
@@ -1912,7 +1912,7 @@ Siehe <<Watchtower: Dienst-Updates>> für Details.
 ==== Überwachung
 
 Behalte die Server-Gesundheit im Blick.
-Prüfe den freien Speicherplatz mit `df -h`.
+Prüfe den freien Speicherplatz mit df -h.
 Wenn sich der Server träge anfühlt, überprüfe die PSI (Pressure Stall Information) mit:
 
 .check PSI (🚀 server)
@@ -1921,14 +1921,14 @@ Wenn sich der Server träge anfühlt, überprüfe die PSI (Pressure Stall Inform
 tail /proc/pressure/*
 ----
 
-`atop` zeigt ebenfalls PSI-Werte an.
-Wenn dein PSI-Check hohe Ressourcennutzung anzeigt, versuche `docker stats`, um die Ressourcennutzung pro Container zu sehen.
+atop zeigt ebenfalls PSI-Werte an.
+Wenn dein PSI-Check hohe Ressourcennutzung anzeigt, versuche docker stats, um die Ressourcennutzung pro Container zu sehen.
 Das sollte dir helfen, das Problem auf bestimmte Dienste einzugrenzen.
 
-Wenn du ZFS verwendest, kannst du `zpool iostat` verwenden, um Ein-/Ausgabe-Statistiken für deine Speicherpools zu sehen.
+Wenn du ZFS verwendest, kannst du zpool iostat verwenden, um Ein-/Ausgabe-Statistiken für deine Speicherpools zu sehen.
 
-Auf Host-Ebene kannst du `htop -d 100` verwenden, um Statistiken für alle Prozesse und Threads zu sehen.
-Verfolge alle protokollierten Ereignisse für den Host mit `journalctl -f`.
+Auf Host-Ebene kannst du htop -d 100 verwenden, um Statistiken für alle Prozesse und Threads zu sehen.
+Verfolge alle protokollierten Ereignisse für den Host mit journalctl -f.
 
 ==== Backups
 
@@ -1975,7 +1975,7 @@ sudo zfs destroy -R main/secure/data@$snapName
 ----
 
 <1> Das Ausführen dieses Befehls zum Erstellen eines Snapshots dauert auf meinem Server 0,040 Sekunden.
-Sobald er abgeschlossen ist, erscheint ein neuer schreibgeschützter Ordner unter `/data/.zfs/snapshot`, der den Snapshot enthält.
+Sobald er abgeschlossen ist, erscheint ein neuer schreibgeschützter Ordner unter /data/.zfs/snapshot, der den Snapshot enthält.
 
 <2> Diese Zeile setzt voraus, dass du restic installiert und konfiguriert hast.
 Es kann deinen Snapshot extern sichern – gemäß der 3-2-1-Regel.
@@ -1984,9 +1984,9 @@ Es kann deinen Snapshot extern sichern – gemäß der 3-2-1-Regel.
 
 (((Ansible)))
 ((mario)) ist ein Tool, das ich entwickelt habe, um dir beim Einrichten und Warten eines Servers zu helfen.
-Es ist im Wesentlichen ein Wrapper um das bewährte https://ansible.com[Ansible]-Systembereitstellungstool.
+Es ist im Wesentlichen ein Wrapper um das bewährte https://ansible.com[Ansible-Systembereitstellungstool].
 Alles, was ich mit mario mache, lässt sich auch manuell direkt auf dem Server erledigen.
-Der Vorteil bei der Verwendung von mario ist jedoch, dass jede Änderung (z.B. die Installation eines Pakets) konsistent und mit Prüfprotokoll durchgeführt wird.
+Der Vorteil bei der Verwendung von mario ist jedoch, dass jede Änderung (z. B. die Installation eines Pakets) konsistent und mit Prüfprotokoll durchgeführt wird.
 Der wahre Nutzen dieser Praxis zeigt sich vor allem bei der Zusammenarbeit mit anderen – einschließlich deinem zukünftigen Ich.
 Es ist oft nicht leicht, sich ein Jahr später noch zu erinnern, was man getan hat und warum.
 
@@ -2014,7 +2014,7 @@ Es werden viele Annahmen getroffen, damit es „out of the box“ funktioniert, 
 
 Die Konfigurationsdateien von mario sind deklarativ:
 Sie enthalten den Zustand, in dem sich dein Server am Ende befinden soll – nicht all die einzelnen Befehle, die du manuell ausführen würdest, um denselben Zustand zu erreichen.
-marios `provision.sh` führt Ansible aus, und Ansible führt die Befehle für dich auf dem Server aus (z.B. ein chmod auf eine Datei) – auf vorhersehbare und wiederholbare Weise.
+marios provision.sh führt Ansible aus, und Ansible führt die Befehle für dich auf dem Server aus (z. B. ein chmod auf eine Datei) – auf vorhersehbare und wiederholbare Weise.
 Der gewünschte Endzustand, wie in den Konfigurationsdateien deklariert, wird durch Ansible erreicht und bestätigt.
 
 (((idempotent)))
@@ -2035,7 +2035,7 @@ mario läuft auf deinem ((Admin-Computer)) und erwartet, direkt per SSH eine Ver
 So bringst du das zum Laufen.
 
 Weise zuerst der IP-Adresse deines Servers einen leicht zu merkenden Namen zu.
-Füge mit der IP-Adresse aus <<OS-Installation>> eine Zeile wie diese in deine Hosts-Datei ein (z.B. /etc/hosts):
+Füge mit der IP-Adresse aus <<OS-Installation>> eine Zeile wie diese in deine Hosts-Datei ein (z. B. /etc/hosts):
 
 .line to add to hosts file (🏠 Admincomputer)
 [source%unbreakable#line-for-hosts,text]
@@ -2169,7 +2169,7 @@ Gib hier eine E-Mail-Adresse an, die zu deinem DNS-API-Anbieter passt.
 Unter dieser Adresse wirst du möglicherweise von Let's Encrypt kontaktiert.
 `MARIO_DOMAIN_NAME`::
 Das ist ein Name wie `beispiel.duckdns.org` oder `beispiel.com`.
-Einzelne Dienste werden darauf basierend benannt, z.B. `jellyfin.beispiel.com`.
+Einzelne Dienste werden darauf basierend benannt, z. B. `jellyfin.beispiel.com`.
 
 Beende das Bearbeiten von `config` und führe anschließend `provision.sh` erneut aus.
 Dieser Durchlauf fragt dich nach dem Passwort, das du während der <<OS-Installation>> festgelegt hast. Bei weiteren Durchläufen ist das nicht mehr nötig.
@@ -2206,13 +2206,13 @@ Fahre direkt fort mit <<Dienste starten>>.
 (((DNS)))
 Dein Server braucht einen Namen.
 Du erhältst einen Domainnamen von einem Registrar und gibst diesen Hostnamen während der <<OS-Installation>> ein.
-Ich empfehle, einen einzigen Domainnamen zu verwenden und alle Dienste über Subdomains zu benennen (z.B. `cloud.example.com`).
+Ich empfehle, einen einzigen Domainnamen zu verwenden und alle Dienste über Subdomains zu benennen (z. B. `cloud.example.com`).
 Du kannst entweder einen kostenlosen Domainnamen verwenden oder einen bei einem Registrar kaufen.
 mario benötigt den Domainnamen, um einen DNS-Anbieter mit API zur Einrichtung der HTTPS-Verschlüsselung für den Webverkehr verwenden zu können.
 Beachte, dass sich Registrar und DNS-Anbieter unterscheiden können.
 
 Du möchtest deinen Server vielleicht auch von unterwegs per Namen erreichen können, falls du WAN-Zugriff erlaubst und/oder eine dynamische WAN-IP-Adresse hast.
-Frage bei deinem DNS-Anbieter nach, wie du entsprechende Einträge (z.B. `A`- und `CNAME`-Einträge) hinzufügen kannst.
+Frage bei deinem DNS-Anbieter nach, wie du entsprechende Einträge (z. B. `A`- und `CNAME`-Einträge) hinzufügen kannst.
 
 ==== Öffentlicher DNS
 
@@ -2228,11 +2228,11 @@ NOTE: Öffentliche DNS-Einträge setzen keinen WAN-Zugriff voraus.
 
 Wenn du einen kostenlosen Domainnamen von einem Anbieter mit API möchtest, kannst du dein Glück mit Duck DNS versuchen.
 
-. Starte auf https://duckdns.org.
+. Starte auf [https://duckdns.org](https://duckdns.org).
 . Melde dich an und füge eine Domain hinzu.
 
 Deine Domain wird etwa so heißen: `blah.duckdns.org`.
-Verwende dies anstelle von `example.com`, wo es passt – z.B. `cloud.blah.duckdns.org` anstelle von `cloud.example.com`.
+Verwende dies anstelle von `example.com`, wo es passt – z. B. `cloud.blah.duckdns.org` anstelle von `cloud.example.com`.
 
 ===== Amazon Route 53
 
@@ -2274,7 +2274,7 @@ Diese internen Namen sollten den öffentlichen Namen entsprechen und auf ausschl
 So kannst du innerhalb und außerhalb deines LAN dieselben Namen verwenden – und deine Let's-Encrypt-Zertifikate funktionieren weiterhin.
 Dein LAN-Router hat wahrscheinlich einen integrierten DNS-Server und erlaubt dir möglicherweise, IP-Adressen Namen zuzuweisen.
 
-Falls du keinen internen DNS-Server hast, kannst du weitere Hostnamen-zu-IP-Adressen-Zuordnungen anlegen – so wie bereits im Abschnitt <<SSH Setup>> gezeigt.
+Falls du keinen internen DNS-Server hast, kannst du weitere Hostnamen-zu-IP-Adressen-Zuordnungen anlegen – so wie bereits im Abschnitt <<SSH setup>> gezeigt.
 Hier ist noch einmal die `hosts`-Datei:
 
 // Das könnte auch eine einzelne Zeile mit einer IP-Adresse und mehreren Hostnamen sein.
@@ -2384,12 +2384,12 @@ rp-1 | Testing certificate renew... acmeCA=... providerName=myresolver.acme
 ^Ccanceled
 ----
 
-Wenn du eine Weile gewartet, die Seite neu geladen hast und dein Browser immer noch ungültige Zertifikatswarnungen zeigt, wenn du versuchst, `\https://traefik.example.com` zu besuchen, lies die Traefik-Logmeldungen sorgfältig durch und sieh dir auch <<Verschlüsselungszertifikate>> für Schritte zur Fehlerbehebung an.
-Sobald du das Dashboard sehen kannst, beende das Verfolgen der Traefik-Logs mit kbd:[Strg+c].
+Wenn du eine Weile gewartet, die Seite neu geladen hast und dein Browser immer noch ungültige Zertifikatswarnungen zeigt, wenn du versuchst, `https://traefik.example.com` zu besuchen, lies die Traefik-Logmeldungen sorgfältig durch und sieh dir auch <<Verschlüsselungszertifikate>> für Schritte zur Fehlerbehebung an.
+Sobald du das Dashboard sehen kannst, beende das Verfolgen der Traefik-Logs mit kbd:\[Strg+c].
 
 ==== Andere Dienste starten
 
-Das Starten eines mario-Dienstes erfolgt immer mit `dc SERVICE up -d`, genau wie wir es mit Traefik gemacht haben.
+Das Starten eines mario-Dienstes erfolgt immer mit dc SERVICE up -d, genau wie wir es mit Traefik gemacht haben.
 Um alles auf einmal hochzufahren, kannst du dieses Shell-Skript verwenden:
 
 .start all services ad-hoc Bash script (🚀 server)
@@ -2401,7 +2401,7 @@ done
 ----
 
 Dies wird auch Images abrufen und erstellen sowie Container bei Bedarf aktualisieren.
-Dienste, die nicht mit ihrer `compose.yml`-Datei übereinstimmen, werden neu gestartet.
+Dienste, die nicht mit ihrer compose.yml-Datei übereinstimmen, werden neu gestartet.
 Dies ist idempotent: Bereits laufende und aktuelle Dienste bleiben unverändert.
 
 === Verschlüsselungszertifikate
@@ -2420,7 +2420,7 @@ Dies nennt man *SSL-Termination* und wird in Traefiks `compose.yml` über Zeilen
 Schau dir einmal die `compose.yml`-Datei eines beliebigen mit mario gelieferten Dienstes an.
 Jeder Dienst hat im Router-Abschnitt eine `tls`-Sektion definiert, um HTTPS-Verschlüsselung und SSL-Terminierung zu aktivieren.
 
-Falls beim Aufruf deiner Webdienste Zertifikatswarnungen erscheinen, prüfe zuerst die Traefik-Logs wie in <<Reverse-Proxy starten>> beschrieben.
+Falls beim Aufruf deiner Webdienste Zertifikatswarnungen erscheinen, prüfe zuerst die Traefik-Logs wie in <<Start Reverse-Proxy>> beschrieben.
 Um die Protokollausgabe von Traefik zu erweitern, ändere in der `compose.yml` von Traefik den Eintrag
 `--log.level=INFO` zu `--log.level=DEBUG`, führe die Provisionierung erneut aus und starte Traefik neu.
 Falls das Problem weiterhin besteht, überprüfe, ob DNS-Abfragen erfolgreich sind, da dies die DNS-Challenge beeinflusst.
@@ -2517,7 +2517,7 @@ Dieses Kapitel behandelt, was sie bieten und wie du sie verwaltest.
 |Musik und Heimvideos streamen |<<Jellyfin: Audio- und Videostreaming>>
 |Artikel offline und ohne Ablenkung lesen |<<Wallabag: Artikel speichern und lesen>>
 |Andere Dienste auf dem neuesten Stand halten |<<Watchtower: Dienst-Updates>>
-|Programmieren mit visuellen Werkzeugen lernen |<<Scratch: visuelle Programmierung>>
+|Programmieren mit visuellen Werkzeugen lernen |<<Scratch: visual programming>>
 |===
 
 Diese speziellen Dienste sind nur ein kleiner Bruchteil derjenigen, die für das Self-Hosting verfügbar sind.
@@ -2531,7 +2531,7 @@ Wenn ich auf einen geschlossenen Bug im Issue-Tracker verweise, liegt das daran,
 Die mobile Nutzung ist bei den von mir betreuten Nutzer*innen hoch, daher war dies ebenfalls ein Auswahlkriterium.
 Nextcloud, Jellyfin und Wallabag verfügen über mobile Apps und Integrationen, die ich häufig verwende.
 
-Die serverseitigen Befehle zur Verwaltung von Diensten sind standardisiert: Sie werden das Muster `dc SERVICE ACTION ARGS` immer wieder sehen.
+Die serverseitigen Befehle zur Verwaltung von Diensten sind standardisiert: Sie werden das Muster dc: SERVICE ACTION ARGS immer wieder sehen.
 
 // this forced page break was originally just to improve the print PDF layout, but I find it doesn't hurt the screen PDF layout so I don't use an ifdef::shb-printPDF[]
 
@@ -2556,14 +2556,14 @@ Sobald Sie Nextcloud zum Laufen gebracht haben, finden Sie unter <<Mehr über Ne
 ==== Schnellstart
 
 . Provisionieren Sie mit mario von Ihrem Admin-Computer.
-. Starten Sie Nextcloud mit `dc nextcloud up -d` auf Ihrem Server.
-. Rufen Sie `\https://cloud.example.com` auf Ihrem Admin-Computer auf.
+. Starten Sie Nextcloud mit dc nextcloud up -d auf Ihrem Server.
+. Rufen Sie \https://cloud.example.com auf Ihrem Admin-Computer auf.
 . Folgen Sie der webbasierten Setup-Seite, um ein Admin-Konto zu erstellen.
 . Überspringen Sie die Installation der empfohlenen Apps.
 
 ==== MWartungshinweise
 
-Führen Sie `dc nextcloud pull && dc nextcloud up -d` auf Ihrem Server aus, um die Nextcloud-Service-Container zu aktualisieren und zu ersetzen.
+Führen Sie dc nextcloud pull && dc nextcloud up -d auf Ihrem Server aus, um die Nextcloud-Service-Container zu aktualisieren und zu ersetzen.
 
 ==== Probleme
 
@@ -2584,14 +2584,14 @@ image::jellyfin.png[align="center",scaledwidth=80%]
 ==== Schnellstart
 
 . Provisioniere mit mario vom Admin-Computer aus.
-. Starte Jellyfin mit `dc jellyfin up -d` auf dem Server.
-. Navigieren zu `\https://jellyfin.example.com` auf dem Admin-Computer.
+. Starte Jellyfin mit dc jellyfin up -d auf dem Server.
+. Navigieren zu \https://jellyfin.example.com auf dem Admin-Computer.
 . Folgen den webbasierten Einrichtungsschritten.
 
-(((Jellyfin, using a GPU with)))
-Wenn Sie über eine GPU verfügen, sollten Sie sich die https://jellyfin.org/docs/general/administration/hardware-acceleration/[Hardwarebeschleunigung ansehen].
+(((Jellyfin, using a Grafikprozessor with)))
+Wenn Sie über eine Grafikprozessor verfügen, sollten Sie sich die Hardwarebeschleunigung ansehen.
 Diese ist nützlich, wenn Videos nicht direkt von einem Client abgespielt werden können und daher on the fly transkodiert werden müssen.
-Jellyfin kann zwar auch nur mit der CPU transkodieren, mit einer GPU geht es jedoch deutlich schneller.
+Jellyfin kann zwar auch nur mit der Hauptprozessor transkodieren, mit einer Grafikprozessor geht es jedoch deutlich schneller.
 
 [%unbreakable]
 TIP: Jellyfin kann auch bestimmte CPUs mit integrierter Hardware-Transkodierung nutzen,
@@ -2599,7 +2599,7 @@ zum Beispiel Intel Quick Sync Video.
 
 ==== Wartungshinweise
 
-Führen Sie `dc jellyfin pull && dc jellyfin up -d` auf Ihrem Server aus, um den Jellyfin-Dienstcontainer zu aktualisieren und zu ersetzen.
+Führen Sie dc jellyfin pull && dc jellyfin up -d auf Ihrem Server aus, um den Jellyfin-Dienstcontainer zu aktualisieren und zu ersetzen.
 
 ==== Probleme
 
@@ -2613,13 +2613,13 @@ https://features.jellyfin.org/posts/173/share-playlists[Ich mag die Möglichkeit
 ===== Funktion: Clips
 
 Ich möchte oft einen bestimmten Teil eines Mediums teilen, anhören oder erneut ansehen.
-Es wäre großartig, wenn man https://features.jellyfin.org/posts/1036/bookmark-audio-video-segments[Clips] erstellen könnte, ohne tatsächlich neue Mediendateien erstellen zu müssen.
+Es wäre großartig, wenn man [https://features.jellyfin.org/posts/1036/bookmark-audio-video-segments\[Clips](https://features.jellyfin.org/posts/1036/bookmark-audio-video-segments[Clips) erstellen] könnte, ohne tatsächlich neue Mediendateien erstellen zu müssen.
 
 ===== Funktion: Offline Medien mobil schauen
 
 Ich möchte eine Jellyfin-Mobile-App, die Medien automatisch zwischenspeichert und https://features.jellyfin.org/posts/218/support-offline-mode-on-android-mobile[Offline-Wiedergabe ermöglicht].
 
-Workaround: Es gibt zwei separate Mobile-Apps, die Medien für die Offline-Wiedergabe herunterladen und zwischenspeichern können https://github.com/jmshrv/finamp[Finamp] für Musik und https://github.com/jarnedemeulemeester/findroid[Findroid] für Videos
+Workaround: Es gibt zwei separate Mobile-Apps, die Medien für die Offline-Wiedergabe herunterladen und zwischenspeichern können https://github.com/jmshrv/finamp\[Finamp] für Musik und https://github.com/jarnedemeulemeester/findroid\[Findroid]für Videos
 
 ==== Jellyfin-Medien mit Nextcloud verwalten
 
@@ -2628,19 +2628,19 @@ Du kannst diese Tatsache nutzen, um ihre individuellen Stärken als Dienste zu k
 mario erstellt spezielle Musik- und Videoordner auf dem Server und stellt sie beiden Diensten zur Verfügung.
 Nextclouds „External Storages“ ermöglicht es dir, Dateien in diese Ordner hochzuladen, und Jellyfin wird die hochgeladenen Dateien automatisch erkennen und das Streamen ermöglichen.
 
-Nextclouds `compose.yml`-Datei hat den Eintrag `/data/shared/media/video:/data/video:rw` in volumes.
-`/data/shared/media/video` ist der Pfad auf dem Server, der die eigentlichen Videodateien enthält, `/data/video` ist der Ort, an dem sie im Container erscheinen, und `rw` bedeutet, dass Nextcloud Lese- und Schreibzugriff auf dieses Volume hat.
+Nextclouds compose.yml-Datei hat den Eintrag /data/shared/media/video:/data/video:rw in volumes.
+/data/shared/media/video ist der Pfad auf dem Server, der die eigentlichen Videodateien enthält, /data/video ist der Ort, an dem sie im Container erscheinen, und rw bedeutet, dass Nextcloud Lese- und Schreibzugriff auf dieses Volume hat.
 Es gibt einen weiteren ähnlichen Ordner für Musikdateien.
 Siehe <<Detailed setup>>, um zu erfahren, wie man sie in Nextcloud als „External Storages“ hinzufügt.
 
-In Jellyfins `compose.yml`-Datei findest du ähnliche Zeilen zum Hinzufügen von Musik- und Video-Volumes, aber mit `ro` (für Read-Only) statt `rw`.
+In Jellyfins compose.yml-Datei findest du ähnliche Zeilen zum Hinzufügen von Musik- und Video-Volumes, aber mit ro (für Read-Only) statt rw.
 Jellyfin benötigt nur Lesezugriff auf die Ordner, um die darin enthaltenen Dateien streamen zu können.
 
 Um die von Nextcloud verwalteten Mediendateien in Jellyfin anzuzeigen, füge zwei Medienbibliotheken hinzu:
 
-Wähle den Inhaltstyp „Movies“, klicke auf das „+“-Symbol neben „Folders“ und wähle `/data/video`.
+Wähle den Inhaltstyp „Movies“, klicke auf das „+“-Symbol neben „Folders“ und wähle /data/video.
 
-Wähle den Inhaltstyp „Music“, klicke auf das „+“-Symbol neben „Folders“ und wähle `/data/music`.
+Wähle den Inhaltstyp „Music“, klicke auf das „+“-Symbol neben „Folders“ und wähle /data/music.
 
 <<<
 
@@ -2656,14 +2656,14 @@ image::wallabag.png[align="center",scaledwidth=80%]
 ==== Schnellstart
 
 . Mit mario von deinem Admincomputer bereitstellen.
-. Starte Wallabag mit `dc wallabag up -d` auf deinem Server.
-. Gehe auf `\https://wallabag.example.com` auf deinem Admincomputer.
-. Melde dich als Benutzer `wallabag` mit dem Passwort `wallabag` an.
-. Aktualisiere das Passwort für den Benutzer `wallabag`.
+. Starte Wallabag mit dc wallabag up -d auf deinem Server.
+. Gehe auf \https://wallabag.example.com auf deinem Admincomputer.
+. Melde dich als Benutzer wallabag mit dem Passwort wallabag an.
+. Aktualisiere das Passwort für den Benutzer wallabag.
 
 ==== Wartungshinweise
 
-Führe auf deinem Server `dc wallabag pull && dc wallabag up -d` aus, um die Wallabag-Dienstcontainer zu aktualisieren und zu ersetzen.
+Führe auf deinem Server dc wallabag pull && dc wallabag up -d aus, um die Wallabag-Dienstcontainer zu aktualisieren und zu ersetzen.
 Wenn Probleme auftreten, versuche, Datenbank-Upgrades manuell anzuwenden (siehe <<Bug: Upgrades machen alles kaputt>>).
 
 ==== Probleme
@@ -2685,12 +2685,12 @@ dc wallabag exec app /var/www/wallabag/bin/console \
   doctrine:migrations:migrate --env=prod --no-interaction
 ----
 
-Der Befehl `exec` bedeutet, dass wir etwas in einem Container ausführen wollen.
-Dies führt das Dienstprogramm `console` im `app`-Service-Container aus.
-Die zweite Zeile gibt an, dass notwendige Datenbankmigrationen (Schema- und Datenaktualisierungen) mit den `prod`-Einstellungen ohne interaktive Eingabeaufforderungen ausgeführt werden sollen.
+Der Befehl exec bedeutet, dass wir etwas in einem Container ausführen wollen.
+Dies führt das Dienstprogramm console im app-Service-Container aus.
+Die zweite Zeile gibt an, dass notwendige Datenbankmigrationen (Schema- und Datenaktualisierungen) mit den prod-Einstellungen ohne interaktive Eingabeaufforderungen ausgeführt werden sollen.
 
 Dies ist idempotent, wie Datenbankmigrationen sein sollten.
-Nach dem ersten Durchlauf geben nachfolgende Durchläufe aus: `[OK] Already at the latest version`.
+Nach dem ersten Durchlauf geben nachfolgende Durchläufe aus: [OK] Already at the latest version.
 
 Es ist unklar, warum diese Migration nicht automatisch während eines Upgrades durchgeführt wird.
 Vielleicht ist sie nur in speziellen Fällen notwendig – ich musste sie in den letzten Jahren nur zweimal ausführen.
@@ -2717,7 +2717,7 @@ Es erkennt und überprüft veraltete Container, lädt neue Images herunter und s
 image::watchtower.png[align="center",scaledwidth=40%]
 
 Wenn du niemals möchtest, dass Container automatisch aktualisiert werden, führe Watchtower nicht aus.
-Oder verwende die https://containrrr.dev/watchtower/arguments/[Konfigurationseinstellungen], um automatische Updates für bestimmte Container zu erlauben oder zu blockieren.
+Oder verwende die Konfigurationseinstellungen, um automatische Updates für bestimmte Container zu erlauben oder zu blockieren.
 mario verwendet zum Beispiel ein Container-Label, um zu verhindern, dass Watchtower Scratch aktualisiert.
 
 ==== Schnellstart
@@ -2730,7 +2730,7 @@ You can forget about it until it breaks (or breaks something else).
 
 ==== Wartungshinweise
 
-Führe auf deinem Server `dc watchtower pull && dc watchtower up -d` aus, um den Watchtower-Service-Container zu aktualisieren und zu ersetzen.
+Führe auf deinem Server dc watchtower pull && dc watchtower up -d aus, um den Watchtower-Service-Container zu aktualisieren und zu ersetzen.
 
 ==== Probleme
 
@@ -2740,7 +2740,7 @@ Ein Dienst könnte zum Beispiel nur unidirektionale Datenbankmigrationen haben.
 Ich denke, die Watchtower-Maintainer haben die richtige Entscheidung getroffen, automatische Rollbacks wegzulassen (wahrscheinlich, um Watchtower einfach zu halten).
 
 Es kann passieren, dass ein Dienst durch Watchtower beschädigt wird.
-Wenn du den Verdacht hast und weißt, wann der Dienst kaputtging, versuche dies mit den Upgrades in `dc watchtower logs` zu korrelieren.
+Wenn du den Verdacht hast und weißt, wann der Dienst kaputtging, versuche dies mit den Upgrades in dc watchtower logs zu korrelieren.
 Ich vermeide das, indem ich Watchtower nur für nicht-kritische Dienste nutze.
 Zum Beispiel lasse ich Watchtower meinen Nextcloud-Dienst nicht automatisch upgraden.
 
@@ -2771,75 +2771,74 @@ Scratch benötigt keine persistenten Daten, keine Einrichtung und keine Authenti
 ==== Wartungshinweise
 
 Scratch verwendet ein benutzerdefiniertes Docker-Image, daher ist der Upgrade-Prozess deutlich komplexer als bei anderen Diensten.
-Öffne zunächst das Scratch-`custom/Dockerfile` auf deinem Admincomputer.
-Dieses `Dockerfile` befindet sich in einem Unterordner von `mario/ansible` im mario-Quellcode.
+Öffne zunächst das Scratch-custom/Dockerfile auf deinem Admincomputer.
+Dieses Dockerfile befindet sich in einem Unterordner von mario/ansible im mario-Quellcode.
 
-Wenn du das Image auf einer neueren Version von Node.js basieren lassen willst, besuche die https://hub.docker.com/_/node[Node.js-Seite auf Docker Hub] und wähle eine Version für die `FROM`-Zeile im `Dockerfile`.
-Wenn du Scratch aktualisieren möchtest, besuche die https://github.com/scratchfoundation/scratch-gui/releases[Releases-Seite] und wähle eine Version für `SCRATCH_VERSION` im `Dockerfile`.
+Wenn du das Image auf einer neueren Version von Node.js basieren lassen willst, besuche die https://hub.docker.com/_/node[Node.js-Seite auf Docker Hub] und wähle eine Version für die FROM-Zeile im Dockerfile.
+Wenn du Scratch aktualisieren möchtest, besuche die https://github.com/scratchfoundation/scratch-gui/releases[Releases-Seite] und wähle eine Version für SCRATCH_VERSION im Dockerfile.
 
-Führe `provision.sh` erneut auf dem Admincomputer aus.
-Baue das Image auf dem Server mit `dc scratch build --pull` neu.
-Schließlich ersetze den Scratch-Dienstcontainer, indem du `dc scratch up -d` auf dem Server ausführst.
+Führe provision.sh erneut auf dem Admincomputer aus.
+Baue das Image auf dem Server mit dc scratch build --pull neu.
+Schließlich ersetze den Scratch-Dienstcontainer, indem du dc scratch up -d auf dem Server ausführst.
 
-// FIXME: when "What's next?" is translated here, the reference <<_whats_next>> elsewhere in the book must also be updated.
+== Wie geht’s weiter?
 
-== What's next?
+An diesem Punkt gehe ich davon aus, dass dein Server läuft und bereits einige Dienste eingerichtet sind.
+Hier findest du ein paar Ideen, was du als Nächstes ausprobieren kannst.
 
-By this point, I'm assuming you've got your server running and some services too.
-Here's where you can find a handful of ideas for what to try next.
+=== Mehr erfahren
 
-=== Learn more
+Wenn dir dieses Buch gefällt und du mehr lernen und ausprobieren willst – mach es.
+Reite die Welle der Inspiration.
+Suche sowohl nach Breite als auch nach Tiefe.
 
-If you like this book, and you want to learn and do more, do it.
-Ride that wave of inspiration.
-Seek both breadth and depth.
+Für die Breite solltest du nach einem umfassenden Buch über Linux Ausschau halten, denn mario setzt Linux voraus, und ein besseres Verständnis von Linux hilft dir, deinen Server mit mehr Sicherheit anzupassen.
+Es gibt keine spezifischen Abhängigkeiten von Ubuntu, aber Ubuntu ist die einzige Linux-Variante, mit der mario zum Zeitpunkt des Schreibens ausführlich getestet wurde.
 
-For breadth, look for a comprehensive book about Linux since mario expects Linux, and a better understanding of Linux can help you customize your server with confidence.
-There aren't any Ubuntu-specific dependencies, but Ubuntu is the only Linux flavor mario has been extensively tested on at the time of writing.
-One of my first purchases when I wanted to just finally „get“ Linux was _UNIX: The Complete Reference_, a thousand-page monster covering many, many concepts.
-I studied it in chunks, referred to it often, and never read it cover to cover.
-If I started learning again from scratch today, I'd still have a book like that handy while studying online resources and trying stuff at home.
+Eines meiner ersten Käufe, als ich Linux endlich „verstehen“ wollte, war _UNIX: The Complete Reference, ein tausendseitiges Monstrum, das viele, viele Konzepte abdeckt.
+Ich habe es in Abschnitten durchgearbeitet, oft als Nachschlagewerk benutzt, und niemals von vorne bis hinten gelesen.
+Wenn ich heute noch einmal von Grund auf lernen würde, hätte ich immer noch ein solches Buch zur Hand – zusätzlich zu Online-Ressourcen und Experimenten zu Hause.
 
-For depth, immerse yourself in fundamentals.
-Learn how a computer works.
-Push past abstractions and make progress towards first principles.
-Take a computer science class in an area supporting something else you want to do.
-For example, if you want to code your own web services, take a class in programming for the web.
-If you want to understand how Quellcode makes a computer do things, take a class in compilers.
+Für tieferes Wissen, tauche in die Grundlagen ein.
+Lerne, wie ein Computer funktioniert.
+Gehe über Abstraktionen hinaus und arbeite dich Schritt für Schritt zu den ersten Prinzipien vor.
+Besuche eine Informatik-Vorlesung in einem Bereich, der etwas unterstützt, das du ohnehin tun möchtest.
+Wenn du z. B. deine eigenen Webdienste programmieren willst, nimm an einer Veranstaltung zur Webprogrammierung teil.
+Wenn du verstehen möchtest, wie Quellcode den Computer dazu bringt, Dinge zu tun, belege eine Vorlesung über Compiler.
 
-Work through this book in a class or small group.
-See <<Discussion topics>> and <<Übungen>>.
+Arbeite dieses Buch in einem Kurs oder einer kleinen Lerngruppe durch.
+Siehe <<Diskussionsthemen>> und <<Übungen>>.
 
-Participate in ((FOSS)) communities to learn from and share with others.
-Pass on what you've learned.
-File a bug.
-Post in a forum.
-It's fun!
+Beteilige dich an ((FOSS))-Gemeinschaften, um von anderen zu lernen und Wissen weiterzugeben.
+Gib das Gelernte weiter.
+Melde einen Bug.
+Schreibe in einem Forum.
+Es macht Spaß!
 
 (((SeaGL)))
-Conferences like https://seagl.org[SeaGL] bring together bright minds on many topics, including self-hosting.
-If you've done something cool, share it!
+Konferenzen wie https://seagl.org[SeaGL] bringen kluge Köpfe zu vielen Themen zusammen, auch zum Thema Self-Hosting.
+Wenn du etwas Cooles gemacht hast, teile es!
 
-=== Use a GPU
+=== Nutze einen Grafikprozessor
 
-(((GPU)))
-A GPU offers more efficient video transcoding with Jellyfin, reducing server CPU usage and speeding up remote video streaming.
+(((Grafikprozessor)))
+Ein Grafikprozessor ermöglicht effizienteres Videotranscoding mit Jellyfin, reduziert die Hauptprozessor-Auslastung des Servers und beschleunigt das Videostreaming über das Internet.
 
-A FOSS voice assistant would benefit from a GPU.
+Auch ein FOSS-Sprachassistent würde von einem Grafikprozessor profitieren.
 
-A GPU could also speed up video transcoding and facial recognition.
+Eine Grafikprozessor kann außerdem Videotranscoding und Gesichtserkennung beschleunigen.
 
-Modern generative AI workloads like large language model chat and image generation are much faster with a GPU.
+Moderne generative KI-Workloads wie Chat mit großen Sprachmodellen oder Bildgenerierung laufen mit einem Grafikprozessor deutlich schneller.
 
-=== AI
+=== KI
 
 (((AI)))
-AI is once again the latest hotness.
-You can run your own image generators and LLMs (large-language models) at home.
-No GPU is required.
-Here's a `compose.yml` that'll work with mario to stand up https://localai.io[LocalAI].
+KI ist mal wieder der letzte Schrei.
+Man kann seine eigenen Bildgeneratoren und LLMs (Large Language Models) zu Hause laufen lassen.
+Dafür ist keine Grafikprozessor nötig.
+Hier ist ein compose.yml, das mit mario funktioniert, um https://localai.io[LocalAI] zu nutzen.
 
-.example LocalAI service config
+.Beispiel der LocalAI Dienst Konfiguration
 [source#example-localai-svc,yaml]
 ----
 version: '3.6'
@@ -2866,8 +2865,9 @@ networks:
     external: true
 ----
 
-Note the middleware to only allow traffic from your LAN.
-This assumes your LAN uses 192.168.1.* addresses, and expects a corresponding label on the Traefik container to set up the ((middleware)), for example:
+Beachte das Middleware-Setup, um nur Traffic aus deinem LAN zuzulassen.
+Dabei wird angenommen, dass dein LAN Adressen im Bereich 192.168.1.* nutzt.
+Außerdem wird ein entsprechendes Label am Traefik-Container erwartet, um die ((Middleware)) einzurichten, zum Beispiel:
 
 .label from Traefik configuration allowing only LAN access
 [source#lan-only-traefik-conf-line,yaml]
@@ -2875,25 +2875,25 @@ This assumes your LAN uses 192.168.1.* addresses, and expects a corresponding la
 "traefik.http.middlewares.lan-only.ipallowlist.sourcerange=192.168.1.0/24"
 ----
 
-TIP: Use mario to provision your LocalAI service.
+TIP: Nutze mario um deinen LocalAI Dienst bereitzustellen.
 
-See the https://localai.io[LocalAI documentation] for further setup help.
-Once you get that running, you can use the https://apps.nextcloud.com/apps/integration_openai[Nextcloud AI integration app] as a convenient frontend.
+Siehe die https://localai.io[LocalAI-Dokumentation] für weitere Hilfe beim Einrichten.
+Sobald das läuft, kannst du die https://apps.nextcloud.com/apps/integration_openai[Nextcloud-AI-Integrations-App] als praktisches Frontend nutzen.
 
 === Pi-hole
 
 (((Pi-hole)))
 (((DNS)))
-Running a https://pi-hole.net[Pi-hole] service in your LAN helps block advertisements, trackers, and bad actors using DNS block lists.
+Ein https://pi-hole.net[Pi-hole]-Dienst im LAN hilft, Werbung, Tracker und bösartige Akteure mithilfe von DNS-Blocklisten zu blockieren.
 
-Clients (laptops, phones, etc) on your network use the Pi-hole as their DNS server, generally as part of DHCP (Dynamic Host Configuration Protocol) auto-configuration by your router or Pi-hole itself (if you use Pi-hole as your DHCP server).
+Clients (Laptops, Handys usw.) im Netzwerk verwenden den Pi-hole als ihren DNS-Server, meist über die automatische DHCP- (Dynamic Host Configuration Protocol) Konfiguration durch den Router oder durch Pi-hole selbst (falls Pi-hole als DHCP-Server genutzt wird).
 
-The Pi-hole translates domain names to IP addresses.
-If a domain name is on a block list, it returns a false IP address such as 0.0.0.0.
+Der Pi-hole übersetzt Domainnamen in IP-Adressen.
+Wenn ein Domainname auf einer Blockliste steht, liefert er eine falsche IP-Adresse wie 0.0.0.0 zurück.
 
-The technique is imperfect, yet simple and effective.
+Die Technik ist nicht perfekt, aber einfach und wirkungsvoll.
 
-My Pi-hole server sits between my router's DNS server and all clients.
+Mein Pi-hole-Server sitzt zwischen dem DNS-Server meines Routers und allen Clients.
 
 ifdef::backend-html5,backend-pdf[]
 [#image-DNS-traffic-diagram]
@@ -2906,35 +2906,38 @@ ifdef::backend-epub3[]
 image::DNS-traffic-diagram.png[,571,651,align="center"]
 endif::[]
 
-Queries for domain names not on any block list will be answered directly or sent upstream.
-I set up my Pi-hole to pass queries on to my home router, which will then query a DNS server outside my LAN as necessary.
+Abfragen für Domainnamen, die auf keiner Blockliste stehen, werden direkt beantwortet oder nach „oben“ weitergeleitet.
+Ich habe meinen Pi-hole so eingerichtet, dass er Anfragen an meinen Heimrouter weitergibt, der seinerseits bei Bedarf einen DNS-Server außerhalb meines LAN befragt.
 
-It's easy to block individual domain names or entire lists as you see fit.
-I've used this as an „impulse blocker“, helping the kids avoid distractions during remote school.
+Es ist einfach, einzelne Domainnamen oder ganze Listen nach Bedarf zu blockieren.
+Ich habe das als eine Art „Impuls-Blocker“ genutzt, um den Kindern während des Fernunterrichts Ablenkungen zu ersparen.
 
-The Pi-Hole also has a list of local DNS entries.
-I add a few domain names to this list for servers inside my LAN.
+Der Pi-hole verwaltet außerdem eine Liste lokaler DNS-Einträge.
+Ich füge dort ein paar Domainnamen für Server innerhalb meines LAN hinzu.
 
-Note that some clients will by default bypass an auto-configured DNS server such as Pi-hole.
-For example, https://support.mozilla.org/kb/firefox-dns-over-https[DNS over HTTPS in Firefox].
+Beachte, dass manche Clients standardmäßig einen automatisch konfigurierten DNS-Server wie Pi-hole umgehen.
+Ein Beispiel ist https://support.mozilla.org/kb/firefox-dns-over-https[DNS anstatt HTTPS in Firefox].
 
-=== Single sign-on
+=== Einmalanmeldung
 
 (((Single sign-on)))
-It would be convenient for users to be able to log in once to get access to all self-hosted services using a common, consistent, and well-designed mechanism (single sign-on), and for sysadmins to be able to manage all users and groups in one place (centralized identity management).
+Es wäre für Benutzer sehr praktisch, sich nur einmal einloggen zu müssen, um Zugriff auf alle selbstgehosteten Dienste über einen gemeinsamen, konsistenten und gut gestalteten Mechanismus zu erhalten (Single Sign-On).
+Für Systemadministratoren wäre es ebenso hilfreich, alle Benutzer und Gruppen zentral an einer Stelle verwalten zu können (zentrale Identitätsverwaltung).
 
-https://goauthentik.io[Authentik] is one service providing this, and appears to have all the features I want (single sign-on, backend user database, integrates with everything I self-host).
-I want to try it out and see it running well for a good while before adding it to mario.
-Some of the other self-hosting solutions mentioned in <<Alternativen zu mario>> do include FOSS central identity management.
+https://goauthentik.io[Authentik] ist ein Dienst, der dies bereitstellt und offenbar alle gewünschten Funktionen bietet (Einmalanmeldung, eigene Benutzerdatenbank, Integration mit allen meinen selbstgehosteten Diensten).
+Ich möchte ihn ausprobieren und über eine Weile stabil laufen sehen, bevor ich ihn in mario aufnehme.
 
-=== Enforce SSH public key auth
+Einige der anderen in <<Alternativen zu mario>> erwähnten Self-Hosting-Lösungen beinhalten bereits FOSS-Lösungen für zentrale Identitätsverwaltung.
 
-Some sysadmins choose to require public key authentication for ((SSH)) logins.
-I think https://security.stackexchange.com/q/3887[it's a good idea] but I didn't want to force it on you so I didn't include it in mario.
-I'm using this as an opportunity to demonstrate how to extend mario.
-Add this Ansible task to `roles/base/tasks/main.yml`:
+=== Erzwinge SSH-Authentifizierung mit öffentlichem Schlüssel
 
-.enforce SSH public key auth (🏠 Admincomputer)
+Manche Systemadministratoren entscheiden sich dafür, für ((SSH))-Logins ausschließlich die Authentifizierung mit öffentlichen Schlüsseln zuzulassen.
+Ich denke, https://security.stackexchange.com/q/3887[dass das eine gute Idee ist], wollte es dir aber nicht aufzwingen und habe es deshalb nicht in mario integriert.
+
+Ich nutze dies hier als Gelegenheit, dir zu zeigen, wie man mario erweitert.
+Füge diese Ansible-Task zu roles/base/tasks/main.yml hinzu:
+
+.erzwinge SSH-Authentifizierung mit öffentlichem Schlüssel (🏠 Admincomputer)
 [source#enforce-ssh-pubkey-auth,yaml]
 ----
 # This does not affect logging in from a console (e.g. directly connected
@@ -2950,7 +2953,7 @@ Add this Ansible task to `roles/base/tasks/main.yml`:
     - restart sshd
 ----
 
-Add this to `roles/base/handlers/main.yml`:
+Füge dies zu `roles/base/handlers/main.yml` hinzu:
 
 .Ansible handler to restart SSH (🏠 Admincomputer)
 [source%unbreakable#ansible-ssh-restarter,yaml]
@@ -2961,7 +2964,7 @@ Add this to `roles/base/handlers/main.yml`:
     state: restarted
 ----
 
-Create `roles/base/files/pka-only.conf` with:
+Erschaffe `roles/base/files/pka-only.conf` mit:
 
 .SSH server config lines (🏠 Admincomputer)
 [source%unbreakable#ssh-server-config,text]
@@ -2970,88 +2973,89 @@ PasswordAuthentication no
 AuthenticationMethods publickey
 ----
 
-Finally, re-run `provision.sh`.
-From now on, your server will require public key authentication for SSH logins.
+Führe abschließend `provision.sh` erneut aus.
+Ab jetzt erfordert dein Server für SSH-Logins die Authentifizierung per öffentlichem Schlüssel
 
-=== Allow WAN access
+=== Erlaube Wan-Zugriff
 
-mario blocks ((WAN access)) by default.
-Read <<Digitale Sicherheit>> to decide if you want this or not.
-You may remove this protection by removing the `lan-only` ((middleware)) from the corresponding router's Traefik label.
-For example, to allow WAN access to Nextcloud, make this change in Nextcloud's `compose.yml`:
+mario blockiert ((Wan-Zugriff)) automatisch.
+Lese <<Digitale Sicherheit>> und entscheide, ob du diese Funktion möchtest oder nicht.
+Du kannst diesen Schutz entfernen, indem du das `lan-only` ((middleware)) aus dem entsprechenden Traefik-Label des Routers entfernst.
+Um zum Beispiel WAN-Zugriff auf Nextcloud zu ermöglichen, nimm diese Änderung in der `compose.yml` von Nextcloud vor:
 
-.patch for WAN access to Nextcloud (🏠 Admincomputer)
+.patch for Wan-Zugriff to Nextcloud (🏠 Admincomputer)
 [source%unbreakable#open-wan-access,diff]
 ----
 - traefik.http.routers.nc-https.middlewares=nc-head,nc-redir,lan-only
 + traefik.http.routers.nc-https.middlewares=nc-head,nc-redir
 ----
 
-Similarly for Jellyfin, you may delete the whole line referencing the `lan-only` ((middleware)) in Jellyfin's `compose.yml` if you decide to expose that service on your WAN.
+Bei Jellyfin kannst du ebenfalls die gesamte Zeile mit dem Verweis auf das `lan-only` ((middleware)) in der `compose.yml` von Jellyfin löschen, wenn du diesen Dienst in deinem WAN verfügbar machen möchtest.
 
-=== Mehr über Nextcloud
+=== Mehr zu Nextcloud
 
-Nextcloud is a key part of my self-hosting setup.
-I wanted to include a lot of additional details without cluttering up <<Dienste>>, so you'll find these extra sections here.
+Nextcloud ist ein zentraler Bestandteil meines Self-Hosting-Setups.
+Ich wollte viele zusätzliche Details einfügen, ohne <<Services>> zu überladen, daher findest du diese zusätzlichen Abschnitte hier.
 
-==== Basic install
+==== Grundinstallierung
 
 (((Nextcloud, installing)))
-A basic (default, un-customized) Nextcloud install provides remote file storage, organization, and sharing.
-It keeps track of actual files and folders stored somewhere (local, remote, cloud, wherever) and tracks additional metadata about those files and folders in a database.
-You access it via a web browser and there is a desktop client to sync files locally, similar to Dropbox, Google Drive, and OneDrive.
+Eine grundlegende (Standard-, nicht angepasste) Nextcloud-Installation bietet Fernspeicherung, -Organisation und -Freigabe von Dateien.
+Sie verwaltet die tatsächlichen Dateien und Ordner, die irgendwo gespeichert sind (lokal, remote, in der Cloud, wo auch immer), und verfolgt zusätzliche Metadaten über diese Dateien und Ordner in einer Datenbank.
+Du greifst über einen Webbrowser darauf zu, und es gibt einen Desktop-Client, um Dateien lokal zu synchronisieren – ähnlich wie bei Dropbox, Google Drive und OneDrive.
 
-I've come to _really_ trust file sync with the Nextcloud desktop app.
-If I see a check mark on my desktop app, I know everything is properly synchronized with the server.
-I am constantly creating and editing content locally and counting on sync to work (usually on my desktop computer), or creating and editing directly in Nextcloud via the web UI.
+Ich habe angefangen, der Dateisynchronisation mit der Nextcloud-Desktop-App wirklich zu vertrauen.
+Wenn ich ein Häkchen in meiner Desktop-App sehe, weiß ich, dass alles ordnungsgemäß mit dem Server synchronisiert ist.
+Ich erstelle und bearbeite ständig Inhalte lokal und verlasse mich darauf, dass die Synchronisierung funktioniert (normalerweise auf meinem Desktop-Computer) oder erstelle und bearbeite Inhalte direkt in Nextcloud über die Web-Oberfläche.
 
-There are also apps for mobile devices.
-I'll come back to mobile later in the following sections.
+Es gibt auch Apps für mobile Geräte.
+Darauf komme ich in den folgenden Abschnitten noch einmal zurück.
 
-==== Object storage
+==== Objektspeicher
 
-Nextcloud is able to use ((object storage)) for primary data storage.
-This is an advanced topic left as an exercise to the reader.
-I'll assume primary storage on a local HDD set up by mario.
+Nextcloud kann ((Objektspeicher)) für die primäre Datenspeicherung verwenden.
+Dies ist ein fortgeschrittenes Thema, das als Übung für den Leser gedacht ist.
+Ich gehe von einer primären Speicherung auf einer lokalen Festplatte aus, die von mario eingerichtet wurde.
 
-==== Security
+==== Sicherheit
 
 (((Nextcloud, security and)))
-A basic Nextcloud install appears to have excellent security.
-The Quelle is in heavy use and is backed by a solid company with a reputation that depends on their commitment to security.
-They make it easy to lock down and vet (it is FOSS after all).
-The defaults appear secure.
-They follow best practices.
-They have a public bounty program and threat model.
+Eine grundlegende Nextcloud-Installation scheint über eine hervorragende Sicherheit zu verfügen.
+Der Quellcode wird intensiv genutzt und wird von einem soliden Unternehmen unterstützt, dessen Ruf von seinem Engagement für Sicherheit abhängt.
+Sie machen es einfach, alles abzusichern und zu überprüfen (es ist schließlich FOSS).
+Die Standardeinstellungen scheinen sicher zu sein.
+Sie befolgen Best Practices.
+Sie haben ein öffentliches Bug-Bounty-Programm und ein Bedrohungsmodell.
 
-==== Detailed setup
+==== Detaillierte Einrichtung
 
-To confirm reproducibility of your Nextcloud server, destroy and re-create it (before you use it for real).
-After you get it working once, stop it with `dc nextcloud down`.
-Destroy all persistent data with `sudo rm -rf /data/nextcloud`.
-That _really_ deletes everything.
-Re-provision with mario (run `provision.sh` again).
-Follow the setup steps again, see <<nextcloud_quick_start>>.
+Um die Reproduzierbarkeit deines Nextcloud-Servers zu bestätigen, zerstöre ihn und erstelle ihn erneut (bevor du ihn wirklich verwendest).
+Nachdem du ihn einmal zum Laufen gebracht hast, stoppe ihn mit `dc nextcloud down`.
+Zerstöre alle persistenten Daten mit `sudo rm -rf /data/nextcloud`.
+Das löscht wirklich alles.
+Stelle mit mario neu bereit (führe `provision.sh` erneut aus).
+Folge erneut den Einrichtungsschritten, siehe <<nextcloud_quick_start>>.
 
-Read the official docs at `/settings/help` or https://docs.nextcloud.com.
+Lese das offizielle Docs unter `/settings/help` oder https://docs.nextcloud.com.
 
-Add apps at `/settings/apps`.
-See <<Customization>> for tips on how to roll out apps thoughtfully and which ones are worth your time.
+Füge Apps unter `/settings/apps` hinzu.
+Siehe <<Customization>> für Tipps, wie man Apps sinnvoll einführt und welche sich lohnen.
 
-Test configuring a mail server and sending an email at `/settings/admin` (Basic settings).
+Teste die Konfiguration eines Mailservers und das Versenden einer E-Mail unter `/settings/admin` (Basiseinstellungen).
 
-Add users at `/settings/users`.
+Füge Benutzer unter `/settings/users` hinzu.
 
-Check logs for all containers related to Netcloud with `dc nextcloud logs -f`.
+Prüfe die Protokolle aller Container, die zu Nextcloud gehören, mit `dc nextcloud logs -f`.
 
-Check Nextcloud internal logs at `/settings/admin/logging` in the web UI or `/data/nextcloud/root/data/nextcloud.log` on the server.
-These include specific Nextcloud internal server messages and are often more useful to me than the container logs.
-If you see a warning about „1 error in the logs since DATE“ (or perhaps a couple) at `/settings/admin/logging`, you can probably ignore it.
-These initial logged errors appear to be harmless, possibly a result of some install-time race conditions.
-It is still a good idea to review all logged errors.
+Überprüfe die internen Nextcloud-Protokolle unter `/settings/admin/logging` in der Web-UI oder unter `/data/nextcloud/root/data/nextcloud.log` auf dem Server.
+Diese enthalten spezifische interne Servermeldungen von Nextcloud und sind für mich oft nützlicher als die Container-Protokolle.
 
-Review „Security & setup warnings“ at `/settings/admin/overview`.
-You can ignore the warning ‟Could not check for JavaScript support. Please check manually if your webserver serves `.mjs` files using the JavaScript MIME type.” if this succeeds on your Admincomputer:
+Wenn du unter `/settings/admin/logging` eine Warnung wie „1 error in the logs since DATE“ (oder vielleicht ein paar) siehst, kannst du sie wahrscheinlich ignorieren.
+Diese anfänglichen Protokollfehler scheinen harmlos zu sein, möglicherweise verursacht durch Race-Conditions während der Installation.
+Es ist trotzdem eine gute Idee, alle protokollierten Fehler zu überprüfen.
+
+Überprüfe „Sicherheits- & Einrichtungswarnungen“ unter `/settings/admin/overview`.
+Du kannst die Warnung „Could not check for JavaScript support. Please check manually if your webserver serves .mjs files using the JavaScript MIME type.“ ignorieren, wenn dies auf deinem Admincomputer erfolgreich ist:
 
 .JavaScript fetch test (🏠 Admincomputer)
 [source%unbreakable#js-fetch-admin,bash]
@@ -3059,9 +3063,10 @@ You can ignore the warning ‟Could not check for JavaScript support. Please che
 curl -I https://cloud.example.com/apps/settings/js/esm-test.mjs
 ----
 
-The warning is because the Nextcloud `app` container https://github.com/nextcloud/server/issues/42989[fails at a test] to request a JavaScript test file, likely because of a DNS issue.
-To fix it, the request must be able to work from within the Nextcloud `app` container.
-In other words, this must succeed (return a successful HTTP response code and include the header `content-type: text/javascript`):
+Die Warnung tritt auf, weil der Nextcloud-`app`-Container https://github.com/nextcloud/server/issues/42989[bei einem Test fehlschlägt], bei dem versucht wird, eine JavaScript-Testdatei anzufordern – vermutlich aufgrund eines DNS-Problems.
+Um dies zu beheben, muss die Anfrage innerhalb des Nextcloud-`app`-Containers erfolgreich sein.
+
+Mit anderen Worten: Folgendes muss erfolgreich sein (einen erfolgreichen HTTP-Response-Code zurückgeben und den Header `content-type: text/javascript` enthalten):
 
 .JavaScript fetch test (🚀 server)
 [source%unbreakable#js-fetch-server,bash]
@@ -3070,130 +3075,130 @@ dc nextcloud exec app \
   curl -I https://cloud.example.com/apps/settings/js/esm-test.mjs
 ----
 
-Some maintenance requires the `occ` tool (short for „ownCloud command“).
-Run it with `dc nextcloud exec --user www-data app php occ`.
+Einige Wartungsarbeiten erfordern das tool `occ` (kurz für „ownCloud command“).
+Führen Sie es mit `dc nextcloud exec --user www-data app php occ` aus.
 
-Add `/data/video` as an External storage.
-Media files uploaded there will automatically appear in Jellyfin.
-First, visit `/settings/apps/featured` and install the „External storage support“ app.
-Next, visit `/settings/admin/externalstorages` and install the „External storage support“ app.
+Fügen Sie `/data/video` als externen Speicher hinzu.
+Medien, die dort hochgeladen werden, erscheinen automatisch in Jellyfin.
+Besuchen Sie zuerst `/settings/apps/featured` und installieren Sie die App „External storage support“.
+Besuchen Sie anschließend `/settings/admin/externalstorages` und installieren Sie die App „External storage support“.
 
-* Folder name: Video
-* External storage: Local
-* Authentication: None
-* Configuration: `/data/video`
-* Set users, previews, sharing, and remaining options as desired.
+* Ordnername: Video
+* Externer Speicher: Local
+* Authentifizierung: None
+* Konfiguration: `/data/video`
+* Legen Sie Benutzer, Vorschauen, Freigaben und die restlichen Optionen nach Wunsch fest.
 
-Add `/data/music` as an External storage, similar to `/data/video`.
+Fügen Sie `/data/music` als externen Speicher hinzu, ähnlich wie `/data/video`.
 
-==== More maintenance tips
+==== Weitere Wartungstipps
 
-Visit `/settings/admin/overview` periodically to check for system and security issues that may require manual intervention.
-Perform any recommended maintenance on that page.
-Ignore the Update section, it may disagree with Docker Hub.
-Visit `/settings/admin/logging` periodically to review all server-side log messages.
+Besuchen Sie regelmäßig `/settings/admin/overview`, um nach System- und Sicherheitsproblemen zu suchen, die möglicherweise manuelles Eingreifen erfordern.
+Führen Sie alle auf dieser Seite empfohlenen Wartungsmaßnahmen durch.
+Ignorieren Sie den Abschnitt „Update“, er kann von Docker Hub abweichen.
+Besuchen Sie regelmäßig `/settings/admin/logging`, um alle serverseitigen Protokollmeldungen zu überprüfen.
 
-Running `dc nextcloud pull && dc nextcloud up -d` (on the server) will pull the most recent image of https://github.com/nextcloud/docker with the `stable` release tag.
-Using this tag will likely be stable enough for you and your users.
-`stable` generally corresponds to the version they call _previous_ at https://docs.nextcloud.com/.
+Das Ausführen von `dc nextcloud pull && dc nextcloud up -d` (auf dem Server) lädt das neueste Image von https://github.com/nextcloud/docker mit dem `stable`-Release-Tag herunter.
+Die Verwendung dieses Tags ist für Sie und Ihre Benutzer wahrscheinlich stabil genug.
+`stable` entspricht im Allgemeinen der Version, die unter https://docs.nextcloud.com/ als _previous_ bezeichnet wird.
 
-You may opt to „pin“ your Nextcloud to a more specific tag such as `27.1.5-apache`.
-This gives you the chance to review and test each upgrade.
-You can pin a release tag in Nextcloud's `compose.yml` where the image name appears, just trade `stable` for the tag you choose.
-All available tags are https://hub.docker.com/_/nextcloud[listed at Docker Hub].
+Sie können Ihre Nextcloud auf eine spezifischere Version wie `27.1.5-apache` „fixieren“.
+Das gibt Ihnen die Möglichkeit, jedes Upgrade zu überprüfen und zu testen.
+Sie können einen Release-Tag in der `compose.yml` von Nextcloud festlegen, indem Sie dort, wo der Image-Name erscheint, einfach `stable` durch den gewünschten Tag ersetzen.
+Alle verfügbaren Tags sind auf https://hub.docker.com/\_/nextcloud\[Docker Hub aufgelistet].
 
-NOTE: Nextcloud's blog posts and marketing materials use different version names than the release versions from Quellecontrol.
-„Hub 6“ on the blog refers to versions `27.\_._` in Quellecontrol, „Hub 7“ to `28.\_._`, and so on.
+NOTE: Die Blogposts und Marketingmaterialien von Nextcloud verwenden andere Versionsnamen als die Release-Versionen aus dem Quellcode.
+„Hub 6“ im Blog bezieht sich auf Versionen `27.\_._` im Quellcode, „Hub 7“ auf `28.\_._` und so weiter.
 
-===== Release cadence
+===== Veröffentlichungsrhythmus
 
 (((Nextcloud, release cadence of)))
-https://docs.nextcloud.com/server/stable/admin_manual/release_schedule.html[A major release is shipped every four months].
-The Nextcloud apps I care about seem to keep up with this pace, but it does feel a bit aggressive to me.
-Developers need to modify their apps each time at least slightly, or heavily if breaking API changes occur.
-Thankfully the Nextcloud team https://help.nextcloud.com/t/new-process-for-documenting-core-code-changes-that-affect-app-developers/149828/1[carefully documents changes] to ease app maintenance for developers.
+https://docs.nextcloud.com/server/stable/admin_manual/release_schedule.html[Eine Hauptversion wird alle vier Monate veröffentlicht].
+Die Nextcloud-Apps, die für mich wichtig sind, scheinen mit diesem Tempo Schritt zu halten, aber es kommt mir etwas ehrgeizig vor.
+Entwickler müssen ihre Apps bei jeder Version zumindest leicht anpassen, oder stark, wenn es zu API-Änderungen kommt, die nicht abwärtskompatibel sind.
+Zum Glück https://help.nextcloud.com/t/new-process-for-documenting-core-code-changes-that-affect-app-developers/149828/1[dokumentiert das Nextcloud-Team Änderungen sorgfältig], um die Wartung der Apps für Entwickler zu erleichtern.
 
-As a _Steadfast_ sysadmin, be sure to check your `/settings/admin/overview` page before upgrading Nextcloud to make sure all the apps you use will work with the version you're upgrading to.
-You can override an out-of-date app with the „enable untested app“ option under `/settings/apps`.
-Sometimes this works.
+Als _Steadfast_-Sysadmin solltest du unbedingt vor einem Upgrade von Nextcloud die Seite `/settings/admin/overview` prüfen, um sicherzustellen, dass alle von dir genutzten Apps mit der neuen Version kompatibel sind.
+Du kannst eine veraltete App mit der Option „Nicht getestete App aktivieren“ unter `/settings/apps` trotzdem freischalten.
+Manchmal funktioniert das.
 
-Since four months seemed to me like a short window for major releases I started a https://help.nextcloud.com/t/major-release-cadence/161685[thread about it].
-Review their https://github.com/nextcloud/server/wiki/Maintenance-and-Release-Schedule[Maintenance and Release Schedule] to make sure your current version is still supported.
+Da mir vier Monate wie ein kurzer Zeitraum für Hauptversionen vorkamen, habe ich dazu einen https://help.nextcloud.com/t/major-release-cadence/161685[Thread gestartet].
+Prüfe den https://github.com/nextcloud/server/wiki/Maintenance-and-Release-Schedule[Wartungs- und Veröffentlichungsplan], um sicherzustellen, dass deine aktuelle Version noch unterstützt wird.
 
-==== Performance
+====Performance
 
-If you use mario to deploy Nextcloud, you'll start with a nominally performant server suitable for a small handful of users, assuming you have sufficient hardware resources.
-mario includes an author-approved selection of the https://docs.nextcloud.com/server/stable/admin_manual/installation/server_tuning.html[recommended server tuning steps].
+Wenn du mario verwendest, um Nextcloud bereitzustellen, startest du mit einem nominal leistungsfähigen Server, der für eine kleine Anzahl von Nutzern geeignet ist – vorausgesetzt, du hast ausreichende Hardware-Ressourcen.
+mario enthält eine vom Autor geprüfte Auswahl der https://docs.nextcloud.com/server/stable/admin_manual/installation/server_tuning.html[empfohlenen Server-Tuning-Schritte].
 
-I've only had one performance issue in the years I've hosted Nextcloud (knock wood!), so I'll mention it here.
-I was seeing slow web requests along with https://github.com/nextcloud/server/issues/35311[lots of database activity].
-This had me under the hood with MariaDB for a while.
-They've since https://github.com/nextcloud/server/pull/33540[fixed the root cause] so it isn't a problem for new installations.
+In all den Jahren, in denen ich Nextcloud gehostet habe, hatte ich nur ein einziges Performance-Problem (Toi,toi,toi!), das ich hier erwähnen möchte.
+Ich bemerkte langsame Webanfragen zusammen mit https://github.com/nextcloud/server/issues/35311[viel Datenbankaktivität].
+Dadurch musste ich mich eine Weile intensiver mit MariaDB beschäftigen.
+https://github.com/nextcloud/server/pull/33540[Die Ursache wurde inzwischen behoben], sodass dies für neue Installationen kein Problem mehr darstellt.
 
 ==== Customization
 
 (((Nextcloud, apps for)))
-Nextcloud can be used as-is (see <<Basic install>>) or heavily customized.
-The simplest and safest way to customize is by installing an app from the built-in app store (`/settings/apps`), especially if an app is marked „featured“.
-These _Nextcloud apps_ are installed on the server, expanding the functionality of a base Nextcloud instance.
+Nextcloud kann entweder so verwendet werden, wie es ist (siehe <<Grundinstallierung>>), oder stark angepasst werden.
+Der einfachste und sicherste Weg zur Anpassung ist die Installation einer App aus dem integrierten App-Store (`/settings/apps`), besonders wenn eine App als „featured“ markiert ist.
+Diese Nextcloud-Apps werden auf dem Server installiert und erweitern die Funktionalität einer Basis-Nextcloud-Instanz.
 
-Here are some Nextcloud apps I've tried, what they do, and a ruling on whether they're worth looking into.
-Read „Worth your time?“ as „Adam maybe tried this app and has shared his opinion whether others will find this particular app worth the effort to learn and maintain, based on his own experiences projected onto our possibly different use cases.“
-Grain of salt, in other words.
-When in doubt, start small (default Nextcloud install), and roll these out thoughtfully if you do at all.
+Hier sind einige Nextcloud-Apps, die ich ausprobiert habe, was sie tun und eine Einschätzung, ob sie einen Versuch wert sind.
+Interpretiere „Lohnt es sich?“ hier eher als: „Adam hat diese App vielleicht ausprobiert und teilt seine Meinung darüber, ob andere es lohnenswert finden könnten, sich die Mühe zu machen, sie zu erlernen und zu pflegen. Diese Einschätzung basiert auf seinen eigenen Erfahrungen, die möglicherweise nicht ganz zu deinen Anwendungsfällen passen.“
+Mit anderen Worten: Mit Vorsicht genießen.
+Im Zweifelsfall: klein anfangen (Standard-Nextcloud-Installation) und neue Apps nur behutsam und durchdacht einführen.
 
 [cols="1,1,2",id=nextcloud-apps-commentary]
-.Nextcloud apps commentary
+.Kommentare zu Nextcloud Apps
 |===
-|Nextcloud App |Purpose |Worth your time?
+|Nextcloud App |Verwendungszweck |Lohnt es sich?
 
-|Antivirus for files |virus scan uploads |*Yes*. Note: https://github.com/nextcloud/files_antivirus/issues/219[uploads from desktop clients are not scanned for viruses].
-|Analytics |track and graph metrics |*Yes*. Only for small/simple use cases though.
-|Appointments |easy 3rd party scheduling |*Yes*. Requires careful calendar curation. Somewhat fiddly setup.
-|Calendar |manage meetings and appointments |*Yes*. See also: <<Spurious event updated notifications>>.
-|Circles |arbitrarily group users |*No opinion*. I don't have enough users to justify this.
-|Collectives |wiki or knowledge base |*Maybe*. Looks like a useful way to organize a set of related documents. Requires Circles.
-|Cookbook |recipe manager |*Yes*. Great at importing from web pages (thanks to standardized recipe data already present in HTML source). I wish it were better at printing/exporting though.
-|Contacts |address book |*Yes*.
-|Dashboard |landing page |*No*. I like to go right to my files.
-|Deck |kanban board |*No opinion*. I tried it a little and it worked, I just don't use kanban much.
-|Draw.io |diagram editor |*Yes*.
-|Duplicate Finder |find and cull duplicate files |*No*. Slow and opaque. I recommend https://github.com/pauldreik/rdfind[rdfind] instead.
-|Electronic Signatures |e-sign documents |*No*. Requires a 3rd party service. I'd rather have drawn signatures. See <<Draw signature in forms>>.
-|End-to-End Encryption |encrypt files server-side, decrypt with client |*No*. Unnervingly buggy. Confusing UI/UX. See <<End-to-End Encryption>>.
-|Files |file management, sharing |*Yes*, although the „Versions“ tab is not very useful.
-|Forms |Google Forms alternative |*Yes*.
-|Full text search |search through all documents |*Maybe*. Fast. Buggy. Likely dormant project. See <<Full text search>>.
-|Holiday Calendars |easily add public holiday calendars |*Yes*. The configuration for this app shows up under „Personal“ -> „Availability“ for me, not „Groupware“ (although the URL path is `/settings/user/groupware`).
-|Maps |maps and directions |*Yes*. Grab a cup of tea if you have lots of photos with GPS coordinate metadata.
-|Mail |email |*No opinion*. I tried it briefly and it choked on my bazillion Gmail messages. And yes, I do want to de-Gmail someday.
-|Memories |photos |*Yes*. Requires Photos.
-|News |track blogs and news via rss/atom feeds |*Yes*.
-|Nextcloud Office |edit spreadsheets, slides, etc. |*Yes*. I don't love this but I need it. Maybe that's a „No“? Mobile apps for this are painful. See <<Nextcloud Office>>.
-|Notes |simple markdown-based note taking |*Yes*. There's an excellent companion mobile app. Replaced Google Notes for me.
-|Passwords |password manager |*No*. Dormant.
-|PhoneTrack |location sharing and tracking |*Yes*. UI is feature-rich and complicated. Traveled movement lines are cool.
-|Photos |photos, sorta |*No*. Slow, clumsy, lacking features compared with other FOSS photo management software. Use Memories instead. Note that Memories depends on the Photos app.
-|Polls |simple polls |*Yes*.
-|Ransomware protection |warns for bad file names on upload |*No*. Too many false positives. Unmaintained.
-|Recognize |face recognition |*No*.
-|Suspicious login |warn about suspicious IPs |*No*. Too many false positives.
-|Tasks |tasks/todos |*Yes*.
-|Tables |tabular data entry and API |*No*. Not yet, although keep an eye on this as a potentially powerful and useful ((low-code)) platform.
-|Talk |video and text chat |*No*. Works, just not as well as other video and text chat services/apps. I do use it for my chicken safety system and I see it improving a lot with each release. For now I recommend https://signal.org[Signal] instead.
-|Temporary files lock |avoid edit conflicts |*Yes*.
-|Text |edit text documents |*Yes*. I'm a huge fan of Markdown plain text documents, and Nextcloud handles these well. It has a nice web-based collaborative editor. I like pasting in rich text and letting the editor auto-convert it to Markdown. See also: <<Mobile text editing is hard>> and <<Spurious web text editor conflicts>>.
-|Video converter |transcode videos |*No*. Cool idea but the project appears dormant.
+|Antivirus for files |Virenscan der Uploads |*Ja*. Note: https://github.com/nextcloud/files_antivirus/issues/219[Von Desktop Clients hochgeladene Dateinen werden nicht auf Viren durchsucht].
+|Analytics |Metriken erfassen und grafisch darstellen |*Ja*. Aber nur für kleine/einfache Anwendungen
+|Appointments |Einfache Terminplanung durch Drittanbieter |*Ja*. Erfordert sorgfältige Kalenderpflege. Etwas kompliziertes Setup.
+|Calendar |Termine und Meetings verwalten |*Ja*. Siehe auch: <<Fehlerhafte Aktualisierungsbenachrichtigungen für Termine>>.
+|Circles |Benutzer beliebig gruppieren |*Keine Meinung*. Ich habe nicht genügend Nutzer um diese App zu rechtfertigen.
+|Collectives |Wiki oder Wissensdatenbank |*Vielleicht*. Scheint nützlich, um zusammenhängende Dokumente zu organisieren. Erfordert Circles.
+|Cookbook |Rezepte verwalten |*Ja*. Kann gut von Webseiten importieren, (dank der standardisierten Rezeptdaten, die bereits im HTML-Quelltext vorhanden sind). Ich wünschte, es könnte besser drucken/exportieren.
+|Contacts |Adressbuch |*Ja*.
+|Dashboard |Startseite |*Nein*. Ich gehe lieber direkt zu meinen Dateien.
+|Deck |Kanban-Board |*Keine Meinung*. Ich habe es ein bisschen ausprobiert und es hat funktionier, aber ich nutze Kanban einfach nicht oft.
+|Draw.io |Diagramm-Editor |*Ja*.
+|Duplicate Finder |Doppelte Dateien finden und löschen |*Nein*. Langsam und undurchsichtig. Ich empfehle stattdessen https://github.com/pauldreik/rdfind[rdfind].
+|Electronic Signatures |Elektronische Signaturen |*Nein*. Erfordert extrene Dienste. Ich bevorzuge gezeichnete Unterschriften. Siehe <<Gezeichnete Unterschriften in Formularen>>.
+|End-to-End Encryption |Verschlüsselt Dateien auf Seiten des Servers, entschlüsselt sie beim Client |*Nein*. Nervenaufreibend fehleranfällig. Verwirrend. Siehe <<Ende-zu-Ende-Verschlüsselung>>.
+|Files |Dateiverwaltung und -freigabe|*Ja*, aber das „Versions“-Tab ist nicht wirklich hilfreich.
+|Forms |Alternative zu Google Forms |*Ja*.
+|Full text search |Volltextsuche durch alle Dokumente |*Vielleicht*. Schnell. Fehleranfällig. Wahrscheinlich ein inaktives Projekt. Siehe <<Volltextsuche>>.
+|Holiday Calendars |Öffentliche Feiertage einfach hinzufügen |*Ja*. Die Konfiguration für diese App erscheint bei mir unter ‚Persönlich‘ -> ‚Verfügbarkeit‘, nicht unter ‚Groupware‘ (obwohl die URL `/settings/user/groupware` lautet).
+|Maps |Karten und Navigation |*Ja*. Mache dir eine Tasse Tee solltest du viele Fotos mit GPS-Koordinaten haben.
+|Mail |Email |*Keine Meinung*. Ich habe es kurzzeitig ausprobiert aber es ist an meinen abermillionen von Gmail Nachrichten erstickt. Und ja, eines Tages möchte ich von Gmail weg.
+|Memories |Fotos |*Ja*. Benötigt Photos.
+|News |Verfolge Blogs & Nachrichten über RSS/Atom-Feeds |*Ja*.
+|Nextcloud Office |Berarbeite Tabellen, Präsentationen, usw. |*Ja*. Ich finde es nicht super, brauche es aber. Vielleicht ist das ein "Nein"? Mobile-Apps hierfür sind schrecklich. Siehe <<Nextcloud Office>>.
+|Notes |Einfache Notizen mit Markdown |*Ja*. ES gibt eine grossartige Mobile-App. Hat Google Notes für mich ersetzt.
+|Passwords |Passwortmanager |*Nein*. Inaktiv.
+|PhoneTrack |Standorte teile und verfolgen |*Ja*. Die Benutzeroberfläche ist reich an Funktionen und kompliziert. Die Fortbewegungslininen sind cool.
+|Photos |Fotos, irgenwie |*Nein*. Langsam, schwerfällig, im Vergleich zu anderen FOSS Fotomanagern fehlen Funtionen. Nutze stattdessen Memories. Beachte dass Memories von Photos abhängig ist.
+|Polls |Einfache Umfragen |*Ja*.
+|Ransomware protection |Warnt beim Hochladen vor gefährlichen Dateinamen |*Nein*. Zu viele Fehlalarme. Nicht gepflegt.
+|Recognize |Gesichtserkennung |*Nein*.
+|Suspicious login |Warnt vor verdächtigen IPs |*Nein*. Zu viele Fehlalarme.
+|Tasks |Aufgaben/To-Do's |*Ja*.
+|Tables |Tabellarische Dateneingabe |*Nein*. Noch nicht bereit, könnte aber eine potenziell starke und nützliche ((low-code)) Plattform werden.
+|Talk |Video- und Textchat |*Nein*. Funtioniert, aber nicht so gut wie andere Video- und Textchat Dienste/Apps. Ich nutze es jedoch für mein Hühner-Sicherheitssystem und sehe, dass es sich mit jeder Verion stark verbessert. Im Moment empfehle ich https://signal.org[Signal].
+|Temporary files lock |Verhindert Bearbeitungskonflikte |*Ja*.
+|Text |Bearbeite Textdokumente |*Ja*. Ich bin großer Fan von reinen Markdown Textdokumenten, und Nextcloud kann gut mit diesen umgehen. Es hat einen guten webbasierten collaborativen Editor. Ich füge gerne Rich-Text in den Editor ein und lasse ihn den Text automatisch in Markdown umschreiben. Siehe auch: <<Mobile Textbearbeitung ist schwierig>> und <<Fehlerhafte Konflikte im Web-Texteditor>>.
+|Video converter |Video-Transkodierung |*Nein*. Coole Idee aber das Projekt scheint inaktiv.
 |===
 
-==== Full text search
+==== Volltextsuche
 
 (((Nextcloud, full text search and)))
-This app allows you to search through all content of all documents on your server.
-The search syntax is hard to get right.
-It https://github.com/nextcloud/fulltextsearch/issues/601[uses a lot of CPU] and is memory-hungry too.
+Diese App ermöglicht es, den gesamten Inhalt aller Dokumente auf deinem Server zu durchsuchen.
+Die Suchsyntax ist schwer korrekt anzuwenden.
+Sie https://github.com/nextcloud/fulltextsearch/issues/601[nutzt sehr viel Hauptprozessorkapazität] und benötigt auch viel Speicher.
 
-The GitHub project repositories are pretty quiet. See:
+Die GitHub-Projekt-Repositories sind ziemlich ruhig. Siehe:
 
 * https://github.com/nextcloud/fulltextsearch/pulse
 * https://github.com/nextcloud/files_fulltextsearch/pulse
@@ -3202,19 +3207,19 @@ The GitHub project repositories are pretty quiet. See:
 ==== Mobile
 
 (((Nextcloud, mobile and)))
-Nextcloud works OK as the backend for a mobile device.
-It can be your single reliable Quelleof truth for contacts, calendars, tasks, and most everything else that matters on mobile.
-You can open files and edit them, but the UI/UX is bad.
-See <<Mobile text editing is hard>> for a couple workarounds.
+Nextcloud funktioniert gut als Backend für ein mobiles Gerät.
+Es kann deine einzige verlässliche „Quelle der Wahrheit“ für Kontakte, Kalender, Aufgaben und fast alles andere sein, was auf dem Handy wichtig ist.
+Du kannst Dateien öffnen und bearbeiten, aber die Benutzeroberfläche/UX ist schlecht.
+Siehe <<Mobile Textbearbeitung ist schwierig>> für ein paar Problemumgehungen.
 
-Besides the primary mobile app (called simply „Nextcloud“), there are other mobile apps made to work with Nextcloud apps.
-Here are the ones I recommend.
-I don't have an iPhone so these are only Android apps.
+Neben der primären mobilen App (einfach „Nextcloud“ genannt) gibt es weitere mobile Apps, die mit Nextcloud-Apps zusammenarbeiten.
+Hier sind die, die ich empfehle.
+Ich habe kein iPhone, daher handelt es sich nur um Android-Apps.
 
 [cols="1,1,2",id=recommended-nextcloud-mobile-apps]
-.Recommended Nextcloud mobile apps
+.Nextcloud Mobile-App Empfehlungen
 |===
-|Mobile app |Works with Nextcloud apps |More info
+|Mobile-App |Funtioniert mit diesen Nextcloud Apps |Weitere Infos
 
 |DAVx5 |Calendar, Contacts, Tasks |https://davx5.com
 |Maps Geofavorites |Maps |https://github.com/penguin86/nextcloud-maps-client
@@ -3225,277 +3230,280 @@ I don't have an iPhone so these are only Android apps.
 |Nextcloud Talk |Talk |https://apps.nextcloud.com/apps/spreed
 |===
 
-Android devices usually ship with ((groupware)) (calendar and contacts) apps, or you can install your favorite ones.
-DAVx5 handles synchronization of groupware data to and from your device.
-DAVx5 is only necessary on Android, perhaps because iOS has better native WebDAV support.
-DAVx5 is not needed on Murena phones (/e/ OS).
+Android-Geräte werden in der Regel mit ((Groupware))-Apps (Kalender und Kontakte) ausgeliefert, oder du kannst deine bevorzugten Apps installieren.
+DAVx5 übernimmt die Synchronisierung von Groupware-Daten zwischen deinem Gerät und dem Server.
+DAVx5 ist nur auf Android erforderlich, vermutlich weil iOS besseren nativen WebDAV-Support hat.
+Auf Murena-Handys (/e/ OS) wird DAVx5 nicht benötigt.
 
-There are actually two Cookbook apps.
-Either works fine for me.
-I'm not picky, I just need to see the ingredients and directions.
-Looks like the one by „Teifun2“ is more popular.
+Es gibt tatsächlich zwei Cookbook-Apps.
+Beide funktionieren für mich gut.
+Ich bin nicht wählerisch, ich muss nur die Zutaten und Zubereitungsschritte sehen.
+Die Version von „Teifun2“ scheint beliebter zu sein.
 
-Maps Geofavorites lets you easily save arbitrary GPS coordinates to the Maps Nextcloud app.
-Handy for remembering where you parked your bike, for example.
+Maps Geofavorites ermöglicht es dir, beliebige GPS-Koordinaten in der Nextcloud-Maps-App einfach zu speichern.
+Praktisch, um sich zum Beispiel zu merken, wo du dein Fahrrad geparkt hast.
 
-Notes looks best configured in Grid View.
+Notes funktioniert am besten, wenn es im Rasteransichtsmodus (Grid View) konfiguriert ist.
 
-Talk... despite my own advice, I find myself using Talk anyway.
-I like having my own chat server, I guess.
-I am listing it here because I do actually use it, and to complain that https://github.com/nextcloud/talk-android/issues/217[I can't read messages offline].
-It is also under heavy development and improving lots with every release.
+Talk… trotz meines eigenen Ratschlags benutze ich Talk trotzdem.
+Ich mag es, meinen eigenen Chat-Server zu haben, schätze ich.
+Ich erwähne es hier, weil ich es tatsächlich nutze, und um mich zu beschweren, dass ich https://github.com/nextcloud/talk-android/issues/217[Nachrichten offline nicht lesen kann].
+Es befindet sich außerdem in aktiver Weiterentwicklung und verbessert sich mit jeder Version deutlich.
 
-These are just a few examples.
-Since you've got all your data and Nextcloud always uses open formats, you can ride the wave of improvements and enjoy what works best.
-For example, I just started using https://github.com/jonasoreland/runnerup[RunnerUp].
-When I save my tracks in Nextcloud, they automatically show up in Maps.
-Nice!
+Dies sind nur einige Beispiele.
+Da du alle deine Daten hast und Nextcloud stets offene Formate nutzt, kannst du von Verbesserungen profitieren und das genießen, was am besten funktioniert.
+Zum Beispiel habe ich gerade angefangen, https://github.com/jonasoreland/runnerup[RunnerUp] zu verwenden.
+Wenn ich meine Tracks in Nextcloud speichere, erscheinen sie automatisch in Maps.
+Super!
 
 ==== Nextcloud vs. ownCloud
 
 (((Nextcloud, ownCloud vs.)))
-At first glance it's a bit difficult to tell the difference between Nextcloud and ((ownCloud)).
-This follows since Nextcloud started as a fork of ownCloud.
+Auf den ersten Blick ist es etwas schwierig, den Unterschied zwischen Nextcloud und ((ownCloud)) zu erkennen.
+Das liegt daran, dass Nextcloud als Gabelung von ownCloud entstanden ist.
 
-So why should you choose one over the other?
-A healthy FOSS project is generally also an active project, so one way to guide your decision is by comparing activity metrics on GitHub.
-See https://github.com/owncloud/core/pulse[owncloud/core activity] and https://github.com/nextcloud/server/pulse[nextcloud/server activity].
-Based on those two sets of metrics it appears Nextcloud is thriving and ownCloud is dying.
+Warum sollte man also das eine dem anderen vorziehen?
+Ein gesundes FOSS-Projekt ist in der Regel auch ein aktives Projekt. Eine Möglichkeit, deine Entscheidung zu treffen, besteht darin, die Aktivitätsmetriken auf GitHub zu vergleichen.
+Siehe https://github.com/owncloud/core/pulse[owncloud/core Aktivität] und https://github.com/nextcloud/server/pulse[nextcloud/server Aktivität].
+Anhand dieser beiden Metrik-Sets scheint Nextcloud zu florieren, während ownCloud an Bedeutung verliert.
 
-Another interpretation is that ownCloud has a smaller and slower-moving core codebase.
-More work is necessary to make a truly rigorous comparison.
+Eine andere Interpretation ist, dass ownCloud eine kleinere und langsamer voranschreitende Kerncodebasis hat.
+Für einen wirklich fundierten Vergleich wäre jedoch noch mehr Arbeit nötig.
 
-See also: <<traits-of-good-services>> and <<traits-of-bad-services>> in <<Dienstwahl>>.
+Siehe auch: <<Merkmale-guter-Dienste>> und <<Merkmale-schlechter-Dienste>> unter <<Dienstwahl>>.
 
 ==== Nextcloud Office
 
 (((Nextcloud, office and)))
-https://nextcloud.com/office/ gives some strong hints how the company behind Nextcloud wants us to think of „office“ and their plans for it as a suite of related tools.
-They clearly intend a holistic, integrated office experience, and Nextcloud can be configured to be used in this manner.
-https://nextcloud.com/office/ covers editing office documents (rich text and spreadsheets) collaboratively, along with uses for the Notes, Collectives, and Tables apps.
-It provides some clever and useful workflow ideas.
+https://nextcloud.com/office/ gibt deutliche Hinweise darauf, wie das Unternehmen hinter Nextcloud möchte, dass wir „Office“ und seine Pläne als Suite verwandter Werkzeuge verstehen.
+Sie beabsichtigen eindeutig ein ganzheitliches, integriertes Office-Erlebnis, und Nextcloud kann so konfiguriert werden, dass es auf diese Weise genutzt wird.
+https://nextcloud.com/office/ behandelt die kollaborative Bearbeitung von Office-Dokumenten (Textdokumente und Tabellen) sowie die Nutzung der Apps Notes, Collectives und Tables.
+Es liefert einige clevere und nützliche Ideen für Arbeitsabläufe.
 
-Given that wide a scope, ((groupware)) should be part of „office“ too, so instead let's for now focus specifically on collaborative editing of office documents.
-Doing this within Nextcloud requires an https://apps.nextcloud.com/apps/richdocuments[app called Nextcloud Office] as well as a separate backend service, either ((Collabora)) or ((ONLYOFFICE)).
-My strong preference is for Collabora, in line with <<Geeignet fürs Self-Hosting>>; despite fewer stars on GitHub, it appears Collabora development is flourishing while ONLYOFFICE is stagnant (although it's hard to tell which of the many ONLYOFFICE repositories on GitHub are relevant here).
+Angesichts dieses weiten Umfangs sollte Groupware ebenfalls Teil von „Office“ sein. Konzentrieren wir uns daher vorerst speziell auf die kollaborative Bearbeitung von Office-Dokumenten.
+Dies innerhalb von Nextcloud zu realisieren, erfordert eine App namens https://apps.nextcloud.com/apps/richdocuments[Nextcloud Office] sowie einen separaten Backend-Dienst, entweder Collabora oder ONLYOFFICE.
+Meine klare Präferenz liegt bei Collabora, im Einklang mit <<GGeeignet fürs Self-Hosting>>; trotz weniger GitHub-Sterne scheint die Entwicklung von Collabora zu florieren, während ONLYOFFICE stagniert (obwohl schwer zu sagen ist, welche der vielen ONLYOFFICE-Repositories auf GitHub hier relevant sind).
 
 ==== Verschiedene Probleme
 
-Here's a selection of my favorite bugs and feature requests for Nextcloud.
+HHier ist eine Auswahl meiner liebsten Fehlerberichte und Funktionsanfragen für Nextcloud.
 
-===== Spinner on mobile
+===== Ladesymbol auf Mobilgeräten
 
-When you first open the Nextcloud mobile app, a loading spinner shows up in front of a cached view of whatever files and folders existed the last time you use the app.
-If you ignore it and tap to navigate your way into a folder or open a file, you may end up tapping a different one than you intended because the folder order can change _as you are tapping the screen_.
+Wenn du die Nextcloud-Mobile-App zum ersten Mal öffnest, erscheint ein Ladesymbol vor einer zwischengespeicherten Ansicht der Dateien und Ordner, die beim letzten Gebrauch der App vorhanden waren.
+Wenn du es ignorierst und tippst, um in einen Ordner zu navigieren oder eine Datei zu öffnen, könntest du versehentlich einen anderen Ordner oder eine andere Datei auswählen, als du beabsichtigt hattest, da sich die Reihenfolge der Ordner während du auf den Bildschirm tippst ändern kann.
 
-Workarounds:
+Problemumgehung:
 
-* wait until the spinner completes (usually takes me about one second)
-* reduce chance of reordering with „A - Z“ or „Z - A“ sorting instead of „Newest first“ or „Oldest first“
+* Warte, bis das Ladesymbol verschwunden ist (bei mir dauert das normalerweise etwa eine Sekunde).
+* Verringere die Wahrscheinlichkeit von Umordnungen, indem du „A – Z“ oder „Z – A“ sortierst, anstatt „Neueste zuerst“ oder „Älteste zuerst“.
 
-===== Mobile text editing is hard
+===== Mobile Textbearbeitung ist schwierig 
 
 (((Nextcloud, mobile and)))
-Nextcloud makes it easy to get to your stuff via mobile devices, but editing is a pain.
+Nextcloud macht es einfach, auf deine Daten über mobile Geräte zuzugreifen, aber das Bearbeiten ist mühsam.
 
-This is not a Nextcloud-only problem; I find _all_ mobile text entry and editing cumbersome.
-This applies to email, plain text, Markdown, and office documents.
+Das ist kein ausschließliches Nextcloud-Problem; ich finde die gesamte Texteingabe und -bearbeitung auf Mobilgeräten umständlich.
+Das betrifft E-Mails, einfachen Text, Markdown und Office-Dokumente.
 
-In Nextcloud-land, one workaround to improve plain and Markdown text entry is to use the https://github.com/nextcloud/notes-android[Notes app on Android] or https://github.com/nextcloud/notes-ios[iOS].
-It has separate editing and viewing modes and more aggressive synchronization.
-With Notes you have a better chance of up-to-date data and fewer conflicts.
+In der Nextcloud-Welt gibt es eine Problemumgehung, um die Eingabe von einfachem Text und Markdown zu verbessern: die https://github.com/nextcloud/notes-android[Notes-App für Android] oder für https://github.com/nextcloud/notes-ios[iOS].
+Sie haben getrennte Bearbeitungs- und Anzeigemodi und eine aggressivere Synchronisierung.
+Mit Notes hast du bessere Chancen auf aktuelle Daten und weniger Konflikte.
 
-Another workaround is to use https://github.com/gsantner/markor[Markor].
-Install that app, then:
+Du kannst auch https://github.com/gsantner/markor[Markor] nutzen, um dieses Problem zu umgehen.
+Installiere die App, und mache dann Folgendes:
 
-. In the Nextcloud mobile app, „Download“ or „Sync“ the file you wish to view or edit locally.
-This caches a copy on your phone.
-. In the Nextcloud mobile app, choose „open with“ for the file.
-Should open instantly.
-. If you make changes to the file, save it, then manually „Sync“ the file in the Nextcloud app.
-It appears local changes like these never make it to the server otherwise.
+. In der Nextcloud-Mobile-App kannst du die Datei, die du lokal anzeigen oder bearbeiten möchtest, herunterladen („Download“) oder synchronisieren („Sync“).
+Dadurch wird eine Kopie auf deinem Smartphone zwischengespeichert.
+. In der Nextcloud-App wählst du dann „open with“ für die Datei.
+Sie sollte sofort geöffnet werden.
+. Wenn du Änderungen an der Datei vornimmst, speichere sie und „Sync“ die Datei anschließend manuell in der Nextcloud-App.
+Anscheinend werden lokale Änderungen sonst nicht automatisch auf den Server übertragen.
 
-See https://jenson.org/text/ for background on why mobile text editing is a complex and multifaceted problem.
+Bei https://jenson.org/text/ findest du mehr Informationen dazu, warum die mobile Textbearbeitung so ein komplexes und facettenreiches Problem ist. 
 
-===== Cumbersome mobile setup
+===== Umständliches Mobile-Setup
 
-To sync calendars, tasks, and contacts with your phone's storage of same on Android, you must install and configure the 3rd party DAVx5 app.
-https://help.nextcloud.com/t/what-does-android-file-sync-do-for-a-nextcloud-account/154330[I don't know why DAVx5 is required], but https://murena.com[Murena] figured it out for me.
-Their Android-derived /e/ OS includes native support for Nextcloud accounts, removing the requirement for DAVx5.
-Users with iOS and other OSes besides Android can sync groupware-related data https://docs.nextcloud.com/server/stable/user_manual/en/groupware/[without DAVx5].
+Um Kalender, Aufgaben und Kontakte mit dem Speicher deines Smartphones unter Android zu synchronisieren, musst du die Drittanbieter-App DAVx5 installieren und konfigurieren.
+https://help.nextcloud.com/t/what-does-android-file-sync-do-for-a-nextcloud-account/154330[Ich weiß nicht, warum DAVx5 erforderlich ist], aber https://murena.com[Murena] hat dieses Problem für mich gelöst:
 
-===== Spurious web text editor conflicts
+Ihr Android-basiertes '/e/ OS' bietet native Unterstützung für Nextcloud-Konten und macht DAVx5 überflüssig.
+Benutzer mit iOS oder anderen Betriebssystemen außer Android können groupware-bezogene Daten https://docs.nextcloud.com/server/stable/user_manual/en/groupware/[ohne DAVx5] synchronisieren.
 
-Collaborating on plain text and Markdown text files sometimes results in spurious conflicts.
-Editing is interrupted before it starts, and the web-based text file editor shows you two versions of the file side by side.
-The left side is labeled „Use current version“, and the right says „Use the saved version“ (or equivalents for your locale or specific client).
+===== Fehlerhafte Konflikte im Web-Texteditor 
 
-Apparently the browser has a saved copy in local storage or something that gets loaded first and considers it the „current“ version.
-Then it loads the one on the right and calls it the „saved“ version, and if they differ you get to choose.
+Die Zusammenarbeit an einfachen Text- und Markdown-Dateien führt manchmal zu scheinbar grundlosen Konflikten.
+Das Bearbeiten wird schon vor dem eigentlichen Start unterbrochen, und der webbasierte Texteditor zeigt zwei Versionen der Datei nebeneinander an.
+Links steht „Aktuelle Version verwenden“, rechts „Gespeicherte Version verwenden“ (oder die entsprechenden Begriffe für deine Sprache bzw. deinen Client).
 
-Workaround: pick the one on the right.
-That's the latest and greatest copy as it exists server-side.
+Offenbar lädt der Browser zunächst eine in seinem lokalen Speicher abgelegte Kopie und betrachtet diese als „aktuelle“ Version.
+Anschließend lädt er die Version vom Server, nennt sie „gespeicherte“ Version, und wenn sich die beiden unterscheiden, musst du dich für eine entscheiden.
 
-Why the... never mind, just pick the one on the right.
-If you're curious and want to dig in deeper, follow these links:
+Workaround: Wähle die rechte Version.
+Das ist die aktuellste Kopie, wie sie auf dem Server gespeichert ist.
 
-* https://github.com/nextcloud/text/issues/2388[Shared text file is not up-to-date with saved file]
-* https://github.com/nextcloud/text/issues/4078[Changing File from Desktop leads to conflict in browser, even if browser was not doing any changes]
-* https://help.nextcloud.com/t/text-document-current-vs-saved-version/151600[Text: document current vs. saved version] (by yours truly)
+Warum das passiert … egal, nimm einfach die rechte Version.
+Falls du tiefer in die Thematik einsteigen willst, findest du hier ein paar Links:
 
-Related desktop client bug: https://github.com/nextcloud/desktop/issues/2467[Nextcloud-Client creating conflicts when it should not].
-Conflicts seem to appear in cases where there shouldn't be any.
-Workarounds: wait 10 seconds or so between saves until the desktop client syncs and returns to idle (roll your eyes while you wait).
-Also, check out the https://apps.nextcloud.com/apps/files_lock[Temporary files lock] app for semi-automated advisory locking (e.g. quickly communicate „gimme a minute, I'm editing that Markdown text file“).
+* https://github.com/nextcloud/text/issues/2388[Geteiltes Textdokument ist nicht auf dem gleichen Stand wie die gespeicherte Datei]
+* https://github.com/nextcloud/text/issues/4078[Das Ändern einer Datei vom Desktop aus führt zu einem Konflikt im Browser, selbst wenn im Browser keine Änderungen vorgenommen wurden]
+* https://help.nextcloud.com/t/text-document-current-vs-saved-version/151600[Text: aktuelle vs. gespeicherte Version eines Dokumentes] (von mir selbst)
 
-===== Draw signature in forms
+Verwandter Desktop-Client-Bug: https://github.com/nextcloud/desktop/issues/2467[Nextcloud-Client erstellt Konflikte, wenn er es nicht sollte].
+Konflikte scheinen in Situationen aufzutreten, in denen es eigentlich keine geben sollte.
 
-Forms are handy for gathering simple minimally-structured data... surveys, RSVPs, stuff like that.
-The data are just dumped into a spreadsheet.
-With a signature field Forms could be used to add a drawn signature to a form like a contract or waiver.
+Problemumgehung: Warte etwa 10 Sekunden zwischen den Speicherungen, bis der Desktop-Client synchronisiert und wieder im Leerlauf ist (Augenrollen inklusive).
+Sieh dir die https://apps.nextcloud.com/apps/files_lock[Temporäre Dateisperre]-App an für eine halbautomatische, beratende Sperrung (z. B. um schnell mitzuteilen: „Gib mir eine Minute, ich bearbeite gerade diese Markdown-Datei“).
 
-There are extant Nextcloud online signature apps that incorporate https://en.wikipedia.org/wiki/Digital_signature[digital signatures].
-I don't want or need digital signatures, especially since they appear to rely on 3rd party services.
-I really just want a low-tech image that looks like a drawn signature at the bottom of a page.
-It doesn't even need to be wet ink.
-If you want that too, vote for or help with https://github.com/nextcloud/forms/issues/947.
+===== Gezeichnete Unterschriften in Formularen
 
-https://github.com/OpenSignLabs/OpenSign[OpenSign] and https://github.com/docusealco/docuseal[DocuSeal] are two alternative FOSS self-hostable apps supporting drawn signatures.
+Forms sind praktisch, um einfache, minimal strukturierte Daten zu sammeln … Umfragen, Zusagen (RSVPs), solche Dinge.
+Die Daten landen einfach in einer Tabellenkalkulation.
+Mit einem Signaturfeld könnten Forms verwendet werden, um eine gezeichnete Unterschrift zu einem Formular hinzuzufügen, wie bei einem Vertrag oder einer Verzichtserklärung.
 
-===== Release script missing from source
+Es gibt bereits Nextcloud-Apps für Online-Signaturen, die https://en.wikipedia.org/wiki/Digital_signature[digitale Signaturen] einbinden.
 
-Nextcloud is FOSS, although https://help.nextcloud.com/t/build-bzip-and-package-from-git/58341[some release scripts are held back].
-They may or may not be required to release those, I don't know.
-I hope they do decide to release them, for the same reasons the rest of Nextcloud is FOSS.
+Ich möchte jedoch keine digitalen Signaturen, vor allem nicht, wenn sie auf Drittanbieter-Dienste angewiesen sind.
+Ich möchte einfach nur ein Low-Tech-Bild, das wie eine gezeichnete Unterschrift am unteren Rand einer Seite aussieht.
+Es muss nicht einmal echte Tinte sein.
+Falls du das auch möchtest, stimme hier ab oder hilf mit https://github.com/nextcloud/forms/issues/947
 
-===== Spurious event updated notifications
+https://github.com/OpenSignLabs/OpenSign[OpenSign] und https://github.com/docusealco/docuseal[DocuSeal] sind zwei alternative FOSS self-hostbare Apps, die gezeichnete Unterschriften unterstützen.
 
-The Calendar app is quite useful and perhaps the most heavily used by me and my users.
-I have grown to expect one particular erroneous „event updated“ notifications, possibly caused by calendar client/sync issues.
+===== Das Release-Skript fehlt im Quellcode
 
-On one shared calendar (with many clients) I often get notifications that so-and-so „updated event XYZ in calendar ABC“, but the only actual thing that occurred is that one of the clients just sync'd (or perhaps made some innocuous change to an event) and https://github.com/nextcloud/calendar/issues/5879[Nextcloud thinks it was a meaningful update].
-At least, I think that's what's happening... some changes (like changing the event's date) do show up with the old and new values made explicit.
-As an aside, I do like this „explicit diff“ behavior showing the exact changes made to an event's Title, Time, Location, or Description.
+Nextcloud ist FOSS, obwohl https://help.nextcloud.com/t/build-bzip-and-package-from-git/58341[einige Release-Skripte zurückgehalten werden].
+Ob sie diese Skripte tatsächlich veröffentlichen müssen oder nicht, weiß ich nicht.
+Ich hoffe, dass sie sich dazu entscheiden, sie freizugeben – aus denselben Gründen, aus denen auch der Rest von Nextcloud FOSS ist.
 
-==== End-to-End Encryption
+===== Fehlerhafte Aktualisierungsbenachrichtigungen für Termine
 
-End-to-End encrypted folders seems like a great idea.
-There's a Nextcloud app for this and I recommend you avoid it.
+Die Kalender-App ist ziemlich nützlich und vermutlich die am meisten genutzte von mir und meinen Nutzern.
+Allerdings habe ich mich mittlerweile an eine bestimmte fehlerhafte „Termin aktualisiert“-Benachrichtigung gewöhnt, die möglicherweise durch Probleme mit dem Kalender-Client oder der Synchronisation verursacht wird.
 
-It seems close to working, but it feels like early-release software.
-The UI/UX is confusing, and I ran into a dealbreaker bug that left files decrypted server-side.
-Furthermore, https://help.nextcloud.com/t/how-to-setup-e2e-encryption-for-shared-folders/165610[sharing] https://help.nextcloud.com/t/e2ee-and-file-sharing/145547[doesn't] https://github.com/nextcloud/end_to_end_encryption/issues/520[work], https://github.com/nextcloud/end_to_end_encryption/issues/82[there's no web client], https://github.com/nextcloud/end_to_end_encryption/issues/285[the roadmap is unclear], and https://github.com/nextcloud/end_to_end_encryption/issues/8[keys are always stored on the server] (these are thankfully stored encrypted).
+In einem freigegebenen Kalender (mit vielen Clients) bekomme ich oft Benachrichtigungen wie „Person X hat Termin Y in Kalender Z aktualisiert“, obwohl in Wirklichkeit nur einer der Clients synchronisiert wurde (oder vielleicht eine unbedeutende Änderung vorgenommen hat) und https://github.com/nextcloud/calendar/issues/5879[Nextcloud fälschlicherweise denkt, es handele sich um ein wichtiges Update].
+Zumindest glaube ich, dass das passiert … manche Änderungen (z. B. wenn sich das Datum ändert) zeigen explizit die alten und neuen Werte.
+Nebenbei bemerkt gefällt mir dieses „explizite Diff“-Verhalten sehr, bei dem die genauen Änderungen an Titel, Zeit, Ort oder Beschreibung angezeigt werden.
+
+==== Ende-zu-Ende-Verschlüsselung
+
+Ende-zu-Ende-verschlüsselte Ordner klingen nach einer großartigen Idee.
+Es gibt eine Nextcloud-App dafür, aber ich empfehle, sie nicht zu verwenden.
+
+Die Funktion wirkt zwar beinahe fertig, fühlt sich aber immer noch wie frühe Beta-Software an.
+Die Benutzeroberfläche ist verwirrend, und ich bin auf einen kritischen Fehler gestoßen, der Dateien serverseitig unverschlüsselt hinterlassen hat.
+
+Außerdem https://github.com/nextcloud/end_to_end_encryption/issues/520[funktioniert] https://help.nextcloud.com/t/how-to-setup-e2e-encryption-for-shared-folders/165610[Sharing] https://help.nextcloud.com/t/e2ee-and-file-sharing/145547[nicht], https://github.com/nextcloud/end_to_end_encryption/issues/82[es gibt keinen Web-Client], https://github.com/nextcloud/end_to_end_encryption/issues/285[die Roadmap ist unklar], und https://github.com/nextcloud/end_to_end_encryption/issues/8[Schlüssel werden immer auf dem Server gespeichert] (zumindest sind diese verschlüsselt).
 
 ifdef::backend-pdf[]
-Sorry for all those really long links.
-Whew!
-Deep breaths, self, deep breaths.
-Count to ten.
+Sorry für all die sehr langen Links.
+Puh!
+Tief durchatmen.
+Bis 10 zählen.
 endif::[]
 
-Proceed carefully with the End-to-End Encryption Nextcloud app.
-Review https://github.com/nextcloud/end_to_end_encryption/issues[known issues], make sure you can live with all those, then test it out thoroughly using a throwaway/sandbox Nextcloud instance.
-Make sure it works with all clients you plan to use it with (e.g. desktop, mobile).
+Gehe vorsichtig mit der Nextcloud-App für Ende-zu-Ende-Verschlüsselung um.
+Überprüfe die https://github.com/nextcloud/end_to_end_encryption/issues[bekannten Probleme], stelle sicher, dass du mit all diesen leben könntest, und testen sie dann gründlich mit einer Wegwerf-Nextcloud-Instanz.
+Stelle sicher, dass die App mit allen Clients funktioniert, die du verwenden möchten (z. B. Desktop, Mobil).
 
 ==== AIO installer
 
 (((Nextcloud, installing)))
-Among the myriad Nextcloud install methods, there's a relatively new and interesting AIO („all-in-one“) installer (https://nextcloud.com/all-in-one).
-It's free for an instance with less than 100 users.
-The AIO takes a different approach than mario, it configures and manages multiple Nextcloud-related service containers for you.
-I recommend the mario method instead for its flexible and empowering experience of learning how to add and manage individual containers yourself.
+Unter den unzähligen Nextcloud-Installationsmethoden gibt es einen relativ neuen und interessanten AIO („All-in-One“) Installer (https://nextcloud.com/all-in-one).
+Er ist kostenlos für eine Instanz mit weniger als 100 Benutzern.
+Der AIO verfolgt einen anderen Ansatz als mario: Er konfiguriert und verwaltet mehrere Nextcloud-bezogene Service-Container für Sie.
+Ich empfehle stattdessen die mario-Methode, da sie eine flexible und lehrreiche Erfahrung bietet, bei der Sie lernen, wie Sie einzelne Container selbst hinzufügen und verwalten können.
 
-See the https://github.com/nextcloud/all-in-one[AIO readme] for more information.
+Bei https://github.com/nextcloud/all-in-one[AIO readme] findest du weitere Infos.
 
 == Weitere Ressourcen
 
-Visit https://selfhostbook.com for all supporting material including Quellcode for this book and mario.
+Bei https://selfhostbook.com findest du alle unterstützenden Materialien, inklusive Quellcode, für dieses Buch und mario.
 
 * https://selfhostbook.com/code/[Quellcode]
-* https://selfhostbook.com/contact/[Contact information]
+* https://selfhostbook.com/contact/[Kontaktinformation]
 
-Patches and feedback are most welcome.
-This book is just a part of something big and I'm glad you're a part of it too!
+Patches und Feedback sind sehr willkommen.
+Dieses Buch ist nur ein Teil von etwas Großem, und ich freue mich, dass du auch ein Teil davon bist!
 
 === Support
 
-Here are a few ideas for when you get stuck.
+Hier ein paar Ideen was du tuen kannst, wenn du nicht mehr weiter weisst.
 
-* Ask for help in forums and chats related to a product/project.
-* If you're confident you've found a bug, file an issue with the product/project.
-* Ask https://selfhostbook.com/chat/[other readers] for help.
-* Try your luck in semi-moderated public places.
-Don't expect much from these, although you may get lucky from time to time.
-** https://reddit.com/r/selfhosted/[selfhosted subreddit]
-** https://reddit.com/r/homelab/[homelab subreddit]
+* Frage in Foren und Chats, die mit dem Projekt/Produkt zusammenhängen, um Hilfe.
+* Wenn du dir sicher bist, dass du einen Bug gefunden hast, melde es beim Projekt/Produkt.
+* Frage https://selfhostbook.com/chat/[andere Leser] um Hilfe.
+* Versuche dein Glück in semi-moderierten öffentlichen Orten.
+Halte deine Erwartungen an diese gering, du könntest aber trotzdem gelegentlich Glück haben.
+** https://reddit.com/r/selfhosted/[self-host Subreddit]
+** https://reddit.com/r/homelab/[homelab Subreddit]
 ** https://matrix.to/#/#Nextcloud:matrix.org[Nextcloud chat]
-** https://matrix.to/#/#selfhosted:matrix.org[self-hosted chat]
-* Hire me to help you out.
+** https://matrix.to/#/#selfhosted:matrix.org[selbst-gehosteter Chat]
+* Stelle mich ein; ich kann dir helfen.
 
 === Alternativen zu mario
 
-If you're in a hurry, you can find one-click-install appliances with many ready-to-go apps.
+Wenn Sie es eilig haben, können Sie One-Click-Installationen mit vielen sofort einsatzbereiten Apps finden.
 (((FreedomBox)))
-https://freedombox.org[FreedomBox] is one promising contender in this space.
+https://freedombox.org[FreedomBox] ist ein vielversprechender Kandidat.
 
-There are also many shortcuts and frontends for self-hosting.
-For example, https://openmediavault.org[openmediavault] looks like a cool way to build a ((DIY)) (do it yourself) ((NAS)) (network attached storage).
+Es gibt auch viele Abkürzungen und Frontends für Self-Hosting.
+Zum Beispiel sieht https://openmediavault.org[openmediavault] nach einer coolen Möglichkeit aus, ein ((DIY)) (Do-it-yourself) ((NAS)) (Network Attached Storage) aufzubauen.
 
 (((YunoHost)))
 (((CasaOS)))
 (((Runtipi)))
-And there are countless more of these kinds of partial or full-service self-hosting solutions, such as:
+Ausserdem gibt es unzählige weitere dieser teils oder vollständig gewarteten self-hosting Lösungen; wie zum Beispiel:
 
 https://yunohost.org[YunoHost]::
-  Not considered, I prefer always using containers.
+  Nicht berücksichtigt, ich verwende lieber immer Container.
 https://casaos.io[CasaOS]::
-  New, interesting, very little documentation.
+  Neu, interessant, sehr wenig Dokumentation.
 https://runtipi.io[Runtipi]::
-  New, interesting, uses ((Docker Compose)) and Traefik.
+  Neu, interessant, verwendet ((Docker Compose)) und Traefik.
 
-These look intriguing, and it's hopeful (and overwhelming) to see many options in this space.
-I evaluated these only just enough to get the sense they didn't fit my wants and needs.
-I'm a crotchety old man and I'm reluctant to change, but I still do, sometimes.
-If and when I adopt something new, it must pass a high bar, ideally most or all these tests:
+Diese sehen interessant aus, und es ist ermutigend (und auch etwas überwältigend), so viele Optionen in diesem Bereich zu sehen.
+Ich habe diese nur gerade so weit evaluiert, dass ich das Gefühl hatte, sie passten nicht zu meinen Wünschen und Bedürfnissen.
+Ich bin ein mürrischer alter Mann und zögere, Veränderungen vorzunehmen – aber manchmal tue ich es trotzdem.
+Wenn ich etwas Neues übernehme, muss es eine hohe Messlatte bestehen, idealerweise die meisten oder alle dieser Tests:
 
 .Checkliste: Lösungs-Tauglichkeits
 [#solution-viability-checklist]
 ****
-* [ ] Will it work for years with minimal tinkering?
-* [ ] Is it easily extensible?
-* [ ] Do I trust the maintainers?
-* [ ] Does it employ technologies I'm familiar with?
-* [ ] Does it weaken or strengthen security by changing my ((attack surface))?
-* [ ] Does it add features/value I need/want, beyond what I'm already able to do?
-* [ ] Will it help my users?
-* [ ] Will it help me learn what I need/want to learn, and safely take care of the rest for me without my needing to learn more?
-* [ ] Will it help me figure out why I made a change to one of my services two years ago?
-* [ ] Does it phone home, using telemetry or my data in a way I don't approve?
-* [ ] Does it hold back „enterprise“ features I need, even for my scaled-down use case?
-Is it annoying about this, reminding me often?
-* [ ] If I want paid support, is it available?
-* [ ] Is it popular?
-Has it been around a while, and do I expect it to endure?
+* [ ] Wird es über Jahre hinweg mit minimalem Aufwand funktionieren?
+* [ ] Ist es leicht erweiterbar?
+* [ ] Vertraue ich denen, die es warten und erhalten?
+* [ ] Verwendet es Technologien, mit denen ich vertraut bin?
+* [ ] Verkleinert oder vergrößert es meine ((Angriffsfläche)) und beeinflusst damit die Sicherheit?
+* [ ] Fügt es Funktionen oder Mehrwert hinzu, den ich brauche oder will, über das hinaus, was ich bereits kann?
+* [ ] Wird es meinen Nutzern helfen?
+* [ ] Wird es mir helfen, das zu lernen, was ich lernen möchte/muss, und kümmert es sich sicher um den Rest, ohne dass ich mehr lernen muss?
+* [ ] Hilft es mir dabei, herauszufinden, warum ich vor zwei Jahren eine Änderung an einem meiner Dienste vorgenommen habe?
+* [ ] Sendet es durch Telemetrie oder auf eine Weise meine Daten nach Hause, die ich nicht gutheiße?
+* [ ] DBehält es „Enterprise“-Funktionen vor, die ich auch in meinem kleineren Anwendungsfall brauche?
+Ist es dabei aufdringlich und erinnert mich ständig daran?
+* [ ] Falls ich bezahlten Support möchte, ist er verfügbar?
+* [ ] Ist es populär?
+Gibt es das schon länger, und erwarte ich, dass es bestehen bleibt?
 ****
 
-See also: <<traits-of-good-services>> and <<traits-of-bad-services>> in <<Dienstwahl>>.
+Siehe auch: <<Merkmale-guter-Dienste>> und <<Merkmale-schlechter-Dienste>> unter <<Dienstwahl>>.
 
-After brief reviews, I find existing self-hosting solutions generally:
+Nach kurzen Überprüfungen stelle ich fest, dass bestehende Self-Hosting-Lösungen im Allgemeinen:
+* neu und unreif sind
+* keine ausreichende Dokumentation haben
+* zu viel tun: versuchen, viele Probleme zu lösen, ohne genügend Ressourcen oder Stabilität, um alles zu pflegen
+* zu wenig tun: im Grunde nur eine weitere Linux-Distribution mit einer zusätzlichen Schicht, um Apps zu entdecken und zu installieren
+* technologische Entscheidungen treffen, mit denen ich nicht einverstanden bin
+* eine begrenzte Liste von Apps in ihren App-Stores haben und die ausschließen, die ich möchte
+* zu viele Apps in ihrem App-Store haben, ohne gute Möglichkeiten, Qualität, Datenschutz und Funktionen zu vergleichen
+* sich auf GUIs (graphische Benutzeroberflächen) konzentrieren, während ich lieber mit der Kommandozeile arbeite
 
-* are new and immature
-* lack proper documentation
-* do too much: try to solve many problems without sufficient inertia/resources to maintain it all
-* don't do enough: just another Linux distro with an added layer to discover and install apps
-* make opinionated tech choices I don't agree with
-* have a limited list of apps in their app stores and exclude the ones I want
-* have too many apps in their app store, without good ways to compare quality, privacy, features
-* are GUI (graphical user interface)-focused where I prefer working on a command line
-
-Still, check `'em out.
-They might work better for you if you don't need the level of power and control provided by this book.
-By the time I publish, they (or some new contenders) might grow to overcome my approach.
-Please let me know what you discover.
-If I missed something, I'd love to learn about it!
+Trotzdem: Schau sie dir an.
+Vielleicht funktionieren sie für dich besser, wenn du nicht das Maß an Macht und Kontrolle brauchst, das dieses Buch bietet.
+Bis ich veröffentliche, könnten sie (oder neue Herausforderer) so weit gereift sein, dass sie meinen Ansatz übertreffen.
+Bitte lass mich wissen, was du herausfindest.
+Falls ich etwas übersehen habe, würde ich gerne davon erfahren!
 
 (((Ansible)))
 (((Clace)))
@@ -3508,7 +3516,7 @@ If I missed something, I'd love to learn about it!
 (((LinuxServer.io)))
 (((NextcloudPi)))
 (((UBOS)))
-Here are some more related and interesting self-hosting solutions worth researching further:
+Hier sind einige weitere verwandte und interessante Self-Hosting-Lösungen, die eine weitere Recherche wert sind:
 
 * https://github.com/davestephens/ansible-nas[Ansible NAS]
 * https://clace.io[Clace]
@@ -3522,195 +3530,196 @@ Here are some more related and interesting self-hosting solutions worth research
 * https://nextcloudpi.com[NextcloudPi]
 * https://ubos.net[UBOS]
 
-== Discussion topics
+== Diskussionsthemen
 
-Here are some conversation starters for a class or small group.
+Hier ein paar Gesprächseinstiege für einen Kurs oder eine Kleingruppendiskussion.
 
-. What services do _you_ run?
-Why?
-For whom?
-. What are some considerations when choosing between public cloud and on-premise self-hosting?
-. Compare and contrast different options for bloßes Metal self-hosting hardware in terms of setup cost, power usage, and expandability.
-. Why does the author encrypt all network traffic, even in a closed LAN?
-. Review this book for poor security practices.
-How might it be improved?
-. Why is privacy important, especially with digital information?
-. What's the best part about self-hosting?
-. What are some pitfalls of self-hosting?
-. What is the future of self-hosting?
-. What is the ideal number of users to support with a single self-hosted server?
-. Is the _Steadfast_ method useful for larger groups, big families, church congregations, schools, businesses, and governements?
-Why or why not?
-. How might this book be adapted for:
-.. intermittent power
-.. intermittent network
-.. local-only network
-.. clustered hardware
-. Consider FOSS with respect to human attention and focus.
-Contrast with non-FOSS.
-. What approaches in this book may be conceptually dangerous or misleading?
-Why?
-How could they be improved?
-. Summarize this book in one sentence.
-. How might you detect if your server has been compromised?
+. Welche Dienste betreibst _du_?
+Warum?
+Für wen?
+. Was muss man bedenken, wenn man zwischen Self-Hosting in einer öffentlichen Cloud und lokalem Self-Hosting entscheidet?
+. Vergleiche verschiedene Optionen für bare Metal Self-Hosting-Hardware im Bezug auf Einrichtungskosten, Stromverbrauch und Erweiterbarkeit.
+. Warum verschlüsselt der Autor den gesamten Netzwerkverkehr, sogar in einem geschlossenen LAN?
+. Prüfe dieses Buch auf schlechte Sicherheitspraktiken.
+Wie könnte es verbessert werden?
+. Warum ist Privatsphäre wichtig, besonders bei digitalen Informationen?
+. Was ist das Beste am Self-Hosting?
+. Was sind einige Fallstricke des Self-Hosting?
+. Wie sieht die Zukunft des Self-Hosting aus?
+. Was ist die ideale Anzahl von Benutzern, die mit einem einzelnen Self-Hosted-Server unterstützt werden sollen?
+. Ist die im Buch gennante Self-Hosting Methode nützlich für größere Gruppen, Großfamilien, Kirchengemeinden, Schulen, Unternehmen und Regierungen?
+Warum oder warum nicht?
+. Wie könnte man dieses Buch anpassen für:
+.. unterbrochene Stromversorgung
+.. unterbrochene Netzwerkverbindung
+.. rein lokale Netzwerke
+.. Cluster-Hardware
+. Betrachten Sie FOSS (Free and Open Source Software) in Bezug auf menschliche Aufmerksamkeit und Fokus.
+Vergleichen Sie es mit nicht-freier Software.
+. Welche Ansätze in diesem Buch könnten konzeptionell gefährlich oder irreführend sein?
+Warum?
+Wie könnte man sie verbessern?
+. Fassen Sie dieses Buch in einem Satz zusammen.
+. Wie könnten Sie erkennen, ob Ihr Server kompromittiert wurde?
 
-== Übungen
+== EÜbungen
 
-Exercises for individual practice and study groups.
+Übungen für individuelles Üben und Lerngruppen.
 
-. Stand up a service besides those included with mario using an existing image.
-For example, a https://awesome-selfhosted.net/tags/personal-dashboards.html[dashboard].
-. Build a custom image.
-Hint: use `docker build` or https://buildah.io[Buildah].
-. Run a container using your custom image.
-. Create a service (using your container) to know if it is time to reboot your server.
-Hint: check if `/host/var/run/reboot-required` exists.
-. Stand up a second Nextcloud service for experiments.
-Use it to test out the latest release or a custom app.
-. Try Nextcloud with object storage for primary storage.
-. Adapt this guide to a Linux distribution besides Ubuntu.
-. Help resolve a bug mentioned in this book.
-. Set up periodic automatic offsite backups.
-. Add a GPU to your server.
-. Enable GPU transcoding in Jellyfin.
-. Sign the open letter at https://publiccode.eu[Public Money, Public Code] because software paid for with taxes should be FOSS.
-. Aggregate logs.
-. Pick a Docker container that doesn't need to be able to initiate outbound network connections.
-Prevent it from doing so and prove to yourself it works.
-. What if the server won't boot?
-.. Describe troubleshooting steps, in detail.
-.. Make a plan for system recovery when it fails to boot.
-. Set up https://en.wikipedia.org/wiki/Single_sign-on[single sign-on].
-. Set up https://fail2ban.org[Fail2Ban].
-Feed it logs from various services.
-. Set up https://suricata.io[Suricata] network analysis and threat detection.
-. Try running containers with https://podman.io[podman].
-. Read up on other ways to isolate processes, e.g. FreeBSD jails and chroot.
-. Contribute to mario.
-. Move secrets used by mario into an Ansible vault or a self-hosted service intended for managing secrets.
-. Adapt mario to use podman.
-. Adapt mario to use https://kubernetes.io[Kubernetes].
-. If you have a dynamic WAN IP address, create or use an existing dynamic DNS update client container.
-. Stand up a mail relay container such as https://github.com/crazy-max/docker-msmtpd or https://github.com/namshi/docker-smtp.
-Allow all mario-managed services to send email through this relay.
-. Stand up your own DNS server.
-. Reorganize mario services into distinct Ansible roles.
-Upload the roles to https://galaxy.ansible.com[Ansible Galaxy] as a playbook bundle.
-. Traefik's Docker integration has https://doc.traefik.io/traefik/providers/docker/#docker-api-access[security implications].
-Test these risks against your security considerations following <<Bedrohungsmodell>>.
-If you should mitigate this risk based on your threat model, harden mario so even if Traefik were compromised it would not compromise the whole server.
-Review the Traefik docs on this topic and https://github.com/wollomatic/traefik-hardened[traefik-hardened] to get some ideas.
-. Modify mario to https://docs.docker.com/engine/security/userns-remap/[always run containers as unprivileged (non-root) users].
-. Use appropriate ownership and permissions for persistent container data.
-. Set up https://github.com/strukturag/nextcloud-spreed-signaling#running-with-docker[Nextcloud Talk high-performance backend].
-. https://docs.docker.com/network/packet-filtering-firewalls/#docker-and-ufw[Uncomplicated Firewall and Docker do not get along well].
-Work around this and share your solution with others.
-. Try https://nixos.org[Nix and NixOS].
-. Roll your own Linux distro.
-. Build, configure and deploy an https://opnsense.org[OPNsense firewall].
-. Set up your own https://headscale.net[headscale] VPN/tailnet for remote LAN access.
-. Improve preview/thumbnail generation in Nextcloud.
-.. Research first: Will you and your users benefit from the change?
-Are there security implications?
-How does default preview generation work?
-What file types are supported by the default previewer and other previewers?
-How much disk space is used?
-How fast is it, subjectively and objectively?
-What maintenance will it require once enabled?
-.. Create a test bed with a clean install and many preview-able files of various file formats.
-Find or write code for recording objective performance metrics (e.g. time it takes to generate previews for a folder containing many files of various types).
-Consider both client- and server-side performance.
-Keep manual testing notes (subjective measurements).
-.. Compare https://apps.nextcloud.com/apps/previewgenerator[Preview Generator], https://github.com/h2non/imaginary[Imaginary], and any other extant previewers.
-.. Establish baseline performance metrics before making any changes.
-.. Enable one or the other, get timings, repeat for each previewer.
-.. Evaluate the change.
-Is it noticeable?
-Does your timing script show any difference?
-How much disk space is used for previews?
-How challenging was this to enable?
+. Richte einen Dienst ein, zusätzlich zu den in mario enthaltenen, unter Verwendung eines bestehenden Images.
+Beispiel: ein https://awesome-selfhosted.net/tags/personal-dashboards.html[Dashboard].
+. Baue ein benutzerdefiniertes Image.
+Hint: Nutze `docker build` der https://buildah.io[Buildah].
+. Starte einen Container mit deinem benutzerdefinierten Image.
+. Erstelle einen Dienst (unter Verwendung deines Containers), um zu erkennen, ob es Zeit ist, deinen Server neu zu starten.
+Hint: Überprüfe, ob `/host/var/run/reboot-required` existiert.
+. Richte einen zweiten Nextcloud-Dienst für Experimente ein.
+Verwende ihn, um neue Versionen oder eine benutzerdefinierte App zu testen.
+. Probiere Nextcloud mit Objektspeicher als primärem Speicher aus.
+. Passe diese Anleitung an eine andere Linux-Distribution als Ubuntu an.
+. Hilf mit, einen in diesem Buch erwähnten Fehler zu beheben.
+. Richte regelmäßige automatische Offsite-Backups ein.
+. Füge deinem Server einen Grafikprozessor hinzu.
+. Aktiviere Grafikprozessor-Transkodierung in Jellyfin.
+. Unterzeichne den offenen Brief auf https://publiccode.eu[Public Money, Public Code], weil Software, die mit Steuergeldern bezahlt wird, FOSS sein sollte.
+. ammle und fasse Protokolldaten zusammen.“
+. Wähle einen Docker-Container, der keine ausgehenden Netzwerkverbindungen initiieren muss.
+Verhindere, dass er dies kann, und überprüfe, ob es funktioniert.
+. Was, wenn der Server nicht bootet?
+.. Beschreibe die Schritte zur Fehlerbehebung im Detail.
+.. Erstelle einen Plan für die Systemwiederherstellung, falls der Server nicht startet.
+. Richte https://en.wikipedia.org/wiki/Single_sign-on[Single Sign-on] ein.
+. Richte https://fail2ban.org[Fail2Ban] ein.
+Füttere es mit Protokolldaten von verschiedenen Diensten.
+. Richte https://suricata.io[Suricata] für Netzwerkanalyse und Bedrohungserkennung ein.
+. Probiere das Ausführen von Containern mit https://podman.io[podman] aus.
+. Informiere dich über andere Möglichkeiten, Prozesse zu isolieren, z. B. FreeBSD Jails und chroot.
+. Trage zu mario bei.
+. Verschiebe geheime Daten, die mario nutzt, in einen sicheren Speicher, z. B. Ansible Vault oder einen selbst gehosteten Dienst für Passwörter.
+. Passe mario an, sodass es mit Podman funktioniert.
+. Passe mario an, sodass es mit https://kubernetes.io[Kubernetes] funktioniert.
+. Wenn du eine dynamische WAN-IP hast, richte einen Client für dynamisches DNS ein oder nutze einen bestehenden.
+. Richte einen eigenen Mail-Relay-Dienst ein, z. B. mit https://github.com/crazy-max/docker-msmtpd oder https://github.com/namshi/docker-smtp, 
+damit alle mario-Dienste E-Mails darüber versenden können..
+. Richte einen eigenen DNS-Server ein.
+. Ordne die mario-Dienste in unterschiedliche Ansible-Rollen ein.
+Lade diese als Playbook-Bundle bei https://galaxy.ansible.com[Ansible Galaxy] hoch.
+. Die Docker-Integration von Traefik hat https://doc.traefik.io/traefik/providers/docker/#docker-api-access[Sicherheitsimplikationen].
+Teste diese Risiken anhand deines <<Bedrohungsmodell>>.
+ärte mario so ab, dass selbst bei einem kompromittierten Traefik der ganze Server nicht gefährdet ist.
+Lies dazu die Traefik-Dokumentation und schaue dir https://github.com/wollomatic/traefik-hardened[traefik-hardened] an.
+. Passe mario so an, dass https://docs.docker.com/engine/security/userns-remap/[alle Container immer mit eingeschränkten Benutzerrechten laufen (nicht als Root)].
+. Stelle sicher, dass die Daten der Container korrekt zugeordnet und geschützt sind (Besitzrechte und Zugriffsrechte).
+. Richte die https://github.com/strukturag/nextcloud-spreed-signaling#running-with-docker[hochleistungsfähige Nextcloud-Talk-Backend-Komponente] ein.
+. https://docs.docker.com/network/packet-filtering-firewalls/#docker-and-ufw[Docker und Unkomplizierte Firewall vertragen sich nicht gut].
+Finde eine Lösung und teile sie mit anderen.
+. Probiere https://nixos.org[Nix and NixOS] aus.
+. Erstelle deine eigene Linux-Distribution.
+. Baue, konfiguriere und betreibe eine https://opnsense.org[OPNsense Firewall].
+. Richte ein eigenes VPN/Tailnet mit https://headscale.net[headscale] ein, um aus der Ferne auf dein LAN zuzugreifen.
+. Verbessere die Vorschau- und Miniaturbildgenerierung in Nextcloud. 
+.. Prüfe zuerst: Wird die Änderung dir und deinen Nutzern einen Nutzen bringen?
+Gibt es Sicherheitsimplikationen?
+Wie funktioniert die Standard-Vorschau-Generierung?
+Welche Dateitypen werden vom Standard-Vorschauer und anderen Vorschauern unterstützt?
+Wie viel Speicherplatz wird verwendet?
+Wie schnell ist es, subjektiv und objektiv?
+Welche Wartung wird erforderlich sein, sobald es aktiviert ist?
+.. rstelle eine Testumgebung mit einer sauberen Installation und vielen Dateien, die Vorschauen erlauben, in verschiedenen Dateiformaten.
+Finde oder schreibe Code, um objektive Leistungsmetriken zu erfassen (z. B. Zeit, die benötigt wird, um Vorschauen für einen Ordner mit vielen Dateien verschiedener Typen zu erzeugen).
+Berücksichtige sowohl Client- als auch Server-Leistung.
+Führe manuelle Testnotizen (subjektive Messungen).
+.. Vergleiche https://apps.nextcloud.com/apps/previewgenerator[Preview Generator], https://github.com/h2non/imaginary[Imaginary], und alle anderen existierenden Vorschauer.
+.. Erstelle Basis-Leistungsmetriken, bevor Änderungen vorgenommen werden.
+.. Aktiviere einen Vorschauer, erfasse die Zeiten, wiederhole dies für jeden Vorschauer.
+.. Beurteile die Änderungen.
+Ist es bemerkbar?
+Zeigt dein Timing-Skript einen Unterschied?
+Wie viel Speicherplatz wird für Vorschauen verwendet?
+Wie schwierig war die Aktivierung?
 
-The detailed steps in the last exercise suggest what may be required in general to achieve better outcomes.
-I've omitted them from the other exercises for brevity.
-Please apply similar detailed steps elsewhere as desired.
+Die detaillierten Schritte in der letzten Übung zeigen, was im Allgemeinen erforderlich sein könnte, um bessere Ergebnisse zu erzielen.
+Ich habe sie in den anderen Übungen der Kürze halber weggelassen.
+Bitte wende ähnliche detaillierte Schritte an anderen Stellen nach Bedarf an.
 
 :sectnums!:
 
-== Afterword
+== Nachwort
 
-In the words of Scott McNealy, former CEO of Sun Microsystems:
-
+In den Worten von Scott McNealy, ehemaliger CEO von Sun Microsystems:
 ____
-Open Quelleis free like a puppy is free.
+Open Source is free like a puppy is free.
+
+Open Source ist genauso kostenlos wie ein Welpe kostenlos ist.
 ____
 
-Everybody loves a puppy, right?
-_Right??_
-I sure hope so.
-Because--fair warning--if you spend too much time with your „puppy“ (self-hosting, FOSS, etc.), your partner will show up with an actual puppy.
+Jeder liebt Hundewelpen, oder?
+_Oder??_
+Ich hoffe es doch sehr.
+Denn – kleine Warnung – wenn du zu viel Zeit mit deinem „Welpen“ (Self-Hosting, FOSS usw.) verbringst, taucht dein Partner irgendwann mit einem echten Welpen auf.
 
 [#image-puppy]
-.Open Quelleis free like a puppy. Pictured: actual puppy.
+.Open Source ist so kostenlos wie ein Welpe. Abgebildet: Ein echter Welpe.
 image::puppy.jpg[align="center",scaledwidth=80%]
 
-If your problem is _that_ cute, I suppose it's not too a bad problem to have.
-I hope you find what you need to keep _your_ puppies happy!
+Wenn dein Problem _so_ niedlich ist, dann ist es wohl kein allzu schlimmes Problem.
+Ich hoffe, du findest, was du brauchst, um _deine_ Welpen glücklich zu machen!
 
-Finally, I'd like to share an Ursula K. Le Guin quote.
-According to her:
+Abschließend möchte ich ein Zitat von Ursula K. Le Guin teilen.
+Ihr zufolge:
 
 ____
 A book is just a box of words until a reader opens it.
+
+Ein Buch ist bloß eine Kiste voller Worte, bis ein Leser es öffnet.
 ____
 
-Dear Reader, _this book exists because you exist_.
-I hope it serves you well.
-I am humbled and grateful for your support.
-Thank you, thank you, thank you.
+Liebe Leser*in, _dieses Buch existiert, weil du existierst_.
+Ich hoffe, es ist dir eine nützliche Hilfe.
+Ich bin demütig und dankbar für deine Unterstützung.
+Danke, danke, danke.
 
 == Danksagungen
 
-Sometimes I feel more like a birthday boy than an author, accepting gifts from so many generous people.
-I truly couldn't have done this alone and I am so, so grateful for you.
+Manchmal fühle ich mich eher wie ein Geburtstagskind als ein Author, weil ich so viele Geschenke von zahlreichen großzügige Menschen bekommen habe.
+Ohne euch hätte ich es ehrlich nicht geschafft, und ich bin unendlich dankbar für euch.
 
-Thanks to Eva for more than I could ever account for here, from „What if it rains?“ to leading by learning and fearlessly doing.
-For supporting my dreams, including this book: your several inspiring rounds of thoughtful code review, technical critique, developmental editing, copy editing, proof reading, and line editing.
+Danke an Eva für mehr, als ich hier jemals aufzählen könnte – von „Was, wenn es regnet?“ bis hin zum Führen durch Lernen und furchtloses Handeln. 
+Für die Unterstützung meiner Träume, einschließlich dieses Buches: deine zahlreichen inspirierenden Runden sorgfältiger Code-Reviews, technischen Kritiken, Entwicklungsbearbeitung, Korrekturlesen, Lektorat und Zeilenbearbeitung.
 
-Thanks to my daughter for your fantastic illustrations.
+Danke an meine Tochter für deine fantastischen Illustrationen.
 
-Thanks to Deb Nicholson for writing the meaningful Foreword.
+Danke an Deb Nicholson für das Schreiben des bedeutungsvollen Vorworts.
 
-Thanks to my family and friends for tolerating my protracted FOSS self-hosting boondoggles, including this book.
+Danke an meine Familie und Freunde dafür, dass ihr meine ausgedehnten FOSS-Selbsthostings-Abenteuer, einschließlich dieses Buches, geduldig ertragt.
 
-Thanks to _Pro Git 2_, my inspiration to switch to Asciidoctor.
+Danke an Pro Git 2, meine Inspiration, auf Asciidoctor umzusteigen.
 
-Thanks to the contributors to the myriad FOSS programs I used to create this book, especially John MacFarlane and the Pandoc team, Dan Allen and the Asciidoctor team, and Bram Moolenaar and the Vim team (rest in peace, Bram).
+Danke an die Mitwirkenden der unzähligen FOSS-Programme, die ich zur Erstellung dieses Buches verwendet habe, insbesondere John MacFarlane und das Pandoc-Team, Dan Allen und das Asciidoctor-Team, sowie Bram Moolenaar und das Vim-Team (ruhe in Frieden, Bram).
 
-Thanks to Rob Smith and all #underlug for help with hardware, networking, Ansible, and Traefik.
+Danke an Rob Smith und alle bei #underlug für Hilfe bei Hardware, Netzwerken, Ansible und Traefik.
 
-Thanks to the „Deadbeat Dads“ Bryan Daisley and Rob Floberg for your invaluable feedback.
+Danke an die „Deadbeat Dads“ Bryan Daisley und Rob Floberg für euer unbezahlbares Feedback.
 
 // alphabetical by last name
 
-Thanks to all my beloved beta testers, including Andrew Davidson, Brendan Kidwell, Eva Monsen, Don O'Neill, and Lenny Wondra.
+Danke an alle meine geliebten Beta-Tester, darunter Andrew Davidson, Brendan Kidwell, Eva Monsen, Don O’Neill und Lenny Wondra.
 
-Thanks to Bob Nystrom for your mind-expanding design review.
+Danke an Bob Nystrom für dein geistig bereicherndes Design-Review.
 
-Thanks to Lenny Wondra for your deeply effective tech review and editing.
+Danke an Lenny Wondra für dein außerordentlich effektives technisches Review und Lektorat.
 
-Thanks to Fiona Burkart for your thoughtful and thorough German translation.
+Am allermeisten danke ich meiner Frau und meinen Kindern dafür, dass sie mich unterstützen und an mich glauben.
+Für all das Kochen, Reden, Zuhören, Kunst, Programmieren, Mathematik, Musik und die Liebe.
+Haben wir ein Glück!
 
-Thanks most of all to my wife and kids for supporting and believing in me.
-For all the cooking, talking, listening, art, coding, math, music, and love.
-Aren't we lucky?!
+== Verzeichnis
 
-== Glossary
+Hier ist eine Liste von Definitionen für einige der weniger offensichtlichen Begriffe, die ich in diesem Buch verwende, um zu verdeutlichen, wie ich sie meine.
+Sie orientieren sich so weit wie möglich an der gebräuchlichen Verwendung.
+Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwerke usw. haben oft noch differenziertere Definitionen.
 
-Here's a list of definitions for some of the more non-obvious terms I use in this book to clarify how I use them.
-These stick to common use as much as possible.
-Specialists in computer science, security, administration, networking and so on will have more nuanced definitions.
-
-// Quellefor "These days that pretty much means git" statement: https://en.wikipedia.org/wiki/Git#Adoption
+// Source for "These days that pretty much means git" statement: https://en.wikipedia.org/wiki/Git#Adoption
 
 ((AI))::
   Artificial intelligence.
@@ -3720,7 +3729,7 @@ Specialists in computer science, security, administration, networking and so on 
   Total of possible attack vectors. Fewer is more secure. Example: closing all but the ports you need open reduces yours.
 ((backend))::
   I use this term to refer to either a service (e.g. a database) or server. It's something you more frequently interact with indirectly, say, via a frontend like a web app or mobile UI.
-((bloßes Metal))::
+((Bare Metal))::
   Physical nearby computing resources, as opposed to rented compute time on someone else's hardware. Used in this book primarily to indicate hardware autonomy.
 ((block storage))::
   Cloud storage option with direct filesystem access including files and folders. Used directly/natively/locally from an OS. Size is relatively fixed and determined at creation time.
@@ -3737,10 +3746,10 @@ Specialists in computer science, security, administration, networking and so on 
 ((cluster))::
   Collated collection of machines treated as a single machine to achieve higher scale computing power.
 ((compute))::
-  Noun: CPU or GPU resources expended when running software services.
+  Noun: Hauptprozessor or Grafikprozessor resources expended when running software services.
 ((container))::
   Running instance of an image. Containers may also be referred to as „guests“, although this is more commonly used to describe VMs.
-((CPU))::
+((Hauptprozessor))::
   Central processing unit. The main brain of the computer; the place where most of the math happens.
 ((data))::
   Noun, plural. Yes, I use the annoying plural form! Sorry, old habit.
@@ -3784,7 +3793,7 @@ Specialists in computer science, security, administration, networking and so on 
   A hand-wavy way of saying something is self-evidently wonderful.
 ((groupware))::
   Software for group collaboration. Loosely: mail, calendar, and contacts. Sometimes includes collborative editing of office documents and spreadsheets.
-((GPU))::
+((Grafikprozessor))::
   Graphics processing unit. Originally intended for graphics. Found to be useful for many specialized compute workloads including transcoding video.
 ((GUI))::
   Graphical user interface.
@@ -3827,10 +3836,10 @@ Specialists in computer science, security, administration, networking and so on 
 ((mario))::
   Provisioning system included with this book to assist with learning how to set up and maintain your own server. Consists of scripts, documentation, and configuration files.
 ((NAS))::
-  Network-attached storage. A server made for storing data. Usually has several HDD bays in a non-rackmount box-like form factor. Likely has less CPU and RAM (and less power usage) than what I describe in <<Server>>.
+  Network-attached storage. A server made for storing data. Usually has several HDD bays in a non-Gehäusestapel box-like form factor. Likely has less Hauptprozessor and RAM (and less power usage) than what I describe in <<Server>>.
 ((NIC))::
   Network interface card, also called a network adapter. Hardware for receiving and sending data over a network.
-((object storage))::
+((Objektspeicher))::
   Relatively unlimited and typically remote cloud storage option. Actual data are abstracted: backups and structured access require special services, indexes, and software.
 ((OCR))::
   Optical character recognition. The process of converting images of text to actual text.
@@ -3864,7 +3873,7 @@ OS::
 ((Reverse-Proxy))::
   Networking software for filtering and directing traffic. In a self-hosted context, useful for SSL termination and for running several self-hosted web services with different domain names with a single IP address.
 ((router))::
-  Network device used to handle traffic at the boundary between networks such as a WAN and LAN. A SOHO router typically also provides various other functions including DNS, DHCP, switching, firewalling, and Wi-Fi. See: port forward. A Traefik router is something different: this is a software logic connecting entrypoints to services. See <<Traefik Architektur>>.
+  Network device used to handle traffic at the boundary between networks such as a WAN and LAN. A SOHO router typically also provides various other functions including DNS, DHCP, switching, firewalling, and Wi-Fi. See: port forward. A Traefik router is something different: this is a software logic connecting entrypoints to services. See <<Traefik architecture>>.
 ((runtime))::
   The period of time when a software is running; when a set of machine instructions becomes a running process. Also used to describe a set of tools/libraries to facilitate same. May appear as „runtime environment“ in the latter form.
 ((SeaGL))::
