@@ -3710,6 +3710,9 @@ Danke an Bob Nystrom für dein geistig bereicherndes Design-Review.
 
 Danke an Lenny Wondra für dein außerordentlich effektives technisches Review und Lektorat.
 
+// TODO - translate
+Thanks to Fiona Burkart for your thoughtful and thorough German translation.
+
 Am allermeisten danke ich meiner Frau und meinen Kindern dafür, dass sie mich unterstützen und an mich glauben.
 Für all das Kochen, Reden, Zuhören, Kunst, Programmieren, Mathematik, Musik und die Liebe.
 Haben wir ein Glück!
