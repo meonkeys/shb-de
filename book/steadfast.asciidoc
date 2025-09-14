@@ -1382,7 +1382,7 @@ Wir möchten, dass ((HTTPS))-Anfragen an Port 443, die für cloud.example.com be
 Um diesen Vorgang zu verstehen, hilft es, das mitgelieferte Traefik-Architekturdiagramm zu studieren – ebenso wie die Quelltexte von mario.
 
 [#image-traefik-architecture]
-.Traefik-Architekturdiagramm, das zeigt, wie eine Anfrage einen Dienst erreicht.Aus dem MIT-lizenzierten Quellcode von Traefik. Danke an Peka für das Gopher-Logo, lizenziert unter CC-BY-3.0.
+.Traefik-Architekturdiagramm, das zeigt, wie eine Anfrage einen Dienst erreicht. Aus dem MIT-lizenzierten Quellcode von Traefik. Danke an Peka für das Gopher-Logo, lizenziert unter CC-BY-3.0.
 image::traefik-architecture.png[]
 
 (((router, Traefik)))
