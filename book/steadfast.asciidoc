@@ -2898,12 +2898,12 @@ Mein Pi-hole-Server sitzt zwischen dem DNS-Server meines Routers und allen Clien
 
 ifdef::backend-html5,backend-pdf[]
 [#image-DNS-traffic-diagram]
-.Pi-hole DNS traffic flow diagram.
+.Pi-hole DNS-Verkehrsflussdiagramm.
 image::DNS-traffic-diagram.svg[align="center",scaledwidth=80%]
 endif::[]
 ifdef::backend-epub3[]
 [#image-DNS-traffic-diagram]
-.Pi-hole DNS traffic flow diagram.
+.Pi-hole DNS-Verkehrsflussdiagramm.
 image::DNS-traffic-diagram.png[,571,651,align="center"]
 endif::[]
 
