@@ -1742,6 +1742,8 @@ NOTE: Während du das Betriebssystem installierst, denke bereits an die Notfallw
 Mache dir Notizen und stelle dir vor, wie du den Vorgang exakt wiederholst.
 Bei jedem Schritt im interaktiven Ubuntu-Installer: Akzeptiere entweder die Voreinstellung oder notiere dir deine Auswahl.
 
+// TODO - translate
+
 . *Installiere Ubuntu* 24.04 LTS server.
 Siehe https://ubuntu.com/tutorials/install-ubuntu-server[this tutorial] für eine Schritt-für-Schritt Anleitung.
 . Verwende beim Konfigurieren des Netzwerks eine *statische LAN-IP-Adress*.
