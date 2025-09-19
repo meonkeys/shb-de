@@ -1713,7 +1713,7 @@ endif::[]
 ifdef::backend-epub3[]
 [#image-WAN-to-LAN-traffic]
 .WAN into LAN traffic flow diagram.
-image::WAN-to-LAN-traffic.png[,472,320,align="center"]
+image::WAN-to-LAN-traffic.png[,536,320,align="center"]
 endif::[]
 
 (((IPMI)))
