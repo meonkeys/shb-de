@@ -3541,7 +3541,7 @@ Hier ein paar Gesprächseinstiege für einen Kurs oder eine Kleingruppendiskussi
 Warum?
 Für wen?
 . Was muss man bedenken, wenn man zwischen Self-Hosting in einer öffentlichen Cloud und lokalem Self-Hosting entscheidet?
-. Vergleiche verschiedene Optionen für bare Metal Self-Hosting-Hardware im Bezug auf Einrichtungskosten, Stromverbrauch und Erweiterbarkeit.
+. Vergleiche verschiedene Optionen für Bare Metal Self-Hosting-Hardware im Bezug auf Einrichtungskosten, Stromverbrauch und Erweiterbarkeit.
 . Warum verschlüsselt der Autor den gesamten Netzwerkverkehr, sogar in einem geschlossenen LAN?
 . Prüfe dieses Buch auf schlechte Sicherheitspraktiken.
 Wie könnte es verbessert werden?
