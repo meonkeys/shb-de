@@ -3496,6 +3496,7 @@ Gibt es das schon länger, und erwarte ich, dass es bestehen bleibt?
 Siehe auch: <<Merkmale-guter-Dienste>> und <<Merkmale-schlechter-Dienste>> unter <<Dienstwahl>>.
 
 Nach kurzen Überprüfungen stelle ich fest, dass bestehende Self-Hosting-Lösungen im Allgemeinen:
+
 * neu und unreif sind
 * keine ausreichende Dokumentation haben
 * zu viel tun: versuchen, viele Probleme zu lösen, ohne genügend Ressourcen oder Stabilität, um alles zu pflegen
