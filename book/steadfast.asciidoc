@@ -1127,7 +1127,7 @@ NOTE: Ziehe Alternativen zur Portweiterleitung in Betracht, wie etwa die Verwend
 
 ==== Bedrohungsmodell
 
-(((threat model)))
+(((Bedrohungsmodell)))
 Gehen wir einen Schritt zurück und sprechen über Bedrohungsmodellierung.
 Dein Bedrohungsmodell beschreibt, wie du Bedrohungen für deine Daten einschätzt und wie du ihnen entgegenwirken willst.
 Mit einem klaren Bedrohungsmodell kannst du fundierte Entscheidungen treffen – zum Beispiel darüber, ob du den WAN-Zugriff auf deinen Server erlauben solltest oder nicht.
@@ -3907,7 +3907,7 @@ OS::
   Accepting encrypted traffic and passing along unencrypted traffic. Act performed by Traefik Reverse-Proxy in a mario-provisioned server. More accurately and less often referred to as „TLS termination“. Actual SSL is deprecated.
 ((sysadmin))::
   Portmanteau of „systems administrator“. A party responsible for the upkeep of a computer system.
-((threat model))::
+((Bedrohungsmodell))::
   Analysis of risks and defenses of digital assets.
 ((TB))::
   Terabyte. Like GB, can be either base-10 or base-2, so: 1,000^4^ (1,000,000,000,000) bytes for HDDs and 1,024^4^ (1,099,511,627,776) bytes for RAM.
