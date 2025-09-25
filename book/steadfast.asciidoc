@@ -1662,7 +1662,7 @@ Remote-Backups können länger dauern – das ist in Ordnung.
 
 Ich verwende eine SSD für das Betriebssystem und alles außerhalb meiner Fotos/Dokumente usw., da die Startzeit des Betriebssystems entscheidend ist und dieses beim Booten nur wenig von Dateisystem-Caching profitiert.
 
-(((data sovereignty)))
+(((Datensouveränität)))
 Eine interessante Alternative zu Festplatten für bestimmte Anwendungsfälle ist Objektspeicher.
 Dabei handelt es sich um einen skalierbaren, cloudbasierten, unstrukturierten Key-Value-Speicher,
 den das Betriebssystem nicht direkt nutzen kann – Nextcloud allerdings schon.
@@ -3758,13 +3758,13 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Collated collection of machines treated as a single machine to achieve higher scale computing power.
 ((compute))::
   Noun: Hauptprozessor or Grafikprozessor resources expended when running software services.
-((container))::
+((Container))::
   Running instance of an image. Containers may also be referred to as „guests“, although this is more commonly used to describe VMs.
 ((Hauptprozessor))::
   Central processing unit. The main brain of the computer; the place where most of the math happens.
 ((data))::
   Noun, plural. Yes, I use the annoying plural form! Sorry, old habit.
-((data sovereignty))::
+((Datensouveränität))::
   Full control of your data. For example, having original copies of your files.
 ((deploy))::
   Prepare a service for use. Typically involves building or copying files before a service is started.
