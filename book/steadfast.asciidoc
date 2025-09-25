@@ -1493,7 +1493,7 @@ Hier sind einige Hinweise darauf, dass ein selbst gehosteter Dienst möglicherwe
 ****
 * Unbeliebt, inaktiv oder schlecht gepflegt:
 ** Wenige Maintainer oder Beitragende
-* Maintainer reagieren kaum auf Beiträge der Community
+** Maintainer reagieren kaum auf Beiträge der Community
 * Enthält Telemetrie (verbindet sich nach Hause, sammelt Statistiken oder Nutzungsdaten) – besonders ohne deine Zustimmung und/oder standardmäßig aktiviert
 * Hat bekannte Sicherheitslücken
 * Verwirrende oder undurchsichtige Organisation: Governance, Entwicklungsplan, Lizenzierung, Versionskontrolle, Beitragseinreichung, Fehlerverfolgung
