@@ -346,7 +346,7 @@ Siehe <<Weitere Ressourcen>> für Kontaktinformationen und Hinweise, wie du Verb
 
 Textformattierung:
 
-// TODO - translate
+// TODO - translate this table, but keep stuff in the left column exactly as-is
 
 [cols="2,3",id=style]
 .Typographical conventions
