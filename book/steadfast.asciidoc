@@ -3292,7 +3292,7 @@ Meine klare Präferenz liegt bei Collabora, im Einklang mit <<Geeignet fürs Sel
 
 ==== Verschiedene Probleme
 
-HHier ist eine Auswahl meiner liebsten Fehlerberichte und Funktionsanfragen für Nextcloud.
+Hier ist eine Auswahl meiner liebsten Fehlerberichte und Funktionsanfragen für Nextcloud.
 
 ===== Ladesymbol auf Mobilgeräten
 
