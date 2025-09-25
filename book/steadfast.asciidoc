@@ -1895,7 +1895,7 @@ Plane mit Hardware-Ausfällen.
 Wenn du es dir leisten kannst, ist der einfachste Weg, einen Server zuverlässig zu betreiben, _zwei identische Server zu kaufen_.
 Verwende den zweiten als Ersatzteilspender oder als sofort einsatzbereiten Ersatz (auch „Cold Spare“ genannt).
 
-==== SSoftware-Updates
+==== Software-Updates
 
 Halte deinen Server auf dem neuesten Stand.
 Für das Betriebssystem:
