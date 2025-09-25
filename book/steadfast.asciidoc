@@ -2085,9 +2085,9 @@ Du wirst möglicherweise so etwas sehen:
 .SSH host fingerprint prompt (🏠 Admincomputer)
 [source%unbreakable#ssh-host-fing,text]
 ----
-Die Echtheit des Hosts »mario\_server (192.168.1.100)« kann nicht festgestellt werden.
-Der ECDSA-Schlüssel-Fingerabdruck ist SHA256\:o2kUkvSP3JG9PTt/Ju11FWKkCpTJCB4rY3jQvImtRNw.
-Möchten Sie die Verbindung wirklich herstellen (yes/no/\[fingerprint])?
+The authenticity of host 'mario_server (192.168.1.100)' can't be established.
+ECDSA key fingerprint is SHA256:o2kUkvSP3JG9PTt/Ju11FWKkCpTJCB4rY3jQvImtRNw.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ----
 
 Wenn die IP-Adresse korrekt ist, kannst du davon ausgehen, dass der Server im LAN, den du gerade erstellt hast, derselbe ist, mit dem du dich jetzt verbinden möchtest.
