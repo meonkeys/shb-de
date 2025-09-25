@@ -2416,9 +2416,9 @@ Dies ist idempotent: Bereits laufende und aktuelle Dienste bleiben unverändert.
 (((HTTPS)))
 (((encryption, HTTPS)))
 Traefik installiert automatisch ((Let's Encrypt))–((Zertifikate)), um den HTTP-Datenverkehr zu verschlüsseln.
-Die Zertifikate werden über eine DNS-Challenge ausgestellt.
-Diese Methode zur Authentifizierung einer Zertifikatsanfrage ist besonders praktisch für Server ohne öffentlich erreichbare eingehende Ports und ermöglicht so bequemes HTTPS selbst in geschlossenen LANs.
-Die DNS-Challenge wird über Labels in der compose.yml-Konfigurationsdatei von Traefik eingerichtet.
+Die Zertifikate werden über eine https://doc.traefik.io/traefik/https/acme/#dnschallenge[DNS-Challenge] ausgestellt.
+Diese Methode zur https://letsencrypt.org/docs/challenge-types/[Authentifizierung einer Zertifikatsanfrage] ist besonders praktisch für Server ohne öffentlich erreichbare eingehende Ports und ermöglicht so bequemes HTTPS selbst in geschlossenen LANs.
+Die DNS-Challenge wird über Labels in der `compose.yml`-Konfigurationsdatei von Traefik eingerichtet.
 
 (((SSL termination)))
 Traefik kann HTTPS-Verbindungen annehmen, entschlüsseln und als unverschlüsseltes HTTP an Webdienste weiterleiten.
