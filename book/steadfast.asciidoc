@@ -2050,7 +2050,7 @@ Füge mit der IP-Adresse aus <<OS-Installation>> eine Zeile wie diese in deine H
 192.168.1.100	mario_server
 ----
 
-Bestätige, dass du den Server unter dem Namen mario_server anpingen kannst.
+Bestätige, dass du den Server unter dem Namen `mario_server` anpingen kannst.
 So sieht es aus, wenn es funktioniert:
 
 .test ping server (🏠 Admincomputer)
@@ -2067,9 +2067,9 @@ PING mario_server (192.168.1.100) 56(84) bytes of data.
 rtt min/avg/max/mdev = 0.178/0.343/0.535/0.146 ms
 ----
 
-Als Nächstes soll dein SSH-Client beim Ausführen von ssh mario_server den richtigen Benutzernamen übermitteln.
+Als Nächstes soll dein SSH-Client beim Ausführen von `ssh mario_server` den richtigen Benutzernamen übermitteln.
 Hier ist eine Beispielkonfigurationsvorlage für den ((OpenSSH))-Client.
-Ersetze your-username durch den Benutzernamen deines Serverkontos.
+Ersetze `your-username` durch den Benutzernamen deines Serverkontos.
 
 .customize OpenSSH client configuration (🏠 Admincomputer)
 [source%unbreakable#customize-openssh-client,text]
@@ -2078,8 +2078,8 @@ Host mario_server
   User your-username
 ----
 
-Du kannst das in ~/.ssh/config einfügen und bei Bedarf an deinen verwendeten SSH-Client anpassen.
-Teste die Verbindung mit ssh mario_server.
+Du kannst das in `~/.ssh/config` einfügen und bei Bedarf an deinen verwendeten SSH-Client anpassen.
+Teste die Verbindung mit `ssh mario_server`.
 Du wirst möglicherweise so etwas sehen:
 
 .SSH host fingerprint prompt (🏠 Admincomputer)
@@ -2144,7 +2144,7 @@ user@server:~$
 
 === Server bereitstellen
 
-Führe `provision.sh` auf deinem ((Admin-Computer)) aus (*nicht* auf deinem Server):
+Führe `provision.sh` auf deinem ((Admin-Computer)) aus (_nicht_ auf deinem Server):
 
 .mario first run (🏠 Admincomputer)
 [source%unbreakable#mario-first-run,bash]
