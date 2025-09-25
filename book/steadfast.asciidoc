@@ -1959,8 +1959,8 @@ TIP: Erstelle ((Backups)) nach der 3-2-1-Faustregel:
 Erstelle *3* Backups. Bewahre mindestens *2* lokale Kopien auf unterschiedlichen Medien auf.
 Habe *1* externes (remote) Backup.
 
-(((backups, using restic for)))
-(((backups, using Borg for)))
+(((Backups, using restic for)))
+(((Backups, using Borg for)))
 (((Borg)))
 (((restic)))
 Ich empfehle eine Backup-Strategie, die ZFS-Snapshots mit entweder https://restic.net[restic] oder https://borgbackup.org[Borg] kombiniert, um die Daten extern zu sichern.
