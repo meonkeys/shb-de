@@ -487,7 +487,7 @@ Mehr dazu:
 (((Quelleof truth)))
 Das Speichern von Kopien von Daten, die jemand anderes für dich hostet, ist in Ordnung.
 Self-Hosting geht einen Schritt weiter und verschafft dir weitreichende Kontrolle darüber, wie deine Daten verwendet und geteilt werden.
-Du erhältst die Kontrolle über autoritative Kopien deiner Dateien – du weißt also, was die "Wahrheit" ist und kannst sie bestimmen.
+Du erhältst die Kontrolle über autoritative Kopien deiner Dateien – du weißt also, was die „Wahrheit“ ist und kannst sie bestimmen.
 Und das alles mit Zuverlässigkeit und Flexibilität zu einem vertretbaren Budget.
 
 Self-Hosting bedeutet, Computerdienste von und für Einzelpersonen, Familien und Hobby-Anwender in SOHO-Umgebungen (Small Office / Home Office) bereitzustellen.
@@ -735,7 +735,7 @@ Es gibt so viele gute Gründe!
 ** nahezu keine zusätzlichen Kosten für weitere Nutzer und Dienste
 * Geschwindigkeit / Zeit sparen
 ** ein lokaler Server kann deutlich bessere Reaktionszeiten haben, vorausgesetzt, die Hardware ist angemessen und die Dienste gut konfiguriert
-** lokale Daten ("data locality") bedeuten, dass du keine Rundreisen zu Rechenzentren anderer machen musst, um zu experimentieren
+** lokale Daten („data locality“) bedeuten, dass du keine Rundreisen zu Rechenzentren anderer machen musst, um zu experimentieren
 ** gemeinsamer Speicher erlaubt es dir, deine Daten über mehrere Dienste bereitzustellen, mit sinnvoll definiertem Lese-/Schreibzugriff
 * Vendor Lock-in vermeiden
 ** du kannst Softwarefunktionen nutzen, die Public-Cloud-Anbieter nicht anbieten oder die es dort noch nicht gibt, da du vollständigen Zugriff auf deine Rohdaten hast
@@ -746,7 +746,7 @@ Es gibt so viele gute Gründe!
 ** mit einer persönlichen Cloud kannst du GPS-Breitengrad und -Längengrad sicher in deinen Fotometadaten behalten
 ** sobald du deine Standortdaten speicherst, kannst du kreative Dinge damit tun
 ** wenn du deine Position und dein Verhalten nicht ständig mit Google teilen musst, warum tust du es?
-** entferne dich aus der Gleichung der Nutzeranalyse – wenn du ein Video über einen fremden Dienst streamst, wissen sie und analysieren jedes Mal, wenn du (oder deine Kinder) ein Video, das du "besitzt", (erneut) ansiehst, zurückspulst, vorspulst, pausierst... aber müssen sie das wissen? warum?
+** entferne dich aus der Gleichung der Nutzeranalyse – wenn du ein Video über einen fremden Dienst streamst, wissen sie und analysieren jedes Mal, wenn du (oder deine Kinder) ein Video, das du „besitzt“, (erneut) ansiehst, zurückspulst, vorspulst, pausierst... aber müssen sie das wissen? warum?
 * Neue Möglichkeiten erschließen
 ** beliebige Workflows auf hochgeladene Dateien anwenden
 ** vertrauenswürdige, offline-fähige generative KI-Modelle einsetzen
@@ -1135,7 +1135,7 @@ Mit einem klaren Bedrohungsmodell kannst du fundierte Entscheidungen treffen –
 WARNING: Wenn du bereits weißt, dass du ein wertvolles Ziel bist (z.B. öffentliche Person, hohes Vermögen, Kriegsberichterstatter*in oder verantwortlich für einen Server mit Informationen über viele Menschen), dann gilt: Mach dich auf eine längere Reise gefasst.
 Dieses Buch allein reicht nicht aus, um deinem Bedrohungsmodell gerecht zu werden.
 
-Lass uns ein einfaches Beispiel für ein Bedrohungsmodell für die Datenklasse "alles andere" erstellen.
+Lass uns ein einfaches Beispiel für ein Bedrohungsmodell für die Datenklasse „alles andere“ erstellen.
 Überlege dir dabei folgende Punkte:
 
 Anlagen::
@@ -1754,7 +1754,7 @@ Siehe https://ubuntu.com/tutorials/install-ubuntu-server[this tutorial] für ein
 YDu kannst dies möglicherweise auch auf dem Standardwert belassen (DHCP/dynamisch) und stattdessen deinen LAN-Router so konfigurieren, dass er dem Server eine feste IP-Adresse zuweist, die sich nicht ändert.
 . Optional: Verwende eine vollständige Festplattenverschlüsselung.
 Siehe <<Full-disk Verschlüsselung>>.
-. *Notiere Username und Passwort* wenn du deinen Nutzeraccount ("Profile") erstells. Du wirst sie bald brauchen.
+. *Notiere Username und Passwort* wenn du deinen Nutzeraccount („Profile“) erstells. Du wirst sie bald brauchen.
 . *Installiere den OpenSSH Server* wenn du dazu aufgerufen wirst.
 . *Installiere kein Nextcloud oder Docker*, lasse mario diese später installieren.
 
@@ -3181,7 +3181,7 @@ Im Zweifelsfall: klein anfangen (Standard-Nextcloud-Installation) und neue Apps 
 |Mail |Email |*Keine Meinung*. Ich habe es kurzzeitig ausprobiert aber es ist an meinen abermillionen von Gmail Nachrichten erstickt. Und ja, eines Tages möchte ich von Gmail weg.
 |Memories |Fotos |*Ja*. Benötigt Photos.
 |News |Verfolge Blogs & Nachrichten über RSS/Atom-Feeds |*Ja*.
-|Nextcloud Office |Berarbeite Tabellen, Präsentationen, usw. |*Ja*. Ich finde es nicht super, brauche es aber. Vielleicht ist das ein "Nein"? Mobile-Apps hierfür sind schrecklich. Siehe <<Nextcloud Office>>.
+|Nextcloud Office |Berarbeite Tabellen, Präsentationen, usw. |*Ja*. Ich finde es nicht super, brauche es aber. Vielleicht ist das ein „Nein“? Mobile-Apps hierfür sind schrecklich. Siehe <<Nextcloud Office>>.
 |Notes |Einfache Notizen mit Markdown |*Ja*. ES gibt eine grossartige Mobile-App. Hat Google Notes für mich ersetzt.
 |Passwords |Passwortmanager |*Nein*. Inaktiv.
 |PhoneTrack |Standorte teile und verfolgen |*Ja*. Die Benutzeroberfläche ist reich an Funktionen und kompliziert. Die Fortbewegungslininen sind cool.
