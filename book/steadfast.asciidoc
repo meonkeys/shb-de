@@ -2021,7 +2021,7 @@ Es werden viele Annahmen getroffen, damit es „out of the box“ funktioniert, 
 
 Die Konfigurationsdateien von mario sind deklarativ:
 Sie enthalten den Zustand, in dem sich dein Server am Ende befinden soll – nicht all die einzelnen Befehle, die du manuell ausführen würdest, um denselben Zustand zu erreichen.
-marios `provision.sh` führt Ansible aus, und Ansible führt die Befehle für dich auf dem Server aus (z.B. ein chmod auf eine Datei) – auf vorhersehbare und wiederholbare Weise.
+marios `provision.sh` führt Ansible aus, und Ansible führt die Befehle für dich auf dem Server aus (z.B. ein `chmod` auf eine Datei) – auf vorhersehbare und wiederholbare Weise.
 Der gewünschte Endzustand, wie in den Konfigurationsdateien deklariert, wird durch Ansible erreicht und bestätigt.
 
 (((idempotent)))
