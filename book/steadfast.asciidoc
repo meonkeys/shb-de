@@ -1067,16 +1067,16 @@ Noch seltener sehe ich mir Versionen einer Konfigurationsdatei an, die auf der F
 Und schließlich, wenn mein Server ausfällt, befinde ich mich ganz unten im Stack: Ich repariere oder ersetze die Hardware.
 Hier findest du die entsprechenden Abschnitte mit Details zu jeder Ebene:
 
-* Dienste in Containern:
+* Containern:
 ** <<Nextcloud: Dateisynchronisation und -Freigabe>>
 ** <<Jellyfin: Audio- und Videostreaming>>
 ** <<Wallabag: Artikel speichern und lesen>>
-* container runtime:
+* Containerlaufzeit:
 ** <<Containers == happy>>
 ** <<Contained services>>
-* OS: <<Betriebssystem>>
-* filesystem: <<Dateisystem>>
-* hardware: <<Server>>
+* Betriebssystem: <<Betriebssystem>>
+* Dateisystem: <<Dateisystem>>
+* Hardware: <<Server>>
 
 Es gibt außerdem zwei Dienste in Containern, die später behandelt werden und _nicht_ im Diagramm dargestellt sind:
 
