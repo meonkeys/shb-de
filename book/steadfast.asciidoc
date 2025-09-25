@@ -1636,7 +1636,8 @@ Deine Nutzer*innen werden ihre eigenen Computer und Mobilgeräte (ihre _Clients_
 Halte ein paar verschiedene Clients bereit, damit du vergleichbare Umgebungen hast und deinen Nutzer*innen besser helfen kannst.
 
 (((dogfooding)))
-TIP: Sei selbst Nutzer*in der Dienste, die du betreibst.
+[TIP%unbreakable]
+Sei selbst Nutzer*in der Dienste, die du betreibst.
 Das nennt man _Dogfooding_.
 Dogfooding sorgt dafür, dass du ehrlich mit dir selbst bleibst und dich besser in andere hineinversetzen kannst.
 
