@@ -2839,7 +2839,7 @@ Moderne generative KI-Workloads wie Chat mit großen Sprachmodellen oder Bildgen
 
 === KI
 
-(((AI)))
+(((KI)))
 KI ist mal wieder der letzte Schrei.
 Man kann seine eigenen Bildgeneratoren und LLMs (Large Language Models) zu Hause laufen lassen.
 Dafür ist keine Grafikprozessor nötig.
@@ -3732,8 +3732,8 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
 // Source for "These days that pretty much means git" statement: https://en.wikipedia.org/wiki/Git#Adoption
 
 // TODO - translate
-((AI))::
-  Artificial intelligence.
+((KI))::
+  Künstliche Intelligenz.
 ((API))::
   Application programming interface. Provides a way to interact with a service from software. Useful for writing apps and integrations.
 ((attack surface))::
