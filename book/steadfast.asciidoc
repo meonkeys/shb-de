@@ -2627,7 +2627,7 @@ Es wäre großartig, wenn man https://features.jellyfin.org/posts/1036/bookmark-
 
 Ich möchte eine Jellyfin-Mobile-App, die Medien automatisch zwischenspeichert und https://features.jellyfin.org/posts/218/support-offline-mode-on-android-mobile[Offline-Wiedergabe ermöglicht].
 
-Workaround: Es gibt zwei separate Mobile-Apps, die Medien für die Offline-Wiedergabe herunterladen und zwischenspeichern können https://github.com/jmshrv/finamp[Finamp] für Musik und https://github.com/jarnedemeulemeester/findroid[Findroid] für Videos
+Workaround: Es gibt zwei separate Mobile-Apps, die Medien für die Offline-Wiedergabe herunterladen und zwischenspeichern können https://github.com/jmshrv/finamp[Finamp] für Musik und https://github.com/jarnedemeulemeester/findroid[Findroid] für Videos.
 
 ==== Jellyfin-Medien mit Nextcloud verwalten
 
