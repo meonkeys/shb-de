@@ -2091,7 +2091,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ----
 
 Wenn die IP-Adresse korrekt ist, kannst du davon ausgehen, dass der Server im LAN, den du gerade erstellt hast, derselbe ist, mit dem du dich jetzt verbinden möchtest.
-Fahre fort mit `yes` und `Enter`.
+Fahre fort mit kbd:[yes] und kbd:[Enter].
 Wenn du ganz sicher gehen willst, führe einen der folgenden Befehle auf dem Server aus und überprüfe, ob die Fingerabdrücke übereinstimmen:
 
 .show SSH host public key (🚀 Server)
