@@ -1390,7 +1390,7 @@ Um diesen Vorgang zu verstehen, hilft es, das mitgelieferte Traefik-Architekturd
 image::traefik-architecture.png[]
 
 (((router, Traefik)))
-In den mario-Quelltexten (oder in den später gezeigten Codeausschnitten) lohnt sich ein Blick in die compose.yml-Dateien für Traefik und Nextcloud, in denen unter anderem Folgendes enthalten ist:
+In den mario-Quelltexten (oder in den später gezeigten Codeausschnitten) lohnt sich ein Blick in die `compose.yml`-Dateien für Traefik und Nextcloud, in denen unter anderem Folgendes enthalten ist:
 
 * Der `websecure`-((Eintrittspunkt)), über den HTTPS-Verkehr auf Port 443 empfangen wird
 * Die `app`-Service-Definition für Nextcloud, die Traefik-Routing-Labels enthält
