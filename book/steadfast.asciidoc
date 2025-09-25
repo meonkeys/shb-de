@@ -2843,7 +2843,7 @@ Moderne generative KI-Workloads wie Chat mit großen Sprachmodellen oder Bildgen
 KI ist mal wieder der letzte Schrei.
 Man kann seine eigenen Bildgeneratoren und LLMs (Large Language Models) zu Hause laufen lassen.
 Dafür ist keine Grafikprozessor nötig.
-Hier ist ein compose.yml, das mit mario funktioniert, um https://localai.io[LocalAI] zu nutzen.
+Hier ist ein `compose.yml`, das mit mario funktioniert, um https://localai.io[LocalAI] zu nutzen.
 
 .Beispiel der LocalAI Dienst Konfiguration
 [source#example-localai-svc,yaml]
