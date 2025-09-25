@@ -386,7 +386,7 @@ Seitenleisten können mit oder ohne Titel erscheinen.
 
 Codeausschnitte:
 
-.Beispiel-Codeausschnitt (🚀 server)
+.Beispiel-Codeausschnitt (🚀 Server)
 [source#example-code-snippet,bash]
 ----
 echo foo | sed s/foo/bar/
@@ -394,7 +394,7 @@ echo foo | sed s/foo/bar/
 
 Titel von Codeausschnitten können angeben, wo der Code ausgeführt werden soll.
 Wird kein Ort genannt, wird der oder die beabsichtigten Ausführungsumgebungen im Text erklärt.
-In diesem Fall weist „🚀 server“ darauf hin, dass dieser Bash-Skript-Ausschnitt auf deinem Server ausgeführt werden soll.
+In diesem Fall weist „🚀 Server“ darauf hin, dass dieser Bash-Skript-Ausschnitt auf deinem Server ausgeführt werden soll.
 
 == Hintergrund
 
@@ -1783,7 +1783,7 @@ Passe das bei Bedarf an — verwende `lsblk`, um deine Laufwerke zu identifizier
 
 // Dieser Codeausschnitt ist von Vim mit `textwidth=75` umgebrochen, da das zufällig den aktuellen Seitenrändern des gedruckten Buchs entspricht.😬
 
-.ZFS Setup (🚀 server)
+.ZFS Setup (🚀 Server)
 [source#zfs-setup,bash]
 ----
 # Create partition tables.
@@ -1821,7 +1821,7 @@ zfs set exec=on main/secure/data
 Hier sind einige Befehle, mit denen du Details zu dem anzeigen kannst, was du gerade erstellt hast.
 Dafür sind keine Root-Rechte erforderlich.
 
-.show ZFS details (🚀 server)
+.show ZFS details (🚀 Server)
 [source#zfs-details,bash]
 ----
 # Examine pools.
@@ -1836,7 +1836,7 @@ Unter Ubuntu 24.04 LTS sind weitere Schritte erforderlich, damit dieses neue Dat
 Die folgenden Anweisungen stammen aus der Handbuchseite `zfs-mount-generator(8)` — mit einigen Korrekturen.
 Diese Befehle müssen mit `root`-Rechten ausgeführt werden.
 
-.ZFS mount on boot setup (🚀 server)
+.ZFS mount on boot setup (🚀 Server)
 [source#zfs-mount-on-boot,bash]
 ----
 # enable tracking for the pool
@@ -1897,7 +1897,7 @@ Verwende den zweiten als Ersatzteilspender oder als sofort einsatzbereiten Ersat
 Halte deinen Server auf dem neuesten Stand.
 Für das Betriebssystem:
 
-.upgrade packages (🚀 server)
+.upgrade packages (🚀 Server)
 [source#upgrade-packages,bash]
 ----
 sudo apt update && sudo apt full-upgrade
@@ -1919,7 +1919,7 @@ Behalte die Server-Gesundheit im Blick.
 Prüfe den freien Speicherplatz mit `df -h`.
 Wenn sich der Server träge anfühlt, überprüfe die PSI (Pressure Stall Information) mit:
 
-.check PSI (🚀 server)
+.check PSI (🚀 Server)
 [source#check-psi,bash]
 ----
 tail /proc/pressure/*
@@ -1966,7 +1966,7 @@ https://reddit.com/r/BorgBackup/comments/v3bwfg/[Hier ist ein guter Vergleich zw
 Hier sind einige Beispielbefehle, die zeigen, wie man ein ZFS-Dateisystem sichert.
 Du kannst sie als Ausgangspunkt für dein eigenes Backup-Skript verwenden.
 
-.example backup script (🚀 server)
+.example backup script (🚀 Server)
 [source%unbreakable#example-backup-script,bash]
 ----
 snapName=$(date -I)-backup
@@ -2091,7 +2091,7 @@ Wenn die IP-Adresse korrekt ist, kannst du davon ausgehen, dass der Server im LA
 Fahre fort mit `yes` und `Enter`.
 Wenn du ganz sicher gehen willst, führe einen der folgenden Befehle auf dem Server aus und überprüfe, ob die Fingerabdrücke übereinstimmen:
 
-.show SSH host public key (🚀 server)
+.show SSH host public key (🚀 Server)
 [source#show-ssh-host-pubkey,bash]
 ----
 # use this if you saw "ECDSA key fingerprint..." earlier
@@ -2322,7 +2322,7 @@ Wenn du `docker compose` ausführst, musst du dich zuerst in einem Ordner befind
 Der Name dieses Ordners entspricht üblicherweise dem Namen des Dienstes.
 Ein typisches Nutzungsmuster sieht so aus:
 
-.start a service in its folder (🚀 server)
+.start a service in its folder (🚀 Server)
 [source%unbreakable#start-service-in-folder,bash]
 ----
 sudo su -
@@ -2334,7 +2334,7 @@ Versuchen Sie, diese Methode zu vermeiden.
 Je weniger Befehle Sie direkt als `root` ausführen, desto besser.
 Ich empfehle stattdessen Folgendes:
 
-.start a service, explicit configuration file (🚀 server)
+.start a service, explicit configuration file (🚀 Server)
 [source#start-service-explicit-config,bash]
 ----
 sudo docker compose --file /root/ops/traefik/compose.yml up -d
@@ -2342,7 +2342,7 @@ sudo docker compose --file /root/ops/traefik/compose.yml up -d
 
 mario installs a program called `dc` on the server to save you some typing:
 
-.start a service with dc (🚀 server)
+.start a service with dc (🚀 Server)
 [source%unbreakable#start-service-with-dc,bash]
 ----
 # equivalent to
@@ -2374,7 +2374,7 @@ Für einen funktionierenden Traefik-Dienst sollte in etwa Folgendes erscheinen:
 // reverse-proxy-1  | More details on: https://doc.traefik.io/traefik/contributing/data-collection/
 // reverse-proxy-1  |
 
-.typical Traefik logs, edited for brevity (🚀 server)
+.typical Traefik logs, edited for brevity (🚀 Server)
 [source#typical-traefik-logs,text]
 ----
 + sudo docker compose --file /root/ops/traefik/compose.yml logs -f
@@ -2396,7 +2396,7 @@ Sobald du das Dashboard sehen kannst, beende das Verfolgen der Traefik-Logs mit 
 Das Starten eines mario-Dienstes erfolgt immer mit `dc SERVICE up -d`, genau wie wir es mit Traefik gemacht haben.
 Um alles auf einmal hochzufahren, kannst du dieses Shell-Skript verwenden:
 
-.start all services ad-hoc Bash script (🚀 server)
+.start all services ad-hoc Bash script (🚀 Server)
 [source%unbreakable#start-other-services,bash]
 ----
 for service in $(sudo ls /root/ops); do
@@ -2465,7 +2465,7 @@ Dieser Testdienst demonstriert das Pingen eines öffentlichen Servers.
 Erstelle _auf deinem_ Server den Ordner: `~/ping/`.
 Lege in diesem Ordner eine Datei `compose.yml` mit folgendem Inhalt an:
 
-.tiny test service config (🚀 server)
+.tiny test service config (🚀 Server)
 [source%unbreakable#tiny-test-service-config,yaml]
 ----
 version: '3'
@@ -2480,7 +2480,7 @@ Im Ordner `~/ping/` führe Befehl `sudo docker compose up` aus.
 Drücke nach ein paar Sekunden kbd:[Strg+C].
 Du solltest dann ungefähr so etwas sehen:
 
-.start tiny test service (🚀 server)
+.start tiny test service (🚀 Server)
 [source%unbreakable#start-tiny-test-service,text]
 -----
 $ cd ~/ping/
@@ -2683,7 +2683,7 @@ Zum Glück kann man https://github.com/wallabag/docker#upgrading[das Problem ein
 
 Wenden die Problemumgehung in einem mario system wie folgt an:
 
-.force Wallabag database migration (🚀 server)
+.force Wallabag database migration (🚀 Server)
 [source%unbreakable#force-wallabage-db-migration,bash]
 ----
 dc wallabag exec app /var/www/wallabag/bin/console \
@@ -3073,7 +3073,7 @@ Um dies zu beheben, muss die Anfrage innerhalb des Nextcloud-`app`-Containers er
 
 Mit anderen Worten: Folgendes muss erfolgreich sein (einen erfolgreichen HTTP-Response-Code zurückgeben und den Header `content-type: text/javascript` enthalten):
 
-.JavaScript fetch test (🚀 server)
+.JavaScript fetch test (🚀 Server)
 [source%unbreakable#js-fetch-server,bash]
 ----
 dc nextcloud exec app \
