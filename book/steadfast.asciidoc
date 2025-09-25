@@ -3111,7 +3111,7 @@ Die Verwendung dieses Tags ist für Sie und Ihre Benutzer wahrscheinlich stabil 
 Sie können Ihre Nextcloud auf eine spezifischere Version wie `27.1.5-apache` „fixieren“.
 Das gibt Ihnen die Möglichkeit, jedes Upgrade zu überprüfen und zu testen.
 Sie können einen Release-Tag in der `compose.yml` von Nextcloud festlegen, indem Sie dort, wo der Image-Name erscheint, einfach `stable` durch den gewünschten Tag ersetzen.
-Alle verfügbaren Tags sind auf https://hub.docker.com/\_/nextcloud\[Docker Hub aufgelistet].
+Alle verfügbaren Tags sind auf https://hub.docker.com/_/nextcloud[Docker Hub aufgelistet].
 
 NOTE: Die Blogposts und Marketingmaterialien von Nextcloud verwenden andere Versionsnamen als die Release-Versionen aus dem Quellcode.
 „Hub 6“ im Blog bezieht sich auf Versionen `27.\_._` im Quellcode, „Hub 7“ auf `28.\_._` und so weiter.
