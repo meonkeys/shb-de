@@ -2175,8 +2175,8 @@ Trage hier die Zugangsdaten *nur eines* Anbieters ein – und zwar desselben Anb
 Gib hier eine E-Mail-Adresse an, die zu deinem DNS-API-Anbieter passt.
 Unter dieser Adresse wirst du möglicherweise von Let's Encrypt kontaktiert.
 `MARIO_DOMAIN_NAME`::
-Das ist ein Name wie `beispiel.duckdns.org` oder `beispiel.com`.
-Einzelne Dienste werden darauf basierend benannt, z.B. `jellyfin.beispiel.com`.
+Das ist ein Name wie `example.duckdns.org` oder `example.com`.
+Einzelne Dienste werden darauf basierend benannt, z.B. `jellyfin.example.com`.
 
 Beende das Bearbeiten von `config` und führe anschließend `provision.sh` erneut aus.
 Dieser Durchlauf fragt dich nach dem Passwort, das du während der <<OS-Installation>> festgelegt hast. Bei weiteren Durchläufen ist das nicht mehr nötig.
