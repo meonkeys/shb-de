@@ -3742,7 +3742,7 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   I use this term to refer to either a service (e.g. a database) or server. It's something you more frequently interact with indirectly, say, via a frontend like a web app or mobile UI.
 ((Bare Metal))::
   Physical nearby computing resources, as opposed to rented compute time on someone else's hardware. Used in this book primarily to indicate hardware autonomy.
-((block storage))::
+((Blockspeicher))::
   Cloud storage option with direct filesystem access including files and folders. Used directly/natively/locally from an OS. Size is relatively fixed and determined at creation time.
 ((bot))::
   Short for robot. Software performing autonomous tasks such as responding to chat requests or attacking vulnerable servers.
@@ -3752,9 +3752,9 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Shorthand for HTTPS encryption certificate.
 ((change management))::
   The means and methods of transitioning a group of people from one set of tools and processes to another.
-((cloud))::
+((Cloud))::
   An ambiguous amount of remote hardware. Scalable, programmable, and networked. „The cloud“ or „public cloud“ is someone else's hardware while „personal cloud“ is your own.
-((cluster))::
+((Cluster))::
   Collated collection of machines treated as a single machine to achieve higher scale computing power.
 ((compute))::
   Noun: Hauptprozessor or Grafikprozessor resources expended when running software services.
