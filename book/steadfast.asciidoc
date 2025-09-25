@@ -2646,9 +2646,8 @@ Jellyfin benötigt nur Lesezugriff auf die Ordner, um die darin enthaltenen Date
 
 Um die von Nextcloud verwalteten Mediendateien in Jellyfin anzuzeigen, füge zwei Medienbibliotheken hinzu:
 
-Wähle den Inhaltstyp „Movies“, klicke auf das „+“-Symbol neben „Folders“ und wähle `/data/video`.
-
-Wähle den Inhaltstyp „Music“, klicke auf das „+“-Symbol neben „Folders“ und wähle `/data/music`.
+. Wähle den Inhaltstyp „Movies“, klicke auf das „+“-Symbol neben „Folders“ und wähle `/data/video`.
+. Wähle den Inhaltstyp „Music“, klicke auf das „+“-Symbol neben „Folders“ und wähle `/data/music`.
 
 <<<
 
