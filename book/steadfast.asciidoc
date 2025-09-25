@@ -346,6 +346,8 @@ Siehe <<Weitere Ressourcen>> für Kontaktinformationen und Hinweise, wie du Verb
 
 Textformattierung:
 
+// TODO - translate
+
 [cols="2,3",id=style]
 .Typographical conventions
 |===
