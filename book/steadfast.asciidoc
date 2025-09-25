@@ -1184,7 +1184,7 @@ Aus Nutzersicht gibt es keinen schweren Login-Prozess mehr, wie bei älteren VPN
 
 ==== Full-disk Verschlüsselung
 
-(((verschlüsselung, full-disk)))
+(((Verschlüsselung, Full-disk)))
 Das Verschlüsseln verhindert, dass ein Angreifer Daten wiederherstellen kann.
 Beim Hochfahren musst du allerdings ein Passwort eingeben.
 Das ist unpraktisch, wenn es zu Stromausfällen kommt und/oder keine Fernverwaltung möglich ist.
@@ -1318,7 +1318,7 @@ Falls ich aber hohe Verfügbarkeit fur Clustering benötigte wurde ich eher Kube
 Falls einer der Computer des Kubernetes ((Cluster)) defekt ist können Dienste automatisch auf intakte Hardware im Cluster übertreten.
 Unabhängig von deiner Wahl solltest du mit deinen Nutzern klare Erwartungen darüber setzten, wie lange dein Server im Falle eines Defektes eventuell ausfallen kann.
 
-(((isolation)))
+(((Isolation)))
 Docker schafft eine gute Balance zwischen Eigenschaften und Benutzerfreundlichkeit, weshalb es einfach ist einen Deinst in Isolation zu betreiben.
 ((Docker Compose)) Docker Compose erweitert Docker um die Fähigkeit, Gruppen von Prozessen zu definieren und auszuführen, die zusammen einen vollständigen Dienst bereitstellen (z.B. einen Webserver und dessen Datenbank).
 Kubernetes kann das auch – und noch viel mehr, das du _nicht_ lernen musst, solange du _kein_ virtuelles Rechenzentrum aufbauen willst.
@@ -1644,7 +1644,7 @@ Dogfooding sorgt dafür, dass du ehrlich mit dir selbst bleibst und dich besser 
 ==== Festplattenlaufwerke
 
 (((ZFS, snapshots and)))
-Ich verwende Festplattenlaufwerke (Hard Disk Drives ((HDDs))) zur Datenspeicherung – hauptsächlich, um Kosten gegenüber öffentlichem Cloud-Speicher oder ((SSD))s (Solid-State-Laufwerken) zu sparen.
+Ich verwende Festplattenlaufwerke (Hard Disk Drives ((HDD))s) zur Datenspeicherung – hauptsächlich, um Kosten gegenüber öffentlichem Cloud-Speicher oder ((SSD))s (Solid-State-Laufwerken) zu sparen.
 Die Kosten für ((Blockspeicher)) in der Public Cloud übersteigen bei Weitem die Gigabyte-Stunden-Kosten meiner Festplattenlaufwerke.
 Ich habe den Preis für einen 5TB Blockspeicher bei AWS auf 228,10 $ pro Monat geschätzt.
 Mit ZFS erstelle ich außerdem alle 15 Minuten einen Snapshot (im Grunde ein vollständiges lokales Backup).
@@ -1657,7 +1657,7 @@ Zur Redundanz empfehle ich, zwei identische Festplatten im Spiegelmodus (RAID 1)
 Das bietet nicht nur Datensicherheit bei Ausfall einer Festplatte, sondern auch bessere Leseleistung (bei den meisten Lesezugriffen).
 Beachte aber: Die nutzbare Speicherkapazität wird dabei halbiert.
 
-((HDDs)) sind völlig ausreichend schnell, wenn man die Antwortzeiten selbstgehosteter Dienste als Maßstab nimmt. Das Betriebssystem und die Dienste arbeiten effizient mit Daten-Caching, sofern der Server über ausreichend RAM verfügt.
+((HDD))s sind völlig ausreichend schnell, wenn man die Antwortzeiten selbstgehosteter Dienste als Maßstab nimmt. Das Betriebssystem und die Dienste arbeiten effizient mit Daten-Caching, sofern der Server über ausreichend RAM verfügt.
 Remote-Backups können länger dauern – das ist in Ordnung.
 
 Ich verwende eine SSD für das Betriebssystem und alles außerhalb meiner Fotos/Dokumente usw., da die Startzeit des Betriebssystems entscheidend ist und dieses beim Booten nur wenig von Dateisystem-Caching profitiert.
@@ -1861,7 +1861,7 @@ reboot
 
 === Serverwartung
 
-(((maintenance, server)))
+(((Serverwartung)))
 Ich verwende kurze monatliche und jährliche Wartungs-Checklisten.
 Ich aktualisiere meine Checklisten ungefähr so oft, wie ich sie benutze.
 Hier sind Beispiele, die du als Ausgangspunkt verwenden kannst.
@@ -2414,7 +2414,7 @@ Dies ist idempotent: Bereits laufende und aktuelle Dienste bleiben unverändert.
 === Verschlüsselungszertifikate
 
 (((HTTPS)))
-(((encryption, HTTPS)))
+(((Verschlüsselung, HTTPS)))
 Traefik installiert automatisch ((Let's Encrypt))–((Zertifikate)), um den HTTP-Datenverkehr zu verschlüsseln.
 Die Zertifikate werden über eine https://doc.traefik.io/traefik/https/acme/#dnschallenge[DNS-Challenge] ausgestellt.
 Diese Methode zur https://letsencrypt.org/docs/challenge-types/[Authentifizierung einer Zertifikatsanfrage] ist besonders praktisch für Server ohne öffentlich erreichbare eingehende Ports und ermöglicht so bequemes HTTPS selbst in geschlossenen LANs.
@@ -2984,7 +2984,7 @@ Ab jetzt erfordert dein Server für SSH-Logins die Authentifizierung per öffent
 
 === Erlaube Wan-Zugriff
 
-mario blockiert ((Wan-Zugriff)) automatisch.
+mario blockiert ((WAN-Zugriff)) automatisch.
 Lese <<Digitale Sicherheit>> und entscheide, ob du diese Funktion möchtest oder nicht.
 Du kannst diesen Schutz entfernen, indem du das `lan-only` ((middleware)) aus dem entsprechenden Traefik-Label des Routers entfernst.
 Um zum Beispiel WAN-Zugriff auf Nextcloud zu ermöglichen, nimm diese Änderung in der `compose.yml` von Nextcloud vor:
@@ -3748,7 +3748,7 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Short for robot. Software performing autonomous tasks such as responding to chat requests or attacking vulnerable servers.
 ((cattle vs. pets))::
   Highlights two distinct sysadmin approaches to systems/services. Cattle are automated, ephemeral, and hopefully immutable. Pets are managed manually, stateful, and long-lived.
-((cert))::
+((Zertifikate))::
   Shorthand for HTTPS encryption certificate.
 ((change management))::
   The means and methods of transitioning a group of people from one set of tools and processes to another.
@@ -3794,7 +3794,7 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Free Software Foundation. They strongly defend the „F“ in FOSS.
 ((frontend))::
   The UI for a system or service.
-((full-disk encryption))::
+((Full-disk Verschlüsselung))::
   When an entire storage area is cryptographically protected.
 ((GB))::
   Gigabyte. Typically 1,000^3^ (1,000,000,000) bytes for HDDs, or 1,024^3^ (1,073,741,824) bytes for RAM, for historical reasons. Cloud storage providers use the second (powers of two) form.
@@ -3828,7 +3828,7 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Intelligent Platform Management Interface. Used for remote server management including reboots and OS installs.
 ((IPS))::
   Intrusion prevention system. Mitigates the risk of penetration.
-((isolation))::
+((Isolation))::
   For software services: Keep separate from others. Eases sysadmin tasks such as preventing dependency version conflicts.
 ((ISP))::
   Internet service provider.
@@ -3856,7 +3856,7 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Optical character recognition. The process of converting images of text to actual text.
 ((OOB))::
   Out-of-band (management). A means of remote low-level server control including power cycling and console interaction, typically provided by an independently powered and networked embedded computer. See also: IPMI.
-(((operating system)))
+(((Betriebssystem)))
 OS::
   Operating system.
 ((OSI))::
@@ -3889,7 +3889,7 @@ OS::
   The period of time when a software is running; when a set of machine instructions becomes a running process. Also used to describe a set of tools/libraries to facilitate same. May appear as „runtime environment“ in the latter form.
 ((SeaGL))::
   Seattle GNU/Linux Conference. Held yearly since 2013.
-((server))::
+((Server))::
   A computer that generally stays powered on and uses networking for interaction instead of a monitor, keyboard, or mouse. Also called a „host“.
 ((service))::
   A long-running process used by other local and remote processes to do something useful.
@@ -3919,7 +3919,7 @@ OS::
   Uninterruptible power supply. A battery that sits between your server and an outlet, often with extra features such as a power outage alarm or surge suppressor.
 ((UX))::
   User experience. The nature of interaction between a user and a system they are using. Includes ease of use and steps involved to complete a task. Often considered along with user interface and written as „UI/UX“.
-((volume))::
+((Volume))::
   Docker facility to mount a folder on the server to a folder inside a container. This is a common means of persisting container data that would otherwise be ephemeral.
 ((VM))::
   Virtual machine. OS isolation technique simulating nearly all aspects of hardware including power, input, and output.
