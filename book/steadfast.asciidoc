@@ -63,12 +63,12 @@ image::cc-by-sa.svg[align="center"]
 --
 
 --
-Das wunderschöne Titelbild wurde von meiner Tochter mit Krita gestaltet.
+Das wunderschöne Titelbild wurde von meiner Tochter mit https://krita.org[Krita] gestaltet.
 Mehr von ihrer großartigen Kunst findest du im Laufe des Buches.
 --
 
 --
-Technische Redaktion von https://www.wondra.codes[Lenny Wondra].
+Technische Redaktion von Lenny Wondra.
 --
 
 --
