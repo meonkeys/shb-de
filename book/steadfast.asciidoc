@@ -2042,7 +2042,7 @@ mario läuft auf deinem ((Admin-Computer)) und erwartet, direkt per SSH eine Ver
 So bringst du das zum Laufen.
 
 Weise zuerst der IP-Adresse deines Servers einen leicht zu merkenden Namen zu.
-Füge mit der IP-Adresse aus <<OS-Installation>> eine Zeile wie diese in deine Hosts-Datei ein (z.B. /etc/hosts):
+Füge mit der IP-Adresse aus <<OS-Installation>> eine Zeile wie diese in deine Hosts-Datei ein (z.B. `/etc/hosts`):
 
 .line to add to hosts file (🏠 Admincomputer)
 [source%unbreakable#line-for-hosts,text]
