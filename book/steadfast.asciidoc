@@ -3130,7 +3130,7 @@ Manchmal funktioniert das.
 Da mir vier Monate wie ein kurzer Zeitraum für Hauptversionen vorkamen, habe ich dazu einen https://help.nextcloud.com/t/major-release-cadence/161685[Thread gestartet].
 Prüfe den https://github.com/nextcloud/server/wiki/Maintenance-and-Release-Schedule[Wartungs- und Veröffentlichungsplan], um sicherzustellen, dass deine aktuelle Version noch unterstützt wird.
 
-====Performance
+==== Performance
 
 Wenn du mario verwendest, um Nextcloud bereitzustellen, startest du mit einem nominal leistungsfähigen Server, der für eine kleine Anzahl von Nutzern geeignet ist – vorausgesetzt, du hast ausreichende Hardware-Ressourcen.
 mario enthält eine vom Autor geprüfte Auswahl der https://docs.nextcloud.com/server/stable/admin_manual/installation/server_tuning.html[empfohlenen Server-Tuning-Schritte].
