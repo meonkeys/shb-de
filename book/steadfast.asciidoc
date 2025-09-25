@@ -780,6 +780,8 @@ Deshalb vertraue ich ihr immer weniger und überlege ständig, wie ich sie durch
 
 Hier sind ein paar Beispiele, bei denen ich einen öffentlichen Dienst durch eine selbstgehostete Lösung verbessert habe – gefolgt von einigen Überraschungen, auf die ich dabei gestoßen bin.
 
+// TODO - translate?
+
 === Criminal chickens
 
 Meine Familie hat ein selbstgebautes Sicherheitssystem für unsere Hühner, und die Videos sind mir wichtig.
