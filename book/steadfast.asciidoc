@@ -2940,9 +2940,8 @@ Einige der anderen in <<Alternativen zu mario>> erwähnten Self-Hosting-Lösunge
 
 Manche Systemadministratoren entscheiden sich dafür, für ((SSH))-Logins ausschließlich die Authentifizierung mit öffentlichen Schlüsseln zuzulassen.
 Ich denke, https://security.stackexchange.com/q/3887[dass das eine gute Idee ist], wollte es dir aber nicht aufzwingen und habe es deshalb nicht in mario integriert.
-
 Ich nutze dies hier als Gelegenheit, dir zu zeigen, wie man mario erweitert.
-Füge diese Ansible-Task zu roles/base/tasks/main.yml hinzu:
+Füge diese Ansible-Task zu `roles/base/tasks/main.yml` hinzu:
 
 .erzwinge SSH-Authentifizierung mit öffentlichem Schlüssel (🏠 Admincomputer)
 [source#enforce-ssh-pubkey-auth,yaml]
