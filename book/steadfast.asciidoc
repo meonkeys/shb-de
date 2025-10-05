@@ -2038,7 +2038,7 @@ Oder vielleicht _ist_ dein echter Server eine VM – das funktioniert ebenso gut
 
 === SSH Setup
 
-mario läuft auf deinem ((Admin-Computer)) und erwartet, direkt per SSH eine Verbindung zu deinem Server herstellen zu können.
+mario läuft auf deinem ((Admincomputer)) und erwartet, direkt per SSH eine Verbindung zu deinem Server herstellen zu können.
 So bringst du das zum Laufen.
 
 Weise zuerst der IP-Adresse deines Servers einen leicht zu merkenden Namen zu.
@@ -2108,7 +2108,7 @@ ssh-keygen -lf /etc/ssh/ssh_host_rsa_key.pub
 ----
 
 Als Nächstes richte die Authentifizierung mit öffentlichem Schlüssel ein.
-Wenn du ein Schlüsselpaar benötigst, erstelle eines mit `ssh-keygen` oder einem ähnlichen Befehl auf deinem Admin-Computer.
+Wenn du ein Schlüsselpaar benötigst, erstelle eines mit `ssh-keygen` oder einem ähnlichen Befehl auf deinem Admincomputer.
 Wenn du bereits ein Schlüsselpaar hast, verwende dieses.
 Kopiere den öffentlichen Schlüssel mit `ssh-copy-id` oder einem ähnlichen Tool auf den Server.
 Zum Beispiel:
@@ -2144,7 +2144,7 @@ user@server:~$
 
 === Server bereitstellen
 
-Führe `provision.sh` auf deinem ((Admin-Computer)) aus (_nicht_ auf deinem Server):
+Führe `provision.sh` auf deinem ((Admincomputer)) aus (_nicht_ auf deinem Server):
 
 .mario first run (🏠 Admincomputer)
 [source%unbreakable#mario-first-run,bash]
@@ -2302,7 +2302,7 @@ Hier ist noch einmal die `hosts`-Datei:
 
 Das manuelle Zuordnen von IP-Adressen zu Hostnamen mit einer Hosts-Datei ist hilfreich für die erste Einrichtung und Wartung, wenn dein interner DNS-Server ausfällt.
 Denk daran, dass nur der Computer mit diesen spezifischen Zuordnungen die Namen verwenden kann.
-Teste die Zuordnungen mit `ping` auf deinem Admin-Computer.
+Teste die Zuordnungen mit `ping` auf deinem Admincomputer.
 
 TIP: Ich habe Beispiele für zwei Arten von Dienst-Domänennamen gezeigt.
 `cloud.example.com` gibt die Funktion des Dienstes an, nicht den Markennamen des Dienstes.
@@ -2562,9 +2562,9 @@ Sobald Sie Nextcloud zum Laufen gebracht haben, finden Sie unter <<Mehr zu Nextc
 [#nextcloud_quick_start]
 ==== Schnellstart
 
-. Provisionieren Sie mit mario von Ihrem Admin-Computer.
+. Provisionieren Sie mit mario von Ihrem Admincomputer.
 . Starten Sie Nextcloud mit `dc nextcloud up -d` auf Ihrem Server.
-. Rufen Sie `\https://cloud.example.com` auf Ihrem Admin-Computer auf.
+. Rufen Sie `\https://cloud.example.com` auf Ihrem Admincomputer auf.
 . Folgen Sie der webbasierten Setup-Seite, um ein Admin-Konto zu erstellen.
 . Überspringen Sie die Installation der empfohlenen Apps.
 
@@ -2590,9 +2590,9 @@ image::jellyfin.png[align="center",scaledwidth=80%]
 
 ==== Schnellstart
 
-. Provisioniere mit mario vom Admin-Computer aus.
+. Provisioniere mit mario vom Admincomputer aus.
 . Starte Jellyfin mit `dc jellyfin up -d` auf dem Server.
-. Navigieren zu `\https://jellyfin.example.com` auf dem Admin-Computer.
+. Navigieren zu `\https://jellyfin.example.com` auf dem Admincomputer.
 . Folgen den webbasierten Einrichtungsschritten.
 
 (((Jellyfin, using a Grafikprozessor with)))
