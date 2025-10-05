@@ -927,7 +927,7 @@ Der Community-Support ist mal gut, mal weniger gut.
 Nextcloud scheint außerhalb der USA populärer zu sein.
 
 Nicht alle Nextcloud-Apps sind schon ausgereift.
-Mehr unter <<Customization>>.
+Mehr unter <<Anpassung>>.
 
 ===== Jitsi and Ports
 
@@ -3045,7 +3045,7 @@ Folge erneut den Einrichtungsschritten, siehe <<nextcloud_quick_start>>.
 Lese das offizielle Docs unter `/settings/help` oder https://docs.nextcloud.com.
 
 Füge Apps unter `/settings/apps` hinzu.
-Siehe <<Customization>> für Tipps, wie man Apps sinnvoll einführt und welche sich lohnen.
+Siehe <<Anpassung>> für Tipps, wie man Apps sinnvoll einführt und welche sich lohnen.
 
 Teste die Konfiguration eines Mailservers und das Versenden einer E-Mail unter `/settings/admin` (Basiseinstellungen).
 
@@ -3141,7 +3141,7 @@ Ich bemerkte langsame Webanfragen zusammen mit https://github.com/nextcloud/serv
 Dadurch musste ich mich eine Weile intensiver mit MariaDB beschäftigen.
 https://github.com/nextcloud/server/pull/33540[Die Ursache wurde inzwischen behoben], sodass dies für neue Installationen kein Problem mehr darstellt.
 
-==== Customization
+==== Anpassung
 
 (((Nextcloud, apps for)))
 Nextcloud kann entweder so verwendet werden, wie es ist (siehe <<Grundinstallierung>>), oder stark angepasst werden.
