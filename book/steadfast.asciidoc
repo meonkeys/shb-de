@@ -3181,7 +3181,7 @@ Im Zweifelsfall: klein anfangen (Standard-Nextcloud-Installation) und neue Apps 
 |Memories |Fotos |*Ja*. Benötigt Photos.
 |News |Verfolge Blogs & Nachrichten über RSS/Atom-Feeds |*Ja*.
 |Nextcloud Office |Berarbeite Tabellen, Präsentationen, usw. |*Ja*. Ich finde es nicht super, brauche es aber. Vielleicht ist das ein „Nein“? Mobile-Apps hierfür sind schrecklich. Siehe <<Nextcloud Office>>.
-|Notes |Einfache Notizen mit Markdown |*Ja*. ES gibt eine grossartige Mobile-App. Hat Google Notes für mich ersetzt.
+|Notes |Einfache Notizen mit Markdown |*Ja*. Es gibt eine grossartige Mobile-App. Hat Google Notes für mich ersetzt.
 |Passwords |Passwortmanager |*Nein*. Inaktiv.
 |PhoneTrack |Standorte teile und verfolgen |*Ja*. Die Benutzeroberfläche ist reich an Funktionen und kompliziert. Die Fortbewegungslininen sind cool.
 |Photos |Fotos, irgenwie |*Nein*. Langsam, schwerfällig, im Vergleich zu anderen FOSS Fotomanagern fehlen Funtionen. Nutze stattdessen Memories. Beachte dass Memories von Photos abhängig ist.
