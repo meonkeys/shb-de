@@ -576,7 +576,7 @@ Suchen Sie anderswo nach:
 * Betrieb eines eigenen Container-Registrierung
 * 100 % Offline- / autarkes Self-Hosting
 
-TEs gibt einige Themen wie diese, die ich überspringen oder nur kurz behandeln werde.
+Es gibt einige Themen wie diese, die ich überspringen oder nur kurz behandeln werde.
 Jedes einzelne dieser Themen ist eine ganze Branche, ein weiteres Stück Hardware, eine Einstellung an deinem Heimrouter, eine potenzielle Karriere, keines oder alles davon – und auf jeden Fall eine Überlegung wert.
 Du kannst und solltest dir ihrer bewusst sein.
 Falls du das Gefühl hast, dass ich etwas, das für meine Methode des Self-Hostings kritisch relevant ist, komplett ausgelassen habe, lass es mich bitte wissen.
