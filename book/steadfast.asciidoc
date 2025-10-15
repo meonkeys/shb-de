@@ -1057,6 +1057,8 @@ Tauchen wir ein in die Gestaltung eines _Steadfast_ Systems.
 Ein _Steadfast_ System lässt sich gut als vereinfachter Stapel farbiger Kästchen darstellen.
 Die vertikale Anordnung dieses Stacks richtet sich danach, wo und wie häufig eine Systemadministratorin wahrscheinlich auf dieser Ebene agieren oder bei Support- oder Fehlersuche eingreifen wird (am häufigsten oben), sowie danach, wie stark die jeweilige Ebene vom Bare Metal abstrahiert ist (am wenigsten unten).
 
+// TODO - is "Container" here correct? Should be plural (maybe it is?)
+
 [#image-service-stack]
 .Schichten eines Steadfast systems. Von unten, Hardware: Bare Metal, Dateisystem: ext4 for / and optionally ZFS for /data, Betriebssystem: Ubuntu LTS 64-bit server, Containerlaufzeit: Docker, Container: Nextcloud Dateifreigabe, Jellyfin Medienserver, Wallabag Artikelleser.
 image::service-stack.svg[align="center",scaledwidth=80%]
