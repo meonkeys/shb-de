@@ -346,23 +346,22 @@ Siehe <<Weitere Ressourcen>> für Kontaktinformationen und Hinweise, wie du Verb
 
 Textformattierung:
 
-// TODO - translate this table, but keep stuff in the left column exactly as-is
 
 [cols="2,3",id=style]
-.Typographical conventions
+.Typografische Konventionen
 |===
-|Styled example |Used for
+|Gestaltetes Beispiel |Verwendung
 
-|`zpool status -t` |Inline command, filename, username, password, or variable.
-Longer snippets of console text use language-specific syntax highlighting.
-|kbd:[Ctrl+c] |Key(s) pressed on the keyboard.
-|https://example.com |Bare (un-named) link.
-https scheme is assumed and omitted.
-|https://example.com[Example domain] |Named link.
-Full URL appears in print version.
-|`\https://cloud.example.com` |Non-working example link.
-Replace `.example.com` with your actual domain name.
-|<<System Design>> |Cross-reference to another section or chapter.
+|`zpool status -t` |Inline-Befehl, Dateiname, Benutzername, Passwort oder Variable. 
+Längere Ausschnitte aus der Konsolenausgabe verwenden eine sprachspezifische Syntaxhervorhebung.
+|kbd:[Ctrl+c] |Auf der Tastatur gedrückte Taste(n).
+|https://example.com |Einfacher (unbenannter) Link. 
+Das https-Schema wird vorausgesetzt und weggelassen.
+|https://example.com[Example domain] |Benannter Link.
+Die vollständige URL erscheint in der Druckversion.
+|`\https://cloud.example.com` |Nicht funktionierende Beispiel-URL. 
+Ersetzen Sie .example.com durch Ihren tatsächlichen Domainnamen.
+|<<System Design>> |Verweis auf einen anderen Abschnitt oder ein anderes Kapitel.
 |===
 
 Hinweise:
@@ -436,7 +435,7 @@ Allein der Versuch, Google hinter sich zu lassen, war eine faszinierende und erf
 Ich habe dieses Buch geschrieben, um ((Datensouveränität)) als prosoziales Verhalten zu fördern.
 Dank Self-Hosting ist das heute einfacher denn je – und ich wollte dieses Wissen in Buchform weitergeben.
 
-Die bisherigen Bücher zu diesem Thema bieten keine gute, schnelle und günstige Methode, um Self-Hosting auf eigener Hardware ((Bare Metal)) umzusetzen.
+Die bisherigen Bücher zu diesem Thema bieten keine gute, schnelle und billige Methode, um Self-Hosting auf eigener Hardware ((Bare Metal)) umzusetzen.
 Ich habe eine solche Methode gefunden – und ich glaube, du wirst sie lieben.
 Sie funktioniert übrigens auch in der Cloud, kostet dort aber deutlich mehr (siehe <<Server>>).
 
@@ -520,7 +519,7 @@ image::bread-server.png[align="center",scaledwidth=80%]
 _Cloud_ bedeutet, dass es skalierbar und automatisierbar ist.
 _Personal_ begrenzt diese Skalierbarkeit auf ein sinnvolles Maß für eine kleine Gruppe.“
 Ein ((Bare Metal)) Server kann innerhalb seiner eigenen Hardware bis zu einem gewissen Maß skalieren
-Es kann sich automatisch anpassen, indem es je nach ((Rechen-))Bedarf mehr oder weniger Leistung nutzt, und manuell, wenn man Hardware-Komponenten aufrüstet (zum Beispiel durch Hinzufügen einer weiteren Festplatte).”
+Es kann sich automatisch anpassen, indem es je nach ((Rechenbedarf)) mehr oder weniger Leistung nutzt, und manuell, wenn man Hardware-Komponenten aufrüstet (zum Beispiel durch Hinzufügen einer weiteren Festplatte).”
 
 Ich gebe zu, mein inneres Kind freut sich über die Mehrdeutigkeiten des Begriffs _Personal Cloud_.
 
@@ -669,7 +668,7 @@ Du wirst deinen eigenen Mittelweg zwischen Idealismus und Pragmatismus finden, u
 
 == Deine Reise
 
-Die stetigen Fortschritte in Hard- und Software machen Self-Hosting heute einfacher und günstiger denn je.
+Die stetigen Fortschritte in Hard- und Software machen Self-Hosting heute einfacher und billiger denn je.
 Und in einem entscheidenden Punkt deutlich komplexer: Für Einsteiger gibt es eine überwältigende Anzahl an Entscheidungen zu treffen.
 
 Halte durch.
@@ -720,7 +719,7 @@ Es gibt so viele gute Gründe!
 ** je mehr Nutzer, desto mehr Stromersparnis
 ** siehe verlinkte Artikel in <<Server>>
 * Geld sparen
-** selbstgehostete Hardware ist in der Regel günstiger als die Cloud (also gemietete Dienste)
+** selbstgehostete Hardware ist in der Regel billiger als die Cloud (also gemietete Dienste)
 ** Einsparungen steigen, wenn der Speicherbedarf deiner Nutzer*innen in den Terabyte-Bereich geht
 ** spare mehr mit jedem weiteren Dienst, den du betreibst
 ** unerwartete Kosten bei Public-Cloud-Anbietern vermeiden
@@ -780,9 +779,7 @@ Deshalb vertraue ich ihr immer weniger und überlege ständig, wie ich sie durch
 
 Hier sind ein paar Beispiele, bei denen ich einen öffentlichen Dienst durch eine selbstgehostete Lösung verbessert habe – gefolgt von einigen Überraschungen, auf die ich dabei gestoßen bin.
 
-// TODO - translate?
-
-=== Criminal chickens
+=== Kriminelle Hühner
 
 Meine Familie hat ein selbstgebautes Sicherheitssystem für unsere Hühner, und die Videos sind mir wichtig.
 Früher habe ich sie einfach auf YouTube hochgeladen, weil hey, es ist kostenlos und es „funktioniert einfach“, oder?
@@ -845,7 +842,7 @@ Ich würde zu gern erfahren, wie es bei dir läuft.
 Du wirst vielleicht aber auch überrascht sein, wie zeitaufwendig und schwierig manche Dinge sein können.
 Vielleicht hängst du an der Hardware fest (und deren Stromversorgung, Verkabelung, Kühlung, Ausfällen).
 Vielleicht am Netzwerk.
-Vielleicht am „Change Management“ (deine Nutzer*innen davon zu überzeugen, Nextcloud statt Dropbox zu verwenden).
+Vielleicht am ((Change Management)) (deine Nutzer*innen davon zu überzeugen, Nextcloud statt Dropbox zu verwenden).
 
 Hier sind einige Dinge, die mich überrascht haben – im Positiven wie im Negativen.
 
@@ -853,7 +850,7 @@ Hier sind einige Dinge, die mich überrascht haben – im Positiven wie im Negat
 
 ===== Hardware war gar nicht so schwierig
 
-Mit Hilfe eines Freundes (danke, Rob!) habe ich einen zuverlässigen und günstigen, generalüberholten Server gekauft.
+Mit Hilfe eines Freundes (danke, Rob!) habe ich einen zuverlässigen und billigen, generalüberholten Server gekauft.
 Ich dachte, ich müsste an Kabeln, Karten und CMOS-Batterien herumbasteln.
 Aber nein!
 Ich habe das Gehäuse geöffnet, um einen Blick ins Innere zu werfen.
@@ -866,7 +863,7 @@ Ich habe ihn eingesteckt – und er hat funktioniert.
 .Blick ins Innere des Servers mit zwei leeren PCI-E-Steckplätzen.
 image::inside-chassis.jpg[align="center",scaledwidth=80%]
 
-===== Containers == happy
+===== Container == happy
 
 (((Docker)))
 Ich war angenehm überrascht von ((Container))s (erklärt in <<Contained services>>), insbesondere nach meinen gemischten früheren Erfahrungen mit VMs.
@@ -898,7 +895,7 @@ Das Ausführen als `root` vereinfacht Container zwar, macht sie aber auch unsich
 
 ===== Papierlos mit OCR
 
-Eine weitere fortschrittliche Entwicklung, die ein Lächeln wert ist, ist kostenlose OCR (optocal character recognition/ optische Zeichenerkennung).
+Eine weitere fortschrittliche Entwicklung, die ein Lächeln wert ist, ist kostenlose OCR (optical character recognition).
 Ich versuche immer wieder, „papierlos zu werden“, indem ich all meine Papierdokumente einscanne.
 Nach dem Scannen bleibe ich – wenig überraschend – mit einem Haufen PDF-Dateien voller Bilder zurück.
 (((Paperless-ngx)))
@@ -944,7 +941,7 @@ Ich werde es irgendwann nochmal versuchen, weil https://jitsi.org/blog/authentic
 Wenn es um Überraschungen geht, versuche die schlechten zu verkraften, wenn sie deine Nutzer betreffen.
 Im Idealfall _bevor_ sie deine Nutzer betreffen, durch Recherche, Planung und Tests, die du wahrscheinlich schon machst.
 
-(((dogfooding)))
+(((Dogfooding)))
 Nutze selbst, was du selbst hostest.
 
 Gib dein Bestes, um alles attraktiv und nützlich zu gestalten, und warte dann ab.
@@ -1021,7 +1018,7 @@ Das ist eine großartige Gelegenheit, weitere Personen einzubeziehen, die bei de
 
 === Umstellung
 
-(((change management)))
+(((Change Management)))
 Ihre Benutzer haben ihre Daten bereits an einem anderen Ort.
 Überlegen Sie, wie Sie ihnen helfen können, ihre Daten auf den Server zu migrieren.
 
@@ -1057,8 +1054,6 @@ Tauchen wir ein in die Gestaltung eines _Steadfast_ Systems.
 Ein _Steadfast_ System lässt sich gut als vereinfachter Stapel farbiger Kästchen darstellen.
 Die vertikale Anordnung dieses Stacks richtet sich danach, wo und wie häufig eine Systemadministratorin wahrscheinlich auf dieser Ebene agieren oder bei Support- oder Fehlersuche eingreifen wird (am häufigsten oben), sowie danach, wie stark die jeweilige Ebene vom Bare Metal abstrahiert ist (am wenigsten unten).
 
-// TODO - is "Container" here correct? Should be plural (maybe it is?)
-
 [#image-service-stack]
 .Schichten eines Steadfast systems. Von unten, Hardware: Bare Metal, Dateisystem: ext4 for / and optionally ZFS for /data, Betriebssystem: Ubuntu LTS 64-bit server, Containerlaufzeit: Docker, Container: Nextcloud Dateifreigabe, Jellyfin Medienserver, Wallabag Artikelleser.
 image::service-stack.svg[align="center",scaledwidth=80%]
@@ -1069,12 +1064,12 @@ Noch seltener sehe ich mir Versionen einer Konfigurationsdatei an, die auf der F
 Und schließlich, wenn mein Server ausfällt, befinde ich mich ganz unten im Stack: Ich repariere oder ersetze die Hardware.
 Hier findest du die entsprechenden Abschnitte mit Details zu jeder Ebene:
 
-* Containern:
+* Container:
 ** <<Nextcloud: Dateisynchronisation und -Freigabe>>
 ** <<Jellyfin: Audio- und Videostreaming>>
 ** <<Wallabag: Artikel speichern und lesen>>
 * Containerlaufzeit:
-** <<Containers == happy>>
+** <<Container == happy>>
 ** <<Contained services>>
 * Betriebssystem: <<Betriebssystem>>
 * Dateisystem: <<Dateisystem>>
@@ -1163,7 +1158,7 @@ Der Bot versucht automatisch, eine bekannte Schwachstelle im Dienst auszunutzen.
 Der Angriff gelingt, und der Bot-Betreiber erhält Zugriff auf Rechenressourcen und persönliche Informationen.
 Gegenmaßnahmen::
   Halte den Dienst aktuell.
-Sichere die WAN-Grenze: überwache die Verkehrsdaten, setze ein ((IPS)) (Intrusion Prevention System (Einbruchsschutzsystem)) ein, und lasse den Zugriff ins ((LAN)) nur über ein VPN (Virtual Private Network) zu.
+Sichere die WAN-Grenze: überwache die Verkehrsdaten, setze ein ((Einbruchsschutzsystem)) ein, und lasse den Zugriff ins ((LAN)) nur über ein VPN (Virtual Private Network) zu.
 Schließe die WAN-Grenze: erlaube keinen eingehenden WAN-Zugriff.
 
 Solltest du dich entscheiden, einen Dienst öffentlich zugänglich zu machen, helfen diese Maßnahmen, ihn zu sichern.
@@ -1184,9 +1179,9 @@ Die VPN-Technologie erhielt ein großes Upgrade durch https://www.wireguard.com[
 Aus Nutzersicht gibt es keinen schweren Login-Prozess mehr, wie bei älteren VPNs.
 ((Wireguard)) ist schnell, einfach und sicher.
 
-==== Full-disk Verschlüsselung
+==== Vollständige Festplattenverschlüsselung
 
-(((Verschlüsselung, Full-disk)))
+(((Vollständige Festplattenverschlüsselung)))
 Das Verschlüsseln verhindert, dass ein Angreifer Daten wiederherstellen kann.
 Beim Hochfahren musst du allerdings ein Passwort eingeben.
 Das ist unpraktisch, wenn es zu Stromausfällen kommt und/oder keine Fernverwaltung möglich ist.
@@ -1207,7 +1202,7 @@ Siehe <<Backups>>.
 * Nutze Multi-Faktor-Authentifizierung.
 * Setze Firewalls ein.
 * Verwende starke Passwörter.
-* Sei sehr vorsichtig beim Port-Forwarding oder lasse es am besten ganz weg.
+* Sei sehr vorsichtig bei der Portweiterleitung oder lasse es am besten ganz weg.
 * Sei wachsam bei all den üblichen Dingen: Phishing, Malware, SMS-Spoofing und Social-Engineering-Angriffen.
 ** Sei vorsichtig mit Links und Anhängen in E-Mails.
 ** Installiere keine nicht vertrauenswürdige Software. Always use HTTPS.
@@ -1258,7 +1253,7 @@ Weitere ZFS-Konzepte, die es sich zu lernen lohnt: Fragmentierung, ARC (Adaptive
 (((Betriebssystem)))
 (((Ubuntu)))
 ((Linux)) ist eine beliebte und vernünftige Wahl für Self-Hosting. Ich empfehle einen 64-Bit-Ubuntu-Linux-Server mit mindestens 2 GB Arbeitsspeicher und 30 GB Speicherplatz.
-Ubuntu ((LTS)) (Long-Term Support)-Versionen sind am stabilsten, und ich empfehle genau diese.
+Ubuntu ((LTS))-Versionen sind am stabilsten, und ich empfehle genau diese.
 Steadfast bezieht sich speziell auf 24.04, die LTS-Version von April 2024.
 Version 24.04 ist heute stabil und https://ubuntu.com/about/release-cycle[wird bis April 2034 Updates] erhalten, was viele weitere Jahre Stabilität verspricht, bevor Steadfast überarbeitet werden muss.
 Die Installation des Betriebssystems ist im Allgemeinen schnell und schmerzlos, siehe <<OS-Installation>>.
@@ -1310,7 +1305,7 @@ Es wird regelmäßig gesichert, es gibt nur wenige manuelle Schritte – und all
 mario nutzt ((Docker)) um Dienste in Containern zu betreiben.
 Docker ist bur eine von vielen Wegen um Dienste isoliert zu betreiben.
 ((VM))s werden auch oftmals fur diese Zwecke genutzt.
-Siehe <<Containers == happy>> fur einen Vergleich dieser zwei Optionen.
+Siehe <<Container == happy>> fur einen Vergleich dieser zwei Optionen.
 Falls du weiteres Interesse VMs hast (als Alternative oder im Zusammenhang mit Containern), schaue bei https://proxmox.com[Proxmox] vorbei.
 
 ((Kubernetes)) funktionieren auch gut um Dienste zu betreiben.
@@ -1337,7 +1332,7 @@ Jedes Docker-Image ist im Grunde ein vollständiges Dateisystem (ohne Kernel), s
 Ein anderes Image wird bei Bedarf für die Datenbank verwendet.
 
 Es lohnt sich, einen Moment bei den gebündelten Abhängigkeiten zu verweilen.
-Wenn Abhängigkeiten Kleidung wären, dann ist ein Docker ((Container)) ein robuster und günstiger Koffer mit allem, was man für eine Woche Reise braucht.
+Wenn Abhängigkeiten Kleidung wären, dann ist ein Docker ((Container)) ein robuster und billiger Koffer mit allem, was man für eine Woche Reise braucht.
 Man gibt seinen Koffer ab, steigt in den Zug und kann beruhigt sein, dass der Koffer ordentlich und getrennt neben den anderen verstaut ist.
 Docker-Container sind Koffer – während die alte Herangehensweise einem riesigen Wäschehaufen im letzten Waggon entspricht, in dem alle ihre ungefaltete Kleidung einfach hineingeworfen haben.
 
@@ -1354,7 +1349,7 @@ Jeder Dienst hat seine eigene `compose.yml` Datei, die ebenfalls unter Versionsk
 Für Systemadministratoren bieten diese Konventionen ((reproduzierbare)) Images und Container.
 Für Benutzer bedeutet das: verlässliche, vorhersehbare Dienste.
 
-(((cattle vs. pets)))
+(((Cattle vs. Pets))) (((Nutz- vs. Haustier)))
 Übe den Umgang mit Containern als temporäre Objekte.
 Du gewinnst Vertrauen in dein System, indem du Container regelmäßig erstellst und wieder entfernst – und du wirst die Geschwindigkeit und Einfachheit dieses Vorgehens schätzen lernen.
 Denke so:
@@ -1364,7 +1359,7 @@ Denke so:
 ** Temporäre Container ermöglichen robuste, reproduzierbare Dienste
 * Nutztiere, keine Haustiere
 ** Von Hand verwaltete virtuelle Maschinen sind aufwendige Haustiere
-** Entschuldigung an das Vieh – in diesem Vergleich sind sie entbehrlich
+** Entschuldigung an das Nutztier – in diesem Vergleich sind sie entbehrlich
 * Zustandslos
 ** Permanente Daten müssen explizit definiert und verwaltet werden
 * Phönix-Server
@@ -1637,7 +1632,7 @@ Ich verwende normalerweise ein Laptop als Admincomputer, um mario zu betreiben.
 Deine Nutzer*innen werden ihre eigenen Computer und Mobilgeräte (ihre _Clients_) verwenden.
 Halte ein paar verschiedene Clients bereit, damit du vergleichbare Umgebungen hast und deinen Nutzer*innen besser helfen kannst.
 
-(((dogfooding)))
+(((Dogfooding)))
 [TIP%unbreakable]
 Sei selbst Nutzer*in der Dienste, die du betreibst.
 Das nennt man _Dogfooding_.
@@ -1646,7 +1641,7 @@ Dogfooding sorgt dafür, dass du ehrlich mit dir selbst bleibst und dich besser 
 ==== Festplattenlaufwerke
 
 (((ZFS, snapshots and)))
-Ich verwende Festplattenlaufwerke (Hard Disk Drives ((HDD))s) zur Datenspeicherung – hauptsächlich, um Kosten gegenüber öffentlichem Cloud-Speicher oder ((SSD))s (Solid-State-Laufwerken) zu sparen.
+Ich verwende ((Festplattenlaufwerke)) zur Datenspeicherung – hauptsächlich, um Kosten gegenüber öffentlichem Cloud-Speicher oder ((SSD))s (Solid-State-Laufwerken) zu sparen.
 Die Kosten für ((Blockspeicher)) in der Public Cloud übersteigen bei Weitem die Gigabyte-Stunden-Kosten meiner Festplattenlaufwerke.
 Ich habe den Preis für einen 5TB Blockspeicher bei AWS auf 228,10 $ pro Monat geschätzt.
 Mit ZFS erstelle ich außerdem alle 15 Minuten einen Snapshot (im Grunde ein vollständiges lokales Backup).
@@ -1659,7 +1654,7 @@ Zur Redundanz empfehle ich, zwei identische Festplatten im Spiegelmodus (RAID 1)
 Das bietet nicht nur Datensicherheit bei Ausfall einer Festplatte, sondern auch bessere Leseleistung (bei den meisten Lesezugriffen).
 Beachte aber: Die nutzbare Speicherkapazität wird dabei halbiert.
 
-((HDD))s sind völlig ausreichend schnell, wenn man die Antwortzeiten selbstgehosteter Dienste als Maßstab nimmt. Das Betriebssystem und die Dienste arbeiten effizient mit Daten-Caching, sofern der Server über ausreichend RAM verfügt.
+Festplattenlaufwerke sind völlig ausreichend schnell, wenn man die Antwortzeiten selbstgehosteter Dienste als Maßstab nimmt. Das Betriebssystem und die Dienste arbeiten effizient mit Daten-Caching, sofern der Server über ausreichend RAM verfügt.
 Remote-Backups können länger dauern – das ist in Ordnung.
 
 Ich verwende eine SSD für das Betriebssystem und alles außerhalb meiner Fotos/Dokumente usw., da die Startzeit des Betriebssystems entscheidend ist und dieses beim Booten nur wenig von Dateisystem-Caching profitiert.
@@ -1679,7 +1674,7 @@ Bei der Entscheidung zwischen beiden Optionen gibt es viele Faktoren zu beachten
 * Netzwerkverfügbarkeit
 * Backups, Versionierung und Sicherheit
 
-Ich habe mich für HDDs entschieden, um direkten, lokalen Zugriff auf meine Daten zu haben.
+Ich habe mich für Festplattenlaufwerke entschieden, um direkten, lokalen Zugriff auf meine Daten zu haben.
 Ich wollte ganz genau wissen, wo sie gespeichert sind, und maximale Flexibilität haben, wenn ich Dienste wechsle oder neue ausprobiere.
 Außerdem benötigen die meisten meiner Dienste ohnehin direkten Zugriff auf die Daten.
 
@@ -1726,13 +1721,13 @@ endif::[]
 (((IPMI)))
 Pfeile stellen Ethernet-Kabel dar.
 Der Router versorgt den Mini-Switch über PoE (Power over Ethernet) mit Strom.
-Der Server verfügt über zwei Netzwerkkarten (NICs – Network Interface Cards): eine für das Betriebssystem und alle darauf laufenden Dienste, und eine für die Netzwerkverbindung zum eingebetteten OOB-Remote-Management-Computer mit IPMI (Intelligent Platform Management Interface).
+Der Server verfügt über zwei NICs (Network Interface Cards): eine für das Betriebssystem und alle darauf laufenden Dienste, und eine für die Netzwerkverbindung zum eingebetteten OOB-Remote-Management-Computer mit IPMI (Intelligent Platform Management Interface).
 WAN-Verkehr darf zur Haupt-NIC fließen, jedoch _nicht_ zur IPMI-NIC.
 
 ==== Stromversorgung
 
 Verwende eine Steckdosenleiste mit Überspannungsschutz.
-Falls deine Stromversorgung zu Hause unzuverlässig ist, solltest du eine USV (unterbrechungsfreie Stromversorgung) in Betracht ziehen.
+Falls deine Stromversorgung zu Hause unzuverlässig ist, solltest du eine unterbrechungsfreie Stromversorgung in Betracht ziehen.
 
 ==== Physische Sicherheit
 
@@ -1749,14 +1744,12 @@ NOTE: Während du das Betriebssystem installierst, denke bereits an die Notfallw
 Mache dir Notizen und stelle dir vor, wie du den Vorgang exakt wiederholst.
 Bei jedem Schritt im interaktiven Ubuntu-Installer: Akzeptiere entweder die Voreinstellung oder notiere dir deine Auswahl.
 
-// TODO - translate
-
 . *Installiere Ubuntu* 24.04 LTS server.
 Siehe https://ubuntu.com/tutorials/install-ubuntu-server[this tutorial] für eine Schritt-für-Schritt Anleitung.
 . Verwende beim Konfigurieren des Netzwerks eine *statische LAN-IP-Adress*.
 YDu kannst dies möglicherweise auch auf dem Standardwert belassen (DHCP/dynamisch) und stattdessen deinen LAN-Router so konfigurieren, dass er dem Server eine feste IP-Adresse zuweist, die sich nicht ändert.
 . Optional: Verwende eine vollständige Festplattenverschlüsselung.
-Siehe <<Full-disk Verschlüsselung>>.
+Siehe <<Vollständige Festplattenverschlüsselung>>.
 . *Notiere Username und Passwort* wenn du deinen Nutzeraccount („Profile“) erstells. Du wirst sie bald brauchen.
 . *Installiere den OpenSSH Server* wenn du dazu aufgerufen wirst.
 . *Installiere kein Nextcloud oder Docker*, lasse mario diese später installieren.
@@ -1773,7 +1766,7 @@ Siehe <<ZFS Setup>>.
 
 (((ZFS, setting up)))
 Das Betriebssystem kümmert sich im Allgemeinen gut um sich selbst.
-Für eine robustere Datenspeicherung kannst du ein paar HDDs hinzufügen und sie mit ZFS verwalten.
+Für eine robustere Datenspeicherung kannst du ein paar Festplattenlaufwerke hinzufügen und sie mit ZFS verwalten.
 
 ZFS bietet viele Funktionen und etwas zusätzliche Komplexität.
 Die Lernkurve lohnt sich.
@@ -2422,7 +2415,7 @@ Die Zertifikate werden über eine https://doc.traefik.io/traefik/https/acme/#dns
 Diese Methode zur https://letsencrypt.org/docs/challenge-types/[Authentifizierung einer Zertifikatsanfrage] ist besonders praktisch für Server ohne öffentlich erreichbare eingehende Ports und ermöglicht so bequemes HTTPS selbst in geschlossenen LANs.
 Die DNS-Challenge wird über Labels in der `compose.yml`-Konfigurationsdatei von Traefik eingerichtet.
 
-(((SSL termination)))
+(((SSL-Beendigung)))
 Traefik kann HTTPS-Verbindungen annehmen, entschlüsseln und als unverschlüsseltes HTTP an Webdienste weiterleiten.
 Dies nennt man *SSL-Termination* und wird in Traefiks `compose.yml` über Zeilen mit `acme` konfiguriert.
 
@@ -2734,8 +2727,8 @@ mario verwendet zum Beispiel ein Container-Label, um zu verhindern, dass Watchto
 . Provisioniere mit mario vom Admincomputer.
 . Starte Watchtower mit `dc watchtower up -d` von deinem server.
 
-From now on it'll run in the background, automatically upgrading containers whenever possible, on a reasonable schedule (every 24 hours by default).
-You can forget about it until it breaks (or breaks something else).
+Ab jetzt läuft es im Hintergrund und aktualisiert Container automatisch, wann immer möglich – nach einem vernünftigen Zeitplan (standardmäßig alle 24 Stunden).
+Du kannst es getrost vergessen, bis es ausfällt (oder etwas anderes kaputtmacht).
 
 ==== Wartungshinweise
 
@@ -3336,7 +3329,7 @@ Um Kalender, Aufgaben und Kontakte mit dem Speicher deines Smartphones unter And
 https://help.nextcloud.com/t/what-does-android-file-sync-do-for-a-nextcloud-account/154330[Ich weiß nicht, warum DAVx5 erforderlich ist], aber https://murena.com[Murena] hat dieses Problem für mich gelöst:
 
 Ihr Android-basiertes '/e/ OS' bietet native Unterstützung für Nextcloud-Konten und macht DAVx5 überflüssig.
-Benutzer mit iOS oder anderen Betriebssystemen außer Android können groupware-bezogene Daten https://docs.nextcloud.com/server/stable/user_manual/en/groupware/[ohne DAVx5] synchronisieren.
+Benutzer mit iOS oder anderen Betriebssystemen außer Android können Groupware-bezogene Daten https://docs.nextcloud.com/server/stable/user_manual/en/groupware/[ohne DAVx5] synchronisieren.
 
 ===== Fehlerhafte Konflikte im Web-Texteditor 
 
@@ -3714,12 +3707,11 @@ Danke an die „Deadbeat Dads“ Bryan Daisley und Rob Floberg für euer unbezah
 
 Danke an alle meine geliebten Beta-Tester, darunter Andrew Davidson, Brendan Kidwell, Eva Monsen, Don O’Neill und Lenny Wondra.
 
-Danke an Bob Nystrom für dein geistig bereicherndes Design-Review.
+Danke an Bob Nystrom für deine geistig bereichernde Designkritik.
 
-Danke an Lenny Wondra für dein außerordentlich effektives technisches Review und Lektorat.
+Danke an Lenny Wondra für deine außerordentlich effektive technische Kritik und dein Lektorat.
 
-// TODO - translate
-Thanks to Fiona Burkart for your thoughtful and thorough German translation.
+Danke an Fiona Burkart für deine sorgfältige und gründliche deutsche Übersetzung.
 
 Am allermeisten danke ich meiner Frau und meinen Kindern dafür, dass sie mich unterstützen und an mich glauben.
 Für all das Kochen, Reden, Zuhören, Kunst, Programmieren, Mathematik, Musik und die Liebe.
@@ -3733,204 +3725,203 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
 
 // Source for "These days that pretty much means git" statement: https://en.wikipedia.org/wiki/Git#Adoption
 
-// TODO - translate
 ((KI))::
   Künstliche Intelligenz.
 ((API))::
-  Application programming interface. Provides a way to interact with a service from software. Useful for writing apps and integrations.
-((attack surface))::
-  Total of possible attack vectors. Fewer is more secure. Example: closing all but the ports you need open reduces yours.
-((backend))::
-  I use this term to refer to either a service (e.g. a database) or server. It's something you more frequently interact with indirectly, say, via a frontend like a web app or mobile UI.
+ Programmierschnittstelle (Application Programming Interface). Bietet eine Möglichkeit, über Software mit einem Dienst zu interagieren. Nützlich zum Erstellen von Apps und Integrationen.
+((Angriffsfläche))::
+  Gesamtheit aller möglichen Angriffspunkte. Weniger ist sicherer. Beispiel: Wenn du alle Ports schließt, die du nicht benötigst, reduzierst du deine Angriffsfläche.
+((Backend))::
+  In diesem Buch bezeichnet dieser Begriff entweder einen Dienst (z. B. eine Datenbank) oder einen Server. Es handelt sich um etwas, mit dem du meist indirekt interagierst, etwa über ein Frontend wie eine Web- oder Mobil-App.
 ((Bare Metal))::
-  Physical nearby computing resources, as opposed to rented compute time on someone else's hardware. Used in this book primarily to indicate hardware autonomy.
+  Physische, lokal verfügbare Rechenressourcen – im Gegensatz zu gemieteter Rechenzeit auf fremder Hardware. In diesem Buch wird der Begriff vor allem verwendet, um Hardware-Autonomie auszudrücken.
 ((Blockspeicher))::
-  Cloud storage option with direct filesystem access including files and folders. Used directly/natively/locally from an OS. Size is relatively fixed and determined at creation time.
-((bot))::
-  Short for robot. Software performing autonomous tasks such as responding to chat requests or attacking vulnerable servers.
-((cattle vs. pets))::
-  Highlights two distinct sysadmin approaches to systems/services. Cattle are automated, ephemeral, and hopefully immutable. Pets are managed manually, stateful, and long-lived.
+  Cloud-Speicheroption mit direktem Dateisystemzugriff, einschließlich Dateien und Ordnern. Wird direkt/nativ/lokal vom Betriebssystem verwendet. Die Größe ist relativ festgelegt und wird bei der Erstellung bestimmt.
+((Bot))::
+  Kurzform von „Roboter“. Software, die automatisierte Aufgaben ausführt, z. B. auf Chat-Anfragen antworten oder verwundbare Server angreifen.
+((Cattle vs. Pets)) ((Nutz- vs. Haustier))::
+  Verdeutlicht zwei unterschiedliche Systemadministrator-Ansätze für Systeme und Dienste. „Cattle“ (Nutztiere) sind automatisiert, kurzlebig und im Idealfall unveränderlich. „Pets“ (Haustiere) werden manuell verwaltet, sind zustandsbehaftet und langlebig.
 ((Zertifikate))::
-  Shorthand for HTTPS encryption certificate.
-((change management))::
-  The means and methods of transitioning a group of people from one set of tools and processes to another.
+  Kurzform für HTTPS-Verschlüsselungszertifikate.
+((Change Management))::
+  Die Mittel und Methoden, mit denen eine Gruppe von Menschen von einem Satz von Werkzeugen und Prozessen zu einem anderen überführt wird.
 ((Cloud))::
-  An ambiguous amount of remote hardware. Scalable, programmable, and networked. „The cloud“ or „public cloud“ is someone else's hardware while „personal cloud“ is your own.
+  Eine unbestimmte Menge an entfernten Hardware-Ressourcen. Skalierbar, programmierbar und vernetzt. „Die Cloud“ oder „öffentliche Cloud“ bezeichnet die Hardware anderer Leute, während „persönliche Cloud“ deine eigene ist.
 ((Cluster))::
-  Collated collection of machines treated as a single machine to achieve higher scale computing power.
-((compute))::
-  Noun: Hauptprozessor or Grafikprozessor resources expended when running software services.
-((Container))::
-  Running instance of an image. Containers may also be referred to as „guests“, although this is more commonly used to describe VMs.
+  Zusammengeschlossene Sammlung von Rechnern, die gemeinsam wie ein einzelner Computer behandelt werden, um eine höhere Rechenleistung zu erreichen.
+((Rechenbedarf))::
+  Substantiv: Hauptprozessor- oder Grafikprozessor-Ressourcen, die beim Ausführen von Software-Diensten verbraucht werden. 
+((Container)):: 
+  Laufende Instanz eines Images. Container können auch als „Guests“ bezeichnet werden, wobei dieser Begriff häufiger für virtuelle Maschinen (VMs) verwendet wird.
 ((Hauptprozessor))::
-  Central processing unit. The main brain of the computer; the place where most of the math happens.
+  Zentrale Verarbeitungseinheit (CPU). Das „Gehirn“ des Computers – dort findet der Großteil der Berechnungen statt.
 ((data))::
-  Noun, plural. Yes, I use the annoying plural form! Sorry, old habit.
+  (Bezieht sich nur auf den Englischen Begriff; data = Daten) 
+  Substantiv, Plural. Ja, ich verwende die grammatikalisch korrekte, aber manchmal unbequeme Pluralform! Alte Gewohnheit.
 ((Datensouveränität))::
-  Full control of your data. For example, having original copies of your files.
-((deploy))::
-  Prepare a service for use. Typically involves building or copying files before a service is started.
-((dogfooding))::
-  Being a user of something you also created and/or maintain. „Eat your own dogfood.“
+  Vollständige Kontrolle über deine Daten. Zum Beispiel: Du besitzt die Originalkopien deiner Dateien.
+((bereitsetllen))::
+  Einen Dienst für die Nutzung vorbereiten. Beinhaltet in der Regel das Erstellen oder Kopieren von Dateien, bevor der Dienst gestartet wird.
+((Dogfooding))::
+  Etwas selbst zu benutzen, das man auch entwickelt oder betreut. „Eat your own dog food“ – „Iss dein eigenes Hundefutter.“
 ((DHCP))::
-  Dynamic Host Configuration Protocol. This is one way computers get IP addresses and related networking settings.
+  Dynamic Host Configuration Protocol. Ein Verfahren, mit dem Computer IP-Adressen und zugehörige Netzwerkeinstellungen automatisch beziehen.
 ((DIY))::
-  Do it yourself. Said of activities involving some amount of learning and tinkering you'd otherwise pay for. Cooking, for example. Also: self-hosting.
+  Do it yourself – „Mach es selbst“. Bezeichnet Tätigkeiten, bei denen man selbst lernt und bastelt, anstatt jemanden zu bezahlen. Beispiel: Kochen oder – in diesem Buch – Self-Hosting.
 ((DNS))::
-  Domain Name System. Maps domain names to IP addresses.
-((domain name))::
-  How a server, service, or group of services are identified, e.g. `example.com`.
+  Domain Name System. Ordnet Domainnamen IP-Adressen zu.
+((Domainname))::
+  Bezeichnung eines Servers, Dienstes oder einer Dienstgruppe, mit der diese identifiziert werden kann, z. B. `example.com.`
 ((DRM))::
-  Digital restrictions management. Ancient, evil technology designed to prevent unapproved consumption of content. Probably used for surveillance too.
-((egress))::
-  Any outbound data transfer or download, in public cloud terms.
-((entrypoint))::
-  How traffic enters the Traefik Reverse-Proxy; network ports.
-((firewall))::
-  Means of controlling network traffic between computers.
-((fork))::
-  Verb: to split one software project into two. Noun: a derivative software work. The fork diverges from the original (otherwise it would simply be a copy). One or many software projects may succeed the original. Forking software is a useful and common activity.
+  Digital Restrictions Management. Eine veraltete und restriktive Technologie, die entwickelt wurde, um die nicht genehmigte Nutzung digitaler Inhalte zu verhindern – und welche wahrscheinlich auch zur Überwachung verwendet wird.
+((Egress))::
+  Jeglicher ausgehender Datentransfer oder Download – insbesondere in Bezug auf öffentliche Cloud-Dienste.
+((Entrypoint))::
+  Der Punkt, an dem Datenverkehr in den Traefik Reverse-Proxy eintritt; also die Netzwerkports.
+((Firewall))::
+  Ein Mittel zur Kontrolle des Netzwerkverkehrs zwischen Computern.
+((Fork))::
+  Forken (Verb): Ein Softwareprojekt in zwei Varianten aufteilen. Fork (Substantiv): Eine abgeleitete Software-Version. Die Fork unterscheidet sich vom Original (sonst wäre es nur eine Kopie). Ein oder mehrere Projekte können aus dem Original hervorgehen. Das Forken von Software ist eine übliche und nützliche Praxis.
 ((FOSS))::
-  Free and open-Quellesoftware. An acronym designed to unite the goals of the FSF and the OSI.
+  Free and Open Source Software. Ein Akronym, das die Ziele der Free Software Foundation (FSF) und der Open Source Initiative (OSI) vereinen soll.
 ((FSF))::
-  Free Software Foundation. They strongly defend the „F“ in FOSS.
-((frontend))::
-  The UI for a system or service.
-((Full-disk Verschlüsselung))::
-  When an entire storage area is cryptographically protected.
+  Free Software Foundation. Eine Organisation, die sich stark für das „F“ („Free“) in FOSS einsetzt.
+((Frontend))::
+  Die Benutzeroberfläche (UI) eines Systems oder Dienstes.
+((Vollständige Festplattenverschlüsselung))::
+  Wenn ein gesamter Speicherbereich kryptografisch geschützt ist.
 ((GB))::
-  Gigabyte. Typically 1,000^3^ (1,000,000,000) bytes for HDDs, or 1,024^3^ (1,073,741,824) bytes for RAM, for historical reasons. Cloud storage providers use the second (powers of two) form.
-((good, fast, and cheap))::
-  Used with a wink in this text because https://en.wikipedia.org/wiki/Project_management_triangle[typically we must pick two].
-((Good Thing))::
-  A hand-wavy way of saying something is self-evidently wonderful.
+  Gigabyte. Üblicherweise 1,000^3^ (1,000,000,000) Bytes bei Festplatten oder 1,024^3^ (1,073,741,824) Bytes bei Arbeitsspeicher – aus historischen Gründen. Cloud-Speicheranbieter verwenden meist die zweite (Zweierpotenz-)Variante.
+((gut, schnell, und billig))::
+  Wird in diesem Text augenzwinkernd verwendet, da man laut dem https://de.wikipedia.org/wiki/Magisches_Dreieck_(Projektmanagement)[typischerweise nur zwei davon wählen kann].
+((Das ist etwas Gutes))::
+  Eine vage Art zu sagen, dass etwas offensichtlich großartig ist.
 ((Groupware))::
-  Software for group collaboration. Loosely: mail, calendar, and contacts. Sometimes includes collborative editing of office documents and spreadsheets.
+  Software für die Zusammenarbeit in Gruppen. Im weiteren Sinne: E-Mail, Kalender und Kontakte. Manchmal auch gemeinsames Bearbeiten von Office-Dokumenten und Tabellen.
 ((Grafikprozessor))::
-  Graphics processing unit. Originally intended for graphics. Found to be useful for many specialized compute workloads including transcoding video.
+  Ursprünglich für Grafikberechnungen gedacht, heute auch für spezialisierte Rechenaufgaben wie Videotranskodierung oder maschinelles Lernen verwendet.
 ((GUI))::
-  Graphical user interface.
-((HDD))::
-  Hard disk drive. Stores ones and zeros on spinning metal platters.
-((homelab))::
-  A physical or conceptional space for do-it-yourself flexible systems administration leaning and experimentation. A homelab is not quite what this book describes, it is more of an at-home hardware, software, and electronics maker-space. A _Steadfast_ server (or „personal cloud“) should be nearly always online and useful--at least the user-facing part. Some self-hosters call this environment „homeprod“. Far from this level of hair-splitting detail, I'll use „homelab“ as a shortcut for „self-hosting setup“ and/or „homeprod“.
-((host))::
-  The computer where Docker containers run. Also called a „server“ in this text.
-((hostname))::
-  Name for a single server/computer/device.
+  Graphical user interface - Graphische Benutzeroberfläche.
+((Festplattenlaufwerk))::
+  Auch einfach Festplatte genannt. Speichert Daten in Form von Einsen und Nullen auf rotierenden Metallscheiben.
+((Homelab))::
+  Ein physischer oder konzeptioneller Raum fürs Lernen und Experimentieren mit selbstgesteuerten, flexiblen Systemen. Ein Homelab ist nicht ganz das, was in diesem Buch beschrieben wird; es ist eher eine Art Heim-Werkstatt für Hardware, Software und Elektronik. Ein _Steadfast_ Server (oder eine „persönliche Cloud“) sollte nahezu dauerhaft online und nützlich sein – zumindest der benutzerorientierte Teil. Manche Self-Hoster nennen es auch „Homeprod“. Ohne allzu viel Spitzfindigkeit verwende ich „Homelab“ als Kurzform für „Self-Hosting-Setup“ und/oder „Homeprod“.
+((Host))::
+  Der Computer, auf dem Docker-Container ausgeführt werden. In diesem Buch auch „Server“ genannt.
+((Hostname))::
+  Der Name eines einzelnen Servers, Computers oder Geräts.
 ((HVAC))::
-  Heating, ventilation, and air conditioning.
+  Heating, Ventilation, and Air Conditioning – Heizung, Lüftung und Klimatisierung.
 ((idempotent))::
-  An operation which enacts changes only until an end state is reached. Repeating the operation has no effect once the end state is reached. For example, updating an OS. After the OS is up to date, updating again will cause no changes to the list of installed packages (assuming no new updates become available while updating).
-((image))::
-  A filesystem with code and dependencies necessary to run a container.
+  Eine Operation, die nur so lange Änderungen vornimmt, bis ein gewünschter Endzustand erreicht ist. Wiederholtes Ausführen hat keinen weiteren Effekt, sobald dieser Zustand erreicht wurde. Beispiel: Betriebssystem-Updates. Wenn das System aktuell ist, führt ein weiteres Update zu keinen Änderungen – es sei denn, währenddessen erscheinen neue Pakete.
+((Image))::
+ Ein Dateisystem mit Code und allen Abhängigkeiten, die notwendig sind, um einen Container auszuführen.
 ((immutable))::
   Doesn't change. For example, a particular Docker image. A container instantiated from that image can be modified, but the image cannot; a new image must be built.
 ((IPMI))::
-  Intelligent Platform Management Interface. Used for remote server management including reboots and OS installs.
-((IPS))::
-  Intrusion prevention system. Mitigates the risk of penetration.
+  Intelligent Platform Management Interface. Wird für die Fernverwaltung von Servern verwendet, einschließlich Neustarts und Betriebssysteminstallationen.
+((Einbruchsschutzsystem))::
+  Reduziert das Risiko von Angriffen und Kompromittierungen.
 ((Isolation))::
-  For software services: Keep separate from others. Eases sysadmin tasks such as preventing dependency version conflicts.
+  Im Softwarekontext: Dienste voneinander getrennt halten. Erleichtert Systemadministrationsaufgaben wie das Vermeiden von Versionskonflikten zwischen Abhängigkeiten.
 ((ISP))::
-  Internet service provider.
-((kernel))::
-  The part of the OS that talks directly with hardware.
+ Internet Service Provider – Internetdienstanbieter.
+((Kernel))::
+  Der Teil des Betriebssystems, der direkt mit der Hardware kommuniziert.
 ((LAN))::
-  Local area network. For example, the network used by computers and devices to talk with each other inside your home.
+  Local Area Network – lokales Netzwerk. Zum Beispiel das Heimnetzwerk, über das Computer und Geräte miteinander kommunizieren.
 ((LFNW))::
-  LinuxFest Northwest. Annual conference in Bellingham, Washington dedicated to serving and connecting open Quellecommunities. Established in 2000.
+  LinuxFest Northwest. Jährliche Konferenz in Bellingham, Washington, die der Unterstützung und Vernetzung von Open-Source-Communities dient. Gegründet im Jahr 2000.
 ((Linux))::
-  The most popular server OS. Also works fine on a desktop or laptop. The old me would have insisted on calling it „GNU/Linux“ or „a Linux distribution“. A lot has happened since then, and I've come to believe „Linux“ is enough to describe the OS used for self-hosting in the context of this book.
-((low-code))::
-  High-level application development platform with reduced focus on traditional programming. Typically provides a GUI and requires less files with configuration and code. Useful for prototyping or replacing some simpler data entry and analysis applications.
+  Das am weitesten verbreitete Server-Betriebssystem. Funktioniert auch gut auf Desktops oder Laptops. Früher hätte ich darauf bestanden, es „GNU/Linux“ oder „Linux-Distribution“ zu nennen, aber vieles hat sich seitdem geändert. Heute reicht „Linux“ als Bezeichnung für das Betriebsystem, dass in diesem Buch zum Self-Hosting-Kontext verwendet wird.
+((Low-Code))::
+  Plattform für die Anwendungsentwicklung auf hoher Abstraktionsebene, mit reduziertem Fokus auf traditionelle Programmierung. Bietet in der Regel eine grafische Benutzeroberfläche und erfordert weniger Konfigurations- und Code-Dateien. Nützlich für Prototyping oder zum Ersetzen einfacherer Dateneingabe- und Analyseanwendungen.
 ((LTS))::
-  Long-term support. A stable software release, supported for many years.
+  Long-Term Support – Langzeitunterstützung. Eine stabile Softwareversion, die über viele Jahre gepflegt wird.
 ((mario))::
-  Provisioning system included with this book to assist with learning how to set up and maintain your own server. Consists of scripts, documentation, and configuration files.
+  Bereitstellungssystem, das mit diesem Buch geliefert wird, um beim Erlernen der Einrichtung und Wartung eines eigenen Servers zu helfen. Besteht aus Skripten, Dokumentation und Konfigurationsdateien.
 ((NAS))::
-  Network-attached storage. A server made for storing data. Usually has several HDD bays in a non-Gehäusestapel box-like form factor. Likely has less Hauptprozessor and RAM (and less power usage) than what I describe in <<Server>>.
+  Network-Attached Storage – netzgebundener Speicher. Ein Server, der speziell zum Speichern von Daten entwickelt wurde. Besitzt in der Regel mehrere Festplattenlaufwerke in einem kompakten, gehäuselosen Formfaktor. Verfügt meist über weniger Hauptprozessorleistung und RAM (und geringeren Stromverbrauch) als die in <<Server>> beschriebenen Systeme.
 ((NIC))::
-  Network interface card, also called a network adapter. Hardware for receiving and sending data over a network.
+  Network Interface Card – Netzwerkkarte. Auch als Netzwerkadapter bezeichnet. Hardwarekomponente zum Senden und Empfangen von Daten über ein Netzwerk.
 ((Objektspeicher))::
-  Relatively unlimited and typically remote cloud storage option. Actual data are abstracted: backups and structured access require special services, indexes, and software.
+  Relativ unbegrenzte und meist entfernte Cloud-Speicheroption. Die eigentlichen Daten sind abstrahiert: Backups und strukturierter Zugriff erfordern spezielle Dienste, Indizes und Software.
 ((OCR))::
-  Optical character recognition. The process of converting images of text to actual text.
+  Optical Character Recognition – optische Zeichenerkennung. Der Prozess, bei dem Text aus Bildern in echten, bearbeitbaren Text umgewandelt wird.
 ((OOB))::
-  Out-of-band (management). A means of remote low-level server control including power cycling and console interaction, typically provided by an independently powered and networked embedded computer. See also: IPMI.
+  Out-of-Band Management – außerhalb des Hauptnetzwerks stattfindende Verwaltung. Ermöglicht Fernsteuerung von Servern auf niedriger Ebene, einschließlich Ein- und Ausschalten oder Konsolenzugriff. Wird typischerweise durch einen separat betriebenen, vernetzten eingebetteten Computer bereitgestellt. Siehe auch: IPMI.
 (((Betriebssystem)))
-OS::
-  Operating system.
+  Im Englischen: Operating System (OS). Das grundlegende System, das Hardware und Software koordiniert.
 ((OSI))::
-  Open QuelleInitiative. More concerned with the „OSS“ of FOSS.
+  Open Source Initiative. Organisation, die sich hauptsächlich auf das „OSS“ (Open Source Software) in FOSS konzentriert.
 ((PHP))::
-  PHP: Hypertext Processor. Programming language built for the web.
+  PHP: Hypertext Processor. Programmiersprache, die speziell für Webanwendungen entwickelt wurde.
 ((PoE))::
-  Power over ethernet. Utilizes an ethernet cable for electricity as well as data.
-((port))::
-  Along with an IP address, a number used to connect to a service. Reserved port numbers such as 80 for HTTP are listed in `/etc/services`.
-((partition))::
-  Delineated section of a HDD or block storage, formatted with a filesystem such as ext4 or ZFS.
-((port forward))::
-  Router configuration to send traffic for a particular port to a computer inside a LAN.
-((process))::
-  Instance of running software. Note that „running“ processes are described in more detail by a lower-level state such as running, sleeping, idle, waiting for I/O completion and--my personal favorite--zombie.
-((provision))::
-  As in, „provision a server“. Set up a machine or otherwise bring it into alignment with a known/good configuration.
+  Power over Ethernet. Ermöglicht die gleichzeitige Übertragung von Strom und Daten über dasselbe Ethernet-Kabel.
+((Port))::
+  In Kombination mit einer IP-Adresse; eine Zahl, über die eine Verbindung zu einem Dienst hergestellt wird. Reservierte Portnummern – z. B. 80 für HTTP – sind in `/etc/services` aufgeführt.
+((Partition))::
+  Abgegrenzter Bereich einer Festplatte oder eines Blockspeichers, der mit einem Dateisystem wie ext4 oder ZFS formatiert ist.
+((Portweiterleitung))::
+  Routerkonfiguration, bei der Datenverkehr für einen bestimmten Port an einen Computer im LAN weitergeleitet wird.
+((Prozess))::
+  Eine Instanz laufender Software. Beachte, dass „laufende“ Prozesse intern detaillierter beschrieben werden, etwa als „running“, „sleeping“, „idle“, „wartend auf E/A“ oder – mein persönlicher Favorit – „Zombie“.
+((bereitstellen))::
+  Siehe „einen Server bereitstellen“. Prozess, bei dem eine Maschine vorbereitet und in den gewünschten Zustand gebracht wird, um ihre Aufgabe zu erfüllen.
 ((RAID))::
-  Redundant array of inexpensive disks. Allows flexible use of multiple drives for redundancy and/or speed, as desired.
+  Redundant Array of Independent Disks. Technologie, die mehrere Festplatten zu einem Verbund zusammenfasst, um Ausfallsicherheit, Geschwindigkeit oder beides zu erhöhen.
 ((registrar))::
-  Domain name vendor. May also offer other name- and hosting-related services.
-((reproducible))::
-  Able to be repeated following specific steps. E.g. „repro“ a bug or „a reproducible [software] build“. If two people try to repro a bug, they should have the same experience. If two people each build an image from the same `Dockerfile`, they should produce the same image. In practice, bug repros and build products are close enough and never exactly the same.
+  Domainnamen-Anbieter. Kann auch andere Dienste im Zusammenhang mit Namensverwaltung und Hosting anbieten.
+((reproduzierbare))::
+  Kann durch Befolgen bestimmter Schritte wiederholt werden. Beispiel: Einen Fehler „repro“-duzieren oder einen „reproduzierbaren [Software-]Build“ erstellen. Wenn zwei Personen versuchen, denselben Fehler zu reproduzieren, sollten sie dasselbe Ergebnis erhalten. Wenn zwei Personen jeweils aus demselben Dockerfile ein Image bauen, sollten sie dasselbe Image erhalten. In der Praxis jedoch sind Fehlerreproduktionen und Build-Ergebnisse ähnlich, aber nie völlig identisch.
 ((Reverse-Proxy))::
-  Networking software for filtering and directing traffic. In a self-hosted context, useful for SSL termination and for running several self-hosted web services with different domain names with a single IP address.
-((router))::
-  Network device used to handle traffic at the boundary between networks such as a WAN and LAN. A SOHO router typically also provides various other functions including DNS, DHCP, switching, firewalling, and Wi-Fi. See: port forward. A Traefik router is something different: this is a software logic connecting entrypoints to services. See <<Traefik Architektur>>.
-((runtime))::
-  The period of time when a software is running; when a set of machine instructions becomes a running process. Also used to describe a set of tools/libraries to facilitate same. May appear as „runtime environment“ in the latter form.
+  Netzwerkanwendung zur Filterung und Weiterleitung von Datenverkehr. Im Self-Hosting-Kontext nützlich für SSL-Beendigung („termination“) und um mehrere selbstgehostete Webdienste mit unterschiedlichen Domainnamen unter einer einzigen IP-Adresse zu betreiben.
+((Router))::
+  Netzwerkgerät, das Datenverkehr an der Grenze zwischen Netzwerken wie WAN und LAN verarbeitet. Ein SOHO-Router bietet typischerweise zusätzliche Funktionen wie DNS, DHCP, Switching, Firewall und WLAN. Siehe auch: Portweiterleitung. Ein Traefik-Router ist etwas anderes: Er ist eine Software-Logik, die EntryPoints mit Diensten verbindet. Siehe <<Traefik Architektur>>.
+((Laufzeit))::
+  Die Zeitspanne, in der eine Software tatsächlich ausgeführt wird, also wenn ein Satz von Maschinenbefehlen zu einem laufenden Prozess wird. Wird auch verwendet, um eine Sammlung von Tools/Bibliotheken zu bezeichnen, die dies erleichtern („Runtime Environment“).
 ((SeaGL))::
-  Seattle GNU/Linux Conference. Held yearly since 2013.
+  Seattle GNU/Linux Conference. Findet seit 2013 jährlich statt.
 ((Server))::
-  A computer that generally stays powered on and uses networking for interaction instead of a monitor, keyboard, or mouse. Also called a „host“.
-((service))::
-  A long-running process used by other local and remote processes to do something useful.
+  Ein Computer, der in der Regel dauerhaft eingeschaltet bleibt und über das Netzwerk interagiert – statt über Monitor, Tastatur oder Maus. Wird auch als „Host“ bezeichnet.
+((Dienst))::
+  Ein dauerhaft laufender Prozess, der von anderen lokalen oder entfernten Prozessen genutzt wird, um nützliche Aufgaben zu erfüllen.
 ((SOHO))::
-  Small office / home office.
-((Quellecontrol))::
-  A system for tracking changes in Quellcode along with who made the change, why, and when. Git is one such system.
-((Quelleof truth))::
-  The authoritative (home for a) document, perhaps among some number of available choices/copies.
+  Small Office / Home Office – kleines Büro / Heimbüro.
+((Versionskontrolle))::
+  Ein System zur Nachverfolgung von Änderungen im Quellcode, einschließlich wer, wann und warum etwas geändert hat. Git ist ein Beispiel für ein solches System.
+((Quelle der Wahrheit))::
+  Das maßgebliche (ursprüngliche) Dokument, insbesondere, wenn mehrere Kopien oder Varianten existieren.
 ((SSD))::
-  Solid-state drive. A hard drive that doesn't spin.
+  Solid-State Drive – Festplatte ohne rotierende Teile.
 ((SSH))::
-  Secure Shell. Provides encrypted remote command line access to a server.
-((SSL termination))::
-  Accepting encrypted traffic and passing along unencrypted traffic. Act performed by Traefik Reverse-Proxy in a mario-provisioned server. More accurately and less often referred to as „TLS termination“. Actual SSL is deprecated.
-((sysadmin))::
-  Portmanteau of „systems administrator“. A party responsible for the upkeep of a computer system.
+  Secure Shell – Bietet verschlüsselte, entfernte Befehlszeilenzugriffe auf einen Server.
+((SSL-Beendigung))::
+  Entgegennahme von verschlüsseltem Datenverkehr und Weitergabe unverschlüsselter Daten. Diese Aufgabe übernimmt in einem von mario bereitgestellten Server der Traefik-Reverse-Proxy. Genauer (und heute üblicher) bezeichnet als „TLS-Beendigung“. Tatsächliches SSL ist veraltet.
+((Sysadmin))::
+  Kurzform von „Systems Administrator“ – Person, die für den Betrieb und die Wartung eines Computersystems verantwortlich ist.
 ((Bedrohungsmodell))::
-  Analysis of risks and defenses of digital assets.
+  Analyse der Risiken und Schutzmaßnahmen digitaler Ressourcen.
 ((TB))::
-  Terabyte. Like GB, can be either base-10 or base-2, so: 1,000^4^ (1,000,000,000,000) bytes for HDDs and 1,024^4^ (1,099,511,627,776) bytes for RAM.
+  Terabyte. Wie GB kann es entweder dezimal (10er-Basis) oder binär (2er-Basis) verwendet werden: 1,000^4^ (1,000,000,000,000) Bytes für Festplatten, und 1,024^4^ (1,099,511,627,776) Bytes für RAM.
 ((TLD))::
-  Top-level domain. For „example.com“, „.com“ is the TLD.
+  Top-Level-Domain. Bei „example.com“ ist „.com“ die TLD.
 ((UI))::
-  User interface. The means of interaction between a user and a system, e.g.: a web site or mobile app. Often considered along with user experience and notated „UI/UX“.
-((UPS))::
-  Uninterruptible power supply. A battery that sits between your server and an outlet, often with extra features such as a power outage alarm or surge suppressor.
+  User Interface – Benutzeroberfläche. Die Schnittstelle zwischen Benutzer und System, z. B. eine Website oder App.Wird oft zusammen mit der Benutzererfahrung betrachtet und als „UI/UX“ bezeichnet.
+((USV)):: 
+  Unterbrechungsfreie Stromversorgung. Eine Batterie zwischen Server und Steckdose, oft mit Zusatzfunktionen wie Stromausfallalarm oder Überspannungsschutz.
 ((UX))::
-  User experience. The nature of interaction between a user and a system they are using. Includes ease of use and steps involved to complete a task. Often considered along with user interface and written as „UI/UX“.
+  User Experience – Benutzererlebnis. Beschreibt die Art der Interaktion zwischen Benutzer und System, einschließlich Bedienfreundlichkeit und der Schritte, die nötig sind, um eine Aufgabe zu erfüllen. Wird häufig zusammen mit der Benutzeroberfläche betrachtet („UI/UX“).
 ((Volume))::
-  Docker facility to mount a folder on the server to a folder inside a container. This is a common means of persisting container data that would otherwise be ephemeral.
+  Docker-Funktion, um einen Ordner auf dem Server in einen Ordner innerhalb eines Containers einzubinden. Üblicher Mechanismus, um Containerdaten zu speichern, die sonst flüchtig wären.
 ((VM))::
-  Virtual machine. OS isolation technique simulating nearly all aspects of hardware including power, input, and output.
+  Virtuelle Maschine. Technik zur Betriebssystem-Isolation, die nahezu alle Aspekte von Hardware simuliert, einschließlich Stromversorgung, Eingabe und Ausgabe.
 ((VPN))::
-  Virtual private network. Useful to „teleport home“ and behave (from a networking perspective) as if you are inside your home LAN.
+  Virtual Private Network – virtuelles privates Netzwerk. Ermöglicht es, sich „nach Hause zu teleportieren“ und sich netzwerktechnisch so zu verhalten, als wäre man im eigenen Heimnetz.
 ((WAN))::
-  Wide-area network. Everything outside your LAN / home network / router.
+  Wide Area Network – Weitverkehrsnetz. Alles außerhalb des eigenen LAN / Heimnetzwerks / Routers.
 ((ZFS))::
-  A filesystem with many advanced features such as encryption, bit rot mitigation, journaling, volume management, and snapshotting. Used to stand for Zettabyte File System.
+  Dateisystem mit vielen erweiterten Funktionen wie Verschlüsselung, Schutz vor Bit Rot, Journaling, Volume-Management und Snapshots. Ursprünglich Abkürzung für „Zettabyte File System“.
 
 // Ideally I'd like a full set of these lists for every output.
 // See am64 in ../Readme.adoc
@@ -3945,8 +3936,7 @@ OS::
 ifndef::shb-printPdf[]
 == Cross references
 
-// TODO - translate
-Here are lists of links to significant blocks of titled content.
+Im Folgenden finden sich Listen mit Links zu wichtigen, betitelten Inhaltsabschnitten.
 
 === Figures
 
