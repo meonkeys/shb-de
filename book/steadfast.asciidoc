@@ -1,4 +1,4 @@
-= Steadfast Self-Hosting: Rapid-Rise Personal Cloud
+= Zuverlässiges Self-Hosting: Die persönliche Cloud im Aufschwung
 :author: Adam Monsen
 :copyright: (C)2025 {author}
 :doctype: book
