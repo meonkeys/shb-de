@@ -1349,7 +1349,8 @@ Jeder Dienst hat seine eigene `compose.yml` Datei, die ebenfalls unter Versionsk
 Für Systemadministratoren bieten diese Konventionen ((reproduzierbare)) Images und Container.
 Für Benutzer bedeutet das: verlässliche, vorhersehbare Dienste.
 
-(((Cattle vs. Pets))) (((Nutz- vs. Haustier)))
+(((Cattle vs. Pets)))
+(((Nutz- vs. Haustier)))
 Übe den Umgang mit Containern als temporäre Objekte.
 Du gewinnst Vertrauen in dein System, indem du Container regelmäßig erstellst und wieder entfernst – und du wirst die Geschwindigkeit und Einfachheit dieses Vorgehens schätzen lernen.
 Denke so:
@@ -3738,7 +3739,7 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Cloud-Speicheroption mit direktem Dateisystemzugriff, einschließlich Dateien und Ordnern. Wird direkt/nativ/lokal vom Betriebssystem verwendet. Die Größe ist relativ festgelegt und wird bei der Erstellung bestimmt.
 ((Bot))::
   Kurzform von „Roboter“. Software, die automatisierte Aufgaben ausführt, z.B. auf Chat-Anfragen antworten oder verwundbare Server angreifen.
-((Cattle vs. Pets)) ((Nutz- vs. Haustier))::
+((Cattle vs. Pets)) ... ((Nutz- vs. Haustier))::
   Verdeutlicht zwei unterschiedliche Systemadministrator-Ansätze für Systeme und Dienste. „Cattle“ (Nutztiere) sind automatisiert, kurzlebig und im Idealfall unveränderlich. „Pets“ (Haustiere) werden manuell verwaltet, sind zustandsbehaftet und langlebig.
 ((Zertifikate))::
   Kurzform für HTTPS-Verschlüsselungszertifikate.
