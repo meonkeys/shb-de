@@ -352,14 +352,14 @@ Textformattierung:
 |===
 |Gestaltetes Beispiel |Verwendung
 
-|`zpool status -t` |Inline-Befehl, Dateiname, Benutzername, Passwort oder Variable. 
+|`zpool status -t` |Inline-Befehl, Dateiname, Benutzername, Passwort oder Variable.
 Längere Ausschnitte aus der Konsolenausgabe verwenden eine sprachspezifische Syntaxhervorhebung.
 |kbd:[Ctrl+c] |Auf der Tastatur gedrückte Taste(n).
-|https://example.com |Einfacher (unbenannter) Link. 
+|https://example.com |Einfacher (unbenannter) Link.
 Das https-Schema wird vorausgesetzt und weggelassen.
 |https://example.com[Example domain] |Benannter Link.
 Die vollständige URL erscheint in der Druckversion.
-|`\https://cloud.example.com` |Nicht funktionierende Beispiel-URL. 
+|`\https://cloud.example.com` |Nicht funktionierende Beispiel-URL.
 Ersetzen Sie .example.com durch Ihren tatsächlichen Domainnamen.
 |<<System Design>> |Verweis auf einen anderen Abschnitt oder ein anderes Kapitel.
 |===
@@ -1236,7 +1236,7 @@ Für die Root-Partition (`/`) empfehle ich stattdessen ext4 zu verwenden, um:
 * ZFS-Snapshots des Betriebssystems vermeiden, da
 ** wir sie nicht brauchen
 ** das Betriebssystem außerhalb der ZFS-Verzeichnisse liegt
-** wir das Betriebssystem nicht verändern werden – Änderungen werden upstream verwaltet (z. B. bei Paketupdates oder über mario)
+** wir das Betriebssystem nicht verändern werden – Änderungen werden upstream verwaltet (z.B. bei Paketupdates oder über mario)
 
 Docker-Volumes (nachhaltige Container-Daten) werden auf ZFS gespeichert.
 Das Dateisystem des ((Container)) – also alles außer den gemounteten Volumes mit nachhaltigen Daten – ist flüchtig (ephemeral) und liegt auf ext4 unter `/var/lib/docker`.
@@ -2649,7 +2649,7 @@ Um die von Nextcloud verwalteten Mediendateien in Jellyfin anzuzeigen, füge zwe
 === Wallabag: Artikel speichern und lesen
 
 (((Wallabag)))
-https://wallabag.org[Wallabag] speichert Artikel für offline Lesen ohne Ablenkungen. 
+https://wallabag.org[Wallabag] speichert Artikel für offline Lesen ohne Ablenkungen.
 
 [#image-screenshot-wallabag]
 .Wallabag screenshot der ungelesene Artikel in der Sammlung zeigt.
@@ -2805,7 +2805,7 @@ Für tieferes Wissen, tauche in die Grundlagen ein.
 Lerne, wie ein Computer funktioniert.
 Gehe über Abstraktionen hinaus und arbeite dich Schritt für Schritt zu den ersten Prinzipien vor.
 Besuche eine Informatik-Vorlesung in einem Bereich, der etwas unterstützt, das du ohnehin tun möchtest.
-Wenn du z. B. deine eigenen Webdienste programmieren willst, nimm an einer Veranstaltung zur Webprogrammierung teil.
+Wenn du z.B. deine eigenen Webdienste programmieren willst, nimm an einer Veranstaltung zur Webprogrammierung teil.
 Wenn du verstehen möchtest, wie Quellcode den Computer dazu bringt, Dinge zu tun, belege eine Vorlesung über Compiler.
 
 Arbeite dieses Buch in einem Kurs oder einer kleinen Lerngruppe durch.
@@ -3299,7 +3299,7 @@ Problemumgehung:
 * Warte, bis das Ladesymbol verschwunden ist (bei mir dauert das normalerweise etwa eine Sekunde).
 * Verringere die Wahrscheinlichkeit von Umordnungen, indem du „A – Z“ oder „Z – A“ sortierst, anstatt „Neueste zuerst“ oder „Älteste zuerst“.
 
-===== Mobile Textbearbeitung ist schwierig 
+===== Mobile Textbearbeitung ist schwierig
 
 (((Nextcloud, mobile and)))
 Nextcloud macht es einfach, auf deine Daten über mobile Geräte zuzugreifen, aber das Bearbeiten ist mühsam.
@@ -3321,7 +3321,7 @@ Sie sollte sofort geöffnet werden.
 . Wenn du Änderungen an der Datei vornimmst, speichere sie und „Sync“ die Datei anschließend manuell in der Nextcloud-App.
 Anscheinend werden lokale Änderungen sonst nicht automatisch auf den Server übertragen.
 
-Bei https://jenson.org/text/ findest du mehr Informationen dazu, warum die mobile Textbearbeitung so ein komplexes und facettenreiches Problem ist. 
+Bei https://jenson.org/text/ findest du mehr Informationen dazu, warum die mobile Textbearbeitung so ein komplexes und facettenreiches Problem ist.
 
 ===== Umständliches Mobile-Setup
 
@@ -3331,7 +3331,7 @@ https://help.nextcloud.com/t/what-does-android-file-sync-do-for-a-nextcloud-acco
 Ihr Android-basiertes '/e/ OS' bietet native Unterstützung für Nextcloud-Konten und macht DAVx5 überflüssig.
 Benutzer mit iOS oder anderen Betriebssystemen außer Android können Groupware-bezogene Daten https://docs.nextcloud.com/server/stable/user_manual/en/groupware/[ohne DAVx5] synchronisieren.
 
-===== Fehlerhafte Konflikte im Web-Texteditor 
+===== Fehlerhafte Konflikte im Web-Texteditor
 
 Die Zusammenarbeit an einfachen Text- und Markdown-Dateien führt manchmal zu scheinbar grundlosen Konflikten.
 Das Bearbeiten wird schon vor dem eigentlichen Start unterbrochen, und der webbasierte Texteditor zeigt zwei Versionen der Datei nebeneinander an.
@@ -3354,7 +3354,7 @@ Verwandter Desktop-Client-Bug: https://github.com/nextcloud/desktop/issues/2467[
 Konflikte scheinen in Situationen aufzutreten, in denen es eigentlich keine geben sollte.
 
 Problemumgehung: Warte etwa 10 Sekunden zwischen den Speicherungen, bis der Desktop-Client synchronisiert und wieder im Leerlauf ist (Augenrollen inklusive).
-Sieh dir die https://apps.nextcloud.com/apps/files_lock[Temporäre Dateisperre]-App an für eine halbautomatische, beratende Sperrung (z. B. um schnell mitzuteilen: „Gib mir eine Minute, ich bearbeite gerade diese Markdown-Datei“).
+Sieh dir die https://apps.nextcloud.com/apps/files_lock[Temporäre Dateisperre]-App an für eine halbautomatische, beratende Sperrung (z.B. um schnell mitzuteilen: „Gib mir eine Minute, ich bearbeite gerade diese Markdown-Datei“).
 
 ===== Gezeichnete Unterschriften in Formularen
 
@@ -3383,7 +3383,7 @@ Die Kalender-App ist ziemlich nützlich und vermutlich die am meisten genutzte v
 Allerdings habe ich mich mittlerweile an eine bestimmte fehlerhafte „Termin aktualisiert“-Benachrichtigung gewöhnt, die möglicherweise durch Probleme mit dem Kalender-Client oder der Synchronisation verursacht wird.
 
 In einem freigegebenen Kalender (mit vielen Clients) bekomme ich oft Benachrichtigungen wie „Person X hat Termin Y in Kalender Z aktualisiert“, obwohl in Wirklichkeit nur einer der Clients synchronisiert wurde (oder vielleicht eine unbedeutende Änderung vorgenommen hat) und https://github.com/nextcloud/calendar/issues/5879[Nextcloud fälschlicherweise denkt, es handele sich um ein wichtiges Update].
-Zumindest glaube ich, dass das passiert … manche Änderungen (z. B. wenn sich das Datum ändert) zeigen explizit die alten und neuen Werte.
+Zumindest glaube ich, dass das passiert … manche Änderungen (z.B. wenn sich das Datum ändert) zeigen explizit die alten und neuen Werte.
 Nebenbei bemerkt gefällt mir dieses „explizite Diff“-Verhalten sehr, bei dem die genauen Änderungen an Titel, Zeit, Ort oder Beschreibung angezeigt werden.
 
 ==== Ende-zu-Ende-Verschlüsselung
@@ -3405,7 +3405,7 @@ endif::[]
 
 Gehe vorsichtig mit der Nextcloud-App für Ende-zu-Ende-Verschlüsselung um.
 Überprüfe die https://github.com/nextcloud/end_to_end_encryption/issues[bekannten Probleme], stelle sicher, dass du mit all diesen leben könntest, und testen sie dann gründlich mit einer Wegwerf-Nextcloud-Instanz.
-Stelle sicher, dass die App mit allen Clients funktioniert, die du verwenden möchten (z. B. Desktop, Mobil).
+Stelle sicher, dass die App mit allen Clients funktioniert, die du verwenden möchten (z.B. Desktop, Mobil).
 
 ==== AIO installer
 
@@ -3595,14 +3595,13 @@ Verhindere, dass er dies kann, und überprüfe, ob es funktioniert.
 Füttere es mit Protokolldaten von verschiedenen Diensten.
 . Richte https://suricata.io[Suricata] für Netzwerkanalyse und Bedrohungserkennung ein.
 . Probiere das Ausführen von Containern mit https://podman.io[podman] aus.
-. Informiere dich über andere Möglichkeiten, Prozesse zu isolieren, z. B. FreeBSD Jails und chroot.
+. Informiere dich über andere Möglichkeiten, Prozesse zu isolieren, z.B. FreeBSD Jails und chroot.
 . Trage zu mario bei.
-. Verschiebe geheime Daten, die mario nutzt, in einen sicheren Speicher, z. B. Ansible Vault oder einen selbst gehosteten Dienst für Passwörter.
+. Verschiebe geheime Daten, die mario nutzt, in einen sicheren Speicher, z.B. Ansible Vault oder einen selbst gehosteten Dienst für Passwörter.
 . Passe mario an, sodass es mit Podman funktioniert.
 . Passe mario an, sodass es mit https://kubernetes.io[Kubernetes] funktioniert.
 . Wenn du eine dynamische WAN-IP hast, richte einen Client für dynamisches DNS ein oder nutze einen bestehenden.
-. Richte einen eigenen Mail-Relay-Dienst ein, z. B. mit https://github.com/crazy-max/docker-msmtpd oder https://github.com/namshi/docker-smtp, 
-damit alle mario-Dienste E-Mails darüber versenden können..
+. Richte einen eigenen Mail-Relay-Dienst ein, z.B. mit https://github.com/crazy-max/docker-msmtpd oder https://github.com/namshi/docker-smtp, damit alle mario-Dienste E-Mails darüber versenden können.
 . Richte einen eigenen DNS-Server ein.
 . Ordne die mario-Dienste in unterschiedliche Ansible-Rollen ein.
 Lade diese als Playbook-Bundle bei https://galaxy.ansible.com[Ansible Galaxy] hoch.
@@ -3619,7 +3618,7 @@ Finde eine Lösung und teile sie mit anderen.
 . Erstelle deine eigene Linux-Distribution.
 . Baue, konfiguriere und betreibe eine https://opnsense.org[OPNsense Firewall].
 . Richte ein eigenes VPN/Tailnet mit https://headscale.net[headscale] ein, um aus der Ferne auf dein LAN zuzugreifen.
-. Verbessere die Vorschau- und Miniaturbildgenerierung in Nextcloud. 
+. Verbessere die Vorschau- und Miniaturbildgenerierung in Nextcloud.
 .. Prüfe zuerst: Wird die Änderung dir und deinen Nutzern einen Nutzen bringen?
 Gibt es Sicherheitsimplikationen?
 Wie funktioniert die Standard-Vorschau-Generierung?
@@ -3628,7 +3627,7 @@ Wie viel Speicherplatz wird verwendet?
 Wie schnell ist es, subjektiv und objektiv?
 Welche Wartung wird erforderlich sein, sobald es aktiviert ist?
 .. rstelle eine Testumgebung mit einer sauberen Installation und vielen Dateien, die Vorschauen erlauben, in verschiedenen Dateiformaten.
-Finde oder schreibe Code, um objektive Leistungsmetriken zu erfassen (z. B. Zeit, die benötigt wird, um Vorschauen für einen Ordner mit vielen Dateien verschiedener Typen zu erzeugen).
+Finde oder schreibe Code, um objektive Leistungsmetriken zu erfassen (z.B. Zeit, die benötigt wird, um Vorschauen für einen Ordner mit vielen Dateien verschiedener Typen zu erzeugen).
 Berücksichtige sowohl Client- als auch Server-Leistung.
 Führe manuelle Testnotizen (subjektive Messungen).
 .. Vergleiche https://apps.nextcloud.com/apps/previewgenerator[Preview Generator], https://github.com/h2non/imaginary[Imaginary], und alle anderen existierenden Vorschauer.
@@ -3686,7 +3685,7 @@ Danke, danke, danke.
 Manchmal fühle ich mich eher wie ein Geburtstagskind als ein Author, weil ich so viele Geschenke von zahlreichen großzügige Menschen bekommen habe.
 Ohne euch hätte ich es ehrlich nicht geschafft, und ich bin unendlich dankbar für euch.
 
-Danke an Eva für mehr, als ich hier jemals aufzählen könnte – von „Was, wenn es regnet?“ bis hin zum Führen durch Lernen und furchtloses Handeln. 
+Danke an Eva für mehr, als ich hier jemals aufzählen könnte – von „Was, wenn es regnet?“ bis hin zum Führen durch Lernen und furchtloses Handeln.
 Für die Unterstützung meiner Träume, einschließlich dieses Buches: deine zahlreichen inspirierenden Runden sorgfältiger Code-Reviews, technischen Kritiken, Entwicklungsbearbeitung, Korrekturlesen, Lektorat und Zeilenbearbeitung.
 
 Danke an meine Tochter für deine fantastischen Illustrationen.
@@ -3732,13 +3731,13 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
 ((Angriffsfläche))::
   Gesamtheit aller möglichen Angriffspunkte. Weniger ist sicherer. Beispiel: Wenn du alle Ports schließt, die du nicht benötigst, reduzierst du deine Angriffsfläche.
 ((Backend))::
-  In diesem Buch bezeichnet dieser Begriff entweder einen Dienst (z. B. eine Datenbank) oder einen Server. Es handelt sich um etwas, mit dem du meist indirekt interagierst, etwa über ein Frontend wie eine Web- oder Mobil-App.
+  In diesem Buch bezeichnet dieser Begriff entweder einen Dienst (z.B. eine Datenbank) oder einen Server. Es handelt sich um etwas, mit dem du meist indirekt interagierst, etwa über ein Frontend wie eine Web- oder Mobil-App.
 ((Bare Metal))::
   Physische, lokal verfügbare Rechenressourcen – im Gegensatz zu gemieteter Rechenzeit auf fremder Hardware. In diesem Buch wird der Begriff vor allem verwendet, um Hardware-Autonomie auszudrücken.
 ((Blockspeicher))::
   Cloud-Speicheroption mit direktem Dateisystemzugriff, einschließlich Dateien und Ordnern. Wird direkt/nativ/lokal vom Betriebssystem verwendet. Die Größe ist relativ festgelegt und wird bei der Erstellung bestimmt.
 ((Bot))::
-  Kurzform von „Roboter“. Software, die automatisierte Aufgaben ausführt, z. B. auf Chat-Anfragen antworten oder verwundbare Server angreifen.
+  Kurzform von „Roboter“. Software, die automatisierte Aufgaben ausführt, z.B. auf Chat-Anfragen antworten oder verwundbare Server angreifen.
 ((Cattle vs. Pets)) ((Nutz- vs. Haustier))::
   Verdeutlicht zwei unterschiedliche Systemadministrator-Ansätze für Systeme und Dienste. „Cattle“ (Nutztiere) sind automatisiert, kurzlebig und im Idealfall unveränderlich. „Pets“ (Haustiere) werden manuell verwaltet, sind zustandsbehaftet und langlebig.
 ((Zertifikate))::
@@ -3750,13 +3749,13 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
 ((Cluster))::
   Zusammengeschlossene Sammlung von Rechnern, die gemeinsam wie ein einzelner Computer behandelt werden, um eine höhere Rechenleistung zu erreichen.
 ((Rechenbedarf))::
-  Substantiv: Hauptprozessor- oder Grafikprozessor-Ressourcen, die beim Ausführen von Software-Diensten verbraucht werden. 
-((Container)):: 
+  Substantiv: Hauptprozessor- oder Grafikprozessor-Ressourcen, die beim Ausführen von Software-Diensten verbraucht werden.
+((Container))::
   Laufende Instanz eines Images. Container können auch als „Guests“ bezeichnet werden, wobei dieser Begriff häufiger für virtuelle Maschinen (VMs) verwendet wird.
 ((Hauptprozessor))::
   Zentrale Verarbeitungseinheit (CPU). Das „Gehirn“ des Computers – dort findet der Großteil der Berechnungen statt.
 ((data))::
-  (Bezieht sich nur auf den Englischen Begriff; data = Daten) 
+  (Bezieht sich nur auf den Englischen Begriff; data = Daten)
   Substantiv, Plural. Ja, ich verwende die grammatikalisch korrekte, aber manchmal unbequeme Pluralform! Alte Gewohnheit.
 ((Datensouveränität))::
   Vollständige Kontrolle über deine Daten. Zum Beispiel: Du besitzt die Originalkopien deiner Dateien.
@@ -3771,7 +3770,7 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
 ((DNS))::
   Domain Name System. Ordnet Domainnamen IP-Adressen zu.
 ((Domainname))::
-  Bezeichnung eines Servers, Dienstes oder einer Dienstgruppe, mit der diese identifiziert werden kann, z. B. `example.com.`
+  Bezeichnung eines Servers, Dienstes oder einer Dienstgruppe, mit der diese identifiziert werden kann, z.B. `example.com.`
 ((DRM))::
   Digital Restrictions Management. Eine veraltete und restriktive Technologie, die entwickelt wurde, um die nicht genehmigte Nutzung digitaler Inhalte zu verhindern – und welche wahrscheinlich auch zur Überwachung verwendet wird.
 ((Egress))::
@@ -3859,7 +3858,7 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
 ((PoE))::
   Power over Ethernet. Ermöglicht die gleichzeitige Übertragung von Strom und Daten über dasselbe Ethernet-Kabel.
 ((Port))::
-  In Kombination mit einer IP-Adresse; eine Zahl, über die eine Verbindung zu einem Dienst hergestellt wird. Reservierte Portnummern – z. B. 80 für HTTP – sind in `/etc/services` aufgeführt.
+  In Kombination mit einer IP-Adresse; eine Zahl, über die eine Verbindung zu einem Dienst hergestellt wird. Reservierte Portnummern – z.B. 80 für HTTP – sind in `/etc/services` aufgeführt.
 ((Partition))::
   Abgegrenzter Bereich einer Festplatte oder eines Blockspeichers, der mit einem Dateisystem wie ext4 oder ZFS formatiert ist.
 ((Portweiterleitung))::
@@ -3907,8 +3906,8 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
 ((TLD))::
   Top-Level-Domain. Bei „example.com“ ist „.com“ die TLD.
 ((UI))::
-  User Interface – Benutzeroberfläche. Die Schnittstelle zwischen Benutzer und System, z. B. eine Website oder App.Wird oft zusammen mit der Benutzererfahrung betrachtet und als „UI/UX“ bezeichnet.
-((USV)):: 
+  User Interface – Benutzeroberfläche. Die Schnittstelle zwischen Benutzer und System, z.B. eine Website oder App.Wird oft zusammen mit der Benutzererfahrung betrachtet und als „UI/UX“ bezeichnet.
+((USV))::
   Unterbrechungsfreie Stromversorgung. Eine Batterie zwischen Server und Steckdose, oft mit Zusatzfunktionen wie Stromausfallalarm oder Überspannungsschutz.
 ((UX))::
   User Experience – Benutzererlebnis. Beschreibt die Art der Interaktion zwischen Benutzer und System, einschließlich Bedienfreundlichkeit und der Schritte, die nötig sind, um eine Aufgabe zu erfüllen. Wird häufig zusammen mit der Benutzeroberfläche betrachtet („UI/UX“).
