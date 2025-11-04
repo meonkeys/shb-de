@@ -1511,7 +1511,7 @@ Hier sind einige Hinweise darauf, dass ein selbst gehosteter Dienst möglicherwe
 Ich werde hier Nextcloud ein wenig kritisieren.
 Nextcloud hat deutlich mehr positive als negative Eigenschaften – aber diese Punkte sind trotzdem erwähnenswert.
 
-(((fork)))
+(((Fork)))
 Zunächst ihr offenbar nicht-FOSS-kompatibles Build-Skript.
 https://help.nextcloud.com/t/build-bzip-and-package-from-git/58341/2[Nicks Erklärung] dafür ist nachvollziehbar:
 Es ist für sie bequemer, Geheimnisse direkt im Build-Skript zu hinterlegen und das gesamte Skript geheim zu halten.
