@@ -278,6 +278,8 @@ image::cc-by-sa.svg[align="center"]
 
 ===== Man darf
 
+// rights: Share, Adapt
+
 Teilen::
   das Material in jedem Format oder Medium vervielfältigen und weiterverbreiten; und zwar für beliebige Zwecke, sogar kommerziell.
 Bearbeiten::
@@ -285,13 +287,13 @@ Bearbeiten::
 
 _Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange die Lizenzbedingungen eingehalten werden._
 
-//Share::
-
 ===== Unter folgenden Bedingungen...
 
+// terms: Attribution, ShareAlike, No additional restrictions
+
 Namensnennung::
-Man muss angemessene Urheber- und Rechteangaben machen, einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden.
-  Diese Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade dich oder deine Nutzung besonders.
+  Man muss angemessene Urheber- und Rechteangaben machen, einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden.
+Diese Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade dich oder deine Nutzung besonders.
 Weitergabe unter gleichen Bedingungen::
   Wenn man das Material remixen, verändern oder anderweitig direkt darauf aufbauen möchte, darf man seine Beiträge nur unter derselben Lizenz wie das Original verbreiten.
 Keine weiteren Einschränkungen::
