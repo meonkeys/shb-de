@@ -124,7 +124,7 @@ toc::[]
 
 == Vorwort
 
-Bevor ich 2006 anfing, im Open-Source-Bereich zu arbeiten, war ich als Community-Organisator in Massachusetts tätig.
+Bevor ich 2006 anfing, im Open-Source-Bereich zu arbeiten, war ich als Community-Organisatorin in Massachusetts tätig.
 Ich kannte die Auswirkungen eines Mangels an Informationszugang oder das Fehlen des „richtigen“ Handbuchs sehr gut – beides hindert Menschen daran, mitzubestimmen, wie sie ihr Leben gestalten.
 Als Community-Organisatorin brachte ich den Menschen bei, wie man Lobbyarbeit betreibt.
 Unsere Organisation lud Menschen ein, gemeinsam mit Abgeordneten Gesetze zu entwerfen, die ihren Bedürfnissen gerecht wurden und ihr Leben verbesserten.
@@ -138,7 +138,7 @@ Ich begann, ganz unterschiedliche Menschen aus der Freie-Software-Bewegung kenne
 Adam und ich lernten uns 2009 bei ((LFNW)) (LinuxFest Northwest) kennen, einer kostenlosen Community-Konferenz in Bellingham, Washington.
 Ein gemeinsamer Freund hatte mir empfohlen, bei einem Besuch in Washington anlässlich des LFNW auch einmal Seattle zu besuchen – was bedeutete, dass wir gemainsam von Seattle nach Bellingham fuhren.
 Wir trafen uns alle in Seattle zum Mittagessen und machten uns dann gemeinsam auf die zweistündige Autofahrt nach Bellingham.
-Auf diesen Fahrten begannen wir wirklich, über das Fehlen einer Freie-Software-Veranstaltung in Seattle zu sprechen.
+Auf dieser Fahrt begannen wir wirklich, über das Fehlen einer Freie-Software-Veranstaltung in Seattle zu sprechen.
 Uns wurde klar, dass es in Seattle Leute brauchte, die ihre Unternehmen zur Sponsorenrolle bewegen konnten (wie Adam und Rob Smith), und jemanden, der sich um Referenten kümmern und die Veranstaltung in der Freie-Software-Community bekannt machen konnte – und so kam es, dass ich (als Bewohnerin von Massachusetts) Mitbegründerin einer jährlichen Veranstaltung in Seattle wurde.
 
 [#image-seagl-crew]
@@ -150,7 +150,7 @@ Keine Keynotes, viele gemeinsam genutzte Mehrfachsteckdosen und ein paar Freund*
 Wir hatten bewusst einen Freitag gewählt, um eventuell Studierende anzusprechen, solange der Campus geöffnet war, und einen Samstag, um den zweiten Tag für diejenigen zugänglich zu machen, deren Arbeitsstellen eine Teilnahme unter der Woche nicht unterstützten.
 Die Veranstaltung war – und ist bis heute – kostenlos und offen für alle.
 
-Adam tauchte bei unserer ersten Veranstaltung mit einem kleinen Stapel „Print-on-Demand“-Hüten und -T-Shirts auf, versehen mit unserem brandneuen Logo (natürlich eine seagull (eng. Möwe).
+Adam tauchte bei unserer ersten Veranstaltung mit einem kleinen Stapel „Print-on-Demand“-Hüten und -T-Shirts auf, versehen mit unserem brandneuen Logo (natürlich eine Möwe (engl. Seagull)).
 Die Auswahl der Vorträge lief nach dem Motto: „Wenn du einen Vortrag halten willst, dann halt einen.“
 Adam hielt großartige Einführungsvorträge zu Git und Hadoop, und ich sprach über politische Rahmenbedingungen und Community-Organizing.
 Wir hatten es noch nicht schriftlich festgehalten, aber SeaGL war von Anfang an dazu bestimmt, eine Konferenz für Anfängerinnen und Expertinnen zu sein, für Programmierer*innen und Politikbegeisterte, und für Vorträge über das gesamte Ökosystem – seine Schwächen, sein Potenzial und die Chancen zur Zusammenarbeit mit anderen Initiativen, die Menschen stärken wollen.
@@ -276,41 +276,41 @@ Dieses Buch steht unter der Creative Commons Attribution-ShareAlike 4.0 Internat
 
 image::cc-by-sa.svg[align="center"]
 
-===== Sie dürfen
+===== Man darf
 
 Teilen::
-  das Material in jede Format oder Medium vervielfältigen und weiterverbreiten und zwar für beliebige Zwecke, sogar kommerziell.
+  das Material in jedem Format oder Medium vervielfältigen und weiterverbreiten; und zwar für beliebige Zwecke, sogar kommerziell.
 Bearbeiten::
-  das Material remixen, verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar kommerziell.
+  das Material remixen, verändern und darauf aufbauen; und zwar für beliebige Zwecke, sogar kommerziell.
 
-_Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange Sie sich an die Lizenzbedingungen halten._
+_Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange die Lizenzbedingungen eingehalten werden._
 
 //Share::
 
 ===== Unter folgenden Bedingungen...
 
 Namensnennung::
-  Sie müssen angemessene Urheber- und Rechteangaben machen, einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden.
-  Diese Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade Sie oder Ihre Nutzung besonders.
+Man muss angemessene Urheber- und Rechteangaben machen, einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden.
+  Diese Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade dich oder deine Nutzung besonders.
 Weitergabe unter gleichen Bedingungen::
-  Wenn Sie das Material remixen, verändern oder anderweitig direkt darauf aufbauen, dürfen Sie Ihre Beiträge nur unter derselben Lizenz wie das Original verbreiten.
+  Wenn man das Material remixen, verändern oder anderweitig direkt darauf aufbauen möchte, darf man seine Beiträge nur unter derselben Lizenz wie das Original verbreiten.
 Keine weiteren Einschränkungen::
-  Sie dürfen keine zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen rechtlich irgendetwas untersagen, was die Lizenz erlaubt.
+  Man darf keine zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen rechtlich irgendetwas untersagen, was die Lizenz erlaubt.
 
 ===== Hinweise
 
-Sie müssen sich nicht an diese Lizenz halten hinsichtlich solcher Teile des Materials, die gemeinfrei sind, oder soweit Ihre Nutzungshandlungen durch Ausnahmen und Schranken des Urheberrechts gedeckt sind.
+Man muss sich nicht an diese Lizenz halten hinsichtlich solcher Teile des Materials, die gemeinfrei sind, oder soweit die Nutzungshandlungen durch Ausnahmen und Schranken des Urheberrechts gedeckt sind.
 
 Es werden keine Garantien gegeben und auch keine Gewähr geleistet.
-Die Lizenz verschafft Ihnen möglicherweise nicht alle Erlaubnisse, die Sie für die jeweilige Nutzung brauchen. Es können beispielsweise andere Rechte wie Persönlichkeits- und Datenschutzrechte zu beachten sein, die Ihre Nutzung des Materials entsprechend beschränken.
+Die Lizenz verschafft möglicherweise nicht alle Erlaubnisse, die man für die jeweilige Nutzung braucht. Es können beispielsweise andere Rechte wie Persönlichkeits- und Datenschutzrechte zu beachten sein, die die Nutzung des Materials entsprechend beschränken.
 
 
 ==== Kopiere auch den Code dieses Buches
 
 Siehe <<Weitere Ressourcen>> für den Quellcode.
-Der Quellcode umfasst zwei Originalwerke, die du kopieren, verändern und weitergeben darfst.
+Der Quellcode umfasst zwei Originalwerke, die man kopieren, verändern und weitergeben darf.
 Zum einen das Buch selbst, inklusive des Codes zur Erstellung schön gesetzter Versionen.
-Zum anderen ein Lernwerkzeug namens mario (siehe <<_mario>>).
+Zum anderen ein Lernwerkzeug namens mario (siehe <<mario>>).
 
 Die Lizenz für sämtlichen originalen Quellcode im Zusammenhang mit diesem Buch ist die GNU AGPL (Affero General Public License), veröffentlicht von der Free Software Foundation, entweder in Version 3 der Lizenz oder (nach deiner Wahl) jeder späteren Version.
 Eine Kopie der AGPL ist in `mario/COPYING` enthalten.
@@ -360,7 +360,7 @@ Das https-Schema wird vorausgesetzt und weggelassen.
 |https://example.com[Example domain] |Benannter Link.
 Die vollständige URL erscheint in der Druckversion.
 |`\https://cloud.example.com` |Nicht funktionierende Beispiel-URL.
-Ersetzen Sie .example.com durch Ihren tatsächlichen Domainnamen.
+Ersetze .example.com durch den tatsächlichen Domainnamen.
 |<<System Design>> |Verweis auf einen anderen Abschnitt oder ein anderes Kapitel.
 |===
 
@@ -483,7 +483,7 @@ Mehr dazu:
 * https://defectivebydesign.org/what_is_drm[What is DRM?] by the Free Software Foundation
 * https://nytimes.com/2023/04/04/arts/dahl-christie-stine-kindle-edited.html[It's Their Content, You're Just Licensing it] by Reggie Ugwu
 
-(((Quelleof truth)))
+(((Quelle der Wahrheit)))
 Das Speichern von Kopien von Daten, die jemand anderes für dich hostet, ist in Ordnung.
 Self-Hosting geht einen Schritt weiter und verschafft dir weitreichende Kontrolle darüber, wie deine Daten verwendet und geteilt werden.
 Du erhältst die Kontrolle über autoritative Kopien deiner Dateien – du weißt also, was die „Wahrheit“ ist und kannst sie bestimmen.
@@ -560,7 +560,7 @@ Dieses Buch ist für Menschen, die _de-Google_, _de-iTunes_, _de-OneDrive_, _de-
 Dies ist kein umfassender Leitfaden zum Thema Self-Hosting.
 Ich werde nicht versuchen, die endlosen Möglichkeiten aufzulisten, wie man Hardware, Betriebssysteme, Isolierungstechniken und Dienste kombinieren kann.
 Dieses Buch richtet sich an den kleinen Maßstab.
-Suchen Sie anderswo nach:
+Suche anderswo nach:
 
 * Hochverfügbarkeit
 * Enterprise-Sicherheit
@@ -638,7 +638,7 @@ Zugegeben, die letzten paar Abschnitte existieren nur, damit ich alle https://de
 
 === Eine Anmerkung zu FOSS
 
-(((FOSS, author's bias towards)))
+(((FOSS, Voreingenommenheit des Authors gegenüber)))
 
 Ich bevorzuge FOSS gegenüber nicht-FOSS.
 Das kann ein polarisierendes Thema sein.
@@ -1019,17 +1019,17 @@ Das ist eine großartige Gelegenheit, weitere Personen einzubeziehen, die bei de
 === Umstellung
 
 (((Change Management)))
-Ihre Benutzer haben ihre Daten bereits an einem anderen Ort.
-Überlegen Sie, wie Sie ihnen helfen können, ihre Daten auf den Server zu migrieren.
+Deine Nutzer*innen haben ihre Daten bereits an einem anderen Ort.
+Überlege, wie du ihnen helfen kannst, ihre Daten auf den Server zu migrieren.
 
 Der Schlüssel dazu ist ausgezeichnete Kommunikation.
-Nehmen Sie dies in Ihren Plan auf und sorgen Sie für Zustimmung, da die Migrationskosten bei jeder Umstellung eine Realität sind.
+Nehme dies in deinen Plan auf und hole dir Zustimmung ein, da Migrationskosten bei jeder Umstellung garantiert sind.
 
-TIP: Um mehr darüber zu erfahren, wie man Benutzer sanft zwischen Systemen überführt, beschäftigen Sie sich mit dem Thema _Change Management_.
+TIP: Um mehr darüber zu erfahren, wie man Nutzer*innen sanft zwischen Systemen überführt, beschäftige dich mit dem Thema _Change Management_.
 
 === Sysadmin Mindset
 
-(((sysadmin, mindset of a Steadfast)))
+(((Sysadmin, Mindset eines zuverlässigen)))
 Der Server existiert für die Nutzer.
 Es ist wichtig, die richtige Einstellung zu haben, um eine hervorragende Nutzererfahrung bieten zu können.
 
@@ -1060,7 +1060,7 @@ image::service-stack.svg[align="center",scaledwidth=80%]
 
 Am häufigsten arbeite ich in den oberen Schichten – zum Beispiel beim Hinzufügen oder Aktualisieren eines Containers.
 Seltener aktualisiere ich Betriebssystempakete.
-Noch seltener sehe ich mir Versionen einer Konfigurationsdatei an, die auf der Festplatte gespeichert sind – dank automatischer Snapshots von ZFS.
+Noch seltener sehe ich mir Versionen einer Konfigurationsdatei an, die auf der Festplatte gespeichert sind – dank automatischer Momentaufnahme von ZFS.
 Und schließlich, wenn mein Server ausfällt, befinde ich mich ganz unten im Stack: Ich repariere oder ersetze die Hardware.
 Hier findest du die entsprechenden Abschnitte mit Details zu jeder Ebene:
 
@@ -1115,7 +1115,7 @@ Zuhause kannst du im Allgemeinen direkt auf deinen Server zugreifen.
 Wenn du jedoch unterwegs bist oder Daten mit jemand anderem teilen möchtest, geht es um WAN-Zugriff (Wide Area Network).
 
 (((Router)))
-(((port forward)))
+(((Portweiterleitung)))
 WAN-Zugriff ist – informell gesagt – der Fernzugriff auf Dienste und Daten, die in deinem lokalen Netzwerk (LAN) laufen.
 Eine Möglichkeit, WAN-Zugriff auf einen Dienst zu ermöglichen, ist das Weiterleiten von HTTPS-Verkehr (Portweiterleitung) über deinen Router oder deine Firewall.
 Portweiterleitung ohne zusätzliche Sicherheitsmaßnahmen ist zugleich riskant und bequem.
@@ -1169,7 +1169,7 @@ TIP: Die Absicherung auf mehreren Ebenen (Betriebssystem-Firewall, Dienst, WAN-G
 
 ==== VPN
 
-Ein ((VPN)) kann deine WAN-Grenze absichern, indem es nur authentifizierte Benutzer zulässt und eine Verschlüsselungsschicht hinzufügt.
+Ein ((VPN)) kann deine WAN-Grenze absichern, indem es nur authentifizierte Nutzer*innen zulässt und eine Verschlüsselungsschicht hinzufügt.
 So kannst du dich sicher in dein ((LAN)) „teleportieren“, während du remote bist.
 
 Wenn alle deine Nutzer ein VPN verwenden können, kannst du die Ports für HTTP/S-Verkehr geschlossen halten und stattdessen nur VPN-Verkehr erlauben.
@@ -1181,7 +1181,7 @@ Aus Nutzersicht gibt es keinen schweren Login-Prozess mehr, wie bei älteren VPN
 
 ==== Vollständige Festplattenverschlüsselung
 
-(((Vollständige Festplattenverschlüsselung)))
+(((vollständige Festplattenverschlüsselung)))
 Das Verschlüsseln verhindert, dass ein Angreifer Daten wiederherstellen kann.
 Beim Hochfahren musst du allerdings ein Passwort eingeben.
 Das ist unpraktisch, wenn es zu Stromausfällen kommt und/oder keine Fernverwaltung möglich ist.
@@ -1225,7 +1225,7 @@ Zusätzliche Lektüre:
 (((ZFS)))
 Ich empfehle (und werde demonstrieren), mit einem einzigen ((ext4))-Dateisystem zu beginnen und optional einem ZFS-Dateisystem.
 ext4 ist das stabile, einfache und standardmäßige Dateisystem für Ubuntu.
-ZFS (ursprünglich: Zettabyte File System) bietet Verschlüsselung, leichte Snapshots und ((RAID)) (redundante Anordnung kostengünstiger Festplatten).
+ZFS (ursprünglich: Zettabyte File System) bietet Verschlüsselung, leichte Momentaufnahme und ((RAID)) (redundante Anordnung kostengünstiger Festplatten).
 
 Optional kannst du ZFS für den Speicher (`/data`) auf deinem Server verwenden, wie unter <<ZFS Setup>> beschrieben.
 Für die Root-Partition (`/`) empfehle ich stattdessen ext4 zu verwenden, um:
@@ -1233,13 +1233,13 @@ Für die Root-Partition (`/`) empfehle ich stattdessen ext4 zu verwenden, um:
 * So nah wie möglich an der Standard-Ubuntu-Installation bleiben
 * Docker-Dateisystem-Müll vermeiden
 ** Wenn `/var/lib/docker` auf ZFS liegt, werden viele Docker-bezogene Dateisysteme erstellt, die die Ausgabe von `zfs list` etwas unübersichtlich machen
-* ZFS-Snapshots des Betriebssystems vermeiden, da
+* ZFS-Momentaufnahme des Betriebssystems vermeiden, da
 ** wir sie nicht brauchen
 ** das Betriebssystem außerhalb der ZFS-Verzeichnisse liegt
 ** wir das Betriebssystem nicht verändern werden – Änderungen werden upstream verwaltet (z.B. bei Paketupdates oder über mario)
 
 Docker-Volumes (nachhaltige Container-Daten) werden auf ZFS gespeichert.
-Das Dateisystem des ((Container)) – also alles außer den gemounteten Volumes mit nachhaltigen Daten – ist flüchtig (ephemeral) und liegt auf ext4 unter `/var/lib/docker`.
+Das Dateisystem des ((Container)) – also alles außer den befestigten Volumes mit nachhaltigen Daten – ist flüchtig (ephemeral) und liegt auf ext4 unter `/var/lib/docker`.
 Um mehr über ZFS zu erfahren, siehe:
 
 * https://arstechnica.com/information-technology/2014/01/bitrot-and-atomic-cows-inside-next-gen-filesystems/[Bitrot and atomic COWs: Inside „next-gen“ filesystems] by Jim Salter
@@ -1265,7 +1265,7 @@ Das erleichtert die Wartung, einschließlich eventueller Neuinstallationen.
 Nicht ständig am Server herumzubasteln erfordert Disziplin, besonders für altgediente, hands-on Systemadministratoren wie mich.
 
 Versuche, es zu vermeiden, dich per SSH direkt auf den Server einzuloggen und dort Einzeländerungen vorzunehmen.
-Du wirst lernen, stattdessen die Konfigurationsdateien von mario zu bearbeiten und den Server neu zu provisionieren (siehe <<_mario>>).
+Du wirst lernen, stattdessen die Konfigurationsdateien von mario zu bearbeiten und den Server neu bereitzustellen (siehe <<_mario>>).
 
 Natürlich kannst und solltest du dich weiterhin per ((SSH)) auf den Server verbinden, aber versuche dann, nur Lesezugriffe oder nur ausnahmsweise Schreibzugriffe auszuführen.
 Ich mache oft erst etwas manuell, mache es rückgängig und erledige dann denselben Schritt mit mario, um sicherzustellen, dass das Ergebnis wie erwartet ist.
@@ -1336,7 +1336,7 @@ Wenn Abhängigkeiten Kleidung wären, dann ist ein Docker ((Container)) ein robu
 Man gibt seinen Koffer ab, steigt in den Zug und kann beruhigt sein, dass der Koffer ordentlich und getrennt neben den anderen verstaut ist.
 Docker-Container sind Koffer – während die alte Herangehensweise einem riesigen Wäschehaufen im letzten Waggon entspricht, in dem alle ihre ungefaltete Kleidung einfach hineingeworfen haben.
 
-(((image)))
+(((Image)))
 Container werden aus Images erstellt.
 Ein Image ist der Bauplan, mit dem sich ein neuer Koffer (Container) wie durch Magie erschaffen lässt – fix und fertig gepackt mit der passenden Kleidung für deine Reise.
 Ein Image wird einmal erstellt, mit einer eindeutigen Kennung versehen und weitergegeben.
@@ -1347,7 +1347,7 @@ Die `Dockerfile` sollte in der Versionskontrolle (z.B. Git) verfolgt werden.
 Da mario Docker-Compose verwendet, ist eine weitere wichtige Datei `compose.yml`.
 Jeder Dienst hat seine eigene `compose.yml` Datei, die ebenfalls unter Versionskontrolle stehen sollte.
 Für Systemadministratoren bieten diese Konventionen ((reproduzierbare)) Images und Container.
-Für Benutzer bedeutet das: verlässliche, vorhersehbare Dienste.
+Für Nutzer*innen bedeutet das: verlässliche, vorhersehbare Dienste.
 
 (((Cattle vs. Pets)))
 (((Nutz- vs. Haustier)))
@@ -1387,7 +1387,7 @@ Um diesen Vorgang zu verstehen, hilft es, das mitgelieferte Traefik-Architekturd
 .Traefik-Architekturdiagramm, das zeigt, wie eine Anfrage einen Dienst erreicht. Aus dem MIT-lizenzierten Quellcode von Traefik. Danke an Peka für das Gopher-Logo, lizenziert unter CC-BY-3.0.
 image::traefik-architecture.png[]
 
-(((router, Traefik)))
+(((Router, Traefik)))
 In den mario-Quelltexten (oder in den später gezeigten Codeausschnitten) lohnt sich ein Blick in die `compose.yml`-Dateien für Traefik und Nextcloud, in denen unter anderem Folgendes enthalten ist:
 
 * Der `websecure`-((Eintrittspunkt)), über den HTTPS-Verkehr auf Port 443 empfangen wird
@@ -1572,7 +1572,7 @@ Auch wenn es eine gewisse Lernkurve beim Verstehen der grundlegenden Computerhar
 
 Du brauchst einen Server.
 
-(((compute)))
+(((Compute)))
 Du kannst zwar jederzeit Rechenleistung in der Cloud eines anderen mieten, aber auf lange Sicht wird das teurer.
 
 Wenn du es eilig hast, kannst du mit fast jedem alten Desktop oder Laptop anfangen – oder mit deiner eigenen VM, die irgendwo läuft.
@@ -1641,12 +1641,12 @@ Dogfooding sorgt dafür, dass du ehrlich mit dir selbst bleibst und dich besser 
 
 ==== Festplattenlaufwerke
 
-(((ZFS, snapshots and)))
+(((ZFS, Momentaufnahme und)))
 Ich verwende ((Festplattenlaufwerke)) zur Datenspeicherung – hauptsächlich, um Kosten gegenüber öffentlichem Cloud-Speicher oder ((SSD))s (Solid-State-Laufwerken) zu sparen.
-Die Kosten für ((Blockspeicher)) in der Public Cloud übersteigen bei Weitem die Gigabyte-Stunden-Kosten meiner Festplattenlaufwerke.
+Die Kosten für ((Blockspeicher)) in der öffentlichen Cloud übersteigen bei Weitem die Gigabyte-Stunden-Kosten meiner Festplattenlaufwerke.
 Ich habe den Preis für einen 5TB Blockspeicher bei AWS auf 228,10 $ pro Monat geschätzt.
 Mit ZFS erstelle ich außerdem alle 15 Minuten einen Snapshot (im Grunde ein vollständiges lokales Backup).
-Der monatliche Preis für stündliche Snapshots (das nächstvergleichbare Angebot, das ich finden konnte) kostet weitere 310,68$ bei AWS.
+Der monatliche Preis für stündliches Speichern (das nächstvergleichbare Angebot, das ich finden konnte) kostet weitere 310,68$ bei AWS.
 Das ergibt 535,67$ gesamt – also etwa so viel, wie ich für meine Festplatten ausgegeben habe.
 Ich hatte meine Ausgaben also nach einem Monat wieder drin – und die Festplatten sollten _jahrelang_ halten.
 
@@ -1746,7 +1746,7 @@ Mache dir Notizen und stelle dir vor, wie du den Vorgang exakt wiederholst.
 Bei jedem Schritt im interaktiven Ubuntu-Installer: Akzeptiere entweder die Voreinstellung oder notiere dir deine Auswahl.
 
 . *Installiere Ubuntu* 24.04 LTS server.
-Siehe https://ubuntu.com/tutorials/install-ubuntu-server[this tutorial] für eine Schritt-für-Schritt Anleitung.
+https://ubuntu.com/tutorials/install-ubuntu-server[Dieses Tutorial] hat eine Schritt-für-Schritt Anleitung.
 . Verwende beim Konfigurieren des Netzwerks eine *statische LAN-IP-Adress*.
 YDu kannst dies möglicherweise auch auf dem Standardwert belassen (DHCP/dynamisch) und stattdessen deinen LAN-Router so konfigurieren, dass er dem Server eine feste IP-Adresse zuweist, die sich nicht ändert.
 . Optional: Verwende eine vollständige Festplattenverschlüsselung.
@@ -1765,7 +1765,7 @@ Siehe <<ZFS Setup>>.
 
 ==== ZFS Setup
 
-(((ZFS, setting up)))
+(((ZFS, einrichten)))
 Das Betriebssystem kümmert sich im Allgemeinen gut um sich selbst.
 Für eine robustere Datenspeicherung kannst du ein paar Festplattenlaufwerke hinzufügen und sie mit ZFS verwalten.
 
@@ -1939,14 +1939,14 @@ Nützliche Backups zu haben ist eine entscheidend wichtige Praxis, für die man 
 
 Überprüfe regelmäßig deine Backups, um sicherzustellen, dass sie funktionieren.
 
-(((ZFS, snapshots and)))
+(((ZFS, Momentaufnahme und)))
 Erstelle konsistente Backups von allem auf deinem Server, sodass die laufenden Dienste nicht einmal bemerken, dass sie gesichert werden.
 Beispiel: Erstelle einen ZFS-Snapshot und sichere diesen.
 
-Backups mithilfe von ZFS-Snapshots können trotzdem Probleme verursachen.
+Backups mithilfe von ZFS-Momentaufnahmen können trotzdem Probleme verursachen.
 ZFS garantiert beispielsweise keinen konsistenten Zustand der gesicherten Daten für laufende Programme.
 Angenommen, du stellst eine MariaDB-Datenbank aus einem Backup wieder her.
-Wenn du die Tabellen vor dem Erstellen des ZFS-Snapshots nicht geleert und gesperrt hast, könnte MariaDB gerade dabei gewesen sein, einen Schreibvorgang durchzuführen, mit Daten im Speicher, die noch nicht auf die Festplatte geschrieben wurden.
+Wenn du die Tabellen vor dem Erstellen der ZFS-Momentaufnahme nicht geleert und gesperrt hast, könnte MariaDB gerade dabei gewesen sein, einen Schreibvorgang durchzuführen, mit Daten im Speicher, die noch nicht auf die Festplatte geschrieben wurden.
 Sie müsste sich dann selbst wiederherstellen, und die Daten, die MariaDB zu schreiben versuchte, könnten verloren gehen.
 Diese Art von Datenverlust ist selten, und das Risiko ist für ein typisches Homelab akzeptabel.
 
@@ -1955,11 +1955,11 @@ TIP: Erstelle ((Backups)) nach der 3-2-1-Faustregel:
 Erstelle *3* Backups. Bewahre mindestens *2* lokale Kopien auf unterschiedlichen Medien auf.
 Habe *1* externes (remote) Backup.
 
-(((Backups, using restic for)))
-(((Backups, using Borg for)))
+(((Backups, mit restic)))
+(((Backups, mit Borg)))
 (((Borg)))
 (((restic)))
-Ich empfehle eine Backup-Strategie, die ZFS-Snapshots mit entweder https://restic.net[restic] oder https://borgbackup.org[Borg] kombiniert, um die Daten extern zu sichern.
+Ich empfehle eine Backup-Strategie, die ZFS-Momentaufnahmen entweder mit https://restic.net[restic] oder https://borgbackup.org[Borg] kombiniert, um die Daten extern zu sichern.
 https://reddit.com/r/BorgBackup/comments/v3bwfg/[Hier ist ein guter Vergleich zwischen restic und Borg].
 
 Hier sind einige Beispielbefehle, die zeigen, wie man ein ZFS-Dateisystem sichert.
@@ -1977,7 +1977,7 @@ sudo restic backup /data/.zfs/snapshot/$snapName <2>
 sudo zfs destroy -R main/secure/data@$snapName
 ----
 
-<1> Das Ausführen dieses Befehls zum Erstellen eines Snapshots dauert auf meinem Server 0,040 Sekunden.
+<1> Das Ausführen dieses Befehls zum Erstellen einer Momentaufnahme dauert auf meinem Server 0,040 Sekunden.
 Sobald er abgeschlossen ist, erscheint ein neuer schreibgeschützter Ordner unter `/data/.zfs/snapshot`, der den Snapshot enthält.
 
 <2> Diese Zeile setzt voraus, dass du restic installiert und konfiguriert hast.
@@ -2021,9 +2021,9 @@ marios `provision.sh` führt Ansible aus, und Ansible führt die Befehle für di
 Der gewünschte Endzustand, wie in den Konfigurationsdateien deklariert, wird durch Ansible erreicht und bestätigt.
 
 (((idempotent)))
-(((provision)))
+(((bereitstellen)))
 Nachdem mario einmal erfolgreich eingerichtet wurde, solltest du es direkt nochmal ausführen!
-Das Provisionieren mit mario ist beruhigend idempotent:
+Das Bereitstellen mit mario ist beruhigend idempotent:
 Das System ändert sich nicht mehr in bedeutender Weise, sobald der gewünschte Zustand erreicht ist.
 Sobald `provision.sh` erfolgreich abgeschlossen ist, kannst du es erneut ausführen, um zu bestätigen, dass sich der Server weiterhin im gewünschten Zustand befindet.
 Dann kannst du anfangen zu experimentieren.
@@ -2329,8 +2329,8 @@ cd /root/ops/traefik
 docker compose up -d
 ----
 
-Versuchen Sie, diese Methode zu vermeiden.
-Je weniger Befehle Sie direkt als `root` ausführen, desto besser.
+Versuche, diese Methode zu vermeiden.
+Je weniger Befehle direkt als `root` ausgeführt werden, desto besser.
 Ich empfehle stattdessen Folgendes:
 
 .start a service, explicit configuration file (🚀 Server)
@@ -2350,17 +2350,17 @@ dc traefik up -d
 ----
 
 TIP: Für einige Befehle, darunter `docker compose`, ist `sudo` erforderlich.
-Das Skript `dc` führt `sudo` automatisch für Sie aus.
+Das Skript `dc` führt `sudo` automatisch für dich aus.
 
 ==== Reverse-Proxy starten
 
 (((Traefik)))
-Richten Sie zuerst den ((Reverse-Proxy)) ein.
-Starten Sie auf Ihrem Server Traefik mit `dc traefik up -d`.
-Wenn das funktioniert hat, warten Sie ein bis zwei Minuten und besuchen Sie `\https://traefik.example.com` in einem Webbrowser, um das Traefik-Dashboard zu sehen.
-Während Sie auf das Dashboard warten, können Sie die Logs mit `dc traefik logs -f` mitverfolgen.
+Richte zuerst den ((Reverse-Proxy)) ein.
+Starte Traefik auf deinem Server mit `dc traefik up -d`.
+Wenn das funktioniert hat, warte ein bis zwei Minuten und besuche dann `\https://traefik.example.com` in einem Webbrowser, um das Traefik-Dashboard zu sehen.
+Während du auf das Dashboard wartest, kannst du die Logs mit `dc traefik logs -f` mitverfolgen.
 
-Es kann ein bis zwei Minuten dauern, bis Traefik die Let's Encrypt-Zertifikate für die HTTPS-Verschlüsselung eingerichtet hat, also machen Sie sich keine Sorgen, wenn Sie anfangs Warnungen über ungültige Zertifikate sehen.
+Es kann ein bis zwei Minuten dauern, bis Traefik die Zertifikate für die HTTPS-Verschlüsselung eingerichtet hat, also mache dir keine Sorgen, wenn anfangs Warnungen über ungültige Zertifikate erscheinen.
 Für einen funktionierenden Traefik-Dienst sollte in etwa Folgendes erscheinen:
 
 // Das waren ziemlich lange Zeilen.
@@ -2524,17 +2524,17 @@ Dieses Kapitel behandelt, was sie bieten und wie du sie verwaltest.
 |===
 
 Diese speziellen Dienste sind nur ein kleiner Bruchteil derjenigen, die für das Self-Hosting verfügbar sind.
-Sie spiegeln die Vorlieben meiner Nutzerinnen wider (einschließlich – und überproportional – meiner eigenen) in den Bereichen Lesen, Teilen, Medien usw.
-Wenn Sie diese Dienste zum Laufen bringen, bieten sie Ihren Nutzerinnen bereits nützliche Funktionen und dienen als guter Ausgangspunkt, um alles Mögliche selbst zu hosten.
+Sie spiegeln die Vorlieben meiner Nutzer*innen wider (einschließlich – und überproportional – meiner eigenen) in den Bereichen Lesen, Teilen, Medien usw.
+Wenn man diese Dienste zum Laufen bringt, bietet man seinen Nutzer*innen bereits nützliche Funktionen. Sie dienen als guter Ausgangspunkt, um alles Mögliche selbst zu hosten.
 
-Zu jedem Dienst finden Sie meine persönlichen Kommentare und Probleme, auf die ich gestoßen bin.
+Zu jedem Dienst findest du meine persönlichen Kommentare und alle Probleme, auf die ich gestoßen bin.
 Falls ich eine Funktion erwähne, die ich gern hinzugefügt sehen würde, habe ich auch schon darüber nachgedacht, sie selbst zu implementieren (oder jemanden davon zu überzeugen, sie hinzuzufügen, oder Geld zu sammeln, um jemanden für die Umsetzung zu bezahlen).
 Wenn ich auf einen geschlossenen Bug im Issue-Tracker verweise, liegt das daran, dass ich den Fehler getestet habe und er – zum Zeitpunkt des Schreibens – in einer offiziellen bzw. unterstützten Version, die angeblich die Korrektur enthält, weiterhin auftritt.
 
 Die mobile Nutzung ist bei den von mir betreuten Nutzer*innen hoch, daher war dies ebenfalls ein Auswahlkriterium.
 Nextcloud, Jellyfin und Wallabag verfügen über mobile Apps und Integrationen, die ich häufig verwende.
 
-Die serverseitigen Befehle zur Verwaltung von Diensten sind standardisiert: Sie werden das Muster `dc SERVICE ACTION ARGS` immer wieder sehen.
+Die serverseitigen Befehle zur Verwaltung von Diensten sind standardisiert: Su wirst das Muster `dc SERVICE ACTION ARGS` immer wieder sehen.
 
 // this forced page break was originally just to improve the print PDF layout, but I find it doesn't hurt the screen PDF layout so I don't use an ifdef::shb-printPDF[]
 
@@ -2553,20 +2553,20 @@ image::nextcloud.png[align="center",scaledwidth=80%]
 
 Ein gut gepflegter Nextcloud-Server bietet eine solide Grundlage für das „De-Googlen“.
 Nextcloud kann kostenlos selbst gehostet werden, wenn es über mario installiert wird.
-Sobald Sie Nextcloud zum Laufen gebracht haben, finden Sie unter <<Mehr zu Nextcloud>> viele meiner Gedanken darüber, wie man es am besten anpasst.
+Sobald du Nextcloud zum Laufen gebracht hast, finden du unter <<Mehr zu Nextcloud>> viele meiner Gedanken darüber, wie man es am besten anpasst.
 
 [#nextcloud_quick_start]
 ==== Schnellstart
 
-. Provisionieren Sie mit mario von Ihrem Admincomputer.
-. Starten Sie Nextcloud mit `dc nextcloud up -d` auf Ihrem Server.
-. Rufen Sie `\https://cloud.example.com` auf Ihrem Admincomputer auf.
-. Folgen Sie der webbasierten Setup-Seite, um ein Admin-Konto zu erstellen.
-. Überspringen Sie die Installation der empfohlenen Apps.
+. Provisioniere mit mario von deinem Admincomputer.
+. Starte Nextcloud mit `dc nextcloud up -d` auf deinem Server.
+. Rufe `\https://cloud.example.com` auf deinem Admincomputer auf.
+. Folge der webbasierten Setup-Seite, um ein Admin-Konto zu erstellen.
+. Überspringe die Installation der empfohlenen Apps.
 
-==== MWartungshinweise
+==== Wartungshinweise
 
-Führen Sie `dc nextcloud pull && dc nextcloud up -d` auf Ihrem Server aus, um die Nextcloud-Service-Container zu aktualisieren und zu ersetzen.
+Führe `dc nextcloud pull && dc nextcloud up -d` auf deinem Server aus, um die Nextcloud-Service-Container zu aktualisieren und zu ersetzen.
 
 ==== Probleme
 
@@ -2591,11 +2591,10 @@ image::jellyfin.png[align="center",scaledwidth=80%]
 . Navigieren zu `\https://jellyfin.example.com` auf dem Admincomputer.
 . Folgen den webbasierten Einrichtungsschritten.
 
-(((Jellyfin, using a Grafikprozessor with)))
-Wenn Sie über eine Grafikprozessor verfügen, sollten Sie sich die Hardwarebeschleunigung ansehen.
-Wenn Sie über eine Grafikprozessor verfügen, sollten Sie sich die https://jellyfin.org/docs/general/administration/hardware-acceleration/[Hardwarebeschleunigung ansehen].
-Diese ist nützlich, wenn Videos nicht direkt von einem Client abgespielt werden können und daher on the fly transkodiert werden müssen.
-Jellyfin kann zwar auch nur mit der Hauptprozessor transkodieren, mit einer Grafikprozessor geht es jedoch deutlich schneller.
+(((Jellyfin, mit Grafikprozessor)))
+Wenn du über eine Grafikprozessor verfügst, solltest du dir die https://jellyfin.org/docs/general/administration/hardware-acceleration/[Hardwarebeschleunigung ansehen].
+Diese ist nützlich, wenn Videos nicht direkt von einem Client abgespielt werden können und daher schnell transkodiert werden müssen.
+Jellyfin kann zwar auch nur mit Hauptprozessor transkodieren, mit einem Grafikprozessor geht es aber deutlich schneller.
 
 [%unbreakable]
 TIP: Jellyfin kann auch bestimmte CPUs mit integrierter Hardware-Transkodierung nutzen,
@@ -2603,7 +2602,7 @@ zum Beispiel Intel Quick Sync Video.
 
 ==== Wartungshinweise
 
-Führen Sie `dc jellyfin pull && dc jellyfin up -d` auf Ihrem Server aus, um den Jellyfin-Dienstcontainer zu aktualisieren und zu ersetzen.
+Führe `dc jellyfin pull && dc jellyfin up -d` auf deinem Server aus, um den Jellyfin-Dienstcontainer zu aktualisieren und zu ersetzen.
 
 ==== Probleme
 
@@ -2632,7 +2631,7 @@ Du kannst diese Tatsache nutzen, um ihre individuellen Stärken als Dienste zu k
 mario erstellt spezielle Musik- und Videoordner auf dem Server und stellt sie beiden Diensten zur Verfügung.
 Nextclouds „External Storages“ ermöglicht es dir, Dateien in diese Ordner hochzuladen, und Jellyfin wird die hochgeladenen Dateien automatisch erkennen und das Streamen ermöglichen.
 
-Nextclouds `compose.yml`-Datei hat den Eintrag `/data/shared/media/video:/data/video:rw` in volumes.
+Nextclouds `compose.yml`-Datei hat den Eintrag `/data/shared/media/video:/data/video:rw` in Volumes.
 `/data/shared/media/video` ist der Pfad auf dem Server, der die eigentlichen Videodateien enthält, `/data/video` ist der Ort, an dem sie im Container erscheinen, und `rw` bedeutet, dass Nextcloud Lese- und Schreibzugriff auf dieses Volume hat.
 Es gibt einen weiteren ähnlichen Ordner für Musikdateien.
 Siehe <<Detaillierte Einrichtung>>, um zu erfahren, wie man sie in Nextcloud als „External Storages“ hinzufügt.
@@ -2924,8 +2923,8 @@ Ein Beispiel ist https://support.mozilla.org/kb/firefox-dns-over-https[DNS ansta
 === Einmalanmeldung
 
 (((Single sign-on)))
-Es wäre für Benutzer sehr praktisch, sich nur einmal einloggen zu müssen, um Zugriff auf alle selbstgehosteten Dienste über einen gemeinsamen, konsistenten und gut gestalteten Mechanismus zu erhalten (Single Sign-On).
-Für Systemadministratoren wäre es ebenso hilfreich, alle Benutzer und Gruppen zentral an einer Stelle verwalten zu können (zentrale Identitätsverwaltung).
+Es wäre für Nutzer*innen sehr praktisch, sich nur einmal einloggen zu müssen, um Zugriff auf alle selbstgehosteten Dienste über einen gemeinsamen, konsistenten und gut gestalteten Mechanismus zu erhalten (Single Sign-On).
+Für Systemadministratoren wäre es ebenso hilfreich, alle Nutzer*innen und Gruppen zentral an einer Stelle verwalten zu können (zentrale Identitätsverwaltung).
 
 https://goauthentik.io[Authentik] ist ein Dienst, der dies bereitstellt und offenbar alle gewünschten Funktionen bietet (Einmalanmeldung, eigene Benutzerdatenbank, Integration mit allen meinen selbstgehosteten Diensten).
 Ich möchte ihn ausprobieren und über eine Weile stabil laufen sehen, bevor ich ihn in mario aufnehme.
@@ -2982,7 +2981,7 @@ Ab jetzt erfordert dein Server für SSH-Logins die Authentifizierung per öffent
 
 mario blockiert ((WAN-Zugriff)) automatisch.
 Lese <<Digitale Sicherheit>> und entscheide, ob du diese Funktion möchtest oder nicht.
-Du kannst diesen Schutz entfernen, indem du das `lan-only` ((middleware)) aus dem entsprechenden Traefik-Label des Routers entfernst.
+Du kannst diesen Schutz entfernen, indem du das `lan-only` ((Middleware)) aus dem entsprechenden Traefik-Label des Routers entfernst.
 Um zum Beispiel WAN-Zugriff auf Nextcloud zu ermöglichen, nimm diese Änderung in der `compose.yml` von Nextcloud vor:
 
 .patch for Wan-Zugriff to Nextcloud (🏠 Admincomputer)
@@ -2992,7 +2991,7 @@ Um zum Beispiel WAN-Zugriff auf Nextcloud zu ermöglichen, nimm diese Änderung 
 + traefik.http.routers.nc-https.middlewares=nc-head,nc-redir
 ----
 
-Bei Jellyfin kannst du ebenfalls die gesamte Zeile mit dem Verweis auf das `lan-only` ((middleware)) in der `compose.yml` von Jellyfin löschen, wenn du diesen Dienst in deinem WAN verfügbar machen möchtest.
+Bei Jellyfin kannst du ebenfalls die gesamte Zeile mit dem Verweis auf das `lan-only` ((Middleware)) in der `compose.yml` von Jellyfin löschen, wenn du diesen Dienst in deinem WAN verfügbar machen möchtest.
 
 === Mehr zu Nextcloud
 
@@ -3026,7 +3025,7 @@ Eine grundlegende Nextcloud-Installation scheint über eine hervorragende Sicher
 Der Quellcode wird intensiv genutzt und wird von einem soliden Unternehmen unterstützt, dessen Ruf von seinem Engagement für Sicherheit abhängt.
 Sie machen es einfach, alles abzusichern und zu überprüfen (es ist schließlich FOSS).
 Die Standardeinstellungen scheinen sicher zu sein.
-Sie befolgen Best Practices.
+Sie befolgen bewährte Methoden.
 Sie haben ein öffentliches Bug-Bounty-Programm und ein Bedrohungsmodell.
 
 ==== Detaillierte Einrichtung
@@ -3078,35 +3077,35 @@ dc nextcloud exec app \
 ----
 
 Einige Wartungsarbeiten erfordern das tool `occ` (kurz für „ownCloud command“).
-Führen Sie es mit `dc nextcloud exec --user www-data app php occ` aus.
+Führe es mit `dc nextcloud exec --user www-data app php occ` aus.
 
-Fügen Sie `/data/video` als externen Speicher hinzu.
+Füge `/data/video` als externen Speicher hinzu.
 Medien, die dort hochgeladen werden, erscheinen automatisch in Jellyfin.
-Besuchen Sie zuerst `/settings/apps/featured` und installieren Sie die App „External storage support“.
-Besuchen Sie anschließend `/settings/admin/externalstorages` und installieren Sie die App „External storage support“.
+Besuche zuerst `/settings/apps/featured` und installiere die App „External storage support“.
+Besuche anschließend `/settings/admin/externalstorages` und installiere die App „External storage support“.
 
 * Ordnername: Video
 * Externer Speicher: Local
 * Authentifizierung: None
 * Konfiguration: `/data/video`
-* Legen Sie Benutzer, Vorschauen, Freigaben und die restlichen Optionen nach Wunsch fest.
+* Lege Benutzer, Vorschauen, Freigaben und die restlichen Optionen nach Wunsch fest.
 
-Fügen Sie `/data/music` als externen Speicher hinzu, ähnlich wie `/data/video`.
+Füge `/data/music` als externen Speicher hinzu; ähnlich wie bei `/data/video`.
 
 ==== Weitere Wartungstipps
 
-Besuchen Sie regelmäßig `/settings/admin/overview`, um nach System- und Sicherheitsproblemen zu suchen, die möglicherweise manuelles Eingreifen erfordern.
-Führen Sie alle auf dieser Seite empfohlenen Wartungsmaßnahmen durch.
-Ignorieren Sie den Abschnitt „Update“, er kann von Docker Hub abweichen.
-Besuchen Sie regelmäßig `/settings/admin/logging`, um alle serverseitigen Protokollmeldungen zu überprüfen.
+Besuche regelmäßig `/settings/admin/overview`, um nach System- und Sicherheitsproblemen zu suchen, die möglicherweise manuelles Eingreifen erfordern.
+Führe alle auf dieser Seite empfohlenen Wartungsmaßnahmen durch.
+Ignoriere den Abschnitt „Update“, er kann von Docker Hub abweichen.
+Besuche regelmäßig `/settings/admin/logging`, um alle serverseitigen Protokollmeldungen zu überprüfen.
 
 Das Ausführen von `dc nextcloud pull && dc nextcloud up -d` (auf dem Server) lädt das neueste Image von https://github.com/nextcloud/docker mit dem `stable`-Release-Tag herunter.
-Die Verwendung dieses Tags ist für Sie und Ihre Benutzer wahrscheinlich stabil genug.
+Die Verwendung dieses Tags ist für dich und deine Nutzer*innen wahrscheinlich stabil genug.
 `stable` entspricht im Allgemeinen der Version, die unter https://docs.nextcloud.com/ als _previous_ bezeichnet wird.
 
-Sie können Ihre Nextcloud auf eine spezifischere Version wie `27.1.5-apache` „fixieren“.
-Das gibt Ihnen die Möglichkeit, jedes Upgrade zu überprüfen und zu testen.
-Sie können einen Release-Tag in der `compose.yml` von Nextcloud festlegen, indem Sie dort, wo der Image-Name erscheint, einfach `stable` durch den gewünschten Tag ersetzen.
+Man kann die Nextcloud auf eine spezifischere Version wie `27.1.5-apache` „fixieren“.
+Das gibt einem die Möglichkeit, jedes Upgrade zu überprüfen und zu testen.
+Du kannst einen Release-Tag in der `compose.yml` von Nextcloud festlegen, indem du dort, wo der Image-Name erscheint, einfach `stable` durch den gewünschten Tag ersetzen.
 Alle verfügbaren Tags sind auf https://hub.docker.com/_/nextcloud[Docker Hub aufgelistet].
 
 NOTE: Die Blogposts und Marketingmaterialien von Nextcloud verwenden andere Versionsnamen als die Release-Versionen aus dem Quellcode.
@@ -3186,7 +3185,7 @@ Im Zweifelsfall: klein anfangen (Standard-Nextcloud-Installation) und neue Apps 
 |Recognize |Gesichtserkennung |*Nein*.
 |Suspicious login |Warnt vor verdächtigen IPs |*Nein*. Zu viele Fehlalarme.
 |Tasks |Aufgaben/To-Do's |*Ja*.
-|Tables |Tabellarische Dateneingabe |*Nein*. Noch nicht bereit, könnte aber eine potenziell starke und nützliche ((low-code)) Plattform werden.
+|Tables |Tabellarische Dateneingabe |*Nein*. Noch nicht bereit, könnte aber eine potenziell starke und nützliche ((Low-Code)) Plattform werden.
 |Talk |Video- und Textchat |*Nein*. Funtioniert, aber nicht so gut wie andere Video- und Textchat Dienste/Apps. Ich nutze es jedoch für mein Hühner-Sicherheitssystem und sehe, dass es sich mit jeder Verion stark verbessert. Im Moment empfehle ich https://signal.org[Signal].
 |Temporary files lock |Verhindert Bearbeitungskonflikte |*Ja*.
 |Text |Bearbeite Textdokumente |*Ja*. Ich bin großer Fan von reinen Markdown Textdokumenten, und Nextcloud kann gut mit diesen umgehen. Es hat einen guten webbasierten collaborativen Editor. Ich füge gerne Rich-Text in den Editor ein und lasse ihn den Text automatisch in Markdown umschreiben. Siehe auch: <<Mobile Textbearbeitung ist schwierig>> und <<Fehlerhafte Konflikte im Web-Texteditor>>.
@@ -3318,7 +3317,7 @@ Installiere die App, und mache dann Folgendes:
 . In der Nextcloud-Mobile-App kannst du die Datei, die du lokal anzeigen oder bearbeiten möchtest, herunterladen („Download“) oder synchronisieren („Sync“).
 Dadurch wird eine Kopie auf deinem Smartphone zwischengespeichert.
 . In der Nextcloud-App wählst du dann „open with“ für die Datei.
-Sie sollte sofort geöffnet werden.
+Sie sollte sich sofort öffnen.
 . Wenn du Änderungen an der Datei vornimmst, speichere sie und „Sync“ die Datei anschließend manuell in der Nextcloud-App.
 Anscheinend werden lokale Änderungen sonst nicht automatisch auf den Server übertragen.
 
@@ -3330,7 +3329,7 @@ Um Kalender, Aufgaben und Kontakte mit dem Speicher deines Smartphones unter And
 https://help.nextcloud.com/t/what-does-android-file-sync-do-for-a-nextcloud-account/154330[Ich weiß nicht, warum DAVx5 erforderlich ist], aber https://murena.com[Murena] hat dieses Problem für mich gelöst:
 
 Ihr Android-basiertes '/e/ OS' bietet native Unterstützung für Nextcloud-Konten und macht DAVx5 überflüssig.
-Benutzer mit iOS oder anderen Betriebssystemen außer Android können Groupware-bezogene Daten https://docs.nextcloud.com/server/stable/user_manual/en/groupware/[ohne DAVx5] synchronisieren.
+Nutzer*innen mit iOS oder anderen Betriebssystemen (außer Android) können Groupware-bezogene Daten https://docs.nextcloud.com/server/stable/user_manual/en/groupware/[ohne DAVx5] synchronisieren.
 
 ===== Fehlerhafte Konflikte im Web-Texteditor
 
@@ -3413,8 +3412,8 @@ Stelle sicher, dass die App mit allen Clients funktioniert, die du verwenden mö
 (((Nextcloud, installing)))
 Unter den unzähligen Nextcloud-Installationsmethoden gibt es einen relativ neuen und interessanten AIO („All-in-One“) Installer (https://nextcloud.com/all-in-one).
 Er ist kostenlos für eine Instanz mit weniger als 100 Benutzern.
-Der AIO verfolgt einen anderen Ansatz als mario: Er konfiguriert und verwaltet mehrere Nextcloud-bezogene Service-Container für Sie.
-Ich empfehle stattdessen die mario-Methode, da sie eine flexible und lehrreiche Erfahrung bietet, bei der Sie lernen, wie Sie einzelne Container selbst hinzufügen und verwalten können.
+Der AIO verfolgt einen anderen Ansatz als mario: Er konfiguriert und verwaltet mehrere Nextcloud-bezogene Service-Container.
+Ich empfehle stattdessen die mario-Methode, da sie eine flexible und lehrreiche Erfahrung bietet und du lernen kannst, wie du einzelne Container selbst hinzufügst und verwaltest.
 
 Bei https://github.com/nextcloud/all-in-one[AIO readme] findest du weitere Infos.
 
@@ -3445,7 +3444,7 @@ Halte deine Erwartungen an diese gering, du könntest aber trotzdem gelegentlich
 
 === Alternativen zu mario
 
-Wenn Sie es eilig haben, können Sie One-Click-Installationen mit vielen sofort einsatzbereiten Apps finden.
+Wenn du es eilig hast, kannst du eine One-Click-Installationen mit vielen sofort einsatzbereiten Apps finden.
 (((FreedomBox)))
 https://freedombox.org[FreedomBox] ist ein vielversprechender Kandidat.
 
@@ -3557,13 +3556,13 @@ Warum oder warum nicht?
 .. unterbrochene Netzwerkverbindung
 .. rein lokale Netzwerke
 .. Cluster-Hardware
-. Betrachten Sie FOSS (Free and Open Source Software) in Bezug auf menschliche Aufmerksamkeit und Fokus.
-Vergleichen Sie es mit nicht-freier Software.
+. Betrachte FOSS (Free and Open Source Software) im Bezug auf menschliche Aufmerksamkeit und Fokus.
+Vergleiche es mit nicht-freier Software.
 . Welche Ansätze in diesem Buch könnten konzeptionell gefährlich oder irreführend sein?
 Warum?
 Wie könnte man sie verbessern?
-. Fassen Sie dieses Buch in einem Satz zusammen.
-. Wie könnten Sie erkennen, ob Ihr Server kompromittiert wurde?
+. Fasse dieses Buch in einem Satz zusammen.
+. Wie kann man erkennen, ob ein Server kompromittiert wurde?
 
 == Übungen
 
@@ -3717,10 +3716,10 @@ Am allermeisten danke ich meiner Frau und meinen Kindern dafür, dass sie mich u
 Für all das Kochen, Reden, Zuhören, Kunst, Programmieren, Mathematik, Musik und die Liebe.
 Haben wir ein Glück!
 
-== Verzeichnis
+== Wörterverzeichnis
 
 Hier ist eine Liste von Definitionen für einige der weniger offensichtlichen Begriffe, die ich in diesem Buch verwende, um zu verdeutlichen, wie ich sie meine.
-Sie orientieren sich so weit wie möglich an der gebräuchlichen Verwendung.
+Die Begriffe orientieren sich so weit wie möglich an der gebräuchlichen Verwendung.
 Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwerke usw. haben oft noch differenziertere Definitionen.
 
 // Source for "These days that pretty much means git" statement: https://en.wikipedia.org/wiki/Git#Adoption
@@ -3755,12 +3754,12 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Laufende Instanz eines Images. Container können auch als „Guests“ bezeichnet werden, wobei dieser Begriff häufiger für virtuelle Maschinen (VMs) verwendet wird.
 ((Hauptprozessor))::
   Zentrale Verarbeitungseinheit (CPU). Das „Gehirn“ des Computers – dort findet der Großteil der Berechnungen statt.
-((data))::
+((Data))::
   (Bezieht sich nur auf den Englischen Begriff; data = Daten)
   Substantiv, Plural. Ja, ich verwende die grammatikalisch korrekte, aber manchmal unbequeme Pluralform! Alte Gewohnheit.
 ((Datensouveränität))::
   Vollständige Kontrolle über deine Daten. Zum Beispiel: Du besitzt die Originalkopien deiner Dateien.
-((bereitsetllen))::
+((aufstellen))::
   Einen Dienst für die Nutzung vorbereiten. Beinhaltet in der Regel das Erstellen oder Kopieren von Dateien, bevor der Dienst gestartet wird.
 ((Dogfooding))::
   Etwas selbst zu benutzen, das man auch entwickelt oder betreut. „Eat your own dog food“ – „Iss dein eigenes Hundefutter.“
@@ -3788,7 +3787,7 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Free Software Foundation. Eine Organisation, die sich stark für das „F“ („Free“) in FOSS einsetzt.
 ((Frontend))::
   Die Benutzeroberfläche (UI) eines Systems oder Dienstes.
-((Vollständige Festplattenverschlüsselung))::
+((vollständige Festplattenverschlüsselung))::
   Wenn ein gesamter Speicherbereich kryptografisch geschützt ist.
 ((GB))::
   Gigabyte. Üblicherweise 1,000^3^ (1,000,000,000) Bytes bei Festplatten oder 1,024^3^ (1,073,741,824) Bytes bei Arbeitsspeicher – aus historischen Gründen. Cloud-Speicheranbieter verwenden meist die zweite (Zweierpotenz-)Variante.
@@ -3816,8 +3815,8 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Eine Operation, die nur so lange Änderungen vornimmt, bis ein gewünschter Endzustand erreicht ist. Wiederholtes Ausführen hat keinen weiteren Effekt, sobald dieser Zustand erreicht wurde. Beispiel: Betriebssystem-Updates. Wenn das System aktuell ist, führt ein weiteres Update zu keinen Änderungen – es sei denn, währenddessen erscheinen neue Pakete.
 ((Image))::
  Ein Dateisystem mit Code und allen Abhängigkeiten, die notwendig sind, um einen Container auszuführen.
-((immutable))::
-  Doesn't change. For example, a particular Docker image. A container instantiated from that image can be modified, but the image cannot; a new image must be built.
+((unveränderlich))::
+  Ändert sich nicht. Zum Beispiel ein bestimmtes Docker-Image. Ein Container, der aus diesem Image instanziiert wird, kann geändert werden, aber das Image selbst nicht; es muss ein neues Image erstellt werden. Nutztiere sind auch unveränderlich; siehe ((Nutz- vs. Haustier))
 ((IPMI))::
   Intelligent Platform Management Interface. Wird für die Fernverwaltung von Servern verwendet, einschließlich Neustarts und Betriebssysteminstallationen.
 ((Einbruchsschutzsystem))::
@@ -3870,7 +3869,7 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Siehe „einen Server bereitstellen“. Prozess, bei dem eine Maschine vorbereitet und in den gewünschten Zustand gebracht wird, um ihre Aufgabe zu erfüllen.
 ((RAID))::
   Redundant Array of Independent Disks. Technologie, die mehrere Festplatten zu einem Verbund zusammenfasst, um Ausfallsicherheit, Geschwindigkeit oder beides zu erhöhen.
-((registrar))::
+((Registrar))::
   Domainnamen-Anbieter. Kann auch andere Dienste im Zusammenhang mit Namensverwaltung und Hosting anbieten.
 ((reproduzierbare))::
   Kann durch Befolgen bestimmter Schritte wiederholt werden. Beispiel: Einen Fehler „repro“-duzieren oder einen „reproduzierbaren [Software-]Build“ erstellen. Wenn zwei Personen versuchen, denselben Fehler zu reproduzieren, sollten sie dasselbe Ergebnis erhalten. Wenn zwei Personen jeweils aus demselben Dockerfile ein Image bauen, sollten sie dasselbe Image erhalten. In der Praxis jedoch sind Fehlerreproduktionen und Build-Ergebnisse ähnlich, aber nie völlig identisch.
@@ -3907,11 +3906,11 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
 ((TLD))::
   Top-Level-Domain. Bei „example.com“ ist „.com“ die TLD.
 ((UI))::
-  User Interface – Benutzeroberfläche. Die Schnittstelle zwischen Benutzer und System, z.B. eine Website oder App.Wird oft zusammen mit der Benutzererfahrung betrachtet und als „UI/UX“ bezeichnet.
+  User Interface – Benutzeroberfläche. Die Schnittstelle zwischen Nutzer*in und System, z.B. eine Website oder App.Wird oft zusammen mit der Benutzererfahrung betrachtet und als „UI/UX“ bezeichnet.
 ((USV))::
   Unterbrechungsfreie Stromversorgung. Eine Batterie zwischen Server und Steckdose, oft mit Zusatzfunktionen wie Stromausfallalarm oder Überspannungsschutz.
 ((UX))::
-  User Experience – Benutzererlebnis. Beschreibt die Art der Interaktion zwischen Benutzer und System, einschließlich Bedienfreundlichkeit und der Schritte, die nötig sind, um eine Aufgabe zu erfüllen. Wird häufig zusammen mit der Benutzeroberfläche betrachtet („UI/UX“).
+  User Experience – Benutzererlebnis. Beschreibt die Art der Interaktion zwischen Nutzer*in und System, einschließlich Bedienfreundlichkeit und der Schritte, die nötig sind, um eine Aufgabe zu erfüllen. Wird häufig zusammen mit der Benutzeroberfläche betrachtet („UI/UX“).
 ((Volume))::
   Docker-Funktion, um einen Ordner auf dem Server in einen Ordner innerhalb eines Containers einzubinden. Üblicher Mechanismus, um Containerdaten zu speichern, die sonst flüchtig wären.
 ((VM))::
@@ -3921,7 +3920,7 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
 ((WAN))::
   Wide Area Network – Weitverkehrsnetz. Alles außerhalb des eigenen LAN / Heimnetzwerks / Routers.
 ((ZFS))::
-  Dateisystem mit vielen erweiterten Funktionen wie Verschlüsselung, Schutz vor Bit Rot, Journaling, Volume-Management und Snapshots. Ursprünglich Abkürzung für „Zettabyte File System“.
+  Dateisystem mit vielen erweiterten Funktionen wie Verschlüsselung, Schutz vor Bit Rot, Journaling, Volume-Management und Momentaufnahme. Ursprünglich Abkürzung für „Zettabyte File System“.
 
 // Ideally I'd like a full set of these lists for every output.
 // See am64 in ../Readme.adoc
@@ -3934,23 +3933,23 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
 // * https://github.com/Alwinator/asciidoctor-lists/issues/25
 
 ifndef::shb-printPdf[]
-== Cross references
+== Querverweise
 
 Im Folgenden finden sich Listen mit Links zu wichtigen, betitelten Inhaltsabschnitten.
 
-=== Figures
+=== Abbildungen
 
 list-of::image[]
 
-=== Tables
+=== Tabellen
 
 list-of::table[]
 
-=== Sidebars
+=== Seitenleisten
 
 list-of::sidebar[]
 
-=== Code snippets
+=== Codeausschnitte
 
 list-of::listing[]
 
