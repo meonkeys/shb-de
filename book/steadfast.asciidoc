@@ -1,4 +1,4 @@
-= Zuverlässiges Self-Hosting: Die persönliche Cloud im Aufschwung
+= Zuverlässiges Self-Hosting: Eine schnell aufbaubare eigene Cloud
 :author: Adam Monsen
 :copyright: (C)2025 {author}
 :doctype: book
