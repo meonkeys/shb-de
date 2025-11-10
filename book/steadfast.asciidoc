@@ -3851,7 +3851,7 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Optical Character Recognition – optische Zeichenerkennung. Der Prozess, bei dem Text aus Bildern in echten, bearbeitbaren Text umgewandelt wird.
 ((OOB))::
   Out-of-Band Management – außerhalb des Hauptnetzwerks stattfindende Verwaltung. Ermöglicht Fernsteuerung von Servern auf niedriger Ebene, einschließlich Ein- und Ausschalten oder Konsolenzugriff. Wird typischerweise durch einen separat betriebenen, vernetzten eingebetteten Computer bereitgestellt. Siehe auch: IPMI.
-(((Betriebssystem)))
+((Betriebssystem))::
   Im Englischen: Operating System (OS). Das grundlegende System, das Hardware und Software koordiniert.
 ((OSI))::
   Open Source Initiative. Organisation, die sich hauptsächlich auf das „OSS“ (Open Source Software) in FOSS konzentriert.
