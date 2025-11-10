@@ -3726,51 +3726,53 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
 
 // Source for "These days that pretty much means git" statement: https://en.wikipedia.org/wiki/Git#Adoption
 
-((KI))::
-  Künstliche Intelligenz.
-((API))::
- Programmierschnittstelle (Application Programming Interface). Bietet eine Möglichkeit, über Software mit einem Dienst zu interagieren. Nützlich zum Erstellen von Apps und Integrationen.
 ((Angriffsfläche))::
   Gesamtheit aller möglichen Angriffspunkte. Weniger ist sicherer. Beispiel: Wenn du alle Ports schließt, die du nicht benötigst, reduzierst du deine Angriffsfläche.
+((API))::
+ Programmierschnittstelle (Application Programming Interface). Bietet eine Möglichkeit, über Software mit einem Dienst zu interagieren. Nützlich zum Erstellen von Apps und Integrationen.
+((aufstellen))::
+  Einen Dienst für die Nutzung vorbereiten. Beinhaltet in der Regel das Erstellen oder Kopieren von Dateien, bevor der Dienst gestartet wird.
 ((Backend))::
   In diesem Buch bezeichnet dieser Begriff entweder einen Dienst (z.B. eine Datenbank) oder einen Server. Es handelt sich um etwas, mit dem du meist indirekt interagierst, etwa über ein Frontend wie eine Web- oder Mobil-App.
 ((Bare Metal))::
   Physische, lokal verfügbare Rechenressourcen – im Gegensatz zu gemieteter Rechenzeit auf fremder Hardware. In diesem Buch wird der Begriff vor allem verwendet, um Hardware-Autonomie auszudrücken.
+((Bedrohungsmodell))::
+  Analyse der Risiken und Schutzmaßnahmen digitaler Ressourcen.
+((bereitstellen))::
+  Siehe „einen Server bereitstellen“. Prozess, bei dem eine Maschine vorbereitet und in den gewünschten Zustand gebracht wird, um ihre Aufgabe zu erfüllen.
+((Betriebssystem))::
+  Im Englischen: Operating System (OS). Das grundlegende System, das Hardware und Software koordiniert.
 ((Blockspeicher))::
   Cloud-Speicheroption mit direktem Dateisystemzugriff, einschließlich Dateien und Ordnern. Wird direkt/nativ/lokal vom Betriebssystem verwendet. Die Größe ist relativ festgelegt und wird bei der Erstellung bestimmt.
 ((Bot))::
   Kurzform von „Roboter“. Software, die automatisierte Aufgaben ausführt, z.B. auf Chat-Anfragen antworten oder verwundbare Server angreifen.
 ((Cattle vs. Pets)) ... ((Nutz- vs. Haustier))::
   Verdeutlicht zwei unterschiedliche Systemadministrator-Ansätze für Systeme und Dienste. „Cattle“ (Nutztiere) sind automatisiert, kurzlebig und im Idealfall unveränderlich. „Pets“ (Haustiere) werden manuell verwaltet, sind zustandsbehaftet und langlebig.
-((Zertifikate))::
-  Kurzform für HTTPS-Verschlüsselungszertifikate.
 ((Change Management))::
   Die Mittel und Methoden, mit denen eine Gruppe von Menschen von einem Satz von Werkzeugen und Prozessen zu einem anderen überführt wird.
 ((Cloud))::
   Eine unbestimmte Menge an entfernten Hardware-Ressourcen. Skalierbar, programmierbar und vernetzt. „Die Cloud“ oder „öffentliche Cloud“ bezeichnet die Hardware anderer Leute, während „persönliche Cloud“ deine eigene ist.
 ((Cluster))::
   Zusammengeschlossene Sammlung von Rechnern, die gemeinsam wie ein einzelner Computer behandelt werden, um eine höhere Rechenleistung zu erreichen.
-((Rechenbedarf))::
-  Substantiv: Hauptprozessor- oder Grafikprozessor-Ressourcen, die beim Ausführen von Software-Diensten verbraucht werden.
 ((Container))::
   Laufende Instanz eines Images. Container können auch als „Guests“ bezeichnet werden, wobei dieser Begriff häufiger für virtuelle Maschinen (VMs) verwendet wird.
-((Hauptprozessor))::
-  Zentrale Verarbeitungseinheit (CPU). Das „Gehirn“ des Computers – dort findet der Großteil der Berechnungen statt.
+((Das ist etwas Gutes))::
+  Eine vage Art zu sagen, dass etwas offensichtlich großartig ist.
 ((Data))::
   (Bezieht sich nur auf den Englischen Begriff; data = Daten)
   Substantiv, Plural. Ja, ich verwende die grammatikalisch korrekte, aber manchmal unbequeme Pluralform! Alte Gewohnheit.
 ((Datensouveränität))::
   Vollständige Kontrolle über deine Daten. Zum Beispiel: Du besitzt die Originalkopien deiner Dateien.
-((aufstellen))::
-  Einen Dienst für die Nutzung vorbereiten. Beinhaltet in der Regel das Erstellen oder Kopieren von Dateien, bevor der Dienst gestartet wird.
-((Dogfooding))::
-  Etwas selbst zu benutzen, das man auch entwickelt oder betreut. „Eat your own dog food“ – „Iss dein eigenes Hundefutter.“
 ((DHCP))::
   Dynamic Host Configuration Protocol. Ein Verfahren, mit dem Computer IP-Adressen und zugehörige Netzwerkeinstellungen automatisch beziehen.
+((Dienst))::
+  Ein dauerhaft laufender Prozess, der von anderen lokalen oder entfernten Prozessen genutzt wird, um nützliche Aufgaben zu erfüllen.
 ((DIY))::
   Do it yourself – „Mach es selbst“. Bezeichnet Tätigkeiten, bei denen man selbst lernt und bastelt, anstatt jemanden zu bezahlen. Beispiel: Kochen oder – in diesem Buch – Self-Hosting.
 ((DNS))::
   Domain Name System. Ordnet Domainnamen IP-Adressen zu.
+((Dogfooding))::
+  Etwas selbst zu benutzen, das man auch entwickelt oder betreut. „Eat your own dog food“ – „Iss dein eigenes Hundefutter.“
 ((Domainname))::
   Bezeichnung eines Servers, Dienstes oder einer Dienstgruppe, mit der diese identifiziert werden kann, z.B. `example.com.`
 ((DRM))::
@@ -3779,32 +3781,30 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Jeglicher ausgehender Datentransfer oder Download – insbesondere in Bezug auf öffentliche Cloud-Dienste.
 ((Entrypoint))::
   Der Punkt, an dem Datenverkehr in den Traefik Reverse-Proxy eintritt; also die Netzwerkports.
+((Festplattenlaufwerk))::
+  Auch einfach Festplatte genannt. Speichert Daten in Form von Einsen und Nullen auf rotierenden Metallscheiben.
 ((Firewall))::
   Ein Mittel zur Kontrolle des Netzwerkverkehrs zwischen Computern.
 ((Fork))::
   Forken (Verb): Ein Softwareprojekt in zwei Varianten aufteilen. Fork (Substantiv): Eine abgeleitete Software-Version. Die Fork unterscheidet sich vom Original (sonst wäre es nur eine Kopie). Ein oder mehrere Projekte können aus dem Original hervorgehen. Das Forken von Software ist eine übliche und nützliche Praxis.
 ((FOSS))::
   Free and Open Source Software. Ein Akronym, das die Ziele der Free Software Foundation (FSF) und der Open Source Initiative (OSI) vereinen soll.
-((FSF))::
-  Free Software Foundation. Eine Organisation, die sich stark für das „F“ („Free“) in FOSS einsetzt.
 ((Frontend))::
   Die Benutzeroberfläche (UI) eines Systems oder Dienstes.
-((vollständige Festplattenverschlüsselung))::
-  Wenn ein gesamter Speicherbereich kryptografisch geschützt ist.
+((FSF))::
+  Free Software Foundation. Eine Organisation, die sich stark für das „F“ („Free“) in FOSS einsetzt.
 ((GB))::
   Gigabyte. Üblicherweise 1,000^3^ (1,000,000,000) Bytes bei Festplatten oder 1,024^3^ (1,073,741,824) Bytes bei Arbeitsspeicher – aus historischen Gründen. Cloud-Speicheranbieter verwenden meist die zweite (Zweierpotenz-)Variante.
-((gut, schnell, und billig))::
-  Wird in diesem Text augenzwinkernd verwendet, da man laut dem https://de.wikipedia.org/wiki/Magisches_Dreieck_(Projektmanagement)[typischerweise nur zwei davon wählen kann].
-((Das ist etwas Gutes))::
-  Eine vage Art zu sagen, dass etwas offensichtlich großartig ist.
-((Groupware))::
-  Software für die Zusammenarbeit in Gruppen. Im weiteren Sinne: E-Mail, Kalender und Kontakte. Manchmal auch gemeinsames Bearbeiten von Office-Dokumenten und Tabellen.
 ((Grafikprozessor))::
   Ursprünglich für Grafikberechnungen gedacht, heute auch für spezialisierte Rechenaufgaben wie Videotranskodierung oder maschinelles Lernen verwendet.
+((Groupware))::
+  Software für die Zusammenarbeit in Gruppen. Im weiteren Sinne: E-Mail, Kalender und Kontakte. Manchmal auch gemeinsames Bearbeiten von Office-Dokumenten und Tabellen.
 ((GUI))::
   Graphical user interface - Graphische Benutzeroberfläche.
-((Festplattenlaufwerk))::
-  Auch einfach Festplatte genannt. Speichert Daten in Form von Einsen und Nullen auf rotierenden Metallscheiben.
+((gut, schnell, und billig))::
+  Wird in diesem Text augenzwinkernd verwendet, da man laut dem https://de.wikipedia.org/wiki/Magisches_Dreieck_(Projektmanagement)[typischerweise nur zwei davon wählen kann].
+((Hauptprozessor))::
+  Zentrale Verarbeitungseinheit (CPU). Das „Gehirn“ des Computers – dort findet der Großteil der Berechnungen statt.
 ((Homelab))::
   Ein physischer oder konzeptioneller Raum fürs Lernen und Experimentieren mit selbstgesteuerten, flexiblen Systemen. Ein Homelab ist nicht ganz das, was in diesem Buch beschrieben wird; es ist eher eine Art Heim-Werkstatt für Hardware, Software und Elektronik. Ein _Steadfast_ Server (oder eine „persönliche Cloud“) sollte nahezu dauerhaft online und nützlich sein – zumindest der benutzerorientierte Teil. Manche Self-Hoster nennen es auch „Homeprod“. Ohne allzu viel Spitzfindigkeit verwende ich „Homelab“ als Kurzform für „Self-Hosting-Setup“ und/oder „Homeprod“.
 ((Host))::
@@ -3817,8 +3817,8 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Eine Operation, die nur so lange Änderungen vornimmt, bis ein gewünschter Endzustand erreicht ist. Wiederholtes Ausführen hat keinen weiteren Effekt, sobald dieser Zustand erreicht wurde. Beispiel: Betriebssystem-Updates. Wenn das System aktuell ist, führt ein weiteres Update zu keinen Änderungen – es sei denn, währenddessen erscheinen neue Pakete.
 ((Image))::
  Ein Dateisystem mit Code und allen Abhängigkeiten, die notwendig sind, um einen Container auszuführen.
-((unveränderlich))::
-  Ändert sich nicht. Zum Beispiel ein bestimmtes Docker-Image. Ein Container, der aus diesem Image instanziiert wird, kann geändert werden, aber das Image selbst nicht; es muss ein neues Image erstellt werden. Nutztiere sind auch unveränderlich; siehe ((Nutz- vs. Haustier))
+((KI))::
+  Künstliche Intelligenz.
 ((IPMI))::
   Intelligent Platform Management Interface. Wird für die Fernverwaltung von Servern verwendet, einschließlich Neustarts und Betriebssysteminstallationen.
 ((Einbruchsschutzsystem))::
@@ -3831,6 +3831,8 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Der Teil des Betriebssystems, der direkt mit der Hardware kommuniziert.
 ((LAN))::
   Local Area Network – lokales Netzwerk. Zum Beispiel das Heimnetzwerk, über das Computer und Geräte miteinander kommunizieren.
+((Laufzeit))::
+  Die Zeitspanne, in der eine Software tatsächlich ausgeführt wird, also wenn ein Satz von Maschinenbefehlen zu einem laufenden Prozess wird. Wird auch verwendet, um eine Sammlung von Tools/Bibliotheken zu bezeichnen, die dies erleichtern („Runtime Environment“).
 ((LFNW))::
   LinuxFest Northwest. Jährliche Konferenz in Bellingham, Washington, die der Unterstützung und Vernetzung von Open-Source-Communities dient. Gegründet im Jahr 2000.
 ((Linux))::
@@ -3851,26 +3853,26 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Optical Character Recognition – optische Zeichenerkennung. Der Prozess, bei dem Text aus Bildern in echten, bearbeitbaren Text umgewandelt wird.
 ((OOB))::
   Out-of-Band Management – außerhalb des Hauptnetzwerks stattfindende Verwaltung. Ermöglicht Fernsteuerung von Servern auf niedriger Ebene, einschließlich Ein- und Ausschalten oder Konsolenzugriff. Wird typischerweise durch einen separat betriebenen, vernetzten eingebetteten Computer bereitgestellt. Siehe auch: IPMI.
-((Betriebssystem))::
-  Im Englischen: Operating System (OS). Das grundlegende System, das Hardware und Software koordiniert.
 ((OSI))::
   Open Source Initiative. Organisation, die sich hauptsächlich auf das „OSS“ (Open Source Software) in FOSS konzentriert.
+((Partition))::
+  Abgegrenzter Bereich einer Festplatte oder eines Blockspeichers, der mit einem Dateisystem wie ext4 oder ZFS formatiert ist.
 ((PHP))::
   PHP: Hypertext Processor. Programmiersprache, die speziell für Webanwendungen entwickelt wurde.
 ((PoE))::
   Power over Ethernet. Ermöglicht die gleichzeitige Übertragung von Strom und Daten über dasselbe Ethernet-Kabel.
 ((Port))::
   In Kombination mit einer IP-Adresse; eine Zahl, über die eine Verbindung zu einem Dienst hergestellt wird. Reservierte Portnummern – z.B. 80 für HTTP – sind in `/etc/services` aufgeführt.
-((Partition))::
-  Abgegrenzter Bereich einer Festplatte oder eines Blockspeichers, der mit einem Dateisystem wie ext4 oder ZFS formatiert ist.
 ((Portweiterleitung))::
   Routerkonfiguration, bei der Datenverkehr für einen bestimmten Port an einen Computer im LAN weitergeleitet wird.
 ((Prozess))::
   Eine Instanz laufender Software. Beachte, dass „laufende“ Prozesse intern detaillierter beschrieben werden, etwa als „running“, „sleeping“, „idle“, „wartend auf E/A“ oder – mein persönlicher Favorit – „Zombie“.
-((bereitstellen))::
-  Siehe „einen Server bereitstellen“. Prozess, bei dem eine Maschine vorbereitet und in den gewünschten Zustand gebracht wird, um ihre Aufgabe zu erfüllen.
+((Quelle der Wahrheit))::
+  Das maßgebliche (ursprüngliche) Dokument, insbesondere, wenn mehrere Kopien oder Varianten existieren.
 ((RAID))::
   Redundant Array of Independent Disks. Technologie, die mehrere Festplatten zu einem Verbund zusammenfasst, um Ausfallsicherheit, Geschwindigkeit oder beides zu erhöhen.
+((Rechenbedarf))::
+  Substantiv: Hauptprozessor- oder Grafikprozessor-Ressourcen, die beim Ausführen von Software-Diensten verbraucht werden.
 ((Registrar))::
   Domainnamen-Anbieter. Kann auch andere Dienste im Zusammenhang mit Namensverwaltung und Hosting anbieten.
 ((reproduzierbare))::
@@ -3879,20 +3881,12 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Netzwerkanwendung zur Filterung und Weiterleitung von Datenverkehr. Im Self-Hosting-Kontext nützlich für SSL-Beendigung („termination“) und um mehrere selbstgehostete Webdienste mit unterschiedlichen Domainnamen unter einer einzigen IP-Adresse zu betreiben.
 ((Router))::
   Netzwerkgerät, das Datenverkehr an der Grenze zwischen Netzwerken wie WAN und LAN verarbeitet. Ein SOHO-Router bietet typischerweise zusätzliche Funktionen wie DNS, DHCP, Switching, Firewall und WLAN. Siehe auch: Portweiterleitung. Ein Traefik-Router ist etwas anderes: Er ist eine Software-Logik, die EntryPoints mit Diensten verbindet. Siehe <<Traefik Architektur>>.
-((Laufzeit))::
-  Die Zeitspanne, in der eine Software tatsächlich ausgeführt wird, also wenn ein Satz von Maschinenbefehlen zu einem laufenden Prozess wird. Wird auch verwendet, um eine Sammlung von Tools/Bibliotheken zu bezeichnen, die dies erleichtern („Runtime Environment“).
 ((SeaGL))::
   Seattle GNU/Linux Conference. Findet seit 2013 jährlich statt.
 ((Server))::
   Ein Computer, der in der Regel dauerhaft eingeschaltet bleibt und über das Netzwerk interagiert – statt über Monitor, Tastatur oder Maus. Wird auch als „Host“ bezeichnet.
-((Dienst))::
-  Ein dauerhaft laufender Prozess, der von anderen lokalen oder entfernten Prozessen genutzt wird, um nützliche Aufgaben zu erfüllen.
 ((SOHO))::
   Small Office / Home Office – kleines Büro / Heimbüro.
-((Versionskontrolle))::
-  Ein System zur Nachverfolgung von Änderungen im Quellcode, einschließlich wer, wann und warum etwas geändert hat. Git ist ein Beispiel für ein solches System.
-((Quelle der Wahrheit))::
-  Das maßgebliche (ursprüngliche) Dokument, insbesondere, wenn mehrere Kopien oder Varianten existieren.
 ((SSD))::
   Solid-State Drive – Festplatte ohne rotierende Teile.
 ((SSH))::
@@ -3901,26 +3895,32 @@ Fachleute aus den Bereichen Informatik, Sicherheit, Systemadministration, Netzwe
   Entgegennahme von verschlüsseltem Datenverkehr und Weitergabe unverschlüsselter Daten. Diese Aufgabe übernimmt in einem von mario bereitgestellten Server der Traefik-Reverse-Proxy. Genauer (und heute üblicher) bezeichnet als „TLS-Beendigung“. Tatsächliches SSL ist veraltet.
 ((Sysadmin))::
   Kurzform von „Systems Administrator“ – Person, die für den Betrieb und die Wartung eines Computersystems verantwortlich ist.
-((Bedrohungsmodell))::
-  Analyse der Risiken und Schutzmaßnahmen digitaler Ressourcen.
 ((TB))::
   Terabyte. Wie GB kann es entweder dezimal (10er-Basis) oder binär (2er-Basis) verwendet werden: 1,000^4^ (1,000,000,000,000) Bytes für Festplatten, und 1,024^4^ (1,099,511,627,776) Bytes für RAM.
 ((TLD))::
   Top-Level-Domain. Bei „example.com“ ist „.com“ die TLD.
 ((UI))::
   User Interface – Benutzeroberfläche. Die Schnittstelle zwischen Nutzer*in und System, z.B. eine Website oder App.Wird oft zusammen mit der Benutzererfahrung betrachtet und als „UI/UX“ bezeichnet.
+((unveränderlich))::
+  Ändert sich nicht. Zum Beispiel ein bestimmtes Docker-Image. Ein Container, der aus diesem Image instanziiert wird, kann geändert werden, aber das Image selbst nicht; es muss ein neues Image erstellt werden. Nutztiere sind auch unveränderlich; siehe ((Nutz- vs. Haustier))
 ((USV))::
   Unterbrechungsfreie Stromversorgung. Eine Batterie zwischen Server und Steckdose, oft mit Zusatzfunktionen wie Stromausfallalarm oder Überspannungsschutz.
 ((UX))::
   User Experience – Benutzererlebnis. Beschreibt die Art der Interaktion zwischen Nutzer*in und System, einschließlich Bedienfreundlichkeit und der Schritte, die nötig sind, um eine Aufgabe zu erfüllen. Wird häufig zusammen mit der Benutzeroberfläche betrachtet („UI/UX“).
-((Volume))::
-  Docker-Funktion, um einen Ordner auf dem Server in einen Ordner innerhalb eines Containers einzubinden. Üblicher Mechanismus, um Containerdaten zu speichern, die sonst flüchtig wären.
+((Versionskontrolle))::
+  Ein System zur Nachverfolgung von Änderungen im Quellcode, einschließlich wer, wann und warum etwas geändert hat. Git ist ein Beispiel für ein solches System.
 ((VM))::
   Virtuelle Maschine. Technik zur Betriebssystem-Isolation, die nahezu alle Aspekte von Hardware simuliert, einschließlich Stromversorgung, Eingabe und Ausgabe.
+((vollständige Festplattenverschlüsselung))::
+  Wenn ein gesamter Speicherbereich kryptografisch geschützt ist.
+((Volume))::
+  Docker-Funktion, um einen Ordner auf dem Server in einen Ordner innerhalb eines Containers einzubinden. Üblicher Mechanismus, um Containerdaten zu speichern, die sonst flüchtig wären.
 ((VPN))::
   Virtual Private Network – virtuelles privates Netzwerk. Ermöglicht es, sich „nach Hause zu teleportieren“ und sich netzwerktechnisch so zu verhalten, als wäre man im eigenen Heimnetz.
 ((WAN))::
   Wide Area Network – Weitverkehrsnetz. Alles außerhalb des eigenen LAN / Heimnetzwerks / Routers.
+((Zertifikate))::
+  Kurzform für HTTPS-Verschlüsselungszertifikate.
 ((ZFS))::
   Dateisystem mit vielen erweiterten Funktionen wie Verschlüsselung, Schutz vor Bit Rot, Journaling, Volume-Management und Momentaufnahme. Ursprünglich Abkürzung für „Zettabyte File System“.
 
