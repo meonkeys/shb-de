@@ -1668,7 +1668,7 @@ Dogfooding sorgt dafür, dass du ehrlich mit dir selbst bleibst und dich besser 
 ==== Festplattenlaufwerke
 
 (((ZFS, Momentaufnahme und)))
-Ich verwende ((Festplattenlaufwerke)) zur Datenspeicherung – hauptsächlich, um Kosten gegenüber öffentlichem Cloud-Speicher oder ((SSD))s (Solid-State-Laufwerken) zu sparen.
+Ich verwende ((Festplattenlaufwerk))e zur Datenspeicherung – hauptsächlich, um Kosten gegenüber öffentlichem Cloud-Speicher oder ((SSD))s (Solid-State-Laufwerken) zu sparen.
 Die Kosten für ((Blockspeicher)) in der öffentlichen Cloud übersteigen bei Weitem die Gigabyte-Stunden-Kosten meiner Festplattenlaufwerke.
 Ich habe den Preis für einen 5TB Blockspeicher bei AWS auf 228,10 $ pro Monat geschätzt.
 Mit ZFS erstelle ich außerdem alle 15 Minuten einen Snapshot (im Grunde ein vollständiges lokales Backup).
