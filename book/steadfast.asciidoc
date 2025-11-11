@@ -1445,8 +1445,8 @@ services:
 services:
   app:
     labels:
-      - "traefik.http.routers.nc-https.entrypoints=websecure" <1>
-      - "traefik.http.routers.nc-https.rule=Host(`cloud.example.com`)" <2>
+      traefik.http.routers.nc-https.entrypoints: websecure <1>
+      traefik.http.routers.nc-https.rule: Host(`cloud.example.com`) <2>
 ----
 
 <1> Verbinde den Entrypoint `websecure` mit dem Router `nc-https` im Dienst `app`.
@@ -2493,8 +2493,6 @@ Lege in diesem Ordner eine Datei `compose.yml` mit folgendem Inhalt an:
 .tiny test service config (🚀 Server)
 [source%unbreakable#tiny-test-service-config,yaml]
 ----
-version: '3'
-
 services:
   test:
     image: alpine
@@ -2603,6 +2601,8 @@ Siehe <<Verschiedene Probleme>>.
 
 // see SERVICES_FORCED_PAGEBREAKS
 
+// see SERVICES_FORCED_PAGEBREAKS
+
 <<<
 
 === Jellyfin: Audio- und Videostreaming
@@ -2677,6 +2677,8 @@ Um die von Nextcloud verwalteten Mediendateien in Jellyfin anzuzeigen, füge zwe
 
 // see SERVICES_FORCED_PAGEBREAKS
 
+// see SERVICES_FORCED_PAGEBREAKS
+
 <<<
 
 === Wallabag: Artikel speichern und lesen
@@ -2736,6 +2738,8 @@ I möchte die Möglichkeit haben, https://github.com/wallabag/wallabag/issues/67
 
 // see SERVICES_FORCED_PAGEBREAKS
 
+// see SERVICES_FORCED_PAGEBREAKS
+
 <<<
 
 === Watchtower: Dienst-Updates
@@ -2780,6 +2784,8 @@ Es kann passieren, dass ein Dienst durch Watchtower beschädigt wird.
 Wenn du den Verdacht hast und weißt, wann der Dienst kaputtging, versuche dies mit den Upgrades in `dc watchtower logs` zu korrelieren.
 Ich vermeide das, indem ich Watchtower nur für nicht-kritische Dienste nutze.
 Zum Beispiel lasse ich Watchtower meinen Nextcloud-Dienst nicht automatisch upgraden.
+
+// see SERVICES_FORCED_PAGEBREAKS
 
 // see SERVICES_FORCED_PAGEBREAKS
 
@@ -2880,22 +2886,17 @@ Hier ist ein `compose.yml`, das mit mario funktioniert, um https://localai.io[Lo
 .Beispiel der LocalAI Dienst Konfiguration
 [source#example-localai-svc,yaml]
 ----
-version: '3.6'
-
 services:
   api:
-    image: quay.io/go-skynet/local-ai:latest
-    environment:
-      MODELS_PATH: /models
+    image: localai/localai:latest
     volumes:
       - /data/localai/models:/models:cached
-    command: ["/usr/bin/local-ai" ]
     labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.localai-https.entrypoints=websecure"
-      - "traefik.http.routers.localai-https.rule=Host(`localai.example.com`)"
-      - "traefik.http.routers.localai-https.tls.certresolver=myresolver"
-      - "traefik.http.routers.localai-https.middlewares=lan-only"
+      traefik.enable: true
+      traefik.http.routers.localai-https.entrypoints: websecure
+      traefik.http.routers.localai-https.rule: Host(`localai.example.com`)
+      traefik.http.routers.localai-https.tls.certresolver: myresolver
+      traefik.http.routers.localai-https.middlewares: lan-only
     networks:
       - traefik_default
     restart: unless-stopped
@@ -2911,7 +2912,7 @@ Außerdem wird ein entsprechendes Label am Traefik-Container erwartet, um die ((
 .label from Traefik configuration allowing only LAN access
 [source#lan-only-traefik-conf-line,yaml]
 ----
-"traefik.http.middlewares.lan-only.ipallowlist.sourcerange=192.168.1.0/24"
+traefik.http.middlewares.lan-only.ipallowlist.sourcerange: 192.168.1.0/24
 ----
 
 TIP: Nutze mario um deinen LocalAI Dienst bereitzustellen.
