@@ -183,6 +183,12 @@ Es ermöglicht dir, selbst zu entscheiden, was du brauchst, und selbst zu wähle
 
 Du solltest dieses Buch lesen, es mit anderen teilen und vielleicht – wenn du soweit bist – etwas an die Self-Hosting-Community zurückgeben.
 
+// Print PDF: ensure Deb's salutation isn't orphaned.
+
+ifdef::shb-printPDF[]
+<<<
+endif::[]
+
 --
 Willkommen in der Welt des Self-Hosting,
 --
@@ -766,6 +772,13 @@ CAUTION: Wenn dir Fehlersuche und Debugging keinen Spaß machen, ist Self-Hostin
 
 Wenn du nicht sorgfältig mit ((Backups)) und Sicherheit umgehst, riskierst du Zeit, Energie und das Vertrauen von Menschen, die dir wichtig sind.
 
+// Print PDF: using [%unbreakable] here didn't look great so I use a page
+// break instead. The concealed HVAC index term might be messing it up.
+
+ifdef::shb-printPDF[]
+<<<
+endif::[]
+
 (((HVAC)))
 Self-Hosting vor Ort bringt zusätzliche physische Überlegungen mit sich.
 Du musst für ausreichende Stromversorgung, Konnektivität, HVAC (Heizung, Lüftung und Klimatisierung) und Sicherheit sorgen.
@@ -1131,6 +1144,7 @@ Gehen wir einen Schritt zurück und sprechen über Bedrohungsmodellierung.
 Dein Bedrohungsmodell beschreibt, wie du Bedrohungen für deine Daten einschätzt und wie du ihnen entgegenwirken willst.
 Mit einem klaren Bedrohungsmodell kannst du fundierte Entscheidungen treffen – zum Beispiel darüber, ob du den WAN-Zugriff auf deinen Server erlauben solltest oder nicht.
 
+[%unbreakable]
 WARNING: Wenn du bereits weißt, dass du ein wertvolles Ziel bist (z.B. öffentliche Person, hohes Vermögen, Kriegsberichterstatter*in oder verantwortlich für einen Server mit Informationen über viele Menschen), dann gilt: Mach dich auf eine längere Reise gefasst.
 Dieses Buch allein reicht nicht aus, um deinem Bedrohungsmodell gerecht zu werden.
 
@@ -1247,6 +1261,12 @@ Um mehr über ZFS zu erfahren, siehe:
 * https://arstechnica.com/information-technology/2014/01/bitrot-and-atomic-cows-inside-next-gen-filesystems/[Bitrot and atomic COWs: Inside „next-gen“ filesystems] by Jim Salter
 * https://arstechnica.com/information-technology/2020/05/zfs-101-understanding-zfs-storage-and-performance/[ZFS 101—Understanding ZFS storage and performance] by Jim Salter
 * https://wiki.debian.org/ZFS[ZFS (Debian wiki page)] by various authors
+
+// Print PDF: prevent paragraph splitting
+
+ifdef::shb-printPDF[]
+<<<
+endif::[]
 
 Weitere ZFS-Konzepte, die es sich zu lernen lohnt: Fragmentierung, ARC (Adaptive Replacement Cache), Resilvering, Scrubbing, `ashift` und `recordsize`.
 
@@ -1435,6 +1455,10 @@ services:
 
 Jeder selbst gehostete Dienst wird über einen eigenen Router verfügen.
 Auch andere Webdienste verwenden den `websecure`-Zugang.
+
+ifdef::shb-printPDF[]
+<<<
+endif::[]
 
 Die HTTPS-Verschlüsselung wird über weitere Labels am Traefik-Container konfiguriert.
 Siehe <<Verschlüsselungszertifikate>> für Details.
@@ -2538,7 +2562,10 @@ Nextcloud, Jellyfin und Wallabag verfügen über mobile Apps und Integrationen, 
 
 Die serverseitigen Befehle zur Verwaltung von Diensten sind standardisiert: Su wirst das Muster `dc SERVICE ACTION ARGS` immer wieder sehen.
 
-// this forced page break was originally just to improve the print PDF layout, but I find it doesn't hurt the screen PDF layout so I don't use an ifdef::shb-printPDF[]
+// 📑 SERVICES_FORCED_PAGEBREAKS
+// Force new page for each service in Services (Dienste). These were originally
+// just to improve the print PDF layout, but I find it doesn't hurt the screen
+// PDF layout so I let it apply to both.
 
 <<<
 
@@ -2573,6 +2600,8 @@ Führe `dc nextcloud pull && dc nextcloud up -d` auf deinem Server aus, um die N
 ==== Probleme
 
 Siehe <<Verschiedene Probleme>>.
+
+// see SERVICES_FORCED_PAGEBREAKS
 
 <<<
 
@@ -2646,6 +2675,8 @@ Um die von Nextcloud verwalteten Mediendateien in Jellyfin anzuzeigen, füge zwe
 . Wähle den Inhaltstyp „Movies“, klicke auf das „+“-Symbol neben „Folders“ und wähle `/data/video`.
 . Wähle den Inhaltstyp „Music“, klicke auf das „+“-Symbol neben „Folders“ und wähle `/data/music`.
 
+// see SERVICES_FORCED_PAGEBREAKS
+
 <<<
 
 === Wallabag: Artikel speichern und lesen
@@ -2703,6 +2734,8 @@ Vielleicht ist sie nur in speziellen Fällen notwendig – ich musste sie in den
 
 I möchte die Möglichkeit haben, https://github.com/wallabag/wallabag/issues/679[Inhalte mit anderen Wallabag Nutzern in Rahmen des Wallabag programs zu teilen].
 
+// see SERVICES_FORCED_PAGEBREAKS
+
 <<<
 
 === Watchtower: Dienst-Updates
@@ -2747,6 +2780,8 @@ Es kann passieren, dass ein Dienst durch Watchtower beschädigt wird.
 Wenn du den Verdacht hast und weißt, wann der Dienst kaputtging, versuche dies mit den Upgrades in `dc watchtower logs` zu korrelieren.
 Ich vermeide das, indem ich Watchtower nur für nicht-kritische Dienste nutze.
 Zum Beispiel lasse ich Watchtower meinen Nextcloud-Dienst nicht automatisch upgraden.
+
+// see SERVICES_FORCED_PAGEBREAKS
 
 <<<
 
