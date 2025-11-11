@@ -3687,7 +3687,9 @@ Bitte wende ähnliche detaillierte Schritte an anderen Stellen nach Bedarf an.
 In den Worten von Scott McNealy, ehemaliger CEO von Sun Microsystems:
 ____
 Open Source is free like a puppy is free.
+____
 
+____
 Open Source ist genauso kostenlos wie ein Welpe kostenlos ist.
 ____
 
@@ -3708,7 +3710,9 @@ Ihr zufolge:
 
 ____
 A book is just a box of words until a reader opens it.
+____
 
+____
 Ein Buch ist bloß eine Kiste voller Worte, bis ein Leser es öffnet.
 ____
 
