@@ -14,12 +14,6 @@ Example: `Dieses Buch wurde am Tue May 27 11:39:42 AM PDT 2025 mit LANG auf Eins
 == 📑 to do
 
 * [ ] https://asciidoctor.zulipchat.com/#narrow/channel/279642-users/topic/custom.20reference.20format[figure out if section references can be customized] -- currently they use English-style double-quotes
-* [x] translate the word "Colophon" → "Kolophon"
-* [x] translate figures
-** [x] WAN into LAN traffic flow diagram
-** [x] Layers of a Steadfast system → Schichten eines Steadfast systems
-** [x] Pi-hole DNS traffic flow diagram
-* [x] change locale for `date` command in `book/build.sh`
 
 == 👀 See also
 
