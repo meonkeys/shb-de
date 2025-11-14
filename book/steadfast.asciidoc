@@ -931,7 +931,7 @@ Siehe <<Reverse-Proxy>> für mehr Informationen über Traefik.
 
 ===== Nextcloud Bugs
 
-(((Nextcloud, surprises with)))
+(((Nextcloud, Überraschungen mit)))
 Ich war frustriert über einige Probleme in Nextcloud.
 Diese fühlten sich besonders dringend an, da ich stark darauf angewiesen bin.
 
@@ -3058,7 +3058,7 @@ Ich gehe von einer primären Speicherung auf einer lokalen Festplatte aus, die v
 
 ==== Sicherheit
 
-(((Nextcloud, security and)))
+(((Nextcloud, Sicherheit und)))
 Eine grundlegende Nextcloud-Installation scheint über eine hervorragende Sicherheit zu verfügen.
 Der Quellcode wird intensiv genutzt und wird von einem soliden Unternehmen unterstützt, dessen Ruf von seinem Engagement für Sicherheit abhängt.
 Sie machen es einfach, alles abzusichern und zu überprüfen (es ist schließlich FOSS).
@@ -3151,7 +3151,7 @@ NOTE: Die Blogposts und Marketingmaterialien von Nextcloud verwenden andere Vers
 
 ===== Veröffentlichungsrhythmus
 
-(((Nextcloud, release cadence of)))
+(((Nextcloud, Veröffentlichungsrhythmus von)))
 https://docs.nextcloud.com/server/stable/admin_manual/release_schedule.html[Eine Hauptversion wird alle vier Monate veröffentlicht].
 Die Nextcloud-Apps, die für mich wichtig sind, scheinen mit diesem Tempo Schritt zu halten, aber es kommt mir etwas ehrgeizig vor.
 Entwickler müssen ihre Apps bei jeder Version zumindest leicht anpassen, oder stark, wenn es zu API-Änderungen kommt, die nicht abwärtskompatibel sind.
@@ -3176,7 +3176,7 @@ https://github.com/nextcloud/server/pull/33540[Die Ursache wurde inzwischen beho
 
 ==== Anpassung
 
-(((Nextcloud, apps for)))
+(((Nextcloud, Apps für)))
 Nextcloud kann entweder so verwendet werden, wie es ist (siehe <<Grundinstallierung>>), oder stark angepasst werden.
 Der einfachste und sicherste Weg zur Anpassung ist die Installation einer App aus dem integrierten App-Store (`/settings/apps`), besonders wenn eine App als „featured“ markiert ist.
 Diese Nextcloud-Apps werden auf dem Server installiert und erweitern die Funktionalität einer Basis-Nextcloud-Instanz.
@@ -3232,7 +3232,7 @@ Im Zweifelsfall: klein anfangen (Standard-Nextcloud-Installation) und neue Apps 
 
 ==== Volltextsuche
 
-(((Nextcloud, full text search and)))
+(((Nextcloud, Volltextsuche und)))
 Diese App ermöglicht es, den gesamten Inhalt aller Dokumente auf deinem Server zu durchsuchen.
 Die Suchsyntax ist schwer korrekt anzuwenden.
 Sie https://github.com/nextcloud/fulltextsearch/issues/601[nutzt sehr viel Hauptprozessorkapazität] und benötigt auch viel Speicher.
@@ -3245,7 +3245,7 @@ Die GitHub-Projekt-Repositories sind ziemlich ruhig. Siehe:
 
 ==== Mobile
 
-(((Nextcloud, mobile and)))
+(((Nextcloud, mobile Geräte und)))
 Nextcloud funktioniert gut als Backend für ein mobiles Gerät.
 Es kann deine einzige verlässliche „Quelle der Wahrheit“ für Kontakte, Kalender, Aufgaben und fast alles andere sein, was auf dem Handy wichtig ist.
 Du kannst Dateien öffnen und bearbeiten, aber die Benutzeroberfläche/UX ist schlecht.
@@ -3313,7 +3313,7 @@ Siehe auch: <<Merkmale-guter-Dienste>> und <<Merkmale-schlechter-Dienste>> unter
 
 ==== Nextcloud Office
 
-(((Nextcloud, office and)))
+(((Nextcloud, Office und)))
 https://nextcloud.com/office/ gibt deutliche Hinweise darauf, wie das Unternehmen hinter Nextcloud möchte, dass wir „Office“ und seine Pläne als Suite verwandter Werkzeuge verstehen.
 Sie beabsichtigen eindeutig ein ganzheitliches, integriertes Office-Erlebnis, und Nextcloud kann so konfiguriert werden, dass es auf diese Weise genutzt wird.
 https://nextcloud.com/office/ behandelt die kollaborative Bearbeitung von Office-Dokumenten (Textdokumente und Tabellen) sowie die Nutzung der Apps Notes, Collectives und Tables.
@@ -3445,9 +3445,9 @@ Gehe vorsichtig mit der Nextcloud-App für Ende-zu-Ende-Verschlüsselung um.
 Überprüfe die https://github.com/nextcloud/end_to_end_encryption/issues[bekannten Probleme], stelle sicher, dass du mit all diesen leben könntest, und testen sie dann gründlich mit einer Wegwerf-Nextcloud-Instanz.
 Stelle sicher, dass die App mit allen Clients funktioniert, die du verwenden möchten (z.B. Desktop, Mobil).
 
-==== AIO installer
+==== AIO Installer
 
-(((Nextcloud, installing)))
+(((Nextcloud, Installation)))
 Unter den unzähligen Nextcloud-Installationsmethoden gibt es einen relativ neuen und interessanten AIO („All-in-One“) Installer (https://nextcloud.com/all-in-one).
 Er ist kostenlos für eine Instanz mit weniger als 100 Benutzern.
 Der AIO verfolgt einen anderen Ansatz als mario: Er konfiguriert und verwaltet mehrere Nextcloud-bezogene Service-Container.
