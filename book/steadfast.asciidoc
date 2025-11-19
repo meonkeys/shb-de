@@ -3038,7 +3038,7 @@ Ich wollte viele zusätzliche Details einfügen, ohne <<Dienste>> zu überladen,
 
 ==== Grundinstallierung
 
-(((Nextcloud, installing)))
+(((Nextcloud, Installation)))
 Eine grundlegende (Standard-, nicht angepasste) Nextcloud-Installation bietet Fernspeicherung, -Organisation und -Freigabe von Dateien.
 Sie verwaltet die tatsächlichen Dateien und Ordner, die irgendwo gespeichert sind (lokal, remote, in der Cloud, wo auch immer), und verfolgt zusätzliche Metadaten über diese Dateien und Ordner in einer Datenbank.
 Du greifst über einen Webbrowser darauf zu, und es gibt einen Desktop-Client, um Dateien lokal zu synchronisieren – ähnlich wie bei Dropbox, Google Drive und OneDrive.
