@@ -17,6 +17,31 @@ Here are some notes for future translators.
 * https://github.com/asciidoctor/asciidoctor/issues/1670[asciidoctor/asciidoctor issue #1670: Localization for curved quotes]
 * https://github.com/meonkeys/shb/blob/main/issues.adoc[issues in English version], since those apply to translated versions as well
 
+== 🌱 Maintainer notes
+
+This is a fork of the https://github.com/meonkeys/shb[original English version], and should be maintained as such as long as it is convenient to do so.
+This means making structural changes (e.g. build system, dependencies) upstream (in `meonkeys/shb`) and merging them here.
+In short:
+
+. Make the desired changes upstream.
+. Create or update a branch in your working copy of `meonkeys/shb-de` with its tip at the desired upstream version.
+. Merge that branch into `main`.
+
+See https://github.com/meonkeys/shb-de/commit/2b1f935303f26e02ff57301dbbc309b74fb2bba3[2b1f9353] for an example of this.
+Some changes will conflict and must be manually resolved/ignored, e.g. `Readme.adoc`, `book/steadfast.asciidoc`, and changes to files and folders not present in this fork.
+
+== 🏷️ Tags
+
+Git tags are used on notable commits.
+Other tags not listed below are from the forked repository and may be ignored.
+
+de-NNN::
+German edition release.
+
+start-DE-translation::
+Commit: `f6b1c4da`.
+This tag commemorates when Fiona started translating the book into German.
+
 == 📜 Warranty
 
 None.
