@@ -1,6 +1,6 @@
 = Zuverlässiges Self-Hosting: Eine schnell aufbaubare eigene Cloud
 :author: Adam Monsen
-:copyright: (C)2025 {author}
+:copyright: (C)2026 {author}
 :doctype: book
 :docinfo:
 :toc: macro
