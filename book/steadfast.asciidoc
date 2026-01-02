@@ -83,31 +83,18 @@ Erstmals veröffentlicht im Jahr 2024 von https://sunrisedata.io[Sunrise Data Pr
 Seattle, Washington, USA.
 --
 
-ifdef::backend-epub3[]
+// Show paperback ISBN.
+ifdef::shb-printPdf[]
 --
-EPUB ISBN: 979-8-9908615-0-3
---
-endif::[]
-
-ifdef::shb-screenPDF[]
---
-PDF ISBN: 979-8-9908615-2-7
+ISBN: 979-8-9908615-4-1
 --
 endif::[]
 
-ifdef::shb-printPDF+printQuality-standard[]
+// Show ebook bundle ISBN.
+// HTML, EPUB, screen-optimized PDF are one product, the "Ebook bundle".
+ifndef::shb-printPDF[]
 --
-Paperback ISBN: 979-8-9908615-1-0
---
-
---
-Library of Congress Control Number: 2024911437
---
-endif::[]
-
-ifdef::shb-printPDF+printQuality-premium[]
---
-Premium paperback ISBN: 979-8-9908615-3-4
+ISBN: 979-8-9908615-5-8
 --
 endif::[]
 
