@@ -3463,7 +3463,7 @@ Hier ein paar Ideen was du tuen kannst, wenn du nicht mehr weiter weisst.
 Halte deine Erwartungen an diese gering, du könntest aber trotzdem gelegentlich Glück haben.
 ** https://reddit.com/r/selfhosted/[self-host Subreddit]
 ** https://reddit.com/r/homelab/[homelab Subreddit]
-** https://matrix.to/#/#Nextcloud:matrix.org[Nextcloud chat]
+** https://matrix.to/#/#nextcloud:matrix.org[Nextcloud chat]
 ** https://matrix.to/#/#selfhosted:matrix.org[selbst-gehosteter Chat]
 * Stelle mich ein; ich kann dir helfen.
 
